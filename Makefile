@@ -1,7 +1,13 @@
 default: local
 
 local:
+	git pull
 	runghc Generate.hs
 
 deploy: local
-	smbclient //msp.cis.strath.ac.uk/msp -c "recurse; mput _build/*"
+	smbclient //msp.cis.strath.ac.uk/msp -c "lcs _build; prompt; recurse; mput *"
+
+upload:
+	git add --all
+	git commit
+	git push
