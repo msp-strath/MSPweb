@@ -5,7 +5,7 @@ local:
 	runghc Generate.hs
 
 deploy: local
-	smbclient //msp.cis.strath.ac.uk/msp -c "lcs _build; prompt; recurse; mput *"
+	smbclient //msp.cis.strath.ac.uk/msp -c "lcd _build; prompt; recurse; mput *"
 
 upload:
 	git add --all
