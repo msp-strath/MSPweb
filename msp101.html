@@ -1,0 +1,51 @@
+### default.html(section.msp101=current)
+
+<h2>MSP101</h2>
+
+<p>MSP101 is an ongoing series of informal talks given on Wednesday
+mornings by visiting academics or members of the MSP group.</p>
+
+<h2>List of previous talks</h2>
+
+
+<dl>
+  <dt>2013 11 20 - Classical Type Theories (R. Adams)</dt>
+  <dd>
+    In 1987, Felleisen showed how to add control operators (for things like
+    exceptions and unconditional jumps) to the untyped lambda-calculus.  In
+    1990, Griffin idly wondered what would happen if one did the same in a
+    typed lambda calculus.  The answer came out: the inhabited types become
+    the theorems of classical logic.<br />
+
+    I will present the lambda mu-calculus, one of the cleanest attempts to
+    add control operators to a type theory.  We'll cover the good news: the
+    inhabited types are the tautologies of minimal classical logic, and Godel's
+    Double Negation translation from classical to intuitionistic logic turns
+    into the CPS translation.<br />
+
+    And the bad news: control operators don't play well with other types. Add
+    natural numbers (or some other inductive type), and you get inconsistency.
+    Add Sigma-types, and you get degeneracy (any two objects of the same type
+    are definitionally equal).  It gets worse: add plus-types, and you break
+    Subject Reduction.
+  </dd>
+
+  <dt>2013 11 13 - Continuation Passing Style (G. Allais)</dt>
+  <dd>
+    I chose to go through (parts of) Hatcliff and Danvy's paper
+    <a href="http://dl.acm.org/citation.cfm?id=178053">
+    "A Generic Account of Continuation-Passing Styles"</a> (POPL 94)
+    which gives a nice factorization of various CPS transforms in
+    terms of:
+    <ul>
+      <li>embeddings from STLC to Moggi's computational meta-language
+          (either call-by-value, call-by-name, or whatever you can come
+          up with)</li>
+      <li>followed by a generic CPS transform transporting terms from ML
+          back to STLC</li>
+    </ul>
+
+   Here is <a href="http://gallais.org/code/GenericCPS/definitions.html">an Agda
+   file</a> containing what we had the time to see.
+  </dd>
+</dl>
