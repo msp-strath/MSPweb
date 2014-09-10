@@ -114,7 +114,7 @@ parseHeader file =
               getEnv cs      env =
                   let (x,y) = break (\c -> c==',' || c==')') cs
                       (v,a) = break (=='=') x
-                  in getEnv y ((v,drop 1 a):env)
+                  in getEnv (drop 1 y) ((v,drop 1 a):env)
               env = getEnv (dropWhile (\c -> c==' ' || c=='(') header') []
               body = dropWhile (\c -> c==' ' || c=='\n' || c=='\t') rest
           in
