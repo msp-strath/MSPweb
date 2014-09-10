@@ -1,3 +1,6 @@
+# Generated output files
+_build/*
+
 # Generated files for MSP 101
 msp101.html
 msp101.ics
