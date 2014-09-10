@@ -2,6 +2,7 @@ default: local
 
 local:
 	git pull
+	runghc Generate101.hs
 	runghc Generate.hs
 
 deploy: local
