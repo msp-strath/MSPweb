@@ -81,7 +81,6 @@ generateRSS ts out = do
               in
                unlines ["  <item>", 
                         "   <title>" ++ rsstitle ++ "</title>",
-                        "   <link>http://msp.cis.strath.ac.uk/msp101.html</link>",
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
                         "  </item>"]
