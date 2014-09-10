@@ -43,12 +43,13 @@ classifyPath path = do
 
 -- | Determine when an entry in a directory is to be used as a source
 -- file for generating the web site. Anything that starts with an
--- underscore ("_") or ends with "~" or ".hs" is not considered
--- relevant.
+-- underscore ("_") or a dot ("."), or ends with "~" or ".hs" is not
+-- considered relevant.
 relevantEntry :: FilePath -> Bool
 relevantEntry "."     = False
 relevantEntry ".."    = False
 relevantEntry ('_':_) = False
+relevantEntry ('.':_) = False
 relevantEntry s | "~"   `isSuffixOf` s = False
                 | ".hs" `isSuffixOf` s = False
 relevantEntry _       = True
