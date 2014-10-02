@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = zipWith (,) [(0::Int)..] $ reverse [
  Talk {
+  date       = (UTCTime (fromGregorian 2014 10 1)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "Fredrik Nordvall Forsberg",
+  institute  = "MSP",
+  speakerurl = "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
+  insturl    = "",
+  title      = "Initial algebras via strong dinaturality, internally",
+  abstract   = "  Or: My summer with Steve\nOr: How Christine and Frank were right, after all\nOr: Inductive types for the price of function extensionality and impredicative Set\n\n Christine Paulin-Mohring and Frank Pfenning suggested to use impredicative encodings of inductive types in the Calculus of Constructions, but this was later abandoned, since it is \"well-known\" that induction principles, i.e. dependent elimination,  can not be derived for this encoding. It now seems like it is  possible to give a variation of this encoding for which the  induction principle is derivable after all. The trick is to use  identity types to cut down the transformations of type  (Pi X : Set) . (F(X) -> X) -> X to the ones that are internally strongly dinatural, making use of a formula for a \"generalised Yoneda Lemma\" by Uustalu and Vene.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+  Talk {
   date       = (UTCTime (fromGregorian 2014 8 15)
                         (timeOfDayToTime (TimeOfDay 15 0 0))),
   speaker    = "Fredrik Nordvall Forsberg",
