@@ -5,3 +5,6 @@ _build/*
 msp101.html
 msp101.ics
 msp101.rss
+
+# SMB authentication file (make sure not readable by others!)
+authsmb.txt

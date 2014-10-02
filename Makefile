@@ -1,3 +1,5 @@
+SMBCOMMAND="lcd _build; prompt; recurse; mput *"
+
 default: local
 
 local:
@@ -6,7 +8,10 @@ local:
 	runghc Generate.hs
 
 deploy: local
-	smbclient //msp.cis.strath.ac.uk/msp -c "lcd _build; prompt; recurse; mput *"
+	smbclient //msp.cis.strath.ac.uk/msp -c $(SMBCOMMAND)
+
+deploy-auto: local
+	smbclient //msp.cis.strath.ac.uk/msp -A authsmb.txt -c $(SMBCOMMAND)
 
 upload:
 	git add --all
