@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = zipWith (,) [(0::Int)..] $ reverse [
  Talk {
+  date       = (UTCTime (fromGregorian 2014 10 8)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "Conor McBride",
+  institute  = "MSP",
+  speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+  insturl    = "",
+  title      = "\"Real-world data\" and dependent types",
+  abstract   = "Conor has offered to talk to us about what he has been thinking about recently. He says this includes models, views, and dependent types.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+ 
+  Talk {
   date       = (UTCTime (fromGregorian 2014 10 1)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Fredrik Nordvall Forsberg",
