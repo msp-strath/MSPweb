@@ -9,7 +9,20 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
- Talk {
+  Talk {
+  date       = (UTCTime (fromGregorian 2014 10 15)
+                        (timeOfDayToTime (TimeOfDay 12 0 0))),
+  speaker    = "Heriot-Watt University",
+  institute  = "",
+  speakerurl = "http://www.macs.hw.ac.uk/~rs46/spls-hwu-q3-2014/",
+  insturl    = "",
+  title      = "SPLS",
+  abstract   = "",
+  location   = "Heriot-Watt",
+  material   = [] }
+ ,
+  
+  Talk {
   date       = (UTCTime (fromGregorian 2014 10 22)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Neil Ghani",

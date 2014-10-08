@@ -89,7 +89,7 @@ generateICS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
 generateICS ts out = do
-  now <- getCurrentTime
+  now <- getZonedTime
   let content = concatMap (processEntry now) ts
       header = unlines ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MSP//MSP101 v1.0//EN",
                         "X-WR-CALNAME: MSP101",
@@ -123,7 +123,7 @@ generateHTML :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
 generateHTML ts out = do
-  now <- getCurrentTime
+  now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
   let (previousTalks, upcomingTalks) = sortBy (flip $ comparing $ date . snd) *** sortBy (comparing $ date . snd) $ partition (\(i,x) -> date x < now) ts
       upcoming = if null upcomingTalks then "" else unlines ["<h2>Upcoming talks</h2>",
                                                              "<dl>", concatMap processEntry upcomingTalks, "</dl>"]
