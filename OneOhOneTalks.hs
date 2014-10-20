@@ -16,8 +16,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   institute  = "MSP",
   speakerurl = "https://personal.cis.strath.ac.uk/neil.ghani/",
   insturl    = "",
-  title      = "Cubical things",
-  abstract   = "TBA",
+  title      = "Higher dimensional parametricity and its cubical structure",
+  abstract   = "Neil will talk about partial progress made during the summer on higher dimensional parametricity and the cubical structures that seem to arise. \nDetails will be kept to a minimum and, of course, concepts stressed.",
   location   = "LT1310",
   material   = [] }
  ,
