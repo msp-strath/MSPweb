@@ -10,18 +10,53 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
-  date       = (UTCTime (fromGregorian 2014 10 22)
-                        (timeOfDayToTime (TimeOfDay 11 0 0))),
-  speaker    = "Neil Ghani",
-  institute  = "MSP",
-  speakerurl = "https://personal.cis.strath.ac.uk/neil.ghani/",
-  insturl    = "",
-  title      = "Higher dimensional parametricity and its cubical structure",
-  abstract   = "Neil will talk about partial progress made during the summer on higher dimensional parametricity and the cubical structures that seem to arise. \nDetails will be kept to a minimum and, of course, concepts stressed.",
-  location   = "LT1310",
-  material   = [] }
- ,
+     date       = (UTCTime (fromGregorian 2014 11 12)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Peter Hancock",
+     institute  = "",
+     speakerurl = "",
+     insturl    = "",
+     title      = "TBC",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
 
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2014 10 29)
+                    (timeOfDayToTime (TimeOfDay 12 0 0))),
+    title = "SICSA CSE Meeting on Effects and Coeffects Systems and their use for resource control",
+    url = "http://www.sicsa.ac.uk/events/sicsa-cse-meeting-effects-coeffects-systems-use-resource-control/",
+    location = "Dundee",
+    locationurl= "",
+    description = ""
+    }
+  ,
+ 
+  Talk {
+     date       = (UTCTime (fromGregorian 2014 10 22)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Neil Ghani",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/neil.ghani/",
+     insturl    = "",
+     title      = "Higher dimensional parametricity and its cubical structure",
+     abstract   = "Neil will talk about partial progress made during the summer on higher dimensional parametricity and the cubical structures that seem to arise. \nDetails will be kept to a minimum and, of course, concepts stressed.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2014 10 15)
+                    (timeOfDayToTime (TimeOfDay 12 0 0))),
+    title = "SPLS",
+    url = "http://www.macs.hw.ac.uk/~rs46/spls-hwu-q3-2014/",
+    location = "Heriot Watt",
+    locationurl= "",
+    description = ""
+    }
+  ,
+  
  Talk {
   date       = (UTCTime (fromGregorian 2014 10 8)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),

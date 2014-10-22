@@ -53,6 +53,15 @@ data Talk = Talk {
                    location :: String,
                    material :: [Material]
                  }
+
+          | SpecialEvent {
+                           date :: UTCTime,
+                           title :: String,
+                           url :: String,
+                           location :: String,
+                           locationurl :: String,
+                           description :: String
+                         }
   deriving (Show, Read, Eq)
 
 
@@ -71,7 +80,7 @@ generateRSS ts out = do
                         "  <language>en-gb</language>"]
       footer = unlines [" </channel>", "</rss>"]
   writeFile out (header ++ content ++ footer)
-    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material)) 
+    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material))
             = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ speaker ++ bracket inst 
                   abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
                   desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
@@ -84,7 +93,21 @@ generateRSS ts out = do
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
                         "  </item>"]
+          processEntry (i,(SpecialEvent date title url location locationurl description)) 
+            = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title 
+                  abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
+                  desc = unlines ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
+                                  "<h2>" ++ title ++ "</h2>",
+                                  abstr, 
+                                  "<b>" ++ (show date) ++ "<br/>" ++ (createLink locationurl location) ++ "</b><br/>"]
+              in
+               unlines ["  <item>", 
+                        "   <title>" ++ rsstitle ++ "</title>",
+                        "   <description><![CDATA[" ++ desc ++ "]]></description>",
+                        "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
+                        "  </item>"]
 
+            
 generateICS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
@@ -118,6 +141,26 @@ generateICS ts out = do
                           escape (';':' ':xs) = "\\; " ++ (escape xs)
                           escape (',':' ':xs) = "\\, " ++ (escape xs)
                           escape (x:xs) = x:(escape xs)
+          processEntry now (i,(SpecialEvent date title url location locationurl description))
+            = let desc = escape $ description
+                  end = addUTCTime (60*60::NominalDiffTime) date
+              in 
+                  unlines ["BEGIN:VEVENT",
+                           "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
+                           "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date), 
+                           "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
+                           "LOCATION:" ++ location,
+                           wordwrap 73 "\n  " $ "SUMMARY: Event: " ++ title,
+                           wordwrap 73 "\n  " $ "DESCRIPTION:" ++ desc,
+                           "UID:" ++ (show i),
+                           "END:VEVENT"]
+                    where escape :: String -> String
+                          escape [] = []
+                          escape ('\\':xs) = "\\\\" ++ (escape xs)
+                          escape ('\n':xs) = "\\n" ++ (escape xs)
+                          escape (';':' ':xs) = "\\; " ++ (escape xs)
+                          escape (',':' ':xs) = "\\, " ++ (escape xs)
+                          escape (x:xs) = x:(escape xs)          
 
 generateHTML :: [(Int,Talk)]
             -> FilePath -- ^ Output path
@@ -146,3 +189,10 @@ generateHTML ts out = do
               in 
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
                           "    <dd>" ++ (nl2br abstract) ++ "</dd>"]
+          processEntry (i,(SpecialEvent date title url location locationurl description))
+            = let time = formatTime defaultTimeLocale "%Y-%m-%d" date
+                  dt = time ++ ": " ++ (createLink url title)
+                                    ++ (bracket (createLink locationurl location))
+              in 
+                 unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
+                          "    <dd>" ++ (nl2br description) ++ "</dd>"]
