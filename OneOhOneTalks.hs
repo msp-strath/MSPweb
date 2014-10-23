@@ -26,7 +26,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
     date  = (UTCTime (fromGregorian 2014 10 29)
                     (timeOfDayToTime (TimeOfDay 12 0 0))),
     title = "SICSA CSE Meeting on Effects and Coeffects Systems and their use for resource control",
-    url = "http://www.sicsa.ac.uk/events/sicsa-cse-meeting-effects-coeffects-systems-use-resource-control/",
+    url = "http://staff.computing.dundee.ac.uk/marcogaboardi/effcoeff.html",
     location = "Dundee",
     locationurl= "",
     description = ""
