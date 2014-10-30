@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2014 11 05)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Shin-ya Katsumata",
+     institute  = "Kyoto University",
+     speakerurl = "http://www.kurims.kyoto-u.ac.jp/~sinya/index-e.html",
+     insturl    = "http://www.kurims.kyoto-u.ac.jp/en/index.html",
+     title      = "Logical Relations for Monads by Categorical TT-Lifting",
+     abstract   = "Logical relations are widely used to study various properties of typed lambda calculi. By extending them to the lambda calculus with monadic types, we can gain understanding of the properties on functional programming languages with computational effects. Among various constructions of logical relations for monads, I will talk about a categorical TT-lifting, which is a semantic analogue of Lindley and Stark's leapfrog method.\n\nAfter reviewing some fundamental properties of the categorical TT-lifting, we apply it to the problem of relating two monadic semantics of a call-by-value functional programming language with computational effects. This kind of problem has been considered in various forms: for example, the relationship between monadic style and continuation passing style representations of call-by-value programs was studied around '90s. We give a set of sufficient conditions to solve the problem of relating two monadic semantics affirmatively. These conditions are applicable to a wide range of such problems.",
+     location   = "Boardroom (LT1101d)",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2014 10 27)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Dominic Orchard",
