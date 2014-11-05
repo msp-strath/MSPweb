@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2014 11 06)
+                           (timeOfDayToTime (TimeOfDay 9 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Comonadic Cellular Automata",
+     abstract   = "Kevin will be giving an informal talk about some of the stuff he has been learning about. He'll give the definition of a cellular automaton and then talk about how this definition can be phrased in terms of a comonad.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2014 11 05)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Shin-ya Katsumata",
