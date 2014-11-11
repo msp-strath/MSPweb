@@ -42,8 +42,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "",
      speakerurl = "",
      insturl    = "",
-     title      = "TBC",
-     abstract   = "",
+     title      = "Lambda-abstraction and other diabolical contrivances",
+     abstract   = "The topic is the unholy trinity of eta, zeta, and xi. I'll indicate how Curry managed to give a finite combinatorial axiomatisation of this nastiness, by anticipating (almost-but-not-<em>quite</em>) McBride et al's applicative functors.",
      location   = "LT1310",
      material   = [] }
   ,
