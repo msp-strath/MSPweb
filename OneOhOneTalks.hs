@@ -11,7 +11,7 @@ import OneOhOne
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
      date       = (UTCTime (fromGregorian 2014 11 19)
-                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+                           (timeOfDayToTime (TimeOfDay 12 0 0))),
      speaker    = "Neil Ghani and Clemens Kupke",
      institute  = "MSP",
      speakerurl = "",
