@@ -30,7 +30,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://personal.strath.ac.uk/ross.duncan/",
      insturl    = "",
      title      = "Diagrammatic languages for monoidal categories",
-     abstract   = "Monoidal categories are essentially 2-dimensional things, so why on earth would we represent them using a linear string of symbols?  I’ll talk about how to use string diagrams for monoidal categories, graph rewriting for reasoning within them, and how the syntax can be extended to handle certain kinds of infinitary expressions with the infamous !-box.  If there’s time I’ll finish with some half-baked (eh... basically still looking for the on switch of the oven...) of how to generalise them.",
+     abstract   = "Monoidal categories are essentially 2-dimensional things, so why on earth would we represent them using a linear string of symbols?  I’ll talk about how to use string diagrams for monoidal categories, graph rewriting for reasoning within them, and how the syntax can be extended to handle certain kinds of infinitary expressions with the infamous !-box.  If there’s time I’ll finish with some half-baked (eh... basically still looking for the on switch of the oven...) ideas of how to generalise them.",
      location   = "LT1310",
      material   = [] }
   ,
