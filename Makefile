@@ -10,7 +10,7 @@ local:
 deploy: local
 	smbclient //msp.cis.strath.ac.uk/msp -c $(SMBCOMMAND)
 
-deploy-auto: local
+auto-deploy: local
 	smbclient //msp.cis.strath.ac.uk/msp -A authsmb.txt -c $(SMBCOMMAND)
 
 upload:
