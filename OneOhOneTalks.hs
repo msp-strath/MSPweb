@@ -9,6 +9,18 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2014 12 03)
+                    (timeOfDayToTime (TimeOfDay 14 0 0))),
+    title = "HoTT reading group @ Strathclyde",
+    url = "http://homepages.inf.ed.ac.uk/s1225336/hott-reading-group/",
+    location = "LT1310",
+    locationurl= "",
+    description = "We will read the paper <a href='http://drops.dagstuhl.de/opus/volltexte/2014/4628/pdf/7.pdf'>A Model of Type Theory in Cubical Sets</a> by <a href='http://www.ii.uib.no/~bezem/'>Marc Bezem</a>, <a href='http://www.cse.chalmers.se/~coquand/'>Thierry Coquand</a> and <a href='http://www.cse.chalmers.se/~simonhu/'>Simon Huber</a>. Thierry's <a href='http://www.cse.chalmers.se/~coquand/comp.pdf'>Variation on cubical sets</a> might also be useful. <em>Administrative details</em>: meet for lunch at 12am for those who want to, reading group starts at 2pm."
+    }
+  ,
+  
   Talk {
      date       = (UTCTime (fromGregorian 2014 11 19)
                            (timeOfDayToTime (TimeOfDay 12 0 0))),
