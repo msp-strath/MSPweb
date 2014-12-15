@@ -9,6 +9,19 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+ Talk {
+  date       = (UTCTime (fromGregorian 2014 12 17)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "Conor McBride",
+  institute  = "MSP",
+  speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+  insturl    = "",
+  title      = "Worlds, Types and Quantification",
+  abstract   = "I’ve managed to prove a theorem that I’ve been chasing for a while. The trouble, of course, was <em>stating</em> it. I’ll revisit the motivation for extending type systems with an analysis of not just <em>what</em> things are but <em>where</em>, <em>when</em>, <em>whose</em>, etc. The idea is that typed constructions occur in one of a preordered set of worlds, with scoping restricted so that information flows only \"upwards\" from one world to another. Worlds might correspond to \"at run time\" and \"during typechecking\", or to computation in distinct cores, or in different stages, etc. What does the dependent function space mean in this setting? For a long time, I thought that each world had its own universal quantifier, for abstracting over stuff from that world. Failure to question this presumption is what led to failure to state a theorem I could prove. By separating quantifiers from worlds, I have fixed the problem. I’ll show how to prove the key fact: if I can build something in one world and then move it to another, then it will also be a valid construction once it has arrived at its destination.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
   Talk {
      date       = (UTCTime (fromGregorian 2014 12 10)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
