@@ -10,6 +10,10 @@ import Data.List
 import Data.Ord
 import Control.Arrow
 
+import Data.Array((!))
+import Text.Regex.PCRE -- cabal install regex-pcre
+
+
 -- HTML utils 
 
 nl2br :: String -> String
@@ -25,7 +29,6 @@ bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
 
 
-
 wordwrap maxlen div = (wrap_ 0) . words where
 	wrap_ _ [] = ""
 	wrap_ pos (w:ws)
@@ -34,6 +37,59 @@ wordwrap maxlen div = (wrap_ 0) . words where
 		| pos + lw + 1 > maxlen = div ++ wrap_ 0 (w:ws)
 		| otherwise = " " ++ w ++ wrap_ (pos + lw + 1) ws
 		where lw = length w
+
+-- Text.Regex.PCRE does not implement subRegex, so we copy
+-- the code from Text.Regex (which does not handle non-greedy matches)
+-- (a module system for Haskell, anyone?)                      
+subRegex :: Regex                          -- ^ Search pattern
+         -> String                         -- ^ Input string
+         -> String                         -- ^ Replacement text
+         -> String                         -- ^ Output string
+subRegex _ "" _ = ""
+subRegex regexp inp repl =
+  let compile _i str [] = \ _m ->  (str++)
+      compile i str (("\\",(off,len)):rest) =
+        let i' = off+len
+            pre = take (off-i) str
+            str' = drop (i'-i) str
+        in if null str' then \ _m -> (pre ++) . ('\\':)
+             else \  m -> (pre ++) . ('\\' :) . compile i' str' rest m
+      compile i str ((xstr,(off,len)):rest) =
+        let i' = off+len
+            pre = take (off-i) str
+            str' = drop (i'-i) str
+            x = read xstr
+        in if null str' then \ m -> (pre++) . ((fst (m!x))++)
+             else \ m -> (pre++) . ((fst (m!x))++) . compile i' str' rest m
+      compiled :: MatchText String -> String -> String
+      compiled = compile 0 repl findrefs where
+        -- bre matches a backslash then capture either a backslash or some digits
+        bre = makeRegex "\\\\(\\\\|[0-9]+)" :: Regex
+        findrefs = map (\m -> (fst (m!1),snd (m!0))) (matchAllText bre repl)
+      go _i str [] = str
+      go i str (m:ms) =
+        let (_,(off,len)) = m!0
+            i' = off+len
+            pre = take (off-i) str
+            str' = drop (i'-i) str
+        in if null str' then pre ++ (compiled m "")
+             else pre ++ (compiled m (go i' str' ms))
+  in go 0 inp (matchAllText regexp inp)
+
+-- quick and dirty regexp translation of some HTML to its textual representation
+html2text :: String -> String
+html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
+                    [("<em>(.*?)</em>", "*\\1*"),          -- bold
+                     ("<strong>(.*?)</strong>", "*\\1*"),
+                     ("<b>(.*?)</b>", "*\\1*"),                     
+                     ("<i>(.*?)</i>", "/\\1/"),            -- italic
+                     ("<br/>|<br>", "\n"),                 -- line breaks
+                     ("<p>(.*?)</p>", "\\1\n\n"),          -- paragraph breaks
+                     ("<a\\s+href\\s*=\\s*[\"'](.*?)[\"']>(.*?)</a>", "\\2 (\\1)"), -- links
+                     ("<ul>", "\n"),                       -- lists
+                     ("</ul>", ""),                     
+                     ("<li>(.*?)</li>", "* \\1\n")   
+                     ]
 
 
 -- Generate web pages, calendars and a RSS feed for MSP 101 from data in 
@@ -120,7 +176,7 @@ generateICS ts out = do
       footer = unlines ["END:VCALENDAR"]
   writeFile out (header ++ content ++ footer)
     where processEntry now (i,(Talk date speaker inst speakerurl insturl title abstract location material)) 
-            = let desc = escape $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst),
+            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst),
                                   "Title: " ++ title ++ "\n",
                                   abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
@@ -142,7 +198,7 @@ generateICS ts out = do
                           escape (',':' ':xs) = "\\, " ++ (escape xs)
                           escape (x:xs) = x:(escape xs)
           processEntry now (i,(SpecialEvent date title url location locationurl description))
-            = let desc = escape $ description
+            = let desc = escape $ html2text $ description
                   end = addUTCTime (60*60::NominalDiffTime) date
               in 
                   unlines ["BEGIN:VEVENT",
