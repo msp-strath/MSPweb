@@ -9,7 +9,20 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
- Talk {
+  Talk {
+  date       = (UTCTime (fromGregorian 2015 1 22)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "James Chapman",
+  institute  = "Institute of Cybernetics, Tallinn",
+  speakerurl = "http://cs.ioc.ee/~james/",
+  insturl    = "http://cs.ioc.ee/",
+  title      = "Termination, later",
+  abstract   = "It would be a great shame if dependently-typed programming (DTP) restricted us to only writing very clever programs that were a priori structurally recursive and hence obviously terminating. Put another way, it is a lot to ask of the programmer to provide the program and its termination proof in one go, programmers should also be supported in working step-by-step. I will show a technique that lowers the barrier of entry, from showing termination to only showing productivity up front, and then later providing the opportunity to show termination (convergence). I will show an example of a normaliser for STLC represented in Agda as a potentially non-terminating but nonetheless productive corecursive function targeting the coinductive delay monad.\n\n(Joint work with  Andreas Abel)",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+  Talk {
   date       = (UTCTime (fromGregorian 2014 12 17)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Conor McBride",
