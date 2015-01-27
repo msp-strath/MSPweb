@@ -17,7 +17,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   speakerurl = "http://www.cs.ioc.ee/~tarmo/",
   insturl    = "http://cs.ioc.ee/",
   title      = "Runners for your computations",
-  abstract   = "What structure is required of a set so that computations in a given notion of computation can be run statefully this with set as the state space? Some answers: To be able to serve stateful computations, a set must carry the structure of a lens; for running interactive I/O computations statefully, a \"responder-listener\" structure is necessary etc. I will observe that, in general, to be a runner of computations for an algebraic theory (defined as a set equipped with a monad morphism between the corresponding monad and the state monad for this set) is the same as to be a comodel of this theory, ie a coalgebra of the corresponding comonad. I will work out a number of instances. I will also compare runners to handlers."
+  abstract   = "What structure is required of a set so that computations in a given notion of computation can be run statefully this with set as the state space? Some answers: To be able to serve stateful computations, a set must carry the structure of a lens; for running interactive I/O computations statefully, a \"responder-listener\" structure is necessary etc. I will observe that, in general, to be a runner of computations for an algebraic theory (defined as a set equipped with a monad morphism between the corresponding monad and the state monad for this set) is the same as to be a comodel of this theory, ie a coalgebra of the corresponding comonad. I will work out a number of instances. I will also compare runners to handlers.",
   location   = "LT1415",
   material   = [] }
  ,
