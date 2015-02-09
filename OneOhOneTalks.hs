@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+  date       = (UTCTime (fromGregorian 2015 2 11)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "Conor McBride",
+  institute  = "MSP",
+  speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+  insturl    = "",
+  title      = "Totality versus Turing Completeness?",
+  abstract   = "I gave an <a href='http://www.dcs.gla.ac.uk/research/spls/Mar12/'>SPLS talk</a>, which was mostly propaganda, about why people should stop claiming that totality loses Turing completeness. There was some technical stuff, too, about representing a recursive definition as a construction in the free monad whose effect is calling out to an oracle for recursive calls: that tells you what it is to be recursive without prejudicing how to run it. I'm trying to write this up double-quick as a paper for the miraculously rubbery MPC deadline, with more explicit attention to the monad morphisms involved. So I'd be grateful if you would slap down the shtick and make me more morphic. The punchline is that the Bove-Capretta domain predicate construction is a (relative) monad morphism from the free monad with a recursion oracle to the (relative) monad of Dybjer-Setzer Induction-Recursion codes. But it's worth looking at other monad morphisms (especially to the Delay monad) along the way.",
+  location   = "LT1415",
+  material   = [] }
+ ,
+  
+  Talk {
   date       = (UTCTime (fromGregorian 2015 1 28)
                         (timeOfDayToTime (TimeOfDay 16 30 0))),
   speaker    = "Tarmo Uustalu",
@@ -21,6 +34,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   location   = "LT1415",
   material   = [] }
  ,
+  
   Talk {
   date       = (UTCTime (fromGregorian 2015 1 22)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
