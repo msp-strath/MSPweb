@@ -9,6 +9,18 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2015 02 18)
+                    (timeOfDayToTime (TimeOfDay 12 0 0))),
+    title = "SPLS @ Strathclyde",
+    url = "",
+    location = "Royal College Building, room RC512",
+    locationurl= "http://www.strath.ac.uk/maps/royalcollegebuilding/",
+    description = ""
+    }
+  ,
+
+  
   Talk {
   date       = (UTCTime (fromGregorian 2015 2 11)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
