@@ -9,6 +9,19 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  Talk {
+     date       = (UTCTime (fromGregorian 2015 03 11)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Peter Hancock",
+     institute  = "",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Collapsing",
+     abstract   = "<p>The topic comes from theory of infinitary proofs, and cut-elimination.  In essence it is about nicely-behaved maps from higher \"infinities\" to lower ones, as the infinitary proofs are er, infinite, and can be thought of as glorified transfinite iterators. What might nice behaviour mean?</p><p>You can think of it as how to fit an uncountable amount of beer into a bladder whose capacity is merely countable. (Or maybe even finite.)</p><p>The most ubiquitous form of infinity is the regular cardinal, iepassing from a container F to F + (mu F -> _), where mu is the W-type operation.  I'll \"explain\" regular collapsing as being all about diagonalisation.</p>",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   SpecialEvent {
     date  = (UTCTime (fromGregorian 2015 03 04)
                     (timeOfDayToTime (TimeOfDay 14 0 0))),
