@@ -96,7 +96,13 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
 -- a text file
 
 -- Extra material, such as slides, source code, ...
-type Material = (FilePath, String) -- ^ path and description
+data Material = Link { address :: String,
+                       linkDescription :: String }
+              | PDF  { slideName :: FilePath }
+              | Whiteboard { dirName :: FilePath }
+              | File { path :: FilePath,
+                       fileDescription :: String }
+  deriving (Show, Read, Eq)
 
 data Talk = Talk {
                    date :: UTCTime,
@@ -242,9 +248,18 @@ generateHTML ts out = do
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ place ++ ": " ++ title ++ (bracket person)
+                  pMat (Link url  desc) = createLink url desc ++ "</li>"
+                  pMat (PDF file) = createLink ("101/slides/" ++ file) "Slides"
+                  pMat (File file desc) = createLink ("101/" ++ file) desc
+                  pMat (Whiteboard dir) = createLink ("101/wb" ++ dir) "Whiteboard photos"
+                  mat = if null material then ""
+                          else "\n\n<b>Material</b><ul>" ++
+                           (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
+                                      material) ++ "</ul>"
               in 
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
-                          "    <dd>" ++ (nl2br abstract) ++ "</dd>"]
+                          "    <dd>" ++ (nl2br abstract)
+                                     ++ (nl2br mat) ++ "</dd>"]
           processEntry (i,(SpecialEvent date title url location locationurl description))
             = let time = formatTime defaultTimeLocale "%Y-%m-%d" date
                   dt = time ++ ": " ++ (createLink url title)
