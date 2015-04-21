@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 04 22)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Guillaume Allais",
+     institute  = "MSP",
+     speakerurl = "http://gallais.org",
+     insturl    = "",
+     title      = "Patterns to avoid: (dependent) stringly-typed programming",
+     abstract   = "Type : Set\nType = String -> Bool",
+     location   = "LT1310",
+     material   = [Link "https://github.com/gallais/STRINaGda" "Github repository"] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 03 11)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Peter Hancock",
