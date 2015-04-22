@@ -124,6 +124,16 @@ data Talk = Talk {
                            locationurl :: String,
                            description :: String
                          }
+          | DepartmentalSeminar {
+                                  date :: UTCTime,
+                                  speaker :: String,
+                                  institute :: String,
+                                  speakerurl :: String,
+                                  insturl :: String,
+                                  title :: String,
+                                  abstract :: String,
+                                  location :: String
+                                }
   deriving (Show, Read, Eq)
 
 
@@ -155,6 +165,19 @@ generateRSS ts out = do
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
                         "  </item>"]
+          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
+            = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar " ++ ": " ++ speaker ++ bracket inst 
+                  abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
+                  desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
+                                  "<h2>" ++ title ++ "</h2>",
+                                  abstr, 
+                                  "<b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
+              in
+               unlines ["  <item>", 
+                        "   <title>" ++ rsstitle ++ "</title>",
+                        "   <description><![CDATA[" ++ desc ++ "]]></description>",
+                        "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
+                        "  </item>"]               
           processEntry (i,(SpecialEvent date title url location locationurl description)) 
             = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title 
                   abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
@@ -181,48 +204,37 @@ generateICS ts out = do
                         "X-WR-CALDESC: MSP101 seminar series"]
       footer = unlines ["END:VCALENDAR"]
   writeFile out (header ++ content ++ footer)
-    where processEntry now (i,(Talk date speaker inst speakerurl insturl title abstract location material)) 
-            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst),
-                                  "Title: " ++ title ++ "\n",
-                                  abstract]
+    where gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
+            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
-              in 
-                  unlines ["BEGIN:VEVENT",
-                           "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
-                           "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date), 
-                           "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
-                           "LOCATION:" ++ location,
-                           wordwrap 73 "\n  " $ "SUMMARY:" ++ title,
-                           wordwrap 73 "\n  " $ "DESCRIPTION:" ++ desc,
-                           "UID:" ++ (show i),
-                           "END:VEVENT"]
-                    where escape :: String -> String
-                          escape [] = []
-                          escape ('\\':xs) = "\\\\" ++ (escape xs)
-                          escape ('\n':xs) = "\\n" ++ (escape xs)
-                          escape (';':' ':xs) = "\\; " ++ (escape xs)
-                          escape (',':' ':xs) = "\\, " ++ (escape xs)
-                          escape (x:xs) = x:(escape xs)
-          processEntry now (i,(SpecialEvent date title url location locationurl description))
+              in (desc, end, date, location, title, "")
+          gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location) 
+            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
+                  end = addUTCTime (60*60::NominalDiffTime) date
+              in (desc, end, date, location, title, "Departmental seminar: ")
+          gatherData (SpecialEvent date title url location locationurl description)
             = let desc = escape $ html2text $ description
                   end = addUTCTime (60*60::NominalDiffTime) date
+              in (desc, end, date, location, title, "Event: ")
+          escape :: String -> String
+          escape [] = []
+          escape ('\\':xs) = "\\\\" ++ (escape xs)
+          escape ('\n':xs) = "\\n" ++ (escape xs)
+          escape (';':' ':xs) = "\\; " ++ (escape xs)
+          escape (',':' ':xs) = "\\, " ++ (escape xs)
+          escape (x:xs) = x:(escape xs)          
+          processEntry now (i,x)
+            = let (desc, end, date, location, title, kindEvent) = gatherData x
               in 
                   unlines ["BEGIN:VEVENT",
                            "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
                            "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date), 
                            "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
                            "LOCATION:" ++ location,
-                           wordwrap 73 "\n  " $ "SUMMARY: Event: " ++ title,
+                           wordwrap 73 "\n  " $ "SUMMARY:" ++ kindEvent ++ title,
                            wordwrap 73 "\n  " $ "DESCRIPTION:" ++ desc,
                            "UID:" ++ (show i),
                            "END:VEVENT"]
-                    where escape :: String -> String
-                          escape [] = []
-                          escape ('\\':xs) = "\\\\" ++ (escape xs)
-                          escape ('\n':xs) = "\\n" ++ (escape xs)
-                          escape (';':' ':xs) = "\\; " ++ (escape xs)
-                          escape (',':' ':xs) = "\\, " ++ (escape xs)
-                          escape (x:xs) = x:(escape xs)          
 
 generateHTML :: [(Int,Talk)]
             -> FilePath -- ^ Output path
@@ -260,6 +272,15 @@ generateHTML ts out = do
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
                           "    <dd>" ++ (nl2br abstract)
                                      ++ (nl2br mat) ++ "</dd>"]
+          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)) 
+            = let time = formatTime defaultTimeLocale "%Y-%m-%d, %H:%M" date
+                  place = bracket location
+                  person = if null inst then (createLink speakerurl speaker)
+                                        else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
+                  dt = time ++ " " ++ (createLink "https://personal.cis.strath.ac.uk/clemens.kupke/CISeminar.html" "Departmental seminar") ++ " " ++ place ++ ": " ++ title ++ (bracket person)
+              in 
+                 unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
+                          "    <dd>" ++ (nl2br abstract) ++ "</dd>"]                 
           processEntry (i,(SpecialEvent date title url location locationurl description))
             = let time = formatTime defaultTimeLocale "%Y-%m-%d" date
                   dt = time ++ ": " ++ (createLink url title)
