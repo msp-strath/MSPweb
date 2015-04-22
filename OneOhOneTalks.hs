@@ -9,6 +9,18 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2015 04 29)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Uli Kraehmer",
+     institute  = "University of Glasgow",
+     speakerurl = "http://www.maths.gla.ac.uk/~ukraehmer/",
+     insturl    = "http://www.maths.gla.ac.uk/",
+     title      = "Cyclic homology from mixed distributive laws",
+     abstract   = "In pure mathematics, cyclic homology is an invariant of associative algebras that is motivated by algebra, topology and even mathematicial physics. However, when studied from an abstract point of view it turns out to be an invariant of a pair of a monad and a comonad that are related by a mixed distributive law, and I speculate that this could lead to some potential applications in computer science.\n\n(based on joint work with Niels Kowalzig and Paul Slevin)",
+     location   = "LT1415" }
+  ,
+  
   Talk {
      date       = (UTCTime (fromGregorian 2015 04 22)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
