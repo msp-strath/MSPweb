@@ -9,6 +9,19 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+   Talk {
+     date       = (UTCTime (fromGregorian 2015 04 29)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "An Introduction to Differential Privacy",
+     abstract   = "Let's say you have a database of people's private information. For SCIENCE, or some other reason, you want to let third parties query your data to learn aggregate information about the people described in the database. However, you have a duty to the people whose information your database contains not to reveal any of their individual personal information. How do you determine which queries you will let third parties execute, and those you will not?\n\n\"Differential Privacy\" defines a semantic condition on probabilistic queries that identifies queries that are safe to execute, up to some \"privacy budget\".\n\nI'll present the definition of differential privacy, talk a bit about why it is better than some 'naive' alternatives (e.g., anonymisation), and also describe how the definition can be seen as an instance of relational parametricity.\n\nA good place to read about the definition of differential privacy is the book \"The Algorithmic Foundations of Differential Privacy\" by Cynthia Dwork and Aaron Roth.",
+     location   = "LT1310",
+     material   = [Link "http://www.cis.upenn.edu/~aaroth/Papers/privacybook.pdf " "<em>The Algorithmic Foundations of Differential Privacy</em> by Cynthia Dwork and Aaron Roth"] }
+  ,
+
   DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2015 03 20)
                            (timeOfDayToTime (TimeOfDay 15 0 0))),
