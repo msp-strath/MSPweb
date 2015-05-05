@@ -9,6 +9,19 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2015 05 08)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Svante Linusson",
+     institute  = "KTH, Stockholm",
+     speakerurl = "https://people.kth.se/~linusson/",
+     insturl    = "https://www.kth.se/en/sci/institutioner/math",
+     title      = "The probability of the Alabama paradox",
+     abstract   = "There exists various possible methods to distribute seats proportionally between states (or parties) in a parliament. Hamilton's method (also known as the method of largest reminder) was abandoned in the USA because of some drawbacks, in particular the possibility of the Alabama paradox, but it is still in use in many other countries.\n\nIn recent work (joint with Svante Janson) we give, under certain assumptions, a closed formula for the probability that the Alabama paradox occurs given the vector p_1,...,p_m of relative sizes of the states.\n\nFrom the theorem we deduce a number of consequences. For example it is shown that the expected number of states that will suffer from the Alabama paradox is asymptotically bounded above by 1/e. For random (uniformly distributed) relative sizes p_1,...,p_m the expected number of states to suffer from the Alabama paradox converges to slightly more than a third of this, or approximately 0.335/e=0.123, as m -> infinity.\n\n I will assume no prior knowledge of electoral mathematics, but begin by giving a brief background to various methods suggested and used for the distribution of seats proportionally in a parliament (it's all in the rounding).",
+     location   = "LT1415" }
+  ,
+
+      
    Talk {
      date       = (UTCTime (fromGregorian 2015 05 06)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
