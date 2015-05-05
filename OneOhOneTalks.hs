@@ -10,6 +10,20 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
    Talk {
+     date       = (UTCTime (fromGregorian 2015 05 06)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Jules Hedges",
+     institute  = "Queen Mary University of London",
+     speakerurl = "http://www.eecs.qmul.ac.uk/~julesh/",
+     insturl    = "http://theory.eecs.qmul.ac.uk/",
+     title      = "Game theory in string diagrams",
+     abstract   = "We define a category whose morphisms are 'games relative to a continuation', designed to allow games to be built recursively from simple components. The resulting category has interesting structure similar to (but weaker than) compact closed, and comes with an associated string diagram language.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+      
+   Talk {
      date       = (UTCTime (fromGregorian 2015 04 29)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Bob Atkey",
