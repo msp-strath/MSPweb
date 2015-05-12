@@ -9,6 +9,19 @@ import OneOhOne
 -- get to keep their old id numbers that are zipped in
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+   Talk {
+     date       = (UTCTime (fromGregorian 2015 05 13)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Federico Orsanigo",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Two-dimensional proof-relevant parametricity",
+     abstract   = "Relational parametricity is a fundamental concept within theoretical computer science and the foundations of programming languages, introduced by John Reynolds. His fundamental insight was that types can be interpreted not just as functors on the category of sets, but also as equality preserving functors on the category of relations. This gives rise to a model where polymorphic functions are uniform in a suitable sense; this can be used to establish e.g. representation independence, equivalences between programs, or deriving useful theorems about programs from their type alone.\n\n The relations Reynolds considered were proof-irrelevant, which from a type theoretic perspective is a little limited. As a result, one might like to extend his work to deal with proof-relevant, i.e. set-valued relations. However naive attempts to do this fail: the fundamental property of equality preservation cannot be established. Our insight is that just as one uses parametricity to restrict definable elements of a type, one can use parametricity of proofs to ensure equality preservation. The idea of parametricity for proofs can be formalised using the idea of 2-dimensional logical relations. Interestingly, these 2-dimensional relations have clear higher dimensional analogues where (n+1)-relations are fibered over a n-cube of n-relations. Thus the story of proof relevant logical relations quickly expands into one of higher dimensional structures similar to the cubical sets which arises in Homotopy Type Theory. Of course, there are also connections to Bernardy and Moulin's work on internal parametricity.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2015 05 08)
                            (timeOfDayToTime (TimeOfDay 15 0 0))),
@@ -21,7 +34,6 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1415" }
   ,
 
-      
    Talk {
      date       = (UTCTime (fromGregorian 2015 05 06)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
@@ -34,7 +46,6 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
-
       
    Talk {
      date       = (UTCTime (fromGregorian 2015 04 29)
