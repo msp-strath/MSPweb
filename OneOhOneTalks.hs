@@ -10,6 +10,19 @@ import OneOhOne
 
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
    Talk {
+     date       = (UTCTime (fromGregorian 2015 05 26)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Paul Levy",
+     institute  = "Birmingham",
+     speakerurl = "http://www.cs.bham.ac.uk/~pbl/",
+     insturl    = "http://www.cs.bham.ac.uk/",
+     title      = "Final coalgebras from corecursive algebras",
+     abstract   = "We give a technique to construct a final coalgebra out of modal logic.  An element of the final coalgebra is a set of modal formulas.  The technique works for both the finite and the countable powerset functors.  Starting with a corecursive algebra, we coinductively obtain a suitable subalgebra.  We see - first with an example, and then in the general setting of modal logic on a dual adjunction - that modal theories form a corecursive algebra, so that this construction may be applied.\n\nWe generalize the framework to categories other than Set, and look at examples in Poset and in the opposite category of Set.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 05 13)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Federico Orsanigo",
