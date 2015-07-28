@@ -16,8 +16,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "",
      insturl    = "",
-     title      = "Generalized cellular automata as algebras of a comonad",
-     abstract   = "",
+     title      = "Comonadic Cellular Automata II",
+     abstract   = "This is a sequel to my last 101 where I spoke about describing cellular automata as algebras of a comonad on Set. I'll describe how we can make sense of \"generalised cellular automata\" (probabilistic/non-deterministic/quantum, for example) as comonads on other categories via distributive laws of monads and comonads.",
      location   = "LT1310",
      material   = [] }
   ,
