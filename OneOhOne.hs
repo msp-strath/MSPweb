@@ -146,6 +146,7 @@ generateRSS ts out = do
       header = unlines ["<?xml version='1.0' encoding='ISO-8859-1'?>",
                         "<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>",
                         " <channel>",
+                        "  <atom:link href='http://msp.cis.strath.ac.uk/msp101.rss' rel='self' type='application/rss+xml' />",
                         "  <title>MSP101</title>",
                         "  <link>http://msp.cis.strath.ac.uk/msp101.html</link>",
                         "  <description>MSP101 is an ongoing series of informal talks given on Wednesday mornings by visiting academics or members of the MSP group.</description>",
