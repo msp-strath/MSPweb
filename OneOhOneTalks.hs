@@ -105,7 +105,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
                            (timeOfDayToTime (TimeOfDay 15 0 0))),
      speaker    = "Chris Heunen",
      institute  = "Oxford",
-     speakerurl = "www.cs.ox.ac.uk/people/chris.heunen/",
+     speakerurl = "http://www.cs.ox.ac.uk/people/chris.heunen/",
      insturl    = "http://www.cs.ox.ac.uk/",
      title      = "Approximating transition systems",
      abstract   = "Classical computation, invertible computation, probabilistic computation, and quantum computation, form increasingly more sophisticated labelled transition systems. How can we approximate a transition system by less sophisticated ones? Considering all ways to get probabilistic information out of a quantum system leads to domain-theoretic ideas, that also apply in the accompanying Boolean logic. I will survey to what extent these domains characterise the system, leading with examples from quantum theory, in a way that is accessible to a broad audience of computer scientists, mathematicians, and logicians.",
@@ -154,7 +154,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
     date  = (UTCTime (fromGregorian 2015 03 04)
                     (timeOfDayToTime (TimeOfDay 14 0 0))),
     title = "A HoTT-Date with Thorsten Altenkirch",
-    url = "hott-afternoon/",
+    url = "http://msp.cis.strath.ac.uk/hott-afternoon/",
     location = "LT1415",
     locationurl= "",
     description = ""
