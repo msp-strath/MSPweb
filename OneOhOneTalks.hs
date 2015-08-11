@@ -8,6 +8,7 @@ import OneOhOne
 -- The use of reverse then makes sure that the old entries
 -- get to keep their old id numbers that are zipped in
 
+talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
    Talk {
      date       = (UTCTime (fromGregorian 2015 08 13)

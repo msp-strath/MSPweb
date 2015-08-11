@@ -2,13 +2,12 @@ module OneOhOne where
 
 import System.Locale
 import Data.Time -- (UTCTime(..), showGregorian)
-import Data.Time.Format 
 
-import System.FilePath 
 
 import Data.List
 import Data.Ord
 import Control.Arrow
+import Control.Monad
 
 import Data.Array((!))
 import Text.Regex.PCRE -- cabal install regex-pcre
@@ -243,7 +242,12 @@ generateHTML :: [(Int,Talk)]
 generateHTML ts out = do
   now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
   let (previousTalks, upcomingTalks) = sortBy (flip $ comparing $ date . snd) *** sortBy (comparing $ date . snd) $ partition (\(i,x) -> date x < now) ts
-      upcoming = if null upcomingTalks then "" else unlines ["<h2>Upcoming talks</h2>",
+  -- Some talk statistics for stdout
+  when (not $ null upcomingTalks) $ putStrLn "\n==============\nUpcoming talks\n=============="
+  mapM putStrLn (map (\ x -> show (date x) ++ ": " ++ (title x) ++ (bracket $ (case x of SpecialEvent{} -> "" ; _ -> speaker x))) $ map snd upcomingTalks)
+  putStrLn $ "\n(" ++ (show $ length previousTalks) ++ " previous talks.)\n"
+
+  let upcoming = if null upcomingTalks then "" else unlines ["<h2>Upcoming talks</h2>",
                                                              "<dl>", concatMap processEntry upcomingTalks, "</dl>"]
 
       previous = if null previousTalks then "" else unlines ["<h2>List of previous talks</h2>",
@@ -261,7 +265,7 @@ generateHTML ts out = do
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ place ++ ": " ++ title ++ (bracket person)
-                  pMat (Link url  desc) = createLink url desc ++ "</li>"
+                  pMat (Link url desc) = createLink url desc ++ "</li>"
                   pMat (PDF file) = createLink ("101/slides/" ++ file) "Slides"
                   pMat (File file desc) = createLink ("101/" ++ file) desc
                   pMat (Whiteboard dir) = createLink ("101/wb" ++ dir) "Whiteboard photos"
