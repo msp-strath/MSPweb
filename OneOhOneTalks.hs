@@ -20,7 +20,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "The Polymorphic Blame Calculus and Parametricity",
      abstract   = "The Polymorphic Blame Calculus (PBC) of Ahmed et al. (2011) combines polymorphism, as in System F, with type dynamic and runtime casts, as in the Blame Calculus. The PBC is carefully designed to ensure relational parametricity, that is, to ensure that type abstractions do not reveal their abstracted types. The operational semantics of PBC uses runtime sealing and syntactic barriers to enforce parametricity. However, it is an open question as to whether these mechanisms actually guarantee parametricity for the PBC. Furthermore, there is some question regarding what parametricity means in the context of the PBC, as we have examples that are morally parametric but not technically so. This talk will review the design of the PBC with respect to ensuring parametricity and hopefully start a discussion regarding what parametricity should mean for the PBC.",
      location   = "LT1415",
-     material   = [] }
+     material   = [PDF "2015-08-13_siek.pdf"] }
   ,
 
   Talk {
