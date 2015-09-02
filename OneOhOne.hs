@@ -268,9 +268,11 @@ generateHTML ts out = do
                   pMat (Link url desc) = createLink url desc ++ "</li>"
                   pMat (PDF file) = createLink ("101/slides/" ++ file) "Slides"
                   pMat (File file desc) = createLink ("101/" ++ file) desc
-                  pMat (Whiteboard dir) = createLink ("101/wb" ++ dir) "Whiteboard photos"
+                  pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
                   mat = if null material then ""
-                          else "\n\n<b>Material</b><ul>" ++
+                          else
+                           (if null abstract then "" else "\n\n") ++
+                           "<b>Material</b><ul>" ++
                            (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
                                       material) ++ "</ul>"
               in 

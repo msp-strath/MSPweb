@@ -20,7 +20,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "Concurrent games",
      abstract   = "",
      location   = "LT1310",
-     material   = [] }
+     material   = [Whiteboard "2015-09-02_Ross"] }
   ,
 
 
