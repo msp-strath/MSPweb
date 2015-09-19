@@ -11,6 +11,20 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 09 16)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Giovanni Ciná",
+     institute  = "Amsterdam",
+     speakerurl = "https://sites.google.com/site/homepagegcina/",
+     insturl    = "http://www.illc.uva.nl/",
+     title      = "Contextuality, path logic and a modal logic for Social Choice Theory",
+     abstract   = "Social Choice functions are procedures used to aggregate the preferences of individuals into a collective decision. We outline two recent abstract approaches to SCFs: a recent sheaf treatment of Arrow's Theorem by Abramsky and a modal logic studied by Ulle Endriss and myself. We show how to relate the categorical modelling of Social Choice problems to said work in Modal Logic. This insight prompts a number of research questions, from the relevance of sheaf-like condition to the modelling of properties of SCFs on varying electorates.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 09 2)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Ross Duncan",
