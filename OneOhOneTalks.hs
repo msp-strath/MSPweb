@@ -11,6 +11,78 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 10 28)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Ross Duncan",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/ross.duncan/",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2015 10 21)
+                    (timeOfDayToTime (TimeOfDay 12 30 0))),
+    title = "SPLS",
+    url = "http://simonjf.com/spls-oct2015/",
+    location = "Edinburgh",
+    locationurl= "",
+    description = ""
+    }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2015 10 14)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Guillaume Allais",
+     institute  = "MSP",
+     speakerurl = "http://gallais.org",
+     insturl    = "",
+     title      = "Type and Scope Preserving Semantics",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2015 10 07)
+                    (timeOfDayToTime (TimeOfDay 12 00 0))),
+    title = "STP",
+    url = "http://staff.computing.dundee.ac.uk/christopherwarburton/stp/2015/10/",
+    location = "Dundee",
+    locationurl= "",
+    description = ""
+    }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2015 09 30)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "ICFP trip report",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  SpecialEvent {
+    date  = (UTCTime (fromGregorian 2015 09 23)
+                    (timeOfDayToTime (TimeOfDay 11 0 0))),
+    title = "MSP101 Planning session",
+    url = "",
+    location = "LT1310",
+    locationurl= "",
+    description = ""
+    }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 09 16)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Giovanni Ciná",
