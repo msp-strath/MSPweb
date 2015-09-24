@@ -11,6 +11,19 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 09 25)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Pierre Lescanne",
+     institute  = "ENS Lyon",
+     speakerurl = "http://perso.ens-lyon.fr/pierre.lescanne/",
+     insturl    = "http://www.ens-lyon.fr/LIP/PLUME/",
+     title      = "Coinduction, Equilibrium and Rationality of Escalation",
+     abstract   = "Escalation is the behavior of players who play forever in the same game.  Such a situation is a typical field for application of coinduction which is the tool conceived for reasoning in infinite mathematical structures. In particular, we use coinduction to study formally the game called --dollar auction--, which is considered as the paradigm of escalation.  Unlike what is admitted since 1971, we show that, provided one assumes that the other agent will always stop, bidding is rational, because it results in a subgame perfect equilibrium.  We show that this is not the only rational strategy profile (the only subgame perfect equilibrium).  Indeed if an agent stops and will stop at every step, whereas the other agent keeps bidding, we claim that he is rational as well because this corresponds to another subgame perfect equilibrium.  In the infinite dollar auction game the behavior in which both agents stop at each step is not a Nash equilibrium, hence is not a subgame perfect equilibrium, hence is not rational.  Fortunately, the notion of rationality based on coinduction fits with common sense and experience.  Finally the possibility of a rational escalation in an arbitrary game can be expressed as a predicate on games and the rationality of escalation in the dollar auction game can be proved as a theorem which we have verified in the proof assistant COQ.  In this talk we will recall the principles of infinite extensive games and use them to introduce coinduction and equilibria (Nash equilibrium, subgame perfect equilibrium).  We will show how one can prove that the two strategy profiles presented above are equilibria and how this leads to a \"rational\" escalation in the dollar auction.  We will show that escalation may even happen in much simpler game named 0,1-game.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 10 28)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Ross Duncan",
