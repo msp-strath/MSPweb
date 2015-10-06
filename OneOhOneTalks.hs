@@ -11,6 +11,19 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 10 06)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Alessandra Palmigiano",
+     institute  = "TU Delft",
+     speakerurl = "http://www.appliedlogictudelft.nl/alessandra-palmigiano/",
+     insturl    = "http://www.appliedlogictudelft.nl/",
+     title      = "Proof-theoretic semantics for dynamic logics",
+     abstract   = "Research in the proof theory of dynamic logics has recently gained momentum. However, features which are essential to these logics prevent standard proof-theoretic methodologies to apply straightforwardly. In this talk, I will discuss the main properties proof systems should enjoy in order to serve as suitable environments for an inferential theory of meaning (proof-theoretic semantics). Then, I'll identify the main challenges to the inferential semantics research agenda posed by the very features of dynamic logics which make them so appealing and useful to applications. Finally, I'll illustrate a methodology generating multi-type display calculi, which has been successful on interesting case studies (dynamic epistemic logic, propositional dynamic logic, monotone modal logic).\n\nReferences\n\n1. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, A Proof-Theoretic Semantic Analysis of Dynamic Epistemic Logic, Journal of Logic and Computation, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu063.\n\n2. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, Multi-type Display Calculus for Dynamic Epistemic Logic, Journal of Logic and Computation, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu068.\n\n3. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, Multi-type Display Calculus for Propositional Dynamic Logic, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu064.\n\n4. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, Multi-type Sequent Calculi, Proc. Trends in Logic XIII, A. Indrzejczak,  J. Kaczmarek, M. Zawidski eds, p 81-93, 2014.\n\n5. G. Greco, A. Kurz, A. Palmigiano, Dynamic Epistemic Logic Displayed,  Proc.  Fourth International Workshop on Logic, Rationality and Interaction (LORI 2013) Eds: Huaxin Huang, Davide Grossi, Olivier Roy eds, 2013.",
+     location   = "LT1415",
+     material   = [PDF "2015-10-06_palmigiano.pdf"] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 09 25)
                            (timeOfDayToTime (TimeOfDay 16 0 0))),
      speaker    = "Pierre Lescanne",
