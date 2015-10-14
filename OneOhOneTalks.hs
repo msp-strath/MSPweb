@@ -68,7 +68,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://gallais.org",
      insturl    = "",
      title      = "Type and Scope Preserving Semantics",
-     abstract   = "",
+     abstract   = "We introduce a notion of type and scope preserving semantics  generalising Goguen and McKinna's \"Candidates for Substitution\" approach to defining one traversal generic enough to be instantiated to renaming first and then substitution. Its careful distinction of environment and model values as well as its variation on a structure typical of a Kripke semantics make it capable of expressing renaming and substitution but also various forms of Normalisation by Evaluation as well as, perhaps more surprisingly, monadic computations such as a printing function.\n\nWe then demonstrate that expressing these algorithms in a common framework yields immediate benefits: we can deploy some logical relations generically over these instances and obtain for instance the fusion lemmas for renaming, substitution and normalisation by evaluation as simple corollaries of the appropriate fundamental lemma. All of this work has been formalised in Agda.",
      location   = "LT1310",
      material   = [] }
   ,
