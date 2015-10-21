@@ -11,6 +11,19 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2015 10 22)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Viktor Winschel",
+     institute  = "ETH Zurich",
+     speakerurl = "http://www.vikwin.de/",
+     insturl    = "http://www.irme.ethz.ch/",
+     title      = "Semantics for Social Systems where Theory about the System Changes the System",
+     abstract   = "In societies the notion of a law is not given by nature. Instead social dynamics are driven by the theories the citizens have about the dynamics of the social system. Obviously self-referential mathematical structures, developed in computer science, are candidates to be applied in social sciences for this foundational issue. We will see a prototypical game theoretical problem where several computer scientific tools can help to discuss these structures. It is a long standing problem in economics and of human kind and their scarce recourses: \"should we go to a bar that is always so overcrowded\"?",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2015 10 06)
                            (timeOfDayToTime (TimeOfDay 15 0 0))),
      speaker    = "Alessandra Palmigiano",
