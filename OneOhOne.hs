@@ -86,9 +86,28 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
                      ("<p>(.*?)</p>", "\\1\n\n"),          -- paragraph breaks
                      ("<a\\s+href\\s*=\\s*[\"'](.*?)[\"']>(.*?)</a>", "\\2 (\\1)"), -- links
                      ("<ul>", "\n"),                       -- lists
-                     ("</ul>", ""),                     
-                     ("<li>(.*?)</li>", "* \\1\n")   
-                     ]
+                     ("</ul>", ""),
+                     ("<li>(.*?)</li>", "* \\1\n"),
+                     ("&nbsp;", " "),                 -- escape characters
+                     ("&ndash;", "--"),
+                     ("&mdash;", "--"),                     
+                     ("&sup2;", "^2"),
+                     ("&sup3;", "^3"),                     
+                     ("&frac12;", "1/2"),
+                     ("&ouml;", "ö"),
+                     ("&auml;", "ä"),
+                     ("&aring;", "å"),                     
+                     ("&lt;", "<"),
+                     ("&gt;", ">"),
+                     ("&amp;", "&"),
+                     ("&not;", "not"),
+                     ("&rarr;", "->"),
+                     ("&larr;", "<-"),
+                     ("&harr;", "<->"),                     
+                     ("&rArr;", "=>"),
+                     ("&lArr;", "<="),
+                     ("&hArr;", "<=>")                  
+                     ]                     
 
 
 -- Generate web pages, calendars and a RSS feed for MSP 101 from data in 

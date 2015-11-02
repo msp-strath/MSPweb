@@ -17,8 +17,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   institute  = "MSP",
   speakerurl = "https://personal.cis.strath.ac.uk/clemens.kupke/",
   insturl    = "",
-  title      = "TBA",
-  abstract   = "",
+  title      = "The Power of Coalitions",
+  abstract   = "Due to popular demand I am going to give a brief introduction to Marc Pauly's Coalition Logic, a propositional modal logic that allows to reason about the power of coalitions in strategic games. I will provide motivation and basic definitions. Furthermore I am planning to discuss how the logic can be naturally viewed as a coalgebraic logic and what we gain from the coalgebraic perspective. Finally &mdash; if (preparation) time permits &mdash; I am going to say how the logic can be applied to the area of mechanism design.",
   location   = "LT1310",
   material   = [] }
  ,
