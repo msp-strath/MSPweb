@@ -11,6 +11,19 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
  Talk {
+  date       = (UTCTime (fromGregorian 2015 11 18)
+                        (timeOfDayToTime (TimeOfDay 11 0 0))),
+  speaker    = "Bram Westerbaan",
+  institute  = "Nijmegen",
+  speakerurl = "http://bram.westerbaan.name/home/",
+  insturl    = "http://www.ru.nl/icis/",
+  title      = "The categorical structure of von Neumann algebras",
+  abstract   = "I would like to speak about the categorical structure of the category of von Neumann algebras, with as morphisms normal, completely positive, unital linear maps.  For some years my colleagues and I have worked on identifying basic structures in this category, and while surprisingly many things do not exist or do not work in this category (it's not a topos or even an extensive category, there's no epi-mono factorisation system, there is no dagger, colimits &mdash; if they exist at all &mdash; are horrendous...), we did find some structure (the products behave reasonable in some sense, there is a 'quotient', and 'comprehension', and we have a universal property for the minimal Stinespring dilation, and a universal property for M_2&mdash;the qubit).  There is no deep category theory involved by any standards, and I promise I will spare you the functional analysis, so it should be a light talk.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+ Talk {
   date       = (UTCTime (fromGregorian 2015 11 11)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Clemens Kupke",
