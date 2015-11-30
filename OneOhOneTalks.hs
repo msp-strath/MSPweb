@@ -10,7 +10,20 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
- Talk {
+  Talk {
+     date       = (UTCTime (fromGregorian 2015 12 02)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Introduction to coherence spaces, and how to use them for dependent session types",
+     abstract   = "Coherence spaces are a simplification of Scott domains, introduced by Girard to give a semantics to the polymorphic lambda-calculus. While investigating the structure of coherence spaces, Girard noticed that the denotation of the function type in coherence spaces can be decomposed into two independent constructions: a linear (\"use-once\") function space, and a many-uses-into-one-use modality. And so Linear Logic was discovered.\n\nCoherence spaces are interesting because they model computation at a low level in terms of interchange of atomic 'tokens' of information. This makes them a useful tool for understanding several different computational phenomena.\n\nIn this talk, I'll show how coherence spaces naturally model session types, via Wadler's interpretation of Classical Linear Logic as a session-typed pi-calculus, and how that interpretation extends to an interpretation of a dependently typed version of session types.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
   date       = (UTCTime (fromGregorian 2015 11 18)
                         (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Bram Westerbaan",
