@@ -10,14 +10,92 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 02 25)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Conor McBride",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+     insturl    = "",
+     title      = "Work in Progress on Frank",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 02 18)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Clemens Kupke",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/clemens.kupke/",
+     insturl    = "",
+     title      = "Trip report CORCON visit to Canberra",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 02 11)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Fredrik Nordvall Forsberg",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
+     insturl    = "",
+     title      = "Introduction to (infinity, 1)-categories",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 02 04)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Neil Ghani",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/neil.ghani/",
+     insturl    = "",
+     title      = "On Economics",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 01 28)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Introduction to sheaves",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 01 21)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Guillaume Allais",
+     institute  = "MSP",
+     speakerurl = "http://gallais.org",
+     insturl    = "",
+     title      = "On Type Theory, Linear Logic and Quantum Whatever",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   SpecialEvent {
-    date  = (UTCTime (fromGregorian 2016 01 13)
-                    (timeOfDayToTime (TimeOfDay 13 40 0))),
-    title = "MSP101 Planning session",
-    url = "",
-    location = "LT1310",
-    locationurl= "",
-    description = ""
+     date  = (UTCTime (fromGregorian 2016 01 13)
+                      (timeOfDayToTime (TimeOfDay 13 40 0))),
+     title = "MSP101 Planning session",
+     url = "",
+     location = "LT1310",
+     locationurl= "",
+     description = ""
     }
   ,
 
