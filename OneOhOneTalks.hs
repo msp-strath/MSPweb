@@ -11,6 +11,32 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2016 01 26)
+                           (timeOfDayToTime (TimeOfDay 10 30 0))),
+     speaker    = "John Power",
+     institute  = "Bath",
+     speakerurl = "http://www.bath.ac.uk/comp-sci/contacts/academics/john_power/",
+     insturl    = "http://www.bath.ac.uk/comp-sci/",
+     title      = "Enriched Lawvere Theories",
+     abstract   = "In this talk, we consider extending Lawvere theories to allow enrichment in a base category such as CMonoid, Poset or Cat. In doing so, we see that we need to alter the formulation in a fundamental way, using the notion of cotensor, a kind of limit that is hidden in the usual accounts of ordinary category theory but is fundamental to enriched category theory. If time permits, we will briefly consider the specific issues that arise when one has two-dimensional structure in the enriching category, as exemplified by Poset and Cat.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 01 25)
+                           (timeOfDayToTime (TimeOfDay 10 30 0))),
+     speaker    = "John Power",
+     institute  = "Bath",
+     speakerurl = "http://www.bath.ac.uk/comp-sci/contacts/academics/john_power/",
+     insturl    = "http://www.bath.ac.uk/comp-sci/",
+     title      = "Lawvere Theories",
+     abstract   = "In 1963, Bill Lawvere characterised universal algebra in category theoretic terms. His formulation being category theoretic was not its central contribution: more fundamental was its presentation independence. Three years later, monads were proposed as another category theoretic formulation of universal algebra. Overall, the former are technically better but the relationship is particularly fruitful and the latter are more prominent, cf Betamax vs VHS. So we study Lawvere theories carefully in the setting of universal algebra and in relation to monads.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2016 02 25)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Conor McBride",
@@ -82,8 +108,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://gallais.org",
      insturl    = "",
-     title      = "On Type Theory, Linear Logic and Quantum Whatever",
-     abstract   = "",
+     title      = "Overview: A Type Theory for Probabilistic and Bayesian Reasoning",
+     abstract   = "The probabilistic calculus introduced in the eponymous paper by Robin Adams and Bart Jacobs is inspired by quantum theory by considering that conditional probabilities can be seen as side-effect-free measurements. A type-theoretic treatment of this semantic observation leads, once equipped with suitable computation rules, to the ability to do exact conditional inference.\n\nI will present the type theory and the accompanying computation rules proposed in the paper and discuss some of the interesting open questions I will be working on in the near future. ",
      location   = "LT1310",
      material   = [] }
   ,
