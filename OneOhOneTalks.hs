@@ -12,6 +12,19 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
      date       = (UTCTime (fromGregorian 2016 01 26)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Aleks Kissinger",
+     institute  = "Nijmegen",
+     speakerurl = "http://www.cs.ru.nl/A.Kissinger/",
+     insturl    = "http://www.ru.nl/ds/",
+     title      = "Rewriting modulo symmetric monoidal structure",
+     abstract   = "String diagrams give a powerful graphical syntax for morphisms in symmetric monoidal categories (SMCs). They find many applications in computer science and are becoming increasingly relevant in other fields such as physics and control theory.\n\nAn important role in many such approaches is played by equational theories of diagrams, which can be oriented and used as rewrite systems. In this talk, I'll lay the foundations for this form of rewriting by interpreting diagrams combinatorially as typed hypergraphs and establish the precise correspondence between diagram rewriting modulo the laws of SMCs on the one hand and double pushout (DPO) rewriting of hypergraphs, subject to a soundness condition called convexity, on the other. This result rests on a more general characterisation theorem in which we show that typed hypergraph DPO rewriting amounts to diagram rewriting modulo the laws of SMCs with a chosen special Frobenius structure.\n\nIf there's time, I'll also discuss some of the results we have in developing the rewrite theory of hypergraphs for SMCs, namely termination proofs via graph metrics and strongly convex critical pair analysis.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 01 26)
                            (timeOfDayToTime (TimeOfDay 10 30 0))),
      speaker    = "John Power",
      institute  = "Bath",
