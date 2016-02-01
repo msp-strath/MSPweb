@@ -95,8 +95,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "https://personal.cis.strath.ac.uk/neil.ghani/",
      insturl    = "",
-     title      = "On Economics",
-     abstract   = "",
+     title      = "Two Constructions on Games",
+     abstract   = "I've been working with Jules Hedges on a compositional model of game theory. After briefly reminding you of the model, I'll discuss where we are at &ndash; namely the definition of morphisms between games, and the treatment of choice and iteration of games. I'm hoping you will be able to shed some light on this murky area. There is a draft paper if anyone is interested.",
      location   = "LT1310",
      material   = [] }
   ,
