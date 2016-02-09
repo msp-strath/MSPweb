@@ -96,7 +96,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
      insturl    = "",
      title      = "Introduction to (infinity, 1)-categories",
-     abstract   = "",
+     abstract   = "Infinity-categories simultaneously generalise topological spaces and categories. Intuitively, a (weak) infinity-category should have objects, morphisms, 2-morphisms, 3-morphisms, ... and identity morphisms and composition which is suitably unital and associative up to a higher (invertible) morphism (the number 1 in (infinity, 1)-category means that k-morphisms for k &gt; 1 are invertible) . The trouble begins when one naively tries to make these coherence conditions precise; already 4-categories famously requires <a href='http://math.ucr.edu/home/baez/trimble/tetracategories.html'>51 pages to define explicitly</a>. Instead, one typically turns to certain \"models\" of infinity-categories that encode all this data implicitly, usually as some kind of simplicial object with additional properties. I will introduce two such models: quasicategories and complete Segal spaces. If time allows, I will also discuss hopes and dreams about internalising these notions in Type Theory, which should give a satisfactory treatment of category theory in Type Theory without assuming Uniqueness of Identity Proofs.",
      location   = "LT1310",
      material   = [] }
   ,
