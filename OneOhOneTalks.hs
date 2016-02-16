@@ -95,8 +95,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "https://personal.cis.strath.ac.uk/clemens.kupke/",
      insturl    = "",
-     title      = "Trip report CORCON visit to Canberra",
-     abstract   = "",
+     title      = "Coalgebraic Dynamic Logics",
+     abstract   = "I will present work in progress on a (co)algebraic framework that allows to uniformly study dynamic modal logics such as Propositional Dynamic Logic (PDL) and Game Logic (GL). Underlying our framework is the basic observation that the program/game constructs of PDL/GL arise from monad structure, and that the axioms of these logics correspond to compatibility requirements between the modalities and this monad structure. So far we have a general soundness and completeness result for PDL-like logics wrt T-coalgebras for a monad T. I will discuss our completeness theorem, its limitations and plans for extending our results. [For the latter we might require the help of koalas, wallabies and wombats.]",
      location   = "LT1310",
      material   = [] }
   ,
