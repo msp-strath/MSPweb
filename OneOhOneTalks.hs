@@ -32,7 +32,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      insturl    = "",
      title      = "Comprehensive Parametric Polymorphism",
      abstract   = "In this talk, we explore the fundamental category-theoretic structure needed to model relational parametricity (i.e., the fact that polymorphic programs preserve all relations) for the polymorphic lambda calculus (a.k.a. System F). Taken separately, the notions of categorical model of impredicative polymorphism and relational parametricity are well-known (lambda2-fibrations and reflexive graph categories, respectively). Perhaps surprisingly, simply combining these two structures results in a notion that only enjoys the expected properties in case the underlying category is well-pointed. This rules out many categories of interest (e.g. functor categories) in the semantics of programming languages.\n\nTo circumvent this restriction, we modify the definition of fibrational model of impredicative polymorphism by adding one further ingredient to the structure: comprehension in the sense of Lawvere. Our main result is that such comprehensive models, once further endowed with reflexive-graph-category structure, enjoy the expected consequences of parametricity. This is proved using a type-theoretic presentation of the category-theoretic structure, within which the desired consequences of parametricity are derived. Working in this type theory requires new techniques, since equality relations are not available, so that standard arguments that exploit equality need to be reworked.\n\nThis is joint work with Neil Ghani and Alex Simpson, and a dry run for a talk in Cambridge the week after.",
-     location   = "LT1415",
+     location   = "LT1310",
      material   = [] }
   ,
 
