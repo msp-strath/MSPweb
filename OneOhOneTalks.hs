@@ -11,6 +11,18 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2016 03 23)
+                           (timeOfDayToTime (TimeOfDay 16 00 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "A static analyser for concurrent Java",
+     abstract   = "ThreadSafe is a static analysis tool for finding bugs in concurrent Java code that has been used by companies across the world to analyse and find bugs in large mission industrial applications. I will talk about how ThreadSafe works, and our experiences in applying static analysis technology to the \"real world\".\n\nThreadSafe is available from <a href='http://www.contemplateltd.com/'>http://www.contemplateltd.com/</a>",
+     location   = "LT1415" }
+  ,
+  
+  DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2016 03 16)
                            (timeOfDayToTime (TimeOfDay 15 30 0))),
      speaker    = "Neil Ghani",
