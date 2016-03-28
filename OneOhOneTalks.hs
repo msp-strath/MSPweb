@@ -10,17 +10,18 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
-  SpecialEvent {
+  Talk {
      date  = (UTCTime (fromGregorian 2016 03 31)
                       (timeOfDayToTime (TimeOfDay 10 30 0))),
+     speaker    = "",
+     institute  = "",
+     speakerurl = "",
+     insturl    = "",
      title = "Presentations by candidates for the 'Coalgebraic Foundations of Semi-Structured Data' RA position",
-     url = "",
-     location = "LT1415",
-     locationurl= "",
-     description = ""
-    }
+     abstract   = "",
+     location   = "LT1415",
+     material   = [] }
   ,
-
 
   DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2016 03 23)
