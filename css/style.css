@@ -16,7 +16,7 @@ div.titlebar
       margin: 0 auto;
     }
 
-hgroup
+header
     { margin-top: 2em;
       display: block;
       text-align: center;
@@ -31,19 +31,19 @@ background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%
       border-radius: 1em;
       -moz-border-radius: 1em;
     }
-hgroup h1
+header h1
     { margin-bottom: 0.2em;
       margin-top: 0em;
       padding-top: 0.4em;
       font-size: 230%;
       text-shadow:    0pc 1px 1px #fff;
     }
-hgroup h2
+header h2
     { border: none;
       font-size: 110%;
       margin: 0em
     }
-hgroup a
+header a
     { text-decoration: none
     }
 
