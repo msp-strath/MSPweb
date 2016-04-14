@@ -10,6 +10,18 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2016 04 19)
+                           (timeOfDayToTime (TimeOfDay 16 00 0))),
+     speaker    = "Andreas Abel",
+     institute  = "Chalmers and Gothenburg University",
+     speakerurl = "http://www.cse.chalmers.se/~abela/",
+     insturl    = "http://www.chalmers.se/en/departments/cse/Pages/default.aspx",
+     title      = "Formal languages, coinductively formalized",
+     abstract   = "Formal languages and automata are taught to every computer science student. However, the student will most likely not see the beautiful coalgebraic foundations.\n\nIn this talk, I recapitulate how infinite trees can represent formal languages (sets of strings). I explain Agda's coinduction mechanism based on copatterns and demonstrate that it allows an elegant representation of the usual language constructions like union, concatenation, and Kleene star, with the help of Brzozowski derivatives. We will also investigate how to reason about equality of languages using bisimulation and coinductive proofs.",
+     location   = "LT1415" }
+  ,
+  
   SpecialEvent {
      date  = (UTCTime (fromGregorian 2016 04 14)
                       (timeOfDayToTime (TimeOfDay 10 30 0))),
@@ -47,7 +59,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   ,
   
   DepartmentalSeminar {
-     date       = (UTCTime (fromGregorian 2016 03 16)
+     date       = (UTCTime (fromGregorian 2016 05 25)
                            (timeOfDayToTime (TimeOfDay 15 30 0))),
      speaker    = "Neil Ghani",
      institute  = "MSP",
