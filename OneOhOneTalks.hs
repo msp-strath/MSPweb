@@ -10,6 +10,19 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 04 27)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Guillaume Allais",
+     institute  = "Radboud University Nijmegen",
+     speakerurl = "http://gallais.org",
+     insturl    = "",
+     title      = "Typing with Leftovers",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2016 04 19)
                            (timeOfDayToTime (TimeOfDay 16 00 0))),
