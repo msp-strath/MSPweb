@@ -1,7 +1,6 @@
 module OneOhOne where
 
-import System.Locale
-import Data.Time -- (UTCTime(..), showGregorian)
+import Data.Time
 
 
 import Data.List
@@ -29,13 +28,13 @@ bracket str = if null str then "" else " (" ++ str ++ ")"
 
 
 wordwrap maxlen div = (wrap_ 0) . words where
-	wrap_ _ [] = ""
-	wrap_ pos (w:ws)
-		-- at line start: put down the word no matter what
-		| pos == 0 = w ++ wrap_ (pos + lw) ws
-		| pos + lw + 1 > maxlen = div ++ wrap_ 0 (w:ws)
-		| otherwise = " " ++ w ++ wrap_ (pos + lw + 1) ws
-		where lw = length w
+        wrap_ _ [] = ""
+        wrap_ pos (w:ws)
+                -- at line start: put down the word no matter what
+                | pos == 0 = w ++ wrap_ (pos + lw) ws
+                | pos + lw + 1 > maxlen = div ++ wrap_ 0 (w:ws)
+                | otherwise = " " ++ w ++ wrap_ (pos + lw + 1) ws
+                where lw = length w
 
 -- Text.Regex.PCRE does not implement subRegex, so we copy
 -- the code from Text.Regex (which does not handle non-greedy matches)
