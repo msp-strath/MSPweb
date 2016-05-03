@@ -11,6 +11,20 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   Talk {
+     date       = (UTCTime (fromGregorian 2016 05 04)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Factorisation Systems and Algebra",
+     abstract   = "I'll show how to generalise some results from algebra (think groups, rings, R-modules etc.) to a categorical setting using factorisation systems and an appropriate notion of finiteness on the objects of a category.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
+  Talk {
      date       = (UTCTime (fromGregorian 2016 04 27)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Guillaume Allais",
