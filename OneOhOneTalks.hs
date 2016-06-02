@@ -10,6 +10,31 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+
+  SpecialEvent {
+      date  = (UTCTime (fromGregorian 2016 06 06)
+                      (timeOfDayToTime (TimeOfDay 09 00 0))),
+     title = "Quantum Physics and Logic 2016",
+     url = "http://qpl2016.cis.strath.ac.uk/",
+     location = "McCance building, Strathclyde",
+     locationurl= "http://www.strath.ac.uk/maps/mccancebuilding/",
+     description = ""
+    }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 06 01)
+                           (timeOfDayToTime (TimeOfDay 12 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Interacting Frobenius algebras",
+     abstract   = "Practice talk for QPL.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi (2014) have shown that, given a suitable distributive law, a pair of Hopf algebras forms two Frobenius algebras. Here we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise (BSZ 2014) by including non-trivial dynamics of the underlying object---the so-called phase group---and investigate the effects of finite dimensionality of the underlying model. We recover the system of Bonchi et al as a subtheory in the prime power dimensional case, but the more general theory does not arise from a distributive law.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
   Talk {
      date       = (UTCTime (fromGregorian 2016 05 04)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
