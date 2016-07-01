@@ -11,6 +11,32 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 07 01)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "A New Perspective On Observables in the Category of Relations",
+     abstract   = "Practice talk for Quantum Interactions.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 07 01)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Ross Duncan",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/ross.duncan/",
+     insturl    = "",
+     title      = "Interacting Frobenius Algebras are Hopf",
+     abstract   = "Practice talk for LICS.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi have shown that, given a suitable distribution law, a pair of Hopf algebras forms two Frobenius algebras. Coming from the perspective of quantum theory, we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise \\cite{Bonchi2014a} by including non-trivial dynamics of the underlying object -- the so-called phase group -- and investigate the effects of finite dimensionality of the underlying model, and recover the system of Bonchi et al as a subtheory in the prime power dimensional case. We show that the presence of a non-trivial phase group means that the theory cannot be formalised as a distributive law.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+  
   SpecialEvent {
       date  = (UTCTime (fromGregorian 2016 06 06)
                       (timeOfDayToTime (TimeOfDay 09 00 0))),
