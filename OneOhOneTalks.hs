@@ -20,7 +20,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "Information Effects for Understanding Type Systems",
      abstract   = "Or: how someone else found the maths to justify my dogma",
      location   = "LT1415",
-     material   = [] }
+     material   = [PDF "2016-08-24_cowderoy.pdf" $ Just "Philippa says: beware, slightly wordy slides!"] }
   ,
 
   
@@ -377,7 +377,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "Proof-theoretic semantics for dynamic logics",
      abstract   = "Research in the proof theory of dynamic logics has recently gained momentum. However, features which are essential to these logics prevent standard proof-theoretic methodologies to apply straightforwardly. In this talk, I will discuss the main properties proof systems should enjoy in order to serve as suitable environments for an inferential theory of meaning (proof-theoretic semantics). Then, I'll identify the main challenges to the inferential semantics research agenda posed by the very features of dynamic logics which make them so appealing and useful to applications. Finally, I'll illustrate a methodology generating multi-type display calculi, which has been successful on interesting case studies (dynamic epistemic logic, propositional dynamic logic, monotone modal logic).\n\nReferences\n\n1. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, A Proof-Theoretic Semantic Analysis of Dynamic Epistemic Logic, Journal of Logic and Computation, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu063.\n\n2. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, Multi-type Display Calculus for Dynamic Epistemic Logic, Journal of Logic and Computation, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu068.\n\n3. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, Multi-type Display Calculus for Propositional Dynamic Logic, Special issue on Substructural logic and information dynamics (2014), DOI:10.1093/logcom/exu064.\n\n4. S. Frittella, G. Greco, A. Kurz, A. Palmigiano, V. Sikimić, Multi-type Sequent Calculi, Proc. Trends in Logic XIII, A. Indrzejczak,  J. Kaczmarek, M. Zawidski eds, p 81-93, 2014.\n\n5. G. Greco, A. Kurz, A. Palmigiano, Dynamic Epistemic Logic Displayed,  Proc.  Fourth International Workshop on Logic, Rationality and Interaction (LORI 2013) Eds: Huaxin Huang, Davide Grossi, Olivier Roy eds, 2013.",
      location   = "LT1415",
-     material   = [PDF "2015-10-06_palmigiano.pdf"] }
+     material   = [PDF "2015-10-06_palmigiano.pdf" Nothing] }
   ,
 
   Talk {
@@ -427,7 +427,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "Type and Scope Preserving Semantics",
      abstract   = "We introduce a notion of type and scope preserving semantics  generalising Goguen and McKinna's \"Candidates for Substitution\" approach to defining one traversal generic enough to be instantiated to renaming first and then substitution. Its careful distinction of environment and model values as well as its variation on a structure typical of a Kripke semantics make it capable of expressing renaming and substitution but also various forms of Normalisation by Evaluation as well as, perhaps more surprisingly, monadic computations such as a printing function.\n\nWe then demonstrate that expressing these algorithms in a common framework yields immediate benefits: we can deploy some logical relations generically over these instances and obtain for instance the fusion lemmas for renaming, substitution and normalisation by evaluation as simple corollaries of the appropriate fundamental lemma. All of this work has been formalised in Agda.",
      location   = "LT1310",
-     material   = [PDF "2015-10-21_gallais.pdf",
+     material   = [PDF "2015-10-21_gallais.pdf" Nothing,
                    Link "https://github.com/gallais/type-scope-semantics" "Github repository with paper and sources"] }
   ,
 
@@ -504,7 +504,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "The Polymorphic Blame Calculus and Parametricity",
      abstract   = "The Polymorphic Blame Calculus (PBC) of Ahmed et al. (2011) combines polymorphism, as in System F, with type dynamic and runtime casts, as in the Blame Calculus. The PBC is carefully designed to ensure relational parametricity, that is, to ensure that type abstractions do not reveal their abstracted types. The operational semantics of PBC uses runtime sealing and syntactic barriers to enforce parametricity. However, it is an open question as to whether these mechanisms actually guarantee parametricity for the PBC. Furthermore, there is some question regarding what parametricity means in the context of the PBC, as we have examples that are morally parametric but not technically so. This talk will review the design of the PBC with respect to ensuring parametricity and hopefully start a discussion regarding what parametricity should mean for the PBC.",
      location   = "LT1415",
-     material   = [PDF "2015-08-13_siek.pdf"] }
+     material   = [PDF "2015-08-13_siek.pdf" Nothing] }
   ,
 
   Talk {

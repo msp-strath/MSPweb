@@ -116,7 +116,8 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
 -- Extra material, such as slides, source code, ...
 data Material = Link { address :: String,
                        linkDescription :: String }
-              | PDF  { slideName :: FilePath }
+              | PDF  { slideName :: FilePath,
+                       comment :: Maybe String}
               | Whiteboard { dirName :: FilePath }
               | File { path :: FilePath,
                        fileDescription :: String }
@@ -285,7 +286,8 @@ generateHTML ts out = do
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ place ++ ": " ++ title ++ (bracket person)
                   pMat (Link url desc) = createLink url desc
-                  pMat (PDF file) = createLink ("101/slides/" ++ file) "Slides"
+                  pMat (PDF file Nothing) = createLink ("101/slides/" ++ file) "Slides"
+                  pMat (PDF file (Just com)) = (createLink ("101/slides/" ++ file) "Slides") ++ " " ++ (bracket com)
                   pMat (File file desc) = createLink ("101/" ++ file) desc
                   pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
                   mat = if null material then ""
