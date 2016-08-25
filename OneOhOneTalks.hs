@@ -20,7 +20,9 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      title      = "Information Effects for Understanding Type Systems",
      abstract   = "Or: how someone else found the maths to justify my dogma",
      location   = "LT1415",
-     material   = [PDF "2016-08-24_cowderoy.pdf" $ Just "Philippa says: beware, slightly wordy slides!"] }
+     material   = [PDF "2016-08-24_cowderoy.pdf"
+                       $ Just "Philippa says: beware, slightly wordy slides!",
+                   File "2016-08-24_cowderoy/STLC.hs" "Haskell implementation for simply-typed lambda calculus"] }
   ,
 
   
