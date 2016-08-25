@@ -288,7 +288,7 @@ generateHTML ts out = do
                   pMat (Link url desc) = createLink url desc
                   pMat (PDF file Nothing) = createLink ("101/slides/" ++ file) "Slides"
                   pMat (PDF file (Just com)) = (createLink ("101/slides/" ++ file) "Slides") ++ " " ++ (bracket com)
-                  pMat (File file desc) = createLink ("101/" ++ file) desc
+                  pMat (File file desc) = createLink ("101/files/" ++ file) desc
                   pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
                   mat = if null material then ""
                           else

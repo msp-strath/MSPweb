@@ -1,7 +1,7 @@
 module Main where
 
 import Data.Functor ((<$>))
-import Data.List (isSuffixOf)
+import Data.List (isSuffixOf, isPrefixOf)
 import Data.Maybe (catMaybes)
 import Data.Traversable (traverse)
 import Control.Monad (mapM_)
@@ -43,38 +43,52 @@ classifyPath path = do
 
 -- | Determine when an entry in a directory is to be used as a source
 -- file for generating the web site. Anything that starts with an
--- underscore ("_") or a dot ("."), or ends with "~" or ".hs" is not
--- considered relevant.
-relevantEntry :: FilePath -> Bool
-relevantEntry "."     = False
-relevantEntry ".."    = False
-relevantEntry ('_':_) = False
-relevantEntry ('.':_) = False
-relevantEntry "Makefile" = False
-relevantEntry "README.md" = False
-relevantEntry s | "~"   `isSuffixOf` s = False
-                | ".hs" `isSuffixOf` s = False
-relevantEntry _       = True
+-- underscore ("_") or a dot ("."), is sandwiched between "#", or ends
+-- with "~" or ".hs" (unless a 101 attachment) is not considered
+-- relevant.
+relevantEntry :: FilePath -- ^ current base directory
+              -> FilePath -- ^ input root
+              -> FilePath -- ^ current file
+              -> Bool
+relevantEntry _ _ "."     = False
+relevantEntry _ _ ".."    = False
+relevantEntry _ _ ('_':_) = False
+relevantEntry _ _ ('.':_) = False
+relevantEntry _ _ s | "#" `isPrefixOf` s && "#" `isSuffixOf` s  = False
+relevantEntry _ _ s | "~"   `isSuffixOf` s = False
+-- Keep all attached non-junk 101 files
+relevantEntry base root _ | base == root </> "101" </> "files" = True
+relevantEntry _ _         "Makefile"     = False
+relevantEntry _ _         "README.md"    = False
+relevantEntry _ _ s | ".hs" `isSuffixOf` s = False
+relevantEntry _ _ _ = True
 
 -- | Recursively scan the given directory to gather all the relevant
 -- entries in a directory. Relevant entries are decided by the
 -- 'relevantEntry' function above.
-scanDirectory :: FilePath -> IO [FileTree]
-scanDirectory path = do
-  l <- filter relevantEntry <$> getDirectoryContents path
-  catMaybes <$> traverse (scanEntry . (path </>)) l
+scanDirectory :: FilePath -- ^ current base directory
+              -> FilePath -- ^ input root
+              -> FilePath -- ^ current path
+              -> IO [FileTree]
+scanDirectory base inputRoot path = do
+  all <- getDirectoryContents path
+  l <- filter (relevantEntry base inputRoot) <$> getDirectoryContents path
+  catMaybes <$> traverse (scanEntry (base </> path) inputRoot . (path </>)) l
 
 -- | Examine a pathname and return the appropriate kind of
 -- 'FileTree'. 'Nothing' is returned if 'classifyPath' is unable to
 -- determine whether the pathname represents a file or a directory.
-scanEntry :: FilePath -> IO (Maybe FileTree)
-scanEntry path = do
+scanEntry :: FilePath -- ^ current base directory
+          -> FilePath -- ^ input root
+          -> FilePath -- ^ current path
+          -> IO (Maybe FileTree)
+scanEntry base inputRoot path = do
   classification <- classifyPath path
   case classification of
     IsFile ->
         return (Just (File (takeFileName path)))
     IsDirectory ->
-        Just <$> (Dir (takeFileName path) <$> scanDirectory path)
+        Just <$> (Dir (takeFileName path) <$> scanDirectory base inputRoot path)
     Unknown ->
         return Nothing
 
@@ -168,5 +182,5 @@ main :: IO ()
 main = do
   inputRoot <- getCurrentDirectory
   let outputRoot = inputRoot </> "_build"
-  inputFiles <- scanDirectory inputRoot
+  inputFiles <- scanDirectory inputRoot inputRoot inputRoot
   generateFiles inputRoot outputRoot inputFiles
