@@ -10,6 +10,175 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 12 14)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org/",
+     insturl    = "",
+     title      = "Parenting (TBA)",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 12 7)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Conor McBride",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 11 30)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "James Chapman",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/james.chapman",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 11 23)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Simone (TBC)",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 11 16)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Alastair (TBC)",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Games",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 11 9)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Stuart Gale",
+     institute  = "MSP",
+     speakerurl = "http://www.bishboria.com/",
+     insturl    = "",
+     title      = "Meta-theory of lambda-calculi",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 11 2)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Ben Price",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/benjamin.price",
+     insturl    = "",
+     title      = "Fibrations",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 10 26)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Fredrik Nordvall Forsberg",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+     insturl    = "",
+     title      = "Data types",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 10 19)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Clemens Kupke",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
+     insturl    = "",
+     title      = "Coalgebras",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 10 12)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Neil Ghani",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/neil.ghani",
+     insturl    = "",
+     title      = "Category Theory",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2016 10 5)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Ross Duncan",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/ross.duncan",
+     insturl    = "",
+     title      = "Rewriting, and operads",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 09 28)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "James Chapman",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/james.chapman",
+     insturl    = "",
+     title      = "ICFP trip report",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+  
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 09 21)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Eventual image functors",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   SpecialEvent {
      date  = (UTCTime (fromGregorian 2016 09 14)
                       (timeOfDayToTime (TimeOfDay 11 40 0))),
