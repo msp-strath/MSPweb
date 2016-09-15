@@ -10,6 +10,20 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+   Talk {
+     date       = (UTCTime (fromGregorian 2016 09 15)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Jules Hedges",
+     institute  = "Oxford",
+     speakerurl = "http://www.cs.ox.ac.uk/people/julian.hedges/home.html",
+     insturl    = "http://www.cs.ox.ac.uk/",
+     title      = "Morphisms of open games",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 14)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
