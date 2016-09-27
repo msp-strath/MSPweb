@@ -10,7 +10,21 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
-   Talk {
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 09 28)
+                           (timeOfDayToTime (TimeOfDay 15 0 0))),
+     speaker    = "Guillaume Allais",
+     institute  = "Radboud University Nijmegen",
+     speakerurl = "http://gallais.org",
+     insturl    = "",
+     title      = "Towards a Generic Treatment of Syntaxes with Binding",
+     abstract   = "The techniques used by the generic programming community have taught us that we can greatly benefit from exposing the common internal structure of a family of objects. One can for instance derive once and for all a wealth of iterators from an abstract characterisation of recursive datatypes as fixpoints of functors.\n\nOur previous work on type and scope preserving semantics and their properties has made us realise that numerous semantics of the lambda calculus can be presented as instances of the fundamental lemma associated to an abstract notion of 'Model'. This made it possible to avoid code duplication as well as prove these semantics' properties generically.\n\nPutting these two ideas together, we give an abstract description of syntaxes with binding making both their recursive and scoping structure explicit. The fundamental lemma associated to these syntaxes can be instantiated to provide the user with proofs that its language is stable under renaming and substitution as well as provide a way to easily define various evaluators.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
+  Talk {
      date       = (UTCTime (fromGregorian 2016 09 15)
                            (timeOfDayToTime (TimeOfDay 15 0 0))),
      speaker    = "Jules Hedges",
@@ -188,7 +202,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "",
      insturl    = "",
      title      = "Eventual image functors",
-     abstract   = "",
+     abstract   = "For a category C we consider the endomorphism category End(C) and the subcategory of automorphisms Aut(C) -> End(C). It has been observed that for C the category of finite sets, finite dimensional vector spaces, or compact metric spaces this inclusion functor admits a simultaneous left and right adjoint.\n\nWe give general criteria for the existence of such adjunctions for a broad class of categories which includes FinSet, FinVect and CompMet as special cases. This is done using the language of factorisation systems and by introducing a notion of eventual image functors which provide a general method for constructing adjunctions of this kind.",
      location   = "LT1310",
      material   = [] }
   ,
