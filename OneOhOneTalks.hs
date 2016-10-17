@@ -149,8 +149,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
      insturl    = "",
-     title      = "Coalgebras",
-     abstract   = "",
+     title      = "A first introduction to coalgebra",
+     abstract   = "The core subject of Computer Science is \"generated behaviour\" (quiz: who said this?). Coalgebra provides the categorical formalisation of generated behaviour. I am planning to provide a first, very basic introduction to coalgebra. This will consist of two parts: i) coinduction & corecursion as means to define & reason about the (possibly) infinite behaviour of things; ii)modal logics for coalgebras.",
      location   = "LT1310",
      material   = [] }
   ,
