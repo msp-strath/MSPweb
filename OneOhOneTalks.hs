@@ -136,8 +136,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
      insturl    = "",
-     title      = "Data types",
-     abstract   = "",
+     title      = "Data types and initial-algebra semantics",
+     abstract   = "I will give a basic introduction to data types and initial-algebra semantics. The meaning of a data type is given as the initial object in a category of types with the corresponding constructors. Initiality immediately allows the modelling of a non-dependent recursion principle. I'll show how this can be upgraded to full dependent elimination, also known as induction, by using the uniqueness of the mediating arrow; in fact, induction is equivalent to recursion plus uniqueness. All possibly unfamiliar terms in this abstract will also be explained.",
      location   = "LT1310",
      material   = [] }
   ,
