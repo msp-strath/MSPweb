@@ -10,12 +10,25 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+  Talk {
+     date       = (UTCTime (fromGregorian 2016 11 02)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Phil Scott",
+     institute  = "University of Ottawa",
+     speakerurl = "http://www.site.uottawa.ca/~phil/",
+     insturl    = "http://engineering.uottawa.ca/eecs/",
+     title      = "An introduction to many-valued logics and effect algebras",
+     abstract   = "The algebras of many-valued Lukasiewicz logics (MV algebras) as well as the theory of quantum measurement (Effect algebras) have undergone considerable development in the 1980s and 1990s; they now constitute important research fields, with connections to several contemporary areas of mathematics, logic, and theoretical computer science.\n\nBoth subjects have recently attracted considerable interest among groups of researchers in categorical logic and foundations of quantum computing. I will give a leisurely introduction to MV algebras (and their associated logics), as well as the more general world of effect algebras. If time permits, we will also illustrate some new results (with Mark Lawson, Heriot-Watt) on coordinatization of some concrete MV-algebras using inverse semigroup theory.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
   SpecialEvent {
       date  = (UTCTime (fromGregorian 2016 11 09)
                       (timeOfDayToTime (TimeOfDay 12 00 0))),
      title = "SPLS ",
      url = "https://msp-strath.github.io/spls-16/",
-     location = "McCance building, Strathclyde",
+     location = "Room 319, McCance building, Strathclyde",
      locationurl= "http://www.strath.ac.uk/maps/mccancebuilding/",
      description = ""
     }
@@ -126,16 +139,16 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
-  
-  BasicTalk {
+
+  Talk {
      date       = (UTCTime (fromGregorian 2016 11 2)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Ben Price",
      institute  = "MSP",
      speakerurl = "http://personal.strath.ac.uk/benjamin.price",
      insturl    = "",
-     title      = "Fibrations",
-     abstract   = "",
+     title      = "System F and proof-relevant parametricity",
+     abstract   = "I shall give a brief introduction to System F.\nI will then explain how to capture our intuition about polymorphic functions behaving uniformly by relational parametricity, and talk about ongoing work to find a notion of proof-relevant parametricity.",
      location   = "LT1310",
      material   = [] }
   ,
