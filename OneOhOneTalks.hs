@@ -10,6 +10,18 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+
+  SpecialEvent {
+      date  = (UTCTime (fromGregorian 2016 11 30)
+                      (timeOfDayToTime (TimeOfDay 12 00 0))),
+     title = "CLAP",
+     url = "http://homepages.inf.ed.ac.uk/cheunen/clapscotland/",
+     location = "Strathclyde",
+     locationurl= "",
+     description = ""
+    }
+  ,
+
   Talk {
      date       = (UTCTime (fromGregorian 2016 11 02)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
@@ -26,7 +38,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   SpecialEvent {
       date  = (UTCTime (fromGregorian 2016 11 09)
                       (timeOfDayToTime (TimeOfDay 12 00 0))),
-     title = "SPLS ",
+     title = "SPLS",
      url = "https://msp-strath.github.io/spls-16/",
      location = "Room 301, McCance building, Strathclyde",
      locationurl= "http://www.strath.ac.uk/maps/mccancebuilding/",
@@ -75,6 +87,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      material   = [] }
   ,
 
+  {-
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 7)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
@@ -87,9 +100,10 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
+-}
 
   BasicTalk {
-     date       = (UTCTime (fromGregorian 2016 11 30)
+     date       = (UTCTime (fromGregorian 2016 12 7)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Simone (TBC)",
      institute  = "MSP",
