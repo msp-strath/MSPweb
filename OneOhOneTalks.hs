@@ -28,7 +28,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
                       (timeOfDayToTime (TimeOfDay 12 00 0))),
      title = "SPLS ",
      url = "https://msp-strath.github.io/spls-16/",
-     location = "Room 319, McCance building, Strathclyde",
+     location = "Room 301, McCance building, Strathclyde",
      locationurl= "http://www.strath.ac.uk/maps/mccancebuilding/",
      description = ""
     }
@@ -91,9 +91,9 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 11 30)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "James Chapman",
+     speaker    = "Simone (TBC)",
      institute  = "MSP",
-     speakerurl = "http://personal.strath.ac.uk/james.chapman",
+     speakerurl = "",
      insturl    = "",
      title      = "TBA",
      abstract   = "",
@@ -104,7 +104,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 11 23)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Simone (TBC)",
+     speaker    = "Alastair (TBC)",
      institute  = "MSP",
      speakerurl = "",
      insturl    = "",
@@ -117,11 +117,11 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 11 16)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Alastair (TBC)",
+     speaker    = "Johannes Marti",
      institute  = "MSP",
-     speakerurl = "",
+     speakerurl = "http://johannesmarti.com/",
      insturl    = "",
-     title      = "Games",
+     title      = "Modal logic",
      abstract   = "",
      location   = "LT1310",
      material   = [] }
@@ -129,13 +129,13 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 11 9)
-                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+                           (timeOfDayToTime (TimeOfDay 10 30 0))),
      speaker    = "Stuart Gale",
      institute  = "MSP",
      speakerurl = "http://www.bishboria.com/",
      insturl    = "",
      title      = "Meta-theory of lambda-calculi",
-     abstract   = "",
+     abstract   = "I'll give a standard overview of Simply Typed Lambda Calculus (STLC) (syntax, typing and computation rules) in a well-typed setting, and then modify it to show STLC in a bidirectional setting.\n\nAfterwards I'll show Strong Confluence (Church-Rosser theorem) in the bidirectional setting.",
      location   = "LT1310",
      material   = [] }
   ,
