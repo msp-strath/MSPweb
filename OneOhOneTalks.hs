@@ -115,7 +115,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      material   = [] }
   ,
 
-  BasicTalk {
+  Talk {
      date       = (UTCTime (fromGregorian 2016 11 23)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
      speaker    = "Yde Venema",
@@ -123,7 +123,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "https://staff.science.uva.nl/y.venema/",
      insturl    = "http://www.illc.uva.nl/",
      title      = "Some model theory for the modal mu-calculus",
-     abstract   = "We discuss a number of semantic properties pertaining to formulas of the modal mu-calculus. For each of these properties we provide a corresponding syntactic fragment, in the sense that a mu-calculus formula \\phi has the given property iff it is equivalent to a formula \\phi' in the corresponding fragment. Since this formula \\phi' will always be effectively obtainable from \\phi, as a corollary, for each of the properties under discussion, we prove that it is decidable in elementary time whether a given mu-calculus formula has the property or not.\n\nThe properties that we study have in common that they all concern the dependency of the truth of the formula at stake, on a single proposition letter p. In each case the semantic condition on \\phi will be that \\phi, if true at a certain state in a certain model, will remain true if we restrict the set of states where p holds, to a special subset of the state space. Important examples include the properties of complete additivity and (Scott) continuity, where the special subsets are the singletons and the finite sets, respectively.\n\nOur proofs for these chacracterization results will be automata-theoretic in nature; we will see that the effectively defined maps on formulas are in fact induced by rather simple transformations on modal automata.",
+     abstract   = "We discuss a number of semantic properties pertaining to formulas of the modal mu-calculus. For each of these properties we provide a corresponding syntactic fragment, in the sense that a mu-calculus formula \\phi has the given property iff it is equivalent to a formula \\phi' in the corresponding fragment. Since this formula \\phi' will always be effectively obtainable from \\phi, as a corollary, for each of the properties under discussion, we prove that it is decidable in elementary time whether a given mu-calculus formula has the property or not.\n\nThe properties that we study have in common that they all concern the dependency of the truth of the formula at stake, on a single proposition letter p. In each case the semantic condition on \\phi will be that \\phi, if true at a certain state in a certain model, will remain true if we restrict the set of states where p holds, to a special subset of the state space. Important examples include the properties of complete additivity and (Scott) continuity, where the special subsets are the singletons and the finite sets, respectively.\n\nOur proofs for these characterisation results will be automata-theoretic in nature; we will see that the effectively defined maps on formulas are in fact induced by rather simple transformations on modal automata.",
      location   = "LT1310",
      material   = [] }
   ,
