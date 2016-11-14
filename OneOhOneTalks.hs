@@ -136,7 +136,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://johannesmarti.com/",
      insturl    = "",
      title      = "Modal logic",
-     abstract   = "",
+     abstract   = "Modal logic provides a simple, yet surprisingly powerful, language for specifying properties of coalgebras. In this talk I introduce the basic modal logic that is interpreted on relational structures. My aim is to provide an idea how modal logic relates to other logics, such as first-order and intuitionistic logic, and to the duality between algebraic and coalgebraic structures.\n\nIf time permits, I might also give a very informal warm-up for the modal mu-calculus which is the topic of next week's talk.",
      location   = "LT1310",
      material   = [] }
   ,
