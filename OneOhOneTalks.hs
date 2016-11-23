@@ -77,11 +77,11 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 14)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Bob Atkey",
+     speaker    = "Alasdair (TBC)",
      institute  = "MSP",
-     speakerurl = "http://bentnib.org/",
+     speakerurl = "",
      insturl    = "",
-     title      = "Parenting (TBA)",
+     title      = "TBA",
      abstract   = "",
      location   = "LT1310",
      material   = [] }
@@ -105,10 +105,10 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 7)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Alastair (TBC)",
-     institute  = "MSP",
-     speakerurl = "",
-     insturl    = "",
+     speaker    = "Jamie Gabbay",
+     institute  = "Heriot-Watt",
+     speakerurl = "http://www.gabbay.org.uk",
+     insturl    = "http://www.macs.hw.ac.uk/departments/computer-science.htm",
      title      = "TBA",
      abstract   = "",
      location   = "LT1310",
