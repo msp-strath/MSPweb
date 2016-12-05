@@ -199,3 +199,7 @@ tr.even
 tr.odd td, tr.even td
     { 
     }
+
+div.centered
+    { text-align:center;
+    }
