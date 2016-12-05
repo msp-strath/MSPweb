@@ -12,7 +12,7 @@ import Data.Array((!))
 import Text.Regex.PCRE -- cabal install regex-pcre
 
 
--- HTML utils 
+-- HTML utils
 
 nl2br :: String -> String
 nl2br [] = []
@@ -21,12 +21,12 @@ nl2br (x:xs) = x:(nl2br xs)
 
 createLink :: String -> String -> String
 createLink [] name = name
-createLink url name = "<a href='" ++ url ++ "'>" ++ name ++ "</a>"
+createLink ref name = "<a href='" ++ ref ++ "'>" ++ name ++ "</a>"
 
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
 
-
+wordwrap :: Int -> String -> String -> String
 wordwrap maxlen div = (wrap_ 0) . words where
         wrap_ _ [] = ""
         wrap_ pos (w:ws)
@@ -38,7 +38,7 @@ wordwrap maxlen div = (wrap_ 0) . words where
 
 -- Text.Regex.PCRE does not implement subRegex, so we copy
 -- the code from Text.Regex (which does not handle non-greedy matches)
--- (a module system for Haskell, anyone?)                      
+-- (a module system for Haskell, anyone?)
 subRegex :: Regex                          -- ^ Search pattern
          -> String                         -- ^ Input string
          -> String                         -- ^ Replacement text
@@ -76,11 +76,12 @@ subRegex regexp inp repl =
 
 -- quick and dirty regexp translation of some HTML to its textual representation
 html2text :: String -> String
-html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
+html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s $
                     [("<em>(.*?)</em>", "*\\1*"),          -- bold
                      ("<strong>(.*?)</strong>", "*\\1*"),
-                     ("<b>(.*?)</b>", "*\\1*"),                     
+                     ("<b>(.*?)</b>", "*\\1*"),
                      ("<i>(.*?)</i>", "/\\1/"),            -- italic
+                     ("<dfn>(.*?)</dfn>", "/\\1/"),
                      ("<br/>|<br>", "\n"),                 -- line breaks
                      ("<p>(.*?)</p>", "\\1\n\n"),          -- paragraph breaks
                      ("<a\\s+href\\s*=\\s*[\"'](.*?)[\"']>\\1</a>", "\\1"), -- links
@@ -88,29 +89,45 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s
                      ("<ul>", "\n"),                       -- lists
                      ("</ul>", ""),
                      ("<li>(.*?)</li>", "* \\1\n"),
+                     ("<div\\s+class\\s*=\\s*[\"']centered[\"']>(.*)</div>", "     \\1     \n"),  -- centered text
                      ("&nbsp;", " "),                 -- escape characters
                      ("&ndash;", "--"),
-                     ("&mdash;", "--"),                     
+                     ("&mdash;", "--"),
                      ("&sup2;", "^2"),
-                     ("&sup3;", "^3"),                     
+                     ("&sup3;", "^3"),
                      ("&frac12;", "1/2"),
                      ("&ouml;", "ö"),
                      ("&auml;", "ä"),
-                     ("&aring;", "å"),                     
-                     ("&lt;", "<"),
+                     ("&aring;", "å"),
+                     ("&lt;", "<"),                   -- math
                      ("&gt;", ">"),
                      ("&amp;", "&"),
+                     ("&and;", "and"),
+                     ("&or;", "or"),
+                     ("&isin;", "in"),
+                     ("&notin;", "not in"),
                      ("&not;", "not"),
+                     ("&empty;", "empty"),
+                     ("&forall;", "forall"),
+                     ("&exist;", "exist"),
                      ("&rarr;", "->"),
                      ("&larr;", "<-"),
-                     ("&harr;", "<->"),                     
+                     ("&harr;", "<->"),
                      ("&rArr;", "=>"),
                      ("&lArr;", "<="),
-                     ("&hArr;", "<=>")                  
-                     ]                     
+                     ("&hArr;", "<=>")
+                     ] ++
+                     [ ("&" ++ letter ++ ";", letter) | -- greek letters
+                       letter <- [ "Gamma", "Delta", "Theta", "Lambda",
+                                   "Xi", "Pi", "Sigma", "Phi", "Psi",
+                                   "Omega", "alpha", "beta", "gamma",
+                                   "delta", "epsilon", "zeta", "eta",
+                                   "theta", "iota", "kappa", "lambda",
+                                   "mu", "nu", "xi", "pi", "rho", "sigma",
+                                   "tau", "phi", "psi", "omega" ] ]
 
 
--- Generate web pages, calendars and a RSS feed for MSP 101 from data in 
+-- Generate web pages, calendars and a RSS feed for MSP 101 from data in
 -- a text file
 
 -- Extra material, such as slides, source code, ...
@@ -163,7 +180,7 @@ data Talk = Talk {
                    abstract :: String,
                    location :: String,
                    material :: [Material]
-                 }            
+                 }
   deriving (Show, Read, Eq)
 
 
@@ -188,43 +205,43 @@ generateRSS ts out = do
                   abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
                   desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
                                   "<h2>" ++ title ++ "</h2>",
-                                  abstr, 
+                                  abstr,
                                   "<b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
               in
-               unlines ["  <item>", 
+               unlines ["  <item>",
                         "   <title>" ++ rsstitle ++ "</title>",
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
                         "  </item>"]
           processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
-            = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar " ++ ": " ++ speaker ++ bracket inst 
+            = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar " ++ ": " ++ speaker ++ bracket inst
                   abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
                   desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
                                   "<h2>" ++ title ++ "</h2>",
-                                  abstr, 
+                                  abstr,
                                   "<b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
               in
-               unlines ["  <item>", 
+               unlines ["  <item>",
                         "   <title>" ++ rsstitle ++ "</title>",
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
-                        "  </item>"]               
-          processEntry (i,(SpecialEvent date title url location locationurl description)) 
-            = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title 
+                        "  </item>"]
+          processEntry (i,(SpecialEvent date title url location locationurl description))
+            = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title
                   abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
                   desc = unlines ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
                                   "<h2>" ++ title ++ "</h2>",
-                                  abstr, 
+                                  abstr,
                                   "<b>" ++ (show date) ++ "<br/>" ++ (createLink locationurl location) ++ "</b><br/>"]
               in
-               unlines ["  <item>", 
+               unlines ["  <item>",
                         "   <title>" ++ rsstitle ++ "</title>",
                         "   <description><![CDATA[" ++ desc ++ "]]></description>",
                         "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
                         "  </item>"]
           processEntry (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material)) = processEntry (i, (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
 
-            
+
 generateICS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
@@ -240,7 +257,7 @@ generateICS ts out = do
             = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
               in (desc, end, date, location, title, "")
-          gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location) 
+          gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
             = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
               in (desc, end, date, location, title, "Departmental seminar: ")
@@ -255,13 +272,13 @@ generateICS ts out = do
           escape ('\n':xs) = "\\n" ++ (escape xs)
           escape (';':' ':xs) = "\\; " ++ (escape xs)
           escape (',':' ':xs) = "\\, " ++ (escape xs)
-          escape (x:xs) = x:(escape xs)          
+          escape (x:xs) = x:(escape xs)
           processEntry now (i,x)
             = let (desc, end, date, location, title, kindEvent) = gatherData x
-              in 
+              in
                   unlines ["BEGIN:VEVENT",
                            "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
-                           "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date), 
+                           "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date),
                            "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
                            "LOCATION:" ++ location,
                            wordwrap 73 "\n  " $ "SUMMARY:" ++ kindEvent ++ title,
@@ -286,13 +303,13 @@ generateHTML ts out = do
       previous = if null previousTalks then "" else unlines ["<h2>List of previous talks</h2>",
                                                              "<dl>", concatMap processEntry previousTalks, "</dl>"]
 
-      
+
       header = unlines ["### default.html(section.msp101=current,headtags=<link rel='alternate' type='application/rss+xml' title='MSP101 seminars RSS feed' href='/msp101.rss'/>)",
                         "<!-- DO NOT EDIT THIS FILE DIRECTLY — EDIT OneOhOneTalks.hs AND RUN Generate101.hs INSTEAD -->",
                         "<h2>MSP101</h2>",
                         "<p>MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group. The talks are usually Wednesday mornings 11am in room LT1310 in Livingstone Tower. They are usually announced on the <a href='https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest'>msp-interest</a> mailing-list. The list of talks is also available as a <a type='application/rss+xml' href='/msp101.rss'><img src='/images/feed-icon-14x14.png' alt='feed icon'>RSS feed</a> and as a <a href='msp101.ics'>calendar file</a>.</p>"]
   writeFile out (header ++ upcoming ++ previous)
-    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material)) 
+    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material))
             = let time = if utctDayTime date == timeOfDayToTime (TimeOfDay 11 0 0) then (showGregorian $ utctDay date) else (formatTime defaultTimeLocale "%Y-%m-%d, %H:%M" date)
                   place = if location == "LT1310" then "" else (bracket location)
                   person = if null inst then (createLink speakerurl speaker)
@@ -309,24 +326,24 @@ generateHTML ts out = do
                            "<b>Material</b><ul>" ++
                            (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
                                       material) ++ "</ul>"
-              in 
+              in
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
                           "    <dd>" ++ (nl2br abstract)
                                      ++ (nl2br mat) ++ "</dd>"]
-          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)) 
+          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
             = let time = formatTime defaultTimeLocale "%Y-%m-%d, %H:%M" date
                   place = bracket location
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ " " ++ (createLink "https://personal.cis.strath.ac.uk/clemens.kupke/CISeminar.html" "Departmental seminar") ++ " " ++ place ++ ": " ++ title ++ (bracket person)
-              in 
+              in
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
-                          "    <dd>" ++ (nl2br abstract) ++ "</dd>"]                 
+                          "    <dd>" ++ (nl2br abstract) ++ "</dd>"]
           processEntry (i,(SpecialEvent date title url location locationurl description))
             = let time = formatTime defaultTimeLocale "%Y-%m-%d" date
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))
-              in 
+              in
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
                           "    <dd>" ++ (nl2br description) ++ "</dd>"]
           processEntry (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material)) = processEntry (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
