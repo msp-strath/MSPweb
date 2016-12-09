@@ -77,12 +77,12 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 14)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Alasdair (TBC)",
+     speaker    = "Alasdair Lambert",
      institute  = "MSP",
      speakerurl = "",
      insturl    = "",
-     title      = "TBA",
-     abstract   = "",
+     title      = "Compositional Game Theory",
+     abstract   = "I will be discussing composition in a model of economic game theory and methods for representing the impact of choice on subsequent games. Time permitting I will also work through some games using this model.",
      location   = "LT1310",
      material   = [] }
   ,
