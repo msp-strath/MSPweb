@@ -11,6 +11,18 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2016 12 14)
+                           (timeOfDayToTime (TimeOfDay 16 00 0))),
+     speaker    = "Sam Lindley",
+     institute  = "Edinburgh",
+     speakerurl = "http://homepages.inf.ed.ac.uk/slindley/",
+     insturl    = "http://www.ed.ac.uk/informatics/",
+     title      = "Do be do be do",
+     abstract   = "We explore the design and implementation of Frank, a strict functional programming language with a bidirectional effect type system designed from the ground up around a novel variant of Plotkin and Pretnar's effect handler abstraction.\n\nEffect handlers provide an abstraction for modular effectful programming: a handler acts as an interpreter for a collection of commands whose interfaces are statically tracked by the type system. However, Frank eliminates the need for an additional effect handling construct by generalising the basic mechanism of functional abstraction itself. A function is simply the special case of a Frank <i>operator</i> that interprets no commands.\n\nMoreover, Frank's operators can be <i>multihandlers</i> which simultaneously interpret commands from several sources at once, without disturbing the direct style of functional programming with values.\n\nEffect typing in Frank employs a novel form of effect polymorphism which avoid mentioning effect variables in source code. This is achieved by propagating an <i>ambient ability</i> inwards, rather than accumulating unions of potential effects outwards.\n\nI'll give a tour of Frank through a selection of concrete examples.\n\n(Joint work with Conor McBride and Craig McLaughlin) ",
+     location   = "LT1415" }
+  ,
+
   SpecialEvent {
       date  = (UTCTime (fromGregorian 2016 11 30)
                       (timeOfDayToTime (TimeOfDay 12 00 0))),
