@@ -10,6 +10,22 @@ import OneOhOne
 
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 01 19)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Johannes Marti",
+     institute  = "MSP",
+     speakerurl = "http://johannesmarti.com/",
+     insturl    = "",
+     title      = "Automata and games for fixpoint logics",
+     abstract   = "I explain how we can use automata and games to understand the behaviour of modal fixpoint logics.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
+
   SpecialEvent {
      date  = (UTCTime (fromGregorian 2017 01 12)
                       (timeOfDayToTime (TimeOfDay 11 40 0))),
