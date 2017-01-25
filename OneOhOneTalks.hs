@@ -11,6 +11,149 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 04 06)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Kevin Dunne",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "What I did in my PhD",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 03 30)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Fredrik Nordvall Forsberg",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+     insturl    = "",
+     title      = "What I did on my holidays",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 03 23)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Conor McBride",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+     insturl    = "",
+     title      = "Differential Operators",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+    BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 03 16)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Operational Semantics",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 03 09)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Conor McBride",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+     insturl    = "",
+     title      = "Indexed Containers/Interaction Structures",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 03 02)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Separation Logic and Hoare Logic",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 02 23)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "James Chapman",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/james.chapman",
+     insturl    = "",
+     title      = "Blockchain",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 02 16)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Clemens Kupke",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
+     insturl    = "",
+     title      = "Automata on infinite words",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 02 09)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Simone Barlocco",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Automata learning",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 02 02)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Neil Ghani",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/neil.ghani",
+     insturl    = "",
+     title      = "TBC: 2-cells of games",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 01 26)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Conor McBride, James Chapman, and Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "La Vie Parisienne: POPL trip report",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
   BasicTalk {
      date       = (UTCTime (fromGregorian 2017 01 19)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
@@ -124,21 +267,6 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
-
-  {-
-  BasicTalk {
-     date       = (UTCTime (fromGregorian 2016 12 7)
-                           (timeOfDayToTime (TimeOfDay 11 0 0))),
-     speaker    = "Conor McBride",
-     institute  = "MSP",
-     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
-     insturl    = "",
-     title      = "TBA",
-     abstract   = "",
-     location   = "LT1310",
-     material   = [] }
-  ,
--}
 
   BasicTalk {
      date       = (UTCTime (fromGregorian 2016 12 7)
@@ -256,7 +384,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
-  
+
   Talk {
      date       = (UTCTime (fromGregorian 2016 09 28)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
@@ -269,7 +397,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
-  
+
   Talk {
      date       = (UTCTime (fromGregorian 2016 09 21)
                            (timeOfDayToTime (TimeOfDay 11 0 0))),
