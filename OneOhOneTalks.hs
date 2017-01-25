@@ -149,7 +149,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "",
      insturl    = "",
      title      = "La Vie Parisienne: POPL trip report",
-     abstract   = "",
+     abstract   = "  Our POPL attendees will tell us about their favourite talks, the latest research gossip and show us their most scenic photos from POPL in Paris.",
      location   = "LT1310",
      material   = [] }
   ,
