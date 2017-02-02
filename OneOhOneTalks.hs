@@ -128,15 +128,15 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      material   = [] }
   ,
 
-  Talk {
+  BasicTalk {
      date       = (UTCTime (fromGregorian 2017 02 02)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
-     speaker    = "Neil Ghani",
+     speaker    = "Johannes Marti",
      institute  = "MSP",
-     speakerurl = "http://personal.cis.strath.ac.uk/neil.ghani",
+     speakerurl = "http://johannesmarti.com/",
      insturl    = "",
-     title      = "TBC: 2-cells of games",
-     abstract   = "",
+     title      = "First-order logic",
+     abstract   = "In this 101 I outline the syntax and semantics of classical first order predicate logic. I try to also mention some of the characteristic properties of first order logic such as compactness, the L&ouml;wenheim-Skolem theorem or locality properties in finite model theory.",
      location   = "LT1310",
      material   = [] }
   ,
