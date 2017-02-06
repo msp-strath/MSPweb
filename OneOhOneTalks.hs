@@ -11,6 +11,19 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+ Talk {
+  date       = (UTCTime (fromGregorian 2017 2 06)
+                        (timeOfDayToTime (TimeOfDay 14 0 0))),
+  speaker    = "Ohad Kammar",
+  institute  = "Oxford",
+  speakerurl = "http://www.cs.ox.ac.uk/people/ohad.kammar/main.html",
+  insturl    = "http://www.cs.ox.ac.uk/",
+  title      = "On the expressive power of user-defined effects: effect handlers, monadic reflection, delimited control without answer-type-modification",
+  abstract   = "We compare the expressive power of three programming abstractions for user-defined computational effects: Bauer and Pretnar's effect handlers, Filinski's monadic reflection, and delimited control. This comparison allows a precise discussion about the relative merits of each programming abstraction.\n\nWe present three calculi, one per abstraction, extending Levy's call-by-push-value. These comprise syntax, operational semantics, a natural type-and-effect system, and, for handlers and reflection, a set-theoretic denotational semantics. We establish their basic meta-theoretic properties: adequacy, soundness, and strong normalisation. Using Felleisen's notion of a macro translation, we show that these abstractions can macro-express each other, and show which translations preserve typeability.  We use the adequate finitary set-theoretic denotational semantics for the monadic calculus to show that effect handlers cannot be macro-expressed while preserving typeability either by monadic reflection or by delimited control. We supplement our development with a mechanised Abella formalisation.\n\nJoint work with Yannick Forster, Sam Lindley, and Matija Pretnar.",
+  location   = "LT1415",
+  material   = [] }
+ ,
+
   Talk {
      date       = (UTCTime (fromGregorian 2017 04 06)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
