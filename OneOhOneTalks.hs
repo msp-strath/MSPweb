@@ -136,7 +136,15 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "",
      insturl    = "",
      title      = "Automata learning",
-     abstract   = "",
+     abstract   = "Automata learning is a well known technique to infer a finite state \
+\machine from a set of observations. One important algorithm for automata \
+\learning is the L* algorithm by Dana Angluin. \
+\In this 101, I will explain how the L* algorithm works via an example. \
+\Afterwards, I will discuss the ingredients of the algorithm both in the \
+\standard framework by Angluin and in a recently developed \
+\categorical/coalgebraic framework by Jacobs & Silva. Lastly, I plan to \
+\outline the proof of the minimality of the automaton that is built by \
+\the learning algorithm.",
      location   = "LT1310",
      material   = [] }
   ,
