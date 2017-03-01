@@ -11,6 +11,30 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2017 02 22)
+                           (timeOfDayToTime (TimeOfDay 15 00 0))),
+     speaker    = "Andrea Bracciali",
+     institute  = "Stirling",
+     speakerurl = "http://www.cs.stir.ac.uk/~abb/",
+     insturl    = "http://www.cs.stir.ac.uk/",
+     title      = "An introduction to Blockchains",
+     abstract   = "Blockchains, i.e. decentralised, distributed data structures which can also carry executable code for a non-standard execution environment, introduce new models of computation. Decentralised, here, means, informally speaking, \"without central control\", e.g. a currency without a (central) bank, but much more. Blockchains support the recently introduced virtual currencies, a la Bitcoin, and a new class of decentralised applications, including smart contracts. In this talk we will introduce the main aspects of a blockchain, with particular reference to the Bitcoin blockchain as a paradigmatic case of such a new model of computation, and also touching on smart contracts. No previous knowledge of bitcoin/blockchain required for this introductory talk.",
+     location   = "LT1415" }
+  ,
+
+  DepartmentalSeminar {
+     date       = (UTCTime (fromGregorian 2017 02 15)
+                           (timeOfDayToTime (TimeOfDay 13 00 0))),
+     speaker    = "Chris Heunen",
+     institute  = "Edinburgh",
+     speakerurl = "http://homepages.inf.ed.ac.uk/cheunen/",
+     insturl    = "http://www.ed.ac.uk/informatics/",
+     title      = "Semantics for probabilistic programming",
+     abstract   = "Statistical models in e.g. machine learning are traditionally expressed in some sort of flow charts. Writing sophisticated models succinctly is much easier in a fully fledged programming language. The programmer can then rely on generic inference algorithms instead of having to craft one for each model. Several such higher-order functional probabilistic programming languages exist, but their semantics, and hence correctness, are not clear. The problem is that the standard semantics of probability theory, given by measurable spaces, does not support function types. I will describe how to get around this.",
+     location   = "LT1415" }
+  ,
+
  Talk {
   date       = (UTCTime (fromGregorian 2017 2 06)
                         (timeOfDayToTime (TimeOfDay 14 0 0))),
@@ -110,8 +134,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://personal.strath.ac.uk/james.chapman",
      insturl    = "",
      title      = "Blockchain",
-     abstract   = "",
-     location   = "LT1310",
+     abstract   = "I will try to follow on from yesterday's introduction by getting to nitty gritty of bitcoin/blockchain. I won't assume attendance of the seminar but will try not to repeat it!",
+     location   = "LT1415",
      material   = [] }
   ,
 
@@ -123,7 +147,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
      insturl    = "",
      title      = "Automata on infinite words",
-     abstract   = "",
+     abstract   = "In this 101 I plan to discuss omega-automata, i.e., finite automata that operate on infinite words/streams. These automata form an important tool for the specification and verification of the ongoing, possibly infinite behaviour of a system. In my talk I will provide the standard definition(s) of omega-automata and highlight what makes omega-automata difficult from a coalgebraic perspective. Finally, I am going to discuss the work by Ciancia & Venema that provides a first coalgebraic representation of a particular type of omega-automata, so-called Muller automata.",
      location   = "LT1310",
      material   = [] }
   ,
