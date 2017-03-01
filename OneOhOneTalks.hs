@@ -121,7 +121,14 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://bentnib.org",
      insturl    = "",
      title      = "Separation Logic and Hoare Logic",
-     abstract   = "",
+     abstract   = "Hoare Logic is a logic for proving properties of programs of the \
+\form: if the initial state satisfies a precondition, then the final \
+\state satisfies a postcondition. Hoare logic proofs are structured \
+\around the structure of the program itself, making the system a \
+\compositional one for reasoning about pieces of programs. I'll \
+\introduce Hoare Logic for a little imperative language with WHILE \
+\loops. I'll then motivate Separation Logic, which enriches Hoare \
+\Logic with a Frame Rule for local reasoning. ",
      location   = "LT1310",
      material   = [] }
   ,
