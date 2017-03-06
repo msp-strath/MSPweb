@@ -11,6 +11,28 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  SpecialEvent {
+      date  = (UTCTime (fromGregorian 2017 04 05)
+                      (timeOfDayToTime (TimeOfDay 10 00 0))),
+     title = "CLAP",
+     url = "http://homepages.inf.ed.ac.uk/cheunen/clapscotland/",
+     location = "Strathclyde, room LT1415",
+     locationurl= "",
+     description = ""
+    }
+  ,
+
+  SpecialEvent {
+      date  = (UTCTime (fromGregorian 2017 04 10)
+                      (timeOfDayToTime (TimeOfDay 09 00 0))),
+     title = "ALCOP2017",
+     url = "https://personal.cis.strath.ac.uk/clemens.kupke/ALCOP2017/",
+     location = "Strathclyde, Room MC301 (McCance Building)",
+     locationurl= "http://www.strath.ac.uk/maps/mccancebuilding/",
+     description = ""
+    }
+  ,
+
   DepartmentalSeminar {
      date       = (UTCTime (fromGregorian 2017 02 22)
                            (timeOfDayToTime (TimeOfDay 15 00 0))),
