@@ -35,7 +35,7 @@ local:
 	runghc Generate101.hs
 	runghc Generate.hs
 
-deploy autodeploy: local
+deploy auto-deploy: local
 	smbclient //msp.cis.strath.ac.uk/msp -d 0 $(AUTHSTRING) -c $(SMBCOMMAND)
 
 get-logs:
