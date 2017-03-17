@@ -116,8 +116,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://bentnib.org",
      insturl    = "",
-     title      = "Operational Semantics",
-     abstract   = "",
+     title      = "Operational and Denotational Semantics for PCF",
+     abstract   = "PCF is the prototypical functional programming language, with two data types (naturals and booleans), lambda-abstraction and recursion. PCF was introduced by Gordon Plotkin in his seminal \"LCF Considered as a Programming Language\" paper from 1977. Despite PCF's simplicity, its semantics is theoretically interesting. I will introduce PCF, its operational semantics, the \"standard\" domain-theoretic denotational semantics and show that the two agree on closed programs. Finally, I will discuss observational equivalence for PCF and show that the denotational semantics fails to be \"fully abstract\".",
      location   = "LT1310",
      material   = [] }
   ,
