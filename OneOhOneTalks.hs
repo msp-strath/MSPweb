@@ -85,13 +85,13 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
  ,
 
   Talk {
-     date       = (UTCTime (fromGregorian 2017 04 06)
+     date       = (UTCTime (fromGregorian 2017 04 27)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Kevin Dunne",
      institute  = "MSP",
      speakerurl = "",
      insturl    = "",
-     title      = "What I did in my PhD",
+     title      = "What I, Dunne, done in my PhD",
      abstract   = "",
      location   = "LT1310",
      material   = [] }
@@ -104,8 +104,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
      insturl    = "",
-     title      = "What I did on my holidays",
-     abstract   = "",
+     title      = "Cubical adventures in Connecticut",
+     abstract   = "I'll report on my attempts to design a cubical type theory together with Dan Licata and Ed Morehouse during my visit to Wesleyan University, Middletown, Connecticut. We had something which seemed quite promising, but that falls apart just short of the finish line; I'll tell you about it in the hope of miraculous rescue from the audience. However, I'll start from basics so that everyone has a chance to join in in the fun. Mentions of Donald Trump will be kept to a minimum.",
      location   = "LT1310",
      material   = [] }
   ,
