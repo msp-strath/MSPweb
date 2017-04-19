@@ -11,9 +11,21 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
-
-  BasicTalk {
+  Talk {
      date       = (UTCTime (fromGregorian 2017 04 20)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Modular Datalog",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+ 
+  BasicTalk {
+     date       = (UTCTime (fromGregorian 2017 05 04)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Conor McBride",
      institute  = "MSP",
