@@ -23,7 +23,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      location   = "LT1310",
      material   = [] }
   ,
- 
+
   BasicTalk {
      date       = (UTCTime (fromGregorian 2017 05 04)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
@@ -32,7 +32,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
      insturl    = "",
      title      = "Differential Operators",
-     abstract   = "",
+     abstract   = "A traditional source of complaint from CS undergraduates (especially in the USA, but in other places, too) is that they are made to learn too much standard issue mathematics with little apparent relevance to computation. Differential calculus (with its usual presentational focus on physical systems) is often picked upon as the archetype. What we see in action is the fragile male ego: they are not so quick to complain about the unimportance of things they do not find difficult. All of which makes more delicious the irony that differential operators have a key role to play in understanding discrete structures, such as automata, datatypes, execution stacks, and plenty more.\n\nThe basic idea is as follows: to put your finger over any single K in the pair of words <div class='centered'>BREKEKEKEX KOAXKOAX</div> you must choose either to put your finger over a single K in BREKEKEKEX and pair with KOAXKOAX intact, or to leave BREKEKEKEX intact and cover a K in KOAXKOAX. You have just followed Leibniz's rule for differentiating a product (with respect to K), and computed a one-hole context for a K in a data structure.\n\nNewton, of course, would point out that such derivatives arise as the limit of a divided difference, a concept worthy of study in more generality. I would point out that divided differences are often definable, even in situtations when neither division nor difference makes much apparent sense. Notably, Brzozowski's derivative for regular languages is a divided difference (even though it is not Leibniz's derivative).\n\nI'll work mainly with containers (which look a lot like power series) but make sure there are plenty of concrete examples. In practice, it becomes rather useful to compute derivatives by pattern matching on types, which is especially funny as symbolic differentiation is the first example in the literature of computing anything by pattern matching at all.",
      location   = "LT1310",
      material   = [] }
   ,
