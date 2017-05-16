@@ -12,6 +12,19 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
+      date       = (UTCTime (fromGregorian 2017 05 18)
+                            (timeOfDayToTime (TimeOfDay 14 0 0))),
+  speaker    = "Thorsten Altenkirch",
+  institute  = "Nottingham",
+  speakerurl = "http://www.cs.nott.ac.uk/~txa/",
+  insturl    = "http://www.cs.nott.ac.uk/",
+  title      = "The joy of QIITs",
+  abstract   = "Quotient inductive inductive types (QIITS) are set-truncated mutually defined higher inductive types. I am going to discuss two applications of QIITs:\n\n1. define an internal syntax of Type Theory without reference to untyped preterms;\n2. define a version of the partiality monad that doesn't require countable choice.\n\nOn the one hand I think that these applications are interesting because they represent applications of HoTT which have nothing to do with homotopy theory; on the other hand they are clearly not very higher order (in the sense of truncation levels) but can be defined in the set-truncated fragment of HoTT. Hence my question: what are interesting applications of higher types which are not directed related to synthetic homotopy theory?\n\nThis talk is based on joint work with Paolo Capriotti, Nils Anders Danielsoon, Gabe Dijkstra, Ambrus Kaposi and Nicolai Kraus.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2017 04 20)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Bob Atkey",
