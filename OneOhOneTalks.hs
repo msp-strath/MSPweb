@@ -12,6 +12,32 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
+      date       = (UTCTime (fromGregorian 2017 06 01)
+                            (timeOfDayToTime (TimeOfDay 14 0 0))),
+  speaker    = "Rob Myers",
+  institute  = "",
+  speakerurl = "",
+  insturl    = "",
+  title      = "TBA",
+  abstract   = "",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+  Talk {
+      date       = (UTCTime (fromGregorian 2017 05 25)
+                            (timeOfDayToTime (TimeOfDay 14 0 0))),
+  speaker    = "Clemens Kupke",
+  institute  = "MSP",
+  speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
+  insturl    = "",
+  title      = "Learning via Coalgebraic Logic",
+  abstract   = "A key result in computational learning theory is Dana Angluin's L* algorithm that describes how to learn a regular language, or a deterministic finite automaton (DFA), using membership and equivalence queries. In my talk I will present a generalisation of this algorithm using ideas from coalgebra and modal logic &mdash; please note, however, that prior knowledge of these topics will not be required.\n\nIn the first part of my talk I will recall how the L* algorithm works and establish a link to the notion of a filtration from modal logic. Furthermore I will provide a brief introduction to coalgebraic modal logic. In the second part of my talk I will present a generalisation of Angluin's original algorithm from DFAs to coalgebras for an arbitrary finitary set functor T in the following sense: given a (possibly infinite) pointed T-coalgebra that we assume to be regular (i.e. having an equivalent finite representation) we can learn its finite representation by (i) asking \"logical queries\" (corresponding to membership queries) and (ii) making conjectures to which a teacher has to reply with a counterexample (equivalence queries). This covers (known variants of) the original L* algorithm and  algorithms for learning Mealy and Moore machines. Other examples are infinite streams, trees and bisimulation quotients of various types of transition systems.\n\nJoint work with Simone Barlocco.",
+  location   = "LT1310",
+  material   = [] }
+ ,
+
+  Talk {
       date       = (UTCTime (fromGregorian 2017 05 18)
                             (timeOfDayToTime (TimeOfDay 14 0 0))),
   speaker    = "Thorsten Altenkirch",
