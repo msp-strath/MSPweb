@@ -13,13 +13,13 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 06 01)
-                            (timeOfDayToTime (TimeOfDay 15 0 0))),
+                            (timeOfDayToTime (TimeOfDay 14 0 0))),
   speaker    = "Rob Myers",
   institute  = "",
   speakerurl = "",
   insturl    = "",
-  title      = "TBA",
-  abstract   = "",
+  title      = "Optimal nondeterminism: explaining the Kameda-Weiner algorithm",
+  abstract   = "The Kameda-Weiner algorithm takes a machine (nondeterministic finite automaton) as input, and provides an optimal machine (state-minimal nondeterministic finite automaton) as output. In this talk I will discuss work which provides a clear explanation of it, by translating the various syntactic constructs into more meaningful order-theoretic ones, and then composing them together to prove correctness.",
   location   = "LT1310",
   material   = [] }
  ,
@@ -39,7 +39,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 05 18)
-                            (timeOfDayToTime (TimeOfDay 14 0 0))),
+                            (timeOfDayToTime (TimeOfDay 15 0 0))),
   speaker    = "Thorsten Altenkirch",
   institute  = "Nottingham",
   speakerurl = "http://www.cs.nott.ac.uk/~txa/",
