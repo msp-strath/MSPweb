@@ -26,7 +26,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 05 25)
-                            (timeOfDayToTime (TimeOfDay 14 0 0))),
+                            (timeOfDayToTime (TimeOfDay 11 0 0))),
   speaker    = "Clemens Kupke",
   institute  = "MSP",
   speakerurl = "http://personal.cis.strath.ac.uk/clemens.kupke",
