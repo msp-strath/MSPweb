@@ -11,6 +11,31 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 06 29)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Syntax and semantics of Quantitative Type Theory",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+    Talk {
+     date       = (UTCTime (fromGregorian 2017 06 08)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Fredrik Nordvall Forsberg",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+     insturl    = "",
+     title      = "TYPES 2017 Trip report",
+     abstract   = "I'll tell you about the most interesting talks, ideas and gossip that came out of the TYPES conference in BudaPest last week.",
+     location   = "LT1310",
+     material   = [] }
+  ,
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 06 22)
