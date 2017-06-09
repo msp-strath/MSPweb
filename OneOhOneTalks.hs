@@ -12,6 +12,19 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
+     date       = (UTCTime (fromGregorian 2017 06 15)
+                           (timeOfDayToTime (TimeOfDay 14 00 00))),
+     speaker    = "Stuart Gale",
+     institute  = "MSP",
+     speakerurl = "http://www.bishboria.com/",
+     insturl    = "",
+     title      = "Informal introduction to knot theory and the unknotting problem",
+     abstract   = "This is an informal talk on the interesting properties I've found when playing with the unknotting problem (knot simplification moves that help to establish whether any given knot is a loop in complicated disguise, or something really knotted).\n\nI'll discuss the syntax that I've used for annotating knots that leads to a(n almost) syntax based method for unknotting, but that hints further at unknotting in a more interesting way by using an unintentional property of the syntax.\n\nI'll present some examples of the problems with representing knots and how the syntax and reduction rules help, in my opinion, to make unknotting more tangible.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2017 06 29)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Bob Atkey",
