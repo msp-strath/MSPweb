@@ -50,6 +50,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      material   = [] }
   ,
 
+{-
   Talk {
       date       = (UTCTime (fromGregorian 2017 06 22)
                             (timeOfDayToTime (TimeOfDay 15 0 0))),
@@ -57,11 +58,12 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   institute  = "Edinburgh",
   speakerurl = "https://sites.google.com/site/researchcavaliere/",
   insturl    = "http://www.synthsys.ed.ac.uk/",
-  title      = "TBA",
-  abstract   = "",
-  location   = "LT1310",
+  title      = "The Rise and Fall of Cooperative Communities",
+  abstract   = "Social, biological and economic networks grow and decline with recurrent fragmentation and re-formation, often explained in terms of external perturbations. I will present a model of dynamical networks and evolutionary game theory that explains these phenomena as consequence of imitation and endogenous conflicts between \"cooperators\" and \"cheaters\". Cooperators promote well-connected prosperous (but fragile)  networks and cheaters cause the network to fragment and lose its prosperity. Once the network is fragmented it can be reconstructed by a new invasion of cooperators, leading to recurrent cycles of formation and fragmentation observed, for instance, in bacterial communities and socio-economic networks. In the last part of the talk, I will briefly introduce my current works on the role of individual decision-making in cooperative communities and the possibility of synthetic biology to address these ideas in microbial communities.\n\nReferences\n\nM. Cavaliere, S. Sedwards, C.E. Tarnita, M.A. Nowak, A. Csikasz-Nagy.\nProsperity is Associated with Instability in Dynamical Networks.\nJournal of Theoretical Biology, 299, 2012.\n\nPlasticity Facilitates Sustainable Growth in the Commons.\nM. Cavaliere, J.F. Poyatos.\nJournal of the Royal Society Interface, 10, 2013.\n\nEco-Evolutionary Feedbacks can Rescue Cooperation in Microbial Populations.\nC. Moreno-Fenoll, M. Cavaliere, E. Martinez-Garcia, J.F. Poyatos.\nScientific Reports, 7, 2017.",
+  location   = "LT1415",
   material   = [] }
  ,
+-}
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 06 01)
