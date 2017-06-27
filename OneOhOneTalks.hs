@@ -32,7 +32,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://bentnib.org",
      insturl    = "",
      title      = "Syntax and semantics of Quantitative Type Theory",
-     abstract   = "",
+     abstract   = "At last year's WadlerFest celebration, Conor presented a dependent type theory where variables are tagged with information about how they are used. Variable usage tagging has been developed in the non dependent setting, starting with Girard's Linear Logic, and culminating with recent work in contextual effects, coeffects, and quantitative type theories. The subtlety with dependent types lies in how to account for the difference between usage in types and terms. Conor's system handles this by treating usage in types as a \"zero\" usage, so that it doesn't affect the usage in terms. This is a departure from previous \"linear\" type theories that maintains a strict separation between usage controlled information, which types cannot depend on, and unrestricted information, which types can depend on.\n\nConor presented a syntax and typing rules for the system, as well as an erasure property that exploits the difference between \"not used\" and \"used\", but doesn't do anything with the finer usage information available. I'll present a collection of models for the system that fully exploit the usage information. This will give interpretations of type theory in resource constrained computational models, Geometry of Interaction models, and imperative models. To maintain order, I will gather all these notions of model under a new concept of \"Quantitative Category with Families\", a generalisation of the standard \"Category with Families\" class of models of dependent types.",
      location   = "LT1310",
      material   = [] }
   ,
@@ -50,10 +50,9 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      material   = [] }
   ,
 
-{-
   Talk {
-      date       = (UTCTime (fromGregorian 2017 06 22)
-                            (timeOfDayToTime (TimeOfDay 15 0 0))),
+      date       = (UTCTime (fromGregorian 2017 07 27)
+                            (timeOfDayToTime (TimeOfDay 14 0 0))),
   speaker    = "Matteo Cavaliere",
   institute  = "Edinburgh",
   speakerurl = "https://sites.google.com/site/researchcavaliere/",
@@ -63,7 +62,6 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   location   = "LT1415",
   material   = [] }
  ,
--}
 
   Talk {
       date       = (UTCTime (fromGregorian 2017 06 01)
