@@ -12,6 +12,19 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
+     date       = (UTCTime (fromGregorian 2017 07 05)
+                           (timeOfDayToTime (TimeOfDay 14 00 00))),
+     speaker    = "Noam Zeilberger",
+     institute  = "Birmingham",
+     speakerurl = "http://noamz.org/",
+     insturl    = "http://www.cs.bham.ac.uk/",
+     title      = "Some enumerative, topological, and algebraic aspects of linear lambda calculus",
+     abstract   = "Enumeration of graphs on surfaces (or \"maps\") is an active topic of research in combinatorics, with links to wide-ranging domains such as algebraic geometry, knot theory, and mathematical physics. In the last few years, it has also been found that map enumeration is related to the combinatorics of lambda calculus, with various well-known families of maps in 1-to-1 correspondence with various natural families of linear lambda terms. In the talk I will begin by giving a brief survey of these enumerative connections, then use those to motivate a closer look at the surprisingly rich topological and algebraic properties of linear lambda calculus.",
+     location   = "LT1415",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2017 06 15)
                            (timeOfDayToTime (TimeOfDay 14 00 00))),
      speaker    = "Stuart Gale",
