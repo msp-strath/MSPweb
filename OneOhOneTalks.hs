@@ -11,6 +11,17 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  SpecialEvent {
+      date  = (UTCTime (fromGregorian 2017 07 10)
+                      (timeOfDayToTime (TimeOfDay 10 00 0))),
+     title = "Open Games Workshop",
+     url = "http://msp.cis.strath.ac.uk/opengames-2017/",
+     location = "LT1415",
+     locationurl= "",
+     description = ""
+    }
+  ,
+
   Talk {
      date       = (UTCTime (fromGregorian 2017 07 05)
                            (timeOfDayToTime (TimeOfDay 14 00 00))),
