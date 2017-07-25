@@ -9,7 +9,7 @@ import Control.Arrow
 import Control.Monad
 
 import Data.Array((!))
-import Text.Regex.PCRE -- cabal install regex-pcre
+import Text.Regex.PCRE
 
 -- constants
 usualTime :: TimeOfDay
