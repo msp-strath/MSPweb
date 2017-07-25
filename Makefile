@@ -47,3 +47,6 @@ upload:
 	git add --all
 	git commit
 	git push
+
+install-deps:
+	cabal install --only-dependencies
