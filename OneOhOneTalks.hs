@@ -11,6 +11,20 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 09 05)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Ross Duncan",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/ross.duncan",
+     insturl    = "",
+     title      = "Binding and Substitution in String Diagrams",
+     abstract   = "In the categorical semantics of (e.g.) the simply typed lambda calculus substitution of a variable by a term is achieved by composing morphisms.  What is the equivalent notion in diagrammatic languages?  What even is a \"variable\" in this context?  I'll sketch some (pretty) rough ideas for the beginnings of a “functional language” of diagrams including substitution, binding, and pattern matching.  It turns out to all be about operads and co-operads.",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
   SpecialEvent {
       date  = (UTCTime (fromGregorian 2017 07 10)
                       (timeOfDayToTime (TimeOfDay 10 00 0))),
