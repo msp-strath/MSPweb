@@ -12,7 +12,7 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
-     date       = (UTCTime (fromGregorian 2017 09 05)
+     date       = (UTCTime (fromGregorian 2017 09 06)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Ross Duncan",
      institute  = "MSP",
