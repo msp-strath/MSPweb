@@ -12,6 +12,19 @@ talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
   Talk {
+     date       = (UTCTime (fromGregorian 2017 09 11)
+                           (timeOfDayToTime (TimeOfDay 14 0 0))),
+     speaker    = "Andrea Vezzosi",
+     institute  = "Chalmers",
+     speakerurl = "http://www.cse.chalmers.se/~vezzosi/",
+     insturl    = "http://www.chalmers.se/en/departments/cse/Pages/default.aspx",
+     title      = "Adding Cubes to Agda",
+     abstract   = "Cubical Type Theory (CTT) provides an extension of Martin-L&ouml;f Type Theory (MLTT) where we can interpret the univalence axiom while preserving the canonicity property, i.e. every closed term actually computes to a value. The typing and equality rules of CTT come as a fairly well-behaved extension of the ones of MLTT and the denotational model and prototype implementation help clarifying the system further.\n\nGiven the above it felt reasonable to introduce the features of CTT into a more mature proof assistant like Agda, and this talk reports the status of this endeavour. In short:\n<ul><li>The univalence axiom is proven as a theorem and we successfully tested its computational behavior on small examples.</li><li><tt>comp</tt> computes for any parametrized data or record types, including coinductive ones, but it is stuck for inductive families.</li><li>The interaction of the path type and copatterns gives extensionality principles for coinductive records.</li><li>The interval <tt>I</tt> is an actual type, we also have restriction types <tt>A[&phi; &mapsto; u]</tt> and types for partial elements <tt>Partial &phi; A</tt>. Their sort makes sure <tt>comp</tt> does not apply to them.</li></ul>\nExamples are collected at <a href='https://github.com/Saizan/cubical-demo'>https://github.com/Saizan/cubical-demo</a>.",
+     location   = "LT1101 (Board room)",
+     material   = [] }
+  ,
+
+  Talk {
      date       = (UTCTime (fromGregorian 2017 09 06)
                            (timeOfDayToTime (TimeOfDay 14 0 0))),
      speaker    = "Ross Duncan",
