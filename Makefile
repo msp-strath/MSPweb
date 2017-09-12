@@ -35,7 +35,15 @@ local:
 	runghc Generate101.hs
 	runghc Generate.hs
 
-deploy auto-deploy: local
+compile:
+	cabal build --builddir _dist
+
+local-compiled: compile
+	git pull
+	./_dist/build/Generate101/Generate101
+	./_dist/build/Generate/Generate
+
+deploy auto-deploy: local-compiled
 	smbclient //msp.cis.strath.ac.uk/msp -d 0 $(AUTHSTRING) -c $(SMBCOMMAND)
 
 get-logs:
