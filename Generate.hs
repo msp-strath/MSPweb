@@ -5,10 +5,25 @@ import Data.List (isSuffixOf, isPrefixOf)
 import Data.Maybe (catMaybes)
 import Data.Traversable (traverse)
 import Control.Monad (mapM_)
-import System.FilePath (combine, takeFileName)
+import System.FilePath (combine, takeFileName, takeExtension, dropExtension)
 import System.Directory ( getDirectoryContents, doesDirectoryExist
                         , doesFileExist, getCurrentDirectory
                         , createDirectoryIfMissing, copyFile )
+
+import Text.Pandoc
+
+{-
+-- Cheapskate
+import Cheapskate
+import Text.Blaze.Html
+import Text.Blaze.Html.Renderer.Text (renderHtml)
+import qualified Data.Text.Lazy as TL (toStrict)
+import Data.Text (pack, unpack)
+
+-- CMark
+-- import Data.Text (pack, unpack)
+-- import CMark (commonmarkToHtml, optSmart)
+-}
 
 {----------------------------------------------------------------------------}
 (</>) :: FilePath -> FilePath -> FilePath
@@ -30,6 +45,12 @@ data EntryClass
     | IsDirectory
     | Unknown
     deriving Show
+
+translateMarkdown :: String -> String
+translateMarkdown =  writeHtmlString def . handleError . readMarkdown def
+--translateMarkdown = unpack . TL.toStrict . renderHtml . toHtml . markdown def . pack -- cheapskate
+--translateMarkdown = unpack . commonmarkToHtml [optSmart] . pack -- CMark
+
 
 -- | Determine whether a path refers to a file, a directory, or
 -- unknown.
@@ -60,6 +81,7 @@ relevantEntry _ _ s | "~"   `isSuffixOf` s = False
 relevantEntry base root _ | base == root </> "101" </> "files" = True
 relevantEntry _ _         "Makefile"     = False
 relevantEntry _ _         "README.md"    = False
+relevantEntry _ _ s | ".cabal" `isSuffixOf` s = False
 relevantEntry _ _ s | ".hs" `isSuffixOf` s = False
 relevantEntry _ _ _ = True
 
@@ -157,17 +179,23 @@ generateFiles inputRoot outputRoot tree = do
     where
       processTree rootPath path (File name) =
         let inputPath  = inputRoot </> path </> name
-            outputPath = outputRoot </> path </> name in
-        if ".html" `isSuffixOf` name then do
+            outputExt = case takeExtension name of
+                          ".md" -> ".html"
+                          _     -> takeExtension name
+            outputPath = outputRoot </> path </> (dropExtension name) ++ outputExt
+            knownSuffixes = [".html", ".md"] in
+        if any (\ x -> x `isSuffixOf` name) knownSuffixes then do
           result <- parseHeader <$> readFile inputPath
-          case result of
-            Left (template, baseEnv, body) -> do
-              let templatePath = inputRoot </> "_templates" </> template
-              templateBody <- readFile templatePath
-              let env = ("rootPath",rootPath):("content",body):baseEnv
-              writeFile outputPath (substitute templateBody env)
-            Right body ->
-              writeFile outputPath body
+          let translate = if  ".md" `isSuffixOf` name then translateMarkdown else id
+          body <- case result of
+                Left (template, baseEnv, body) -> do
+                  let templatePath = inputRoot </> "_templates" </> template
+                  templateBody <- readFile templatePath
+                  let env = ("rootPath",rootPath):("content", translate body):baseEnv
+                  return (substitute templateBody env)
+                Right body ->
+                  return $ translate body
+          writeFile outputPath $ body
         else
             copyFile inputPath outputPath
 
