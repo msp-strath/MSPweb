@@ -38,7 +38,7 @@ local:
 compile:
 	cabal build --builddir _dist
 
-local-compiled: compile
+local-compiled: 
 	git pull
 	./_dist/build/Generate101/Generate101
 	./_dist/build/Generate/Generate
