@@ -63,6 +63,11 @@ at the University of Strathclyde and comprises
    for more details or email
    [james.chapman [at] strath.ac.uk](mailto:james.chapman [at] strath.ac.uk).
 
+Dr Phil Scott
+
+:  who is a KTP Associate at
+   [Symphonic Software](http://www.symphonicsoft.com/) under Bob
+   Atkey's direction.
 
 Guillaume Allais
 
@@ -95,11 +100,13 @@ Alasdair Lambert
 
 :  who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
 
-Dr Phil Scott
+Joseph Collins
 
-:  who is a KTP Associate at
-   [Symphonic Software](http://www.symphonicsoft.com/) under Bob
-   Atkey's direction.
+:  who is a PhD student under Ross Duncan's direction.
+
+James Wood
+
+:  who is a PhD student under Bob Atkey's direction.
 
 ### Alumni ###
 
