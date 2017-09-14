@@ -13,10 +13,10 @@ import Text.Regex.PCRE
 
 -- constants
 usualTime :: TimeOfDay
-usualTime = TimeOfDay 14 0 0
+usualTime = TimeOfDay 16 0 0
 
 usualDay :: String
-usualDay = "Thursday"
+usualDay = "Friday"
 
 -- HTML utils
 
