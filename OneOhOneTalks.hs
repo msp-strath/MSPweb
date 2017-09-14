@@ -11,6 +11,163 @@ import OneOhOne
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 09 22)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Conor McBride",
+     institute  = "MSP",
+     speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
+     insturl    = "",
+     title      = "Bidirectional Martin-L&ouml;f 1971",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 09 29)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Ben Price",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/benjamin.price",
+     insturl    = "",
+     title      = "Worlds",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 10 06)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Peter Hancock",
+     institute  = "",
+     speakerurl = "http://docs.hancock.fastmail.fm/",
+     insturl    = "",
+     title      = "Tetration",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 10 13)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Simone Barlocco",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Learning",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 10 20)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Bob Atkey",
+     institute  = "MSP",
+     speakerurl = "http://bentnib.org",
+     insturl    = "",
+     title      = "Newtonian Program Analysis",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 10 27)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Ross Duncan",
+     institute  = "MSP",
+     speakerurl = "http://personal.strath.ac.uk/ross.duncan",
+     insturl    = "",
+     title      = "Deep Learning",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 11 03)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "James/Fred",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 11 10)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Alasdair Lambert",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "Infinite Iteration of Games",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 11 17)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Fred/James",
+     institute  = "MSP",
+     speakerurl = "",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 11 24)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "Neil Ghani",
+     institute  = "MSP",
+     speakerurl = "http://personal.cis.strath.ac.uk/neil.ghani",
+     insturl    = "",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 12 01)
+                           (timeOfDayToTime (TimeOfDay 16 0 0))),
+     speaker    = "The Platypus team",
+     institute  = "MSP",
+     speakerurl = "https://github.com/msp-strath/platypus",
+     insturl    = "",
+     title      = "Platypus demo",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+  Talk {
+     date       = (UTCTime (fromGregorian 2017 12 06)
+                           (timeOfDayToTime (TimeOfDay 11 0 0))),
+     speaker    = "Chung-Kil Hur",
+     institute  = "Seoul National University",
+     speakerurl = "http://sf.snu.ac.kr/gil.hur/",
+     insturl    = "http://sf.snu.ac.kr/",
+     title      = "TBA",
+     abstract   = "",
+     location   = "LT1310",
+     material   = [] }
+  ,
+
+
   SpecialEvent {
      date  = (UTCTime (fromGregorian 2017 09 14)
                       (timeOfDayToTime (TimeOfDay 11 40 0))),
