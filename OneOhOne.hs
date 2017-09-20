@@ -260,17 +260,16 @@ generateICS ts out = do
       footer = unlines ["END:VCALENDAR"]
   writeFile out (header ++ content ++ footer)
     where gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
-            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
+            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
               in (desc, end, date, location, title, "")
           gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
-            = let desc = escape $ html2text $ unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
+            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
                   end = addUTCTime (60*60::NominalDiffTime) date
               in (desc, end, date, location, title, "Departmental seminar: ")
           gatherData (SpecialEvent date title url location locationurl description)
-            = let desc = escape $ html2text $ description
-                  end = addUTCTime (60*60::NominalDiffTime) date
-              in (desc, end, date, location, title, "Event: ")
+            = let end = addUTCTime (60*60::NominalDiffTime) date
+              in (description, end, date, location, title, "Event: ")
           gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material) = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
           escape :: String -> String
           escape [] = []
@@ -281,14 +280,15 @@ generateICS ts out = do
           escape (x:xs) = x:(escape xs)
           processEntry now (i,x)
             = let (desc, end, date, location, title, kindEvent) = gatherData x
+                  t = escape . html2text
               in
                   unlines ["BEGIN:VEVENT",
                            "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
                            "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date),
                            "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
-                           "LOCATION:" ++ location,
-                           wordwrap 73 "\n  " $ "SUMMARY:" ++ kindEvent ++ title,
-                           wordwrap 73 "\n  " $ "DESCRIPTION:" ++ desc,
+                           "LOCATION:" ++ (t location),
+                           wordwrap 73 "\n  " $ "SUMMARY:" ++ (t $ kindEvent ++ title),
+                           wordwrap 73 "\n  " $ "DESCRIPTION:" ++ (t $ desc),
                            "UID:" ++ (show i),
                            "END:VEVENT"]
 
