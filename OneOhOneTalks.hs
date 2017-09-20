@@ -19,7 +19,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "https://personal.cis.strath.ac.uk/conor.mcbride/",
      insturl    = "",
      title      = "Bidirectional Martin-L&ouml;f 1971",
-     abstract   = "",
+     abstract   = "Per Martin-L&ouml;f's 1971 Theory of Types is the ancestor of the type systems used today in Agda, Coq, Idris, NuPRL, and many other variations on the theme of dependent types. Its principal virtue is its simplicity: it has very few moving parts (but they move quite a lot). Its well known principal vice is its inconsistency: you can write a looping program inhabiting any type (thus 'proving' any proposition). I'll be talking about the design principles for constructing dependent type systems which are bidirectional &mdash; clearly split into a type  checking part and a type synthesis part. By following these principles, it gets easier to establish good safety properties of these systems. In particular, I'll sketch how to keep type safety (\"well typed programs don't go wrong\") separate from normalization (\"all computations terminate\"). Martin-L&oumlf's 1971, reformulated bidirectionally, makes a good example, because it's small and type-safe, but not normalizing.",
      location   = "LT1310",
      material   = [] }
   ,
