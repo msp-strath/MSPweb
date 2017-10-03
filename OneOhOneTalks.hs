@@ -56,7 +56,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://docs.hancock.fastmail.fm/",
      insturl    = "",
      title      = "Tetration",
-     abstract   = "",
+     abstract   = "In ghci, you can write something like <div class='centered'><tt>let two f = f . f in two two two two (+1) 0</tt></div> and it will print \"65536\". If you write something like <div class='centered'><tt>let two f = f . f ; four = two . two in four ($ two) id (+1) 0</tt></div> it will print \"Occurs check: cannot construct the infinite type: a ~ a -> a\".\n\nCan haskell not count to four?(*)\n\nThe topic is the compact representation of unfeasibly large numbers using a pure (Glaswegian?) universe.  Some excursions into the hinterland of the topic are likely.\n\nBy the way, tetration is the function m n |-> n ^ .. ^ n with m n's.\n\n(*) No doubt mad haskell mambo or pragma exists that will trick it into counting up to four.  I will reward the most amusing/revolting demonstration with a large (reasonably priced) malt whisky.",
      location   = "LT1310",
      material   = [] }
   ,
