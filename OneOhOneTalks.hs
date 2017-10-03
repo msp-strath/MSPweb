@@ -43,7 +43,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      speakerurl = "http://personal.strath.ac.uk/benjamin.price",
      insturl    = "",
      title      = "Worlds",
-     abstract   = "",
+     abstract   = "Building on last week's introduction to Martin-L&ouml;f 1971, we describe a toy type theory which not only accounts for what type terms have, but also where they live. This extra information can be interpreted as where (physically) data lives, at what phase (typechecking vs runtime) it exists, when it exists, or who has access to the data.\n\nIn return for caring about these \"worlds\" describing where data lives, we get applications to distributed computing and erasure for efficient code generation, with future work to consider productivity and security.",
      location   = "LT1310",
      material   = [] }
   ,
