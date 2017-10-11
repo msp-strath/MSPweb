@@ -68,8 +68,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "",
      insturl    = "",
-     title      = "Learning",
-     abstract   = "",
+     title      = "Coalgebraic Learning",
+     abstract   = "Automata learning is a well known technique to infer a finite state machine from a set of observations. One important algorithm for automata learning is the L* algorithm by Dana Angluin. In this 101 I will present a new perspective on L* using ideas from coalgebra and modal logic. After a brief recap of how L* works, I will describe a generalisation of the L* algorithm to the coalgebraic level. I will conclude my talk with two concrete instances of the general framework: the learning of Mealy machines and of bisimulation quotients of probabilistic transition systems.",
      location   = "LT1310",
      material   = [] }
   ,
