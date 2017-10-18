@@ -95,8 +95,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "MSP",
      speakerurl = "http://bentnib.org",
      insturl    = "",
-     title      = "Newtonian Program Analysis",
-     abstract   = "",
+     title      = "Measuring the sizes of trees",
+     abstract   = "I'll talk about a way of measuring the sizes of trees using weighted tree automata, in a compositional way that works well with pattern matching. This is based on some work by Georg Moser and Martin Hofmann.",
      location   = "LT1310",
      material   = [] }
   ,
