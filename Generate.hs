@@ -79,8 +79,10 @@ relevantEntry _ _ s | "#" `isPrefixOf` s && "#" `isSuffixOf` s  = False
 relevantEntry _ _ s | "~"   `isSuffixOf` s = False
 -- Keep all attached non-junk 101 files
 relevantEntry base root _ | base == root </> "101" </> "files" = True
-relevantEntry _ _         "Makefile"     = False
-relevantEntry _ _         "README.md"    = False
+-- these should be below the 101 check!
+relevantEntry _ _         "dist"      = False
+relevantEntry _ _         "Makefile"  = False
+relevantEntry _ _         "README.md" = False
 relevantEntry _ _ s | ".cabal" `isSuffixOf` s = False
 relevantEntry _ _ s | ".hs" `isSuffixOf` s = False
 relevantEntry _ _ _ = True
