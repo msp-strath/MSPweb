@@ -1,15 +1,19 @@
+{-# LANGUAGE DeriveGeneric #-}
 module OneOhOne where
 
 import Data.Time
 
-
 import Data.List
 import Data.Ord
+import Data.Foldable
 import Control.Arrow
 import Control.Monad
 
 import Data.Array((!))
 import Text.Regex.PCRE
+
+import GHC.Generics
+import Data.Aeson
 
 -- constants
 usualTime :: TimeOfDay
@@ -144,7 +148,10 @@ data Material = Link { address :: String,
               | Whiteboard { dirName :: FilePath }
               | File { path :: FilePath,
                        fileDescription :: String }
-  deriving (Show, Read, Eq)
+  deriving (Show, Read, Eq, Generic)
+
+instance FromJSON Material
+instance ToJSON Material
 
 data Talk = Talk {
                    date :: UTCTime,
@@ -187,7 +194,24 @@ data Talk = Talk {
                    location :: String,
                    material :: [Material]
                  }
-  deriving (Show, Read, Eq)
+          -- we want to keep cancelled talks in the input file in
+          -- order to not shift indices; easiest way is to just change
+          -- the tag
+          | CancelledTalk {
+                   date :: UTCTime,
+                   speaker :: String,
+                   institute :: String,
+                   speakerurl :: String,
+                   insturl :: String,
+                   title :: String,
+                   abstract :: String,
+                   location :: String,
+                   material :: [Material]
+                 }
+  deriving (Show, Read, Eq, Generic)
+
+instance FromJSON Talk
+instance ToJSON Talk
 
 
 

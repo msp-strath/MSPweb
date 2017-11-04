@@ -1,5 +1,5 @@
 name:           MSPweb
-version:        0.1.0.0
+version:        0.2.0.0
 synopsis:       Generator for the MSP website
 homepage:       https://github.com/msp-strath/MSPweb
 author:         Bob Atkey, Fredrik Nordvall Forsberg
@@ -14,7 +14,7 @@ executable Generate
 
 executable Generate101
   main-is:             Generate101.hs
-  other-modules:       OneOhOne, OneOhOneTalks
-  build-depends:       base, time, regex-pcre-builtin, array
+  other-modules:       OneOhOne
+  build-depends:       base, time, regex-pcre-builtin, array, aeson, bytestring
   default-language:    Haskell2010
 
