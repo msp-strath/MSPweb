@@ -1,13 +1,6 @@
 module OneOhOneTalks(talks) where
 
-import Data.Time
-
-import OneOhOne
-
--- IMPORTANT: Always add new talks at the top of the list!
--- The use of reverse then makes sure that the old entries
--- get to keep their old id numbers that are zipped in
-
+{-
 talks :: [(Int, Talk)]
 talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
 
@@ -1962,4 +1955,4 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   location   = "LT1310",
   material   = [] }
  ]
-    
+-}
