@@ -18,8 +18,8 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
      institute  = "Universität Bremen",
      speakerurl = "http://johannesmarti.com/",
      insturl    = "http://www.informatik.uni-bremen.de/tdki/",
-     title      = "TBA",
-     abstract   = "",
+     title      = "Size-Matters in the Modal mu-Calculus",
+     abstract   = "I talk about three methods for measuring the size of formulas in the modal mu-calculus and explore how the choice between them influences the complexity of computations on formulas. Especially, I focus on the guarded transformation, which is a simple syntactic transformation on formulas that is commonly assumed to be polynomial but has recently been shown to require exponential time.\n\nI will complain about the mess in the literature and present two of our (Clemens, Yde and me) own preliminary results:\n\n1) There is a polynomial guarded transformation if we measure the input formula in the number of its subformulas and measure the output formula in the size of its closure.\n\n2) If there is a polynomial guarded transformation where we measure the input formula in the size of its closure then there is a polynomial algorithm for solving parity games. Hence finding such a transformation is at least as hard as solving parity games, which is commonly believed to be quite hard.\n\nWe employ an automata-theoretic approach that relates the different measures for the size of a formula to different constraints on the transition structure of an automaton corresponding to the formula.\n\nThis is a very technical talk but there will be many pictures!",
      location   = "LT1310",
      material   = [] }
   ,
@@ -102,7 +102,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   ,
 
   Talk {
-     date       = (UTCTime (fromGregorian 2017 11 03)
+     date       = (UTCTime (fromGregorian 2017 11 17)
                            (timeOfDayToTime (TimeOfDay 16 0 0))),
      speaker    = "Ross Duncan",
      institute  = "MSP",
@@ -141,7 +141,7 @@ talks = reverse $ zipWith (,) [(0::Int)..] $ reverse [
   ,
 
   Talk {
-     date       = (UTCTime (fromGregorian 2017 11 17)
+     date       = (UTCTime (fromGregorian 2017 12 22)
                            (timeOfDayToTime (TimeOfDay 16 0 0))),
      speaker    = "Fred/James",
      institute  = "MSP",
