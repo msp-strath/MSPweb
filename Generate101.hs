@@ -11,7 +11,7 @@ import OneOhOne
 
 talks :: IO [(Int, Talk)]
 talks = do
-  f <- BS.readFile "101.json"
+  f <- BS.readFile "_101.json"
   case eitherDecode' f of
     Left err -> error err
     Right ts -> return $ reverse $ zip [(0::Int)..] $ reverse ts
