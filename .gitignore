@@ -1,5 +1,7 @@
 # Generated output files
 _build/*
+_dist/*
+dist/*
 
 # Logs downloaded using make get-logs
 _logs/*
