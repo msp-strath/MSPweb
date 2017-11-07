@@ -112,7 +112,7 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Infinite Iteration of Games",
-    "abstract": "",
+    "abstract": "My talk will be based on our recent paper \"A Compositional Treatment of Iterated Open Games\". In this paper we introduce a new operator on open games to capture the concept of subgame perfect equilibrium as well as providing final coalgebra semantics of infinite games.",
     "location": "LT1310",
     "material": []
   },
