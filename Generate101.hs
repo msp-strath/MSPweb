@@ -29,6 +29,9 @@ prettyEncode ts file = do
 
 main = do
   ts <- talks
-  generateRSS  ts "msp101.rss"
-  generateICS  ts "msp101.ics"
-  generateHTML ts "msp101.html"
+  let ts' = filter (\ (i, x) -> not (cancelled x)) ts
+  generateRSS  ts' "msp101.rss"
+  generateICS  ts' "msp101.ics"
+  generateHTML ts' "msp101.html"
+ where cancelled CancelledTalk{} = True
+       cancelled _               = False
