@@ -10,7 +10,7 @@ import System.Directory ( getDirectoryContents, doesDirectoryExist
                         , doesFileExist, getCurrentDirectory
                         , createDirectoryIfMissing, copyFile )
 
-import Text.Pandoc
+import Text.Pandoc hiding (FileTree)
 
 {-
 -- Cheapskate
