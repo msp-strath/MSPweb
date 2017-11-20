@@ -11,6 +11,7 @@ import System.Directory ( getDirectoryContents, doesDirectoryExist
                         , createDirectoryIfMissing, copyFile )
 
 import Text.Pandoc hiding (FileTree)
+import Data.Text (pack, unpack)
 
 {-
 -- Cheapskate
@@ -46,10 +47,10 @@ data EntryClass
     | Unknown
     deriving Show
 
-translateMarkdown :: String -> String
-translateMarkdown =  writeHtmlString def . handleError . readMarkdown def
---translateMarkdown = unpack . TL.toStrict . renderHtml . toHtml . markdown def . pack -- cheapskate
---translateMarkdown = unpack . commonmarkToHtml [optSmart] . pack -- CMark
+translateMarkdown :: String -> IO String
+translateMarkdown s =  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown def $ pack s))
+--translateMarkdown = return . unpack . TL.toStrict . renderHtml . toHtml . markdown def . pack -- cheapskate
+--translateMarkdown = return . unpack . commonmarkToHtml [optSmart] . pack -- CMark
 
 
 -- | Determine whether a path refers to a file, a directory, or
@@ -188,15 +189,16 @@ generateFiles inputRoot outputRoot tree = do
             knownSuffixes = [".html", ".md"] in
         if any (\ x -> x `isSuffixOf` name) knownSuffixes then do
           result <- parseHeader <$> readFile inputPath
-          let translate = if  ".md" `isSuffixOf` name then translateMarkdown else id
+          let translate = if  ".md" `isSuffixOf` name then translateMarkdown else return
           body <- case result of
                 Left (template, baseEnv, body) -> do
                   let templatePath = inputRoot </> "_templates" </> template
                   templateBody <- readFile templatePath
-                  let env = ("rootPath",rootPath):("content", translate body):baseEnv
+                  tbody <- translate body
+                  let env = ("rootPath",rootPath):("content", tbody):baseEnv
                   return (substitute templateBody env)
                 Right body ->
-                  return $ translate body
+                  translate body
           writeFile outputPath $ body
         else
             copyFile inputPath outputPath
