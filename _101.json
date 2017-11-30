@@ -141,13 +141,13 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "BasicTalk",
     "date": "2017-12-01T16:00:00Z",
-    "speaker": "The Platypus team",
+    "speaker": "Conor McBride",
     "institute": "MSP",
-    "speakerurl": "https://github.com/msp-strath/platypus",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "Platypus demo",
+    "title": "Hereditary substitution",
     "abstract": "",
     "location": "LT1310",
     "material": []
