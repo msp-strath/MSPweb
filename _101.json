@@ -154,14 +154,14 @@
   },
   {
     "tag": "Talk",
-    "date": "2017-12-06T11:00:00Z",
+    "date": "2017-12-06T13:00:00Z",
     "speaker": "Chung-Kil Hur",
     "institute": "Seoul National University",
     "speakerurl": "http://sf.snu.ac.kr/gil.hur/",
     "insturl": "http://sf.snu.ac.kr/",
-    "title": "TBA",
-    "abstract": "",
-    "location": "LT1310",
+    "title": "The Power of Parameterization in Coinductive Proof",
+    "abstract": "In this talk, I will present a simple yet powerful principle for coinductive reasoning, which we call \"parameterized coinduction\". More specifically, it is as simple as the Knaster-Tarski theorem without requiring any syntactic checking, yet as powerful as Coq's syntactic guarded coinduction supporting incremental reasoning. As an important consequence, parameterized coinduction can easily support complex nested induction-coinduction. \n\nWe also implemented the parameterized coinduction as the Coq library called \"paco\", which can be found at:\n\n<a href='http://plv.mpi-sws.org/paco'>http://plv.mpi-sws.org/paco</a>\n\nThis is joint work with Georg Neis, Derek Dreyer and Viktor Vafeiadis, and was presented at POPL'13. ",
+    "location": "LT1415",
     "material": []
   },
   {
