@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2017-12-08T16:00:00Z",
+    "speaker": "Bob Atkey",
+    "institute": "MSP",
+    "speakerurl": "http://bentnib.org",
+    "insturl": "",
+    "title": "Dijkstra Monads",
+    "abstract": "One monad to the tune of another.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2017-10-27T16:00:00Z",
     "speaker": "Johannes Marti",
     "institute": "Universität Bremen",
