@@ -105,7 +105,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2017-12-15T16:00:00Z",
     "speaker": "James/Fred",
     "institute": "MSP",
@@ -129,7 +129,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2017-12-22T16:00:00Z",
     "speaker": "Fred/James",
     "institute": "MSP",
