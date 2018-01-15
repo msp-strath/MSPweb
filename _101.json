@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2018-01-16T16:00:00Z",
+    "title": "MSP101 Planning session",
+    "url": "",
+    "location": "LT1310",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2017-12-08T16:00:00Z",
     "speaker": "Bob Atkey",
