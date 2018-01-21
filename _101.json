@@ -99,9 +99,9 @@
     "institute": "Radboud University Nijmegen",
     "speakerurl": "http://jurriaan.me/",
     "insturl": "http://www.ru.nl/icis/",
-    "title": "TBC",
-    "abstract": "",
-    "location": "LT1415",
+    "title": "Coinduction and the Companion",
+    "abstract": "The coinductive proof method can be enhanced by several techniques, often referred to as up-to-techniques. I will talk about the basic theory of coinduction-up-to, and a little about the more recent notion of companion. This companion is the largest valid up-to technique for a given predicate, and gives a nice way of working with coinduction up-to.",
+    "location": "LT1310",
     "material": []
   },
   {
