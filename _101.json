@@ -76,7 +76,7 @@
     "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
     "insturl": "",
     "title": "The adjoint functor theorem",
-    "abstract": "",
+    "abstract": "Adjoint functors arise everywhere, but how do we find them? It is a fun exercise to prove that right adjoints preserve limits, and, dually, that left adjoints preserve colimits. An adjoint functor theorem is a statement that (under certain conditions) the converse holds: a functor which preserves limits is a right adjoint. I will discuss the General Adjoint Functor Theorem, and why Peter Johnstone considers it fundamentally useless."
     "location": "LT1310",
     "material": []
   },
