@@ -1,6 +1,41 @@
 [
   {
     "tag": "BasicTalk",
+    "date": "2018-02-14T15:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "institute": "MSP",
+    "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+    "insturl": "",
+    "title": "Domain Theory",
+    "abstract": "I will give an introduction to Domain Theory, focusing on motivation. I hope to cover recursive definitions, and solving domain equations using retraction pairs.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-02-08T15:00:00Z",
+    "speaker": "Alexander Kurz",
+    "institute": "Leicester",
+    "speakerurl": "http://www.cs.le.ac.uk/people/ak155/",
+    "insturl": "https://www2.le.ac.uk/departments/informatics",
+    "title": "Introduction to coalgebra",
+    "abstract": "",
+    "location": "LT1212",
+    "material": []
+  },
+  {
+    "tag": "DepartmentalSeminar",
+    "date": "2018-02-07T15:00:00Z",
+    "speaker": "Justin Hsu",
+    "institute": "UCL",
+    "speakerurl": "https://justinh.su/",
+    "insturl": "http://pplv.cs.ucl.ac.uk/welcome/",
+    "title": "From Couplings to Probabilistic Relational Program Logics",
+    "abstract": "Many program properties are relational, comparing the behavior of a program (or even two different programs) on two different inputs. While researchers have developed various techniques for verifying such properties for standard, deterministic programs, relational properties for probabilistic programs have been more challenging. In this talk, I will survey recent developments targeting a range of probabilistic relational properties, with motivations from privacy, cryptography, machine learning. The key idea is to meld relational program logics with an idea from probability theory, called a probabilistic coupling. The logics allow a highly compositional and surprisingly general style of analysis, supporting clean proofs for a broad array of probabilistic relational properties.",
+    "location": "LT1415"
+  },
+  {
+    "tag": "BasicTalk",
     "date": "2018-03-21T15:00:00Z",
     "speaker": "James Chapman",
     "institute": "MSP",
@@ -57,7 +92,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2018-02-14T15:00:00Z",
     "speaker": "Conor McBride",
     "institute": "MSP",
