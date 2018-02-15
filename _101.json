@@ -69,19 +69,19 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-02-28T15:00:00Z",
+    "date": "2018-02-21T15:00:00Z",
     "speaker": "Jan de Muijnck-Hughes",
     "institute": "Glasgow",
     "speakerurl": "http://jfdm.github.io/",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "TBA",
-    "abstract": "",
+    "title": "A Type-System for describing the Structural Topology of System-on-a-Chip Architectures",
+    "abstract": "The protocols that describe the interactions between IP Cores on System-on-a-Chip architectures are well-documented. These protocols described not only the structural properties of the physical interfaces but also the behaviour of the emanating signals. However, there is a disconnect between the design of SoC architectures, their formal description, and the verification of their implementation in known hardware description languages.\n\nWithin the Border Patrol project we are investigating how to capture and reason about the structural and behavioural properties of SoC architectures using state-of-the-art advances in programming language research. Namely, we are investigating using dependent types and session types for the description of hardware communication.\n\nIn this talk I will discuss my work in designing a linked family of languages that captures and reasons about the topological structure of a System-on-a-Chip. These languages provide correct-by-construction guarantees over the interaction protocols themselves; the adherence of a component that connects using said protocols; and the validity of the specified connections. These guarantees are provided through abuse of indexed monads to reason about resource usage; and general (ab)use of dependent types as presented in Idris.\n\nI will not cover all aspects of the languages but will concentrate my talk detailing the underlying theories that facilitate the correct-by-construction guarantees.",
     "location": "LT1310",
     "material": []
   },
   {
     "tag": "BasicTalk",
-    "date": "2018-02-21T15:00:00Z",
+    "date": "2018-02-28T15:00:00Z",
     "speaker": "Alasdair Lambert and Ben Price",
     "institute": "MSP",
     "speakerurl": "",
