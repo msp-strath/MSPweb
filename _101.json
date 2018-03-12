@@ -47,14 +47,14 @@
     "material": []
   },
   {
-    "tag": "BasicTalk",
+    "tag": "Talk",
     "date": "2018-03-14T15:00:00Z",
     "speaker": "Joe Collins",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "",
+    "title": "Quantum Computing with ZX Calculus",
+    "abstract": "Quantum mechanics is dope, so it makes sense that making a computer using the principles of quantum mechanics would also be pretty sick. However, the formalism that is used by physicists, called a Hilbert space, is not specialised for this purpose. In particular, it is\n1) Difficult to prove properties about programs for quantum computers\n2) Difficult to see what is these programs are actually doing\n\nThankfully, category theory is very cool! Using ZX calculus, we can talk about quantum computing in a much clearer manner. I will be introducing some fundamental quantum mechanics and ZX calculus, and then using ZX calculus I will talk about Shor's algorithm.",
     "location": "LT1310",
     "material": []
   },
