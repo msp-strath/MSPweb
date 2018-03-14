@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2018-03-21T15:00:00Z",
+    "speaker": "Jamie Gabbay",
+    "institute": "Heriot-Watt",
+    "speakerurl": "http://www.gabbay.org.uk",
+    "insturl": "http://www.macs.hw.ac.uk/departments/computer-science.htm",
+    "title": "TBA",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "BasicTalk",
     "date": "2018-02-14T15:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
@@ -36,7 +48,7 @@
   },
   {
     "tag": "BasicTalk",
-    "date": "2018-03-21T15:00:00Z",
+    "date": "2018-03-28T15:00:00Z",
     "speaker": "James Chapman",
     "institute": "MSP",
     "speakerurl": "http://personal.strath.ac.uk/james.chapman",
@@ -758,7 +770,7 @@
     "material": []
   },
   {
-    "tag": "BasicTalk",
+    "tag": "Talk",
     "date": "2016-12-14T11:00:00Z",
     "speaker": "Alasdair Lambert",
     "institute": "MSP",
@@ -770,7 +782,7 @@
     "material": []
   },
   {
-    "tag": "BasicTalk",
+    "tag": "Talk",
     "date": "2016-12-07T11:00:00Z",
     "speaker": "Jamie Gabbay",
     "institute": "Heriot-Watt",
