@@ -1,18 +1,6 @@
 [
   {
     "tag": "Talk",
-    "date": "2018-03-28T12:30:00Z",
-    "speaker": "Thorsten Altenkirch",
-    "institute": "Nottingham",
-    "speakerurl": "http://www.cs.nott.ac.uk/~txa/",
-    "insturl": "http://www.cs.nott.ac.uk/",
-    "title": "What is a category, actually?",
-    "abstract": "Let us revisit the definition of a category and define it in a way which has the advantage that we can generalize it to higher dimensions. Why am I interested in higher categories (or specifically (\infty,1)-categories? I have a few problems in Homotopty Type Theory which I think can be solved using these beasts: the coherence problem for type theory in type theory (in the moment I cannot even define the standard model) and generalizing the Hungarian approach to Quotient Inductive Inductive Types (QIITs) to Higher Inductive Inductive Types (HIITs).",
-    "location": "LT1310",
-    "material": []
-  },
-  {
-    "tag": "Talk",
     "date": "2018-03-21T15:00:00Z",
     "speaker": "Jamie Gabbay",
     "institute": "Heriot-Watt",
@@ -60,7 +48,7 @@
   },
   {
     "tag": "BasicTalk",
-    "date": "2018-04-04T15:00:00Z",
+    "date": "2018-03-28T15:00:00Z",
     "speaker": "James Chapman",
     "institute": "MSP",
     "speakerurl": "http://personal.strath.ac.uk/james.chapman",
