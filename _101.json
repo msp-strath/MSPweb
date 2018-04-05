@@ -59,14 +59,14 @@
     "location": "LT1415"
   },
   {
-    "tag": "BasicTalk",
+    "tag": "Talk",
     "date": "2018-04-06T11:00:00Z",
     "speaker": "James Chapman",
     "institute": "MSP",
     "speakerurl": "http://personal.strath.ac.uk/james.chapman",
     "insturl": "",
-    "title": "Quotients",
-    "abstract": "",
+    "title": "Setoids and Quotients",
+    "abstract": "In preparation for Fred's talk about \"Quotient Inductive-Inductive Types\" next week I will introduce quotients and setoids in type theory and some of the issues surrounding them. The use of setoids is discouraged by many doctors and can lead to a contagious and incurable condition: relation preservation. Quotients on the other hand are dangerous if not correctly handled and can lead to unsightly things appearing where they shouldn't such as inhabitants of the excluded middle.",
     "location": "LT1310",
     "material": []
   },
