@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2018-04-12T11:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "institute": "MSP",
+    "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+    "insturl": "",
+    "title": "Quotient Inductive-Inductive Types",
+    "abstract": "Higher inductive types (HITs) in Homotopy Type Theory (HoTT) allow the definition of datatypes which have constructors for equalities over the defined type. HITs generalise quotient types and allow to define types which are not sets in the sense of HoTT (i.e. do not satisfy uniqueness of equality proofs) such as spheres, suspensions and the torus. However, there are also interesting uses of HITs to define sets, such as the Cauchy reals, the partiality monad, and the internal, total syntax of type theory.  In each of these examples we define several types that depend on each other mutually, i.e. they are inductive-inductive definitions. We call those HITs quotient inductive-inductive types (QIITs).\n\nAlthough there has been recent progress on the general theory of HITs, there isn't yet a theoretical foundation of the combination of equality constructors and induction-induction, despite having many interesting applications. In the present paper we present a first step towards a semantic definition of QIITs. In particular, we give an initial-algebra semantics and show that this is equivalent to the section induction principle, which justifies the intuitively expected elimination rules.",
+    "location": "LT1415",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2018-03-28T12:30:00Z",
     "speaker": "Thorsten Altenkirch",
     "institute": "Nottingham",
