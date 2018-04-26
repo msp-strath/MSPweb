@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2018-04-19T11:00:00Z",
+    "speaker": "James Wood",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Midlands Graduate School Trip Report",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2018-04-12T11:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
