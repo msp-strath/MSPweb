@@ -1,5 +1,17 @@
 [
   {
+    "tag": "BasicTalk",
+    "date": "2018-05-04T11:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "institute": "MSP",
+    "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg",
+    "insturl": "",
+    "title": "The Dialectica Interpretation",
+    "abstract": "A proof interpretation translates proofs of one logical system into proofs of another (example: the double-negation interpretation of classical logic into constructive logic). This often reveals some information about the original system (e.g. classical logic is equiconsistent with constructive logic). G&ouml;del's Dialectica interpretation (named after the journal it was published in) translates Heyting arithmetic (the constructive theory of the natural numbers, including induction) into into System T (the quantifier-free theory of the simply typed lambda calculus with natural numbers) &em; quantifier complexity is traded for higher type complexity! Combining this translation with (a refined) double negation translation, one can extract System T programs from a proof of a forall-exists statement, even if this proof is using non-constructive priciples such as Markov's Principle, Excluded Middle, or the Quantifier-Free Axiom of Choice. I've always found the Dialectica translation mystifying, so I'll try to explain the intuition behind it.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "Talk",
     "date": "2018-04-19T11:00:00Z",
     "speaker": "James Wood",
