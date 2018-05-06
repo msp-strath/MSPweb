@@ -1,5 +1,41 @@
 [
   {
+    "tag": "Talk",
+    "date": "2018-05-23T16:00:00Z",
+    "speaker": "Bob Atkey",
+    "institute": "MSP",
+    "speakerurl": "http://bentnib.org",
+    "insturl": "",
+    "title": "The Syntax and Semantics of Quantitative Type Theory",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-05-16T11:00:00Z",
+    "speaker": "Helle Hvid Hansen",
+    "institute": "TU Delft",
+    "speakerurl": "https://homepage.tudelft.nl/c9d1n/",
+    "insturl": "https://www.tudelft.nl/en/tpm/about-the-faculty/departments/engineering-systems-and-services/",
+    "title": "TBA",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-05-30T11:00:00Z",
+    "speaker": "Artem Shinkarov and Peter Hancock",
+    "institute": "Heriot-Watt",
+    "speakerurl": "http://ashinkarov.github.io/",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "BasicTalk",
     "date": "2018-05-04T11:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
