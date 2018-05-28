@@ -50,12 +50,12 @@
   {
     "tag": "Talk",
     "date": "2018-05-30T11:00:00Z",
-    "speaker": "Artem Shinkarov and Peter Hancock",
+    "speaker": "Artjoms Šinkarovs and Peter Hancock",
     "institute": "Heriot-Watt",
     "speakerurl": "http://ashinkarov.github.io/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "",
+    "title": "Multi-Dimensional Arrays and their Types",
+    "abstract": "Though Multi-Dimensional Arrays (MDAs) seem conceptually straightforward, it's not easy to come up with a mathematical theory of arrays that can be used within optimising compilers.  We'd like to treat arrays as functions from indices to values with some domain restrictions.  It is desirable that these domain restrictions are specified in a compact form, and are equipped with closed algebraic operations like intersection, union, etc.  We are going to consider a few typical models like hyperrectangulars, grids and polyhedrons.\n\nWhen typing array operations, ideally we'd like to find a balance between tracking all the shapes of arrays and allowing for generic array operations.  This proves to be tricky, for reasons we'll explain.\n\nWe will propose, tentatively, an analysis of MDAs in terms of container functors.  The aim is to supply concepts helpful when thinking about MDAs, e.g. when designing notations for coding with arrays.  Some intriguing gadgetry shows up.",
     "location": "LT1310",
     "material": []
   },
