@@ -1,13 +1,34 @@
 [
   {
     "tag": "Talk",
+    "date": "2018-06-13T11:00:00Z",
+    "speaker": "James Chapman",
+    "institute": "MSP",
+    "speakerurl": "http://personal.strath.ac.uk/james.chapman",
+    "insturl": "",
+    "title": "Gilette Fusion",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "SpecialEvent",
+    "date": "2018-06-05T12:00:00Z",
+    "title": "SPLS",
+    "url": "http://www.macs.hw.ac.uk/~rs46/spls-june-2018/",
+    "location": "Cairn Auditorium, PG G.01, Postgraduate Centre, Heriot-Watt University",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
     "date": "2018-05-29T13:00:00Z",
     "speaker": "Helle Hvid Hansen",
     "institute": "TU Delft",
     "speakerurl": "https://homepage.tudelft.nl/c9d1n/",
     "insturl": "https://www.tudelft.nl/en/tpm/about-the-faculty/departments/engineering-systems-and-services/",
     "title": "A Coinductive Proof of Policy Iteration Correctness",
-    "abstract": "This is the second half of Helle's talk on a (co)algebraic treatment of Markov Decision Processes. It focuses on a coinductive explanation of policy improvement using a new proof principle, based on Banach's Fixpoint Theorem, that we call contraction coinduction",
+    "abstract": "This is the second half of Helle's talk on a (co)algebraic treatment of Markov Decision Processes. It focuses on a coinductive explanation of policy improvement using a new proof principle, based on Banach's Fixpoint Theorem, that we call contraction coinduction.",
     "location": "LT1310",
     "material": []
     },
