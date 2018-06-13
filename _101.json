@@ -6,8 +6,9 @@
     "institute": "MSP",
     "speakerurl": "http://personal.strath.ac.uk/james.chapman",
     "insturl": "",
-    "title": "Gilette Fusion",
-    "abstract": "",
+    "title": "Gillette Fusion: Kits for Hutton's Razor or Type Unsafe and Scope
+   Unsafe Programs and Their Proofs",
+    "abstract": "The paper Type-and-Scope Safe Programs and Their Proofs abstracts the common type-and-scope safe structure from computations on lambda-terms that deliver, e.g., renaming, substitution, evaluation, CPS-transformation, and printing with a name supply. By exposing this structure, we can prove generic simulation and fusion lemmas relating operations built this way. In this talk I will present this approach but for simpler setting of Hutton's Razor. This reduces the mathematical structures involved from relative structures to the ordinary counterparts.",
     "location": "LT1310",
     "material": []
   },
