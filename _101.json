@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2018-07-18T11:00:00Z",
+    "speaker": "Jurriaan Rot",
+    "institute": "Radboud University Nijmegen",
+    "speakerurl": "http://jurriaan.me/",
+    "insturl": "http://www.ru.nl/icis/",
+    "title": "Finite and Infinite Traces, Inductively and Coinductively",
+    "abstract": "It is a well-known fact (used e.g. in model checking) that, on finitely branching transition systems, finite trace equivalence coincides with infinite trace equivalence. I will show how to prove this coinductively, which is arguably nicer than the standard inductive proof.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2018-06-13T11:00:00Z",
     "speaker": "James Chapman",
     "institute": "MSP",
