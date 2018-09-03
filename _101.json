@@ -1,6 +1,42 @@
 [
   {
     "tag": "Talk",
+    "date": "2018-08-31T15:00:00Z",
+    "speaker": "Philippa Cowderoy",
+    "institute": "",
+    "speakerurl": "http://flippac.org",
+    "insturl": "",
+    "title": "Telescopic [Constraint] Trees",
+    "abstract": "Or: Information-Aware Type Systems In Context",
+    "location": "LT1415",
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2018-08-31_cowderoy.pdf",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-08-29T15:00:00Z",
+    "speaker": "Philippa Cowderoy",
+    "institute": "",
+    "speakerurl": "http://flippac.org",
+    "insturl": "",
+    "title": "Information-Aware Type Systems",
+    "abstract": "",
+    "location": "LT1415",
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2018-08-29_cowderoy.pdf",
+        "comment": ""
+      }
+    ]
+  },
+  {
+    "tag": "Talk",
     "date": "2018-07-18T12:00:00Z",
     "speaker": "Jurriaan Rot",
     "institute": "Radboud University Nijmegen",
