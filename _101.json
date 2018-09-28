@@ -1,13 +1,43 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2018-10-17T12:00:00Z",
+    "title": "SPLS",
+    "url": "https://msp-strath.github.io/spls-18/",
+    "location": "Strathclyde",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "SpecialEvent",
+    "date": "2018-09-28T16:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-09-21T16:00:00Z",
+    "speaker": "Conor McBride",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
+    "insturl": "",
+    "title": "First-order unification",
+    "abstract": "I'll do a 101 today, filed under \"stuff everybody should know\" about first-order unification (the algorithm underlying Hindley-Milner type inference, Prolog, etc). But then I'll throw in the twist of considering syntax with binding. The way I cook it, this makes essential use of the structure of the category of thinnings.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "Talk",
     "date": "2018-08-31T15:00:00Z",
     "speaker": "Philippa Cowderoy",
     "institute": "",
     "speakerurl": "http://flippac.org",
     "insturl": "",
-    "title": "Telescopic [Constraint] Trees",
-    "abstract": "Or: Information-Aware Type Systems In Context",
+    "title": "Telescopic [Constraint] Trees, or: Information-Aware Type Systems In Context",
+    "abstract": "The minimalist tradition in type systems makes for easy mathematics, but often leaves their mechanisms needlessly obscured.\n\nI build a structure for Hindley-Milner checking problems in the tradition of Type Inference in Context. This structure is derived from typing rules in the style of my first talk and mirrors data structures used for elaboration problems in dependent type systems &mdash; offering a notation that can be used among designers and implementors of type systems and even in explaining their behaviour to users.",
     "location": "LT1415",
     "material": [
       {
@@ -25,7 +55,7 @@
     "speakerurl": "http://flippac.org",
     "insturl": "",
     "title": "Information-Aware Type Systems",
-    "abstract": "",
+    "abstract": "The minimalist tradition in type systems makes for easy mathematics, but often leaves their mechanisms needlessly obscured.\n\nOne possible remedy is to track the behaviour of information in a system &mdash; its creation, its destruction and how it flows between constraints and source locations. I illustrate this with the Simply-Typed Lambda Calculus.",
     "location": "LT1415",
     "material": [
       {
@@ -967,7 +997,7 @@
     "speakerurl": "http://www.gabbay.org.uk",
     "insturl": "http://www.macs.hw.ac.uk/departments/computer-science.htm",
     "title": "Nominal filters and semantics of predicate logic",
-    "abstract": "A <dfn>filter</dfn> P is a consistent deductively closed set of predicates. A filter is <dfn>prime</dfn> when\n<div class='centered'>(&phi; &or; &psi;) &isin; P &rArr; (&phi; &isin; P &or; &psi; &isin; P)</div>In words: if phi-or-psi is in P then phi is in P or psi is in P. Primeness gives soundness for disjunction.\n\nUsing this it is not hard to construct a semantics to propositional logic in which a predicate &phi; \"means\" the set of prime filters containing it.  This is a standard \"trick\" for building semantics and is an extremely useful proof-method.\n\nI have developed a semantics for predicate logic and also for the lambda-calculus based on similar notions of filter, but in a <i>nominal</i> context --- meaning that filters are developed using Fraenkel-Mostowski (FM) set theory instead of Zermelo-Fraenkel (ZF) set theory.  What matters here is that FM sets have additional name structure over ZF sets, and this additional structure can be exploited to give semantics to the extra structure that predicates have over propositions, and in particular the additional name structure lets us write down primeness conditions for soundness for universal quantification.\n\nThe resulting semantics is rich and interesting.  In a sentence: nominal techniques help us to extend the notion of Stone representation and duality from propositional logic to full first-order logic (also with equality, if we wish, and also to other logics and calculi with variables and quantifiers).\n\nI will give a detailed description of the filter-style conditions involved, and discuss some of what I think they tell us about predicates and quantification in logic and computation.  More information can also be found in two papers here:\n<a href='http://www.gabbay.org.uk/papers.html#semooc'>http://www.gabbay.org.uk/papers.html#semooc</a>\n<a href='http://www.gabbay.org.uk/papers.html#repdul'>http://www.gabbay.org.uk/papers.html#repdul</a>",
+    "abstract": "A <dfn>filter</dfn> P is a consistent deductively closed set of predicates. A filter is <dfn>prime</dfn> when\n<div class='centered'>(&phi; &or; &psi;) &isin; P &rArr; (&phi; &isin; P &or; &psi; &isin; P)</div>In words: if phi-or-psi is in P then phi is in P or psi is in P. Primeness gives soundness for disjunction.\n\nUsing this it is not hard to construct a semantics to propositional logic in which a predicate &phi; \"means\" the set of prime filters containing it.  This is a standard \"trick\" for building semantics and is an extremely useful proof-method.\n\nI have developed a semantics for predicate logic and also for the lambda-calculus based on similar notions of filter, but in a <i>nominal</i> context &mdash; meaning that filters are developed using Fraenkel-Mostowski (FM) set theory instead of Zermelo-Fraenkel (ZF) set theory.  What matters here is that FM sets have additional name structure over ZF sets, and this additional structure can be exploited to give semantics to the extra structure that predicates have over propositions, and in particular the additional name structure lets us write down primeness conditions for soundness for universal quantification.\n\nThe resulting semantics is rich and interesting.  In a sentence: nominal techniques help us to extend the notion of Stone representation and duality from propositional logic to full first-order logic (also with equality, if we wish, and also to other logics and calculi with variables and quantifiers).\n\nI will give a detailed description of the filter-style conditions involved, and discuss some of what I think they tell us about predicates and quantification in logic and computation.  More information can also be found in two papers here:\n<a href='http://www.gabbay.org.uk/papers.html#semooc'>http://www.gabbay.org.uk/papers.html#semooc</a>\n<a href='http://www.gabbay.org.uk/papers.html#repdul'>http://www.gabbay.org.uk/papers.html#repdul</a>",
     "location": "LT1310",
     "material": []
   },
@@ -1143,7 +1173,7 @@
     "speakerurl": "http://personal.strath.ac.uk/ross.duncan/",
     "insturl": "",
     "title": "Interacting Frobenius Algebras are Hopf",
-    "abstract": "Practice talk for LICS.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi have shown that, given a suitable distribution law, a pair of Hopf algebras forms two Frobenius algebras. Coming from the perspective of quantum theory, we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise \\cite{Bonchi2014a} by including non-trivial dynamics of the underlying object -- the so-called phase group -- and investigate the effects of finite dimensionality of the underlying model, and recover the system of Bonchi et al as a subtheory in the prime power dimensional case. We show that the presence of a non-trivial phase group means that the theory cannot be formalised as a distributive law.",
+    "abstract": "Practice talk for LICS.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi have shown that, given a suitable distribution law, a pair of Hopf algebras forms two Frobenius algebras. Coming from the perspective of quantum theory, we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise \\cite{Bonchi2014a} by including non-trivial dynamics of the underlying object &ndash; the so-called phase group &ndash; and investigate the effects of finite dimensionality of the underlying model, and recover the system of Bonchi et al as a subtheory in the prime power dimensional case. We show that the presence of a non-trivial phase group means that the theory cannot be formalised as a distributive law.",
     "location": "LT1415",
     "material": []
   },
@@ -1164,7 +1194,7 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Interacting Frobenius algebras",
-    "abstract": "Practice talk for QPL.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi (2014) have shown that, given a suitable distributive law, a pair of Hopf algebras forms two Frobenius algebras. Here we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise (BSZ 2014) by including non-trivial dynamics of the underlying object---the so-called phase group---and investigate the effects of finite dimensionality of the underlying model. We recover the system of Bonchi et al as a subtheory in the prime power dimensional case, but the more general theory does not arise from a distributive law.",
+    "abstract": "Practice talk for QPL.\n\nTheories featuring the interaction between a Frobenius algebra and a Hopf algebra have recently appeared in several areas in computer science: concurrent programming, control theory, and quantum computing, among others. Bonchi, Sobocinski, and Zanasi (2014) have shown that, given a suitable distributive law, a pair of Hopf algebras forms two Frobenius algebras. Here we take the opposite approach, and show that interacting Frobenius algebras form Hopf algebras. We generalise (BSZ 2014) by including non-trivial dynamics of the underlying object &ndash; the so-called phase group &ndash; and investigate the effects of finite dimensionality of the underlying model. We recover the system of Bonchi et al as a subtheory in the prime power dimensional case, but the more general theory does not arise from a distributive law.",
     "location": "LT1310",
     "material": []
   },
@@ -1461,7 +1491,7 @@
     "speakerurl": "http://perso.ens-lyon.fr/pierre.lescanne/",
     "insturl": "http://www.ens-lyon.fr/LIP/PLUME/",
     "title": "Coinduction, Equilibrium and Rationality of Escalation",
-    "abstract": "Escalation is the behavior of players who play forever in the same game.  Such a situation is a typical field for application of coinduction which is the tool conceived for reasoning in infinite mathematical structures. In particular, we use coinduction to study formally the game called --dollar auction--, which is considered as the paradigm of escalation.  Unlike what is admitted since 1971, we show that, provided one assumes that the other agent will always stop, bidding is rational, because it results in a subgame perfect equilibrium.  We show that this is not the only rational strategy profile (the only subgame perfect equilibrium).  Indeed if an agent stops and will stop at every step, whereas the other agent keeps bidding, we claim that he is rational as well because this corresponds to another subgame perfect equilibrium.  In the infinite dollar auction game the behavior in which both agents stop at each step is not a Nash equilibrium, hence is not a subgame perfect equilibrium, hence is not rational.  Fortunately, the notion of rationality based on coinduction fits with common sense and experience.  Finally the possibility of a rational escalation in an arbitrary game can be expressed as a predicate on games and the rationality of escalation in the dollar auction game can be proved as a theorem which we have verified in the proof assistant COQ.  In this talk we will recall the principles of infinite extensive games and use them to introduce coinduction and equilibria (Nash equilibrium, subgame perfect equilibrium).  We will show how one can prove that the two strategy profiles presented above are equilibria and how this leads to a \"rational\" escalation in the dollar auction.  We will show that escalation may even happen in much simpler game named 0,1-game.",
+    "abstract": "Escalation is the behavior of players who play forever in the same game.  Such a situation is a typical field for application of coinduction which is the tool conceived for reasoning in infinite mathematical structures. In particular, we use coinduction to study formally the game called <i>dollar auction</i>, which is considered as the paradigm of escalation.  Unlike what is admitted since 1971, we show that, provided one assumes that the other agent will always stop, bidding is rational, because it results in a subgame perfect equilibrium.  We show that this is not the only rational strategy profile (the only subgame perfect equilibrium).  Indeed if an agent stops and will stop at every step, whereas the other agent keeps bidding, we claim that he is rational as well because this corresponds to another subgame perfect equilibrium.  In the infinite dollar auction game the behavior in which both agents stop at each step is not a Nash equilibrium, hence is not a subgame perfect equilibrium, hence is not rational.  Fortunately, the notion of rationality based on coinduction fits with common sense and experience.  Finally the possibility of a rational escalation in an arbitrary game can be expressed as a predicate on games and the rationality of escalation in the dollar auction game can be proved as a theorem which we have verified in the proof assistant COQ.  In this talk we will recall the principles of infinite extensive games and use them to introduce coinduction and equilibria (Nash equilibrium, subgame perfect equilibrium).  We will show how one can prove that the two strategy profiles presented above are equilibria and how this leads to a \"rational\" escalation in the dollar auction.  We will show that escalation may even happen in much simpler game named 0,1-game.",
     "location": "LT1415",
     "material": []
   },
