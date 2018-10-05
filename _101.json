@@ -114,8 +114,8 @@
     "institute": "Cambridge Quantum Computing",
     "speakerurl": "http://personal.strath.ac.uk/ross.duncan/",
     "insturl": "https://cambridgequantum.com/",
-    "title": "Why quantum computers suck",
-    "abstract": "",
+    "title": "Why quantum computers suck, and what we might do about it",
+    "abstract": "Near-term quantum computers have many limitations which make them difficult to use for stuff. I will outline some of the difficulties and handwave at some new ideas from compositional mathematics that might help us address these problems.",
     "location": "LT1310",
     "material": []
   },
