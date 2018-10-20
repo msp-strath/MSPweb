@@ -78,8 +78,8 @@
     "institute": "Dublin City University",
     "speakerurl": "https://www.computing.dcu.ie/~hamilton/",
     "insturl": "https://www.computing.dcu.ie/",
-    "title": "TBA",
-    "abstract": "",
+    "title": "The Next 700 Program Transformers",
+    "abstract": "In this talk, I will describe a hierarchy of program transformers in which the transformer at each level builds on top of the transformers at lower levels. The program transformer at the bottom of the hierarchy corresponds to positive supercompilation, and that at the next level corresponds to distillation. I will then try to characterise the improvements that can be made at each level, and show how the transformers can be used for program verification and theorem proving.",
     "location": "LT1310",
     "material": []
   },
