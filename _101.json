@@ -90,8 +90,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "Deciding equivalence of circuits with memory",
-    "abstract": "",
+    "title": "Syrup: circuits with memory",
+    "abstract": "By way of giving CS106 students better tools to tackle the concept of memory in circuits, I implemented a small programming language called (for reasons which are unlikely to become clear) Syrup. Syrup is suspiciously like a dialect of Haskell, except that the blessed monad allows bits of state. Marking homework done in Syrup necessitates checking whether two circuits have the same <i>externally observable</i> behaviour, which makes it a matter of <b>bisimulation</b>. I'll talk a bit about how much fun it was implementing the decision procedure to find either a bisimulation or a countermodel (for purposes of decent feedback).",
     "location": "LT1310",
     "material": []
   },
