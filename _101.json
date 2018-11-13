@@ -1,7 +1,7 @@
 [
   {
     "tag": "Talk",
-    "date": "2018-12-14T16:00:00Z",
+    "date": "2018-12-14T16:15:00Z",
     "speaker": "Clemens Kupke",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
@@ -13,7 +13,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-12-07T16:00:00Z",
+    "date": "2018-12-07T16:15:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
@@ -25,7 +25,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-11-30T16:00:00Z",
+    "date": "2018-11-30T16:15:00Z",
     "speaker": "Joe Collins",
     "institute": "MSP",
     "speakerurl": "",
@@ -37,7 +37,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-11-23T16:00:00Z",
+    "date": "2018-11-23T16:15:00Z",
     "speaker": "Simone Barlocco",
     "institute": "MSP",
     "speakerurl": "",
@@ -49,7 +49,7 @@
   },
   {
     "tag": "BasicTalk",
-    "date": "2018-11-16T16:00:00Z",
+    "date": "2018-11-16T16:15:00Z",
     "speaker": "Bob Atkey",
     "institute": "MSP",
     "speakerurl": "http://bentnib.org",
@@ -67,7 +67,7 @@
     "speakerurl": "http://personal.strath.ac.uk/benjamin.price",
     "insturl": "",
     "title": "The semantics of worldly type systems",
-    "abstract": "",
+    "abstract": "I will present a type theory whose judgements are indexed by a preorder of \"worlds\", representing for example nodes in a distributed computation, or a security level.  This means a term may only typecheck at particular worlds, and will be mobile upwards along the preorder (for instance every low security value is also a high security one). To enable talking about the world structure without compromising mobility, the terms can talk about \"shifts\", which describe relative worlds.\n\nI then give a semantic model based on the usual presheaf model for STLC where worlds form the base category, and shifts are endofunctors on the worlds.  This semantics will show our programs are indeed oblivious to data they cannot \"see\".  Examples will be given to demonstrate this framework in some concrete cases, and to motivate future work.",
     "location": "LT1310",
     "material": []
   },
