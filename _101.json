@@ -55,7 +55,7 @@
     "speakerurl": "http://bentnib.org",
     "insturl": "",
     "title": "Polynomial time programming languages",
-    "abstract": "",
+    "abstract": "Implicit Computational Complexity is the study of programming languages or logical systems that capture complexity classes. Roughly, every program that can be written in the language is in some complexity class. Many of the languages that have been proposed for capturing useful classes like PTIME are not much fun to program in. However, the work of the late Martin Hofmann included work on languages like LFPL, which only allows polynomial time computation, but is also reasonably usable. I'll talk about LFPL, and how the proof of polynomial time bounds works.",
     "location": "LT1310",
     "material": []
   },
