@@ -1,5 +1,26 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2018-12-17T11:30:00Z",
+    "title": "SYCO 2",
+    "url": "http://events.cs.bham.ac.uk/syco/2/",
+    "location": "Strathclyde",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2018-12-11T11:00:00Z",
+    "speaker": "Robin Cockett",
+    "institute": "University of Calgary ",
+    "speakerurl": "https://pages.cpsc.ucalgary.ca/~robin/",
+    "insturl": "https://www.ucalgary.ca/cpsc/",
+    "title": "TBA",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "Talk",
     "date": "2018-12-14T16:15:00Z",
     "speaker": "Clemens Kupke",
