@@ -22,19 +22,19 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-12-14T16:15:00Z",
+    "date": "2018-11-23T16:15:00Z",
     "speaker": "Clemens Kupke",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "",
+    "title": "The reachable part of a coalgebra",
+    "abstract": "State-based transition systems are often studied relative to a specified initial state. System behavior then only depends on those states that are \"reachable\" from the initial state. This has both consequences for the theory (e.g. by allowing to prove non-definability results in modal logic) and practice (by making seemingly large systems more manageable) of such systems.\n\nCoalgebras provide a general model for transition systems. In this introductory talk I will discuss how to define the reachable part of a coalgebra via the notion of T-base for an endofunctor T from [1]. We will first discuss this notion and then provide a sufficient categorical condition for the existence of the T-base. We will then show how to characterise the reachable part of a coalgebra as least fixpoint of a monotone operator.\n\nThis is based on joint work with Simone Barlocco and Jurriaan Rot.\n\n========================\n[1] Alwin Blok. Interaction, observation and denotation. Master's thesis, ILLC Amsterdam, 2012.",
     "location": "LT1310",
     "material": []
   },
   {
     "tag": "Talk",
-    "date": "2018-12-07T16:15:00Z",
+    "date": "2018-12-14T16:15:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
@@ -46,7 +46,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-11-30T16:15:00Z",
+    "date": "2018-12-07T16:15:00Z",
     "speaker": "Joe Collins",
     "institute": "MSP",
     "speakerurl": "",
@@ -58,12 +58,12 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-11-23T16:15:00Z",
+    "date": "2018-11-30T16:15:00Z",
     "speaker": "Simone Barlocco",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "Learning via duality",
+    "title": "Dual adjunctions",
     "abstract": "",
     "location": "LT1310",
     "material": []
