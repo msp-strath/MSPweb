@@ -15,9 +15,9 @@
     "institute": "University of Calgary ",
     "speakerurl": "https://pages.cpsc.ucalgary.ca/~robin/",
     "insturl": "https://www.ucalgary.ca/cpsc/",
-    "title": "TBA",
-    "abstract": "",
-    "location": "LT1310",
+    "title": "Abstract differential geometry matters!",
+    "abstract": "The last few years has seen the development &mdash; largely in Canada and Australia &mdash; of an axiomatic approach to differential geometry based on tangent categories.  Tangent categories incorporate the previous leading settings for differential geometry: finite dimensional manifolds, synthetic differential geometry, convenient manifolds, etc.  In addition they widen the scope significantly as they also include combinatorial species, Goodwillie Functor calculi, and examples from computer science. The talk will give a survey of tangent categories and some of the developments so far.",
+    "location": "LT1415",
     "material": []
   },
   {
@@ -64,7 +64,7 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Dual adjunctions",
-    "abstract": "",
+    "abstract": "Coalgebras provide an abstract framework to represent state-based transition systems. Modal logics provide a formal language to specify such systems.  In our recently submitted work (joint work with Clemens Kupke and Jurriaan Rot) we devise a general algorithm to learn coalgebras. Modal formulas are used as tests to probe the behaviour of states.\n\nIn my introductory talk, I will discuss how to set up a general framework that connects coalgebras and their modal logics via a dual adjunction. Moreover, I will show a known result which guarantees that indistinguishable states wrt to modal formulas are behavioural equivalent, a key fact that entails that &mdash; whenever possible &mdash; our algorithm learns a minimal representation of a coalgebra.",
     "location": "LT1310",
     "material": []
   },
