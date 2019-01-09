@@ -57,12 +57,6 @@ at the University of Strathclyde and comprises
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk<](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
 
-[Dr James Chapman](http://www.strath.ac.uk/staff/?term=James%20Chapman)
-
-:   See [James' homepage](http://personal.strath.ac.uk/james.chapman)
-    for more details or email
-    [james.chapman [at] strath.ac.uk](mailto:james.chapman [at] strath.ac.uk).
-
 Dr Phil Scott
 
 :   who is a KTP Associate at
@@ -78,10 +72,6 @@ Stevan Andjelkovic
 
 :   who is a PhD student under Conor McBride's direction.
 
-Kevin Dunne
-
-:   who is a PhD student under Ross Duncan's direction.
-
 Ben Price
 
 :   who is a PhD student under Neil Ghani's direction.
@@ -95,6 +85,7 @@ Stuart Gale
 Simone Barlocco
 
 :   who is a PhD student under Clemens Kupke's direction.
+    [Simone's webpage](http://personal.strath.ac.uk/simone.barlocco/).
 
 Alasdair Lambert
 
@@ -108,7 +99,22 @@ James Wood
 
 :   who is a PhD student under Bob Atkey's direction.
 
+Malin Altenm&uuml;ller
+
+:   who is a PhD student under Conor McBride's direction.
+
 ### Alumni ###
+
+Dr Kevin Dunne
+
+:   who was a PhD student under Ross Duncan's direction on the topic of
+    categorical semantics of quantum physics.
+
+[Dr James Chapman](http://jmchapman.github.io/)
+
+:   who worked as an RA on Conor McBride's grant Homotopy Type Theory:
+    Programming and Verification.
+
 
 [Dr Johannes Marti](http://johannesmarti.com/)
 
