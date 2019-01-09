@@ -48,7 +48,7 @@ data EntryClass
     deriving Show
 
 translateMarkdown :: String -> IO String
-translateMarkdown s =  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown def $ pack s))
+translateMarkdown s =  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown (def { readerExtensions = phpMarkdownExtraExtensions }) $ pack s))
 --translateMarkdown = return . unpack . TL.toStrict . renderHtml . toHtml . markdown def . pack -- cheapskate
 --translateMarkdown = return . unpack . commonmarkToHtml [optSmart] . pack -- CMark
 
