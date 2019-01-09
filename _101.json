@@ -1,6 +1,15 @@
 [
   {
     "tag": "SpecialEvent",
+    "date": "2019-01-11T16:30:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "SpecialEvent",
     "date": "2018-12-17T11:30:00Z",
     "title": "SYCO 2",
     "url": "http://events.cs.bham.ac.uk/syco/2/",
@@ -46,13 +55,13 @@
   },
   {
     "tag": "Talk",
-    "date": "2018-12-07T16:15:00Z",
+    "date": "2018-12-07T16:00:00Z",
     "speaker": "Joe Collins",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "Interacting Frobenius normal forms",
-    "abstract": "",
+    "title": "Interacting Frobenius Algebras",
+    "abstract": "What is a Frobenius algebra? What is a Hopf algebra? And why are they such good friends? In this talk, I will be talking about PROPs, what an interacting Frobenius algebra is, and some weird stuff that appears with them, and I shall be drawing lots of pretty pictures as well.",
     "location": "LT1310",
     "material": []
   },
