@@ -150,8 +150,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "Everything except evaluators for bidirectional type systems",
-    "abstract": "",
+    "title": "Metametatheory of Bidirectional Type Systems",
+    "abstract": "In previous talks, I've written down bidirectional versions of particular type systems, with type checking for introduction forms and type synthesis for elimination forms. But what are the metarules for writing down the rules? How do we show that following the metarules ensures good properties of the rules? I'll report some progress towards capturing the syntactic properties of \"good\" rules which might push us closer to the goal of metatheory by construction.\n\nNB This talk has nothing to do with bidirectional transformations.",
     "location": "LT1310",
     "material": []
   },
