@@ -139,7 +139,7 @@
     "speakerurl": "http://bentnib.org",
     "insturl": "",
     "title": "Chu spaces",
-    "abstract": "",
+    "abstract": "I'll talk about Chu Spaces, a general construction of *-autonomous categories (a.k.a. models of classical linear logic). Chu spaces are interesting because they come with an inbuilt notion of duality, which has been interpreted as a kind of player/opponent duality.",
     "location": "LT1310",
     "material": []
   },
