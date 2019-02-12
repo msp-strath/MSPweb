@@ -103,7 +103,8 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Finitary indexed containers",
-    "abstract": "",
+    "abstract": "I will talk about two different representatives of indexed containers which &mdash; all together in the end &mdash; will construct an application that manages windows on a screen.\n\nThe first instance of containers are rectangular windows. Defining these in terms of finite indexed containers (finite in the number of positions where elements can be stored) lets us interpret indices as outer boundaries. I will show some constructions on these space partitioning structures, e.g. product operations and overlaying of windows (this will hopefully include some pretty pictures!).\n\n
+Secondly I will explain how we can encode applications as indexed containers (not necessarily finite, despite the title), being defined in terms of commands and responses. To sum up I present the window managing application where all the above things will occur and get combined.\n\nI am working on these topics together with Conor and we are currently collocating them in a paper.",
     "location": "LT1310",
     "material": []
   },
