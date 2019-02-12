@@ -78,7 +78,7 @@
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
     "insturl": "",
-    "title": "Fixpoint logics",
+    "title": "Fixpoint logics: coinduction in Lederhosen",
     "abstract": "",
     "location": "LT1310",
     "material": []
@@ -116,7 +116,7 @@ Secondly I will explain how we can encode applications as indexed containers (no
     "speakerurl": "http://www.bishboria.com/",
     "insturl": "",
     "title": "Evaluators for bidirectional type systems",
-    "abstract": "",
+    "abstract": "In this talk I'll introduce syntax and semantics of a generic bidirectionally type checked lambda calculus. I'll also show that lumps of syntax that act as a type annotation are in fact the fuel which powers structural evaluation.",
     "location": "LT1310",
     "material": []
   },
@@ -128,7 +128,7 @@ Secondly I will explain how we can encode applications as indexed containers (no
     "speakerurl": "",
     "insturl": "",
     "title": "Linear logic: how hard can it be?",
-    "abstract": "",
+    "abstract": "In the linear world, we are no longer allowed to freely discard or duplicate hypotheses and conclusions. This should mean that there are fewer possible strategies for proving a given proposition, making the task of proving things easier. However, we find that linear logic proof search is a surprisingly powerful model of computation. In this talk, I'll give an introduction to linear logic sequent calculus. I'll then go through a neat construction of [0] embedding quantified boolean formulae into linear logic without bangs, and sketch the proof from the same paper that linear logic with bangs is Turing-complete. Some content from CS106 may come in handy.\n\n[0]: Lincoln, Mitchell, Scedrov, Shankar, 1992, \"Decision problems for propositional linear logic\"",
     "location": "LT1310",
     "material": []
   },
