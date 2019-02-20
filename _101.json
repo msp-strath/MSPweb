@@ -84,16 +84,22 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "BasicTalk",
     "date": "2019-02-22T16:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "Quotation",
-    "abstract": "",
+    "title": "Proof-irrelevance for Dependent Type Theory",
+    "abstract": "Proof-irrelevance can mean two similar but different things: on the one hand, irrelevant proofs can be discarded when extracting programs to execute (run-time erasability), and on the other hand, one might want to treat proofs as irrelevant during type checking (type-checking time erasability). I will give an overview of the subject, focusing on type-checking time erasability. I suspect that at least three people in the audience knows more than me, so my main function will be to keep things accessible. I plan to follow the recent paper \"Degrees of Relatedness: A Unified Framework for Parametricity, Irrelevance, Ad Hoc Polymorphism, Intersections, Unions and Algebra in Dependent Type Theory\" by Andreas Nuyts and Dominique Devriese (LICS 2018).",
     "location": "LT1310",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://people.cs.kuleuven.be/~andreas.nuyts/paper-reldtt.pdf",
+        "linkDescription": "\"Degrees of Relatedness\" by  Andreas Nuyts and Dominique Devriese (LICS 2018) [PDF]"
+      }
+    ]
   },
   {
     "tag": "Talk",
