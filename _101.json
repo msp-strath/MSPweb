@@ -78,8 +78,8 @@
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
     "insturl": "",
-    "title": "Fixpoint logics: coinduction in Lederhosen",
-    "abstract": "",
+    "title": "Coalgebra Learning via Duality",
+    "abstract": "A key result in computational learning theory is Dana Angluin's L* algorithm that describes how to learn a deterministic finite automaton (DFA) using membership and equivalence queries.  I will present a generalisation of this algorithm to the level of coalgebras. The approach relies on the use of logical formulas as tests, based on a dual adjunction between states and logical theories. This allows us to learn, e.g., labelled transition systems, using modal formulas as tests.\n\nJoint work with Simone Barlocco and Jurriaan Rot.",
     "location": "LT1310",
     "material": []
   },
