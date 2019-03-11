@@ -49,12 +49,12 @@
   },
   {
     "tag": "Talk",
-    "date": "2019-03-22T16:00:00Z",
+    "date": "2019-03-20T16:00:00Z",
     "speaker": "Alasdair Lambert",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "Effectful open games",
+    "title": "Probabilistic open games",
     "abstract": "",
     "location": "LT1310",
     "material": []
@@ -62,12 +62,12 @@
   {
     "tag": "Talk",
     "date": "2019-03-15T16:00:00Z",
-    "speaker": "Joe Collins and James Wood",
+    "speaker": "Joe Collins",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "*-autonomous categories and linear logic",
-    "abstract": "",
+    "title": "Fropf algebras",
+    "abstract": "Last time I talked, you heard about Interacting Frobenius algebras &mdash; this time, get ready for \"Hopf-Frobenius algebras\", as Ross likes to call them, or \"Fropf algebras\", as Ross doesn't like to call them. I am in the process of writing about them, so this is going to be quite similar to the last talk except we're coming at them from a new angle, and with new results.",
     "location": "LT1310",
     "material": []
   },
