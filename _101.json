@@ -55,7 +55,7 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Probabilistic open games",
-    "abstract": "",
+    "abstract": "We extend the Open Games framework for compositional game theory to encompass also mixed strategies, making essential use of the discrete probability distribution monad on Set. We show how to compose the resulting probabilistic games in parallel and sequentially, and illustrate the framework on the well-known Matching Pennies game.",
     "location": "LT1310",
     "material": []
   },
