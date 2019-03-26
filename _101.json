@@ -37,13 +37,13 @@
   },
   {
     "tag": "Talk",
-    "date": "2019-03-29T16:00:00Z",
+    "date": "2019-04-01T16:00:00Z",
     "speaker": "Johannes Marti",
     "institute": "Universität Bremen",
     "speakerurl": "http://johannesmarti.com/",
     "insturl": "http://www.informatik.uni-bremen.de/tdki/",
-    "title": "TBC",
-    "abstract": "",
+    "title": "Determinacy and the red-green chase",
+    "abstract": "The determinacy problem is to decide for queries v<sub>1</sub>,...,v<sub>n</sub> and q whether for every database D knowing the answers to v<sub>1</sub>,...,v<sub>n</sub> in D suffices to deduce the answer to q in D. It has been shown that this problem is undecidable if v<sub>1</sub>,...,v<sub>n</sub> and q are arbitrary conjunctive queries.\n\nIn this talk I give a gentle introduction to some of the formal tools that are used to study the determinacy problem. Especially, I focus on the red-green chase, which is a neat construction that links the problem of determinacy with query answering relative to ontologies. Lastly, I might present some of our own, very modest, results about classes of conjunctive queries for which the determinacy problem is decidable.",
     "location": "LT1310",
     "material": []
   },
