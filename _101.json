@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-05-10T16:00:00Z",
+    "speaker": "Troels Henriksen",
+    "institute": "University of Copenhagen",
+    "speakerurl": "http://sigkill.dk/",
+    "insturl": "http://diku.dk/",
+    "title": "TBC",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-04-12T15:30:00Z",
     "speaker": "Jan de Muijnck-Hughes",
     "institute": "Glasgow",
