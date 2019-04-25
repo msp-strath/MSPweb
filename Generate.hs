@@ -84,8 +84,12 @@ relevantEntry base root _ | base == root </> "101" </> "files" = True
 relevantEntry _ _         "dist"      = False
 relevantEntry _ _         "Makefile"  = False
 relevantEntry _ _         "README.md" = False
-relevantEntry _ _ s | ".cabal" `isSuffixOf` s = False
-relevantEntry _ _ s | ".hs" `isSuffixOf` s = False
+relevantEntry _ _ s | any (`isSuffixOf` s) blacklistedExtensions = False
+  where blacklistedExtensions =
+          [ ".cabal"
+          , ".hs"
+          , ".aux", ".log", ".out", ".synctex.gz"
+          ]
 relevantEntry _ _ _ = True
 
 -- | Recursively scan the given directory to gather all the relevant
