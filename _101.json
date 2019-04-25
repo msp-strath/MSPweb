@@ -1,6 +1,24 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-05-16T16:00:00Z",
+    "speaker": "Guillaume Allais",
+    "institute": "MSP",
+    "speakerurl": "http://gallais.github.io",
+    "insturl": "",
+    "title": "Getting the unifier on your side",
+    "abstract": "I will explain how to write practical generic n-ary functions and combinators for n-ary relations.",
+    "location": "LT1310",
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://github.com/agda/agda-stdlib/pull/608",
+        "linkDescription": "Agda Standard Library pull request"
+      }
+    ]
+  },
+  {
+    "tag": "Talk",
     "date": "2019-05-10T16:00:00Z",
     "speaker": "Troels Henriksen",
     "institute": "University of Copenhagen",
@@ -13,19 +31,19 @@
   },
   {
     "tag": "Talk",
-    "date": "2019-04-12T15:30:00Z",
+    "date": "2019-04-12T16:00:00Z",
     "speaker": "Jan de Muijnck-Hughes",
     "institute": "Glasgow",
     "speakerurl": "http://jfdm.github.io/",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "Type systems for bigraphs",
-    "abstract": "",
+    "title": "A Type-System of Sorts for Bigraphs",
+    "abstract": "Bigraphs are a mathematical model (hypergraph) for representing the spatial and communication structures of networked entities [fn:1]. Bigraph Reactive Systems (BRS) build upon bigraphs by incorporating temporal changes to a model as specified with reaction rules. There is a wealth of theory (category) that supports reasoning about bigraphs, and an emergent tool (BigraphER [fn:2]) for their modelling.\n\nBigraphs have an elegant algebraic structure that is general purpose and simply typed. However, it is common to place restrictions on the shape of a bigraph by a <i>system of sorts</i> that are applied as side-conditions. The details, and application, of these sorts are presented as an aside from the bigraph definition itself. This makes transformation of Bigraph models harder to enforce during manipulation as part of a BRS. We must provide runtime checks to provide relevant guarantees over model correctness.\n\nIn this talk, I want to introduce you to the interesting world of Bigraph specification, and my current and ongoing work on developing a dependent type-system to embed a system-of-sorts directly into the algebraic definition of bigraphs. This allows one to provide correct-by-construction guarantees that a given model is correct w.r.t. a provided system-of-sorts.\n\n[fn:1] Robin Milner. 2009. The Space and Motion of Communicating Agents. Cambridge University Press.\n[fn:2] <a href='http://dcs.gla.ac.uk/~michele/bigrapher.html'>http://dcs.gla.ac.uk/~michele/bigrapher.html</a>",
     "location": "LT1310",
     "material": []
   },
   {
     "tag": "Talk",
-    "date": "2019-04-12T14:00:00Z",
+    "date": "2019-05-24T16:00:00Z",
     "speaker": "Michele Sevegnani",
     "institute": "Glasgow",
     "speakerurl": "http://www.dcs.gla.ac.uk/~michele/",
