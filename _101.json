@@ -24,8 +24,8 @@
     "institute": "University of Copenhagen",
     "speakerurl": "http://sigkill.dk/",
     "insturl": "http://diku.dk/",
-    "title": "TBC",
-    "abstract": "",
+    "title": "A Purely Functional Array Language and its Optimising GPU Compiler",
+    "abstract": "Futhark is a small programming language designed to be compiled to efficient parallel code. It is a statically typed, data-parallel, and purely functional array language, and comes with a optimising ahead-of-time compiler that generates GPU code via OpenCL and CUDA. Futhark is not designed for graphics programming, but instead uses the compute power of the GPU to accelerate data-parallel array computations (\"GPGPU\").\n\nThis talk presents the design of the Futhark language, as well as outlines several of the key compiler optimisations that have enabled performance comparable to hand-written GPU code. Through the use of a functional source language, we obtain strong invariants that simplify and empower the application of traditional compiler optimisation techniques. In particular, I will discuss (i) aggressively restructuring transformations such as fusion, (ii) loop interchange and distribution to extract flat parallel kernels from nested parallel source programs, (iii) multi-versioned code generation that exploits as much parallelism as necessary and efficiently sequentialises the rest, and (iv) data layout transformations to ensure coalesced memory access on GPUs.",
     "location": "LT1310",
     "material": []
   },
