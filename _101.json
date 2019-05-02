@@ -1,5 +1,17 @@
 [
   {
+    "tag": "BasicTalk",
+    "date": "2019-05-03T16:00:00Z",
+    "speaker": "Conor McBride",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
+    "insturl": "",
+    "title": "Fixed points of indexed containers",
+    "abstract": "In an attempt to con Agda into allowing alternation of least and greatest fixed points, I try to remember how to construct these things for indexed containers.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "Talk",
     "date": "2019-05-16T16:00:00Z",
     "speaker": "Guillaume Allais",
