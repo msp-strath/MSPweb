@@ -13,7 +13,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2019-05-16T16:00:00Z",
+    "date": "2019-05-15T16:00:00Z",
     "speaker": "Guillaume Allais",
     "institute": "MSP",
     "speakerurl": "http://gallais.github.io",
@@ -60,8 +60,8 @@
     "institute": "Glasgow",
     "speakerurl": "http://www.dcs.gla.ac.uk/~michele/",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "Bigraphs",
-    "abstract": "",
+    "title": "Bigraphs with sharing and their algebra",
+    "abstract": "Bigraphical Reactive Systems (BRS) are a universal model of computation introduced by Robin Milner for the representation of interacting systems that evolve in both time and space. Bigraphs have been shown forming a category called symmetric partial monoidal category and their dynamic theory is defined in terms of rewriting and transition. A limitation of bigraphs is that the underlying model of location is a forest, which means there is no straightforward representation of locations that can overlap or intersect. In this talk, I will present bigraphs with sharing, an extension of bigraphs which solves this problem by defining the model of location as a directed acyclic graph, thus allowing a natural representation of overlapping or intersecting locations. I will give a complete presentation of the extended theory, including a categorical semantics, algebraic properties, a normal form and several essential procedures for computation.",
     "location": "LT1310",
     "material": []
   },
