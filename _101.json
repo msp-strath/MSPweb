@@ -1,5 +1,16 @@
 [
   {
+    "tag": "DepartmentalSeminar",
+    "date": "2019-05-29T13:00:00Z",
+    "speaker": "Dan Ghica",
+    "institute": "Birmingham",
+    "speakerurl": "https://www.cs.bham.ac.uk/~drg/",
+    "insturl": "http://www.cs.bham.ac.uk/research/groupings/theory/",
+    "title": "The next 700 abstract machines",
+    "abstract": "We propose a new formalism for representing programming languages, based on a universal graph-rewriting abstract machine. The calculus itself only deals with the basic structural aspects of a programming languages, namely variables, names (e.g. memory locations) and thunks (i.e. fragments with delayed execution). Everything else needs to be supplied as extrinsic operations, with associated rewrite rules. This basic calculus allows us to represent all known sequential programming language features in a uniform framework, reason abstractly about their cost, and also reason about challenging equivalences.\n\nThis is joint work with Koko Muroya and Todd Waugh Ambridge.",
+    "location": "LT1415"
+  },
+  {
     "tag": "BasicTalk",
     "date": "2019-05-03T16:00:00Z",
     "speaker": "Conor McBride",
