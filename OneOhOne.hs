@@ -369,7 +369,7 @@ generateHTML ts out = do
                   place = bracket location
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
-                  dt = time ++ " " ++ (createLink "https://personal.cis.strath.ac.uk/clemens.kupke/CISeminar.html" "Departmental seminar") ++ " " ++ place ++ ": " ++ title ++ (bracket person)
+                  dt = time ++ " " ++ "Departmental seminar" ++ " " ++ place ++ ": " ++ title ++ (bracket person)
               in
                  unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
                           "    <dd>" ++ (nl2br abstract) ++ "</dd>"]
