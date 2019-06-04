@@ -1,5 +1,28 @@
 [
   {
+    "tag": "Talk",
+    "date": "2019-06-07T16:00:00Z",
+    "speaker": "Malin Altenmüller and James Wood",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "TYPES 2019 practice talks",
+    "abstract": "Malin and James will practice giving their talks \"Containers of Applications and Applications of Containers\" and \"Linear metatheory via linear algebra\" respectively.",
+    "location": "LT1310",
+      "material": [
+	  {
+              "tag": "Link",
+              "address": "http://www.ii.uib.no/~bezem/abstracts/TYPES_2019_paper_40.pdf",
+              "linkDescription": "Containers of Applications and Applications of Containers (abstract)"
+	  },
+	  	  {
+              "tag": "Link",
+              "address": "http://www.ii.uib.no/~bezem/abstracts/TYPES_2019_paper_42.pdf",
+              "linkDescription": "Linear metatheory via linear algebra (abstract)"
+	  }
+      ]
+  },
+  {
     "tag": "DepartmentalSeminar",
     "date": "2019-05-29T13:00:00Z",
     "speaker": "Dan Ghica",
