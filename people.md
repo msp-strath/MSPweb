@@ -66,7 +66,7 @@ Dr Phil Scott
 Guillaume Allais
 
 :   who is a PhD student under Conor McBride's direction.
-    [Guillaume's webpage](http://gallais.org/).
+    [Guillaume's webpage](http://gallais.github.io/).
 
 Stevan Andjelkovic
 
