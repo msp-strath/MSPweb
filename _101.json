@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-06-27T16:00:00Z",
+    "speaker": "Kevin Dunne",
+    "institute": "",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Isbell Duality, Stone Duality, and Physical Theories",
+    "abstract": " Isbell duality is an adjunction between a category of \"generalised algebras\" and a category of \"generalised spaces\", and is an abstraction of Stone duality. Broadly speaking, a Stone duality is an equivalence between some category of commutative algebras, and some category of spaces, for example: Boolean algebras and Stone spaces; or, commutative C*-algebras and Hausdorff spaces.\n\nThere is a Stone duality which applies in the setting of Newtonian mechanics, between the category of smooth manifolds and a category of commutative algebras, and this equivalence of categories admits an extremely elegant and intuitive interpretation from the perspective of physics.\n\nI am going to discuss how to build an analogous interpretation for quantum theory using the machinery of Isbell duality, in such a way that directly generalises Newtonian mechanics, with the ultimate aim being to resolve some of the conceptual problems of quantum theory.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-06-07T16:00:00Z",
     "speaker": "Malin Altenmüller and James Wood",
     "institute": "MSP",
