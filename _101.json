@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-07-05T16:00:00Z",
+    "speaker": "Conor McBride",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
+    "insturl": "",
+    "title": "The Thing with Thinnings: CodeBruijn is (Free;Stuff)",
+    "abstract": "I've been hacking away on tools to do metatheory using \"codebruijn\" representation of syntax. The method, as with scoped de Bruijn representation, is to index terms by their <em>scope</em>, but the codebruijn method goes further, by systematically treating the <em>support</em> of terms, i.e., the particular subscope of variables which are actually <em>relevant</em>, paired with the thinning that embeds support into scope. The key codebruijn type constructor is \"pair a thing with a thinning from some support\", and it turns any old sort of thing into something which uniformly admits further thinning just by postcomposition, without affecting either the thing or its support.\n\nStuff-which-uniformly-admits-thinning is stuff with structure, so there is a forgetful functor back to plain old Stuff. The Free functor which adds uniform thinning, is its left adjoint. The codebruijn type constructor is the monad (Free;Stuff). The corresponding comonad, (Stuff;Free), is rather more familiar to semanticists as the abstraction over <em>larger</em> scopes found in Kripke models.\n\nI've always been a bit shaky on adjunctions, presheaves and what have you, so this talk will not assume categorical confidence, but rather seek to build intuition, guided by a concrete example grounded in the practicalities of manipulating syntax.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-06-27T16:00:00Z",
     "speaker": "Kevin Dunne",
     "institute": "",
