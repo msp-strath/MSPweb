@@ -8,7 +8,7 @@
     "insturl": "",
     "title": "Polynomial certificates for nondeterministic automata",
     "abstract": "Given a deterministic finite automaton accepting <i>L</i>, another accepting the reverse language, and an integer <i>n</i>, does there exist a nondeterministic acceptor with <i>n</i> or fewer states? We've proved that this problem is in NP i.e. polynomial certificates exist. All previous algorithms constructing small nondeterministic automata for arbitrary regular languages are at best PSPACE-complete. We achieve this by explaining and substantially improving the Kameda-Weiner algorithm using coalgebraic methods. At the underlying level we use a categorical equivalence between finite join-semilattices and bipartitioned graphs.",
-    "location": "LT1310",
+    "location": "LT1415",
     "material": []
   },
   {
