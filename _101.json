@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-08-29T11:00:00Z",
+    "speaker": "Malin Altenmüller",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "A combinatorial representation of the operad of plane graphs",
+    "abstract": "I will present how we can formalise non-symmetric monoidal categories (i.e. string diagrams) in a combinatorial way. These kind of diagrams will be represented by plane graphs with a distinguished boundary vertex. For encoding plane graphs it is sufficient to store the order of neighbours for each vertex, called a rotation system. I'll show how to define these sorts of graphs, how to compose them and &mdash; together with the right notion of rewriting &mdash; how they form an operad.\n\nThis is practice for a talk I will give at STRINGS in Birmingham next week.",
+    "location": "LT1415",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-08-16T16:00:00Z",
     "speaker": "Rob Myers",
     "institute": "",
