@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2019-09-26T13:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2019-08-30T11:00:00Z",
     "speaker": "Malin Altenmüller",
