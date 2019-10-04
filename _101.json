@@ -1,5 +1,29 @@
 [
   {
+    "tag": "Talk",
+    "date": "2019-10-10T13:30:00Z",
+    "speaker": "Radu Mardare",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
+    "insturl": "",
+    "title": "Quantitative theories of effects",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2019-10-03T13:30:00Z",
+    "speaker": "James Wood, Joe Collins, Bob Atkey, Guillaume Allais, Fredrik Nordvall Forsberg",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Summer trip reports",
+    "abstract": "",
+    "location": "LT1310",
+    "material": []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2019-09-26T13:00:00Z",
     "title": "MSP101 Planning meeting",
