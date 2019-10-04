@@ -17,10 +17,10 @@ import Data.Aeson
 
 -- constants
 usualTime :: TimeOfDay
-usualTime = TimeOfDay 16 0 0
+usualTime = TimeOfDay 13 30 0
 
 usualDay :: String
-usualDay = "Friday"
+usualDay = "Thursday"
 
 -- HTML utils
 
