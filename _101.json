@@ -1,13 +1,25 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-10-17T13:30:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
+    "insturl": "",
+    "title": "Ordinals below epsilon-zero in cubical Agda",
+    "abstract": "Ordinals and ordinal notation systems play an important role in program verification, since they can be used to prove termination of programs. We present three ordinal notation systems representing ordinals below epsilon_0 in type theory, using recent type-theoretical innovations such as mutual inductive-inductive definitions and higher inductive types. As case studies, we show how basic ordinal arithmetic can be developed for these systems, and how they admit a transfinite induction principle. We prove that all three notation systems are equivalent, so that we can transport results between them using the univalence principle. All our constructions have been implemented in cubical Agda.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-10-10T13:30:00Z",
     "speaker": "Radu Mardare",
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
     "insturl": "",
-    "title": "Quantitative theories of effects",
-    "abstract": "",
+    "title": "Quantitative algebras: towards a quantitative theory of effects",
+    "abstract": "We develop a quantitative analogue of equational reasoning meant to provide metric semantics for stochastic/probabilistic/quantitative systems and programming languages. Quantitative algebras are algebras over metric spaces defined by these quantitative equational theories, and they implicitly define monads over the category of (extended) metric spaces. We have a few relevant examples of such algebras, where the induced free algebras  correspond  to  well-known structures; among these are Hausdorff  metrics  from  quantitive  semilattices, p-Wasserstein metrics (hence also the Kantorovich metric) from barycentric algebras, the total variation metrics from a variant of barycentric algebras, and more.\n\nThe talk is based on a series of joint works with Prakash Panangaden and Gordon Plotkin. The main results have been presented at LICS'16, LICS'17 and LICS'18.",
     "location": "LT1310",
     "material": []
   },
