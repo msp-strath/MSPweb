@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-10-24T13:30:00Z",
+    "speaker": "Joe Collins",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Hopf Monads and Formally Adding in Morphisms",
+    "abstract": "It should be noted that this is ongoing work. The talk that you will see is going to be very unpolished; this is stuff that I have been working on for the past while, and the material will not be fully formed yet. The things I say may not end up matching with reality. So with that minor caveat, let us continue.\n\nA Hopf algebra is a monoid, a comonoid, and an extra endomorphism such that various commutation rules are obeyed, and Hopf monads are a strange generalisation of Hopf algebras in the direction of monads. I have previously talked about when a Hopf algebra is a Hopf-Frobenius algebra, and my goal now is to generalise this to the case of Hopf Monads. However, to keep things interesting, I am doing this in a weird way.\n\nLet T be a Hopf monad in monoidal category C. T is isomorphic to a Hopf algebra if there exists a natural transformation e: T -> 1 that respects the Hopf monad structure. There are many examples of Hopf monads which are not isomorphic to any Hopf algebras, so this morphism does not exist in C in general. However, what happens if I formally add in this morphism, creating a new category C_e? In this category, T would presumably be isomorphic to a Hopf algebra, and this begs the question: what can T in C_e tell us about T in C? By looking at the natural functor C -> C_e,  can I use this to transfer my theorem about Hopf algebras to Hopf monads? I certainly believe so, but let's find out together!",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-10-17T13:30:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
