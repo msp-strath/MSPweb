@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2019-10-31T13:30:00Z",
+    "speaker": "Jérémy Ledent",
+    "institute": "MSP",
+    "speakerurl": "https://www.lix.polytechnique.fr/Labo/Jeremy.Ledent/",
+    "insturl": "",
+    "title": "Directed algebraic topology for concurrency",
+    "abstract": "I will give an introduction to the geometric semantics for concurrent programs that have been developed by Goubault, Fajstrup, Raussen et al. since the 1990's. A concurrent program can be viewed as a topological space equipped with a notion of direction, modeling the passage of time. Thus, in such a space, the existence of a path from A to B does not guarantee the existence of a path from B to A. A path in a directed space corresponds to an execution of the program; and two such executions are equivalent when the corresponding paths are homotopic, that is, when they can be deformed continuously into one another. This idea motivated the development of directed algebraic topology, the analogue of algebraic topology for directed spaces.",
+    "location": "LT1310",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2019-10-24T13:30:00Z",
     "speaker": "Joe Collins",
     "institute": "MSP",
