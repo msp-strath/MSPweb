@@ -69,13 +69,13 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "BasicTalk",
     "date": "2019-11-07T13:30:00Z",
-    "speaker": "Bruno Gavranović",
+    "speaker": "Neil Ghani",
     "institute": "MSP",
-    "speakerurl": "https://www.brunogavranovic.com/",
+    "speakerurl": "http://personal.cis.strath.ac.uk/neil.ghani",
     "insturl": "",
-    "title": "Learning functors using gradient descent",
+    "title": "Coends and Kan extensions",
     "abstract": "",
     "location": "LT1310",
     "material": []
