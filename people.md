@@ -18,6 +18,13 @@ at the University of Strathclyde and comprises
     [here](http://www.cis.strath.ac.uk/~ng/neil.jpg) is a picture of
     Neil.
 
+[Prof. Radu Madare](https://people.cs.aau.dk/~mardare/)
+
+:   who has just joined us from Aarhus university in Denmark. Radu is interested in
+    mathematical tools for modelling and reasoning about systems, especially in the
+    use of metric spaces for quantitative and probabilistic reasoning. Contact Radu
+    at [radu.madare [at] strath.ac.uk](mailto:radu.madare [at] strath.ac.uk).
+
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
 
 :   who is currently working on dependently typed programming. He is
@@ -56,12 +63,6 @@ at the University of Strathclyde and comprises
     [Fred's homepage](http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/)
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk<](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
-
-Dr Phil Scott
-
-:   who is a KTP Associate at
-    [Symphonic Software](http://www.symphonicsoft.com/) under Bob
-    Atkey's direction.
 
 Guillaume Allais
 
@@ -104,6 +105,12 @@ Malin Altenm&uuml;ller
 :   who is a PhD student under Conor McBride's direction.
 
 ### Alumni ###
+
+Dr Phil Scott
+
+:   who was a KTP Associate at
+    [Symphonic Software](http://www.symphonicsoft.com/) under Bob
+    Atkey's direction.
 
 Dr Kevin Dunne
 
