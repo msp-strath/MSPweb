@@ -63,8 +63,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/james.wood.100/",
     "insturl": "",
-    "title": "Syntax of linear algebra",
-    "abstract": "",
+    "title": "Programs and Proofs in Linear Algebra",
+    "abstract": "I try to understand the ways of linear algebraists from a programming languages perspective. In particular, I investigate the practice of specifying a linear map by giving only its action on basis elements. We can turn this practice into a nice programming language for linear maps. Furthermore, our reasoning about these maps is significantly simplified by only considering the basis elements. Finally, keeping track of basis elements amounts to a typing discipline, and we can expect to get some nice properties just by observation of the types.\n\nMeanwhile, I will try to elucidate the similarity between, on one side, categories of spaces and linear maps and, on the other, Rel, the category of sets and relations. This forms an important part of our programming languages view.",
     "location": "LT1310",
     "material": []
   },
