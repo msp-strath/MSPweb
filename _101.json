@@ -39,9 +39,9 @@
     "institute": "MSP",
     "speakerurl": "http://bentnib.org",
     "insturl": "",
-    "title": "Selective Applicative Functors",
+    "title": "Selective Applicative Functors (not a seminar, due to the strike)",
     "abstract": "At this year's ICFP, Mohkov, Lukyanov, Marlow, and Dimino introduced \"Selective Applicative Functors\", a programming interface that is an intermediate stage between monads and applicative functors. I'll motivate what they're for, and describe what they are, and I'll talk about a more abstract way of thinking about them in terms of \"right-skew monoidal categories\".",
-    "location": "65 Renfield Street",
+    "location": "off-campus",
     "material": []
   },
   {
