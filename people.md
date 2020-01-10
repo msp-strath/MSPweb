@@ -116,6 +116,7 @@ Malin Altenm&uuml;ller
 Bruno Gavranović
 
 :   who is a PhD student under Neil Ghani's direction.
+    [Bruno's webpage](https://www.brunogavranovic.com/).
 
 ### Alumni ###
 
