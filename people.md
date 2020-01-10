@@ -113,6 +113,10 @@ Malin Altenm&uuml;ller
 
 :   who is a PhD student under Conor McBride's direction.
 
+Bruno Gavranović
+
+:   who is a PhD student under Neil Ghani's direction.
+
 ### Alumni ###
 
 Dr Phil Scott
