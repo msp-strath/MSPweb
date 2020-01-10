@@ -1,0 +1,69 @@
+
+\documentclass{article}
+
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{stmaryrd}
+
+\setlength{\parindent}{0in}
+\setlength{\textwidth}{160mm}
+\setlength{\textheight}{225mm}
+\setlength{\topmargin}{8mm}
+\setlength{\evensidemargin}{0mm}
+\setlength{\oddsidemargin}{0mm}
+\sloppy
+
+\newcommand{\hl}{\smallskip\hrule\smallskip}
+
+\pagestyle{empty}
+\begin{document}
+
+\setlength{\unitlength}{\textwidth}
+\begin{picture}(0,0)(0,-0.05)
+\put(0,0){\includegraphics[height=2cm]{semicolon}}
+\put(0.5,0.02){\makebox(0,0){\Large \url{http://msp.cis.strath.ac.uk/}}}
+\put(0.5,0.06){\makebox(0,0){\Large Mathematically Structured Programming Group}}
+\put(0.5,0.10){\makebox(0,0){\Large University of Strathclyde}}
+\put(0.5,-0.01){\makebox(0,0){\rule{\textwidth}{0.5pt}}}
+\put(1,0){\makebox(0,0)[rb]{\includegraphics[height=2cm]{strath_science}}}
+\end{picture}
+
+\begin{center}
+{\Large Invitation to strike teachout\\[1ex]
+        ``MSP 101''}
+\end{center}
+
+\bigskip
+
+%\bigskip
+
+\begin{center}
+  {\Large \bf Selective Applicative Functors}
+\smallskip
+
+Robert Atkey\\
+MSP group
+\end{center}
+
+\begin{quote}
+{\em Thursday 28 November 2019, 13:30
+
+65 Renfield Street, Glasgow G2 1LF}
+\end{quote}
+
+\begin{minipage}{1.0\linewidth}
+{
+\renewcommand{\thefootnote}{[\arabic{footnote}]} %\footnotemark[1]\footnotetext{[1] ...}
+\small \textbf{Abstract:}
+\setlength{\parskip}{0.5em}
+
+At this year's ICFP, Mohkov, Lukyanov, Marlow, and Dimino introduced ``Selective Applicative Functors'', a programming interface that is an intermediate stage between monads and applicative functors. I'll motivate what they're for, and describe what they are, and I'll talk about a more abstract way of thinking about them in terms of ``right-skew monoidal categories''.
+}
+\end{minipage}
+
+
+\vskip 4cm
+\begin{center}
+\includegraphics[width=1\textwidth]{glasgow_new}
+\end{center}
+\end{document}
