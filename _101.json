@@ -11,12 +11,12 @@
   {
     "tag": "Talk",
     "date": "2019-12-12T13:30:00Z",
-    "speaker": "Malin/Conor",
+    "speaker": "Conor McBride",
     "institute": "MSP",
-    "speakerurl": "",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "",
+    "title": "Potato Powered Proofs",
+    "abstract": "Stuart and I have been working on interpreters for predicative calculi which are \"potato-powered\" in that they work by structural recursion on inductive data which may look suspiciously like types, but are not statically checked to be the actual types of the programs in question. This works because the calculi are presented in a bidirectional style which, by design, causes every redex to carry some \"potatoes\", which hopefully contain enough inductive carbohydrate to keep you going for the whole of the computation to be done.\n\n Naturally, it would be lovely if we could prove that the interpreter's output is genuinely a reduct of its input, and that well typed input yields normal form output (i.e., that an honest type gives the potatoes required to do the whole computation). How is it done? Potato-powered logical relations, of course! I'll give a crash course on cooking programs and proofs with potatoes.",
     "location": "LT1310",
     "material": []
   },
@@ -28,7 +28,7 @@
     "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
     "insturl": "",
     "title": "Boolean-valued semantics",
-    "abstract": "",
+    "abstract": "This talk is based on the paper with the same title that I have presented at LICS 2018. It is a joint work with Dana Scott, Dexter Kozen, Prakash Panangaden, Robert Furber and Giorgio Bacci. We extend Dana's Boolean-valued set theory (introduced in 50's to demonstrate the independence of the continuum hypothesis) to get, initially, a denotational model of untyped lambda calculus, and eventually extend it to a model of stochastic lambda calculus. The model is constructed over a space of random variables, which inherit a natural continuous Boolean algebra structure.",
     "location": "LT1310",
     "material": []
   },
