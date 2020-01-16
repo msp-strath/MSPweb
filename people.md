@@ -68,7 +68,7 @@ at the University of Strathclyde and comprises
 Dr Jérémy Ledent
 
 :   who is interested in concurrency, topology and category theory. See
-    [Jérémy's homepage](http://personal.strath.ac.uk/jeremy.ledent/)
+    [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/)
     for more details or email
     [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk)
 
