@@ -108,6 +108,7 @@ Joseph Collins
 James Wood
 
 :   who is a PhD student under Bob Atkey's direction.
+    [James' webpage](https://personal.cis.strath.ac.uk/james.wood.100/).
 
 Malin Altenm&uuml;ller
 
@@ -117,6 +118,10 @@ Bruno Gavranović
 
 :   who is a PhD student under Neil Ghani's direction.
     [Bruno's webpage](https://www.brunogavranovic.com/).
+
+Georgi Nakov
+
+:   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
 ### Alumni ###
 
