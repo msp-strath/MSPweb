@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2020-02-06T14:00:00Z",
+    "speaker": "Alan Jeffrey",
+    "institute": "Mozilla",
+    "speakerurl": "https://asaj.org/",
+    "insturl": "https://www.mozilla.org/",
+    "title": "Rust, Servo and Mixed Reality Research at Mozilla",
+    "abstract": "Mozilla is a non-profit whose mission is to expand access to, and protect privacy on, the Internet. Mozilla Research investigates emerging technologies, such as programming languages and new web platforms. This talk is an overview of research efforts around the Rust programming language, the Servo web engine, and Mixed Reality (VR and AR) on the web.",
+    "location": "LT1415",
+    "material": []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2020-04-03T14:00:00Z",
     "title": "Agda Implementors' Meeting XXXI",
