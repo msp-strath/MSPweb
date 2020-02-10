@@ -99,8 +99,8 @@
     "institute": "MSP",
     "speakerurl": "https://www.brunogavranovic.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Towards Compositional Structures in Neural Networks",
+    "abstract": "Neural networks have become an increasingly popular tool for solving many real-world problems. They are a general framework for differentiable optimization which includes many other machine learning approaches as special cases. However, at the moment there is no comprehensive mathematical account of their behavior. I'm exploring the hypothesis that the language of category theory could be well suited to describe these systems in a precise manner. I will give a short tour of recent developments in this area, mostly based around the notion of lenses.",
     "location": "LT1310",
     "material": []
   },
