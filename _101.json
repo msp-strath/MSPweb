@@ -59,10 +59,10 @@
   {
     "tag": "Talk",
     "date": "2020-03-06T14:00:00Z",
-    "speaker": "Jan de Muijnck-Hughes",
-    "institute": "Glasgow",
-    "speakerurl": "http://jfdm.github.io/",
-    "insturl": "https://www.gla.ac.uk/schools/computing/",
+    "speaker": "James Wood",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/james.wood.100/",
+    "insturl": "",
     "title": "TBA",
     "abstract": "TBA",
     "location": "LT1310",
@@ -81,7 +81,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2020-02-21T14:00:00Z",
     "speaker": "James Wood",
     "institute": "MSP",
