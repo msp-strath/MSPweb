@@ -75,8 +75,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "The Dialectica Categories",
+    "abstract": "The Dialectica Categories were introduced in de Paiva's eponymous work as an internalized version of Gödel's functional interpretation. The interpretation translates Heyting Arithmetic (HA) into System T (intended as an axiomatization of primitive recursive functionals of finite type) and was originally developed as a tool to prove the relative consistency of HA. Translating the contraction rule poses certain problems and as a solution, Gödel requires decidability of atomic formulae. Several variants exist that lift this restriction.\n\n In this talk, I will present the categorical constructions from de Paiva's paper. We will investigate their structure and see how the different versions of the interpretation are accommodated in this setting. Finally, we will conclude that in the process we have obtained a model of Intuitionistic Linear Logic.",
     "location": "LT1310",
     "material": []
   },
