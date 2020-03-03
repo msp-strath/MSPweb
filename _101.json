@@ -63,8 +63,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/james.wood.100/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Classic puns",
+    "abstract": "There are several principles that are taken to be characteristic of non-constructive reasoning. These include the principles of excluded middle, double negation elimination, and choice.\n\n On the other side, there are several formal systems that are well known to capture only constructive reasoning. These include dependent type theory (à la Martin-Löf) and linear logic.\n\n However, each of the systems I just listed is able to derive at least one theorem that looks an awful lot like one of the non-constructive principles I listed earlier. What's going on here?",
     "location": "LT1310",
     "material": []
   },
