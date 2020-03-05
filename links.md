@@ -3,7 +3,7 @@
 Useful links
 ------------
 
-This page compiles various resources that might be useful for MSP members.
+This page compiles various resources that might be useful to MSP members.
 
 ### Mailing lists
 
@@ -37,7 +37,7 @@ This page compiles various resources that might be useful for MSP members.
 
 [CIS FAQ](https://local.cis.strath.ac.uk/wp/systems-support/itfaq/)
 
-: Useful info about e-mail, eduroam, printing, personal webpages, etc.
+: Useful info about e-mail, CIS account, eduroam, printing, personal webpages, etc.
 
 [Gitlab](https://gitlab.cis.strath.ac.uk/users/sign_in)
 
@@ -45,8 +45,8 @@ This page compiles various resources that might be useful for MSP members.
 
 [CIS Room Booking system](https://map.cis.strath.ac.uk/bookings/?area=2)
 
-: For booking rooms on floors 11 to 14 of the Livingstone Tower.
+: To book rooms on floors 11 to 14 of the Livingstone Tower.
 
 [Strathclyde Room Booking system](https://cts.strath.ac.uk/Scientia/Live1920wrb/Login.aspx)
 
-: For booking rooms on other floors.
+: To book rooms on other floors.
