@@ -24,7 +24,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : Lists for discussions and announcements (respectively) on type theory and related topics.
 
-[agda-list](https://lists.chalmers.se/mailman/listinfo/agda)
+[Agda list](https://lists.chalmers.se/mailman/listinfo/agda)
 
 : Mailing list for the Agda language.
 
