@@ -16,6 +16,14 @@ This page compiles various resources that might be useful to MSP members.
 
 : Programming Language research mailing-list of the University of Glasgow.
 
+[PLInG](http://wcms.inf.ed.ac.uk/lfcs/research/groups-and-projects/pl/programming-languages-interest-group)
+
+: Programming Language interest Group, University of Edinburgh.
+
+[DSG seminar](http://www.macs.hw.ac.uk/~dsg/wp/)
+
+: Dependable Systems Group seminar, Heriot-Watt University.
+
 [SPLS](http://www.dcs.gla.ac.uk/research/spls/)
 
 : Scottish Programming Language Seminar announcements.
