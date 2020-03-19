@@ -14,11 +14,18 @@
   {
     "tag": "CancelledTalk",
     "date": "2020-04-03T14:00:00Z",
+    "speaker": "",
+    "institute": "",
+    "insturl": "",
+    "speakerurl": "",
     "title": "Agda Implementors' Meeting XXXI",
     "url": "https://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.AIMXXXI/",
     "location": "University of Edinburgh",
+    "abstract": "",
     "locationurl": "",
-    "description": ""
+    "description": "",
+    "material": []
+
   },
   {
     "tag": "Talk",
