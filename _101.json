@@ -12,7 +12,7 @@
     "material": []
   },
   {
-    "tag": "SpecialEvent",
+    "tag": "CancelledTalk",
     "date": "2020-04-03T14:00:00Z",
     "title": "Agda Implementors' Meeting XXXI",
     "url": "https://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.AIMXXXI/",
@@ -33,7 +33,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2020-03-20T14:00:00Z",
     "speaker": "Clemens Kupke",
     "institute": "MSP",
