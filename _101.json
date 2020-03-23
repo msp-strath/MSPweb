@@ -34,8 +34,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Multidimensionally-correct by construction programming",
+    "abstract": "Physical dimensions such as length, mass and time can be used to ensure that equations are physically meaningful -- it makes no sense to add 7 metres to 12 seconds, and in an equation such as PV = nRT, it better be the case that both sides have the same physical dimension (in this case pressure times length^3). Even better, dimensions can not only be used to tell scientists off when making mistakes, but also to deduce non-trivial formulas (the famous example being that of the period of a pendulum as a function of its mass and length, and the acceleration of gravity).\n\n From an MSP perspective, there is a strong similarity between physical dimensions and types in programming languages, and indeed, this connection was explored in the 1990's by various researchers. A concrete outcome is Andrew Kennedy's implementation of units of measure in Microsoft's F# language, which makes it possible to write F# programs that are dimensionally-correct by construction.\n\n However, a lot of numerical software is written manipulating not single numbers, but vectors and matrices, using the methods of linear algebra. I will report on work in progress with Conor on extending dimensional analysis to multiple dimensions in this second sense.",
     "location": "LT1310",
     "material": []
   },
