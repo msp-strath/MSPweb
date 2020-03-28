@@ -5,6 +5,34 @@ Useful links
 
 This page compiles various resources that might be useful to MSP members.
 
+
+### Online discussion and seminars
+
+[MSP 101](msp101.html)
+
+: The MSP 101 seminar is now online on Fridays at 2pm.
+
+[SPLS Zulipchat](https://spls.zulipchat.com/)
+
+: Scottish Programming Language discussion forum, and online seminar announcements.
+
+[Category theory Zulipchat](https://categorytheory.zulipchat.com/)
+
+: Category theory discussion forum.
+
+[ACT@UCR](https://sites.google.com/ucr.edu/actucr)
+
+: Online seminar on category theory, Wednesdays 5pm.
+
+[OWLS](https://www.cs.bham.ac.uk/~vicaryjo/owls/)
+
+: Online seminar on Logic and Semantics, Wednesdays 2pm.
+
+[CS theory talks](https://cstheorytalks.wordpress.com/)
+
+: Various online seminars on theoretical computer science.
+
+
 ### Mailing lists
 
 [msp-interest](https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest)
@@ -40,6 +68,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : Applied Category Theory mailing list.  
   To subscribe, send an e-mail to [appliedcategorytheory+subscribe@googlegroups.com](mailto:appliedcategorytheory+subscribe@googlegroups.com)
+
 
 ### Internal CIS resources
 
