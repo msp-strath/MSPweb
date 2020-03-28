@@ -10,7 +10,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [MSP 101](msp101.html)
 
-: The MSP 101 seminar is now online on Fridays at 2pm.
+: The MSP 101 seminar is now online, on Fridays at 2pm.
 
 [SPLS Zulipchat](https://spls.zulipchat.com/)
 
@@ -20,13 +20,13 @@ This page compiles various resources that might be useful to MSP members.
 
 : Category theory discussion forum.
 
-[ACT@UCR](https://sites.google.com/ucr.edu/actucr)
-
-: Online seminar on category theory, Wednesdays 5pm.
-
 [OWLS](https://www.cs.bham.ac.uk/~vicaryjo/owls/)
 
-: Online seminar on Logic and Semantics, Wednesdays 2pm.
+: Online seminar on Logic and Semantics, Wednesday 2pm.
+
+[ACT@UCR](https://sites.google.com/ucr.edu/actucr)
+
+: Online seminar on category theory, Wednesday 5pm.
 
 [CS theory talks](https://cstheorytalks.wordpress.com/)
 
