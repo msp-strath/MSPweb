@@ -26,7 +26,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [ACT@UCR](https://sites.google.com/ucr.edu/actucr)
 
-: Online seminar on category theory, Wednesday 5pm.
+: Online seminar on category theory, Wednesday 6pm.
 
 [CS theory talks](https://cstheorytalks.wordpress.com/)
 
