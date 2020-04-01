@@ -28,6 +28,10 @@ This page compiles various resources that might be useful to MSP members.
 
 : Online seminar on category theory, Wednesday 6pm.
 
+[Online logic seminars](http://miguelmath.com/webminars.html)
+
+: A list of online seminars in Logic and Set theory.
+
 [CS theory talks](https://cstheorytalks.wordpress.com/)
 
 : Various online seminars on theoretical computer science.
