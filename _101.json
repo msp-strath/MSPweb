@@ -48,7 +48,7 @@
     "insturl": "",
     "title": "Completeness of Modal Logic via Stone Duality",
     "abstract": "This talk is intended to be introductory, building on Radu's earlier intro to Stone duality. In my presentation I will show how to use duality for proving completeness of basic (propositional) modal logic. To this aim I will first recall what completeness means and then discuss two different kinds of semantics for modal logic: its algebraic semantics, wrt which completeness of the logic is relatively straightforward, and Kripke semantics, which is the semantics one usually is interested in. Stone Duality allows to establish a connection between the two types of semantics such that completeness of modal logic wrt Kripke semantics follows.",
-    "location": "LT1310",
+    "location": "https://meet.jit.si/MSP101",
     "material": []
   },
   {
