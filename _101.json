@@ -99,8 +99,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Something Else About Mary",
+    "abstract": "This is very much work in progress, jointly with Guillaume Allais (now of St Andrews) and Fredrik Nordvall Forsberg, with occasional involvement from others of the usual MSP suspects.\n\n Mary is our attempt to build a virtual learning environment which offers effective support to our own classes, building from the experience (but thankfully not the codebase) of the tools I built for teaching and assessing my first year hardware class. Last time I talked about Mary, she was just a twinkle in my eye. Now, she is at least a toddler.\n\n Mary is a variant on pandoc markdown which allows code fragments to be embedded in documents and document fragments to be embedded in code. This talk will focus mainly on the programming language embedded in the system which is currently called \"Shonkier\", as it is a variant on the \"Shonky\" language to which Frank compiles. It is untyped, for the time being, but that's an opportunity.\n\n The key design choice in Shonkier is that the C-style function application notation, f(e1,..,en), is used for all sorts of contextualization, and there are many such sorts. \"Functions\" (which already generalize to effect handlers) are but one form of context. We have also added first class environments (computed by pattern matching expressions) and guarding contexts (computed by Boolean expressions). One recent tweak which pays dividends is that effect handlers can now reply to requests with effects as will as with values. We are now free to negotiate various forms of contingency in a refreshingly direct style.\n\n In short, we have abandoned the naive delights of being context-free in favour of being context-negotiable.",
     "location": "Online",
     "material": []
   },
