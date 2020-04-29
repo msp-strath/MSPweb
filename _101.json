@@ -88,7 +88,7 @@
     "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
     "insturl": "",
     "title": "Stone duality for Markov processes (second attempt)",
-    "abstract": "The talk will focus on the category of Markov processes, on Markovian logics and Aumann algebras. Markovian logics are modal logics designed to specify (approximated) properties of Markov processes and characterize their bisimilarity. Aumann algebras are the algebraic counterpart of Markovian logics, i.e., they are Boolean algebras with operators that encode probabilistic information. Markovian logics are not compact and for this reason the "classic" Stone duality fails. I will present a different version of Stone duality constructed on top of Rasiowa-Sikorski lemma, which is a result bringing topological results into Model Theory.\n\n This talk summarizes results obtained in collaboration with Dexter Kozen and Prakash Panangaden.",
+    "abstract": "The talk will focus on the category of Markov processes, on Markovian logics and Aumann algebras. Markovian logics are modal logics designed to specify (approximated) properties of Markov processes and characterize their bisimilarity. Aumann algebras are the algebraic counterpart of Markovian logics, i.e., they are Boolean algebras with operators that encode probabilistic information. Markovian logics are not compact and for this reason the \"classic\" Stone duality fails. I will present a different version of Stone duality constructed on top of Rasiowa-Sikorski lemma, which is a result bringing topological results into Model Theory.\n\n This talk summarizes results obtained in collaboration with Dexter Kozen and Prakash Panangaden.",
     "location": "Online",
     "material": []
   },
