@@ -24,9 +24,9 @@ This page compiles various resources that might be useful to MSP members.
 
 : Online seminar on Logic and Semantics, Wednesday 2pm.
 
-[ACT@UCR](https://sites.google.com/ucr.edu/actucr)
+[ACT seminars](https://teamup.com/ksfss6k4j1bxc8vztb)
 
-: Online seminar on category theory, Wednesday 6pm.
+: A calendar assembling several category theory seminars, including [UCR](https://sites.google.com/ucr.edu/actucr), [MIT](http://brendanfong.com/seminar.html), and more.
 
 [Online logic seminars](http://miguelmath.com/webminars.html)
 
