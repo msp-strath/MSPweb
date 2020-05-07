@@ -24,6 +24,10 @@ This page compiles various resources that might be useful to MSP members.
 
 : Online seminar on Logic and Semantics, Wednesday 2pm.
 
+[Chalmers FP seminar](http://chalmersfp.org/)
+
+: Chalmers Online Functional Programming Seminar, Monday 3pm.
+
 [ACT seminars](https://teamup.com/ksfss6k4j1bxc8vztb)
 
 : A calendar assembling several category theory seminars, including [UCR](https://sites.google.com/ucr.edu/actucr), [MIT](http://brendanfong.com/seminar.html), and more.
@@ -31,10 +35,6 @@ This page compiles various resources that might be useful to MSP members.
 [Online logic seminars](http://miguelmath.com/webminars.html)
 
 : A list of online seminars in Logic and Set theory.
-
-[CS theory talks](https://cstheorytalks.wordpress.com/)
-
-: Various online seminars on theoretical computer science.
 
 
 ### Mailing lists
