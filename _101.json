@@ -75,8 +75,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/james.wood.100/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A Linear Algebra Approach to Linear Metatheory",
+    "abstract": "Since its introduction, linear logic has been the cause of and solution to many problems in theoretical computer science. There are many examples in the literature of calculi which restrict usage of variables, allowing them to capture linearity, monotonicity, sensitivity analysis, privacy constraints, and other coeffects. However, the syntactic metatheory of these calculi is often difficult, and rarely in a form amenable to formalisation in a proof assistant.\n\n In this talk, I will introduce the notion of kits and environments yielding generic traversals – a method developed by Conor for proving renaming and substitution lemmas. Then, I will discuss recent work by myself and Bob on adapting this method to semiring-graded calculi. The result is a pleasingly and surprisingly minor variation on the original, comprising the introduction of a linear map to mediate usage annotations. This solution gives us confidence that we can tackle all of quantitative metatheory in the familiar intuitionistic style.",
     "location": "Online",
     "material": []
   },
