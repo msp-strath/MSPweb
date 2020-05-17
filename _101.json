@@ -63,8 +63,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/jeremy.ledent/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A quantitative model for λ-calculus",
+    "abstract": "Resource monoids and length spaces are a semantic framework inspired from realizability, which was introduced by Dal Lago and Hofmann in the context of implicit complexity. It has been used to define quantitative models for various programming languages (such as Elementary Affine Logic, LFPL), and deduce soundness properties of the form: \"Every definable function lies in a given complexity class\". In this talk, I will show how this framework can be used to measure different quantitative properties of a language than time complexity. Namely, I will present a model of simply-typed λ-calculus such that the interpretation of a λ-term contains an upper bound on the size of its normal form.",
     "location": "Online",
     "material": []
   },
