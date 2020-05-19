@@ -51,8 +51,8 @@
     "institute": "University of Kent",
     "speakerurl": "http://dorchard.co.uk",
     "insturl": "https://www.cs.kent.ac.uk/",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "The 'graded types' paradigm: past, present, and a possible future",
+    "abstract": "In the 1970s, the notion of 'grading' appeared in analytic philosophy and logic as a way of making reasoning more fine-grained, capturing 'degrees' of necessity or possibility. Somewhat independently, grading has become a topic of interest in type theory and programming language semantics, with graded structures again providing a means of more fine-grained reasoning. In this talk, I will give an overview of this idea (both its past and present) and explore two uses: (1) using graded modal types for program reasoning in the context of an experimental functional language with linear and indexed types, called Granule; (2) specialising program semantics to give correct-by-construction arguments about program analyses and transformations.  I will also give a mathematical characterisation of grading which suggests a broad paradigm, and will briefly mention various ongoing works.",
     "location": "Online",
     "material": []
   },
