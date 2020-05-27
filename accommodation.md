@@ -10,7 +10,7 @@ The following map shows several key locations (click on the link below the map f
 
 <p>
 <iframe src="https://www.google.com/maps/d/embed?mid=1GNIXUkBb5XYJAkH2a8DkHtYsCuTsKtwA" width="640" height="480"></iframe>
-<br/><small>View <a href="https://www.google.com/maps/d/viewer?mid=1lzQ95ZBPDV1O3c_zSg-ie5tANyffV_Ch">a larger map</a>.
+<br/><small>View <a href="https://www.google.com/maps/d/viewer?mid=1GNIXUkBb5XYJAkH2a8DkHtYsCuTsKtwA">a larger map</a>.
 There is also an <a href="http://www.strath.ac.uk/maps/livingstonetower/">official university map</a>.</small>
 </p>
 
