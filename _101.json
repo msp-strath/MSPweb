@@ -30,8 +30,8 @@
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Interpreting Dependent Type Theory in Containers",
+    "abstract": "In her PhD thesis, Tamara von Glehn showed that the Category of Containers (a.k.a. Category of Polynomials, Category of Dependent Lenses, Dialectica Category) supports an interpretation of dependent types. I'll present the basic constructions used, and, if I get to it, show that the model refutes the principle of functional extensionality.",
     "location": "Online",
     "material": []
   },
