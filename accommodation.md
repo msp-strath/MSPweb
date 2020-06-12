@@ -48,7 +48,7 @@ There is also an <a href="http://www.strath.ac.uk/maps/livingstonetower/">offici
 Here are a few tips for MSP newcomers looking to rent a flat in Glasgow.
 
 Generally, it can be a bit hard to find a place to live in Glasgow, especially for popular areas. Book many viewings, and try to be quick when you find a flat that you like.
-Viewings are often fully booked one or two weeks in advance, so you might want to start searching in advance before you arrive in Glasgow.
+Viewings are often fully booked one or two weeks in advance, so you might want to start searching before you arrive in Glasgow.
 Most websites give you the option to receive alerts by e-mail when new ads come up — that is usually a good idea.
 
 **Areas.** A good rule of thumb is to not look north of the motorway, east of Alexandra Park, west of Whiteinch or south of Mount Florida. The following areas are popular:

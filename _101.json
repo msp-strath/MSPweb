@@ -18,8 +18,8 @@
     "institute": "Glasgow",
     "speakerurl": "http://jfdm.github.io/",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Building Resource-Dependent EDSLs in a Dependently-Typed Language",
+    "abstract": "While many people use dependent types for theorem proving some of us like to use dependent types for building, and running, safer programs.\n\n Idris' <i>Effects</i> library demonstrates how to embed resource dependent algebraic effect handlers into a dependently typed host language, providing run-time and compile-time based reasoning on type-level resources. Building upon this work, <i>Resources</i> is a framework for realising EDSLs with type systems that contain domain specific substructural properties. Differing from <i>Effects</i>, <i>Resources</i> allows a language's substructural properties to be encoded within type-level resources that are associated with language variables. Such an association allows for multiple effect instances to be reasoned about autonomically and without explicit type-level declaration. We use type-level predicates as proof that a language's substructural properties hold.\n\n Using <i>Resources</i> we have shown how to provide correctness-by-construction guarantees that substructural properties of written programs hold when working with =Files=, specifying Domain Specific =BiGraphs=, and Global Session Descriptions---=Sessions=. With this talk I want to discuss the how and why of <i>Resources</i>, and show how we can use the framework to build EDSLs with interesting type-systems.\n\n This talk is part practise talk for ECOOP 2020, part tutorial on an important idiom for practical dependently-typed programming, and part chance to highlight more how dependent-types are useful when programming in the real world.",
     "location": "Online",
     "material": []
   },
