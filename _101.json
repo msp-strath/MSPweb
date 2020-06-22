@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2020-07-03T14:00:00Z",
+    "speaker": "Jérémy Ledent",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Compositional Game Theory, compositionally",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
     "tag": "CancelledTalk",
     "date": "2020-06-26T14:00:00Z",
     "speaker": "Georgi Nakov",
