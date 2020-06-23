@@ -18,7 +18,7 @@ at the University of Strathclyde and comprises
     [here](http://www.cis.strath.ac.uk/~ng/neil.jpg) is a picture of
     Neil.
 
-[Prof. Radu Madare](https://people.cs.aau.dk/~mardare/)
+[Prof. Radu Madare](https://personal.cis.strath.ac.uk/r.mardare/)
 
 :   who has just joined us from Aarhus university in Denmark. Radu is interested in
     mathematical tools for modelling and reasoning about systems, especially in the
@@ -60,7 +60,7 @@ at the University of Strathclyde and comprises
 
 :   who is interested in Martin-L&ouml;f Type Theory, constructive
     mathematics, and category theory. See
-    [Fred's homepage](http://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/)
+    [Fred's homepage](https://fredriknf.com)
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
 
