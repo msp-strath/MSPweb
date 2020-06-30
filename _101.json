@@ -7,7 +7,7 @@
     "speakerurl": "",
     "insturl": "",
     "title": "Compositional Game Theory, compositionally",
-    "abstract": "TBA",
+    "abstract": "The recent notion of Open Games allows to study game theory in a compositional way: complex games can be obtained from smaller ones using various operators such as sequential and parallel composition. Thus, Open Games form a symmetric monoidal category. There are many flavors of open games, ranging from small variations on how equilibria are treated, to more radical changes such as introducing probabilistic behavior. Proving from scratch that each variant still forms a monoidal category is tedious.\n\n I will present a compositional construction of the category of Open Games, which consists of three main steps. In each step, one can swap a component for a similarly-behaved one, without disturbing the rest of the structure. Thus, one can define many variants of Open Games with minimal effort. This compositional approach is based on the notion of Arrows, a concept first introduced in functional programming.\n\n This is a practise talk for ACT20 next week, and joint work with Bob, Bruno, Neil, Clemens and Fred.",
     "location": "Online",
     "material": []
   },
