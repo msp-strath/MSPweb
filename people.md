@@ -22,7 +22,7 @@ at the University of Strathclyde and comprises
 
 :   who is interested in mathematical tools for modelling and reasoning about systems,
     especially in the use of metric spaces for quantitative and probabilistic reasoning.
-    Contact Radu at [r.madare [at] strath.ac.uk](mailto:r.madare [at] strath.ac.uk).
+    Contact Radu at [r.mardare [at] strath.ac.uk](mailto:r.mardare [at] strath.ac.uk).
 
 [Prof. Glynn Winskel](https://pureportal.strath.ac.uk/en/persons/glynn-winskel)
 
