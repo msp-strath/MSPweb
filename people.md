@@ -18,12 +18,18 @@ at the University of Strathclyde and comprises
     [here](http://www.cis.strath.ac.uk/~ng/neil.jpg) is a picture of
     Neil.
 
-[Prof. Radu Madare](https://personal.cis.strath.ac.uk/r.mardare/)
+[Prof. Radu Mardare](https://personal.cis.strath.ac.uk/r.mardare/)
 
-:   who has just joined us from Aarhus university in Denmark. Radu is interested in
-    mathematical tools for modelling and reasoning about systems, especially in the
-    use of metric spaces for quantitative and probabilistic reasoning. Contact Radu
-    at [radu.madare [at] strath.ac.uk](mailto:radu.madare [at] strath.ac.uk).
+:   who is interested in mathematical tools for modelling and reasoning about systems,
+    especially in the use of metric spaces for quantitative and probabilistic reasoning.
+    Contact Radu at [r.madare [at] strath.ac.uk](mailto:r.madare [at] strath.ac.uk).
+
+[Prof. Glynn Winskel](https://pureportal.strath.ac.uk/en/persons/glynn-winskel)
+
+:   who has just joined us from  the University of Cambridge. Glynn works on mathematical
+    models of interaction such as distributed games and event structures.
+    Contact Glynn at [glynn.winskel [at] strath.ac.uk](mailto:glynn.winskel [at] strath.ac.uk).
+
 
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
 
