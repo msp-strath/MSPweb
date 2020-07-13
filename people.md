@@ -129,6 +129,10 @@ Georgi Nakov
 
 :   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
+Craig Roy
+
+:   who is a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under Conor McBride and Ross Duncan's direction.
+
 ### Alumni ###
 
 Dr Phil Scott
