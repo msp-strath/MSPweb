@@ -70,6 +70,11 @@ at the University of Strathclyde and comprises
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
 
+Dr Jules Hedges
+
+:   who is interested in game theory, economics and machine learning
+    using tools of category theory and functional programming. See
+    [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk)
 
 Dr Jérémy Ledent
 
