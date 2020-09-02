@@ -70,7 +70,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [ACT](https://groups.google.com/forum/#!forum/appliedcategorytheory)
 
-: Applied Category Theory mailing list.  
+: Applied Category Theory mailing list.
   To subscribe, send an e-mail to [appliedcategorytheory+subscribe@googlegroups.com](mailto:appliedcategorytheory+subscribe@googlegroups.com)
 
 
@@ -91,3 +91,8 @@ This page compiles various resources that might be useful to MSP members.
 [Strathclyde Room Booking system](https://cts.strath.ac.uk/Scientia/Live1920wrb/Login.aspx)
 
 : To book rooms on other floors.
+
+[MSP timetable](https://strath-my.sharepoint.com/:x:/g/personal/jeremy_ledent_strath_ac_uk/EYGG2rMyunFMtb3DMJ0uvLcBQRag3pBwopblqJR8Rdrw4w)
+
+: A collaborative spreadsheet to gather the schedules of MSP members.
+
