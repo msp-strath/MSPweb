@@ -76,7 +76,7 @@ Dr Jules Hedges
     using tools of category theory and functional programming. See
     [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk)
 
-Dr Jérémy Ledent
+[Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
 :   who is interested in concurrency, topology and category theory. See
     [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/)
@@ -137,6 +137,12 @@ Georgi Nakov
 Craig Roy
 
 :   who is a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under Conor McBride and Ross Duncan's direction.
+
+Matteo Capucci
+
+:   who is a PhD student under Neil Ghani and Scott Cunningham's direction.
+    [Matteo's webpage](https://matteocapucci.wordpress.com/).
+
 
 ### Alumni ###
 
