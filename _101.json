@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2020-09-10T13:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "https://meet.jit.si/MSP101/",
+    "locationurl": "https://meet.jit.si/MSP101/",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2020-07-03T14:00:00Z",
     "speaker": "Jérémy Ledent",
