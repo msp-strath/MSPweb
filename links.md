@@ -32,6 +32,10 @@ This page compiles various resources that might be useful to MSP members.
 
 : A calendar assembling several category theory seminars, including [UCR](https://sites.google.com/ucr.edu/actucr), [MIT](http://brendanfong.com/seminar.html), and more.
 
+[Algebra-Coalgebra seminar](https://events.illc.uva.nl/alg-coalg)
+
+: A seminar at the ILLC Amsterdam, usually Wednesday at 3pm.
+
 [Online logic seminars](http://miguelmath.com/webminars.html)
 
 : A list of online seminars in Logic and Set theory.
