@@ -1,6 +1,54 @@
 [
   {
     "tag": "Talk",
+    "date": "2020-12-17T13:00:00Z",
+    "speaker": "Sam Lindley",
+    "institute": "University of Edinburgh",
+    "speakerurl": "http://homepages.inf.ed.ac.uk/slindley/",
+    "insturl": "http://www.ed.ac.uk/informatics/",
+    "title": "Effects and Handlers",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2020-12-10T13:00:00Z",
+    "speaker": "Uma Zalakain",
+    "institute": "University of Glasgow",
+    "speakerurl": "https://umazalakain.info/",
+    "insturl": "http://www.dcs.gla.ac.uk/research/formalmethods/",
+    "title": "Session Types",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2020-12-03T13:00:00Z",
+    "speaker": "Radu Mardare",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
+    "insturl": "",
+    "title": "Measure theory and Probability",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2020-11-26T13:00:00Z",
+    "speaker": "Glynn Winskel",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Event Structures",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2020-11-19T13:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
