@@ -151,7 +151,7 @@
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
     "title": "Bidirectional STLC",
-    "abstract": "TBA",
+    "abstract": "By way of kicking off this semester of MSP101, I'll give an introduction to our local dialect of bidirectional type systems, defined as mutually inductive systems of moded judgments. That is, we not only assign a syntactic category to each place in a judgment form, but also designate its mode as being \"input\", \"subject\", or \"output\". The syntactic categories of introduction and elimination forms are distinguished: the former have types as inputs, the latter types as outputs. I'll illustrate this using the Simply Typed Lambda-Calculus, and I'll rattle through as much metatheory thereof as I can before you bottle me off.",
     "location": "Online",
     "material": []
   },
