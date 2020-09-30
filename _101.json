@@ -138,8 +138,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "Monoidal Categories",
-    "abstract": "TBA",
+    "title": "Introduction to Monoidal Categories",
+    "abstract": "A nice, chill introduction to the basic definitions and theorems on monoidal categories. We will be defining monoidal categories and symmetric monoidal categories, and talking about the coherence theorem and string diagrams.",
     "location": "Online",
     "material": []
   },
