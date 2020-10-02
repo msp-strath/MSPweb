@@ -7,7 +7,7 @@ Open Games
 
 ### Recordings of Neil's tutorial sessions
 
-* 02/10: [link](https://strath.zoom.us/rec/share/UkZFIt3KZcdRdXGS5SdGWkIfh2G8slWcBAk_nKxCHLZxef5iKoze6lZhcLFr5Byr.WUiltCImCIsdgDiF)
+* 02/10: [video](https://strath.zoom.us/rec/share/UkZFIt3KZcdRdXGS5SdGWkIfh2G8slWcBAk_nKxCHLZxef5iKoze6lZhcLFr5Byr.WUiltCImCIsdgDiF), [slides](./opengames-tutorial-2020/slides01.pdf).
 
 
 ### Various resources
