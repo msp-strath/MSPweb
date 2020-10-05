@@ -114,8 +114,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "Quantitative Types",
-    "abstract": "TBA",
+    "title": "Quantitative Type Theory and its application",
+    "abstract": "To build upon last week's talk on Dependent types, we will develop the intuition around Quantitative types and their usage in modern programming languages. What does it mean to program when the type system is responsible for tracking resources rather than leave this task to the programmer? What new patterns do we see? And what are the limitations we encounter and how do we fix them? This talk aims to answers those questions in an approachable and interactive way.",
     "location": "Online",
     "material": []
   },
