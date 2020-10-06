@@ -127,7 +127,7 @@
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
     "title": "Dependent Types",
-    "abstract": "TBA",
+    "abstract": "I'll give an introduction to the setup for dependent type theories, in the bidirectional style, again sketching why fundamental metatheoretic properties hold by not asking the wrong questions. In particular I'll develop the theory of dependent function types, then add lists. Let's conspire to make append associative, and if time permits, map a functorial action.",
     "location": "Online",
     "material": []
   },
