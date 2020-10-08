@@ -143,6 +143,15 @@ Matteo Capucci
 :   who is a PhD student under Neil Ghani and Scott Cunningham's direction.
     [Matteo's webpage](https://matteocapucci.wordpress.com/).
 
+Eigil Rischel
+
+:   who is a PhD student under Radu Mardare and Neil Ghani's direction.
+    [Eigil's webpage](https://erischel.com).
+
+André Videla
+
+:   who is a PhD student under Bob Atkey and Conor McBride's direction.
+
 
 ### Alumni ###
 
