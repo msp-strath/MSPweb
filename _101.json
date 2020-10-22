@@ -105,7 +105,11 @@
     "title": "Fantastic sheaves and where to find them",
     "abstract": "Sheaves are among the oddest creatures roaming the world of mathematics. They come from the far land of algebraic geometry, they speak a tricky language, and they organize in unfathomably big herds ('topoi'). There's no reason to be afraid, though: sheaves can be the tamest beasts and provide many useful services to the mathematician who's willing to learn their ways. In this talk, I'll try to demystify sheaves by giving an elementary exposition of their basic features, trying to convey useful intuition about their behaviour. I will also try to give a taste some of their most astounding tricks, such as sheaf cohomology and topos-theoretic forcing.",
     "location": "Online",
-    "material": []
+    "material": [{
+        "tag": "Link",
+        "address": "https://github.com/mattecapu/fantastic-sheaves/blob/main/main.pdf",
+        "linkDescription": "Slides"
+      }]
   },
   {
     "tag": "Talk",
