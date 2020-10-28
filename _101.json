@@ -91,7 +91,7 @@
     "speakerurl": "http://bentnib.org/",
     "insturl": "",
     "title": "Realisability",
-    "abstract": "TBA",
+    "abstract": "Sometimes, we think of the category of sets and functions as a simple model of programs in a functional programming language. But sets and functions are much too expressive -- there are plenty of set theoretic functions that aren't expressible in any implementable programming language. Realisability is a way to bring functions down to earth by requiring that they are computable in some model of computation. I'll cover the construction of categories of realizable functions, usually called the category of Assemblies, and its interesting sub-category, the category of Modest Sets or PERs. I'll also sketch how to interpret type theory in the category of assemblies. If there is time, I'll also cover linear realisability.",
     "location": "Online",
     "material": []
   },
