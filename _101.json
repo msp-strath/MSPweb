@@ -78,8 +78,8 @@
     "institute": "MSP",
     "speakerurl": "https://erischel.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Probability theory with string diagrams",
+    "abstract": "Going back to Lawvere, people have tried to study probability theory in terms of monads - the idea being that for each \"space\" of some type, X, there should be a space PX of probability distributions on X, with point-distributions and integration of distributions giving the monad structure. The Kleisli category of this monad is of particular interest: it corresponds to \"stochastic maps\" between spaces.\n\n It turns out that one can actually often do without the monad - the Kleisli category itself carries enough structure that one can do probability theory \"internally\", rederiving the notions of determinism, independence of measures, and many others. I will present this picture of probability, and give some examples of results that can be proven in this framework.",
     "location": "Online",
     "material": []
   },
