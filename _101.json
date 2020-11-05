@@ -66,8 +66,8 @@
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
     "insturl": "",
-    "title": "Lenses",
-    "abstract": "TBA",
+    "title": "Lenses 101",
+    "abstract": "I’ll talk about the zoo of closely-related structures (with a lot of clashing terminology) known as “lenses” and “optics”. Lenses and optics are a way of managing inherently state-heavy applications (for example videogames) in purely functional languages, which turn out to have a lot of surprisingly deep category theory behind them. I will also talk about some of the places where lenses have recently appeared far outside their original domain, for example in game theory, machine learning and systems theory.",
     "location": "Online",
     "material": []
   },
