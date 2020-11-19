@@ -57,7 +57,12 @@
     "title": "Containers",
     "abstract": "How do we represent and reason about data types, in general? The theory of containers is one answer, which is locally quite popular in the MSP group (and beyond). A container is given by a collection of shapes, and for each shape, a collection of positions, where one is meant to plug in data. Containers can be used to analyse generic constructions on data types, without resorting to a messy induction over syntax.\n\n Each container induces a functor from Set to Set, which maps an \"element type\" X to the set of containers with data drawn from X. Furthermore, there is a natural notion of morphism of containers, with the remarkable property that it completely captures the natural transformations between the functors the containers represent: the interpretation functor from containers to the functor category from Set to Set is full and faithful. In general, the category of containers is extremely nice, eg containers are closed under almost all operations you can imagine (composition, products, coproducts, exponentials, initial algebras, final coalgebras, ...). I hope to give an introductory talk that will make the above more precise.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2020-11-19_fred.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
