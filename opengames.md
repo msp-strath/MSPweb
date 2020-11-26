@@ -14,6 +14,7 @@ Open Games
 
 ### Various resources
 
+* Jules' lectures on Open Games: [Part I](https://www.youtube.com/watch?v=5Qny8YmLUzk), [Part II](https://www.youtube.com/watch?v=ydZ81HDhLnw), [Part III](https://www.youtube.com/watch?v=7qYVm5XvVLQ), [Part IV](https://www.youtube.com/watch?v=ncv3wed1QmQ).
 * Main paper: *Compositional Game Theory*, Ghani, Hedges, Winschel, Zahn ([link](https://dl.acm.org/doi/10.1145/3209108.3209165)).
 * Jules' implementation ([GitHub](https://github.com/jules-hedges/open-games-hs)).
 * *The Game Semantics of Game Theory*, Hedges ([link](https://arxiv.org/abs/1904.11287)).
