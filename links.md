@@ -100,3 +100,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : A collaborative spreadsheet to gather the schedules of MSP members.
 
+[Glasgow accommodation tips](./accommodation.html)
+
+: For MSP newcomers: how to find a flat in Glasgow and other useful local information.
+
