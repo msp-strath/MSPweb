@@ -45,7 +45,11 @@
     "title": "Event Structures and Games",
     "abstract": "I’ll introduce event structures, a model of computation in which behaviour is captured through partial orders of causal dependency between events.  As an application I'll show their role in a theory of concurrent/distributed games and strategies, which has been useful in the semantics of computation, also for probabilistic and quantum programs.  Though originally motivated by the limitations of traditional semantics, through determinacy and value theorems, and the preservation of winning/optimal strategies under composition, a form of structural game theory is emerging.  In this talk I'll concentrate on what I see as connection points with work here at Strathclyde: as a lead in, relations with the stable domain theory of Berry and Girard; then, the view of strategies as profunctors, whence how they connect to the traditional domain theory of Scott; concluding with how distributed strategies support certain dialectica categories and lenses, and through them open games.  My hope is that these connections will be fruitful.  On the one side, distributed games can offer a rich metalanguage which extends to probabilistic and quantum computation.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2020-11-26_glynn.pdf"
+      }
   },
   {
     "tag": "Talk",
