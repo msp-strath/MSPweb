@@ -30,8 +30,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/r.mardare/",
     "insturl": "",
-    "title": "Measure theory and Probability",
-    "abstract": "TBA",
+    "title": "Metrics in probabilistic context",
+    "abstract": "This talk will (probably) be a tutorial on how metrics meet probability theory and how this provides us with the context for innovative paradigms in computer science. The novel challenges that machine learning, cyber-physical systems and statistical computational methods rise to computer science require a fundamental change of the semantics of computation. While in the past we were happy to know whether two programs/algorithms/machines behave the same or not, today it is obvious that this is not enough for our purposes. We need, more and more, to be able to reason about and measure the similarity of non-identical computational behaviours. Moreover, we need to speak about randomness in computational phenomena, especially when we formalize learning or behaviours in unknown contexts. Last but not least, we need to eventually replace the classic metatheory of computation with a probabilistically-based one, where questions can be answered probabilistically within controlled confidence boundaries.\n\n I will not have the time to approach all these during the talk, but I will try to give an overview of the mathematical instruments one needs to approach such a complex challenge.",
     "location": "Online",
     "material": []
   },
