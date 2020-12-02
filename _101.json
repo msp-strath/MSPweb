@@ -19,7 +19,7 @@
     "speakerurl": "https://umazalakain.info/",
     "insturl": "http://www.dcs.gla.ac.uk/research/formalmethods/",
     "title": "Session Types",
-    "abstract": "TBA",
+    "abstract": "This talk is a brief introduction to session types, a type formalism for structured communication between concurrent programs. Instead of typing programs, we will session type channel endpoints, to then ensure that the programs that make use of these endpoints do so in a principled manner, according to their session types. I will go over some of the key ideas that enable session-typed programming, and comment on the properties that session-typed programs exhibit. As an example, I will introduce (and comment on the oddities of) a type system that uses session types to type the pi calculus. I will close mentioning some of the extensions to session types and more advanced type systems.",
     "location": "Online",
     "material": []
   },
