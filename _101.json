@@ -9,7 +9,12 @@
     "title": "Algebraic effects and effect handlers",
     "abstract": "I'll give an introduction to algebraic effects and effect handlers as a general approach to programming and reasoning about effectful computation. I'll present the notion of a computation over an algebraic effect as a command-response tree over an effect signature quotiented by some equational theory. I'll consider how to interpret command-response trees and motivate effect handlers as the reification of such interpretations as an object language feature that provides a generic implementation strategy for algebraic effects. I'll give examples to show that it can be useful to interpret the same command-response tree using different interpretations which may not respect the same equational theory. Thus effect handlers can provide an expressive programming feature independently of any non-trivial algebraic theory.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2020-12-17_sam.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
