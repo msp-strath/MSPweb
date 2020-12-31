@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2021-01-07T13:00:00Z",
+    "speaker": "James Wood",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/james.wood.100/",
+    "insturl": "",
+    "title": "Generic metatheory of linear programming languages",
+    "abstract": "I will give an introduction to generic metatheory in the style of Allais, Atkey, Chapman, McBride, and McKinna, leading into new work from me and Bob. Generic metatheory is about deriving proofs and operations for a whole class of programming languages, rather than the usual 1 language. The class we consider combines variable binding with usage-sensitivity, and contains many variants of linear natural deduction calculi (and, as a special case, intuitionistic and classical calculi). We build on <a href='https://arxiv.org/abs/2001.11001'>the framework of Allais et al.</a> and our recent use of <a href='https://arxiv.org/abs/2005.02247'>linear algebra in linear metatheory</a>.",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2020-12-17T13:00:00Z",
     "speaker": "Sam Lindley",
     "institute": "University of Edinburgh",
