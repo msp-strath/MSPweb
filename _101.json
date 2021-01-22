@@ -162,8 +162,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/jeremy.ledent/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Combinatorics, Topology and Game theory: a proof of Nash's theorem",
+    "abstract": "The aim of this talk is to state and prove Nash's theorem, which says that every finite game with mixed strategies has a Nash equilibrium. The proof makes use of two other famous results: Sperner's lemma, a combinatorial result about coloring the vertices of a triangulation, and Brouwer's fixed-point theorem. Thus, my talk will be organised into three largely independent parts: first I will sketch the proof of Sperner's lemma; then I will use Sperner's lemma to prove Brouwer's theorem; and finally I will use Brouwer's theorem to prove the existence of Nash equilibria.",
     "location": "Online",
     "material": []
   },
