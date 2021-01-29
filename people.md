@@ -43,7 +43,7 @@ at the University of Strathclyde and comprises
 [Dr Clemens Kupke](http://www.strath.ac.uk/staff/kupkeclemensdr/)
 
 :   who is currently working on both coalgebras and logics for knowledge
-    representation and databases. See
+    representation, learning and verification. See
     [Clemens' homepage](https://personal.cis.strath.ac.uk/clemens.kupke/)
     for more details or email [clemens.kupke
     [at] strath.ac.uk](mailto:clemens.kupke [at] strath.ac.uk).
