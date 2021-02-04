@@ -138,8 +138,8 @@
     "institute": "MSP",
     "speakerurl": "https://www.brunogavranovic.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Categorical Foundation of Gradient-Based Learning",
+    "abstract": "I will give an introduction to the categorical foundation of gradient-based learning algorithms. I'll define three abstract constructions and show how they can be put together to form general neural networks. The Para construction is used to compose neural networks while keeping track of their weights. Lenses/Optics which are used to take care of the forward-backward data flow and lastly, reverse derivative categories are used to functorially construct the backward wires from the forward ones. In addition, we'll see that gradient descent, Momentum, and a number of optimizers are lenses too, and that this framework includes learning on boolean circuits, in addition to standard Euclidean spaces.",
     "location": "Online",
     "material": []
   },
@@ -153,7 +153,12 @@
     "title": "Reviewing",
     "abstract": "I'll talk about how I go about writing, reading, and responding to reviews. Reviews are an essential part of academic publishing, but why do we do them (for free!), and why do we care what they say? I discuss how reviews are used by programme committees and chairs to decide what papers are selected for conferences (and journals), how I think you should go about doing reviews, and why you should write reviews. I'll also talk about reading reviews written about your own work, and how to go about the author response period effectively.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-02-04_bob.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
