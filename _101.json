@@ -114,8 +114,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Some Thoughts on a Datatype for Higher Genus Graphs",
+    "abstract": "Circuit diagrams are commonly modelled by graphs embedded into some oriented surface (maps). When the circuit's topology is non-trivial (e.g. for quantum circuits), the maps live on higher genus surfaces. I will give an introduction to the relevant graph theory and discuss some ideas on how we might be able to program with these higher genus structures. Starting from the plane case, a multi-stack approach seems promising for approaching these more complex maps. Strategies for modelling structures with multiple stacks exist in various different contexts and any of your experiences are most welcome in the discussion!",
     "location": "Online",
     "material": []
   },
