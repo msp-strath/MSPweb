@@ -129,7 +129,12 @@
     "title": "Internal ∞-Categories with Families",
     "abstract": "It is natural to formalise the notion of a model of type theory (especially the syntax = intended initial model) inside type theory itself. This is often done by writing the definition of a category with families (CwF) as a generalised algebraic theory. What could the success criterion from a HoTT point of view be? The typical first goal is that the initial model is an h-set or even has decidable equality. Our second goal is to make the \"standard model\" work, i.e. the universe U should be a CwF in a straightforward way (cf. Mike Shulman's 2014 question whether the n-th universe in HoTT models HoTT with n-1 universes). Unfortunately, it is hard to combine these two goals. If we include set-truncatedness explicitly in the definition of a CwF, then the \"standard model\" is not a CwF. If we don't, then the initial model is not an h-set. The root of the problem is that 1-categories are not well-behaved concepts in an untruncated setting. The natural approach are higher categories, which corresponds to \"equipping the syntax with all coherences\" instead of truncating. In this talk, I will explain one approach to this based on a type-theoretic formulation of Segal spaces, expressed in HTS/2LTT. I will discuss what works and what is still open. The talk will be based on <a href='https://arxiv.org/abs/2009.01883'>arXiv:2009.01883</a>.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-02-18_nicolai.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
