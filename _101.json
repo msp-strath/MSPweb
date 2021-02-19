@@ -146,7 +146,11 @@
     "title": "Categorical Foundation of Gradient-Based Learning",
     "abstract": "I will give an introduction to the categorical foundation of gradient-based learning algorithms. I'll define three abstract constructions and show how they can be put together to form general neural networks. The Para construction is used to compose neural networks while keeping track of their weights. Lenses/Optics which are used to take care of the forward-backward data flow and lastly, reverse derivative categories are used to functorially construct the backward wires from the forward ones. In addition, we'll see that gradient descent, Momentum, and a number of optimizers are lenses too, and that this framework includes learning on boolean circuits, in addition to standard Euclidean spaces.",
     "location": "Online",
-    "material": []
+    "material": [{
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=ji8MHKlQZ9w",
+        "linkDescription": "Video"
+      }]
   },
   {
     "tag": "Talk",
