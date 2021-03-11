@@ -93,7 +93,12 @@
     "title": "Quantitative containers",
     "abstract": "Quantitative Type Theory combines linear types (where we keep track of how many times a variable is used) and dependent types (where terms can appear in types). This gives a logical system which is both expressive and precise with respect to the resource usage of programs and proofs, with a rich model theory. I will talk about work in progress investigating data types in this setting, in the form of \"resource-aware\" quantitative containers, and their initial algebra semantics.\n\n This is joint work with Georgi Nakov.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-03-11_fred.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
