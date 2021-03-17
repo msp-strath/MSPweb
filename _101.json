@@ -66,8 +66,8 @@
     "institute": "Australian National University",
     "speakerurl": "",
     "insturl": "https://cecs.anu.edu.au/research/theory/logic",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Type Preserving Crossover Operations for Genetic Programs",
+    "abstract": "This talk serves as my formal introduction to the MSP101 Group, and covers work from my Bachelor thesis. We will look at how dependent types can be used to enable a type-safe crossover operation to allow the generation of program examples that are guaranteed to be well typed. We'll also cover alternate approaches I could've taken, as well as further work in the area.",
     "location": "Online",
     "material": []
   },
