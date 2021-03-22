@@ -66,8 +66,8 @@
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "All about convex sets",
+    "abstract": "This talk is about the algebras of the finite support probability monad on Set. They consist of a set equipped with a “mixture” operator satisfying some axioms, and are variously known as (abstract) convex sets, convex algebras, barycentric algebras, etc. Every actually-convex subset of a real vector space is a convex set, but there are less expected examples too: every join-semilattice can be seen as a convex set, and there are examples that combine aspects of both vector spaces and semilattices.\n\n I will spend a lot of time on the basic theory and examples, which is mostly due to Marshall Stone. I’ll then transition into talking about work in progress with Paolo Perrone and Sharwin Rezagholi, in which we aim to prove a version of Brouwer’s fixpoint theorem for convex sets. Specifically, we aim to construct a “topological realisation” functor F: Conv -> Top and find sufficient convex properties on X such that F(X) satisfies the fixpoint property for continuous maps. Along the way we prove a classification theorem: every convex set can be decomposed as a family of convex subsets of vector spaces “fibred over” a semilattice (slightly improving a similar unpublished result by Tobias Fritz).",
     "location": "Online",
     "material": []
   },
