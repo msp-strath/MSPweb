@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2021-05-20T15:00:00Z",
+    "speaker": "Chuangjie Xu",
+    "institute": "fortiss GmbH",
+    "speakerurl": "https://cj-xu.github.io/",
+    "insturl": "https://www.fortiss.org/en/",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2021-05-13T15:00:00Z",
     "speaker": "Jan de Muijnck-Hughes",
     "institute": "Glasgow",
