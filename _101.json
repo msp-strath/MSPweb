@@ -93,7 +93,12 @@
     "title": "Propositional Dynamic Logic(s)",
     "abstract": "I will provide an introduction to dynamic modal logics such as Propositional Dynamic Logic (PDL) and Game Logic (GL) and will then describe a (co)algebraic framework for these logics. This framework relates program/game constructs of these logics to monad structure. The axioms of these logics express compatibility requirements between the modal operators and the monad structure.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-03-18_clemens.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
