@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2021-04-22T15:00:00Z",
+    "speaker": "Georgi Nakov",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "A relationally parametric model of Quantitative Type Theory",
+    "abstract": "Polymorphism allows a single function to be instantiated with multiple types. It is parametric if all of the instances behave uniformly. Reynolds managed to give rigorous formalization of this notion in his abstraction theorem for polymorphic lambda calculus. The key insight is that types may also be interpreted as relations. In this talk, I will give an overview of relational parametricity and some of its consequences, focus on an approach of extending parametricity to dependent type theories using reflexive graphs (due to Atkey, Ghani and Johann) and finish by presenting a relationally parametric model of Quantitative Type Theory.",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2021-05-20T15:00:00Z",
     "speaker": "Chuangjie Xu",
     "institute": "fortiss GmbH",
