@@ -42,8 +42,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Categorical semantics of the Simply typed lambda calculus",
+    "abstract": "The Simply typed lambda calculus is a tried and true tool for experimentation and teaching, today we're going to use it as our guide through an introduction to category theory. Category theory without proper motivation or context can be a bit puzzling to get into. But using the simply typed lambda calculus as our framework we will see what it takes in order to interpret it as a Cartesian Closed Category. This walkthough should provide you with the tools to understand Cartesian Closed Category as well as some hands-on experience with proving your first results in Category theory!",
     "location": "Online",
     "material": []
   },
