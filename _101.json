@@ -57,7 +57,12 @@
     "title": "Games with players",
     "abstract": "The algebra of open games is a compelling language for modelling large and medium scale games, with many interacting players. Its most striking features are compositionality and an intuitive and expressive graphical calculus. In this talk I'll go through some recent developments in this area to sketch a general way to build open games, starting from an informal specification, a classical game, or a bunch of given other games. The most important novelty is the presence of a well-defined and correct notion of player, which was missing until now. The guiding principle will be that ‘games and players live in orthogonal planes’, as suggested by the graphical language of the para construction.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-04-29_matteo.pdf"
+      }
+    ]
   },
   {
     "tag": "CancelledTalk",
