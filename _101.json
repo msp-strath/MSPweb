@@ -18,8 +18,8 @@
     "institute": "fortiss GmbH",
     "speakerurl": "https://cj-xu.github.io/",
     "insturl": "https://www.fortiss.org/en/",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A Generic Framework for Analyzing (Featherweight) Java Programs",
+    "abstract": "As a notion to represent disjoint sets of memory locations, regions serve as the basis of various techniques for e.g. memory management and pointer analysis. They are closely interrelated with effects, and have been illustrated to be useful for improving the precision of analysis. We generalize the notion of region to represent properties of values, introduce a region type system for Featherweight Java (FJ) that is parametrized with a monad-like structure, and prove a uniform soundness theorem. Its instances include some type systems studied by Martin Hofmann et al. as well as a new one that performs more precise analysis of trace-based program properties. Our region type system is separate from the FJ type system, making it simpler and also easier to move to larger fragments of Java. The uniform framework helps to avoid redundant work on the meta-theory when extending the system to cover other language features such as exception handling. This is joint work with Ulrich Schöpp.",
     "location": "Online",
     "material": []
   },
