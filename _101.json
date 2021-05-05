@@ -30,8 +30,8 @@
     "institute": "Glasgow",
     "speakerurl": "http://jfdm.github.io/",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Formalising the (Sub-)Structural Aspects of SystemVerilog, Again...",
+    "abstract": "Hardware design is commoditised and it might be the case that several components of your design use encrypted bitstreams bought from third-parties. We must have faith that the encrypted bitstreams do what they are supposed to. In the Border Patrol Project  we are interested in being able to reason about the structure & behaviour of designs as a whole, regardless of if we can inspect each module down to the individual gates.\n\n Following on from my SPLS Nov '20 I want to update everyone on my journey in capturing the physical structure of hardware design using lambda-calculi. Specifically, I will re-introduce System-V, a typed lambda calculus that is based upon the well-known hardware description and verification language SystemVerilog. I will show how a System-V design can capture physical hardware design in the Verilog style, and its type-system enforce correct wiring. I will then show how we can formally look beyond System-V itself (and hardware design by extension) by leveraging known-things from programming-language theory, and posit on where to go from here.",
     "location": "Online",
     "material": []
   },
