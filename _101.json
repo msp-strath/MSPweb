@@ -47,8 +47,18 @@
     "location": "Online",
     "material": [{
         "tag": "Link",
-        "address": "https://gitlab.com/avidela/neko/",
+        "address": "https://youtu.be/1V4_gfy-dsQ",
+        "linkDescription": "Video"
+      },
+      {
+        "tag": "Link",
+        "address": "https://gitlab.com/avidela/neko/-/blob/main/src/Section4Correction.idr/",
         "linkDescription": "Source code"
+      },
+      {
+        "tag": "Link",
+        "address": "https://gitlab.com/avidela/neko/-/raw/main/Notes/Category%20theory%20stlc%20reference.jpg/",
+        "linkDescription": "Notes"
       }]
   },
   {
