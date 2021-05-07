@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2021-06-17T15:00:00Z",
+    "speaker": "William Waites",
+    "institute": "LSHTM Centre for the Mathematical Modelling of Infectious Diseases",
+    "speakerurl": "https://www.tardis.ed.ac.uk/~wwaites/",
+    "insturl": "https://www.lshtm.ac.uk/research/centres/centre-mathematical-modelling-infectious-diseases",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2021-05-27T15:00:00Z",
     "speaker": "Georgi Nakov",
     "institute": "MSP",
