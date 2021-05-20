@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2021-05-27T15:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2021-06-17T15:00:00Z",
     "speaker": "William Waites",
