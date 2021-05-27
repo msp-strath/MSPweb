@@ -1,5 +1,50 @@
 [
   {
+    "tag": "Talk",
+    "date": "2021-07-15T15:00:00Z",
+    "speaker": "Samuel Arsac",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "SpecialEvent",
+    "date": "2021-06-30T11:00:00Z",
+    "title": "SPLS",
+    "url": "https://www.eventbrite.com/e/spls-2021-june-30th-tickets-154107512719",
+    "location": "Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2021-06-24T15:00:00Z",
+    "speaker": "André Videla",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2021-06-10T15:00:00Z",
+    "speaker": "Bob Atkey",
+    "institute": "MSP",
+    "speakerurl": "http://bentnib.org/",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2021-05-27T15:00:00Z",
     "title": "MSP101 Planning meeting",
