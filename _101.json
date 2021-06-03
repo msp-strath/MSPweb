@@ -39,8 +39,8 @@
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Real Numbers in Agda",
+    "abstract": "In a constructive logic real numbers are even more interesting than they are in the classical world. To demonstrate the differences, I'll talk about how we can construct a type of real numbers in Agda in terms of the Cauchy completion of the metric space of rational numbers. This yields an implementation of real numbers that is reasonably efficient and that we can do proofs about. The basic construction closely follows Russell O'Connor's \"A monadic, functional implementation of real numbers\" [1]. I'll also talk about using the completion of a metric space to implement quantitative equational theories over complete separable metric spaces in Agda. I'll try to work from the assumption that the audience knows nothing about metric spaces, completion, or construction of real numbers.\n\n [1] <a href='https://arxiv.org/abs/cs/0605058'>https://arxiv.org/abs/cs/0605058</a>",
     "location": "Online",
     "material": []
   },
