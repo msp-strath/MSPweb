@@ -22,7 +22,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-06-24T15:00:00Z",
+    "date": "2021-06-24T14:00:00Z",
     "speaker": "André Videla",
     "institute": "MSP",
     "speakerurl": "",
@@ -68,7 +68,12 @@
     "title": "Executable Storytelling with Rule-Based Models",
     "abstract": "I will tell a (very simplified) story about how the adaptive immune system works through the medium of rules. Rules are compositional creatures that can be looked at from the perspective of structured cospans, algebras or double pushout graph rewriting systems. I won't belabour the abstract interpretation, rather I will concentrate on how they can be used to good effect to both explain (normal mode) immune response to a pathogen like SARS-CoV-2 and generate a model that can be simulated and reproduces some interesting heterogeneity that is observed in the world. Furthermore, compositionality means that this set of rules can be freely combined with sets of rules for transmission and diagnostic testing and will show this in action. Finally, I’ll speculate about some other kinds of models that it might be interesting to incorporate.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-06-17_william.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
