@@ -30,7 +30,12 @@
     "title": "Optics for generic declarative server APIs",
     "abstract": "Martin-Löf type theory has provided us with a new programming paradigm: One where types and terms have shed their differences in order to live harmoniously in the same universe. Despite this successful reunion we have yet to communicate this story to the people building today’s software, for whom it is still a fairy-tale, rather than reality.\n\n For this, I will demonstrate how to use dependent types for a purpose that is extremely common in commercial software: Web servers. Web servers are a great example because of how ubiquitous they are. Every service, company or product probably has a web server running behind it in some way (if only to serve web pages). Dependent types help the implementation of servers in small and big ways and the experience can be further enhanced by combining it with lenses in order to reach powerful new levels of abstraction.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-06-24_andre.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
