@@ -1,6 +1,30 @@
 [
   {
     "tag": "Talk",
+    "date": "2021-07-08T15:00:00Z",
+    "speaker": "Conor McBride",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
+    "insturl": "",
+    "title": "Rational Fixpoints",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2021-07-01T15:00:00Z",
+    "speaker": "Matteo Capucci",
+    "institute": "MSP",
+    "speakerurl": "https://matteocapucci.wordpress.com/",
+    "insturl": "",
+    "title": "Translating Extensive Form Games to Open Games with Agency",
+    "abstract": "We show open games cover extensive form games with both perfect and imperfect information. Doing so forces us to address two current weaknesses in open games: the lack of a notion of player and their agency within open games, and the lack of choice operators. Using the former we construct the latter, and these choice operators subsume previous proposed operators for open games, thereby making progress towards a core, canonical and ergonomic calculus of game operators. Collectively these innovations increase the level of compositionality of open games, and demonstrate their expressiveness.\n\n This is a practice talk for ACT'21.",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2021-07-15T15:00:00Z",
     "speaker": "Samuel Arsac",
     "institute": "MSP",
