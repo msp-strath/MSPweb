@@ -6,8 +6,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "Rational Fixpoints",
-    "abstract": "TBA",
+    "title": "Bite me! (Rational Fixpoints of Containers)",
+    "abstract": "Least fixpoints, often written mu X. Blah(X), give us inductive types (for strictly positive Blah), e.g. finite lists of A given as mu X. 1 + A*X: all the lists of finite length. Greatest fixpoints, often written nu X. Blah(X), give us possibly infinite type (for strictly positive Blah), e.g. finite lists, but also wild infinite lists like [0,1,2,3,...] which never repeat.\n\n There is no Greek letter between mu and nu. But there is at least one interesting fixpoint between the least and the greatest: things which can loop back on themselves, but not diverge into the wide blue yonder. That is the rational fixpoint.\n\n What are we to do with it? I don't know but I intend to find out.\n\n I shall give a deeply unsatisfactory talk on this topic which leaves more questions than answers, for the purpose of infecting people with this problem. There will be at least one solid clue.",
     "location": "Online",
     "material": []
   },
