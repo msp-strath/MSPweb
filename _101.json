@@ -21,7 +21,13 @@
     "title": "Translating Extensive Form Games to Open Games with Agency",
     "abstract": "We show open games cover extensive form games with both perfect and imperfect information. Doing so forces us to address two current weaknesses in open games: the lack of a notion of player and their agency within open games, and the lack of choice operators. Using the former we construct the latter, and these choice operators subsume previous proposed operators for open games, thereby making progress towards a core, canonical and ergonomic calculus of game operators. Collectively these innovations increase the level of compositionality of open games, and demonstrate their expressiveness.\n\n This is a practice talk for ACT'21.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://github.com/mattecapu/act21-open-games-with-agency/blob/master/main.pdf",
+        "linkDescription": "Slides"
+      }
+    ]
   },
   {
     "tag": "Talk",
