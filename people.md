@@ -152,6 +152,9 @@ André Videla
 
 :   who is a PhD student under Bob Atkey and Conor McBride's direction.
 
+Ezra Schoen
+
+:   who is a PhD student under Clemens Kupke's direction.
 
 ### Alumni ###
 
