@@ -36,8 +36,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Expressivity of BCI algebras",
+    "abstract": "I will have a look into the expressivity of BCI-algebras, by implementing them in Coq and by looking at them from a categorical point of view. The first step will be to implement the λ* operator as shown in [1], which will allow for the use of linear lambda-calculus. From this point it will be much easier to define useful terms with BCI combinators, and I will use the encoding of booleans in linear lambda-calculus defined in [2] to create a type of duplicable and discardable booleans. In parallel, I will talk about the categorical aspects with the notion of realisability and category of assemblies [1], with the aim of showing that we can obtain a linear-non-linear model.\n\n [1] <a href='https://www.kurims.kyoto-u.ac.jp/~naophiko/paper/realizability.pdf'>https://www.kurims.kyoto-u.ac.jp/~naophiko/paper/realizability.pdf</a>\n [2] <a href = 'https://www.cs.brandeis.edu/~mairson/Papers/jfp02.pdf'>https://www.cs.brandeis.edu/~mairson/Papers/jfp02.pdf</a>",
     "location": "Online",
     "material": []
   },
