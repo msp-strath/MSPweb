@@ -30,7 +30,6 @@ at the University of Strathclyde and comprises
     models of interaction such as distributed games and event structures.
     Contact Glynn at [glynn.winskel [at] strath.ac.uk](mailto:glynn.winskel [at] strath.ac.uk).
 
-
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
 
 :   who is currently working on dependently typed programming. He is
@@ -70,7 +69,7 @@ at the University of Strathclyde and comprises
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
 
-Dr Jules Hedges
+[Dr Jules Hedges](https://www.strath.ac.uk/staff/hedgesjuliandr/)
 
 :   who is interested in game theory, economics and machine learning
     using tools of category theory and functional programming. See
@@ -82,7 +81,6 @@ Dr Jules Hedges
     [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/)
     for more details or email
     [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk)
-
 
 Guillaume Allais
 
