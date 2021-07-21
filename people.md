@@ -156,6 +156,14 @@ Ezra Schoen
 
 :   who is a PhD student under Clemens Kupke's direction.
 
+Riu Rodríguez Sakamoto
+
+:   who is a PhD student under Jules Hedges' direction.
+
+Dylan Braithwaite
+
+:   who is a PhD student under Jules Hedges' direction.
+
 ### Alumni ###
 
 Dr Phil Scott
