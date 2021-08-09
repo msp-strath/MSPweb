@@ -78,14 +78,18 @@ at the University of Strathclyde and comprises
 [Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
 :   who is interested in concurrency, topology and category theory. See
-    [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/)
-    for more details or email
+    [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/) or email
     [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk)
+
+Dr Jade Master
+
+:   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
+    See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/).
 
 Guillaume Allais
 
 :   who is a PhD student under Conor McBride's direction.
-    [Guillaume's webpage](http://gallais.github.io/).
+    [Guillaume's homepage](http://gallais.github.io/).
 
 Stevan Andjelkovic
 
@@ -94,17 +98,17 @@ Stevan Andjelkovic
 Ben Price
 
 :   who is a PhD student under Neil Ghani's direction.
-    [Ben's webpage](https://personal.cis.strath.ac.uk/benjamin.price).
+    [Ben's homepage](https://personal.cis.strath.ac.uk/benjamin.price).
 
 Stuart Gale
 
 :   who is a PhD student under Conor McBride's direction.
-    [Stuart's webpage](http://www.bishboria.com/).
+    [Stuart's homepage](http://www.bishboria.com/).
 
 Simone Barlocco
 
 :   who is a PhD student under Clemens Kupke's direction.
-    [Simone's webpage](http://personal.strath.ac.uk/simone.barlocco/).
+    [Simone's homepage](http://personal.strath.ac.uk/simone.barlocco/).
 
 Alasdair Lambert
 
@@ -117,7 +121,7 @@ Joseph Collins
 James Wood
 
 :   who is a PhD student under Bob Atkey's direction.
-    [James' webpage](https://personal.cis.strath.ac.uk/james.wood.100/).
+    [James' homepage](https://personal.cis.strath.ac.uk/james.wood.100/).
 
 Malin Altenm&uuml;ller
 
@@ -126,7 +130,7 @@ Malin Altenm&uuml;ller
 Bruno Gavranović
 
 :   who is a PhD student under Neil Ghani's direction.
-    [Bruno's webpage](https://www.brunogavranovic.com/).
+    [Bruno's homepage](https://www.brunogavranovic.com/).
 
 Georgi Nakov
 
@@ -139,12 +143,12 @@ Craig Roy
 Matteo Capucci
 
 :   who is a PhD student under Neil Ghani and Scott Cunningham's direction.
-    [Matteo's webpage](https://matteocapucci.wordpress.com/).
+    [Matteo's homepage](https://matteocapucci.wordpress.com/).
 
 Eigil Rischel
 
 :   who is a PhD student under Radu Mardare and Neil Ghani's direction.
-    [Eigil's webpage](https://erischel.com).
+    [Eigil's homepage](https://erischel.com).
 
 André Videla
 
@@ -161,6 +165,7 @@ Riu Rodríguez Sakamoto
 Dylan Braithwaite
 
 :   who is a PhD student under Jules Hedges' direction.
+    [Dylan's homepage](https://dylanbraithwaite.github.io/).
 
 ### Alumni ###
 
