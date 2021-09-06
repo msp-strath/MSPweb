@@ -174,8 +174,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "All kind of types",
+    "abstract": "What are types? What types of types exist? Why do we do bother and what does this buy us? This introduction to type theory aims to motivate the study of type systems and demonstrate their power. No knowledge is required except for basic programming concepts, like functions and data structures. Our journey will take us from the Set theory slums, through the curry-howard plains, into the type-theory ivory tower and end looking at the stars where modal logic and QTT live.",
     "location": "Online",
     "material": []
   },
