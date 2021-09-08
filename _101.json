@@ -162,8 +162,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Introduction to universal coalgebra",
+    "abstract": "The aim of this presentation is to give an overview of various concepts within universal coalgebra. We will explore such topics as corecursion, bisimulation and coalgebraic (modal) logic. No prior knowledge is required, save for some elementary category theory.",
     "location": "Online",
     "material": []
   },
