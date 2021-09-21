@@ -24,21 +24,13 @@ This page compiles various resources that might be useful to MSP members.
 
 : Online seminar on Logic and Semantics, Wednesday 2pm.
 
-[Chalmers FP seminar](http://chalmersfp.org/)
-
-: Chalmers Online Functional Programming Seminar, Monday 3pm.
-
 [ACT seminars](https://teamup.com/ksfss6k4j1bxc8vztb)
 
-: A calendar assembling several category theory seminars, including [UCR](https://sites.google.com/ucr.edu/actucr), [MIT](http://brendanfong.com/seminar.html), and more.
+: A calendar assembling several category theory seminars.
 
 [Algebra-Coalgebra seminar](https://events.illc.uva.nl/alg-coalg)
 
 : A seminar at the ILLC Amsterdam, usually Wednesday at 3pm.
-
-[Online logic seminars](http://miguelmath.com/webminars.html)
-
-: A list of online seminars in Logic and Set theory.
 
 
 ### Mailing lists
@@ -77,6 +69,9 @@ This page compiles various resources that might be useful to MSP members.
 : Applied Category Theory mailing list.
   To subscribe, send an e-mail to [appliedcategorytheory+subscribe@googlegroups.com](mailto:appliedcategorytheory+subscribe@googlegroups.com)
 
+[categories](https://www.mta.ca/~cat-dist/)
+
+: Category theory mailing list.
 
 ### Internal CIS resources
 
@@ -96,7 +91,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : To book rooms on other floors.
 
-[MSP timetable](https://strath-my.sharepoint.com/:x:/g/personal/jeremy_ledent_strath_ac_uk/EYGG2rMyunFMtb3DMJ0uvLcBQRag3pBwopblqJR8Rdrw4w)
+[MSP timetable](https://strath-my.sharepoint.com/:x:/g/personal/fredrik_nordvall-forsberg_strath_ac_uk/EYFicKxKX89Or1iL9t9jGm8BC0pbdXytUlkbeD4dxghVVQ?e=ANGKeO)
 
 : A collaborative spreadsheet to gather the schedules of MSP members.
 
