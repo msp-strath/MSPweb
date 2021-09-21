@@ -150,8 +150,8 @@
     "institute": "MSP",
     "speakerurl": "https://sites.google.com/view/jadeedenstarmaster/home/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Building the behavior of graphs compositionally",
+    "abstract": "The free category on a graph may be understood as an operational semantics. The objects of this free category represent states and the morphisms represent possible sequences of events which may occur. How can this operational semantics be built from smaller components? We will see how gluing graphs together is the composition of category and how the operational semantics of graphs extends to a functor on this category. Blackboxing is a process which takes a system and focuses only the relationship it induces between its inputs and outputs.  In this talk we will explain how blackboxing is almost a functor, and how the categorical framework developed so far gives insight into computation.",
     "location": "Online",
     "material": []
   },
