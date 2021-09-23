@@ -1,7 +1,7 @@
 [
   {
     "tag": "Talk",
-    "date": "2021-12-16T15:00:00Z",
+    "date": "2021-12-15T15:00:00Z",
     "speaker": "Bob Atkey",
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
@@ -13,7 +13,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-12-09T15:00:00Z",
+    "date": "2021-12-08T15:00:00Z",
     "speaker": "Clemens Kupke",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
@@ -25,7 +25,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-12-02T15:00:00Z",
+    "date": "2021-12-01T15:00:00Z",
     "speaker": "Georgi Nakov",
     "institute": "MSP",
     "speakerurl": "",
@@ -37,7 +37,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-11-25T15:00:00Z",
+    "date": "2021-11-24T15:00:00Z",
     "speaker": "Jérémy Ledent",
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/jeremy.ledent/",
@@ -49,7 +49,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-11-18T15:00:00Z",
+    "date": "2021-11-17T15:00:00Z",
     "speaker": "Matteo Capucci",
     "institute": "MSP",
     "speakerurl": "https://matteocapucci.wordpress.com/",
@@ -61,7 +61,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-11-11T15:00:00Z",
+    "date": "2021-11-10T15:00:00Z",
     "speaker": "Sean Watters",
     "institute": "MSP",
     "speakerurl": "",
@@ -73,7 +73,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-11-04T15:00:00Z",
+    "date": "2021-11-03T15:00:00Z",
     "speaker": "Dylan Braithwaite",
     "institute": "MSP",
     "speakerurl": "https://dylanbraithwaite.github.io/",
@@ -85,7 +85,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-10-28T15:00:00Z",
+    "date": "2021-10-27T15:00:00Z",
     "speaker": "Malin Altenmüller",
     "institute": "MSP",
     "speakerurl": "",
@@ -97,7 +97,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-10-21T15:00:00Z",
+    "date": "2021-10-20T15:00:00Z",
     "speaker": "Riu Rodríguez Sakamoto",
     "institute": "MSP",
     "speakerurl": "",
@@ -109,7 +109,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-10-14T15:00:00Z",
+    "date": "2021-10-13T15:00:00Z",
     "speaker": "Toby Smithe",
     "institute": "Topos Institute and University of Oxford",
     "speakerurl": "https://tsmithe.net/",
@@ -121,7 +121,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-10-07T15:00:00Z",
+    "date": "2021-10-08T15:00:00Z",
     "speaker": "Jules Hedges",
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
@@ -133,7 +133,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-09-30T15:00:00Z",
+    "date": "2021-09-29T15:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
@@ -153,7 +153,12 @@
     "title": "Building the behavior of graphs compositionally",
     "abstract": "The free category on a graph may be understood as an operational semantics. The objects of this free category represent states and the morphisms represent possible sequences of events which may occur. How can this operational semantics be built from smaller components? We will see how gluing graphs together is the composition of category and how the operational semantics of graphs extends to a functor on this category. Blackboxing is a process which takes a system and focuses only the relationship it induces between its inputs and outputs.  In this talk we will explain how blackboxing is almost a functor, and how the categorical framework developed so far gives insight into computation.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-09-23_jade.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
