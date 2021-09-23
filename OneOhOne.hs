@@ -20,7 +20,7 @@ usualTime :: TimeOfDay
 usualTime = TimeOfDay 15 0 0
 
 usualDay :: String
-usualDay = "Thursday"
+usualDay = "Wednesday"
 
 -- HTML utils
 
