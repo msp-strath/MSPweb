@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2021-10-20T11:00:00Z",
+    "title": "SPLS",
+    "url": "https://spls-series.github.io/meetings/2021/october/",
+    "location": "Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2021-12-15T15:00:00Z",
     "speaker": "Bob Atkey",
@@ -84,7 +93,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2021-10-27T15:00:00Z",
     "speaker": "Malin Altenmüller",
     "institute": "MSP",
@@ -97,7 +106,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2021-10-20T15:00:00Z",
+    "date": "2021-10-27T15:00:00Z",
     "speaker": "Riu Rodríguez Sakamoto",
     "institute": "MSP",
     "speakerurl": "",
