@@ -135,8 +135,8 @@
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A very abridged introduction to open games",
+    "abstract": "Open games allow you to talk about some amount of game theory (and thus, some amount of economics) in terms of a lot of familiar ideas from category theory and compositionality. It isn’t possible to introduce open games adequately to anyone in this amount of time, but this talk will be the best I can manage in the circumstances. I’ll explain approximately how open games work, and how they relate to some other interests of MSP.  I’ll also do a quick demo of the open game engine, a Haskell implementation that’s robust enough to do some Real Economics ™.",
     "location": "Online",
     "material": []
   },
