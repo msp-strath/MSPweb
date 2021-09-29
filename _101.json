@@ -150,7 +150,18 @@
     "title": "Dependently typed programming: do you know what you are doing?",
     "abstract": "Wouldn't it be nice if you could tell the computer what you mean, so that it could help you catch not only syntax errors, but also semantics errors? Even better, so it could help you and guide you towards the program that you want to write? So that knowing what you are doing could become a responsibility shared between human and machine, instead of being only your problem? Using dependent types, and some care, we can achieve this by encoding the precise meaning of the program in its type -- any implementation will consequently be correct *by construction*. I will give a demonstration of such dependently typed programming, based in part on a nice recent draft functional pearl by Wouter Swierstra: \"A correct-by-construction conversion to combinators\" [1]. I will not assume that you know much about correct-by-construction programming, or combinatory logic.\n\n [1] <a href='https://webspace.science.uu.nl/~swier004/publications/2021-jfp-submission-2.pdf'>https://webspace.science.uu.nl/~swier004/publications/2021-jfp-submission-2.pdf</a>",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "File",
+        "path": "2021-09-29_fred/SK.agda",
+        "fileDescription": "Adga file"
+      },
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=LUurKBAD4sQ",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
