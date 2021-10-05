@@ -167,6 +167,11 @@ Dylan Braithwaite
 :   who is a PhD student under Jules Hedges' direction.
     [Dylan's homepage](https://dylanbraithwaite.github.io/).
 
+Sean Watters
+
+:   who is a PhD student under Clemens Kupke and Fredrik Nordvall Forsberg's direction.
+    [Sean's homepage](https://www.seanwatters.uk/).
+
 ### Alumni ###
 
 Dr Phil Scott
