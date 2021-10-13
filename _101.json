@@ -126,7 +126,12 @@
     "title": "The changing shapes of cybercats",
     "abstract": "The ménagerie of categorical models of dynamical systems is becoming a veritable zoo, but what makes all these animals tick? In this talk, I will introduce a new specimen: a symmetric monoidal category of continuous-time open Markov processes with general state spaces. I will explain how this category is obtained from a category of ``continuous-time coalgebras'' opindexed by polynomials, and describe how this recipe also gives categories of nondeterministic systems in arbitrary (continuous) time. These new specimens are motivated by the cybernetic question of how to model systems that are continuously performing approximate Bayesian inference. I will therefore sketch why their better-known cousins weren't quite up to the job, and show that our new SMC admits Bayesian inversion. Finally, I will attempt to make contact with the MSP branch of categorical cybernetics, asking what makes the shapes of our structures seem so similar-but-different, and how we might begin to understand systems nested within systems.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-10-13_toby.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
