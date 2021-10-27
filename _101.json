@@ -114,7 +114,17 @@
     "title": "Categories for persistent homology",
     "abstract": "Data analysis has dealt traditionally with regression, clustering and dimensionality reduction. Persistent homology, a tool in Topological Data Analysis, can be thought of as the counterpart of clustering: Instead of looking at clusters of data, it classifies holes of data. And we mean `holes' in the most visual way: given some point cloud in a metric space, it addresses how do we characterize regions of the space where there's no data. This talk will introduce persistence modules, which are a central concept of the theory. We will overview their construction from data, how we can compare between, and stability properties.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2021-10-27_riu.pdf"
+      },
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=KtYiZW9DQf8",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
