@@ -87,8 +87,8 @@
     "institute": "MSP",
     "speakerurl": "https://dylanbraithwaite.github.io/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "An Introduction to Finite Model Theory",
+    "abstract": "Model theory in classical logic provides a number of tools useful for classifying structures described by sets of axioms. In computer science we are often interested in cases where these structures are finite, but many results in classical model theory fail to specialise to cases where we require all models to be finite. In this talk I will give an introduction to some of the alternative techniques used for studying expressibility of finite models and discuss some interesting connections with complexity theory.",
     "location": "Online",
     "material": []
   },
