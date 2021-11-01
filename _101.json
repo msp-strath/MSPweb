@@ -75,8 +75,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A Tour of Temporal Logic",
+    "abstract": "Modal logic can be applied to a diverse range of use-cases by fixing different notions of model and modality. Our motivation today will be the formal verification technique of model checking, and with this in mind, I will focus on temporal logic. In temporal logics, the models represent systems which change over time, and the modalities allow us to reason about exactly how they proceed in time.\n\n I will first introduce basic relational modal logic, and show its limitations in this domain. We will then go on a tour of LTL, CTL, CTL*, and the modal 𝜇-calculus. Key destinations on the tour will include the respective expressive power and model-checking complexity of each, particularly in comparison to the 𝜇-calculus. I will end the tour with a closer look at the model-checking problem of the 𝜇-calculus, and its relationship to parity games.",
     "location": "Online",
     "material": []
   },
