@@ -63,8 +63,8 @@
     "institute": "MSP",
     "speakerurl": "https://matteocapucci.wordpress.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Optics in three acts",
+    "abstract": "Optics can be constructed in at least three different ways: from Tambara theory (profunctor encoding), as open diagrams (existential optics) and as free 'categories with a counit' (free teleological categories). Each of these three constructions highlights a different point of view on optics, and their interplay is an elegant mathematical story and a(n arguably) successful story for abstract nonsense. In this <del>play</del> talk, we look at all three constructions and contemplate their equivalence.",
     "location": "Online",
     "material": []
   },
