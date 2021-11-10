@@ -87,6 +87,11 @@
       {
         "tag": "PDF",
         "slideName": "2021-11-10_sean.pdf"
+      },
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=74tM1l7sAuA",
+        "linkDescription": "Video"
       }
     ]
   },
