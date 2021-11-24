@@ -56,6 +56,10 @@
     "location": "Online",
     "material": [
       {
+        "tag": "PDF",
+        "slideName": "2021-11-24_jonathan.pdf"
+      },
+      {
         "tag": "Link",
         "address": "https://www.youtube.com/watch?v=5SenXV-fQK0",
         "linkDescription": "Video"
