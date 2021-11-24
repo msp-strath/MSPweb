@@ -39,8 +39,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "When completeness is not enough: introduction to algebraisable logics",
+    "abstract": "The relation between logic and algebra is often expressed by existence of equational completeness theorems stating that a certain logic L is complete with respect to a certain class of algebras K. Perhaps the most famous example is given by the class of Boolean algebras and classical propositional logic. However, CPC is also complete with respect to the class of Heyting algebras by a negative translation. In order to recover a univocal connection, we need to dig deeper into the theory of algebraisability [1] - an algebraisable logic admits a unique algebraic semantics.\n\n In this talk we will introduce some notions and basic results from the theory of algebraisable logics. We will further propose an extension to the theory to accommodate for logics with weaker forms of substitutions (e.g. logics of dependence and independence, various epistemic logics).\n\n This is joint work with Davide Quadrellaro.\n\n [1] W. J. Blok and D. Pigozzi. Algebraizable logics, <a href='https://bookstore.ams.org/memo-77-396/'>https://bookstore.ams.org/memo-77-396/</a>",
     "location": "Online",
     "material": []
   },
