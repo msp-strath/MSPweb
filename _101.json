@@ -27,8 +27,8 @@
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Constructing disjunctive formulas in the modal mu-calculus",
+    "abstract": "The modal mu-calculus is a general modal fixpoint logic that allows to reason about the ongoing, possibly infinite behaviour of a transition system. For example, the temporal logics from Sean's 101 talk a few weeks ago can be seen as fragments of the mu-calculus.\n\n In this talk I am planning to give a brief introduction to the mu-calculus and then focus on a key result about the logic: every formula is equivalent to a so-called disjunctive formula. Constructing a disjunctive formula of \"small\" size is important e.g. for satisfiability checking. I am going to sketch a construction that yields a disjunctive formula that is single-exponential in the closure size of the input formula. The construction will highlight a few subtleties that arise when thinking about the size of a mu-calculus formula.\n\n Based on joint work with Johannes Marti and Yde Venema.",
     "location": "Online",
     "material": []
   },
