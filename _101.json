@@ -15,8 +15,8 @@
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Data types with negative information",
+    "abstract": "Inductive data types are a foundational tool for representing data and knowledge in dependently typed programming languages. The user provides a collection of rules that determine positive evidence for membership in the type. Elimination of an inductive type corresponds to structural induction on its members.\n\n But what if our data modelling requires negative information as well as positive? For example, representing the result of a backtracking parser requires evidence that a certain parsing attempt *didn't* work. Standard formulations of inductive types do not allow negative information mixed with positive.\n\n Mixing positive and negative information has been studied in logic programming, resulting in concepts like Negation as Failure, stable models, and answer set programming. Incorporating negative information into systems of rules leads us into the realm of non-monotonic logics, where simply adding knowledge does not necessarily preserve existing conclusions.\n\n In this talk, I'll describe a way to understand data types with negative information in type theory by combining ideas from 3-valued stable models in logic programming and constructive negation (or refutation) from linear logic. The hope is that by adding negation to data types we will be able to represent some reasoning tasks more easily in dependent types.",
     "location": "Online",
     "material": []
   },
