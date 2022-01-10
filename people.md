@@ -77,7 +77,7 @@ at the University of Strathclyde and comprises
 Dr William Waites
 
 :   who works on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory. See
-    [William' homepage](https://www.tardis.ed.ac.uk/~wwaites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
+    [William' homepage](https://personal.cis.strath.ac.uk/william.waites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
     
 [Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
