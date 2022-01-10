@@ -26,8 +26,7 @@ at the University of Strathclyde and comprises
 
 [Prof. Glynn Winskel](https://pureportal.strath.ac.uk/en/persons/glynn-winskel)
 
-:   who has just joined us from  the University of Cambridge. Glynn works on mathematical
-    models of interaction such as distributed games and event structures.
+:   who works on mathematical models of interaction such as distributed games and event structures.
     Contact Glynn at [glynn.winskel [at] strath.ac.uk](mailto:glynn.winskel [at] strath.ac.uk).
 
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
@@ -67,24 +66,30 @@ at the University of Strathclyde and comprises
     mathematics, and category theory. See
     [Fred's homepage](https://fredriknf.com)
     for more details or email
-    [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk)
+    [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk).
 
 [Dr Jules Hedges](https://www.strath.ac.uk/staff/hedgesjuliandr/)
 
 :   who is interested in game theory, economics and machine learning
     using tools of category theory and functional programming. See
-    [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk)
+    [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk).
 
+Dr William Waites
+
+:   who works on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory. See
+    [William' homepage](https://www.tardis.ed.ac.uk/~wwaites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
+    
 [Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
-:   who is interested in concurrency, topology and category theory. See
+:   who is interested in concurrency, topology, epistemic logic and category theory. See
     [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/) or email
-    [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk)
+    [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk).
 
-Dr Jade Master
+[Dr Jade Master](https://pureportal.strath.ac.uk/en/persons/jade-master/)
 
 :   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
-    See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/).
+    See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/) or email
+    [jade.master [at] strath.ac.uk](mailto:jade.master [at] strath.ac.uk)
 
 Guillaume Allais
 
