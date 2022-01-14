@@ -91,10 +91,6 @@ This page compiles various resources that might be useful to MSP members.
 
 : To book rooms on other floors.
 
-[MSP timetable](https://strath-my.sharepoint.com/:x:/g/personal/fredrik_nordvall-forsberg_strath_ac_uk/EYFicKxKX89Or1iL9t9jGm8BC0pbdXytUlkbeD4dxghVVQ?e=ANGKeO)
-
-: A collaborative spreadsheet to gather the schedules of MSP members.
-
 [Glasgow accommodation tips](./accommodation.html)
 
 : For MSP newcomers: how to find a flat in Glasgow and other useful local information.
