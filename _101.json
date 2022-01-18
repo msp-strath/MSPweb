@@ -99,8 +99,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Ways of Staring at Free Monoidal Categories",
+    "abstract": "What's a free monoidal category? Imagine planar circuits connecting a sequence of inputs to a sequence of outputs, built from components similarly taking a sequence of inputs to a sequence of outputs. They are categorical: you can wire the outputs of one circuit to the inputs of another if they match. They are monoidal: you can place them in parallel, concatenating input and output sequences. They have an equational theory which amounts to allowing arbitrary jiggling around in the plane, just as long as you keep everything connected in the same way and treat wires and components as deformable but impassable boundaries. Can we decide this equational theory? Yes, in principle, but how might we do it in practice? What would it take to give unique normal forms for such circuits as inductively defined data? Fred, Jules and I were staring at this puzzle one evening, looking over a notebook for a clue to plant upon the page, in a pub not so many minutes away known for the central stairway up to its mezzanine. We were staring at circuits and staring at the stairway, until we began to see the stairways in the circuits. And it made us wonder!",
     "location": "Online",
     "material": []
   },
