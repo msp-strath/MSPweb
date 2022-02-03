@@ -90,7 +90,12 @@
     "title": "An introduction to Synthetic Guarded Domain Theory",
     "abstract": "Synthetic Guarded Domain Theory (SGDT) arose as a generalization of step-indexing and guarded recursion in ultrametric spaces. While clearly taking inspiration from Synthetic Domain Theory, a geometric account of the field is still missing. This talk will serve as an introduction to SGDT sprinkled with remarks about the very geometric flavor of relevant properties of its known topos-theoretic models.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2022-02-03_daniele.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
