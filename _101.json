@@ -63,8 +63,8 @@
     "institute": "MSP",
     "speakerurl": "https://www.brunogavranovic.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Operational view on Optics",
+    "abstract": " Optics, lenses, prisms, and similar abstract gadgets are our best friends when it comes to modelling bidirectional processes. While optics are more general than lenses, it's understood that they're equivalent in the special setting of a cartesian monoidal category. Fixing the setting of a cartesian monoidal category, in this talk I'll explore how this equivalence is denotational in nature, and the result of erasure of important operational data. I'll advocate that the operational aspect is not optional, but rather crucial in understanding what these systems are doing.",
     "location": "Online",
     "material": []
   },
@@ -78,7 +78,12 @@
     "title": "An informal introduction to Game Semantics",
     "abstract": "Denotational semantics specifies the meaning of a computer program by associating it with an abstract mathematical object (its <em>denotation</em>), which represents its behaviour. In the case of game semantics, a program is interpreted as a two-player game, played between the program and its environment. More precisely, types are modelled by arenas (on which the game is played), while the programs themselves are modelled by strategies played on those arenas. Game semantics originated in the 1990's to solve the full abstraction problem for PCF (i.e., λ-calculus with a fixpoint operator); but the framework is very flexible, and many variants have been proposed to describe control, state, probability, concurrency, and many other program constructs.\n\n In this talk, I will start with a (very) brief introduction to denotational semantics in general, and define the concept of full abstraction. Then, I will present the game semantics model for PCF (à la Hyland-Ong), and if time allows, show how to extend it to model mutable references. I aim to keep the presentation intuitive and informal, relying mostly on examples and pictures.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2022-02-10_jeremy.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
