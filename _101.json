@@ -66,7 +66,18 @@
     "title": "Operational view on Optics",
     "abstract": " Optics, lenses, prisms, and similar abstract gadgets are our best friends when it comes to modelling bidirectional processes. While optics are more general than lenses, it's understood that they're equivalent in the special setting of a cartesian monoidal category. Fixing the setting of a cartesian monoidal category, in this talk I'll explore how this equivalence is denotational in nature, and the result of erasure of important operational data. I'll advocate that the operational aspect is not optional, but rather crucial in understanding what these systems are doing.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=z3G_FLI0EDM",
+        "linkDescription": "Video"
+      },
+      {
+        "tag": "Link",
+        "address": "https://www.brunogavranovic.com/posts/2022-02-10-optics-vs-lenses-operationally.html",
+        "linkDescription": "Blog Post"
+      }
+    ]
   },
   {
     "tag": "Talk",
