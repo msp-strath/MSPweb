@@ -39,8 +39,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "On the differential structure of containers",
+    "abstract": "About twenty years ago, Conor noticed a curious connection between rules for computing the type of `one-hole contexts' for algebraic data types, and Leibniz's calculus differentiation rules: they are exactly the same! Together with Neil and Conor, I've had some fun recently trying to put this result in Blute, Cockett and Seely's categorical framework of differentiation, by constructing a so-called Cartesian differential category of containers. Of course, I will explain what these are during the talk.",
     "location": "Online",
     "material": []
   },
@@ -51,8 +51,8 @@
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "An introduction to Non-idempotent Intersection Types",
+    "abstract": "Are types for telling us what to program, or for telling us what we have programed? MSP dogma leans to the former, but it is worth looking at the latter too.\n\n If we take types to be explanations of programs' behaviour, then it is only natural that they can have multiple types, since programs may have multiple behaviours. Intersection types are the basic tool that allows the assignment of multiple behavioural descriptions to a single program.\n\n Traditional intersection types are idempotent: if we know that a term has some behaviour, then it is of no interest to know this twice. Inspired by linear logic, however, we can start to wonder what happens if we record how many times we will need a program to have some behaviour -- non-idempotent intersection types.\n\n When we start counting behaviours, something remarkable happens. In a result due to Daniel de Carvalho, it turns out that the size of the typing derivation is equal to the number of steps taken to evaluate the program in the Krivine Abstract Machine.\n\n I'll describe the non-idempotent intersection type system for a CBN untyped lambda-calculus, and how to prove de Carvalho's result. If here is time, I'll also discuss how non-idempotent intersection types relate to the relational semantics of Linear Logic.\n\n An Agda formalisation of de Carvalho's result is written up here: <a href='https://bentnib.org/posts/2020-08-13-non-idempotent-intersection-types.html'>https://bentnib.org/posts/2020-08-13-non-idempotent-intersection-types.html</a>",
     "location": "Online",
     "material": []
   },
