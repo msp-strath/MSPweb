@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2022-03-31T14:00:00Z",
+    "speaker": "Yehuda \"John\" Levy",
+    "institute": "University of Glasgow, Adam Smith Business School",
+    "speakerurl": "http://www.levygametheory.com",
+    "insturl": "https://www.gla.ac.uk/schools/business/",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "CancelledTalk",
     "date": "2022-03-24T14:00:00Z",
     "speaker": "William Waites",
     "institute": "MSP",
