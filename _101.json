@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2022-04-7T14:00:00Z",
+    "speaker": "William Waites",
+    "institute": "MSP",
+    "speakerurl": "https://personal.cis.strath.ac.uk/william.waites/",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2022-03-31T14:00:00Z",
     "speaker": "Yehuda \"John\" Levy",
     "institute": "University of Glasgow, Adam Smith Business School",
