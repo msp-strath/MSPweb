@@ -45,7 +45,12 @@
     "title": "Practical dependent lenses for backend architecture",
     "abstract": " Backend architecture is hard, requirements change, databases migrate, authentication systems evolve, but our strategy to tackle those problems have remained the same: Employ humans to perform all the necessary changes in the code, until the next product needs to ship.\n\n To help with this, I will show how we can leverage dependent lenses and different lens composition operators in order to represent common operations on servers, including managing server resources, updating endpoints and their routing, and even swapping in and out middleware as necessary, without affecting the operation of the server, and preserving its typing.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2022-03-18_andre.png"
+      }
+    ]
   },
   {
     "tag": "SpecialEvent",
