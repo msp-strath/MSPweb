@@ -21,7 +21,17 @@
     "title": "Game Theory & Semi-Algebraic Geometry: A Symbiotic Relationship",
     "abstract": "This talk will present some of the main results from the long and symbiotic history between game theory and semi-algebraic (s.a.) geometry. On the one hand, tools from s.a. geometry have been used to characterize sets of Nash equilibria, study stability properties of equilibria, and have had applications to equilibrium selection and stochastic games, among others. On the other hand, a series of results developed in particular in the past decade have shown that Nash equilibria are, in certain senses, universal for s.a. sets, and that the Nash equilibrium correspondence contains, in a certain sense, all s.a. functions as well as some classes of correspondences. Relations to some problems concerning complexity of finding Nash equilibria will be mentioned. No prior knowledge of semi-algebraic geometry is assumed.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2022-03-31_yehuda.pdf"
+      },
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=dLYITjU9QBQ",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "CancelledTalk",
