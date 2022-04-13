@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2022-04-21T14:00:00Z",
+    "speaker": "Dylan McDermott",
+    "institute": "ICE-TCS, Reykjavik University",
+    "speakerurl": "https://dylanm.org/",
+    "insturl": "http://icetcs.ru.is/",
+    "title": "TBA",
+    "abstract": "TBA",
+    "location": "Online",
+    "material": []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2022-04-14T14:00:00Z",
     "title": "MSP101 Planning meeting",
