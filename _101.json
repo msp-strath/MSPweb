@@ -6,8 +6,8 @@
     "institute": "ICE-TCS, Reykjavik University",
     "speakerurl": "https://dylanm.org/",
     "insturl": "http://icetcs.ru.is/",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Flexible presentations of graded monads",
+    "abstract": "Graded monads are a generalization of monads that are used, for example, to track quantitative information in models of effects. There is an existing notion of presentation (by operations and equations) for graded monads, which has the problem that many examples of interest fail to admit natural presentations. I will talk about a more general notion of presentation for graded monads, which resolves this problem by permitting more flexible forms of operation and equation. Every such presentation induces a canonical graded monad equipped with interpretations of these operations. As part of this work, we reformulate graded monads and related concepts in terms of locally graded categories, which provide a useful setting for working with grading.\n\n This is joint work with Shin-ya Katsumata, Tarmo Uustalu and Nicolas Wu.",
     "location": "Online",
     "material": []
   },
