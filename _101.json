@@ -90,8 +90,8 @@
     "institute": "MSP",
     "speakerurl": "https://matteocapucci.wordpress.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Strategic games as cybernetic systems",
+    "abstract": "This talk I will show how to correct a conceptual shortcoming in open games by showing how Nash equilibria can be described locally, internally and dynamically instead of relying on external devices. Doing so homogenizes compositional game theory with the general yoga of categorical cybernetics. In order to do so, we show how feedback in cybernetic systems is handled in a more structured way than previously considered, which abstracts the formal properties of backpropagation of gradients and gradient descent.",
     "location": "Online",
     "material": []
   },
