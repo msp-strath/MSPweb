@@ -107,6 +107,10 @@
     "location": "Online",
     "material": [
       {
+        "tag": "PDF",
+        "slideName": "2022-04-21_dylan.pdf"
+      },
+      {
         "tag": "Link",
         "address": "https://www.youtube.com/watch?v=SzjG9OPUvnM",
         "linkDescription": "Video"
