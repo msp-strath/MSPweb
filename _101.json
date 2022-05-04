@@ -66,8 +66,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Everybody Used To Be Somewhere",
+    "abstract": "I will report work in progress on my marking-disrupted incomplete formalisation of the action of relevant substitutions on relevant terms, indexed over their variable support. A relevant term uses every variable in its support at least once; a relevant substitution uses every variable in its target support in the image of at least one variable in its source support; relevant substitutions thus map terms relevant in their source support to terms relevant in their target support.\n\n The \"codeBruijn\" machinery that makes my treatment of relevant terms work is based on the semisimplicial category: its objects are variable supports and its hom-sets are binomial coefficients seen as types of bit vectors representing selections. There are deep connections between the structure exhibited by this category and the Good Old Boolean Logic of the bits in the vectors. Meanwhile, relevant substitutions themselves constitute the morphisms of a category whose objects are also variable supports. What keeps the roof up is the double category whose squares tell you what happens to the target scope of a relevant substitution when you select some particular variables from its source.",
     "location": "Online",
     "material": []
   },
