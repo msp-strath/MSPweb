@@ -81,7 +81,13 @@
     "title": "Some more constructions on containers",
     "abstract": "The category of containers (~ polynomials) contains a wealth of structure for building structures representing question / answer type patterns. I'll discuss these and a few more that I think are novel. I'll try to relate them to ideas about data accessors like prisms and traversals.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=19GlxEjoi70",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
