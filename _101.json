@@ -54,8 +54,8 @@
     "institute": "MSP",
     "speakerurl": "https://sites.google.com/view/jadeedenstarmaster/home/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "How to Compose Shortest Paths",
+    "abstract": "The magic of the min-plus semiring allows one to express the shortest path problem as an exponential. A weighted graph is represented by a matrix M whose shortest paths are found as F(M) = Sum_{n >=0} M^n. Weighted graphs may be joined along a common boundary via pushout and the composition problem for F asks how the values of F on a pushout may be obtained from the values of F on its components. In this talk I will show how this abstract nonsense may be turned into an actual algorithm which computes shortest paths compositionally. Optimistically, this algorithm and the relevant results may be adapted to the more general setting of the algebraic path problem.",
     "location": "Online",
     "material": []
   },
