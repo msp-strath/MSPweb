@@ -42,8 +42,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Constructive Ordinal Theory in Homotopy Type Theory",
+    "abstract": "Many constructions proceed in stages: we give a base case, a step case showing how to go from stage n to stage n+1, and then the desired result is achieved in the limit. In more complicated situations, we have to go beyond stages indexed by natural numbers to stages indexed by larger structures — ordinals, a cornerstone of modern mathematics. These are well understood classically, but less so in a constructive setting, where different equivalent classical notions split apart, with different advantages and disadvantages for each. I will show how a theory of different ordinals can be developed constructively in the setting of homotopy type theory, and how modern type-theoretic features such as higher inductive types and inductive-inductive definitions can be used to construct ordinal notation systems that truly behave like ordinals, with extensional and wellfounded order relations.\n\n Joint work with Nicolai Kraus and Chuangjie Xu.",
     "location": "Online",
     "material": []
   },
