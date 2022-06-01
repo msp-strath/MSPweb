@@ -30,8 +30,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Filtrations in modal logic",
+    "abstract": "Filtration is a common technique in modal logic. The central idea is to consider a (large or even infinite) model M satisfying a property P of interest. By identifying states in a controlled way, one may (greatly) reduce the size of the M — in fact, one has an upper bound depending only on P. Filtration for basic modal logic is quite straightforward, but may be more difficult for extensions, particularly those involving fixpoint operators. PDL (propositional dynamic logic) is a much-studied such extension of modal logic, used for reasoning about properties of programs.\n\n I will introduce filtration for basic modal logic, and prove preservation of the desired properties. I will do the same for PDL, highlighting the difficulty introduced by the fixpoint operator.\n\n If there is enough time and interest, I will also discuss filtrations for monotone PDL, which is PDL interpreted on a more general class of models (namely monotone neighborhood models).",
     "location": "Online",
     "material": []
   },
