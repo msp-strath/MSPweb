@@ -18,8 +18,8 @@
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "A unified visual language for games",
+    "abstract": "The starting point of this talk is the observation that string diagrams for open games have more in common with extensive form trees than first appears. I will introduce a 3-dimensional syntax that has usual string diagrams and extensive form as 2 orthogonal projections. But first, we need to talk about parallel universes…\n\n This talk summarises a paper I’ve had brewing for a couple of years and want to actually write soon, that clarifies and expands on a tweet I wrote in October 2019. It is the secret thread connecting a couple of bits of my research in that time: dependent optics (joint work with half of MSP) and sheet diagrams (joint work with Antonin Delpeuch and Cole Comfort). In short: We define a bimonoidal category of dependent open games with tensor product and external choice, and then equip it with the natural 3d syntax for bimonoidal categories.",
     "location": "Online",
     "material": []
   },
