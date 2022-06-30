@@ -9,7 +9,13 @@
     "title": "Can we compose Dependent Lenses as Optics?",
     "abstract": "In this talk, I'll use Idris 2 to live code work in progress thoughts related to lenses and optics. I'll focus on the relatively unknown fact that, even though lenses and optics are denotationally equivalent, operationally they have a different composition rule, with a different space-time complexity. In the case of optics this composition uses up more space, but less time. While in the non-dependent case it is well understood how to take a bidirectional gadget and switch between a lens-like and an optic-like composition, in the dependent case it not. In this talk, I won't answer the question in the title, but am instead hoping to frame it in proper context. I'll do type-directed programming, and at points invoke linear types, hoping to be guided by the compiler in search of an answer.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=hIKCPJfU3Xo",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
