@@ -10,7 +10,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [MSP 101](msp101.html)
 
-: The MSP 101 seminar is now online, on Thursdays at 2pm.
+: The MSP 101 seminar is now online, on Wednesday at 11am.
 
 [SPLS Zulipchat](https://spls.zulipchat.com/)
 
