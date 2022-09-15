@@ -1,14 +1,5 @@
 [
   {
-    "tag": "SpecialEvent",
-    "date": "2022-11-16T09:30:00Z",
-    "title": "Agda Implementors' Meeting XXXI",
-    "url": "https://wiki.portal.chalmers.se/agda/Main/AIMXXXI",
-    "location": "University of Edinburgh",
-    "locationurl": "",
-    "description": ""
-  },
-  {
     "tag": "Talk",
     "date": "2022-12-14T11:00:00Z",
     "speaker": "Andre Videla",
