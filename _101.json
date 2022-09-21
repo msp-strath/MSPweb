@@ -132,8 +132,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/jeremy.ledent/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "The Topology of Knowledge: Simplicial Models for Epistemic Logic",
+    "abstract": "Multi-agent Epistemic Logic is a modal logic of knowledge. It allows to reason about a finite set of agents who may know facts about the world, and about each other. In this talk, I will present a new semantics for epistemic logic, based on simplicial complexes. In this approach, the knowledge of the agents is modeled by a higher-dimensional space called a simplicial model; and the truth of an epistemic logic formula can be evaluated by inspecting the various possible paths in this space. I will illustrate these ideas using examples from the theory of distributed computing, where the agents correspond to individual processes who can exchange information in order to solve a task. Both topological invariants and logical invariants can be leveraged to prove that some distributed computing tasks are impossible to solve.",
     "location": "LT1310 and Online",
     "material": []
   },
