@@ -147,7 +147,13 @@
     "title": "Citizens and Subjects",
     "abstract": "I'll explore a distinction which emerges from my reimagining of type systems in terms of client-server interaction. A typing rule is a server for its conclusion and a client for its premises. Every signal in a typing interaction has a sender, transmitting the signal as a syntactic object, but also a guarantor, promising that the signal is in some way meaningful. We are thus in a position to distinguish \"citizens\" (signals whose guarantor is their sender) from \"subjects\" (signals whose guarantor is their receiver). The two can and should be treated rather differently. Citizens should be free from the relitigation of their status and judged according to their semantics. Subjects should be investigated syntactically in order to establish their status. Like caterpillars and butterflies, every subject should aspire to citizenship, but when they achieve it, they will not be who they were.",
     "location": "LT1310 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=EezkKDY1DEU",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
