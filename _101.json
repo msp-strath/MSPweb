@@ -123,7 +123,13 @@
     "title": "A guided tour through my work",
     "abstract": "I will attempt to do something that's generally ill-advised: give a shallow talk with many components without diving in to any part too deeply. Why? The wrong reason to give such a talk is to impress people with all you're doing. A potentially viable reason is to cover that work which might be of interest to the audience, cause discussion and, hopefully, collaboration.\n\n I was tempted to call this a \"meander through my work\", but that really would be ill-advised. There are patterns to the madness, and indeed the tour will be organized around those patterns.",
     "location": "LT1310 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=-m2PKhW4_bs",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
