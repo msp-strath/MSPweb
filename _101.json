@@ -108,8 +108,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Hylomorphism complexity",
+    "abstract": "Algebra and coalgebra morphisms are well-known and widely applied. They have a more niche cousin in coalgebra-to-algebra morphisms, also known as hylomorphisms. These are occasionally used to formalize divide-and-conquer algorithms. They can also be used in defining semantics for coalgebraic logics, as well as solving certain sets of recursive equations. Taking the perspective of 'solving recursive equations', it is natural to ask for the computational complexity of deciding the existence of solutions. This turns out to depend essentially on the type functor for the (co)algebras. In this talk, I will give a simple classification of (polynomial) functors by the complexity of their corresponding decision problem. On the way, we will take in a few different intuitions towards (co)algebras and hylomorphisms.",
     "location": "LT1310 and Online",
     "material": []
   },
