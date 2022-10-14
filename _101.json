@@ -96,8 +96,8 @@
     "institute": "University of St Andrews",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Tools of the Dependently Typed Compiler Trade",
+    "abstract": "Vélo is a tiny language to explore the implementation of compilers for functional languages in a dependently typed host. I will highlight some of the design choices striking a balance between enforcing invariants, getting work done, and compiling to relatively efficient code. Features include support for well-scoped typed holes, constant folding, and common sub-expression elimination.",
     "location": "LT1310 and Online",
     "material": []
   },
