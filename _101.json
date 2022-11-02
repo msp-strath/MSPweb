@@ -78,7 +78,13 @@
     "title": "Fixed points and recursion in quantitative reasoning",
     "abstract": "This talk summarizes a series of results regarding the extension of quantitative algebraic reasoning with fixed points and recursion. The work extends the quantitative algebras (which are universal algebras on metric spaces) with syntactic constructs that allow us to encode Banach fixed points on complete metric spaces. In effect, one gets (a generalization of) a Conway and an iteration theory. I will demonstrate that most of the results known about classic iteration theories on ordered structures remain true in the metric context. And, in fact, that the metric settings generalize the results for ordered structures.",
     "location": "LT1310 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=V8T4HGG1NrE",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "SpecialEvent",
