@@ -42,8 +42,8 @@
     "institute": "MSP",
     "speakerurl": "https://matteocapucci.wordpress.com/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": " How I stopped worrying and learned to love triple categories (of cybernetic systems)",
+    "abstract": "A good chunk of MSP is busy trying to come up with convincing applications of category theory in 'cybernetics', which is an umbrella term for game theory, learning theory, control theory, and more. I'm busy trying to understand what all these people (including me) are doing. What do the systems we are interested in have in common? What does it mean to say game theory and gradient-based learning look alike? How do we study the behaviour of cybernetic systems? Inspired by Myers' categorical system theory I formulated some tentative answers to these questions. Alas, they require the full breadth of spatial dimensions this universe provides. In this talk I will quickly introduce the ideas behind my version of 'categorical cybernetic system theory', including recent developments regarding the definition of a theory of cybernetic systems. The hope is that conceptual motivation will defuse some fear in the higher structures involved.",
     "location": "LT1310 and Online",
     "material": []
   },
