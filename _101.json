@@ -30,8 +30,8 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "Brouwerian counterexamples: being a know-it-all 101",
+    "abstract": "Some statements are not provable, in the sense that they imply falsity (for example: \"every inhabited subset of real numbers has a least upper bound\").  Other statements are not provable constructively, even though they are true when using classical logic (for example: \"every bounded inhabited subset of real numbers has a least upper bound\"). How can we convince ourselves of this fact, so that we do not waste time and effort looking for a constructive proof? We can construct a so-called Brouwerian counterexample by showing that the claimed statement implies a known non-constructive principle. Brouwer called such principles omniscience principles, because only an all-knowing being can hope to for example decide if P or not P holds for every proposition P. I will give an introduction to some of the more common omniscience principles such as LPO, LLPO and Markov's Principle, and try to give some intuition for when one should expect a statement to not have a constructive proof; an important skill in order to avoid heartbreak when working in a constructive setting such as type theory or the internal logic of a category. ",
     "location": "LT1310 and Online",
     "material": []
   },
