@@ -24,11 +24,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : Online seminar on Logic and Semantics, Wednesday 2pm.
 
-[ACT seminars](https://teamup.com/ksfss6k4j1bxc8vztb)
-
-: A calendar assembling several category theory seminars.
-
-[Algebra-Coalgebra seminar](https://events.illc.uva.nl/alg-coalg)
+[LLAMA seminar](https://events.illc.uva.nl/llama/)
 
 : A seminar at the ILLC Amsterdam, usually Wednesday at 3pm.
 

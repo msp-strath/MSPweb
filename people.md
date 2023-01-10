@@ -91,11 +91,6 @@ Dr William Waites
     See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/) or email
     [jade.master [at] strath.ac.uk](mailto:jade.master [at] strath.ac.uk)
 
-Guillaume Allais
-
-:   who is a PhD student under Conor McBride's direction.
-    [Guillaume's homepage](http://gallais.github.io/).
-
 Stevan Andjelkovic
 
 :   who is a PhD student under Conor McBride's direction.
@@ -178,6 +173,11 @@ Sean Watters
     [Sean's homepage](https://www.seanwatters.uk/).
 
 ### Alumni ###
+
+[Dr Guillaume Allais](http://gallais.github.io/)
+
+:   who was a PhD student under Conor McBride's direction on the topic of
+    syntaxes with binding, their programs, and proofs.
 
 Dr Phil Scott
 
