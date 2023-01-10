@@ -1,5 +1,14 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2023-01-11T15:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310 and Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "CancelledTalk",
     "date": "2022-12-14T11:00:00Z",
     "speaker": "Neil Ghani",
