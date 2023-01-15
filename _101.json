@@ -50,7 +50,7 @@
   {
     "tag": "Talk",
     "date": "2023-03-17T15:00:00Z",
-    "speaker": "TBD",
+    "speaker": "Riu Rodríguez Sakamoto",
     "institute": "",
     "speakerurl": "",
     "insturl": "",
@@ -150,8 +150,8 @@
     "institute": "MSP",
     "speakerurl": "https://matteocapucci.wordpress.com/",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "On a fibrational construction for optics, lenses, and Dialectica categories",
+    "abstract": "Categories of lenses/optics and Dialectica categories are both comprised of bidirectional morphisms of basically the same form. In this talk I’m going to introduce both and show how they can be considered a special case of an overarching fibrational construction, generalizing Hofstra’s construction of Dialectica fibrations. At its highest level of generality, it’s a construction that turns a tower of fibrations into another tower of fibrations by twisting each of the components using the opposite fibration construction.",
     "location": "LT1310 and Online",
     "material": []
   },
