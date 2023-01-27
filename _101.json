@@ -108,7 +108,7 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2023-02-10T15:00:00Z",
     "speaker": "Jade Master",
     "institute": "MSP",
@@ -120,12 +120,12 @@
     "material": []
   },
   {
-    "tag": "CancelledTalk",
-    "date": "2023-02-02T15:00:00Z",
-    "speaker": "Philipp Zahn",
-    "institute": "University of St. Gallen",
-    "speakerurl": "https://www.philipp-zahn.com/",
-    "insturl": "https://www.unisg.ch/en/",
+    "tag": "Talk",
+    "date": "2023-02-03T15:00:00Z",
+    "speaker": "Jules Hedges",
+    "institute": "MSP",
+    "speakerurl": "https://julesh.com/",
+    "insturl": "",
     "title": "TBD",
     "abstract": "TBD",
     "location": "LT1310 and Online",
