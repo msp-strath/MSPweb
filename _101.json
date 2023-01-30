@@ -126,8 +126,8 @@
     "institute": "MSP",
     "speakerurl": "https://julesh.com/",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Contexts and emergent effects in categorical systems theory",
+    "abstract": "One of the most exciting ideas in categorical systems theory is being able to give a clean definition to “emergent effects”, namely failure of a lax functor to be a functor. But there is a lack of theoretical tools to do useful things after identifying this common situation. I will present work in progress towards a “theory of contexts”, talking formally about the idea that an open system’s behaviour can depend on what other systems are nearby, by isolating 1 of the 3 key theoretical ingredients of open games. This hopefully allows situations with emergent effects to be seen as an ordinary functor, although working out examples is irritatingly difficult.",
     "location": "LT1310 and Online",
     "material": []
   },
