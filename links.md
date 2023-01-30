@@ -83,7 +83,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : To book rooms on floors 11 to 14 of the Livingstone Tower.
 
-[Strathclyde Room Booking system](https://cts.strath.ac.uk/Scientia/Live1920wrb/Login.aspx)
+[Strathclyde Room Booking system](https://resourcebooker.strath.ac.uk)
 
 : To book rooms on other floors.
 
