@@ -171,6 +171,10 @@ Sean Watters
 
 :   who is a PhD student under Clemens Kupke and Fredrik Nordvall Forsberg's direction.
     [Sean's homepage](https://www.seanwatters.uk/).
+    
+Dilsat Yuksel
+
+:   who is a PhD student under Conor McBride and [Viv Kendon](https://kendon.info/viv/)'s direction.
 
 ### Alumni ###
 
