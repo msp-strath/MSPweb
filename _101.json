@@ -90,10 +90,16 @@
     "institute": "MSP",
     "speakerurl": "https://personal.cis.strath.ac.uk/fredrik.nordvall-forsberg/",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Type theory vs set theory: whose ordinals are better?",
+    "abstract": "In constructive set theory, an ordinal is a hereditarily transitive set. In homotopy type theory, an ordinal is a type with a transitive, wellfounded, and extensional binary relation. Which notion is more expressive? We can tackle this question if we first interpret set theory into type theory, using Peter Aczel's sets as trees interpretation (recast in homotopy type theory using higher inductive types), and then compare the notions directly in type theory. With more work, it is possible to generalise the comparison to capture all sets in Aczel's interpretation rather than only the ordinals. This leads to a natural class of ordered structures which contains the type-theoretic ordinals and realises the higher inductive interpretation of set theory.\n\n This is joint work with Tom de Jong, Nicolai Kraus, and Chuangjie Xu.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://arxiv.org/abs/2301.10696 ",
+        "linkDescription": "ArXiv"
+      }
+    ]
   },
   {
     "tag": "Talk",
