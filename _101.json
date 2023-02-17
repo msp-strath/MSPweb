@@ -2,7 +2,7 @@
   {
     "tag": "Talk",
     "date": "2023-04-28T15:00:00Z",
-    "speaker": "Malin Altenmüller",
+    "speaker": "Andre Videla",
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
@@ -14,9 +14,9 @@
   {
     "tag": "Talk",
     "date": "2023-04-21T15:00:00Z",
-    "speaker": "Dylan Braithwaite",
+    "speaker": "Malin Altenmüller",
     "institute": "MSP",
-    "speakerurl": "https://dylanbraithwaite.github.io/",
+    "speakerurl": "",
     "insturl": "",
     "title": "TBD",
     "abstract": "TBD",
@@ -62,9 +62,9 @@
   {
     "tag": "Talk",
     "date": "2023-03-10T15:00:00Z",
-    "speaker": "Andre Videla",
+    "speaker": "Dylan Braithwaite",
     "institute": "MSP",
-    "speakerurl": "",
+    "speakerurl": "https://dylanbraithwaite.github.io/",
     "insturl": "",
     "title": "TBD",
     "abstract": "TBD",
