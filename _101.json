@@ -111,7 +111,13 @@
     "title": "Why Fibrations are your Friend",
     "abstract": "I'll tell you why fibrations should be your friends.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=c4xnDZLSEKE",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "CancelledTalk",
