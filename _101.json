@@ -78,8 +78,8 @@
     "institute": "Society for Multidisciplinary and Fundamental Research",
     "speakerurl": "https://czapatacarratala.wixsite.com/home",
     "insturl": "https://semf.org.es/index.html",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Chemoids: a rewrite approach to general compositionality",
+    "abstract": "In this talk I will motivate and introduce the notion of 'chemoid', a compositional structure generalizing many diagram-based formal systems such as algebras, categories, operads, tensor networks, etc. I will then present some newly found, somewhat exotic, compositional structures that relate to chemical and biological computing (hence the name 'chemoid'). I will be using some of the functionality that I am currently developing with other colleagues at the Wolfram Institute.",
     "location": "LT711 and Online",
     "material": []
   },
