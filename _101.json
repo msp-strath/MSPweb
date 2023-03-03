@@ -78,8 +78,8 @@
     "institute": "MSP",
     "speakerurl": "https://dylanbraithwaite.github.io/",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "String Diagrams for Actegories",
+    "abstract": "Actions of monoidal categories are structures useful for modelling interacting systems. They are central to the definition of optics, but have also found use elsewhere, for example in the semantics of message-passing. When working in categorical cybernetics we often depict monoidal actions using string diagrams with multiple categories juxtaposed, but this steps away from the formally specified semantics of string diagrams for monoidal categories which have coherence and completeness results making their manipulation valid for proving equalities. I will discuss how diagrams for actegories can be modelled more formally by considering them as certain bicategories using the construction of the collage of a bimodule.\n\n By depicting actegories as bicategories we obtain satisfying visual representations for actegory structures. We will see that the lax compositional structure of the collage gives rise to useful visualisations for the emergent behaviour between categories interacting via the action of a common monoidal category. This gets represented as coloured string diagrams glued together along certain shared boundaries. As a special case we can depict optics as diagrams with several regions which neatly frame the “forward”, “backward”, and “residual passing” stages of their morphisms.",
     "location": "LT711 and Online",
     "material": []
   },
@@ -93,7 +93,13 @@
     "title": "Chemoids: a rewrite approach to general compositionality",
     "abstract": "In this talk I will motivate and introduce the notion of 'chemoid', a compositional structure generalizing many diagram-based formal systems such as algebras, categories, operads, tensor networks, etc. I will then present some newly found, somewhat exotic, compositional structures that relate to chemical and biological computing (hence the name 'chemoid'). I will be using some of the functionality that I am currently developing with other colleagues at the Wolfram Institute.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=6WmuVW8YUqw",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
