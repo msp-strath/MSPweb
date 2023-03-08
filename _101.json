@@ -6,14 +6,14 @@
     "institute": "Earth-Life Science Institute (Tokyo)",
     "speakerurl": "",
     "insturl": "https://www.elsi.jp/en/",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Systems that model their environments, and systems that plan.",
+    "abstract": " Consider a system interacting with its environment, perhaps in pursuit of some goal. We might want to ask whether the system has a model of its environment, especially in POMDP-like cases where the environment is partially observable and the system must make inferences about the environment's state in order to pursue its goal.\n\n But where does the model live in relation to the system? A simple answer is that the system's state parametrises a probability distribtion over environment states. This distribution isn't part of the system but is imposed upon it by an external observer. I will talk about how to model this observer-dependence via notion of 'interpretation' of a sytem, in which a system's internal states are interpreted as being 'about' a hidden environment state and as being updated using Bayes' theorem. A given system may have many interpretations, so that interpretations form a fibration over systems.\n\n A more interesting case is where a system uses a model not just to keep track of its environment but to reason about how to influence it. This is a lot harder to model, and I will talk about various pieces of work in progress towards understanding the relationships between systems, models and goals, with an emphasis on a category-theoretic perspective.",
     "location": "LT310 and Online",
     "material": []
   },
   {
     "tag": "Talk",
-    "date": "2023-04-28T15:00:00Z",
+    "date": "2023-05-05T15:00:00Z",
     "speaker": "Andre Videla",
     "institute": "MSP",
     "speakerurl": "",
@@ -25,7 +25,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-04-21T15:00:00Z",
+    "date": "2023-04-28T15:00:00Z",
     "speaker": "Malin Altenmüller",
     "institute": "MSP",
     "speakerurl": "",
@@ -37,7 +37,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-03-31T15:00:00Z",
+    "date": "2023-04-21T15:00:00Z",
     "speaker": "Bob Atkey",
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
@@ -49,7 +49,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-03-24T15:00:00Z",
+    "date": "2023-03-31T15:00:00Z",
     "speaker": "Clemens Kupke",
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
@@ -61,7 +61,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-03-17T15:00:00Z",
+    "date": "2023-03-24T15:00:00Z",
     "speaker": "Riu Rodríguez Sakamoto",
     "institute": "",
     "speakerurl": "",
