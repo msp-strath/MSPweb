@@ -9,7 +9,12 @@
     "title": "Systems that model their environments, and systems that plan.",
     "abstract": " Consider a system interacting with its environment, perhaps in pursuit of some goal. We might want to ask whether the system has a model of its environment, especially in POMDP-like cases where the environment is partially observable and the system must make inferences about the environment's state in order to pursue its goal.\n\n But where does the model live in relation to the system? A simple answer is that the system's state parametrises a probability distribtion over environment states. This distribution isn't part of the system but is imposed upon it by an external observer. I will talk about how to model this observer-dependence via notion of 'interpretation' of a sytem, in which a system's internal states are interpreted as being 'about' a hidden environment state and as being updated using Bayes' theorem. A given system may have many interpretations, so that interpretations form a fibration over systems.\n\n A more interesting case is where a system uses a model not just to keep track of its environment but to reason about how to influence it. This is a lot harder to model, and I will talk about various pieces of work in progress towards understanding the relationships between systems, models and goals, with an emphasis on a category-theoretic perspective.",
     "location": "LT310 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "PDF",
+        "slideName": "2023-03-14_nathaniel.pdf"
+      }
+    ]
   },
   {
     "tag": "Talk",
