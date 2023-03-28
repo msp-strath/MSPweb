@@ -59,8 +59,8 @@
     "institute": "MSP",
     "speakerurl": "http://personal.cis.strath.ac.uk/clemens.kupke/",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Towards a categorical representation of thin trees",
+    "abstract": "Deterministic Automata on infinite trees lack expressivity. The situation is different when restricting one’s attention to so-called thin trees where every regular language can be seen as the language of a so-called unambiguous automaton.  In my talk I will explain our motivation for why we are interested in unambiguous tree automata and I will present work in progress that aims to understand thin trees more abstractly. This is based on ongoing joint work with Corina Cirstea, Jade Master and Alexandre Goy.",
     "location": "LT711 and Online",
     "material": []
   },
