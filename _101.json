@@ -18,8 +18,8 @@
     "institute": "University of Nottingham",
     "speakerurl": "http://www.cs.nott.ac.uk/~txa/",
     "insturl": "http://www.cs.nott.ac.uk/",
-    "title": "Higher Categories",
-    "abstract": "TBD",
+    "title": "What are higher categories and groupoids?",
+    "abstract": "Categories are like drugs: once you get addicted to one, your dealer comes up with something stronger and you aquire a new addiction. This is the games with higher categories.\n\n I want to look at the definition of higher cats, actually w,1-cats in HoTT  using semi-simplicial types and the directed replacement of simplicial types. Also I may discuss the globular approach (which works for higher groupoids but could also made to work for higher cats) I am wondering how these are related. This may help to address some open problems.",
     "location": "LT711 and Online",
     "material": []
   },
