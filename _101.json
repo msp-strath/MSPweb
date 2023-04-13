@@ -1,6 +1,30 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-04-28T15:00:00Z",
+    "speaker": "Vikraman Choudhury",
+    "institute": "University of Glasgow",
+    "speakerurl": "https://vikraman.org/",
+    "insturl": "https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section/",
+    "title": "TBD",
+    "abstract": "TBD",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2023-04-14T15:00:00Z",
+    "speaker": "Thorsten Altenkirch",
+    "institute": "University of Nottingham",
+    "speakerurl": "http://www.cs.nott.ac.uk/~txa/",
+    "insturl": "http://www.cs.nott.ac.uk/",
+    "title": "Higher Categories",
+    "abstract": "TBD",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-03-14T15:00:00Z",
     "speaker": "Nathaniel Virgo",
     "institute": "Earth-Life Science Institute (Tokyo)",
@@ -18,7 +42,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-05-05T15:00:00Z",
+    "date": "2023-05-19T15:00:00Z",
     "speaker": "Andre Videla",
     "institute": "MSP",
     "speakerurl": "",
@@ -30,7 +54,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-04-28T15:00:00Z",
+    "date": "2023-05-12T15:00:00Z",
     "speaker": "Malin Altenmüller",
     "institute": "MSP",
     "speakerurl": "",
@@ -42,7 +66,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-04-21T15:00:00Z",
+    "date": "2023-05-05T15:00:00Z",
     "speaker": "Bob Atkey",
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
