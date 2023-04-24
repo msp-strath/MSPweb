@@ -6,8 +6,8 @@
     "institute": "University of Glasgow",
     "speakerurl": "https://vikraman.org/",
     "insturl": "https://www.gla.ac.uk/schools/computing/research/researchsections/fata-section/",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Continuations and co-exponentials",
+    "abstract": "Abstract: Growing up in Indiana, I learned about corn-mazes and continuations, but I found them very confusing, often getting lost and struggling to get back on track. Now that I’m living far away in Scotland, I find myself reminiscing about my midwestern roots.\n\n In this talk, I will present a different perspective on continuations: just as higher-order functions give you exponentials, higher-order continuations give you co-exponentials. On this motif, I will develop the theory of co-exponentials and some applications. I will show how to: (1) combine exponentials and co-exponentials in the same language without degeneracy, (2) give a computational interpretation for bi-intuitionistic logic, (3) recover classical control operators and the computational interpretation of classical logic using Faustian sums, (4) use co-exponential combinators to do speculative execution, backtracking, and encode effect handlers, (5) add co-exponentials to a first-order programming language, with a computational interpretation. I will develop these ideas both in syntax and semantics.\n\n The main idea occurred to me while studying linear logic and star-autonomous categories, from Mellies’ micrological study of negation. The rest of the work builds upon old ideas of Hofmann, Streicher, Reus on models of lambda-mu calculus, Moggi’s computational lambda calculus, Thielecke’s ⊗¬ categories, Freyd categories of Power, Thielecke, Führmann and others, and Hasegawa’s contextual calculus. This work is situated as part of a bigger research programme on trying to understand the foundations of quantum programming languages, starting from first-order reversibility, instead of linearity.",
     "location": "LT711 and Online",
     "material": []
   },
