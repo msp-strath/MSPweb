@@ -1,205 +1,215 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,400italic,700,700italic|Droid+Sans+Mono);
 
-body
-    { background: url(../images/main2.png) #fff;
-      font-family: "Ubuntu", Verdana, Trebuchet MS, Sans Serif;
-      font-size: 15px;
-      line-height: 150%;
-      margin-top: 0;
-      padding-top: 0;
-      text-align: justify
-    }
+body {
+    background: url(../images/main2.png) #fff;
+    font-family: "Ubuntu", Verdana, Trebuchet MS, Sans Serif;
+    font-size: 15px;
+    line-height: 150%;
+    margin-top: 0;
+    padding-top: 0;
+    text-align: justify
+}
 
 /* Title bar */
-div.titlebar
-    { width: 70%;
-      margin: 0 auto;
-    }
+div.titlebar {
+    width: 70%;
+    margin: 0 auto;
+}
 
-header
-    { margin-top: 2em;
-      display: block;
-      text-align: center;
-      color: #000000;
-background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0) 100%); /* FF3.6+ */
-background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,rgba(255,255,255,1)), color-stop(100%,rgba(255,255,255,0))); /* Chrome,Safari4+ */
-background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Chrome10+,Safari5.1+ */
-background: -o-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* Opera11.10+ */
-background: -ms-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* IE10+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#00ffffff',GradientType=0 ); /* IE6-9 */
-background: linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0) 100%); /* W3C */
-      border-radius: 1em;
-      -moz-border-radius: 1em;
-    }
-header h1
-    { margin-bottom: 0.2em;
-      margin-top: 0em;
-      padding-top: 0.4em;
-      font-size: 230%;
-      text-shadow:    0pc 1px 1px #fff;
-    }
-header h2
-    { border: none;
-      font-size: 110%;
-      margin: 0em
-    }
-header a
-    { text-decoration: none
-    }
+header {
+    margin-top: 2em;
+    display: block;
+    text-align: center;
+    color: #000000;
+    background: linear-gradient(top, rgba(255, 255, 255, 1) 0%, rgba(255, 255, 255, 0) 100%);
+    border-radius: 1em;
+}
+
+header h1 {
+    margin-bottom: 0.2em;
+    margin-top: 0em;
+    padding-top: 0.4em;
+    font-size: 230%;
+    text-shadow: 0pc 1px 1px #fff;
+    line-height: 1.1em;
+}
+
+header h2 {
+    border: none;
+    font-size: 110%;
+    margin: 0em
+}
+
+header a {
+    text-decoration: none
+}
 
 /* The rest of the page that isn't the title bar*/
-div.main
-    { width: 75%;
-      background-color: #ffffff;
-      background: #ffffff url(../images/bg.png) repeat;
-      margin: 0 auto;
-      margin-top: 2em;
-      margin-bottom:3em;
-      padding-left:1em; padding-right: 1em;
-      border: thin solid #bbb;
-      border-radius: 0.7em;
-      -moz-border-radius: 0.7em;
-      box-shadow: 0px 0px 3px 3px #bbb;
-      -moz-box-shadow: 0px 0px 3px #bbb
-    }
-
-div.rounded
-    { border-radius:   0.7em;
-      -moz-border-radius: 0.7em;
-      background: #391c63;
-      background: -moz-linear-gradient(-80deg, #391c63 0%, #492c73 80%, #555577 100%);
-      background: linear-gradient(-80deg, #391c63 0%, #492c73 80%, #555577 100%);
-      box-shadow: 0em 0em 0.1em #000;
-      -moz-box-shadow: 0em 0em 0.1em #000;
-      padding: 1em;
-      padding-top: 0.1em;
-      color: #ffffff;
-      margin-bottom: 1em
-    }
+div.main {
+    width: 80%;
+    background: #ffffff url(../images/bg.png) repeat;
+    margin: 2em auto 3em;
+    padding-left: 1em;
+    padding-right: 1em;
+    border: thin solid #bbb;
+    border-radius: 0.7em;
+    box-shadow: 0px 0px 3px 3px #bbb;
+}
 
 /* Navigation bar as a list */
-ul.navlist
-    { padding-top: 0.2em;
-      padding-bottom: 1em;
-      margin-bottom: 2em;
-      padding-left: 0em;
-      border-bottom: thin solid #dddddd;
-      border-bottom-left-radius: 1em;
-      border-bottom-right-radius: 1em;
-    }
-ul.navlist li
-    { display: inline;
-      margin-left: 0.5em;
-      margin-right: 0.5em;
-      margin-top: 1em
-    }
-ul.navlist li a
-    { padding-left: 2em;
-      padding-right: 2em;
-      padding-top: 0.3em;
-      padding-bottom: 0.4em;
-      text-align: center;
-      text-decoration: none;
-      font-weight: bold
-    }
-ul.navlist li a:hover
-    { background-color: #1c633a;
-      color:            #ffffff;
-      border-radius:    0.5em;
-      -moz-border-radius: 0.5em
-    }
-ul.navlist li a.current
-    { background-color: /*#633a1c*/ #1c633a;
-      box-shadow: 0em 0em 0.1em #000;
-      -moz-box-shadow: 0em 0em 0.1em #000;
-      color:            #ffffff;
-      border-radius:    0.5em;
-      -moz-border-radius: 0.5em
-    }
+ul.navlist {
+    padding: 0;
+    border-bottom: thin solid #dddddd;
+    border-bottom-left-radius: 1em;
+    border-bottom-right-radius: 1em;
+    display: flex;
+    justify-content: space-between;
+}
+
+ul.navlist li {
+    display: inline-block;
+    margin-bottom: 1em;
+}
+
+ul.navlist li a {
+    padding: 10px;
+    text-align: center;
+    text-decoration: none;
+    font-weight: bold
+}
+
+ul.navlist li a:hover {
+    background-color: #1c633a;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+ul.navlist li a.current {
+    background-color: #1c633a;
+    box-shadow: 0em 0em 0.1em #000;
+    color: #ffffff;
+    border-radius: 0.5em;
+}
+
+/* Main Content Section */
+section.main-content {
+    display: flex;
+    column-gap: 30px;
+    align-items: baseline;
+}
 
 /* Main text */
-div.content
-    { width: 68%;
-    }
+div.content {
+}
 
-div.content h2 
-    { border-bottom: 2px solid;
-      text-shadow:    0pc 1px 1px #fff;
-    }
+div.content h2 {
+    border-bottom: 2px solid;
+    text-shadow: 0pc 1px 1px #fff;
+}
 
-div.content h3
-    { border-bottom: 1px solid #bbbbbb
-    }
+div.content h3 {
+    border-bottom: 1px solid #bbbbbb
+}
 
 /* The sidebar */
-div.sidebar
-    { float: right;
-      width: 29%;
-      font-size: 0.9em;
-      text-align: left
-    }
+div.sidebar {
+    font-size: 0.9em;
+    text-align: left;
+    border-radius: 0.7em;
+    background: #391c63;
+    background: linear-gradient(-80deg, #391c63 0%, #492c73 80%, #555577 100%);
+    box-shadow: 0em 0em 0.1em #000;
+    padding: 1em;
+    padding-top: 0.1em;
+    color: #ffffff;
+    margin-bottom: 1em;
+}
 
-div.sidebar h3
-    { margin: 0.6em 0em 0.4em 0;
-      padding: 0 0 0 0;
-      font-size: 150%
-    }
+div.sidebar h3 {
+    margin: 0.6em 0em 0.4em 0;
+    padding: 0 0 0 0;
+    font-size: 150%
+}
 
 /* Make links a sensible colour */
-a
-    { color: inherit
-    }
+a {
+    color: inherit
+}
 
 /* Make definition lists stand out */
-dt
-    { font-style: italic }
-dd
-    { margin-bottom: 1em }
-dd p
-    { margin-top: 0em }
+dt {
+    font-style: italic
+}
 
-dl.events dd
-   { margin-left: 1em }
+dd {
+    margin-bottom: 1em
+}
 
-dl.contact
-    { font-size: 90% }
-dl.contact dd
-    { margin-left: 1em }
+dd p {
+    margin-top: 0em
+}
 
-div.footer
-    { clear: right;
-      color: #aaaaaa;
-      font-size: 70%;
-      margin-top: 3em
-    }
+dl.events dd {
+    margin-left: 1em
+}
+
+dl.contact {
+    font-size: 90%
+}
+
+dl.contact dd {
+    margin-left: 1em
+}
+
+div.footer {
+    color: #aaaaaa;
+    font-size: 0.8em;
+    margin-top: 3em;
+    text-align: center;
+}
 
 /* */
-table
-    { box-shadow: 0em 0em 0.1em #000;
-      border-radius: 0.1em;
-      padding: 0.5em;
-      background-color: #eee;
-      width: 100%
+table {
+    box-shadow: 0em 0em 0.1em #000;
+    border-radius: 0.1em;
+    padding: 0.5em;
+    background-color: #eee;
+    width: 100%
+}
+
+thead th {
+    border-bottom: solid thin #ddd
+}
+
+td {
+    vertical-align: top;
+    margin-top: 1em
+}
+
+tr.odd {
+    background-color: #dddddd;
+}
+
+tr.even {
+    background-color: #eeeeee;
+}
+
+tr.odd td,
+tr.even td {}
+
+div.centered {
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    ul.navlist {
+        flex-direction: column;
+        align-items: center;
     }
 
-thead th
-    { border-bottom: solid thin #ddd
+    section.main-content {
+        flex-direction: column;
+        align-items: center;
     }
 
-td  { vertical-align: top; margin-top: 1em }
-
-tr.odd
-    { background-color: #dddddd;
-    }
-
-tr.even
-    { background-color: #eeeeee;
-    }
-
-tr.odd td, tr.even td
-    { 
-    }
-
-div.centered
-    { text-align:center;
-    }
+}
