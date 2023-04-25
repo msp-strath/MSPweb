@@ -2755,9 +2755,16 @@
     "speakerurl": "http://www.gabbay.org.uk",
     "insturl": "http://www.macs.hw.ac.uk/departments/computer-science.htm",
     "title": "Equivariant ZFA and the foundations of nominal techniques",
-    "abstract": "The sets foundations of nominal techniques are usually taken to be Fraenkel-Mostowski set theory (which is ZFA + a finite support property).  I will argue that in many situations, a new foundation which I call Equivariant ZFA (EZFA) may be a better choice, because you can do everything in EZFA that you can do in FM and furthermore EZFA with Choice (EZFAC) is consistent whereas FM with Choice is not.\n<ul><li>I will define EZFA and how it interacts with Choice.</li><li>I will prove that EZFA is <em>equivalent</em> to ZFA.</li><li>I will then prove that EZFA is <em>not equivalent</em> to ZFA.</li><li>I will explain why I think EZFA(C) may be useful, why my last three papers were actually written in EZFAC, and finally I will discuss the implications this may have for mathematical foundations in general.</li>\n\nThis talk will be based on the following paper: <a href='http://www.gabbay.org.uk/papers.html#equzfn'>http://www.gabbay.org.uk/papers.html#equzfn</a>",
+    "abstract": "The sets foundations of nominal techniques are usually taken to be Fraenkel-Mostowski set theory (which is ZFA + a finite support property).  I will argue that in many situations, a new foundation which I call Equivariant ZFA (EZFA) may be a better choice, because you can do everything in EZFA that you can do in FM and furthermore EZFA with Choice (EZFAC) is consistent whereas FM with Choice is not.\n<ul><li>I will define EZFA and how it interacts with Choice.</li><li>I will prove that EZFA is <em>equivalent</em> to ZFA.</li><li>I will then prove that EZFA is <em>not equivalent</em> to ZFA.</li><li>I will explain why I think EZFA(C) may be useful, why my last three papers were actually written in EZFAC, and finally I will discuss the implications this may have for mathematical foundations in general.</li></ul>",
     "location": "LT1415",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "http://www.gabbay.org.uk/papers.html#equzfn",
+        "linkDescription": "Paper the talk is based on"
+      }
+    ]
+
   },
   {
     "tag": "BasicTalk",
@@ -2949,7 +2956,7 @@
     "speakerurl": "https://personal.cis.strath.ac.uk/conor.mcbride/",
     "insturl": "",
     "title": "Bidirectional Martin-L&ouml;f 1971",
-    "abstract": "Per Martin-L&ouml;f's 1971 Theory of Types is the ancestor of the type systems used today in Agda, Coq, Idris, NuPRL, and many other variations on the theme of dependent types. Its principal virtue is its simplicity: it has very few moving parts (but they move quite a lot). Its well known principal vice is its inconsistency: you can write a looping program inhabiting any type (thus 'proving' any proposition). I'll be talking about the design principles for constructing dependent type systems which are bidirectional &mdash; clearly split into a type  checking part and a type synthesis part. By following these principles, it gets easier to establish good safety properties of these systems. In particular, I'll sketch how to keep type safety (\"well typed programs don't go wrong\") separate from normalization (\"all computations terminate\"). Martin-L&oumlf's 1971, reformulated bidirectionally, makes a good example, because it's small and type-safe, but not normalizing.",
+    "abstract": "Per Martin-L&ouml;f's 1971 Theory of Types is the ancestor of the type systems used today in Agda, Coq, Idris, NuPRL, and many other variations on the theme of dependent types. Its principal virtue is its simplicity: it has very few moving parts (but they move quite a lot). Its well known principal vice is its inconsistency: you can write a looping program inhabiting any type (thus 'proving' any proposition). I'll be talking about the design principles for constructing dependent type systems which are bidirectional &mdash; clearly split into a type  checking part and a type synthesis part. By following these principles, it gets easier to establish good safety properties of these systems. In particular, I'll sketch how to keep type safety (\"well typed programs don't go wrong\") separate from normalization (\"all computations terminate\"). Martin-L&ouml;f's 1971, reformulated bidirectionally, makes a good example, because it's small and type-safe, but not normalizing.",
     "location": "LT1310",
     "material": []
   },
