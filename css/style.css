@@ -1,13 +1,23 @@
 @import url(http://fonts.googleapis.com/css?family=Ubuntu+Condensed|Ubuntu:400,400italic,700,700italic|Droid+Sans+Mono);
 
+
+:root {
+    --red: #DD3030;
+    --blue: #2E35E0;
+    --purple: #391c63;
+}
+
+* {
+    box-sizing: border-box;
+}
+
 body {
     background: url(../images/main2.png) #fff;
     font-family: "Ubuntu", Verdana, Trebuchet MS, Sans Serif;
     font-size: 15px;
     line-height: 150%;
-    margin-top: 0;
-    padding-top: 0;
-    text-align: justify
+    margin: 0;
+    padding: 0;
 }
 
 /* Title bar */
@@ -44,26 +54,36 @@ header a {
     text-decoration: none
 }
 
+header a:hover#a-cis {
+    color: var(--red);
+    text-decoration: underline;
+}
+
+header a:hover#a-uos {
+    color: var(--blue);
+    text-decoration: underline;
+}
+
+
 /* The rest of the page that isn't the title bar*/
 div.main {
     width: 80%;
     background: #ffffff url(../images/bg.png) repeat;
     margin: 2em auto 3em;
-    padding-left: 1em;
-    padding-right: 1em;
     border: thin solid #bbb;
     border-radius: 0.7em;
     box-shadow: 0px 0px 3px 3px #bbb;
+    padding: 0 1em;
 }
 
 /* Navigation bar as a list */
 ul.navlist {
-    padding: 0;
+    padding: 0 0 0 0.5em;
     border-bottom: thin solid #dddddd;
     border-bottom-left-radius: 1em;
     border-bottom-right-radius: 1em;
     display: flex;
-    justify-content: space-between;
+    column-gap: 1em;
 }
 
 ul.navlist li {
@@ -104,11 +124,11 @@ div.content {
 
 div.content h2 {
     border-bottom: 2px solid;
-    text-shadow: 0pc 1px 1px #fff;
+    text-shadow: 0pc 1px 1px white;
 }
 
 div.content h3 {
-    border-bottom: 1px solid #bbbbbb
+    border-bottom: 1px solid #bbb;
 }
 
 /* The sidebar */
@@ -116,12 +136,12 @@ div.sidebar {
     font-size: 0.9em;
     text-align: left;
     border-radius: 0.7em;
-    background: #391c63;
+    background: var(--purple);
     background: linear-gradient(-80deg, #391c63 0%, #492c73 80%, #555577 100%);
-    box-shadow: 0em 0em 0.1em #000;
+    box-shadow: 0em 0em 0.1em black;
     padding: 1em;
     padding-top: 0.1em;
-    color: #ffffff;
+    color: white;
     margin-bottom: 1em;
 }
 
@@ -134,6 +154,11 @@ div.sidebar h3 {
 /* Make links a sensible colour */
 a {
     color: inherit
+}
+
+div.main a:hover {
+    color: var(--purple);
+    text-decoration: none;
 }
 
 /* Make definition lists stand out */
@@ -162,15 +187,13 @@ dl.contact dd {
 }
 
 div.footer {
-    color: #aaaaaa;
+    color: #aaa;
     font-size: 0.8em;
-    margin-top: 3em;
-    text-align: center;
+    margin: 3em 0 0.5em;
 }
 
-/* */
 table {
-    box-shadow: 0em 0em 0.1em #000;
+    box-shadow: 0em 0em 0.1em black;
     border-radius: 0.1em;
     padding: 0.5em;
     background-color: #eee;
@@ -178,7 +201,7 @@ table {
 }
 
 thead th {
-    border-bottom: solid thin #ddd
+    border-bottom: solid thin #ddd;
 }
 
 td {
@@ -187,29 +210,64 @@ td {
 }
 
 tr.odd {
-    background-color: #dddddd;
+    background-color: #ddd;
 }
 
 tr.even {
-    background-color: #eeeeee;
+    background-color: #eee;
 }
-
-tr.odd td,
-tr.even td {}
 
 div.centered {
     text-align: center;
 }
 
+
+/* Media Queries */
 @media screen and (max-width: 960px) {
+    div.main {
+        padding: 0;
+    }
+
     ul.navlist {
+        margin: 1em 1em 0.5em;
+        padding-bottom: 0.5em;
         flex-direction: column;
         align-items: center;
+        row-gap: 5px;
     }
 
     section.main-content {
         flex-direction: column;
         align-items: center;
+    }
+
+    div.sidebar {
+        width: 100%;
+        border: none;
+        border-radius: 0;
+        margin-bottom: 0;
+    }
+
+    div.content {
+        padding: 0 1em 1em;
+    }
+
+    div.footer {
+        padding: 0 0 0 1em;
+    }
+}
+
+@media screen and (max-width: 560px) {
+    div.main {
+        width: 100%;
+        margin: 2em 0 0;
+        border: none;
+        box-shadow: none;
+        padding-top: 1em;
+    }
+
+    div.footer {
+        padding-bottom: 0.5em;
     }
 
 }

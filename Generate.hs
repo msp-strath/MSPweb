@@ -13,19 +13,6 @@ import System.Directory ( getDirectoryContents, doesDirectoryExist
 import Text.Pandoc hiding (FileTree)
 import Data.Text (pack, unpack)
 
-{-
--- Cheapskate
-import Cheapskate
-import Text.Blaze.Html
-import Text.Blaze.Html.Renderer.Text (renderHtml)
-import qualified Data.Text.Lazy as TL (toStrict)
-import Data.Text (pack, unpack)
-
--- CMark
--- import Data.Text (pack, unpack)
--- import CMark (commonmarkToHtml, optSmart)
--}
-
 {----------------------------------------------------------------------------}
 (</>) :: FilePath -> FilePath -> FilePath
 (</>) = combine
@@ -48,9 +35,8 @@ data EntryClass
     deriving Show
 
 translateMarkdown :: String -> IO String
-translateMarkdown s =  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown (def { readerExtensions = phpMarkdownExtraExtensions }) $ pack s))
---translateMarkdown = return . unpack . TL.toStrict . renderHtml . toHtml . markdown def . pack -- cheapskate
---translateMarkdown = return . unpack . commonmarkToHtml [optSmart] . pack -- CMark
+translateMarkdown s =
+  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown (def { readerExtensions = phpMarkdownExtraExtensions }) $ pack s))
 
 
 -- | Determine whether a path refers to a file, a directory, or
@@ -198,8 +184,9 @@ generateFiles inputRoot outputRoot tree = do
                 Left (template, baseEnv, body) -> do
                   let templatePath = inputRoot </> "_templates" </> template
                   templateBody <- readFile templatePath
+                  contactWidget <- readFile (inputRoot </> "_templates/contact.html")
                   tbody <- translate body
-                  let env = ("rootPath",rootPath):("content", tbody):baseEnv
+                  let env = ("rootPath",rootPath):("content", tbody):("contact", contactWidget):baseEnv
                   return (substitute templateBody env)
                 Right body ->
                   translate body

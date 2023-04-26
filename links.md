@@ -33,7 +33,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [msp-interest](https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest)
 
-: A list for everyone (internal or external to MSP) who is interested in MSP-related activities.  
+: A list for everyone (internal or external to MSP) who is interested in MSP-related activities.
   If you have trouble subscribing to this list, you might need to e-mail Conor.
 
 [compsci-plug](http://www.dcs.gla.ac.uk/plug/)
@@ -90,4 +90,3 @@ This page compiles various resources that might be useful to MSP members.
 [Glasgow accommodation tips](./accommodation.html)
 
 : For MSP newcomers: how to find a flat in Glasgow and other useful local information.
-
