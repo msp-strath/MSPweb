@@ -203,3 +203,11 @@ tr.odd td, tr.even td
 div.centered
     { text-align:center;
     }
+
+a.hoverlink
+    { text-decoration: none
+    }
+
+a.hoverlink:hover::after
+  { content: "\01F517"
+  }
