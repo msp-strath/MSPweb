@@ -145,6 +145,8 @@ div.sidebar {
     padding-top: 0.1em;
     color: white;
     margin-bottom: 1em;
+    min-width: 190px;
+    width: 30%;
 }
 
 div.sidebar h3 {
