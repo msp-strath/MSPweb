@@ -205,9 +205,9 @@ div.centered
     }
 
 a.hoverlink
-    { text-decoration: none
+    { text-decoration: none;
     }
 
 a.hoverlink:hover::after
-  { content: "\01F517"
-  }
+    { content: "\01F517";
+    }
