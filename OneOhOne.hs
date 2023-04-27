@@ -344,15 +344,18 @@ generateHTML ts out = do
                         "<p>MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group. The talks are usually " ++ usualDay ++ " " ++ formattedTime ++ " in room LT711 in Livingstone Tower. They are announced on the <a href='https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest'>msp-interest</a> mailing-list. The list of talks is also available as a <a type='application/rss+xml' href='/msp101.rss'><img src='/images/feed-icon-14x14.png' alt='feed icon'>RSS feed</a> and as a <a href='msp101.ics'>calendar file</a>. <b>The MSP 101 seminar is now hybrid, with both in-person attendance in room LT1310, and online via Zoom (the link can be found on the msp-interest mailing list and the SPLS Zulipchat).</b></p>"]
   writeFile out (header ++ upcoming ++ previous)
     where
-          entryBlock b i dt abst = unlines
+          entryBlock b i dt abst = unlines $
                    [ "  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>"
-                   , "  <dd>"
-                   , "    <details" ++ (if b then " open" else "") ++ ">"
-                   , "      <summary>Abstract</summary>"
-                   , "      " ++ abst
-                   , "    </details>"
-                   , "  </dd>"
-                   ]
+                   , "  <dd>"]
+                   ++
+                   (if null abst then [] else
+                     [ "    <details" ++ (if b then " open" else "") ++ ">"
+                     , "      <summary><b>Abstract</b></summary>"
+                     , "      " ++ abst
+                     , "    </details>"
+                     ])
+                   ++
+                   [ "  </dd>"]
 
           processEntry b (i,(Talk date speaker inst speakerurl insturl title abstract location material))
             = let time = if utctDayTime date == timeOfDayToTime usualTime
