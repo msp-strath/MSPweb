@@ -221,6 +221,13 @@ div.centered {
     text-align: center;
 }
 
+a.hoverlink {
+    text-decoration: none;
+}
+
+a.hoverlink:hover::after {
+    content: "\01F517";
+}
 
 /* Media Queries */
 @media screen and (max-width: 960px) {

@@ -30,8 +30,13 @@ nl2br ('\n':xs) = "<br/>\n" ++ nl2br xs
 nl2br (x:xs) = x:(nl2br xs)
 
 createLink :: String -> String -> String
-createLink [] name = name
+createLink "" name = name
 createLink ref name = "<a href='" ++ ref ++ "'>" ++ name ++ "</a>"
+
+createLinkAnchor :: String -> String -> String
+createLinkAnchor "" name = name
+createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
+
 
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
@@ -328,10 +333,10 @@ generateHTML ts out = do
   putStrLn $ "\n(" ++ (show $ length previousTalks) ++ " previous talks.)\n"
 
   let upcoming = if null upcomingTalks then "" else unlines ["<h2>Upcoming talks</h2>",
-                                                             "<dl>", concatMap processEntry upcomingTalks, "</dl>"]
+                                                             "<dl>", concatMap (processEntry True) upcomingTalks, "</dl>"]
 
       previous = if null previousTalks then "" else unlines ["<h2>List of previous talks</h2>",
-                                                             "<dl>", concatMap processEntry previousTalks, "</dl>"]
+                                                             "<dl>", concatMap (processEntry False) previousTalks, "</dl>"]
 
 
       formattedTime = let f s = formatTime defaultTimeLocale s usualTime in
@@ -343,8 +348,25 @@ generateHTML ts out = do
                         "<h2>MSP101</h2>",
                         "<p>MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group. The talks are usually " ++ usualDay ++ " " ++ formattedTime ++ " in room LT711 in Livingstone Tower. They are announced on the <a href='https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest'>msp-interest</a> mailing-list. The list of talks is also available as a <a type='application/rss+xml' href='/msp101.rss'><img src='/images/feed-icon-14x14.png' alt='feed icon'>RSS feed</a> and as a <a href='msp101.ics'>calendar file</a>. <b>The MSP 101 seminar is now hybrid, with both in-person attendance in room LT1310, and online via Zoom (the link can be found on the msp-interest mailing list and the SPLS Zulipchat).</b></p>"]
   writeFile out (header ++ upcoming ++ previous)
-    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material))
-            = let time = if utctDayTime date == timeOfDayToTime usualTime then (showGregorian $ utctDay date) else (formatTime defaultTimeLocale "%F, %R" date)
+    where
+          entryBlock b i dt abst = unlines $
+                   [ "  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>"
+                   , "  <dd>"]
+                   ++
+                   (if null abst then [] else
+                     [ "    <details" ++ (if b then " open" else "") ++ ">"
+                     , "      <summary><b>Abstract</b></summary>"
+                     , "      " ++ abst
+                     , "    </details>"
+                     ])
+                   ++
+                   [ "  </dd>"]
+
+          processEntry b (i,(Talk date speaker inst speakerurl insturl title abstract location material))
+            = let time = if utctDayTime date == timeOfDayToTime usualTime
+                           then createLinkAnchor ('#':show i) (showGregorian $ utctDay date)
+                           else let fmt = \ str -> formatTime defaultTimeLocale str date in
+                                createLinkAnchor ('#':show i) (fmt "%F") ++ fmt ", %R"
                   place = if location == "LT1310" then "" else (bracket location)
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
@@ -360,24 +382,19 @@ generateHTML ts out = do
                            "<b>Material</b><ul>" ++
                            (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
                                       material) ++ "</ul>"
-              in
-                 unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
-                          "    <dd>" ++ (nl2br abstract)
-                                     ++ (nl2br mat) ++ "</dd>"]
-          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
-            = let time = formatTime defaultTimeLocale "%Y-%m-%d, %H:%M" date
+              in entryBlock b i dt (nl2br abstract ++ nl2br mat)
+          processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
+            = let fmt = \ str -> formatTime defaultTimeLocale str date
+                  time = createLinkAnchor ('#':show i) (fmt "%Y-%m-%d") ++ fmt ", %H:%M"
                   place = bracket location
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ " " ++ "Departmental seminar" ++ " " ++ place ++ ": " ++ title ++ (bracket person)
-              in
-                 unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
-                          "    <dd>" ++ (nl2br abstract) ++ "</dd>"]
-          processEntry (i,(SpecialEvent date title url location locationurl description))
-            = let time = formatTime defaultTimeLocale "%Y-%m-%d" date
+              in entryBlock b i dt (nl2br abstract)
+          processEntry b (i,(SpecialEvent date title url location locationurl description))
+            = let time = createLinkAnchor ('#':show i) (formatTime defaultTimeLocale "%Y-%m-%d" date)
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))
-              in
-                 unlines ["  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>",
-                          "    <dd>" ++ (nl2br description) ++ "</dd>"]
-          processEntry (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material)) = processEntry (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
+              in entryBlock b i dt (nl2br description)
+          processEntry b (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material))
+            = processEntry b (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
