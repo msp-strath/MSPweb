@@ -30,8 +30,13 @@ nl2br ('\n':xs) = "<br/>\n" ++ nl2br xs
 nl2br (x:xs) = x:(nl2br xs)
 
 createLink :: String -> String -> String
-createLink [] name = name
+createLink "" name = name
 createLink ref name = "<a href='" ++ ref ++ "'>" ++ name ++ "</a>"
+
+createLinkAnchor :: String -> String -> String
+createLinkAnchor "" name = name
+createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
+
 
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
@@ -359,9 +364,9 @@ generateHTML ts out = do
 
           processEntry b (i,(Talk date speaker inst speakerurl insturl title abstract location material))
             = let time = if utctDayTime date == timeOfDayToTime usualTime
-                           then createLink ('#':show i) (showGregorian $ utctDay date)
+                           then createLinkAnchor ('#':show i) (showGregorian $ utctDay date)
                            else let fmt = \ str -> formatTime defaultTimeLocale str date in
-                                createLink ('#':show i) (fmt "%F") ++ fmt ", %R"
+                                createLinkAnchor ('#':show i) (fmt "%F") ++ fmt ", %R"
                   place = if location == "LT1310" then "" else (bracket location)
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
@@ -380,14 +385,14 @@ generateHTML ts out = do
               in entryBlock b i dt (nl2br abstract ++ nl2br mat)
           processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
             = let fmt = \ str -> formatTime defaultTimeLocale str date
-                  time = createLink ('#':show i) (fmt "%Y-%m-%d") ++ fmt ", %H:%M"
+                  time = createLinkAnchor ('#':show i) (fmt "%Y-%m-%d") ++ fmt ", %H:%M"
                   place = bracket location
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ " " ++ "Departmental seminar" ++ " " ++ place ++ ": " ++ title ++ (bracket person)
               in entryBlock b i dt (nl2br abstract)
           processEntry b (i,(SpecialEvent date title url location locationurl description))
-            = let time = createLink ('#':show i) (formatTime defaultTimeLocale "%Y-%m-%d" date)
+            = let time = createLinkAnchor ('#':show i) (formatTime defaultTimeLocale "%Y-%m-%d" date)
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))
               in entryBlock b i dt (nl2br description)
