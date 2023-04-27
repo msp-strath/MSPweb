@@ -120,6 +120,8 @@ section.main-content {
 
 /* Main text */
 div.content {
+    width: 100%;
+    overflow-wrap: break-word;
 }
 
 div.content h2 {
@@ -268,6 +270,7 @@ div.centered {
 
     div.footer {
         padding-bottom: 0.5em;
+        margin-bottom: 0;
     }
 
 }
