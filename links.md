@@ -69,6 +69,10 @@ This page compiles various resources that might be useful to MSP members.
 
 : Category theory mailing list.
 
+[MSP twitter list](https://twitter.com/i/lists/1522303893828472833)
+
+: a list collating tweets by members of the MSP group.
+
 ### Internal CIS resources
 
 [CIS FAQ](https://local.cis.strath.ac.uk/wp/systems-support/itfaq/)
