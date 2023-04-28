@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-05-05T15:00:00Z",
+    "speaker": "Johannes Marti",
+    "institute": "Oxford",
+    "speakerurl": "http://johannesmarti.com/",
+    "insturl": "https://www.cs.ox.ac.uk/",
+    "title": "TBD",
+    "abstract": "TBD",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-04-28T15:00:00Z",
     "speaker": "Vikraman Choudhury",
     "institute": "University of Glasgow",
@@ -66,7 +78,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-05-05T15:00:00Z",
+    "date": "2023-05-26T15:00:00Z",
     "speaker": "Bob Atkey",
     "institute": "MSP",
     "speakerurl": "http://bentnib.org/",
