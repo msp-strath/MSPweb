@@ -78,7 +78,7 @@ Dr William Waites
 
 :   who works on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory. See
     [William' homepage](https://personal.cis.strath.ac.uk/william.waites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
-    
+
 [Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
 :   who is interested in concurrency, topology, epistemic logic and category theory. See
@@ -90,6 +90,11 @@ Dr William Waites
 :   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
     See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/) or email
     [jade.master [at] strath.ac.uk](mailto:jade.master [at] strath.ac.uk)
+
+[Wen Kokke](https://pureportal.strath.ac.uk/en/persons/kerewin-kokke)
+
+:   who is interested in type systems for concurrency and verification of AI models.
+    See [Wen’s homepage](http://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
 
 Stevan Andjelkovic
 
@@ -171,10 +176,12 @@ Sean Watters
 
 :   who is a PhD student under Clemens Kupke and Fredrik Nordvall Forsberg's direction.
     [Sean's homepage](https://www.seanwatters.uk/).
-    
+
 Dilsat Yuksel
 
 :   who is a PhD student under Conor McBride and [Viv Kendon](https://kendon.info/viv/)'s direction.
+
+
 
 ### Alumni ###
 
