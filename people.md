@@ -93,8 +93,8 @@ Dr William Waites
 
 [Wen Kokke](https://pureportal.strath.ac.uk/en/persons/kerewin-kokke)
 
-:   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
-    See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
+:   who is interested in type systems for concurrency and verification of AI models.
+    See [Wen’s homepage](http://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
 
 Stevan Andjelkovic
 
