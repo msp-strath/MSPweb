@@ -225,6 +225,11 @@ div.centered {
     text-align: center;
 }
 
+img.fullimage {
+    max-width: 100%;
+    height: auto;
+}
+
 a.hoverlink {
     text-decoration: none;
 }
