@@ -13,10 +13,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       ##### Setup ##############################################
-      - uses: actions/checkout@v3
+      - name: Checkout repository
+        uses: actions/checkout@v3
 
-      # Detect if we should rebuild the binaries
-      - uses: dorny/paths-filter@v2
+      - name: Detect if we should rebuild the binaries
+        uses: dorny/paths-filter@v2
         id: changes
         with:
           filters: |
@@ -63,24 +64,12 @@ jobs:
           key: cabal-${{ runner.os }}
 
       ##### Generation #########################################
-      - name: Move build files out of the way
-        run: |
-          mv cabal.project.freeze _cabal.project.freeze
-          mv cabal.project.local _cabal.project.local
-          mv dist-newstyle _dist-newstyle
 
       - name: Generate 101
         run: Generate101
 
       - name: Generate website
         run: Generate
-
-      - name: Unmove build files
-        run: |
-          mv _cabal.project.freeze cabal.project.freeze
-          mv _cabal.project.local cabal.project.local
-          mv _dist-newstyle dist-newstyle
-
 
       ##### Deployment #########################################
 

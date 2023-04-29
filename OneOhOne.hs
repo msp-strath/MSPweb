@@ -40,7 +40,6 @@ createLinkAnchor :: String -> String -> String
 createLinkAnchor "" name = name
 createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
 
-
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
 
