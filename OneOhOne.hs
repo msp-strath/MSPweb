@@ -43,6 +43,8 @@ createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
 
+-- Text utils
+
 wordwrap :: Int -> String -> String -> String
 wordwrap maxlen div = (wrap_ 0) . words where
         wrap_ _ [] = ""
