@@ -2,11 +2,12 @@ name: generate-website
 
 on:
   push:
-    branches: [master, actions]
+    branches: [master]
   schedule:
     - cron: 15 10 * * * # 10 minutes after 101 slot starts
 
 jobs:
+
   deploy:
     runs-on: ubuntu-latest
     steps:
@@ -32,6 +33,7 @@ jobs:
           path: |
             ~/.cabal/store
             ~/_dist
+            ~/.cabal/bin/
           key: ${{ runner.os }}-${{ hashFiles('cabal.project.freeze') }}
 
       ##### Installation #######################################
