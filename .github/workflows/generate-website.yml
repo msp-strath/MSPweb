@@ -22,7 +22,7 @@ jobs:
         with:
           filters: |
             haskell-changed:
-              - 'Generate.hs'
+              - '*.hs'
 
       - name: Install dependencies
         if: steps.changes.outputs.haskell-changed == 'true'
