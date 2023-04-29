@@ -2,11 +2,48 @@ name: generate-website
 
 on:
   push:
-    branches: [master]
+    branches: [master, actions-conditional]
   schedule:
     - cron: 15 10 * * * # 10 minutes after 101 slot starts
 
 jobs:
+
+
+  build-binaries:
+    runs-on: ubuntu-latest
+    steps:
+      ##### Setup ##############################################
+      - uses: actions/checkout@v3
+
+      # Detect if we should rebuild the binaries
+      - uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            haskell-changed:
+              - '*.hs'
+
+      - name: Install dependencies
+        if: steps.changes.outputs.haskell-changed == 'true'
+        uses: haskell/actions/setup@v2
+        with:
+          ghc-version: 'latest'
+          cabal-version: 'latest'
+
+      - name: Cache cabal and executables
+        if: steps.changes.outputs.haskell-changed == 'true'
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cabal/store
+            ~/_dist
+            ~/.cabal/bin/
+          key: cabal-${{ runner.os }}
+
+      ##### Installation #######################################
+      - name: Install Generate[101]
+        if: steps.changes.outputs.haskell-changed == 'true'
+        run: cabal install --builddir _dist
 
   deploy:
     runs-on: ubuntu-latest
@@ -16,29 +53,14 @@ jobs:
       - name: Checkout repository
         uses: actions/checkout@v3
 
-      - name: Install dependencies
-        uses: haskell/actions/setup@v2
-        with:
-          ghc-version: 'latest'
-          cabal-version: 'latest'
-
-      - name: Configure and record dependencies
-        run: |
-          cabal configure --write-ghc-environment-files=always
-          cabal freeze
-
-      - name: Cache cabal and executables
+      - name: Recover cache
         uses: actions/cache@v3
         with:
           path: |
             ~/.cabal/store
             ~/_dist
             ~/.cabal/bin/
-          key: ${{ runner.os }}-${{ hashFiles('cabal.project.freeze') }}
-
-      ##### Installation #######################################
-      - name: Install Generate[101]
-        run: cabal install --builddir _dist
+          key: cabal-${{ runner.os }}
 
       ##### Generation #########################################
       - name: Move build files out of the way
