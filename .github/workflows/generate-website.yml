@@ -1,0 +1,78 @@
+name: generate-website
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: 15 10 * * * # 10 minutes after 101 slot starts
+
+jobs:
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+
+      ##### Setup ##############################################
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Install dependencies
+        uses: haskell/actions/setup@v2
+        with:
+          ghc-version: 'latest'
+          cabal-version: 'latest'
+
+      - name: Configure and record dependencies
+        run: |
+          cabal configure --write-ghc-environment-files=always
+          cabal freeze
+
+      - name: Cache cabal and executables
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cabal/store
+            ~/_dist
+            ~/.cabal/bin/
+          key: ${{ runner.os }}-${{ hashFiles('cabal.project.freeze') }}
+
+      ##### Installation #######################################
+      - name: Install Generate[101]
+        run: cabal install --builddir _dist
+
+      ##### Generation #########################################
+      - name: Move build files out of the way
+        run: |
+          mv cabal.project.freeze _cabal.project.freeze
+          mv cabal.project.local _cabal.project.local
+          mv dist-newstyle _dist-newstyle
+
+      - name: Generate 101
+        run: Generate101
+
+      - name: Generate website
+        run: Generate
+
+      - name: Unmove build files
+        run: |
+          mv _cabal.project.freeze cabal.project.freeze
+          mv _cabal.project.local cabal.project.local
+          mv _dist-newstyle dist-newstyle
+
+
+      ##### Deployment #########################################
+
+      - name: Deploy to branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build
+          FOLDER: _build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger pull at website
+        shell: bash
+        env:
+          PASSPHRASE: ${{ secrets.WEBHOOK_PASSPHRASE }}
+        run: |
+          curl -X POST -d "secret=$PASSPHRASE" https://msp.cis.strath.ac.uk/webhook.php
