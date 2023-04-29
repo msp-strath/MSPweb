@@ -22,7 +22,7 @@ jobs:
         with:
           filters: |
             haskell-changed:
-              - '*.hs'
+              - 'Generate.hs'
 
       - name: Install dependencies
         if: steps.changes.outputs.haskell-changed == 'true'
@@ -44,7 +44,7 @@ jobs:
       ##### Installation #######################################
       - name: Install Generate[101]
         if: steps.changes.outputs.haskell-changed == 'true'
-        run: cabal install --builddir _dist
+        run: cabal install --overwrite-policy=always --builddir _dist
 
   deploy:
     runs-on: ubuntu-latest
