@@ -9,10 +9,6 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    strategy:
-      matrix:
-        cabal: ["latest"]
-        ghc: ["latest"]
     steps:
 
       ##### Setup ##############################################
@@ -31,7 +27,7 @@ jobs:
           cabal freeze
 
       - name: Cache cabal and executables
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: |
             ~/.cabal/store
@@ -71,3 +67,10 @@ jobs:
           BRANCH: build
           FOLDER: _build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger pull at website
+        shell: bash
+        env:
+          PASSPHRASE: ${{ secrets.WEBHOOK_PASSPHRASE }}
+        run: |
+          curl -X POST -d "secret=$PASSPHRASE" https://msp.cis.strath.ac.uk/webhook.php
