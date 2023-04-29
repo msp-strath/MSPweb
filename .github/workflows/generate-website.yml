@@ -43,13 +43,27 @@ jobs:
         run: cabal install --builddir _dist
 
       ##### Generation #########################################
+      - name: Move build files out of the way
+        run: |
+          mv cabal.project.freeze _cabal.project.freeze
+          mv cabal.project.local _cabal.project.local
+          mv dist-newstyle _dist-newstyle
+
       - name: Generate 101
         run: Generate101
 
       - name: Generate website
         run: Generate
 
+      - name: Unmove build files
+        run: |
+          mv _cabal.project.freeze cabal.project.freeze
+          mv _cabal.project.local cabal.project.local
+          mv _dist-newstyle dist-newstyle
+
+
       ##### Deployment #########################################
+
       - name: Deploy to branch
         uses: s0/git-publish-subdir-action@develop
         env:
