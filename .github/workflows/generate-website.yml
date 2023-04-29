@@ -64,6 +64,9 @@ jobs:
             ~/.cabal/bin/
           key: cabal-${{ runner.os }}
 
+      - name: Add .cabal/bin to PATH
+      - run: echo ~/.cabal/bin >> $GITHUB_PATH
+
       ##### Generation #########################################
 
       - name: Generate 101
