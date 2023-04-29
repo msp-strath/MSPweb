@@ -8,57 +8,71 @@ on:
 
 jobs:
 
-  deploy:
+  build-binaries:
     runs-on: ubuntu-latest
     steps:
-
       ##### Setup ##############################################
       - name: Checkout repository
         uses: actions/checkout@v3
 
+      - name: Detect if we should rebuild the binaries
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            haskell-changed:
+              - '*.hs'
+
       - name: Install dependencies
+        if: steps.changes.outputs.haskell-changed == 'true'
         uses: haskell/actions/setup@v2
         with:
           ghc-version: 'latest'
           cabal-version: 'latest'
 
-      - name: Configure and record dependencies
-        run: |
-          cabal configure --write-ghc-environment-files=always
-          cabal freeze
-
       - name: Cache cabal and executables
+        if: steps.changes.outputs.haskell-changed == 'true'
         uses: actions/cache@v3
         with:
           path: |
             ~/.cabal/store
             ~/_dist
             ~/.cabal/bin/
-          key: ${{ runner.os }}-${{ hashFiles('cabal.project.freeze') }}
+          key: cabal-${{ runner.os }}
 
       ##### Installation #######################################
       - name: Install Generate[101]
-        run: cabal install --builddir _dist
+        if: steps.changes.outputs.haskell-changed == 'true'
+        run: cabal install --overwrite-policy=always --builddir _dist
+
+  deploy:
+    runs-on: ubuntu-latest
+    needs: build-binaries
+    steps:
+
+      ##### Setup ##############################################
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Recover cache
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cabal/store
+            ~/_dist
+            ~/.cabal/bin/
+          key: cabal-${{ runner.os }}
+
+      - name: Add .cabal/bin to PATH
+        run: echo ~/.cabal/bin >> $GITHUB_PATH
 
       ##### Generation #########################################
-      - name: Move build files out of the way
-        run: |
-          mv cabal.project.freeze _cabal.project.freeze
-          mv cabal.project.local _cabal.project.local
-          mv dist-newstyle _dist-newstyle
 
       - name: Generate 101
         run: Generate101
 
       - name: Generate website
         run: Generate
-
-      - name: Unmove build files
-        run: |
-          mv _cabal.project.freeze cabal.project.freeze
-          mv _cabal.project.local cabal.project.local
-          mv _dist-newstyle dist-newstyle
-
 
       ##### Deployment #########################################
 

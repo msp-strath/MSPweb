@@ -40,9 +40,10 @@ createLinkAnchor :: String -> String -> String
 createLinkAnchor "" name = name
 createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
 
-
 bracket :: String -> String
 bracket str = if null str then "" else " (" ++ str ++ ")"
+
+-- Text utils
 
 wordwrap :: Int -> String -> String -> String
 wordwrap maxlen div = (wrap_ 0) . words where
