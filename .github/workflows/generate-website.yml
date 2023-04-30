@@ -2,7 +2,7 @@ name: generate-website
 
 on:
   push:
-    branches: [master]
+    branches: [master, actions-conditional-simpler]
   schedule:
     - cron: 15 10 * * * # 10 minutes after 101 slot starts
 
