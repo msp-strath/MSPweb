@@ -46,15 +46,6 @@ at the University of Strathclyde and comprises
     for more details or email [clemens.kupke
     [at] strath.ac.uk](mailto:clemens.kupke [at] strath.ac.uk).
 
-[Dr Ross Duncan](http://www.strath.ac.uk/staff/duncanrossdr/)
-
-:   who is interested in quantum computation, the foundations of quantum
-    mechanics, category theory and its application in computer science,
-    logic and physics, and graphical techniques for reasoning.  See
-    [Ross' homepage](http://personal.strath.ac.uk/ross.duncan/)
-    for more details or email
-    [ross.duncan [at] strath.ac.uk](mailto:ross.duncan [at] strath.ac.uk).
-
 [Dr Bob Atkey](http://www.strath.ac.uk/staff/atkeyrobertdr/)
 
 :   See [Bob's homepage](http://bentnib.org/) or email
@@ -78,6 +69,10 @@ Dr William Waites
 
 :   who works on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory. See
     [William' homepage](https://personal.cis.strath.ac.uk/william.waites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
+
+[Dr Guillaume Allais](https://pureportal.strath.ac.uk/en/persons/guillaume-allais-2)
+
+:   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](guillaume.allais [at] strath.ac.uk).
 
 [Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
 
@@ -185,10 +180,11 @@ Dilsat Yuksel
 
 ### Alumni ###
 
-[Dr Guillaume Allais](http://gallais.github.io/)
+[Dr Ross Duncan](http://www.strath.ac.uk/staff/duncanrossdr/)
 
-:   who was a PhD student under Conor McBride's direction on the topic of
-    syntaxes with binding, their programs, and proofs.
+:   who is interested in quantum computation, the foundations of quantum
+    mechanics, category theory and its application in computer science,
+    logic and physics, and graphical techniques for reasoning.
 
 Dr Phil Scott
 
