@@ -6,8 +6,8 @@
     "institute": "Oxford",
     "speakerurl": "http://johannesmarti.com/",
     "insturl": "https://www.cs.ox.ac.uk/",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "Modal unification and graph homomorphisms",
+    "abstract": "The problem of unifiability in a modal logic L asks, whether for a given formula phi there exists a substitution such that applying the substitution to phi turns it into a theorem of L. For the many non-transitive modal logics, most notably the modal logic K, it is not known whether this problem is decidable. I present joint work with Sam van Gool, where we reformulate unifiability relative to some modal logics L as a problem about the existence of a graph homomorphism for some generalised notion of graph that depends on a coalgebra functor T.",
     "location": "LT711 and Online",
     "material": []
   },
@@ -21,7 +21,13 @@
     "title": "Continuations and co-exponentials",
     "abstract": "Growing up in Indiana, I learned about corn-mazes and continuations, but I found them very confusing, often getting lost and struggling to get back on track. Now that I’m living far away in Scotland, I find myself reminiscing about my midwestern roots.\n\n In this talk, I will present a different perspective on continuations: just as higher-order functions give you exponentials, higher-order continuations give you co-exponentials. On this motif, I will develop the theory of co-exponentials and some applications. I will show how to: (1) combine exponentials and co-exponentials in the same language without degeneracy, (2) give a computational interpretation for bi-intuitionistic logic, (3) recover classical control operators and the computational interpretation of classical logic using Faustian sums, (4) use co-exponential combinators to do speculative execution, backtracking, and encode effect handlers, (5) add co-exponentials to a first-order programming language, with a computational interpretation. I will develop these ideas both in syntax and semantics.\n\n The main idea occurred to me while studying linear logic and star-autonomous categories, from Mellies’ micrological study of negation. The rest of the work builds upon old ideas of Hofmann, Streicher, Reus on models of lambda-mu calculus, Moggi’s computational lambda calculus, Thielecke’s ⊗¬ categories, Freyd categories of Power, Thielecke, Führmann and others, and Hasegawa’s contextual calculus. This work is situated as part of a bigger research programme on trying to understand the foundations of quantum programming languages, starting from first-order reversibility, instead of linearity.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=rsEJaLVVNIc",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
