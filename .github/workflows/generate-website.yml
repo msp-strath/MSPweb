@@ -1,0 +1,73 @@
+name: generate-website
+
+on:
+  push:
+    branches: [master]
+  schedule:
+    - cron: 15 10 * * * # 10 minutes after 101 slot starts
+
+jobs:
+
+  build-and-deploy:
+    runs-on: ubuntu-latest
+    steps:
+      ##### Setup ##############################################
+      - name: Checkout repository
+        uses: actions/checkout@v3
+
+      - name: Detect if we should rebuild the binaries
+        uses: dorny/paths-filter@v2
+        id: changes
+        with:
+          filters: |
+            haskell-changed:
+              - '*.hs'
+
+      - name: Install cabal and GHC
+        if: steps.changes.outputs.haskell-changed == 'true'
+        uses: haskell/actions/setup@v2
+        with:
+          ghc-version: 'latest'
+          cabal-version: 'latest'
+
+      - name: Cache cabal and executables
+        uses: actions/cache@v3
+        with:
+          path: |
+            ~/.cabal/store
+            ~/_dist
+            ~/.cabal/bin/
+          key: cabal-${{ runner.os }}
+
+      ##### Installation #######################################
+      - name: Install Generate[101]
+        if: steps.changes.outputs.haskell-changed == 'true'
+        run: cabal install --overwrite-policy=always --builddir _dist
+
+      - name: Add .cabal/bin to PATH
+        run: echo ~/.cabal/bin >> $GITHUB_PATH
+
+      ##### Generation #########################################
+
+      - name: Generate 101
+        run: Generate101
+
+      - name: Generate website
+        run: Generate
+
+      ##### Deployment #########################################
+
+      - name: Deploy to branch
+        uses: s0/git-publish-subdir-action@develop
+        env:
+          REPO: self
+          BRANCH: build
+          FOLDER: _build
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Trigger pull at website
+        shell: bash
+        env:
+          PASSPHRASE: ${{ secrets.WEBHOOK_PASSPHRASE }}
+        run: |
+          curl -X POST -d "secret=$PASSPHRASE" https://msp.cis.strath.ac.uk/webhook.php
