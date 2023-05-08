@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-05-12T15:00:00Z",
+    "speaker": "Ethel Morgan",
+    "institute": "MSP",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Just when I thought I was out, they pull me back in.",
+    "abstract": "Experiences from industrial academia & academic industry.",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-05-05T15:00:00Z",
     "speaker": "Johannes Marti",
     "institute": "Oxford",
@@ -72,7 +84,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-05-12T15:00:00Z",
+    "date": "2023-06-02T15:00:00Z",
     "speaker": "Malin Altenmüller",
     "institute": "MSP",
     "speakerurl": "",
