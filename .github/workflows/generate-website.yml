@@ -2,7 +2,7 @@ name: generate-website
 
 on:
   push:
-    branches: [master]
+    branches: [master, scheduled-actions]
   schedule:
     - cron: 15 10 * * * # 10 minutes after 101 slot starts
 
@@ -18,13 +18,14 @@ jobs:
       - name: Detect if we should rebuild the binaries
         uses: dorny/paths-filter@v2
         id: changes
+        if: github.event_name != 'schedule'
         with:
           filters: |
             haskell-changed:
               - '*.hs'
 
       - name: Install cabal and GHC
-        if: steps.changes.outputs.haskell-changed == 'true'
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
         uses: haskell/actions/setup@v2
         with:
           ghc-version: 'latest'
@@ -41,7 +42,7 @@ jobs:
 
       ##### Installation #######################################
       - name: Install Generate[101]
-        if: steps.changes.outputs.haskell-changed == 'true'
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
         run: cabal install --overwrite-policy=always --builddir _dist
 
       - name: Add .cabal/bin to PATH
