@@ -91,6 +91,11 @@ Dr William Waites
 :   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
     See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
 
+Ethel Morgan
+
+:   who works with William Waites on tooling for modelling infectious diseases.
+    See [Eth's homepage](https://personal.cis.strath.ac.uk/ethel.morgan/) or email [ethel.morgan [at] strath.ac.uk](mailto:ethel.morgan [at] strath.ac.uk).
+
 Stevan Andjelkovic
 
 :   who is a PhD student under Conor McBride's direction.
