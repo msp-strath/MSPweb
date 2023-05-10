@@ -4,7 +4,7 @@ on:
   push:
     branches: [master]
   schedule:
-    - cron: 15 10 * * * # 10 minutes after 101 slot starts
+    - cron: 10 14 * * * # 10 minutes after 101 slot starts (UTC timezone)
 
 jobs:
 
