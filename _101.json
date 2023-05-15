@@ -77,8 +77,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "How to be a real™(C) programmer for beginner type theorists",
+    "abstract": "Feeling impostor syndrome from writing proof trees yet never executing any programs? Tired of being marginalized from online communities because you've never dereferenced raw memory? Finally, you can become a C-programmer neckbeard with this one crazy trick without leaving the comfort of your pen&paper. By extending QTT with pointer operations one can finally achieve their dream of submitting a patch to the linux kernel and have it be rejected for naming conventions. At least the program would be correct by construction since you can inherit all your inductive proofs inside your imperative program.",
     "location": "LT711 and Online",
     "material": []
   },
