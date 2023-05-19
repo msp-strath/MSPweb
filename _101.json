@@ -1,6 +1,30 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-06-21T15:00:00Z",
+    "speaker": "John Power",
+    "institute": "University of Bath",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "A Category Theoretic Analysis of Binders",
+    "abstract": "In the late 1990's, Fiore, Plotkin and Turi proposed a category theoretic model for binders. Instead of having a set of terms, they proposed a presheaf of terms over F, the category of finite sets, which provided cartesian contexts. They used a substitution monoidal structure on the category [F,Set] and characterised the notion of term in this setting by combining the notion of monoid in the substitution monoidal structure with the usual free generation of terms. Their modelling of binder was derived from that of substitution. A little later, Tanaka, following their lead, modelled linear binders, replacing F by P, the category of finite sets and permutations. These are instances of an axiomatic situation, where one has a 2-monad S on Cat, with a pseudo-distributive law, subject to a caveat about size, of S over what, except for size, would be a pseudo-monad [-^op,Set]. Tanaka and I developed the axiomatics in a series of papers that I propose to explain. The same mathematics was also used by Martin Hyland and several other authors in modelling general notions of algebra.",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
+    "date": "2023-06-19T15:00:00Z",
+    "speaker": "John Power",
+    "institute": "University of Bath",
+    "speakerurl": "",
+    "insturl": "",
+    "title": "Computational Effects in Mathematical Perspective",
+    "abstract": "In the late 1980's, Eugenio Moggi introduced the idea of \"monads as notions of computation\", the latter more recently called computational effects, supported by several impressive examples. He used the definition of monad but did not make substantial use of mathematics that gives rise to monads. In category theory, monads systematically arise from universal algebra. But universal algebra can also be understood, from a category theoretic perspective, in terms of Lawvere theories, this fact shedding considerable light on computational effects, in particular the operations that give rise to effects. That observation has been fundamental to a deep, further development, giving rise to the notion of algebraic effect. I shall try to explain the conceptual line of thought that gives rise to algebraic effects, modelled by Lawvere theories and thence my monads. It was joint work primarily with Gordon Plotkin but also with others, notably Martin Hyland.",
+    "location": "LT711 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-05-12T15:00:00Z",
     "speaker": "Ethel Morgan",
     "institute": "MSP",
@@ -77,10 +101,16 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "How to be a real™(C) programmer for beginner type theorists",
+    "title": "How to be a real™ (C) programmer for beginner type theorists",
     "abstract": "Feeling impostor syndrome from writing proof trees yet never executing any programs? Tired of being marginalized from online communities because you've never dereferenced raw memory? Finally, you can become a C-programmer neckbeard with this one crazy trick without leaving the comfort of your pen&paper. By extending QTT with pointer operations one can finally achieve their dream of submitting a patch to the linux kernel and have it be rejected for naming conventions. At least the program would be correct by construction since you can inherit all your inductive proofs inside your imperative program.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=dwutzLQ4ClA",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
