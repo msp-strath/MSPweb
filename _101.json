@@ -134,7 +134,13 @@
     "title": "From Lenses to Composable Continuations, and what lies between",
     "abstract": "Continuation-Passing Style (CPS) is a programming discipline that parametrises programs by \"the thing that happens next\" - the continuation. Programs in CPS gain superpowers by being able to directly manipulate the continuation and use it as many times as they want. In this talk, I'll try to convince you that lenses are a restricted form of CPS where the continuation must be used exactly once. In fact, lenses and CPS form a category with lenses as the initial object and CPS as the terminal object. But what lies between them?",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=YpklMn5yNA0",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
