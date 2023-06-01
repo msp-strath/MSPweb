@@ -1,7 +1,7 @@
 [
   {
-    "tag": "Talk",
-    "date": "2023-06-21T15:00:00Z",
+    "tag": "CancelledTalk",
+    "date": "2023-06-19T15:00:00Z",
     "speaker": "John Power",
     "institute": "University of Bath",
     "speakerurl": "",
@@ -13,7 +13,7 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-06-19T15:00:00Z",
+    "date": "2023-06-21T15:00:00Z",
     "speaker": "John Power",
     "institute": "University of Bath",
     "speakerurl": "",
