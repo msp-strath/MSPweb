@@ -119,8 +119,8 @@
     "institute": "MSP",
     "speakerurl": "",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": " Control Flow as a Contour of Data Flow",
+    "abstract": "I will be talking about some ongoing work on a compositional graph data structure for encoding control flow information of a program. At the centre of this definition is the notion of contour for a given tree-like structure. The notion of contour category was introduced by Melliès and Zeilberger [1], who use it in the context of representing derivations in context-free grammars as functors. I will give an overview over their constructions, and present how we generalise the notion of contour, moving to a non-linear, non-deterministic version. We use these generalised contours to express control flow information of a program on top of its abstract syntax tree. I will discuss how normal flow as well as exceptional program behaviour is represented in this framework. This is joint work with Dan Ghica.\n\n [1] <a href='https://arxiv.org/abs/2212.09060'>https://arxiv.org/abs/2212.09060</a>",
     "location": "LT711 and Online",
     "material": []
   },
