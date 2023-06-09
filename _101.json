@@ -6,8 +6,8 @@
     "institute": "MSP",
     "speakerurl": "http://jfdm.github.io/",
     "insturl": "",
-    "title": "Making multi-party session types first class in an imperative language",
-    "abstract": "TBA",
+    "title": "Session Types & Imperative Languages & Observations, Oh My!",
+    "abstract": "Session Types are a neat typing discipline to reason both statically and dynamically about program behaviour. An interesting question is how best we can incorporate session types into our programming languages and reach the fabled Emerald City of Type-Driven Validation of Communicating Systems!\n\n Earlier this year, I gave a talk at PLUG that discussed the dependently-typed mechanics that pushed me along the yellow brick road to create Capable, a featherweight imperative language that supports Multi-Party Session-Types (MPSTs). Capable has been mechanised within Idris2 to ensure that including MPSTs is done honestly as the Good Witch Glinda would appreciate.\n\n In this talk I intend to step away from the keyboard and take a detour along a yellow-ish cobbled street to look at some of the theoretical observations that arise from mechanisation. Specifically, I will discuss the design decisions that the Wicked Dependent-Type Checker of the East has requested I do to ensure unification and execution, but more importantly the trade-offs that come with those decisions.\n\n This work is, slowly, getting ready for publication (we do in fact run our session-typed programs) and I am certain that I don't need to return that brain, yet....",
     "location": "LT310 and Online",
     "material": []
   },
