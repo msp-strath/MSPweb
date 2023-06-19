@@ -18,3 +18,7 @@ executable Generate101
   build-depends:       base, time, regex-pcre-builtin, array, aeson, bytestring
   default-language:    Haskell2010
 
+executable GeneratePeople
+  main-is: GeneratePeople.hs
+  build-depends: base, yaml, bytestring
+  default-language: Haskell2010
