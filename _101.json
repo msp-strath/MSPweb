@@ -6,8 +6,8 @@
     "institute": "University of Edinburgh",
     "speakerurl": "https://eremondi.com/",
     "insturl": "https://web.inf.ed.ac.uk/lfcs",
-    "title": "TBA",
-    "abstract": "TBA",
+    "title": "On The Design of a Gradual Dependently Typed Language for Programming",
+    "abstract": "I describe a design for gradual dependent types, a system by which dependently typed programs can be run when missing parts of types, proofs, or programs. This serves a dual purpose. First, it reduces the barrier to entry for dependent types, making it easier to migrate code to use dependently typed languages, and allowing indexed types to be safely used even when type or proof information is missing. Second, it gives dynamic semantics to the typed holes that are already found in modern languages, so programs can be safely run when holes are missing, providing the programmer with useful information of what terms should fill the holes. In the talk, I present a vision for what programming with gradual dependent types could look like, along with technical challenges that arise with it and solutions to some of these challenges.",
     "location": "LT310 and Online",
     "material": []
   },
