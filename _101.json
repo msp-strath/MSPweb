@@ -1,14 +1,14 @@
 [
   {
     "tag": "Talk",
-    "date": "2023-06-27T15:00:00Z",
+    "date": "2023-06-27T16:00:00Z",
     "speaker": "Meven Lennon-Bertrand",
     "institute": "University of Cambridge",
     "speakerurl": "https://www.meven.ac/",
     "insturl": "https://www.cl.cam.ac.uk/research/clash/",
     "title": "A Shiny Hammer and Many Nails to Hit – Bidirectional typing is not only an implementation technique",
     "abstract": "In 2000, Pierce and Turner introduced a new technique to perform type inference for ML-like languages, whose main idea was to carefully understand the local flow of information in the algorithm. This technique, which came to be referred to as bidirectional typing, did not come out of a void: similar ideas had appeared independently in many other contexts. In particular, bidirectional typing has been a part of the folklore of dependently typed languages implementers since the dawn of time.\n\n But even in that context where it has a long history, bidirectional typing was for a long time mostly confined to implementations. Yet, its type-theoretic structure turns out to be a very versatile and powerful tool when studying (dependent) type systems and their meta-theory.\n\n In this talk, I will try and give some of my understanding of bidirectional typing, how it is rooted in type-checker implementations but is more than just this, and how it can be used to make many facets of the infamously painful meta-theory of dependent type systems a bit less painful.",
-    "location": "TBD",
+    "location": "GH513",
     "material": []
   },
   {
@@ -20,7 +20,7 @@
     "insturl": "https://web.inf.ed.ac.uk/lfcs",
     "title": "On The Design of a Gradual Dependently Typed Language for Programming",
     "abstract": "I describe a design for gradual dependent types, a system by which dependently typed programs can be run when missing parts of types, proofs, or programs. This serves a dual purpose. First, it reduces the barrier to entry for dependent types, making it easier to migrate code to use dependently typed languages, and allowing indexed types to be safely used even when type or proof information is missing. Second, it gives dynamic semantics to the typed holes that are already found in modern languages, so programs can be safely run when holes are missing, providing the programmer with useful information of what terms should fill the holes. In the talk, I present a vision for what programming with gradual dependent types could look like, along with technical challenges that arise with it and solutions to some of these challenges.",
-    "location": "TBD",
+    "location": "GH513",
     "material": []
   },
   {
