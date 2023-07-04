@@ -1,6 +1,20 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-07-05T11:00:00Z",
+    "speaker": "Anton Chernev",
+    "speakerurl": "",
+    "institute": "University of Groningen",
+    "insturl": "",
+    "title": "A dual adjunction between Ω-automata and Wilke algebras",
+    "abstract": "The notion of ω-regular language captures the idea of a regular language that consists of infinite words. The most standard type of automata for ω-regular languages are called Büchi automata. Ω-automata are another type of automata for ω-regular languages that, instead of infinite words, read pairs of finite words, called lassos, that represent ultimately periodic words.
+We study the categorical relationship between Ω-automata and Wilke algebras – the latter are algebraic structures recognising ω-regular languages. We present a chain of adjunctions starting from the category of Ω-automata without initial states and ending with the dual of the category of quotients of the free Wilke algebra.
+This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens Kupke (University of Strathclyde).",
+    "location": "GH 513 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-06-27T16:00:00Z",
     "speaker": "Meven Lennon-Bertrand",
     "institute": "University of Cambridge",
