@@ -11,7 +11,13 @@
 We study the categorical relationship between Ω-automata and Wilke algebras – the latter are algebraic structures recognising ω-regular languages. We present a chain of adjunctions starting from the category of Ω-automata without initial states and ending with the dual of the category of quotients of the free Wilke algebra.
 This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens Kupke (University of Strathclyde).",
     "location": "GH 513 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://msp.cis.strath.ac.uk/101/slides/2023-07-05_anton.pdf",
+        "linkDescription": "Slides"
+      }
+    ]
   },
   {
     "tag": "Talk",
