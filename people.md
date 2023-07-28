@@ -74,12 +74,6 @@ Dr William Waites
 
 :   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](guillaume.allais [at] strath.ac.uk).
 
-[Dr Jérémy Ledent](https://www.strath.ac.uk/staff/ledentjeremydr/)
-
-:   who is interested in concurrency, topology, epistemic logic and category theory. See
-    [Jérémy's homepage](http://personal.cis.strath.ac.uk/jeremy.ledent/) or email
-    [jeremy.ledent [at] strath.ac.uk](mailto:jeremy.ledent [at] strath.ac.uk).
-
 [Dr Jade Master](https://pureportal.strath.ac.uk/en/persons/jade-master/)
 
 :   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
@@ -185,6 +179,11 @@ Dilsat Yuksel
 
 ### Alumni ###
 
+[Dr Jérémy Ledent](https://www.irif.fr/~ledent/)
+
+:   who worked as an RA on Neil Ghani's project Compisitional Game Theory
+    and is also interested in concurrency, topology, and epistemic logic.
+
 [Dr Ross Duncan](http://www.strath.ac.uk/staff/duncanrossdr/)
 
 :   who is interested in quantum computation, the foundations of quantum
@@ -206,7 +205,6 @@ Dr Kevin Dunne
 
 :   who worked as an RA on Conor McBride's grant Homotopy Type Theory:
     Programming and Verification.
-
 
 [Dr Johannes Marti](http://johannesmarti.com/)
 
