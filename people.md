@@ -74,6 +74,11 @@ Dr William Waites
 
 :   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](guillaume.allais [at] strath.ac.uk).
 
+[Dr Jan de Muijnck-Hughes](https://www.strath.ac.uk/staff/de_muijnck-hughesjandr/)
+
+:   who is interested in dependent types, type theory and programming language design and their application in making systems more trustworthy.
+    See [Jan's homepage](https://tyde.systems) for more information or email [Jan.de-Muijnck-Hughes [at] strath.ac.uk]([Jan.de-Muijnck-Hughes [at] strath.ac.uk).
+
 [Dr Jade Master](https://pureportal.strath.ac.uk/en/persons/jade-master/)
 
 :   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
