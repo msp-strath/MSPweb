@@ -140,10 +140,6 @@ Georgi Nakov
 
 :   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
-Craig Roy
-
-:   who is a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under Conor McBride and Ross Duncan's direction.
-
 Matteo Capucci
 
 :   who is a PhD student under Neil Ghani and Scott Cunningham's direction.
@@ -184,10 +180,15 @@ Dilsat Yuksel
 
 ### Alumni ###
 
+
 [Dr Jérémy Ledent](https://www.irif.fr/~ledent/)
 
 :   who worked as an RA on Neil Ghani's project Compisitional Game Theory
     and is also interested in concurrency, topology, and epistemic logic.
+
+Craig Roy
+
+:   who was a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under Conor McBride and Ross Duncan's direction.
 
 [Dr Ross Duncan](http://www.strath.ac.uk/staff/duncanrossdr/)
 
