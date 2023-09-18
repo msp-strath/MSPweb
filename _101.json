@@ -26,9 +26,9 @@
   {
     "tag": "Talk",
     "date": "2023-12-01T14:00:00Z",
-    "speaker": "TBC",
+    "speaker": "Justus Matthiesen",
     "speakerurl": "",
-    "institute": "MSP",
+    "institute": "University of Edinburgh",
     "insturl": "",
     "title": "TBD",
     "abstract": "",
@@ -139,7 +139,9 @@
     "institute": "MSP",
     "insturl": "",
     "title": "Staging by Evaluation",
-    "abstract": "",
+    "abstract": "I will present an Agda implementation of a simply typed version of András Kovács' Staged compilation with two-level type theory.
+
+Starting from an intrinsically typed language mixing static and dynamic parts using quotes and splices, we perform a model construction à la normalisation by evaluation and obtain a staging by evaluation algorithm.",
     "location": "LT210 and Online",
     "material": []
   },
