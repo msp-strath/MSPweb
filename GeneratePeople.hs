@@ -25,6 +25,7 @@ data LinkRelationship
   | Staff
   | Pure
   | Thesis
+  | Uni
   deriving (Show, Eq, Generic)
 
 instance FromJSON LinkRelationship where
