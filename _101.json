@@ -1,6 +1,6 @@
 [
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2023-09-29T14:00:00Z",
     "speaker": "Neil Ghani",
     "speakerurl": "",
@@ -14,9 +14,9 @@
   {
     "tag": "Talk",
     "date": "2023-12-15T14:00:00Z",
-    "speaker": "TBC",
+    "speaker": "Neil Ghani",
     "speakerurl": "",
-    "institute": "",
+    "institute": "MSP",
     "insturl": "",
     "title": "TBD",
     "abstract": "",
