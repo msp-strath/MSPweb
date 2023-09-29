@@ -1,13 +1,13 @@
 [
   {
-    "tag": "CancelledTalk",
+    "tag": "Talk",
     "date": "2023-09-29T14:00:00Z",
-    "speaker": "Neil Ghani",
+    "speaker": "Conor McBride",
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "Things I have been thinking about",
-    "abstract": "An overview of what I'd like to do over the next five years consisting of motivations and maybe some definitions.",
+    "title": "An Introduction to Bricks",
+    "abstract": "",
     "location": "LT711 and Online",
     "material": []
   },
