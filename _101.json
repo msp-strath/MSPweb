@@ -138,8 +138,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Writing interactive programs using containers",
+    "abstract": "Containers and their morphisms provide a bidirectional structure that matches a lot of programs that are interactive in nature (databases, servers, compilers). In this presentation I will show how to build such programs using containers, container morphisms and their algebra.",
     "location": "LT210 and Online",
     "material": []
   },
