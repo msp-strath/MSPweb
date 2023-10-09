@@ -126,8 +126,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "(Reflexive) Partial Monoids 101",
+    "abstract": "Partial monoids came up in my work recently, and I found them quite interesting. The main goal of this talk is to introduce the notion into our local sphere of consciousness. After going over the basics I'll focus mostly on reflexive partial monoids, the suprisingly tricky problem of defining exponentiation for them, and the free reflexive partial monoid. I'll finish by outlining some remaining questions that I'm still wondering about.",
     "location": "LT711 and Online",
     "material": []
   },
