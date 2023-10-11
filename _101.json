@@ -60,6 +60,15 @@
     "material": []
   },
   {
+    "tag": "SpecialEvent",
+    "date": "2023-11-22T12:00:00Z",
+    "title": "SPLS",
+    "url": "https://scottish-pl-institute.github.io/spls/meetings/2023/november/",
+    "location": "University of Strathclyde / Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2023-11-17T14:00:00Z",
     "speaker": "Riu Rodríguez Sakamoto",
