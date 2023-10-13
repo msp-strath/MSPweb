@@ -161,6 +161,21 @@
     who is interested in efficient runtime representations, generic
     programming, proof automation, and user experience.
 
+
+- name: "Ross Horne"
+  ident: "horne"
+  title: "Dr"
+  status: "academic"
+  email: "ross.horne@strath.ac.uk"
+  links:
+    - href: "https://pureportal.strath.ac.uk/en/persons/ross-horne"
+      rel: "pure"
+    - href: "https://personal.cis.strath.ac.uk/ross.horne/"
+      rel: "homepage"
+  description:
+    who is interested in concurrency and logic,
+    and their applications to verifying the security and privacy or protocols.
+
 ##############################################################################
 ## Research staff
 
