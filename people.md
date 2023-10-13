@@ -82,7 +82,7 @@ Dr William Waites
 
 [Dr Ross Horne](https://pureportal.strath.ac.uk/en/persons/ross-horne)
 
-:   who is interested in concurrency and logic, and their applications to verifying the security and privacy protocols.
+:   who is interested in concurrency and logic, and their applications to analysing threats to security and privacy.
     See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk]([mailto:ross.horne [at] strath.ac.uk).
 
 
