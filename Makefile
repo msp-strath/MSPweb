@@ -31,17 +31,16 @@ endif
 default: local
 
 local:
-	git pull
 	runghc Generate101.hs
 	runghc Generate.hs
 
 compile:
 	cabal build --builddir _dist
 
-local-compiled: 
-	git pull
-	./_dist/build/Generate101/Generate101
-	./_dist/build/Generate/Generate
+local-compiled:
+	`cabal list-bin --builddir _dist Generate101`
+	`cabal list-bin --builddir _dist Generate`
+
 
 deploy auto-deploy: local-compiled
 	smbclient //msp.cis.strath.ac.uk/msp -d 0 $(AUTHSTRING) -c $(SMBCOMMAND)
