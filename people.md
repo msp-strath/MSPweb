@@ -79,6 +79,15 @@ Dr William Waites
 :   who is interested in dependent types, type theory and programming language design and their application in making systems more trustworthy.
     See [Jan's homepage](https://tyde.systems) for more information or email [Jan.de-Muijnck-Hughes [at] strath.ac.uk]([Jan.de-Muijnck-Hughes [at] strath.ac.uk).
 
+
+[Dr Ross Horne](https://pureportal.strath.ac.uk/en/persons/ross-horne)
+
+:   who is interested in concurrency and logic, and their applications to verifying the security and privacy protocols.
+    See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk]([mailto:ross.horne [at] strath.ac.uk).
+
+
+
+
 [Dr Jade Master](https://pureportal.strath.ac.uk/en/persons/jade-master/)
 
 :   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
