@@ -11,10 +11,12 @@ jobs:
 
   build-and-deploy:
     runs-on: ubuntu-latest
-    env:
-      DEPLOY: ${{ github.event_name != 'pull_request' && github.ref == 'refs/heads/master' }}
     steps:
       ##### Setup ##############################################
+      - name: Are we a pull request?
+        uses: 8BitJonny/gh-get-current-pr@2.2.0
+        id: PR
+
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -62,7 +64,7 @@ jobs:
       ##### Deployment #########################################
 
       - name: Deploy to branch
-        if: ${{ env.DEPLOY }}
+        if: steps.PR.outputs.pr_found == 'true'
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
@@ -71,7 +73,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger pull at website
-        if: ${{ env.DEPLOY }}
+        if: steps.PR.outputs.pr_found == 'true'
         shell: bash
         env:
           PASSPHRASE: ${{ secrets.WEBHOOK_PASSPHRASE }}
