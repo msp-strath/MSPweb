@@ -29,7 +29,7 @@ jobs:
 
       - name: Install cabal and GHC
         if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
-        uses: haskell/actions/setup@v2
+        uses: haskell-actions/setup@v2
         with:
           ghc-version: 'latest'
           cabal-version: 'latest'
