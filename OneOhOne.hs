@@ -319,7 +319,7 @@ generateICS ts out = do
                         "X-WR-CALNAME: MSP101",
                         "X-WR-CALDESC: MSP101 seminar series"]
       footer = unlines ["END:VCALENDAR"]
-  writeFile (out ++ "2") (header ++ content ++ footer)
+  writeFile out (header ++ content ++ footer)
     where gatherData :: Talk -> (String, UTCTime, String, String, String)
           gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
