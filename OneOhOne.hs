@@ -306,7 +306,7 @@ generateRSS ts out = do
             _ -> now
       in itemBarTime { rssItemPubDate = Just time }
     equalRSSItems :: RSSItem -> RSSItem -> Bool
-    equalRSSItems a b = rssItemTitle a == rssItemTitle b && rssItemContent a == rssItemContent b
+    equalRSSItems a b = rssItemTitle a == rssItemTitle b && rssItemDescription a == rssItemDescription b
 
 
 generateICS :: [(Int,Talk)]
