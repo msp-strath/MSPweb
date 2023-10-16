@@ -123,8 +123,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "The double category of adjunctions",
+    "abstract": "There's a particular double category which I've noticed floating around for a while. The purpose of this talk is to explicitly describe this double category, play around in it and see if we can leverage it to get some `theorems for free'. I'll only be assuming prior familiarity with 1-categories, so it should be of general interest. In fact, part of the purpose behind this talk is demonstrating that even for staunch 1-category theorists, having some higher categories `in the back pocket' may help in getting a clear picture of what's `really going on'.",
     "location": "LT210 and Online",
     "material": []
   },
