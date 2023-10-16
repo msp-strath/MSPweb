@@ -20,6 +20,8 @@ executable Generate101
   main-is:          Generate101.hs
   other-modules:    OneOhOne
   build-depends:    base,
+                    containers,
+                    directory,
                     time,
                     regex-pcre-builtin,
                     array,

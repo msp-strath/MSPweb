@@ -1,9 +1,11 @@
-{-# LANGUAGE DeriveGeneric, OverloadedStrings #-}
+{-# LANGUAGE DeriveGeneric, OverloadedStrings, LambdaCase, TupleSections #-}
 module OneOhOne where
 
 import Data.Time
+import System.Directory
 
 import Data.List
+import Data.Maybe
 import Data.Ord
 import Data.Foldable
 import Control.Arrow
@@ -18,9 +20,15 @@ import Data.Aeson
 import qualified Data.Text.Lazy as LT
 import qualified Data.Text as T
 
+import Data.Map (Map)
+import qualified Data.Map as Map
+
 import Data.XML.Types
+import Text.Feed.Types
 import Text.RSS.Syntax
-import qualified Text.RSS.Export as Export
+import Text.RSS.Export
+import Text.Feed.Import
+import Text.Feed.Query
 
 -- constants
 usualTime :: TimeOfDay
@@ -239,18 +247,24 @@ generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
 generateRSS ts out = do
-  now <- formatTime defaultTimeLocale "%a, %_d %b %Y %H:%M:%S %z" <$> getZonedTime
+  oldItemsMap <- doesFileExist out >>= \case
+    True -> parseFeedFromFile out >>= \case
+      Just f  -> let is = getFeedItems f
+                 in pure $ Map.fromList $  concatMap (\ x -> maybeToList ((,x) . snd <$> getItemId x)) is
+      _ -> pure Map.empty
+    _ -> pure Map.empty
+  now <- T.pack . formatTime defaultTimeLocale "%a, %_d %b %Y %H:%M:%S %z" <$> getZonedTime
   let channel = (nullChannel "MSP101 Seminar" "https://msp.cis.strath.ac.uk/msp101.rss")
                   { rssDescription = "MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group."
                   , rssLanguage = Just "en-gb"
-                  , rssLastUpdate = Just (T.pack now)
+                  , rssLastUpdate = Just now
                   , rssChannelOther = [Element "atom:link" [("href", ["https://msp.cis.strath.ac.uk/msp101.rss"]), ("rel", ["self"]), ("type", ["application/rss+xml"])] []]
-                  , rssItems = map processEntry ts
+                  , rssItems = map (processEntry now oldItemsMap) ts
                   }
   let feed = (nullRSS "MSP101 Seminar" "https://msp.cis.strath.ac.uk/msp101.rss")
                { rssAttrs = [("xmlns:atom",["http://www.w3.org/2005/Atom"])]
                , rssChannel = channel }
-  case Export.textRSS feed of
+  case textRSS feed of
     Just t -> writeFile out (LT.unpack t)
     Nothing -> putStrLn "Error: Could not generate RSS feed!"
   where
@@ -282,12 +296,18 @@ generateRSS ts out = do
     gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
       = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
 
-    processEntry :: (Int, Talk) -> RSSItem
-    processEntry (i,x) = let (rsstitle, desc) = gatherData x in
-      (nullItem (T.pack rsstitle))
-      { rssItemDescription = Just (T.pack desc)
-      , rssItemGuid = Just (nullPermaGuid (T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i))))
-      }
+    processEntry :: T.Text -> Map T.Text Item -> (Int, Talk) -> RSSItem
+    processEntry now is (i,x) =
+      let (rsstitle, desc) = gatherData x
+          guid = T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i))
+          itemBarTime = (nullItem (T.pack rsstitle)) { rssItemDescription = Just (T.pack desc), rssItemGuid = Just (nullPermaGuid guid) }
+          time = case Map.lookup guid is of
+            Just i@(Text.Feed.Types.RSSItem ri) | Just oldTime <-getItemPublishDateString i -> if equalRSSItems ri itemBarTime then oldTime else now
+            _ -> now
+      in itemBarTime { rssItemPubDate = Just time }
+    equalRSSItems :: RSSItem -> RSSItem -> Bool
+    equalRSSItems a b = rssItemTitle a == rssItemTitle b && rssItemContent a == rssItemContent b
+
 
 generateICS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
