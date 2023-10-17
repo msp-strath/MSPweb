@@ -45,19 +45,18 @@ data Link =
 
 instance FromJSON Link
 
-data Person =
-  Person { name :: String
-         , ident :: Maybe String
-         , pronouns :: Maybe String
-         , title :: Maybe String
-         , status :: Status
-         , picture :: Maybe String
-         , email :: Maybe String
-         , links :: Maybe [Link]
-         , description :: Markdown
-         , phdTopics :: Maybe [Markdown]    -- Only relevant for status == Academic
-         }
-  deriving (Show, Eq, Generic)
+data Person = Person
+  { name :: String
+  , ident :: Maybe String
+  , pronouns :: Maybe String
+  , title :: Maybe String
+  , status :: Status
+  , picture :: Maybe String
+  , email :: Maybe String
+  , links :: Maybe [Link]
+  , description :: Markdown
+  , phdTopics :: Maybe [Markdown]    -- Only relevant for status == Academic
+  } deriving (Show, Eq, Generic)
 
 instance FromJSON Person
 
