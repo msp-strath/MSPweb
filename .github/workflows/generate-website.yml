@@ -44,7 +44,7 @@ jobs:
             ~/_dist
             ~/.cabal/bin/
           key: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}-${{ github.sha }}
-          restore-keys: cabal-${{ env.GHC_VERSION }}-${{ runner.os }}
+          restore-keys: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}
 
       ##### Installation #######################################
       - name: Install Generate[101]
