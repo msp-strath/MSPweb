@@ -29,7 +29,7 @@ prettyEncode ts file = do
 
 main = do
   ts <- talks
-  let ts' = filter (\ (i, x) -> not (cancelled x)) ts
+  let ts' = filter (not . cancelled . snd) ts
   generateRSS  ts' "msp101.rss"
   generateICS  ts' "msp101.ics"
   generateHTML ts' "msp101.html"
