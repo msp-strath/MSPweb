@@ -13,10 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       ##### Setup ##############################################
-      - name: Are we a pull request?
-        uses: 8BitJonny/gh-get-current-pr@2.2.0
-        id: PR
-
       - name: Checkout repository
         uses: actions/checkout@v3
 
@@ -64,7 +60,7 @@ jobs:
       ##### Deployment #########################################
 
       - name: Deploy to branch
-        if: steps.PR.outputs.pr_found == 'true'
+        if: github.ref == 'refs/heads/main'
         uses: s0/git-publish-subdir-action@develop
         env:
           REPO: self
@@ -73,7 +69,7 @@ jobs:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
 
       - name: Trigger pull at website
-        if: steps.PR.outputs.pr_found == 'true'
+        if: github.ref == 'refs/heads/main'
         shell: bash
         env:
           PASSPHRASE: ${{ secrets.WEBHOOK_PASSPHRASE }}
