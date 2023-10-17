@@ -7,6 +7,9 @@ on:
   schedule:
     - cron: 10 14 * * * # 10 minutes after 101 slot starts (UTC timezone)
 
+env:
+  GHC_VERSION: 9.6
+
 jobs:
 
   build-and-deploy:
@@ -24,12 +27,13 @@ jobs:
           filters: |
             haskell-changed:
               - '*.hs'
+              - '.github/workflows/generate-website.yml'
 
       - name: Install cabal and GHC
         if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
         uses: haskell-actions/setup@v2
         with:
-          ghc-version: '9.6'
+          ghc-version: ${{ env.GHC_VERSION }}
           cabal-version: 'latest'
 
       - name: Cache cabal and executables
@@ -39,8 +43,8 @@ jobs:
             ~/.cabal/store
             ~/_dist
             ~/.cabal/bin/
-          key: cabal-${{ runner.os }}-${{ github.sha }}
-          restore-keys: cabal-${{ runner.os }}
+          key: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}-${{ github.sha }}
+          restore-keys: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}
 
       ##### Installation #######################################
       - name: Install Generate[101]
