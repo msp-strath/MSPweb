@@ -8,17 +8,33 @@ build-type:     Simple
 cabal-version:  >= 1.10
 
 executable Generate
-  main-is:             Generate.hs
-  build-depends:       base, filepath, directory, pandoc >= 2.0, text
-  default-language:    Haskell2010
+  main-is:          Generate.hs
+  build-depends:    base,
+                    filepath,
+                    directory,
+                    pandoc >= 2.0,
+                    text
+  default-language: Haskell2010
 
 executable Generate101
-  main-is:             Generate101.hs
-  other-modules:       OneOhOne
-  build-depends:       base, time, regex-pcre-builtin, array, aeson, bytestring
-  default-language:    Haskell2010
+  main-is:          Generate101.hs
+  other-modules:    OneOhOne
+  build-depends:    base,
+                    containers,
+                    directory,
+                    time,
+                    regex-pcre-builtin,
+                    array,
+                    aeson,
+                    bytestring,
+                    text,
+                    xml-types,
+                    feed
+  default-language: Haskell2010
 
 executable GeneratePeople
-  main-is: GeneratePeople.hs
-  build-depends: base, yaml, bytestring
+  main-is:          GeneratePeople.hs
+  build-depends:    base,
+                    yaml,
+                    bytestring
   default-language: Haskell2010
