@@ -27,6 +27,7 @@ prettyEncode ts file = do
   BS.writeFile file $ encodePretty' cfg ts
 -}
 
+main :: IO ()
 main = do
   ts <- talks
   let ts' = filter (not . cancelled . snd) ts
