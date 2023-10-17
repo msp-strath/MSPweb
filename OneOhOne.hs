@@ -1,9 +1,11 @@
-{-# LANGUAGE DeriveGeneric #-}
+{-# LANGUAGE DeriveGeneric, OverloadedStrings, LambdaCase, TupleSections #-}
 module OneOhOne where
 
 import Data.Time
+import System.Directory
 
 import Data.List
+import Data.Maybe
 import Data.Ord
 import Data.Foldable
 import Control.Arrow
@@ -14,6 +16,19 @@ import Text.Regex.PCRE
 
 import GHC.Generics
 import Data.Aeson
+
+import qualified Data.Text.Lazy as LT
+import qualified Data.Text as T
+
+import Data.Map (Map)
+import qualified Data.Map as Map
+
+import Data.XML.Types
+import Text.Feed.Types
+import Text.RSS.Syntax
+import Text.RSS.Export
+import Text.Feed.Import
+import Text.Feed.Query
 
 -- constants
 usualTime :: TimeOfDay
@@ -84,7 +99,8 @@ subRegex regexp inp repl =
       compiled :: MatchText String -> String -> String
       compiled = compile 0 repl findrefs where
         -- bre matches a backslash then capture either a backslash or some digits
-        bre = makeRegex "\\\\(\\\\|[0-9]+)" :: Regex
+        bre :: Regex
+        bre = makeRegex ("\\\\(\\\\|[0-9]+)" :: String)
         findrefs = map (\m -> (fst (m!1),snd (m!0))) (matchAllText bre repl)
       go _i str [] = str
       go i str (m:ms) =
@@ -231,57 +247,66 @@ generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
 generateRSS ts out = do
-  let content = concatMap processEntry ts
-      header = unlines ["<?xml version='1.0' encoding='ISO-8859-1'?>",
-                        "<rss version='2.0' xmlns:atom='http://www.w3.org/2005/Atom'>",
-                        " <channel>",
-                        "  <atom:link href='http://msp.cis.strath.ac.uk/msp101.rss' rel='self' type='application/rss+xml' />",
-                        "  <title>MSP101 Seminar</title>",
-                        "  <link>http://msp.cis.strath.ac.uk/msp101.html</link>",
-                        "  <description>MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group.</description>",
-                        "  <language>en-gb</language>"]
-      footer = unlines [" </channel>", "</rss>"]
-  writeFile out (header ++ content ++ footer)
-    where processEntry (i,(Talk date speaker inst speakerurl insturl title abstract location material))
-            = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ speaker ++ bracket inst
-                  abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
-                  desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
-                                  "<h2>" ++ title ++ "</h2>",
-                                  abstr,
-                                  "<b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
-              in
-               unlines ["  <item>",
-                        "   <title>" ++ rsstitle ++ "</title>",
-                        "   <description><![CDATA[" ++ desc ++ "]]></description>",
-                        "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
-                        "  </item>"]
-          processEntry (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
-            = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar " ++ ": " ++ speaker ++ bracket inst
-                  abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
-                  desc = unlines ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
-                                  "<h2>" ++ title ++ "</h2>",
-                                  abstr,
-                                  "<b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
-              in
-               unlines ["  <item>",
-                        "   <title>" ++ rsstitle ++ "</title>",
-                        "   <description><![CDATA[" ++ desc ++ "]]></description>",
-                        "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
-                        "  </item>"]
-          processEntry (i,(SpecialEvent date title url location locationurl description))
-            = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title
-                  abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
-                  desc = unlines ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
-                                  "<h2>" ++ title ++ "</h2>",
-                                  abstr,
-                                  "<b>" ++ (show date) ++ "<br/>" ++ (createLink locationurl location) ++ "</b><br/>"]
-              in
-               unlines ["  <item>",
-                        "   <title>" ++ rsstitle ++ "</title>",
-                        "   <description><![CDATA[" ++ desc ++ "]]></description>",
-                        "   <guid isPermaLink='true'>http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i) ++ "</guid>",
-                        "  </item>"]
-          processEntry (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material)) = processEntry (i, (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
+  oldItemsMap <- doesFileExist out >>= \case
+    True -> parseFeedFromFile out >>= \case
+      Just f  -> let is = getFeedItems f
+                 in pure $ Map.fromList $  concatMap (\ x -> maybeToList ((,x) . snd <$> getItemId x)) is
+      _ -> pure Map.empty
+    _ -> pure Map.empty
+  now <- T.pack . formatTime defaultTimeLocale "%a, %_d %b %Y %H:%M:%S %z" <$> getZonedTime
+  let channel = (nullChannel "MSP101 Seminar" "https://msp.cis.strath.ac.uk/msp101.rss")
+                  { rssDescription = "MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group."
+                  , rssLanguage = Just "en-gb"
+                  , rssLastUpdate = Just now
+                  , rssChannelOther = [Element "atom:link" [("href", ["https://msp.cis.strath.ac.uk/msp101.rss"]), ("rel", ["self"]), ("type", ["application/rss+xml"])] []]
+                  , rssItems = map (processEntry now oldItemsMap) ts
+                  }
+  let feed = (nullRSS "MSP101 Seminar" "https://msp.cis.strath.ac.uk/msp101.rss")
+               { rssAttrs = [("xmlns:atom",["http://www.w3.org/2005/Atom"])]
+               , rssChannel = channel }
+  case textRSS feed of
+    Just t -> writeFile out (LT.unpack t)
+    Nothing -> putStrLn "Error: Could not generate RSS feed!"
+  where
+    gatherData :: Talk -> (String, String)
+    gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
+      = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ speaker ++ bracket inst
+            abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
+            desc = concat ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
+                            "<h2>" ++ title ++ "</h2>",
+                            abstr,
+                            "<p><b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/></p>"]
+        in (rsstitle, desc)
+    gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
+      = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar: " ++ speaker ++ bracket inst
+            abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
+            desc = concat ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
+                            "<h2>" ++ title ++ "</h2>",
+                            abstr,
+                            "<p><b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
+        in (rsstitle, desc)
+    gatherData (SpecialEvent date title url location locationurl description)
+      = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title
+            abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
+            desc = concat ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
+                            "<h2>" ++ title ++ "</h2>",
+                            abstr,
+                            "<p><b>" ++ (show date) ++ "<br/>" ++ (createLink locationurl location) ++ "</b><br/></p>"]
+        in (rsstitle, desc)
+    gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
+      = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
+
+    processEntry :: T.Text -> Map T.Text Item -> (Int, Talk) -> RSSItem
+    processEntry now is (i,x) =
+      let (rsstitle, desc) = gatherData x
+          guid = T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i))
+          itemBarTime = (nullItem (T.pack rsstitle)) { rssItemDescription = Just (T.pack desc), rssItemGuid = Just (nullPermaGuid guid) }
+          time = case Map.lookup guid is of
+            Just i@(Text.Feed.Types.RSSItem ri) | Just oldTime <-getItemPublishDateString i -> if equalRSSItems ri itemBarTime then oldTime else now
+            _ -> now
+      in itemBarTime { rssItemPubDate = Just time }
+    equalRSSItems :: RSSItem -> RSSItem -> Bool
+    equalRSSItems a b = rssItemTitle a == rssItemTitle b && rssItemDescription a == rssItemDescription b
 
 
 generateICS :: [(Int,Talk)]
@@ -295,18 +320,18 @@ generateICS ts out = do
                         "X-WR-CALDESC: MSP101 seminar series"]
       footer = unlines ["END:VCALENDAR"]
   writeFile out (header ++ content ++ footer)
-    where gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
+    where gatherData :: Talk -> (String, UTCTime, String, String, String)
+          gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
-                  end = addUTCTime (60*60::NominalDiffTime) date
-              in (desc, end, date, location, title, "")
+              in (desc, date, location, title, "")
           gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
-                  end = addUTCTime (60*60::NominalDiffTime) date
-              in (desc, end, date, location, title, "Departmental seminar: ")
+              in (desc, date, location, title, "Departmental seminar: ")
           gatherData (SpecialEvent date title url location locationurl description)
-            = let end = addUTCTime (60*60::NominalDiffTime) date
-              in (description, end, date, location, title, "Event: ")
-          gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material) = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
+            = (description, date, location, title, "Event: ")
+          gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
+            = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
+
           escape :: String -> String
           escape [] = []
           escape ('\\':xs) = "\\\\" ++ (escape xs)
@@ -315,7 +340,8 @@ generateICS ts out = do
           escape (',':' ':xs) = "\\, " ++ (escape xs)
           escape (x:xs) = x:(escape xs)
           processEntry now (i,x)
-            = let (desc, end, date, location, title, kindEvent) = gatherData x
+            = let (desc, date, location, title, kindEvent) = gatherData x
+                  end = addUTCTime (60*60::NominalDiffTime) date
                   t = escape . html2text
               in
                   unlines ["BEGIN:VEVENT",
