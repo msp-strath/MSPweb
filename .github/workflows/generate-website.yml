@@ -39,7 +39,8 @@ jobs:
             ~/.cabal/store
             ~/_dist
             ~/.cabal/bin/
-          key: cabal-${{ runner.os }}
+          key: cabal-${{ runner.os }}-${{ github.sha }}
+          restore-keys: cabal-${{ runner.os }}
 
       ##### Installation #######################################
       - name: Install Generate[101]
