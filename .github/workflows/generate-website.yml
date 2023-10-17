@@ -27,6 +27,7 @@ jobs:
           filters: |
             haskell-changed:
               - '*.hs'
+              - '.github/workflows/generate-website.yml'
 
       - name: Install cabal and GHC
         if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
