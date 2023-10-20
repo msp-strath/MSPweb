@@ -126,7 +126,13 @@
     "title": "The double category of adjunctions",
     "abstract": "There's a particular double category which I've noticed floating around for a while. The purpose of this talk is to explicitly describe this double category, play around in it and see if we can leverage it to get some `theorems for free'. I'll only be assuming prior familiarity with 1-categories, so it should be of general interest. In fact, part of the purpose behind this talk is demonstrating that even for staunch 1-category theorists, having some higher categories `in the back pocket' may help in getting a clear picture of what's `really going on'.",
     "location": "LT210 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=4XG8MgQDbtA",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -138,7 +144,13 @@
     "title": "(Reflexive) Partial Monoids 101",
     "abstract": "Partial monoids came up in my work recently, and I found them quite interesting. The main goal of this talk is to introduce the notion into our local sphere of consciousness. After going over the basics I'll focus mostly on reflexive partial monoids, the suprisingly tricky problem of defining exponentiation for them, and the free reflexive partial monoid. I'll finish by outlining some remaining questions that I'm still wondering about.",
     "location": "LT711 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=p44LyR-iDtw",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -150,7 +162,13 @@
     "title": "Writing interactive programs using containers",
     "abstract": "Containers and their morphisms provide a bidirectional structure that matches a lot of programs that are interactive in nature (databases, servers, compilers). In this presentation I will show how to build such programs using containers, container morphisms and their algebra.",
     "location": "Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=ft8LYjB22fc",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -164,7 +182,13 @@
 
 Starting from an intrinsically typed language mixing static and dynamic parts using quotes and splices, we perform a model construction à la normalisation by evaluation and obtain a staging by evaluation algorithm.",
     "location": "LT210 and Online",
-    "material": []
+        "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=6meBs-M5PQc",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
