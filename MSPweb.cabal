@@ -34,6 +34,7 @@ executable Generate101
 
 executable GeneratePeople
   main-is:          GeneratePeople.hs
+  other-modules:    Html
   build-depends:    base,
                     yaml,
                     bytestring

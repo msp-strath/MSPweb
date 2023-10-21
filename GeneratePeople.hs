@@ -6,6 +6,8 @@ import GHC.Generics
 import Data.Yaml
 import qualified Data.ByteString as BS
 
+import Html
+
 type Markdown = String
 
 data Status = Academic | PhDStudent | Research | PhDFinished | Alum
@@ -22,15 +24,14 @@ instance FromJSON Status where
 
 data LinkRelationship
   = HomePage
-  | Staff
   | Pure
   | Thesis
-  | Uni
+  | Staff
   deriving (Show, Eq, Generic)
 
 instance FromJSON LinkRelationship where
   parseJSON (String "homepage") = pure HomePage
-  parseJSON (String "uni") = pure Uni
+  parseJSON (String "staff") = pure Staff
   parseJSON (String "pure") = pure Pure
   parseJSON (String "thesis") = pure Thesis
   parseJSON _ = fail "invalid link type"
@@ -61,37 +62,13 @@ data Person = Person
 instance FromJSON Person
 
 ------------------------------------------------------------------------------
-type HTML = String
-
-div :: String -> HTML -> HTML
-div klass content =
-  "<div class=\"" ++ klass ++ "\">" ++ content ++ "</div>"
-
-h5 :: HTML -> HTML
-h5 content = "<h5>" ++ content ++ "</h5>"
-
-p :: HTML -> HTML
-p content = "<p>" ++ content ++ "</p>"
-
-ulist :: [HTML] -> HTML
-ulist items = "<ul>" ++ concatMap (\item -> "<li>" ++ item ++ "</li>") items ++ "</ul>"
-
-anchor :: String -> HTML -> HTML
-anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
-
-img :: String -> HTML
-img url = "<img src=\"" ++ url ++ "\">"
 
 linkToHTML :: Link -> HTML
 linkToHTML link = case rel link of
   HomePage -> anchor (href link) "homepage"
-  Uni      -> anchor (href link) "Staff page"
+  Staff    -> anchor (href link) "Staff page"
   Pure     -> anchor (href link) "Staff page (pure)"
   Thesis   -> anchor (href link) "PhD Thesis"
-
-emailToHTML :: String -> HTML
-emailToHTML emailAddr =
-  anchor ("mailto:" ++ emailAddr) ("Email: " ++ emailAddr)
 
 statusToHTML :: Status -> HTML
 statusToHTML Academic = "Academic staff"
