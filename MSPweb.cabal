@@ -39,3 +39,17 @@ executable GeneratePeople
                     yaml,
                     bytestring
   default-language: Haskell2010
+
+executable GenerateNews
+  main-is:          GenerateNews.hs
+  other-modules:    Html
+  build-depends:    base,
+                    yaml,
+                    bytestring,
+                    http-client,
+                    http-client-tls,
+                    http-types,
+                    time,
+                    feed,
+                    text
+  default-language: Haskell2010

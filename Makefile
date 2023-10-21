@@ -32,6 +32,7 @@ default: local
 
 local:
 	runghc Generate101.hs
+	runghc GenerateNews.hs
 	runghc Generate.hs
 
 compile:
@@ -39,6 +40,7 @@ compile:
 
 local-compiled:
 	`cabal list-bin --builddir _dist Generate101`
+	`cabal list-bin --builddir _dist GenerateNews`
 	`cabal list-bin --builddir _dist Generate`
 
 
