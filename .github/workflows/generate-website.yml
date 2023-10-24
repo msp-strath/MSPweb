@@ -59,6 +59,9 @@ jobs:
       - name: Generate 101
         run: Generate101
 
+      - name: Generate News
+        run: GenerateNews
+
       - name: Generate website
         run: Generate
 
