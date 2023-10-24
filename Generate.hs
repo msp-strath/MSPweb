@@ -126,7 +126,7 @@ substitute template env = loop template []
           let varNm = reverse varAcc in
           case lookup varNm env of
             Nothing  -> loop cs acc
-            Just val -> loop cs (reverse val ++ acc)
+            Just val -> loop cs (reverse (substitute val env) ++ acc)
       getVar (c:cs) varAcc acc = getVar cs (c:varAcc) acc
 
 -- | Check the input string to determine if it starts with a header of
