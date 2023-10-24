@@ -111,8 +111,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Category Theory ∩ Deep Learning : Where are we, and where can we go?",
+    "abstract": "Four years ago I embarked on my PhD with the goal of exploring the landscape of category theory, and its application to artificial neural networks. Specifically, I aimed to understand at which level of generality can we express components of artificial neural networks, and still meaningfully capture learning.\n\nIn this talk I will give a progress report on this goal, and outline future directions for improvement.",
     "location": "LT210 and Online",
     "material": []
   },
@@ -2483,16 +2483,16 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
     "abstract": "Malin and James will practice giving their talks \"Containers of Applications and Applications of Containers\" and \"Linear metatheory via linear algebra\" respectively.",
     "location": "LT1415",
       "material": [
-	  {
+  {
               "tag": "Link",
               "address": "http://www.ii.uib.no/~bezem/abstracts/TYPES_2019_paper_40.pdf",
               "linkDescription": "Containers of Applications and Applications of Containers (abstract)"
-	  },
-	  	  {
+  },
+    {
               "tag": "Link",
               "address": "http://www.ii.uib.no/~bezem/abstracts/TYPES_2019_paper_42.pdf",
               "linkDescription": "Linear metatheory via linear algebra (abstract)"
-	  }
+  }
       ]
   },
   {
