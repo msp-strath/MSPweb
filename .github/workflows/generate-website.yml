@@ -26,6 +26,7 @@ jobs:
         with:
           filters: |
             haskell-changed:
+              - '*.cabal'
               - '*.hs'
               - '.github/workflows/generate-website.yml'
 
