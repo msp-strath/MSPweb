@@ -3,6 +3,7 @@ module OneOhOne where
 
 import Data.Time
 import System.Directory
+import System.IO
 
 import Data.List
 import Data.Maybe
@@ -63,13 +64,14 @@ bracket str = if null str then "" else " (" ++ str ++ ")"
 
 -- Text utils
 
-wordwrap :: Int -> String -> String -> String
-wordwrap maxlen div = (wrap_ 0) . words where
+wordwrap :: Int -> String -> String
+wordwrap maxlen = wrap_ 0 . words where
         wrap_ _ [] = ""
         wrap_ pos (w:ws)
                 -- at line start: put down the word no matter what
-                | pos == 0 = w ++ wrap_ (pos + lw) ws
-                | pos + lw + 1 > maxlen = div ++ wrap_ 0 (w:ws)
+                | pos == 0, lw > maxlen = take maxlen w ++ "\n " ++ wrap_ 0 (drop maxlen w:ws)
+                | pos == 0 = w ++ wrap_ lw ws
+                | pos + lw + 1 > maxlen = "\n  " ++ wrap_ 0 (w:ws)
                 | otherwise = " " ++ w ++ wrap_ (pos + lw + 1) ws
                 where lw = length w
 
@@ -317,10 +319,33 @@ generateICS ts out = do
   let content = concatMap (processEntry now) ts
       header = unlines ["BEGIN:VCALENDAR", "VERSION:2.0", "PRODID:-//MSP//MSP101 v1.0//EN",
                         "X-WR-CALNAME: MSP101",
-                        "X-WR-CALDESC: MSP101 seminar series"]
+                        "X-WR-CALDESC: MSP101 seminar series",
+                        "BEGIN:VTIMEZONE",
+                        "TZID:Europe/London",
+                        "LAST-MODIFIED:20230407T050750Z",
+                        "TZURL:https://www.tzurl.org/zoneinfo-outlook/Europe/London",
+                        "X-LIC-LOCATION:Europe/London",
+                        "BEGIN:DAYLIGHT",
+                        "TZNAME:BST",
+                        "TZOFFSETFROM:+0000",
+                        "TZOFFSETTO:+0100",
+                        "DTSTART:19700329T010000",
+                        "RRULE:FREQ=YEARLY;BYMONTH=3;BYDAY=-1SU",
+                        "END:DAYLIGHT",
+                        "BEGIN:STANDARD",
+                        "TZNAME:GMT",
+                        "TZOFFSETFROM:+0100",
+                        "TZOFFSETTO:+0000",
+                        "DTSTART:19701025T020000",
+                        "RRULE:FREQ=YEARLY;BYMONTH=10;BYDAY=-1SU",
+                        "END:STANDARD",
+                        "END:VTIMEZONE"
+                       ]
       footer = unlines ["END:VCALENDAR"]
-  writeFile out (header ++ content ++ footer)
-    where gatherData :: Talk -> (String, UTCTime, String, String, String)
+  writefileCRLF out (header ++ content ++ footer)
+    where writefileCRLF fp txt = withFile fp WriteMode (\ h -> do hSetNewlineMode h (NewlineMode CRLF CRLF); hPutStr h txt)
+
+          gatherData :: Talk -> (String, UTCTime, String, String, String)
           gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
               in (desc, date, location, title, "")
@@ -348,9 +373,9 @@ generateICS ts out = do
                            "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
                            "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date),
                            "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
-                           "LOCATION:" ++ (t location),
-                           wordwrap 73 "\n  " $ "SUMMARY:" ++ (t $ kindEvent ++ title),
-                           wordwrap 73 "\n  " $ "DESCRIPTION:" ++ (t $ desc),
+                           wordwrap 73 $ "LOCATION:" ++ (t location),
+                           wordwrap 73 $ "SUMMARY:" ++ (t $ kindEvent ++ title),
+                           wordwrap 73 $ "DESCRIPTION:" ++ (t $ desc),
                            "UID:" ++ (show i),
                            "END:VEVENT"]
 
