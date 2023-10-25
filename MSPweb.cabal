@@ -29,6 +29,9 @@ executable Generate101
                     bytestring,
                     text,
                     xml-types,
+                    http-client,
+                    http-client-tls,
+                    http-types,
                     feed
   default-language: Haskell2010
 
