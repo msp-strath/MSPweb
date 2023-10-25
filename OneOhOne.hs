@@ -21,8 +21,14 @@ import Data.Aeson
 import qualified Data.Text.Lazy as LT
 import qualified Data.Text as T
 
+import qualified Data.ByteString.Lazy as LBS
+
 import Data.Map (Map)
 import qualified Data.Map as Map
+
+import Network.HTTP.Client
+import Network.HTTP.Client.TLS
+import Network.HTTP.Types.Status
 
 import Data.XML.Types
 import Text.Feed.Types
@@ -249,10 +255,22 @@ generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
 generateRSS ts out = do
-  oldItemsMap <- doesFileExist out >>= \case
-    True -> parseFeedFromFile out >>= \case
-      Just f  -> let is = getFeedItems f
-                 in pure $ Map.fromList $  concatMap (\ x -> maybeToList ((,x) . snd <$> getItemId x)) is
+
+  file <- doesFileExist out >>= \case
+    True -> pure (Just out)
+    False -> do
+      -- try to download last version from website
+      manager <- newManager tlsManagerSettings
+      res <- httpLbs (parseRequest_ "https://msp.cis.strath.ac.uk/msp101.rss") manager
+      case statusIsSuccessful (responseStatus res) of
+        False -> pure Nothing
+        True -> do
+          LBS.writeFile out (responseBody res)
+          pure (Just out)
+  oldItemsMap <- case file of
+    Just file -> parseFeedFromFile file >>= \case
+      Just f -> let is = getFeedItems f
+                in pure $ Map.fromList $  concatMap (\ x -> maybeToList ((,x) . snd <$> getItemId x)) is
       _ -> pure Map.empty
     _ -> pure Map.empty
   now <- T.pack . formatTime defaultTimeLocale "%a, %_d %b %Y %H:%M:%S %z" <$> getZonedTime
@@ -304,7 +322,7 @@ generateRSS ts out = do
           guid = T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i))
           itemBarTime = (nullItem (T.pack rsstitle)) { rssItemDescription = Just (T.pack desc), rssItemGuid = Just (nullPermaGuid guid) }
           time = case Map.lookup guid is of
-            Just i@(Text.Feed.Types.RSSItem ri) | Just oldTime <-getItemPublishDateString i -> if equalRSSItems ri itemBarTime then oldTime else now
+            Just item@(Text.Feed.Types.RSSItem ri) | Just oldTime <-getItemPublishDateString item -> if equalRSSItems ri itemBarTime then oldTime else now
             _ -> now
       in itemBarTime { rssItemPubDate = Just time }
     equalRSSItems :: RSSItem -> RSSItem -> Bool
