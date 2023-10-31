@@ -279,15 +279,6 @@
   description:
     who is a PhD student under Conor McBride's direction.
 
-- name: "Bruno Gavranović"
-  ident: "bruno"
-  status: "phd-student"
-  description:
-    who is a PhD student under Neil Ghani's direction.
-  links:
-    - href: "https://www.brunogavranovic.com/"
-      rel: "homepage"
-
 - name: "Georgi Nakov"
   ident: "georgi"
   status: "phd-student"
@@ -358,6 +349,17 @@
 
 ##############################################################################
 ## Finished PhDs
+
+- name: "Bruno Gavranović"
+  status: "phd-finished"
+  title: "Dr"
+  description:
+    "who was a PhD student under Neil Ghani's direction. Bruno's thesis,
+    successfully defended 2023, is entitled \"Fundamental components
+    of deep learning: a category-theoretic approach\"."
+  links:
+    - href: "https://www.brunogavranovic.com/"
+      rel: "homepage"
 
 - name: "Kevin Dunne"
   status: "phd-finished"
@@ -447,6 +449,11 @@
 
 ##############################################################################
 ## Alumni
+
+- name: "Ethel Morgan"
+  status: "alum"
+  description:
+    who worked as a Research Software Engineer in the group.
 
 - name: "Ben Price"
   status: "alum"
