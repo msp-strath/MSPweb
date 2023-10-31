@@ -99,11 +99,6 @@ Dr William Waites
 :   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
     See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
 
-Ethel Morgan
-
-:   who works with William Waites on tooling for modelling infectious diseases.
-    See [Eth's homepage](https://personal.cis.strath.ac.uk/ethel.morgan/) or email [ethel.morgan [at] strath.ac.uk](mailto:ethel.morgan [at] strath.ac.uk).
-
 Stevan Andjelkovic
 
 :   who is a PhD student under Conor McBride's direction.
@@ -139,11 +134,6 @@ James Wood
 Malin Altenm&uuml;ller
 
 :   who is a PhD student under Conor McBride's direction.
-
-Bruno Gavranović
-
-:   who is a PhD student under Neil Ghani's direction.
-    [Bruno's homepage](https://www.brunogavranovic.com/).
 
 Georgi Nakov
 
@@ -189,6 +179,14 @@ Dilsat Yuksel
 
 ### Alumni ###
 
+
+Ethel Morgan
+
+:   who worked as a Research Software Engineer in the group.
+
+[Dr Bruno Gavranović](https://www.brunogavranovic.com/)
+
+:   who was a PhD student under Neil Ghani's direction. Bruno's thesis, successfully defended 2023, is entitled "Fundamental components of deep learning: a category-theoretic approach".
 
 [Dr Jérémy Ledent](https://www.irif.fr/~ledent/)
 
