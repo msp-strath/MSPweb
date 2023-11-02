@@ -99,8 +99,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Hopf-Frobenius Algebras",
+    "abstract": "Hopf algebras and Frobenius algebras are two fairly common algebraic structures. They even look pretty similar if you squint your eyes - both consist of a monoid/ comonoid pair, and some algebraic rule that tells you how they interact. There are a few instances where a single object in a category has the properties of both a Hopf algebra and a Frobenius algebra, called a Hopf-Frobenius algebra. In particular, ZX calculus, a way of modelling quantum circuits using symmetric monoidal categories, has this property. Why? And where else does this occur?\n\nIn this talk, I will be talking about what a Hopf-Frobenius algebra is and where it comes from.",
     "location": "LT210 and Online",
     "material": []
   },
