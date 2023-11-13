@@ -38,9 +38,9 @@
   {
     "tag": "Talk",
     "date": "2023-12-01T14:00:00Z",
-    "speaker": "Justus Matthiesen",
+    "speaker": "Georgi Nakov",
     "speakerurl": "",
-    "institute": "University of Edinburgh",
+    "institute": "MSP",
     "insturl": "",
     "title": "TBD",
     "abstract": "",
@@ -75,8 +75,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Categorical cybernetics for Markov decision processes",
+    "abstract": "I will introduce two ingredients to MSPs 'categorical cybernetics':\n- \"open game\"-like categories for backward-filtering problems\n- semiring valuations to formalize softmax as a *preference* relation (generalizing selection relations)\n\nThis will allow us to fit Markov decission processes and certain estimation problems to the existing framework, clearing our path towards connecting control and estimation problems.",
     "location": "LT210 and Online",
     "material": []
   },
