@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2023-11-23T15:00:00Z",
+    "speaker": "Danel Ahman",
+    "speakerurl": "https://danel.ahman.ee/",
+    "institute": "University of Ljubljana",
+    "insturl": "https://www.fmf.uni-lj.si/en/",
+    "title": "What do bidirected containers (co-)interpret into?",
+    "abstract": "Directed containers are a neat specialisation of containers that fully faithfully interpret into comonad structures on the polynomial functor interpretation of the underlying containers. In terms of shapes and positions, a directed container requires the family of positions to form a certain kind of dependently typed monoid acting on the shapes. In terms of data types, directed containers capture structures where every position in a shape determines a subshape rooted at that position, e.g., positions in a non-empty list determine sublists rooted at those positions.\n\nIn this talk I will discuss bidirected containers and what they interpret into. Bidirected containers specialise directed containers further by asking the positions to form a certain kind of dependently typed group acting on the positions. In terms of data types, this corresponds to every sub data structure having a position in it that takes one back to the parent data structure, i.e., data types that behave like zippers. I will also discuss what we need to seem to ask from comonads to get a similarly tight correspondence as we have for directed containers. I will end by wondering whether an analogous story also applies to the cointerpretation of directed containers as update monads.",
+    "location": "LT210 and Online",
+    "material": []
+  },
+  {
+    "tag": "Talk",
     "date": "2023-09-29T14:00:00Z",
     "speaker": "Conor McBride",
     "speakerurl": "",
