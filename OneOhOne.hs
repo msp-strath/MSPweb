@@ -203,6 +203,7 @@ data Talk = Talk {
 
           | SpecialEvent {
                            date :: UTCTime,
+                           endDate :: UTCTime,
                            title :: String,
                            url :: String,
                            location :: String,
@@ -305,7 +306,7 @@ generateRSS ts out = do
                             abstr,
                             "<p><b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
         in (rsstitle, desc)
-    gatherData (SpecialEvent date title url location locationurl description)
+    gatherData (SpecialEvent date endDate title url location locationurl description)
       = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title
             abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
             desc = concat ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
@@ -363,15 +364,15 @@ generateICS ts out = do
   writefileCRLF out (header ++ content ++ footer)
     where writefileCRLF fp txt = withFile fp WriteMode (\ h -> do hSetNewlineMode h (NewlineMode CRLF CRLF); hPutStr h txt)
 
-          gatherData :: Talk -> (String, UTCTime, String, String, String)
+          gatherData :: Talk -> (String, UTCTime, Maybe UTCTime, String, String, String)
           gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
-              in (desc, date, location, title, "")
+              in (desc, date, Nothing, location, title, "")
           gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
-              in (desc, date, location, title, "Departmental seminar: ")
-          gatherData (SpecialEvent date title url location locationurl description)
-            = (description, date, location, title, "Event: ")
+              in (desc, date, Nothing, location, title, "Departmental seminar: ")
+          gatherData (SpecialEvent date endDate title url location locationurl description)
+            = (description, date, Just endDate, location, title, "Event: ")
           gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
             = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
 
@@ -383,8 +384,8 @@ generateICS ts out = do
           escape (',':' ':xs) = "\\, " ++ (escape xs)
           escape (x:xs) = x:(escape xs)
           processEntry now (i,x)
-            = let (desc, date, location, title, kindEvent) = gatherData x
-                  end = addUTCTime (60*60::NominalDiffTime) date
+            = let (desc, date, endDate, location, title, kindEvent) = gatherData x
+                  end = fromMaybe (addUTCTime (60*60::NominalDiffTime) date) endDate
                   t = escape . html2text
               in
                   unlines ["BEGIN:VEVENT",
@@ -467,7 +468,7 @@ generateHTML ts out = do
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ " " ++ "Departmental seminar" ++ " " ++ place ++ ": " ++ title ++ (bracket person)
               in entryBlock b i dt (nl2br abstract)
-          processEntry b (i,(SpecialEvent date title url location locationurl description))
+          processEntry b (i,(SpecialEvent date endDate title url location locationurl description))
             = let time = createLinkAnchor ('#':show i) (formatTime defaultTimeLocale "%Y-%m-%d" date)
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))

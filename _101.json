@@ -74,6 +74,7 @@
   {
     "tag": "SpecialEvent",
     "date": "2023-11-22T12:00:00Z",
+    "endDate": "2023-11-22T17:00:00Z",
     "title": "SPLS",
     "url": "https://scottish-pl-institute.github.io/spls/meetings/2023/november/",
     "location": "University of Strathclyde / Online",
@@ -584,6 +585,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2023-01-11T15:00:00Z",
+    "endDate": "2023-01-11T16:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1310 and Online",
@@ -641,6 +643,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2022-11-16T09:30:00Z",
+    "endDate": "2022-11-16T16:00:00Z",
     "title": "Agda Implementors' Meeting XXXI",
     "url": "https://wiki.portal.chalmers.se/agda/Main/AIMXXXI",
     "location": "University of Edinburgh",
@@ -686,6 +689,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2022-10-26T12:00:00Z",
+    "endDate": "2022-10-26T17:00:00Z",
     "title": "SPLS",
     "url": "https://spls-series.github.io/meetings/2022/october/",
     "location": "University of Stirling / Online",
@@ -931,6 +935,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2022-04-14T14:00:00Z",
+    "endDate": "2022-04-14T15:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "Online",
@@ -1003,6 +1008,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2022-03-09T11:00:00Z",
+    "endDate": "2022-03-09T17:00:00Z",
     "title": "SPLS",
     "url": "https://spls-series.github.io/meetings/2022/march/",
     "location": "University of Edinburgh / Online",
@@ -1121,6 +1127,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2022-01-12T16:00:00Z",
+    "endDate": "2022-01-12T17:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "Online",
@@ -1130,6 +1137,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2021-10-20T11:00:00Z",
+    "endDate": "2021-10-20T17:00:00Z",
     "title": "SPLS",
     "url": "https://spls-series.github.io/meetings/2021/october/",
     "location": "Online",
@@ -1428,6 +1436,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2021-09-02T15:00:00Z",
+    "endDate": "2021-09-02T16:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "Online",
@@ -1485,6 +1494,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2021-06-30T11:00:00Z",
+    "endDate": "2021-06-30T17:00:00Z",
     "title": "SPLS",
     "url": "https://www.eventbrite.com/e/spls-2021-june-30th-tickets-154107512719",
     "location": "Online",
@@ -1528,6 +1538,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2021-05-27T15:00:00Z",
+    "endDate": "2021-05-27T16:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "Online",
@@ -1991,6 +2002,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2020-09-10T13:00:00Z",
+    "endDate": "2020-09-10T14:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "https://meet.jit.si/MSP101/",
@@ -2047,7 +2059,8 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   },
   {
     "tag": "SpecialEvent",
-    "date": "2020-06-05T14:00:00Z",
+    "date": "2020-06-05T09:00:00Z",
+    "endDate": "2020-06-05T14:30:00Z",
     "title": "Verification of Session Types Workshop (VEST)",
     "url": "http://groups.inf.ed.ac.uk/abcd/VEST/",
     "location": "Online",
@@ -2117,6 +2130,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2020-04-17T14:00:00Z",
+    "endDate": "2020-04-17T15:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "Online at https://meet.jit.si/MSP101",
@@ -2286,6 +2300,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2020-01-16T13:30:00Z",
+    "endDate": "2020-01-16T14:30:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1310",
@@ -2295,6 +2310,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2019-10-30T12:00:00Z",
+    "endDate": "2019-10-30T17:00:00Z",
     "title": "SPLS",
     "url": "https://spls-series.github.io/meetings/2019/october/",
     "location": "University of Glasgow",
@@ -2436,6 +2452,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2019-09-26T13:00:00Z",
+    "endDate": "2019-09-26T14:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1310",
@@ -2731,6 +2748,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2019-01-11T16:30:00Z",
+    "endDate": "2019-01-11T17:30:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1310",
@@ -2740,6 +2758,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-12-17T11:30:00Z",
+    "endDate": "2018-12-17T12:30:00Z",
     "title": "SYCO 2",
     "url": "http://events.cs.bham.ac.uk/syco/2/",
     "location": "Strathclyde",
@@ -2893,6 +2912,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-10-17T12:00:00Z",
+    "endDate": "2018-10-17T17:00:00Z",
     "title": "SPLS",
     "url": "https://msp-strath.github.io/spls-18/",
     "location": "Strathclyde",
@@ -2902,6 +2922,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-09-28T16:00:00Z",
+    "endDate": "2018-09-28T17:00:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1310",
@@ -2983,6 +3004,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-06-05T12:00:00Z",
+    "endDate": "2018-06-05T17:00:00Z",
     "title": "SPLS",
     "url": "http://www.macs.hw.ac.uk/~rs46/spls-june-2018/",
     "location": "Cairn Auditorium, PG G.01, Postgraduate Centre, Heriot-Watt University",
@@ -3178,6 +3200,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-03-07T10:00:00Z",
+    "endDate": "2018-03-07T17:00:00Z",
     "title": "SPLS",
     "url": "",
     "location": "Level 5, School of Computing Science, University of Glasgow",
@@ -3259,6 +3282,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2018-01-16T16:00:00Z",
+    "endDate": "2018-01-16T17:00:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -3292,6 +3316,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-10-11T12:00:00Z",
+    "endDate": "2017-10-11T17:00:00Z",
     "title": "SPLS",
     "url": "http://simonjf.com/spls-oct2017/",
     "location": "Informatics Forum, Edinburgh",
@@ -3445,6 +3470,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-09-14T11:40:00Z",
+    "endDate": "2017-09-14T12:40:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -3478,6 +3504,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-07-10T10:00:00Z",
+    "endDate": "2017-07-10T17:00:00Z",
     "title": "Open Games Workshop",
     "url": "http://msp.cis.strath.ac.uk/opengames-2017/",
     "location": "LT1415",
@@ -3607,6 +3634,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-04-05T10:00:00Z",
+    "endDate": "2017-04-05T17:00:00Z",
     "title": "CLAP",
     "url": "http://homepages.inf.ed.ac.uk/cheunen/clapscotland/",
     "location": "Strathclyde, room LT1415",
@@ -3616,6 +3644,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-04-10T09:00:00Z",
+    "endDate": "2017-04-10T17:00:00Z",
     "title": "ALCOP2017",
     "url": "https://personal.cis.strath.ac.uk/clemens.kupke/ALCOP2017/",
     "location": "Strathclyde, Room MC301 (McCance Building)",
@@ -3803,6 +3832,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2017-01-12T11:40:00Z",
+    "endDate": "2017-01-12T12:40:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -3823,6 +3853,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-11-30T12:00:00Z",
+    "endDate": "2016-11-30T17:00:00Z",
     "title": "CLAP",
     "url": "http://homepages.inf.ed.ac.uk/cheunen/clapscotland/",
     "location": "Strathclyde",
@@ -3844,6 +3875,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-11-09T12:00:00Z",
+    "endDate": "2016-11-09T17:00:00Z",
     "title": "SPLS",
     "url": "https://msp-strath.github.io/spls-16/",
     "location": "Room 301, McCance building, Strathclyde",
@@ -4021,6 +4053,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-09-14T11:40:00Z",
+    "endDate": "2016-09-14T12:40:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -4077,6 +4110,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-06-06T09:00:00Z",
+    "endDate": "2016-06-06T17:00:00Z",
     "title": "Quantum Physics and Logic 2016",
     "url": "http://qpl2016.cis.strath.ac.uk/",
     "location": "McCance building, Strathclyde",
@@ -4133,6 +4167,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-04-14T10:30:00Z",
+    "endDate": "2016-04-14T17:00:00Z",
     "title": "Categories, Logic, and Physics, Scotland",
     "url": "http://homepages.inf.ed.ac.uk/cheunen/clapscotland/",
     "location": " School of Informatics, Edinburgh",
@@ -4308,6 +4343,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2016-01-13T13:40:00Z",
+    "endDate": "2016-01-13T14:40:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -4407,6 +4443,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2015-10-21T12:30:00Z",
+    "endDate": "2015-10-21T17:00:00Z",
     "title": "SPLS",
     "url": "http://simonjf.com/spls-oct2015/",
     "location": "Edinburgh",
@@ -4439,6 +4476,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2015-10-07T12:00:00Z",
+    "endDate": "2015-10-07T17:00:00Z",
     "title": "STP",
     "url": "http://staff.computing.dundee.ac.uk/christopherwarburton/stp/2015/10/",
     "location": "Dundee",
@@ -4460,6 +4498,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2015-09-23T11:30:00Z",
+    "endDate": "2015-09-23T12:30:00Z",
     "title": "MSP101 Planning session",
     "url": "",
     "location": "LT1310",
@@ -4657,6 +4696,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2015-03-04T14:00:00Z",
+    "endDate": "2015-03-04T15:00:00Z",
     "title": "A HoTT-Date with Thorsten Altenkirch",
     "url": "http://msp.cis.strath.ac.uk/hott-afternoon/",
     "location": "LT1415",
@@ -4666,6 +4706,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2015-02-18T12:00:00Z",
+    "endDate": "2015-02-18T17:00:00Z",
     "title": "SPLS @ Strathclyde",
     "url": "",
     "location": "Royal College Building, room RC512",
@@ -4735,6 +4776,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2014-12-03T14:00:00Z",
+    "endDate": "2014-12-03T15:00:00Z",
     "title": "HoTT reading group @ Strathclyde",
     "url": "http://homepages.inf.ed.ac.uk/s1225336/hott-reading-group/",
     "location": "LT1310",
@@ -4816,6 +4858,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2014-10-29T12:00:00Z",
+    "endDate": "2014-10-29T17:00:00Z",
     "title": "SICSA CSE Meeting on Effects and Coeffects Systems and their use for resource control",
     "url": "http://staff.computing.dundee.ac.uk/marcogaboardi/effcoeff.html",
     "location": "Dundee",
@@ -4837,6 +4880,7 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
   {
     "tag": "SpecialEvent",
     "date": "2014-10-15T12:00:00Z",
+    "endDate": "2014-10-15T17:00:00Z",
     "title": "SPLS",
     "url": "http://www.macs.hw.ac.uk/~rs46/spls-hwu-q3-2014/",
     "location": "Heriot Watt",
