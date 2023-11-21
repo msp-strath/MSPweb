@@ -1,4 +1,13 @@
-[
+[ {
+    "tag": "SpecialEvent",
+    "date": "2023-12-04T10:30:00Z",
+    "endDate": "2023-12-04T17:00:00Z",
+    "title": "CATNIP",
+    "url": "https://sites.google.com/view/catniporg/home?authuser=0",
+    "location": "University of Strathclyde (MC301)",
+    "locationurl": "",
+    "description": "The second Categories Network Project (CATNIP) meeting."
+  },
   {
     "tag": "Talk",
     "date": "2023-11-23T15:00:00Z",
