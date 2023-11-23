@@ -291,28 +291,28 @@ generateRSS ts out = do
   where
     gatherData :: Talk -> (String, String)
     gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
-      = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ speaker ++ bracket inst
-            abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
-            desc = concat ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
+      = let rsstitle = showGregorian (utctDay date) ++ ": " ++ speaker ++ bracket inst
+            abstr = if null abstract then "" else "<p><b>Abstract</b><br/><br/>" ++  nl2br abstract ++ "</p>"
+            desc = concat ["<h2>" ++ createLink speakerurl speaker ++ bracket (createLink insturl inst) ++ "</h2>",
                             "<h2>" ++ title ++ "</h2>",
                             abstr,
-                            "<p><b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/></p>"]
+                            "<p><b>" ++ show date ++ "<br/>" ++ location ++ "</b><br/></p>"]
         in (rsstitle, desc)
     gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
-      = let rsstitle = (showGregorian $ utctDay date) ++ " Departmental seminar: " ++ speaker ++ bracket inst
-            abstr = if (null abstract) then "" else "<p><b>Abstract</b><br/><br/>" ++  (nl2br abstract) ++ "</p>"
-            desc = concat ["<h2>" ++ (createLink speakerurl speaker) ++ (bracket (createLink insturl inst)) ++ "</h2>",
+      = let rsstitle = showGregorian (utctDay date) ++ " Departmental seminar: " ++ speaker ++ bracket inst
+            abstr = if null abstract then "" else "<p><b>Abstract</b><br/><br/>" ++  nl2br abstract ++ "</p>"
+            desc = concat ["<h2>" ++ createLink speakerurl speaker ++ bracket (createLink insturl inst) ++ "</h2>",
                             "<h2>" ++ title ++ "</h2>",
                             abstr,
-                            "<p><b>" ++ (show date) ++ "<br/>" ++ location ++ "</b><br/>"]
+                            "<p><b>" ++ show date ++ "<br/>" ++ location ++ "</b><br/>"]
         in (rsstitle, desc)
     gatherData (SpecialEvent date endDate title url location locationurl description)
-      = let rsstitle = (showGregorian $ utctDay date) ++ ": " ++ title
-            abstr = if (null description) then "" else "<p>" ++  (nl2br description) ++ "</p>"
-            desc = concat ["<h2>" ++ (createLink url title) ++ (bracket location) ++ "</h2>",
+      = let rsstitle = showGregorian (utctDay date) ++ ": " ++ title
+            abstr = if null description then "" else "<p>" ++  nl2br description ++ "</p>"
+            desc = concat ["<h2>" ++ createLink url title ++ bracket location ++ "</h2>",
                             "<h2>" ++ title ++ "</h2>",
                             abstr,
-                            "<p><b>" ++ (show date) ++ "<br/>" ++ (createLink locationurl location) ++ "</b><br/></p>"]
+                            "<p><b>" ++ show date ++ "<br/>" ++ createLink locationurl location ++ "</b><br/></p>"]
         in (rsstitle, desc)
     gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
       = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
@@ -320,7 +320,7 @@ generateRSS ts out = do
     processEntry :: T.Text -> Map T.Text Item -> (Int, Talk) -> RSSItem
     processEntry now is (i,x) =
       let (rsstitle, desc) = gatherData x
-          guid = T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ (show i))
+          guid = T.pack ("http://msp.cis.strath.ac.uk/msp101.html#" ++ show i)
           itemBarTime = (nullItem (T.pack rsstitle)) { rssItemDescription = Just (T.pack desc), rssItemGuid = Just (nullPermaGuid guid) }
           time = case Map.lookup guid is of
             Just item@(Text.Feed.Types.RSSItem ri) | Just oldTime <-getItemPublishDateString item -> if equalRSSItems ri itemBarTime then oldTime else now
@@ -366,10 +366,10 @@ generateICS ts out = do
 
           gatherData :: Talk -> (String, UTCTime, Maybe UTCTime, String, String, String)
           gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
-            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
+            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ bracket inst, "Title: " ++ title ++ "\n", abstract]
               in (desc, date, Nothing, location, title, "")
           gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
-            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ (bracket inst), "Title: " ++ title ++ "\n", abstract]
+            = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ bracket inst, "Title: " ++ title ++ "\n", abstract]
               in (desc, date, Nothing, location, title, "Departmental seminar: ")
           gatherData (SpecialEvent date endDate title url location locationurl description)
             = (description, date, Just endDate, location, title, "Event: ")
@@ -378,24 +378,24 @@ generateICS ts out = do
 
           escape :: String -> String
           escape [] = []
-          escape ('\\':xs) = "\\\\" ++ (escape xs)
-          escape ('\n':xs) = "\\n" ++ (escape xs)
-          escape (';':' ':xs) = "\\; " ++ (escape xs)
-          escape (',':' ':xs) = "\\, " ++ (escape xs)
-          escape (x:xs) = x:(escape xs)
+          escape ('\\':xs) = "\\\\" ++ escape xs
+          escape ('\n':xs) = "\\n" ++ escape xs
+          escape (';':' ':xs) = "\\; " ++ escape xs
+          escape (',':' ':xs) = "\\, " ++ escape xs
+          escape (x:xs) = x:escape xs
           processEntry now (i,x)
             = let (desc, date, endDate, location, title, kindEvent) = gatherData x
                   end = fromMaybe (addUTCTime (60*60::NominalDiffTime) date) endDate
                   t = escape . html2text
               in
                   unlines ["BEGIN:VEVENT",
-                           "DTSTAMP;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now),
-                           "DTSTART;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date),
-                           "DTEND;TZID=Europe/London:" ++ (formatTime defaultTimeLocale "%Y%m%dT%H%M%S" $ end),
-                           wordwrap 73 $ "LOCATION:" ++ (t location),
-                           wordwrap 73 $ "SUMMARY:" ++ (t $ kindEvent ++ title),
-                           wordwrap 73 $ "DESCRIPTION:" ++ (t $ desc),
-                           "UID:" ++ (show i),
+                           "DTSTAMP;TZID=Europe/London:" ++ formatTime defaultTimeLocale "%Y%m%dT%H%M%S" now,
+                           "DTSTART;TZID=Europe/London:" ++ formatTime defaultTimeLocale "%Y%m%dT%H%M%S" date,
+                           "DTEND;TZID=Europe/London:" ++ formatTime defaultTimeLocale "%Y%m%dT%H%M%S" end,
+                           wordwrap 73 $ "LOCATION:" ++ t location,
+                           wordwrap 73 $ "SUMMARY:" ++ t (kindEvent ++ title),
+                           wordwrap 73 $ "DESCRIPTION:" ++ t desc,
+                           "UID:" ++ show i,
                            "END:VEVENT"]
 
 generateHTML :: [(Int,Talk)]
@@ -427,7 +427,7 @@ generateHTML ts out = do
   writeFile out (header ++ upcoming ++ previous)
     where
           entryBlock b i dt abst = unlines $
-                   [ "  <dt id='" ++ (show i) ++ "'>" ++ dt ++ "</dt>"
+                   [ "  <dt id='" ++ show i ++ "'>" ++ dt ++ "</dt>"
                    , "  <dd>"]
                    ++
                    (if null abst then [] else
