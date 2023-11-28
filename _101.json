@@ -57,14 +57,14 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "BasicTalk",
     "date": "2023-12-01T14:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Non-standard analysis",
+    "abstract": "I will give a basic 101-style introduction to the first-order logic concept of non-standard models. Intuitively, a non-standard model of say Peano Arithmetic PA is a model which contains infinitely large numbers. Yet, by virtue of being a model of PA, such a model still validates all the axioms of PA, including the induction axiom schema! It is an interesting and beautiful feature/bug of first-order classical logic that such models exist.",
     "location": "LT711 and Online",
     "material": []
   },
