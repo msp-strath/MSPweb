@@ -46,14 +46,14 @@
   },
   {
     "tag": "Talk",
-    "date": "2023-12-08T14:00:00Z",
+    "date": "2023-12-07T11:00:00Z",
     "speaker": "Georgi Nakov",
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
-    "location": "LT209 and Online",
+    "title": "LabMate --- your faithful and type-safe Matlab assistant",
+    "abstract": "Can you write type-safe Matlab code? And what can we do to help you write type-safe Matlab?\n\nThis talk is a report on our progress on LabMate --- an interactive system designed to improve on current best practices of writing Matlab code. Our key proposition can be eloquently described as \"add types, all the types\".\n\nI will give a brief tour of the various features in LabMate and the rationale behind including them. We will also recall the basics of bidirectional type checking, what to do to incorporate dimension and unit checking, and how to represent matrices with high degree of generality in our type system. Some of the non-trivial challenges with Matlab's permissive syntax and elaborating operator overloading will become apparent in the process.\n\nThis is joint work with Fred and Conor.",
+    "location": "LT210 and Online",
     "material": []
   },
   {
