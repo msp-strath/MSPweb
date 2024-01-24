@@ -1,5 +1,27 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2024-05-03T15:00:00Z",
+    "endDate": "2024-05-03T16:00:00Z",
+    "title": "Academic Promotion Information Meeting",
+    "url": "",
+    "location": "LT209 (TBC)",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-03-22T15:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "TBD",
+    "abstract": "",
+    "location": "LT209 and Online",
+    "material": []
+  },
+  {
     "tag": "Talk",
     "date": "2024-05-24T15:00:00Z",
     "speaker": "Guillaume Allais",
