@@ -196,8 +196,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Plane Graphs, (Co-)Operads, and Pattern Matching",
+    "abstract": "I will present work on open surface-embedded graphs as representations of string diagrams. The key feature of these graphs' definition are distinguished boundary vertices which represent their (outer and inner) boundaries. These special vertices make it possible to define surface-embeddings of graphs using a rotation system which specifies an ordering of incident edges at each vertex. We can then also express graph rewrite rules by their action on boundary vertices. Additionally, boundary vertices are a convenient structure to define planar graphs as operads, similar to Spivak's Operad of Wiring Diagrams [1]. I will explain this construction, as well as a dual \"co-operad\" version of it, and finally the operad-cooperad interaction which yields a notion of graph pattern matching.\n\n[1] https://arxiv.org/abs/1305.0297",
     "location": "LT209 and Online",
     "material": []
   },
