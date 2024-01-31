@@ -184,8 +184,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Presheaves on Purpose",
+    "abstract": "Dependently typed programming languages allow us to define indexed families of datatypes, e.g. <code>Term (n : Nat) : Set</code> as the type of lambda-terms with <code>n</code> variables free. As declared, <code>Term</code> is functorial only on the discrete structure of <code>Nat</code>, which is to say that it respects equality and nobody will faint with amazement. But by an outrageous coincidence (which I learned from Altenkirch, Hofmann and Streicher), such terms can be acted on by <em>thinnings</em> from <code>n</code> to some larger scope <code>m</code>, allowing us to carry terms under binders. That is, we can demonstrate by honest toil that <code>Term</code> is a functor from <code>Thin</code> to <code>Set</code>. I dislike honest toil, and will show you how to design it away in this and similar situations. To that end, I present a universe construction for descriptions of datatypes indexed over the objects of some category <code>C</code> which, by construction, extend to a functors from <code>C</code> to <code>Set</code>, a.k.a. presheaves on <code>Cop</code>.",
     "location": "LT401 and Online",
     "material": []
   },
