@@ -172,8 +172,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Stable domain theory, Program slicing, and Automatic Differentiation",
+    "abstract": "I'll talk about a connection I think I've discovered between stable domain theory and program slicing by Galois Connections. Stable domain theory considers a refinement of continuous functions between domains that captures the intuitive idea that a "nice" computable functions that produce values must do so by only looking at part of their input, and that part must be uniquely determined. The same idea turns up in Perera et al.'s formulation of program slicing as Galois connections. I'll try to connect the two via ideas from Automatic Differentiation.",
     "location": "LT209 and Online",
     "material": []
   },
