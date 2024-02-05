@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2024-02-13T12:00:00Z",
+    "speaker": "Nobuko Yoshida",
+    "speakerurl": "https://mrg.cs.ox.ac.uk/people/nobuko-yoshida/",
+    "institute": "Strachey Chair at University of Oxford",
+    "insturl": "",
+    "title": "Session types, Linear Logic and Expressiveness",
+    "abstract": "I will first talk about the origin of session types and its relationship with expressiveness.\n\nThe first technical part of this talk will present an expressiveness result between Linear Logic-based Session Types and System F. The second part gives a summary of recent results on session types, highlighting the expressiveness correspondence between various session-based process calculi.",
+    "location": "LT412",
+    "material": []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2024-05-03T15:00:00Z",
     "endDate": "2024-05-03T16:00:00Z",
