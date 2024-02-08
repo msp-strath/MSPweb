@@ -76,6 +76,12 @@ jobs:
           BRANCH: build
           FOLDER: _build
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          SQUASH_HISTORY: true
+          MESSAGE: |
+            [ DEPLOY ] Website deployed at {sha}
+
+            The latest commit message was:
+            {msg}
 
       - name: Trigger pull at website
         if: github.ref == 'refs/heads/master'
