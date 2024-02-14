@@ -172,8 +172,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Making lenses less pointless",
+    "abstract": "This talk contains two ideas. The first is a small trick for programming with lenses in a not-pointfree way, without using macros or other brittle hacks. The key is something I call a \"dialectic\", which is a value that carries around a delimited continuation with it. The second idea is realising that the central construction of Matteo's \"Diegetic Open Games\" paper amounts to a monad on the category of lenses that arises as the Kleisli dual of the linear ! comonad in a Dialectica category. By putting these two ideas together we get a shallow DSL for open games, differentiable programming, and other applications of categorical cybernetics. This will be a live coding talk using Haskell, although I think the same ideas should work in any language with first class functions.",
     "location": "LT209 and Online",
     "material": []
   },
