@@ -163,7 +163,13 @@
     "title": "Containers for compiler architecture",
     "abstract": "Compiler architecture sucks. It's been left behind by years of software engineering development that have been very successful in developing software past the command-line age. Today, applications are meant to be responsive, accessible from a web browser, enable collaboration, be multi-platform, include some generative AI. Some of those ideas are good, some are bad, but most compilers do not include any of them. In this presentation, I aim to showcase how we can revisit the classical \"compiler as a function\" architecture using containers to bring the idea of compiler architecture to the XXI century.",
     "location": "LT209 and Online",
-    "material": []
+    "material": [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=BnzAxT-O0Y8",
+        "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
