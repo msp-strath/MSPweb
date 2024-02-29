@@ -426,7 +426,7 @@ generateHTML ts out = do
                         "<p>MSP101 is an ongoing series of informal talks by visiting academics or members of the MSP group. The talks are usually " ++ usualDay ++ " " ++ formattedTime ++ " in room " ++ usualRoom ++ " in " ++ usualBuilding ++ ". They are announced on the <a href='https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest'>msp-interest</a> mailing-list. The list of talks is also available as a <a type='application/rss+xml' href='/msp101.rss'><img src='/images/feed-icon-14x14.png' alt='feed icon'>RSS feed</a> and as a <a href='msp101.ics'>calendar file</a>. <b>The MSP 101 seminar is now hybrid, with both in-person attendance in room " ++ usualRoom ++ ", and online via Zoom (the link can be found on the msp-interest mailing list and the SPLS Zulipchat).</b></p>"]
   writeFile out (header ++ upcoming ++ previous)
     where
-          entryBlock b i dt abst = unlines $
+          entryBlock b i dt abst mat = unlines $
                    [ "  <dt id='" ++ show i ++ "'>" ++ dt ++ "</dt>"
                    , "  <dd>"]
                    ++
@@ -434,6 +434,14 @@ generateHTML ts out = do
                      [ "    <details" ++ (if b then " open" else "") ++ ">"
                      , "      <summary><b>Abstract</b></summary>"
                      , "      " ++ abst
+                     , "    </details>"
+                     ])
+                   ++
+                   (if null mat then [] else
+                     (if null abst then id else (("" :) . ("" :)))
+                     [ "    <details" ++ (if b then " open" else "") ++ ">"
+                     , "      <summary><b>Material</b></summary>"
+                     , "      " ++ mat
                      , "    </details>"
                      ])
                    ++
@@ -455,11 +463,10 @@ generateHTML ts out = do
                   pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
                   mat = if null material then ""
                           else
-                           (if null abstract then "" else "\n\n") ++
-                           "<b>Material</b><ul>" ++
+                           "<ul>" ++
                            (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
                                       material) ++ "</ul>"
-              in entryBlock b i dt (nl2br abstract ++ nl2br mat)
+              in entryBlock b i dt (nl2br abstract) (nl2br mat)
           processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
             = let fmt = \ str -> formatTime defaultTimeLocale str date
                   time = createLinkAnchor ('#':show i) (fmt "%Y-%m-%d") ++ fmt ", %H:%M"
@@ -467,11 +474,11 @@ generateHTML ts out = do
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ " " ++ "Departmental seminar" ++ " " ++ place ++ ": " ++ title ++ (bracket person)
-              in entryBlock b i dt (nl2br abstract)
+              in entryBlock b i dt (nl2br abstract) ""
           processEntry b (i,(SpecialEvent date endDate title url location locationurl description))
             = let time = createLinkAnchor ('#':show i) (formatTime defaultTimeLocale "%Y-%m-%d" date)
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))
-              in entryBlock b i dt (nl2br description)
+              in entryBlock b i dt (nl2br description) ""
           processEntry b (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material))
             = processEntry b (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
