@@ -168,6 +168,10 @@
         "tag": "Link",
         "address": "https://www.youtube.com/watch?v=BnzAxT-O0Y8",
         "linkDescription": "Video"
+      },
+      {
+        "tag": "PDF",
+        "slideName": "2024-02-23_videla.pdf"
       }
     ]
   },
