@@ -12,7 +12,7 @@ executable Generate
   build-depends:    base,
                     filepath,
                     directory,
-                    pandoc >= 2.0 && <3.1.12.1,
+                    pandoc >= 2.0,
                     text
   default-language: Haskell2010
 
