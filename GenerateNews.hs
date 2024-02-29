@@ -9,9 +9,12 @@ import Data.List
 import Data.Maybe
 import Data.Function
 
+import Data.Default (def)
+
 -- import Data.ByteString.Lazy (ByteString)
 -- import qualified Data.ByteString.Lazy as LBS
 import qualified Data.ByteString as BS
+import qualified Data.ByteString.Char8 as BS8
 import Data.Text (Text)
 import qualified Data.Text as T
 
@@ -22,6 +25,10 @@ import Data.Foldable
 import Network.HTTP.Client
 import Network.HTTP.Client.TLS
 import Network.HTTP.Types.Status
+import Network.TLS (defaultParamsClient, clientShared, clientSupported, sharedCAStore, supportedCiphers, supportedExtendedMainSecret, EMSMode(..))
+import Network.TLS.Extra (ciphersuite_default)
+import Network.Connection (TLSSettings(..))
+import System.X509 (getSystemCertificateStore)
 
 import Data.Time
 import Data.Time.Format
@@ -117,6 +124,19 @@ pubsRSS = parseRequest_ "https://pureportal.strath.ac.uk/en/organisations/mathem
 getPureRSS :: Int -- number of entries
            -> IO [Item]
 getPureRSS n = do
+  certificateStore <- getSystemCertificateStore
+  let tlsSettings = TLSSettings $
+        (defaultParamsClient
+                          (show $ host pubsRSS)
+                          (BS8.pack $ show $ port pubsRSS))
+          { clientSupported = def { supportedCiphers =
+                                      ciphersuite_default
+                                  , supportedExtendedMainSecret =
+                                      AllowEMS
+                                  }
+          , clientShared = def { sharedCAStore = certificateStore }
+          }
+  let tlsManagerSettings = mkManagerSettings tlsSettings Nothing
   manager <- newManager tlsManagerSettings
   res <- httpLbs pubsRSS manager
   case statusIsSuccessful (responseStatus res) of
