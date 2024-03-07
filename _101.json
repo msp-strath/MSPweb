@@ -137,7 +137,7 @@
     "institute": "University of Kent",
     "insturl": "",
     "title": "TBD",
-    "abstract": "",
+    "abstract": "The continuation-passing style (CPS) translation employed within compilers gives rise to a class of target calculi where direct style functions don't exist anymore. While those may be studied using the lambda calculus, this might not be desired if the language should not be closed under beta-reduction, such as in the intermediate representation (IR) of Appel's compiler. The purpose of this talk is to introduce ongoing work on the metatheory of Thielecke's CPS-calculus, a small theory of continuations based on production IRs, how it relates to actual implementations, and how this allows us to have a strong theoretical background on the study of name-passing IRs in a similar way that the lambda calculus works as a theoretical foundation for functional programming.",
     "location": "LT209 and Online",
     "material": []
   },
