@@ -29,9 +29,15 @@
     "institute": "MSP",
     "insturl": "",
     "title": "Can ordinal exponentiation be defined constructively in homotopy type theory?",
-    "abstract": "",
+    "abstract": "A cornerstone of the classical theory of ordinals is its rich theory of arithmetic, extending the arithmetic of natural numbers. While addition and multiplication are easily seen to be realized by disjoint union and Cartesian product of wellorders respectively, exponentiation is more mysterious. Using classical logic, it can be defined using a case distinction on the exponent, but constructively, this can not serve as a definitional principle, but rather as a specification of what exponentiation should satisfy. Sierpiński [1958] gives an explicit construction for a base with a least element as the set of functions with finite support. This construction again relies on classical logic in several places, but working in homotopy type theory, we have managed to to refine the idea in a more intensional manner to define a^b for ordinals a of the form a = 1 + a' for some ordinal a'. In a sense, this is the best we can hope for: we can prove that an operation a^b satisfying the specification of ordinal exponentiation for all inputs a and b is definable if and only if the law of excluded middle holds.\n\nThis is joint work with Tom de Jong, Nicolai Kraus, and Chuangjie Xu.",
     "location": "LT209 and Online",
-    "material": []
+    "material": [
+      {
+       "tag": "Link",
+       "address": "https://github.com/fredrikNordvallForsberg/TypeTopology/blob/exponentiation/source/Ordinals/Exponentiation.lagda",
+       "linkDescription": "Agda formalisation (messy, WIP)"
+      }
+    ]
   },
   {
     "tag": "Talk",
