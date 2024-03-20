@@ -130,8 +130,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Softmax is Argmax, and the Logic of the Reals",
+    "abstract": "I will report some work in progress on the semiotics of softmax. This is an operator used in machine learning (but familiar to physicists way before that) to normalize a log-distribution, turning a vector of (thus, a function valued in) logits (i.e. additive reals) into a probability distribution. Its name is due to the fact it acts as a 'probabilistic argmax', since the modes of a softmax distribution reflects the minima (by an accident of duality) of the function. I will show an attempt to make this statement precise, by exhibiting the semantics of a 'very linear logic' on the *-autonomous quantale of extended multiplicative reals. In this logic, additive connectives are also linear, but are still in the same algebraic relation with the multiplicative ones. I will show how to define quantifiers, and thus softmax. If time permits, I'll show a construction of an enriched equipment of relations in which softmax should be characterizable as a Kan lift, in the same way argmax is characterized as a Kan lift in relations.",
     "location": "LT209 and Online",
     "material": []
   },
