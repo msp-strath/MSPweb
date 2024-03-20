@@ -22,6 +22,16 @@
     "description": ""
   },
   {
+    "tag": "SpecialEvent",
+    "date": "2024-29-03T15:00:00Z",
+    "endDate": "2024-29-03T16:00:00Z",
+    "title": "No talk this week (Easter Bank Holiday)",
+    "url": "",
+    "location": "",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2024-03-15T15:00:00Z",
     "speaker": "Fredrik Nordvall Forsberg",
