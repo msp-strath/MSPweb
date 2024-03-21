@@ -46,6 +46,11 @@
        "tag": "Link",
        "address": "https://github.com/fredrikNordvallForsberg/TypeTopology/blob/exponentiation/source/Ordinals/Exponentiation.lagda",
        "linkDescription": "Agda formalisation (messy, WIP)"
+      },
+      {
+       "tag": "Link",
+       "address": "https://www.youtube.com/watch?v=o9llIj0nlz4",
+       "linkDescription": "Video"
       }
     ]
   },
