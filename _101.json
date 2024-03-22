@@ -153,7 +153,12 @@
          "tag": "Link",
          "address": "https://msp.cis.strath.ac.uk/101/slides/2024-03-22_capucci.pdf",
          "linkDescription": "Slides"
-        }
+       },
+       {
+         "tag": "Link",
+         "address": "https://www.youtube.com/watch?v=y1rpNTHOsf4",
+         "linkDescription": "Video"
+       }
 ]
   },
   {
