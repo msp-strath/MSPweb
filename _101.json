@@ -121,7 +121,7 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "Foundational Structures for Communicating Process",
+    "title": "Foundational Structures for Communicating Processes",
     "abstract": "In 2009 Cockett and Pastro introduced a model for a typed process calculus in terms of a ‘linear actegory’. They note that the sequent rules of their calculus can be naturally viewed as living in a ‘poly-actegory’, a polycategory whose terms are additionally indexed by a list of objects of a multicategory, of ‘message types’. Although poly-actegories are mainly used as a tool to study the soundness of their language, they could arguably be taken as the foundational concept. <br/> Indeed recently Shulman has proposed a nearly identical structure under the name ‘LNL-polycategories’. Shulman shows that by asking that different collections of universal properties be present, LNL-polycategories may be used as a model for the LNL calculus, CBPV, and other models of effectful calculi. Inspired by this I will survey the universal properties required for implementing the basic communication primitives in a process calculus. With this framework, we can compare process models with the structures present in linear logic models, or effectful models, offering an additional perspective into the existing connections between the pi-calculus and linear logic or algebraic effects.
 ",
     "location": "LT209 and Online",
