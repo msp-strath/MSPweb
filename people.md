@@ -89,6 +89,7 @@ Dr William Waites
 :   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
     See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
 
+
 Stuart Gale
 
 :   who is a PhD student under Conor McBride's direction.
@@ -147,7 +148,10 @@ Dilsat Yuksel
 
 :   who is a PhD student under Conor McBride and [Viv Kendon](https://kendon.info/viv/)'s direction.
 
+April Gonçalves
 
+:   who is a PhD student under Bob Atkey's direction.
+    [April's homepage](https://cyberglot.space/).
 
 ### Alumni ###
 
