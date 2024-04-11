@@ -79,34 +79,15 @@ Dr William Waites
 :   who is interested in dependent types, type theory and programming language design and their application in making systems more trustworthy.
     See [Jan's homepage](https://tyde.systems) for more information or email [Jan.de-Muijnck-Hughes [at] strath.ac.uk]([Jan.de-Muijnck-Hughes [at] strath.ac.uk).
 
-
 [Dr Ross Horne](https://pureportal.strath.ac.uk/en/persons/ross-horne)
 
 :   who is interested in concurrency and logic, and their applications to analysing threats to security and privacy.
     See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk]([mailto:ross.horne [at] strath.ac.uk).
 
-
-
-
-[Dr Jade Master](https://pureportal.strath.ac.uk/en/persons/jade-master/)
-
-:   who is interested in the compositionality of formal verification and programming within a coalgebraic framework.
-    See [Jade's homepage](https://sites.google.com/view/jadeedenstarmaster/home/) or email
-    [jade.master [at] strath.ac.uk](mailto:jade.master [at] strath.ac.uk)
-
 [Wen Kokke](https://pureportal.strath.ac.uk/en/persons/kerewin-kokke)
 
 :   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
     See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
-
-Stevan Andjelkovic
-
-:   who is a PhD student under Conor McBride's direction.
-
-Ben Price
-
-:   who is a PhD student under Neil Ghani's direction.
-    [Ben's homepage](https://personal.cis.strath.ac.uk/benjamin.price).
 
 Stuart Gale
 
@@ -121,15 +102,6 @@ Simone Barlocco
 Alasdair Lambert
 
 :   who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
-
-Joseph Collins
-
-:   who is a PhD student under Ross Duncan's direction.
-
-James Wood
-
-:   who is a PhD student under Bob Atkey's direction.
-    [James' homepage](https://personal.cis.strath.ac.uk/james.wood.100/).
 
 Malin Altenm&uuml;ller
 
@@ -179,6 +151,19 @@ Dilsat Yuksel
 
 ### Alumni ###
 
+[Dr Jade Master](https://sites.google.com/view/jadeedenstarmaster/home/)
+
+:   who worked as an RA on Clemens Kupke's COVER project, and is also interested in the compositionality of formal verification and programming within a coalgebraic framework.
+
+Dr Joseph Collins
+
+:   who was a PhD student under Ross Duncan's direction. Joe successfully
+    defended his thesis "Hopf-Frobenius Algebras" in January 2024, with Chris
+    Heunen as external examiner, and Jules Hedges as internal.
+[Dr James Wood](https://personal.cis.strath.ac.uk/james.wood.100/)
+
+:   who was a PhD student under Bob Atkey's direction. James passed his viva in January 2024 with external examiner Kathrin Stark, and internal examiner Guillaume Allais. His thesis is entitled "A Framework for Semiring-Annotated Type Systems".
+
 
 Ethel Morgan
 
@@ -190,7 +175,7 @@ Ethel Morgan
 
 [Dr Jérémy Ledent](https://www.irif.fr/~ledent/)
 
-:   who worked as an RA on Neil Ghani's project Compisitional Game Theory
+:   who worked as an RA on Neil Ghani's project Compositional Game Theory
     and is also interested in concurrency, topology, and epistemic logic.
 
 Craig Roy
@@ -208,6 +193,14 @@ Dr Phil Scott
 :   who was a KTP Associate at
     [Symphonic Software](http://www.symphonicsoft.com/) under Bob
     Atkey's direction.
+
+Stevan Andjelkovic
+
+:   who was a PhD student under Conor McBride's direction.
+
+Ben Price
+
+:   who was a PhD student under Neil Ghani's and Conor McBride's direction.
 
 Dr Kevin Dunne
 
