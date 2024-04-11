@@ -163,7 +163,7 @@ Dr Joseph Collins
 
 [Dr James Wood](https://personal.cis.strath.ac.uk/james.wood.100/)
 
-:   who was a PhD student under Bob Atkey's direction. James passed his viva in January 2024 with external examiner Kathrin Stark, and internal examiner Guillaume Allais. His thesis is entitled "A Framework for Semiring-Annotated Type Systems".
+:   who was a PhD student under Bob Atkey's direction. James passed his viva in January 2024 with external examiner Kathrin Stark, and internal examiner Conor McBride. His thesis is entitled "A Framework for Semiring-Annotated Type Systems".
 
 
 Ethel Morgan
