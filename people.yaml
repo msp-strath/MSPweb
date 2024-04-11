@@ -179,34 +179,6 @@
 ##############################################################################
 ## Research staff
 
-- name: "Jérémy Ledent"
-  ident: "jeremy"
-  title: "Dr"
-  status: "research"
-  email: "jeremy.ledent@strath.ac.uk"
-  links:
-    - href: "http://personal.cis.strath.ac.uk/jeremy.ledent/"
-      rel: "homepage"
-    - href: "ledentjeremydr"
-      rel: "staff"
-  description:
-    who is interested in concurrency, topology, epistemic logic and
-    category theory.
-
-- name: "Jade Master"
-  ident: "jade"
-  title: "Dr"
-  status: "research"
-  email: "jade.master@strath.ac.uk"
-  links:
-    - href: "https://sites.google.com/view/jadeedenstarmaster/home/"
-      rel: "homepage"
-    - href: "https://pureportal.strath.ac.uk/en/persons/jade-master/"
-      rel: "pure"
-  description:
-    who is interested in the compositionality of formal verification and
-    programming within a coalgebraic framework.
-
 - name: "Wen Kokke"
   ident: "wen"
   status: "research"
@@ -257,21 +229,6 @@
   status: "phd-student"
   description:
     who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
-
-- name: "Joseph Collins"
-  ident: "joe"
-  status: "phd-student"
-  description:
-    who is a PhD student under Ross Duncan's direction.
-
-- name: "James Wood"
-  ident: "james"
-  status: "phd-student"
-  description:
-    who is a PhD student under Bob Atkey's direction.
-  links:
-    - href: "https://personal.cis.strath.ac.uk/james.wood.100/"
-      rel: "homepage"
 
 - name: "Malin Altenmüller"
   ident: "malin"
@@ -349,6 +306,27 @@
 
 ##############################################################################
 ## Finished PhDs
+
+- name: "Joseph Collins"
+  ident: "joe"
+  status: "phd-finished"
+  description:
+    who was a PhD student under Ross Duncan's direction. Joe successfully
+    defended his thesis \"Hopf-Frobenius Algebras\" in January 2024, with Chris
+    Heunen as external examiner, and Jules Hedges as internal.
+
+- name: "James Wood"
+  ident: "james"
+  status: "phd-finished"
+  description:
+    who was a PhD student under Bob Atkey's direction. James passed his viva
+    in January 2024 with external examiner Kathrin Stark, and internal examiner
+    Guillaume Allais. His thesis is entitled \"A Framework for
+    Semiring-Annotated Type Systems\".
+  links:
+    - href: "https://personal.cis.strath.ac.uk/james.wood.100/"
+      rel: "homepage"
+
 
 - name: "Bruno Gavranović"
   status: "phd-finished"
@@ -449,6 +427,26 @@
 
 ##############################################################################
 ## Alumni
+
+
+- name: "Jérémy Ledent"
+  ident: "jeremy"
+  title: "Dr"
+  status: "alum"
+  description:
+    who is interested in concurrency, topology, epistemic logic and
+    category theory.
+
+- name: "Jade Master"
+  ident: "jade"
+  title: "Dr"
+  status: "alum"
+  links:
+    - href: "https://sites.google.com/view/jadeedenstarmaster/home/"
+      rel: "homepage"
+  description:
+    who is interested in the compositionality of formal verification and
+    programming within a coalgebraic framework.
 
 - name: "Ethel Morgan"
   status: "alum"
