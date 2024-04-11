@@ -160,6 +160,7 @@ Dr Joseph Collins
 :   who was a PhD student under Ross Duncan's direction. Joe successfully
     defended his thesis "Hopf-Frobenius Algebras" in January 2024, with Chris
     Heunen as external examiner, and Jules Hedges as internal.
+
 [Dr James Wood](https://personal.cis.strath.ac.uk/james.wood.100/)
 
 :   who was a PhD student under Bob Atkey's direction. James passed his viva in January 2024 with external examiner Kathrin Stark, and internal examiner Guillaume Allais. His thesis is entitled "A Framework for Semiring-Annotated Type Systems".
