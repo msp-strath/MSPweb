@@ -1,10 +1,10 @@
 [
   {
     "tag": "Talk",
-    "date": "2024-04-17T16:00:00Z",
+    "date": "2024-04-17T13:00:00Z",
     "speaker": "Dov M. Gabbay",
     "speakerurl": "https://en.wikipedia.org/wiki/Dov_Gabbay",
-    "institute": " Augustus De Morgan Professor Emeritus of Logic at the Group of Logic, Language and Computation, Department of Computer Science, King's College London",
+    "institute": "Augustus De Morgan Professor Emeritus of Logic at, King's College London",
     "insturl": "",
     "title": "Intro to argumentation",
     "abstract": "This is a blackboard talk introducing the audience to argumentation.",
