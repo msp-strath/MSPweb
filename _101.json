@@ -121,8 +121,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Modal Fixpoint Logics, Categorically",
+    "abstract": "Fixpoint logics are fun and exciting - they're second-order, which makes them quite expressive, but they still enjoy neat algorithmic properties. They're also difficult to work with; proofs are often intricate beasts, with swarms of technical lemmas and taylor-made tools. While this can be rewarding to work your way through, it's not necessarily efficient, and commonalities and similarities are often not exploited. <br/> This makes modal fixpoint logics an excellent target for us category theorists - finding and formalizing commonalities is our bread and butter. There's an exceedingly elegant framework for defining and working with one-step modal logics, based on dual adjunctions. In this talk, I'll sketch how (certain) modal fixpoint logics may be treated in the same way. I'll assume familiarity with category theory and basic (Kripke) modal logic, but not much else. <br/> This is joint work with Clemens Kupke, Jurriaan Rot and Ruben Turkenburg.",
     "location": "LT209 and Online",
     "material": []
   },
