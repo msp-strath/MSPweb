@@ -110,7 +110,7 @@
     "institute": "MSP",
     "insturl": "",
     "title": "Free Relative Monads and Kan Algebras for Type and Scope Safe DSLs",
-    "abstract": "What are relative monads and why are they interesting? Functional programmers are familiar with using fixpoints of endofunctors and free monads to model datatype-generic evaluators. In this applied talk we will see how free relative monads allow us to extend these techniques to the realm of well-scoped and well-typed languages with binders.  A crucial role will be played by kan extensions: in a slogan, "Left Kan Extensions for Syntax, Right Kan Extensions for Semantics.",
+    "abstract": "What are relative monads and why are they interesting? Functional programmers are familiar with using fixpoints of endofunctors and free monads to model datatype-generic evaluators. In this applied talk we will see how free relative monads allow us to extend these techniques to the realm of well-scoped and well-typed languages with binders.  A crucial role will be played by kan extensions: in a slogan, \"Left Kan Extensions for Syntax, Right Kan Extensions for Semantics\".",
     "location": "LT209 and Online",
     "material": []
   },
