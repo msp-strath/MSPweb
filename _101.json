@@ -97,8 +97,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "A Coalgebraic Interpretation of the Lee/Yannakakis Minimisation Algorithm",
+    "abstract": "Minimisation of transition systems wrt bisimulation is important for the verification of properties of such systems. In my talk I will discuss a minimisation algorithm by Lee and Yannakakis, that intertwines minimisation with reachability checking. The algorithm caught our eye due to clear similarities with our own variant of Angluin's algorithm that allows to learn a minimal, reachable quotient of a given transition system. In the talk I aim to compare Lee/Yannakakis and Angluin and will sketch a possible coalgebraic generalisation of the Lee/Yannakakis algorithm. This is based on ongoing joint work with Simone Barlocco.",
     "location": "LT209 and Online",
     "material": []
   },
