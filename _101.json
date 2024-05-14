@@ -85,8 +85,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "What is deep inference?",
+    "abstract": "Deep inference is a branch of proof theory where inference rules can be applied in any context, much like in categorical logic. What I find fun in this area is that it has been used to define new logics for which there exists no sequent calculus nor even a semantics (yet). I'll introduce some simple deep inference systems first. Next, I'll point to recent work where we generalise logic beyond formulas to graphs.",
     "location": "LT209 and Online",
     "material": []
   },
