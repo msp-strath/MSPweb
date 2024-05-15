@@ -79,8 +79,18 @@
     "material": []
   },
   {
-    "tag": "Talk",
+    "tag": "SpecialEvent",
     "date": "2024-05-31T15:00:00Z",
+    "endDate": "2024-03-29T16:00:00Z",
+    "title": "No talk this week",
+    "url": "",
+    "location": "",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-06-07T15:00:00Z",
     "speaker": "Guillaume Allais",
     "speakerurl": "",
     "institute": "MSP",
