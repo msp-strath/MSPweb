@@ -73,8 +73,10 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Propagating Rose Trees with Dependent Types to Grow Shaped ASTs Generically",
+    "abstract": "Dependently typed languages support the construction of intrinsically-typed (well-scoped) terms, ensuring that our core language representations are correct-by-construction. The datatypes we use to represent Abstract Syntax Trees (AST) are not well-typed nor well-scoped, nor should they be. Nonetheless, ASTs are often represented as a collection of bespoke datatypes that capture what it means for an AST to be ‘well-structured’. Such artisan crafting of our ASTs comes at the price of generality. We must define the same traversals and operations time and time again over each AST.
+<br/>
+Taking inspiration from intrinsically-typed datatypes and compact encoding of primitives, we show how rose trees can have their shape dictated by a description contained within a dependent type. We can thus, describe (type) the structure of our ASTs similar to how we describe the concrete syntax using eBNF and embed the description inside a pre-existing datatype. Through this novel combination, we now have a single generic datatype for ASTs and single operations that act on them.",
     "location": "LT209 and Online",
     "material": []
   },
