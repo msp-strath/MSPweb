@@ -97,8 +97,8 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "From Separation Logic to Dependent Parallel Skeletons",
+    "abstract": "I will give a high level motivation for separation logic and then show how we can (WIP) use these ideas in Quantitative Type Theory as implemented in Idris 2 to give a correct-by-construction treatment of effectful parallel programming over buffers.",
     "location": "LT209 and Online",
     "material": []
   },
