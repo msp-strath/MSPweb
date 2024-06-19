@@ -265,6 +265,9 @@
   status: "phd-student"
   description:
     who is a PhD student under Bob Atkey and Conor McBride's direction.
+  links:
+    - href: "https://andrevidela.com/"
+      rel: "homepage"
 
 - name: "Ezra Schoen"
   ident: "ezra"
