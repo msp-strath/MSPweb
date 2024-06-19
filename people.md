@@ -125,6 +125,7 @@ Eigil Rischel
 André Videla
 
 :   who is a PhD student under Bob Atkey and Conor McBride's direction.
+    [André's homepage](https://andrevidela.com/).
 
 Ezra Schoen
 
