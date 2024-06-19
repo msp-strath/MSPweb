@@ -277,6 +277,9 @@
   status: "phd-student"
   description:
     who is a PhD student under Jules Hedges' direction.
+  links:
+    - href: "https://riurodsak.github.io/"
+      rel: "homepage"
 
 - name: "Dylan Braithwaite"
   ident: "dylan"
