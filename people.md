@@ -133,6 +133,7 @@ Ezra Schoen
 Riu Rodríguez Sakamoto
 
 :   who is a PhD student under Jules Hedges' direction.
+    [Riu's homepage](https://riurodsak.github.io/).
 
 Dylan Braithwaite
 
