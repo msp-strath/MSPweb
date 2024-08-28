@@ -18,12 +18,6 @@ at the University of Strathclyde and comprises
     [here](http://www.cis.strath.ac.uk/~ng/neil.jpg) is a picture of
     Neil.
 
-[Prof. Radu Mardare](https://personal.cis.strath.ac.uk/r.mardare/)
-
-:   who is interested in mathematical tools for modelling and reasoning about systems,
-    especially in the use of metric spaces for quantitative and probabilistic reasoning.
-    Contact Radu at [r.mardare [at] strath.ac.uk](mailto:r.mardare [at] strath.ac.uk).
-
 [Prof. Glynn Winskel](https://pureportal.strath.ac.uk/en/persons/glynn-winskel)
 
 :   who works on mathematical models of interaction such as distributed games and event structures.
@@ -65,30 +59,19 @@ at the University of Strathclyde and comprises
     using tools of category theory and functional programming. See
     [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk).
 
-Dr William Waites
-
-:   who works on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory. See
-    [William' homepage](https://personal.cis.strath.ac.uk/william.waites/) or email [william.waites [at] strath.ac.uk](mailto:william.waites [at] strath.ac.uk).
-
 [Dr Guillaume Allais](https://pureportal.strath.ac.uk/en/persons/guillaume-allais-2)
 
-:   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](guillaume.allais [at] strath.ac.uk).
+:   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](mailto:guillaume.allais [at] strath.ac.uk).
 
 [Dr Jan de Muijnck-Hughes](https://www.strath.ac.uk/staff/de_muijnck-hughesjandr/)
 
 :   who is interested in dependent types, type theory and programming language design and their application in making systems more trustworthy.
-    See [Jan's homepage](https://tyde.systems) for more information or email [Jan.de-Muijnck-Hughes [at] strath.ac.uk]([Jan.de-Muijnck-Hughes [at] strath.ac.uk).
+    See [Jan's homepage](https://tyde.systems) for more information or email [Jan.de-Muijnck-Hughes [at] strath.ac.uk](mailto:Jan.de-Muijnck-Hughes [at] strath.ac.uk).
 
 [Dr Ross Horne](https://pureportal.strath.ac.uk/en/persons/ross-horne)
 
 :   who is interested in concurrency and logic, and their applications to analysing threats to security and privacy.
-    See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk]([mailto:ross.horne [at] strath.ac.uk).
-
-[Wen Kokke](https://pureportal.strath.ac.uk/en/persons/kerewin-kokke)
-
-:   who is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
-    See [Wen's homepage](https://wen.works) or email [wen.kokke [at] strath.ac.uk](mailto:wen.kokke [at] strath.ac.uk).
-
+    See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk](mailto:ross.horne [at] strath.ac.uk).
 
 Stuart Gale
 
@@ -156,6 +139,20 @@ April Gonçalves
     [April's homepage](https://cyberglot.space/).
 
 ### Alumni ###
+
+Prof. Radu Mardare
+
+:   who worked on mathematical tools for modelling and reasoning about systems,
+    especially in the use of metric spaces for quantitative and probabilistic reasoning.
+
+[Wen Kokke](https://wen.works)
+
+:   who worked as an RA on Bob Atkey's AISEC project, and is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
+
+Dr William Waites
+
+:   who worked on modelling infectious diseases using tools such as stochastic graph rewriting and evolutionary game theory.
+
 
 [Dr Jade Master](https://sites.google.com/view/jadeedenstarmaster/home/)
 
