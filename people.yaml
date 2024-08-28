@@ -19,21 +19,6 @@
   phd-topics:
     - "Categorical Machine Learning"
 
-- name: "Radu Mardare"
-  ident: "radu"
-  title: "Prof."
-  status: "academic"
-  email: "radu.mardare@strath.ac.uk"
-  links:
-    - href: "https://personal.cis.strath.ac.uk/r.mardare/"
-      rel: "homepage"
-  description:
-    who is interested in mathematical tools for modelling and reasoning
-    about systems, especially in the use of metric spaces for quantitative
-    and probabilistic reasoning.
-  phd-topics:
-    - "Quantitative Reasoning"
-
 - name: "Glynn Winskel"
   ident: "glynn"
   title: "Prof"
@@ -133,20 +118,6 @@
   phd-topics:
     - "Categorical Cybernetics"
 
-- name: "William Waites"
-  ident: "william"
-  title: "Dr"
-  status: "academic"
-  email: "william.waites@strath.ac.uk"
-  links:
-    - href: "https://personal.cis.strath.ac.uk/william.waites/"
-      rel: "homepage"
-  description:
-    who works on modelling infectious diseases using tools such as
-    stochastic graph rewriting and evolutionary game theory.
-  phd-topics:
-    - "Infectious Disease Modelling"
-
 - name: "Guillaume Allais"
   ident: "gallais"
   title: "Dr"
@@ -160,7 +131,6 @@
   description:
     who is interested in efficient runtime representations, generic
     programming, proof automation, and user experience.
-
 
 - name: "Ross Horne"
   ident: "horne"
@@ -176,22 +146,23 @@
     who is interested in concurrency and logic,
     and their applications to verifying the security and privacy or protocols.
 
+- name: "Jan de Muijnck-Hughes"
+  ident: "jan"
+  title: "Dr"
+  status: "academic"
+  email: "Jan.de-Muijnck-Hughes@strath.ac.uk."
+  links:
+    - href: "https://pureportal.strath.ac.uk/en/persons/jan-de-muijnck-hughes/"
+      rel: "pure"
+    - href: "https://tyde.systems/"
+      rel: "homepage"
+  description:
+    who is interested in dependent types, type theory and programming
+    language design and their application in making systems more trustworthy.
+
 ##############################################################################
 ## Research staff
 
-- name: "Wen Kokke"
-  ident: "wen"
-  status: "research"
-  email: "wen.kokke@strath.ac.uk"
-  links:
-    - href: "https://wen.works"
-      rel: "homepage"
-    - href: "https://pureportal.strath.ac.uk/en/persons/kerewin-kokke"
-      rel: "pure"
-  description:
-    who is interested in dependent types, linear types and other
-    substructural friends, lightweight verification, and verification
-    of machine learning.
 
 ##############################################################################
 ## PhD students
@@ -442,6 +413,48 @@
 ##############################################################################
 ## Alumni
 
+- name: "William Waites"
+  ident: "william"
+  title: "Dr"
+  status: "alum"
+  email: "william.waites@strath.ac.uk"
+  links:
+    - href: "https://personal.cis.strath.ac.uk/william.waites/"
+      rel: "homepage"
+  description:
+    who works on modelling infectious diseases using tools such as
+    stochastic graph rewriting and evolutionary game theory.
+  phd-topics:
+    - "Infectious Disease Modelling"
+
+- name: "Wen Kokke"
+  ident: "wen"
+  status: "alum"
+  email: "wen.kokke@strath.ac.uk"
+  links:
+    - href: "https://wen.works"
+      rel: "homepage"
+    - href: "https://pureportal.strath.ac.uk/en/persons/kerewin-kokke"
+      rel: "pure"
+  description:
+    who is interested in dependent types, linear types and other
+    substructural friends, lightweight verification, and verification
+    of machine learning.
+
+- name: "Radu Mardare"
+  ident: "radu"
+  title: "Prof."
+  status: "alum"
+  email: "radu.mardare@strath.ac.uk"
+  links:
+    - href: "https://personal.cis.strath.ac.uk/r.mardare/"
+      rel: "homepage"
+  description:
+    who is interested in mathematical tools for modelling and reasoning
+    about systems, especially in the use of metric spaces for quantitative
+    and probabilistic reasoning.
+  phd-topics:
+    - "Quantitative Reasoning"
 
 - name: "Jérémy Ledent"
   ident: "jeremy"
