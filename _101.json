@@ -1,5 +1,15 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2024-09-20T13:00:00Z",
+    "endDate": "2024-09-20T14:00:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310 and Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2024-04-17T13:00:00Z",
     "speaker": "Dov M. Gabbay",
