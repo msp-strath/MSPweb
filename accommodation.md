@@ -21,26 +21,26 @@ There is also an <a href="http://www.strath.ac.uk/maps/livingstonetower/">offici
 
 **By plane.** The closest airports are [Glasgow International Airport](http://www.glasgowairport.com/) (30 minutes bus connection ([bus 500](https://www.firstgroup.com/greater-glasgow/routes-and-maps/glasgow-airport-express)) to George Square), [Edinburgh Airport](http://www.edinburghairport.com/) (1 hour bus connection ([Citylink Air](http://www.citylink.co.uk/citylinkair.php)) to Buchanan Bus Station) and [Glasgow Prestwick Airport](http://www.glasgowprestwick.com/) (40-50 minutes [train connection](http://ojp.nationalrail.co.uk/service/timesandfares/PRA/Glasgow/today/1200/dep) to Glasgow Central).
 
-**By car.** Parking in Glasgow city centre — where the University of Strathclyde is located — is expensive and hard to find. The cheapest and possibly easiest option is to [park and ride](http://www.spt.co.uk/park-ride/).
+**By car.** Parking in Glasgow city centre — where the University of Strathclyde is located — is expensive and hard to find. The cheapest and possibly easiest option is to [park and ride](https://www.spt.co.uk/travel-with-spt/other-travel-options/park-and-ride/).
 
 ### Getting around
 
  The city centre is quite compact, so walking is not a bad idea. Otherwise your options are suburban trains, the subway, bikes for hire, buses or taxis. You will need a separate ticket for each mode of transport.
 
-*   You can buy [train](https://www.scotrail.co.uk/) tickets using ticket machines at most stations (if you can't, you can buy them on the train, or before leaving the destination station). Bafflingly, it's sometimes cheaper to buy a return ticket, and even if not, the difference in price is going to be minimal, so you might as well always buy the return. After 9am, you can use a cheaper "off-peak" ticket.
-*   The [Subway](http://www.spt.co.uk/subway/) is easy to use, but does not reach all parts of the city. A single ticket costs £1.70, and a return £3.20, so you might as well get two singles unless you are sure you are going to return on the subway again.
-*   [Nextbike](https://www.nextbike.co.uk/en/glasgow/) operates a bike sharing scheme with stations all across the city. You sign up and then rent the bikes using an app on your phone, which will give you a code to unlock them. Without a yearly subscription, the price is £1/30 minutes; this should be enough time to get you to most places in Glasgow, and is the cheapest non-walking option.
-*   Most buses in Glasgow are operated by [First](https://www.firstgroup.com/greater-glasgow). You will need exact change (typically either £1.65 for a "short journey", or £2.10; you can tell the bus driver where you are going, and they will hopefully tell you the price), or a contactless debit/credit card. It is probably easiest to use [Google maps](https://goo.gl/maps/uXvhQXNGAbY8Btka8) to figure out which bus to get, and when.
+*   You can buy [train](https://www.scotrail.co.uk/) tickets in the ScotRail mobile phone app, using ticket machines at most stations (if you can't, you can buy them on the train, or before leaving the destination station). Bafflingly, it's sometimes cheaper to buy a return ticket, and even if not, the difference in price is going to be minimal, so you might as well always buy the return. After 9am, you can use a cheaper "off-peak" ticket.
+*   The [Subway](http://www.spt.co.uk/subway/) is easy to use, but does not reach all parts of the city. A single ticket costs £1.80, and a return £3.40, so you might as well get two singles unless you are sure you are going to return on the subway again.
+*   [Nextbike](https://www.nextbike.co.uk/en/glasgow/) operates a bike sharing scheme with stations all across the city. You sign up and then rent the bikes using an app on your phone, which will give you a code to unlock them. Without a yearly subscription, the price is £2/20 minutes; this might be enough time to get you to many places in Glasgow, and is the cheapest non-walking option.
+*   Most buses in Glasgow are operated by [First](https://www.firstgroup.com/greater-glasgow). You can pay with a contactless debit/credit card (tap on when you enter and tap off when you leave the bus), or with exact cash change. It is suprisingly hard to find out what the cost of a ticket is going to be before you enter the bus. It is probably easiest to use [Google maps](https://goo.gl/maps/uXvhQXNGAbY8Btka8) to figure out which bus to get, and when.
 *   Taxis are reasonably priced in Glasgow. Decent companies include [Hampden cars](http://www.hampdencars.co.uk/) (phone number [0141 332 5050](tel:01413325050)) and [Network Private Hire](http://www.networkprivatehire.com/) (phone number [0141 557 1110](tel:01415571110)). They both have apps for booking a ride, but there is also Uber in the city.
 
 
 ### Hotels
 
-**Budget.** The cheapest nearby option is [Eurohostel](https://www.eurohostels.co.uk/glasgow). It is also worth considering using [Airbnb](https://www.airbnb.co.uk/s/Glasgow).
+**Budget.** A cheap nearby option is [Revolver Hostel](https://revolverhotel.co.uk/). It is also worth considering using [Airbnb](https://www.airbnb.co.uk/s/Glasgow).
 
 **Medium.** A convenient place to stay is the [Glasgow City Centre Premier Inn](https://www.premierinn.com/gb/en/hotels/scotland/strathclyde/glasgow/glasgow-city-centre-george-square.html), literally across the road from Livingstone Tower. (There are several Premier Inn locations in central Glasgow; the closest one is "George Square", but several others are also within walking distance.) Other decent hotels nearby include the [Z Hotel](https://www.thezhotels.com/glasgow) in North Frederick Street and the [Brunswick Hotel](https://www.brunswickhotel.co.uk/) in Brunswick Street.
 
-**Fancy.** The [Moxy Hotel](https://www.marriott.co.uk/hotels/travel/glaox-moxy-glasgow-merchant-city/) is also right next to the University of Strathclyde campus. If you want even fancier, there is the five-star [Blythswood Square Hotel](https://www.phcompany.com/principal/glasgow-blythswood-square/) still within walking distance. 
+**Fancy.** The [Moxy Hotel](https://www.marriott.co.uk/hotels/travel/glaox-moxy-glasgow-merchant-city/) and [AC Hotel](https://www.marriott.com/en-us/hotels/glaar-ac-hotel-glasgow/overview/) are also right next to the University of Strathclyde campus. If you want even fancier, there is the five-star [Blythswood Square Hotel](https://www.kimptonblythswoodsquare.com/) still within walking distance.
 
 
 ### Renting a flat
@@ -51,7 +51,7 @@ Generally, it can be a bit hard to find a place to live in Glasgow, especially f
 Viewings are often fully booked one or two weeks in advance, so you might want to start searching before you arrive in Glasgow.
 Most websites give you the option to receive alerts by e-mail when new ads come up — that is usually a good idea.
 
-**Areas.** A good rule of thumb is to not look north of the motorway, east of Alexandra Park, west of Whiteinch or south of Mount Florida. The following areas are popular:
+**Areas.** A good rule of thumb is to not look north of the motorway, east of Alexandra Park, west of Whiteinch or south of King's Park. The following areas are popular:
 
 * _West End_ (Hyndland, Partick, Hillhead, Woodside): Cafes, pubs, cute shops. Kelvingrove Park, the Botanic Gardens the Kelvin walkway are nice green areas. Expensive. Only train, subway or cycle distance to work.
 
@@ -62,7 +62,7 @@ Most websites give you the option to receive alerts by e-mail when new ads come 
 * _Dennistoun_: A mix of pretentious shops, nice cafes and down-to-earth not-so-nice places. Walking distance to work. Glasgow Green and Alexandra Park are the closest parks, but the north-east edge of the city is also reachable from here.
 
 **Websites.** Most flats are advertised on [Rightmove](https://www.rightmove.co.uk/property-to-rent/Glasgow.html) with a large intersection with [Zoopla](https://www.zoopla.co.uk/).
-It might also be worth looking at [Gumtree](https://www.gumtree.com/property-to-rent) for private landlords not using an estate agent.
+It might also be worth looking at [Gumtree](https://www.gumtree.com/property-to-rent) for private landlords not using an estate agent, or [SpareRoom](https://www.spareroom.co.uk/flatshare/?search_id=1323208246&) for flatshares.
 
 
 ### See and do
@@ -95,3 +95,5 @@ _[Pollok Park](https://www.glasgow.gov.uk/?articleid=16592):_ probably the easie
 *   _[Glengoyne](https://www.glengoyne.com/):_ situated on the [West Highland Way](https://www.walkhighlands.co.uk/west-highland-way.shtml), this feels more like a proper highland distillery. Take the number 10 bus towards Balfron from Buchanon Bus station.
 
 Of course, if all you want to do is to _drink_ whisky, then pubs such as [The Pot Still](http://thepotstill.co.uk/) or [Bon Accord](https://www.bonaccordpub.com/), or shops such as the [Good Spirits co](http://www.thegoodspiritsco.com/) will sort you out.
+
+**Hiking**. The closest mountains to Glasgow are the [Kilpatrick Hills](https://www.west-dunbarton.gov.uk/leisure-parks-events/parks-and-greenspaces/kilpatrick-hills/), the [Campsie Fells](http://www.thecampsies.co.uk/) and [Clyde Muirshiel Regional Park](https://clydemuirshiel.co.uk/), all easily accessible by public transport. Not much further afield are areas with proper Munros such as the Arrochar Alps along the West Highland train line, or the mountains on the Isle of Arran. The [Walkhighlands](https://www.walkhighlands.co.uk/) website has many excellent route suggestions.
