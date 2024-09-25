@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2024-09-27T13:00:00Z",
+    "speaker": "Conor McBride",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Effing W",
+    "abstract": "I shall revisit the Hindley-Milner type system for the traditional Core ML (old sense) language of variables, application, monomorphic abstraction and polymorphic definition, to give a new twist on its implementation. In particular, I shall consider the role that the context plays in the type inference process, and then make it disappear, replacing context-as-data-structure with context-as-control-structure, demonstrating the power of effects and handlers. The extra ingredient which gives this new recipe its spice is to index with respect to a suitably compositional notion of \"progress\". I shall make that disappear, too!",
+    "location": "LT210 and Online",
+    "material":  []
+  },
+  {
     "tag": "SpecialEvent",
     "date": "2024-09-20T13:00:00Z",
     "endDate": "2024-09-20T14:00:00Z",
