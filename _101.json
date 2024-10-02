@@ -1,4 +1,16 @@
 [
+    {
+    "tag": "Talk",
+    "date": "2024-10-04T13:00:00Z",
+    "speaker": "André Videla",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Cooking with Proofs",
+    "abstract": "The Curry-Howard correspondence says that types are propositions and programs are proofs. But what proof is Super Mario World on the SNES? In this introductory presentation we'll explore how the Curry-Howard correspondence manifests in different programming environments and how to employ it for software development.",
+    "location": "LT210 and Online",
+    "material":  []
+  },
   {
     "tag": "Talk",
     "date": "2024-09-27T13:00:00Z",
