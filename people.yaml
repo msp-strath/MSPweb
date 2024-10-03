@@ -163,6 +163,14 @@
 ##############################################################################
 ## Research staff
 
+- name: "Clovis Eberhart"
+  ident: "clovis"
+  status: "research"
+  links:
+    - href: "https://pureportal.strath.ac.uk/en/persons/clovis-eberhart"
+    - rel: "pure"
+  description:
+    who is an RA working with Clemens Kupke.
 
 ##############################################################################
 ## PhD students
@@ -287,6 +295,12 @@
   description:
     who is a PhD student under Bob Atkey's direction.
     [April's homepage](https://cyberglot.space/).
+
+- name: "Samuel Fish"
+  ident: "sam"
+  status: "phd-student"
+  description:
+    who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
 
 ##############################################################################
