@@ -73,6 +73,10 @@ at the University of Strathclyde and comprises
 :   who is interested in concurrency and logic, and their applications to analysing threats to security and privacy.
     See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk](mailto:ross.horne [at] strath.ac.uk).
 
+[Dr Clovis Eberhart](https://pureportal.strath.ac.uk/en/persons/clovis-eberhart)
+
+:   who is an RA working with Clemens Kupke.
+
 Stuart Gale
 
 :   who is a PhD student under Conor McBride's direction.
@@ -137,6 +141,10 @@ April Gonçalves
 
 :   who is a PhD student under Bob Atkey's direction.
     [April's homepage](https://cyberglot.space/).
+
+Samuel Fish
+
+:   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
 ### Alumni ###
 
