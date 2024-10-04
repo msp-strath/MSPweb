@@ -5,7 +5,7 @@ on:
     branches: [master]
   pull_request:
   schedule:
-    - cron: 10 14 * * * # 10 minutes after 101 slot starts (UTC timezone)
+    - cron: 10 12 * * * # 10 minutes after 101 slot starts (UTC timezone)
 
 env:
   GHC_VERSION: 9.6
@@ -17,10 +17,10 @@ jobs:
     steps:
       ##### Setup ##############################################
       - name: Checkout repository
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
 
       - name: Detect if we should rebuild the binaries
-        uses: dorny/paths-filter@v2
+        uses: dorny/paths-filter@v3
         id: changes
         if: github.event_name != 'schedule'
         with:
@@ -38,7 +38,7 @@ jobs:
           cabal-version: 'latest'
 
       - name: Cache cabal and executables
-        uses: actions/cache@v3
+        uses: actions/cache@v4
         with:
           path: |
             ~/.cabal/store
