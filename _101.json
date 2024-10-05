@@ -1,5 +1,125 @@
 [
-    {
+  {
+    "tag": "Talk",
+    "date": "2024-12-13T13:00:00Z",
+    "speaker": "Neil Ghani",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Scientific anarchy",
+    "abstract": "TBD",
+    "location": "LT and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-12-06T13:00:00Z",
+    "speaker": "Clemens Kupke",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Parity graphs",
+    "abstract": "TBD",
+    "location": "LT210 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-11-29T13:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Theory of datatypes (containers/IR/QIITs)",
+    "abstract": "TBD",
+    "location": "LT210 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-11-22T13:00:00Z",
+    "speaker": "Danielle Marshall",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "TBC",
+    "abstract": "TBC",
+    "location": "LT and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-11-15T13:00:00Z",
+    "speaker": "Jade Master",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Categorical semantics of dependent type theory",
+    "abstract": "TBD",
+    "location": "LT and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-11-08T13:00:00Z",
+    "speaker": "Bob Atkey",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "How to make good choices",
+    "abstract": "TBD",
+    "location": "LT210 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-11-01T13:00:00Z",
+    "speaker": "Guillaume Allais",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Partial evaluation",
+    "abstract": "TBD",
+    "location": "LT and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-10-28T14:00:00Z",
+    "speaker": "Sean Watters",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "De Bruijn indices and the &micro;-calculus",
+    "abstract": "TBD",
+    "location": "LT714 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-10-18T13:00:00Z",
+    "speaker": "Clovis Eberhart",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "TBD",
+    "abstract": "TBD",
+    "location": "LT714 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
+    "date": "2024-10-11T13:00:00Z",
+    "speaker": "Jan de Muijnck-Huges",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "Bidirectional Typing & Session Types, A Beautiful Friendship?",
+    "abstract": "Session Types are a neat typing discipline to reason both statically and dynamically about program interaction. An interesting question is how best we should check communicating programs against a given global type.</p>Bidirectional typing is an important technique for programming language design and implementation, enabling us to transform the theory of how we should check the type of a term and incorporate the practice of inferring the term's type.</p>This talk serves as a gentle introduction to bidirectional type system design and session types, and how combining the two can help make type checking session typed programs that little bit easier.",
+    "location": "LT714 and Online",
+    "material":  []
+  },
+  {
     "tag": "Talk",
     "date": "2024-10-04T13:00:00Z",
     "speaker": "André Videla",
@@ -1990,12 +2110,12 @@ This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens 
       },
       {
         "tag": "Link",
-        "address": "https://gitlab.com/avidela/neko/-/blob/main/src/Section4Correction.idr/",
+        "address": "https://gitlab.com/avidelaeko/-/blob/main/src/Section4Correction.idr/",
         "linkDescription": "Source code"
       },
       {
         "tag": "Link",
-        "address": "https://gitlab.com/avidela/neko/-/raw/main/Notes/Category%20theory%20stlc%20reference.jpg/",
+        "address": "https://gitlab.com/avidelaeko/-/raw/main/Notes/Category%20theory%20stlc%20reference.jpg/",
         "linkDescription": "Notes"
       }]
   },
