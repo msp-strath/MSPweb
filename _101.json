@@ -102,8 +102,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
+    "title": "A Compositional Approach to Verification Models",
+    "abstract": "We will present a compositional approach to graph-like verification models (e.g., parity games, Markov decision processes, or Petri nets) based on <q>open</q> structures. Such open structures are graphs with potentially dangling edges called <q>open ends</q>, and which form interfaces along which open structures can be composed. We thus define a syntactic category of interfaces and open structures between them. We then define a semantic category representing relevant information about the structure (e.g., a category of probabilistic rewards). Finding an interpretation functor from the syntactic category to the semantic one shows that these structures' semantics can be computed compositionally. (This is joint work with Kazuki Watanabe, Kazuyuki Asada, Ichiro Hasuo, and Serge Lechenne.)",
     "location": "LT714 and Online",
     "material":  []
   },
