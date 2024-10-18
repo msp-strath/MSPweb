@@ -90,9 +90,9 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "De Bruijn indices and the &micro;-calculus",
-    "abstract": "TBD",
-    "location": "LT714 and Online",
+    "title": "The Madness of the Modal &micro;-Calculus",
+    "abstract": "In this talk, I'll give you the <q>what</q>, <q>why</q>, and <q>how</q> of the &micro;-calculus - what it is, why I find it interesting (and hopefully why you should too!), and how to tame it in Agda. </p>I'll start by introducing and motivating the field of model checking, before quickly diverting to the modal &micro;-calulus, a fixpoint modal logic of foundational importance in that field. I'll talk about its semantics first, because that's only sensible, then the rest of the talk will be devoted to the weird and wonderful (but mostly weird) syntactic issues that arise from this formalism. In particular, I'll focus on an important syntactic construction called <q>the closure</q> of a &micro;-calculus formula, which is not stable under alpha-equivalence, and whose inductive structure is somewhat non-obvious. </p>In the second half, we'll code up an implementation of the &micro;-calculus in Agda, which will also serve as an introduction to well-scoped De Bruijn syntax. I'll work towards defining parallel substitution and weakening, and finish with the definition of the closure, and a (very) brief sketch of its correctness proof. The data type of thinnings between natural numbers will feature. </p>If there's time (which there probably won't be), I'll discuss an extension of well-scoped De Bruijn syntax that I've been calling <q>sublimely-scoped</q> syntax, which is still very WIP.",
+    "location": "LT310 and Online",
     "material":  []
   },
   {
