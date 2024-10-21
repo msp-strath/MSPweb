@@ -128,8 +128,10 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s $
                      ("<b>(.*?)</b>", "*\\1*"),
                      ("<i>(.*?)</i>", "/\\1/"),            -- italic
                      ("<dfn>(.*?)</dfn>", "/\\1/"),
+                     ("<q>(.*?)</q>", "\"\\1\""),          -- quoted
                      ("<br/>|<br>", "\n"),                 -- line breaks
-                     ("<p>(.*?)</p>", "\\1\n\n"),          -- paragraph breaks
+                     ("<p>", ""),          -- paragraph breaks; remove opening tag
+                     ("</p>", "\n\n"),     --   turn closing tag into double linebreaks
                      ("<a\\s+href\\s*=\\s*[\"'](.*?)[\"']>\\1</a>", "\\1"), -- links
                      ("<a\\s+href\\s*=\\s*[\"'](.*?)[\"']>(.*?)</a>", "\\2 (\\1)"),
                      ("<ul>", "\n"),                       -- lists
