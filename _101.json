@@ -79,8 +79,8 @@
     "institute": "MSP",
     "insturl": "",
     "title": "Partial evaluation",
-    "abstract": "TBD",
-    "location": "LT and Online",
+    "abstract": "Partial evaluation shows up all across PL in compilation (optimization), meta-theory (normalization), and code-generation (staging). I will give a gentle introduction to partial evaluation using semantic methods, showing how we can strategically build different models to decide different equational theories. This will be an Agda-mediated live coding show.",
+    "location": "LT309 and Online",
     "material":  []
   },
   {
