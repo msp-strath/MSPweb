@@ -81,7 +81,13 @@
     "title": "Partial evaluation",
     "abstract": "Partial evaluation shows up all across PL in compilation (optimization), meta-theory (normalization), and code-generation (staging). I will give a gentle introduction to partial evaluation using semantic methods, showing how we can strategically build different models to decide different equational theories. This will be an Agda-mediated live coding show.",
     "location": "LT309 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/O-bHGWL7PNY",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -93,7 +99,13 @@
     "title": "The Madness of the Modal &mu;-Calculus",
     "abstract": "In this talk, I'll give you the <q>what</q>, <q>why</q>, and <q>how</q> of the &mu;-calculus - what it is, why I find it interesting (and hopefully why you should too!), and how to tame it in Agda. </p>I'll start by introducing and motivating the field of model checking, before quickly diverting to the modal &mu;-calulus, a fixpoint modal logic of foundational importance in that field. I'll talk about its semantics first, because that's only sensible, then the rest of the talk will be devoted to the weird and wonderful (but mostly weird) syntactic issues that arise from this formalism. In particular, I'll focus on an important syntactic construction called <q>the closure</q> of a &mu;-calculus formula, which is not stable under alpha-equivalence, and whose inductive structure is somewhat non-obvious. </p>In the second half, we'll code up an implementation of the &mu;-calculus in Agda, which will also serve as an introduction to well-scoped De Bruijn syntax. I'll work towards defining parallel substitution and weakening, and finish with the definition of the closure, and a (very) brief sketch of its correctness proof. The data type of thinnings between natural numbers will feature.</p>If there's time (which there probably won't be), I'll discuss an extension of well-scoped De Bruijn syntax that I've been calling <q>sublimely-scoped</q> syntax, which is still very WIP.",
     "location": "LT310 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/opJpkKgP288",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -105,7 +117,13 @@
     "title": "A Compositional Approach to Verification Models",
     "abstract": "We will present a compositional approach to graph-like verification models (e.g., parity games, Markov decision processes, or Petri nets) based on <q>open</q> structures. Such open structures are graphs with potentially dangling edges called <q>open ends</q>, and which form interfaces along which open structures can be composed. We thus define a syntactic category of interfaces and open structures between them. We then define a semantic category representing relevant information about the structure (e.g., a category of probabilistic rewards). Finding an interpretation functor from the syntactic category to the semantic one shows that these structures' semantics can be computed compositionally. (This is joint work with Kazuki Watanabe, Kazuyuki Asada, Ichiro Hasuo, and Serge Lechenne.)",
     "location": "LT714 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/FRBpabpuBGE",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
