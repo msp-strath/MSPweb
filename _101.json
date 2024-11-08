@@ -74,6 +74,11 @@
        "tag": "Link",
        "address": "https://youtu.be/8ueFihu8Ja8",
        "linkDescription": "Video"
+      },
+      {
+       "tag": "Link",
+       "address": "https://gist.github.com/bobatkey/b9ba09a9934bed48ae3551493173f952",
+       "linkDescription": "Agda code"
       }
     ]
   },
