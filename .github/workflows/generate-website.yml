@@ -5,7 +5,7 @@ on:
     branches: [master]
   pull_request:
   schedule:
-    - cron: 10 12 * * * # 10 minutes after 101 slot starts (UTC timezone)
+    - cron: 10 13 * * * # 10 minutes after 101 slot starts (UTC timezone)
 
 env:
   GHC_VERSION: 9.6
