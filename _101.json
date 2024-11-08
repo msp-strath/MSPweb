@@ -69,7 +69,13 @@
     "title": "How to Make Good Choices",
     "abstract": "What to do? One way to find out is to explore all the consequences of our choices and pick the best one. Or we could assume we have a magic device that tells us what the outcome of our choice will be, and to pick the best one straight off. In terms of programming, the former can be modelled using a monad for non-deterministic choices and the latter using the Selection monad of Escardo and Oliva. I'll relate these two monads via a logical relation, showing that if we are careful to respect abstraction boundaries, the two are equivalent for closed programs. I'll then extend this correspondence to account for different kinds of choice-making program and see how we can reconstruct concepts like Nash equilibrium. This talk may involve some live coding in Agda.",
     "location": "LT210 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/8ueFihu8Ja8",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
