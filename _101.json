@@ -57,7 +57,13 @@
     "title": "Representation Matters (Taking Categories Seriously)",
     "abstract": "When we endeavor to build software based on category theory, we often have two categorically equivalent structures that represent the same underlying data and the correct choice of structure subtly depends on what you would like to do. The first generation of categorical programming languages heavily used the monad to represent algebraic effects. However, what if we made a different choice? Categorically equivalent to Monads are Lawvere theories, whose presentation as categories allows for many useful constructions which are more awkward in the Monad representation. In this talk, I will imagine what a system for algebraic effects based on Lawvere theories might look like. This talk will include a lightning introduction to Lawvere theories as well as a tour through an idris2 implementation of these ideas which still contains too many holes to float.",
     "location": "LT310 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/FlOWErswJzw",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
