@@ -62,6 +62,11 @@
        "tag": "Link",
        "address": "https://youtu.be/FlOWErswJzw",
        "linkDescription": "Video"
+      },
+      {
+       "tag": "Link",
+       "address": "https://gitlab.com/glaive-research/lawvereeffects",
+       "linkDescription": "Code"
       }
     ]
   },
