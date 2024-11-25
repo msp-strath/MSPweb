@@ -30,8 +30,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "Theory of datatypes (containers/IR/QIITs)",
-    "abstract": "TBD",
+    "title": "Data type science: how to reason about classes of data types in type theory",
+    "abstract": "Different proof assistants and programming languages have different notions of data types. Sometimes this means that we can prove more theorem in one system compared to another, and sometimes it only means that one system is more convenient to use. How can we tell the difference? I'll give an introduction to how we can represent and reason about classes of data types in type theory, and I'll show some examples from the zoo of classes that have been considered.",
     "location": "LT210 and Online",
     "material":  []
   },
