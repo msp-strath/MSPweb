@@ -1,6 +1,6 @@
 [
   {
-    "tag": "Talk",
+    "tag": "CancelledTalk",
     "date": "2024-12-13T13:00:00Z",
     "speaker": "Neil Ghani",
     "speakerurl": "",
@@ -20,7 +20,7 @@
     "insturl": "",
     "title": "Parity Formulas",
     "abstract": "In this talk, I will discuss how modal mu-formulas can be succinctly represented as graphs, thus avoiding some of the variable naming issues that Sean sketched in his recent 101. A key technical problem when switching to graphs is that the natural dependency order between fixpoint operators is obfuscated. Therefore our graphs need to be equipped with a parity function that encodes this order. We call the resulting graphs with parity functions <q>parity formulas</q>. This is based on joint work with Johannes Marti and Yde Venema.",
-    "location": "LT210 and Online",
+    "location": "LT511 and Online",
     "material":  []
   },
   {
