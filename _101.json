@@ -5,7 +5,7 @@
     "endDate": "2025-01-17T14:30:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
-    "location": "LT1310 and Online",
+    "location": "LT1414a and Online",
     "locationurl": "",
     "description": ""
   },
@@ -16,9 +16,9 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "TBD",
-    "location": "LT1310 and Online",
+    "title": "Type-Sensitive Algebraic Macros",
+    "abstract": "Despite recent advances made by Idris and Lean teams, metaprogramming in a typed language is still hard, frustrating and error-prone. In this short paper, we investigate a new view on macros via a type-sensitive algebraic theory for typechecker scripting for a more principled approach to type-directed macros. We show that our theory encodes typechecking and elaboration for STλC, and from there, we build two other variations, Bidirectional STλC and Search-based Type Inference, to showcase the versatility of our framework. Our results are implemented in Agda.",
+    "location": "LT1414a and Online",
     "material":  []
   },
   {
