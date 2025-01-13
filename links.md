@@ -31,7 +31,7 @@ This page compiles various resources that might be useful to MSP members.
 
 ### Mailing lists
 
-[msp-interest](https://lists.cis.strath.ac.uk/mailman/listinfo/msp-interest)
+[msp-interest](http://lists.strath.ac.uk/mailman/listinfo/msp-interest)
 
 : A list for everyone (internal or external to MSP) who is interested in MSP-related activities.
   If you have trouble subscribing to this list, you might need to e-mail Conor.
