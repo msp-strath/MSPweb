@@ -1,5 +1,27 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2025-01-17T13:30:00Z",
+    "endDate": "2025-01-17T14:30:00Z",
+    "title": "MSP101 Planning meeting",
+    "url": "",
+    "location": "LT1310 and Online",
+    "locationurl": "",
+    "description": ""
+  },
+  {
+    "tag": "Talk",
+    "date": "2025-01-17T13:00:00Z",
+    "speaker": "April Gonçalves",
+    "speakerurl": "",
+    "institute": "MSP",
+    "insturl": "",
+    "title": "TBD",
+    "abstract": "TBD",
+    "location": "LT1310 and Online",
+    "material":  []
+  },
+  {
     "tag": "CancelledTalk",
     "date": "2024-12-13T13:00:00Z",
     "speaker": "Neil Ghani",
