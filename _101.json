@@ -1,6 +1,18 @@
 [
   {
     "tag": "Talk",
+    "date": "2025-03-19T11:00:00Z",
+    "speaker": "Matthew Cartmell",
+    "speakerurl": "https://www.strath.ac.uk/staff/cartmellmatthewprofessor/",
+    "institute": "Department of Mechanical and Aerospace Engineering",
+    "insturl": "",
+    "title": "TBA",
+    "abstract": "",
+    "location": "LT1414a and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
     "date": "2025-04-22T15:00:00Z",
     "speaker": "Philippa Cowderoy",
     "speakerurl": "",
