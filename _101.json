@@ -177,7 +177,13 @@
     "title": "My Favourite Double Category",
     "abstract": "I'll (re)introduce the <q>codeBruijn</q> representation of syntax with binding, in which terms are intrinsically indexed over their support (the variables they are involved with) rather than their scope. These supports form the objects of a category of order-preserving injections (<q>thinnings</q> to MSP locals and <q>my triangle</q> to Blaise Pascal), whose dual (<q>selections</q>) plays a crucial role in managing the restrictions of the variable support in specific substructures. Meanwhile, the notion of <q>simultaneous substitution</q> tightens to a relevant structure where every variable in the source support has an image, and every variable in the target support is used by at least one of those images. The action of substitution (which includes substitution composition) respects support precisely. It is reliant on the way a selection from a substitution's source support variables retains only some of their images and is itself relevant only once we have identified the corresponding selection from the target support of only those variables used in the retained images. We acquire squares with selections for vertical edges and relevant substitutions for horizontal edges which compose in both dimensions, forming a double category. (For anyone who saw, or for that matter, gave Phil Wadler's talk at the last SPLS, codeBruijn shifting happens at the root of a term, obviating the complex relationship between renaming and substitution which happens only because de Bruijn shifting happens at the leaves.) (For dependently typed programmers, more generally, there may be transferable lessons in managing coherence.)",
     "location": "LT412 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/aAgqu1y4Xto",
+       "linkDescription": "Video"
+      },
+    ]
   },
   {
     "tag": "SpecialEvent",
