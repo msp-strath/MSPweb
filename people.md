@@ -18,11 +18,6 @@ at the University of Strathclyde and comprises
     [here](http://www.cis.strath.ac.uk/~ng/neil.jpg) is a picture of
     Neil.
 
-[Prof. Glynn Winskel](https://pureportal.strath.ac.uk/en/persons/glynn-winskel)
-
-:   who works on mathematical models of interaction such as distributed games and event structures.
-    Contact Glynn at [glynn.winskel [at] strath.ac.uk](mailto:glynn.winskel [at] strath.ac.uk).
-
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
 
 :   who is currently working on dependently typed programming. He is
@@ -147,6 +142,11 @@ Samuel Fish
 :   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
 ### Alumni ###
+
+Prof. Glynn Winskel
+
+:   who worked on mathematical models of interaction such as distributed games and event structures.
+
 
 Prof. Radu Mardare
 

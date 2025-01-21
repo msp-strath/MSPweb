@@ -19,18 +19,6 @@
   phd-topics:
     - "Categorical Machine Learning"
 
-- name: "Glynn Winskel"
-  ident: "glynn"
-  title: "Prof"
-  status: "academic"
-  email: "glynn.winskel@strath.ac.uk"
-  links:
-    - href: "https://pureportal.strath.ac.uk/en/persons/glynn-winskel"
-      rel: "pure"
-  description:
-    who works on mathematical models of interaction such as distributed games
-    and event structures.
-
 - name: "Conor McBride"
   pronouns: "he/him"
   ident: "conor"
@@ -426,6 +414,19 @@
 
 ##############################################################################
 ## Alumni
+
+- name: "Glynn Winskel"
+  ident: "glynn"
+  title: "Prof"
+  status: "alum"
+  email: "glynn.winskel@strath.ac.uk"
+  links:
+    - href: "https://pureportal.strath.ac.uk/en/persons/glynn-winskel"
+      rel: "pure"
+  description:
+    who works on mathematical models of interaction such as distributed games
+    and event structures.
+
 
 - name: "William Waites"
   ident: "william"
