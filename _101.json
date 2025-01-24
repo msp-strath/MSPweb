@@ -162,8 +162,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Pipelining and dependent types",
+    "abstract": "Pipelining is a crude CPU optimisation to speed up execution of sequential programs. By allowing the manipulation of types as values, dependent types enable new abstractions to manipulate large-scale of software based on sequential computation inspired by CPU pipelining. I will show how to define pipelines, sequential programs that cannot easily be parallelised using a list of types as a specification. Given this list of type, the implementation of a pipeline is given by the functions between each type. This pipeline abstraction can be generalised to categories such that the pipeline is made up of objects and its implementation is given by the morphisms between them. This enable the use of kleisli morphisms for effectful programs. The pipeline can be further abstracted over graded categories enabling automatic composition of errors. Finally, I will show how to use dependent pipelines to allow composition of programs with type-dependency. An architecture particularly useful for single-pass compilers with well-scoped and well-typed implementations.",
     "location": "LT412 and Online",
     "material":  []
   },
