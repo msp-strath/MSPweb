@@ -138,9 +138,9 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
-    "location": "LT412 and Online",
+    "title": "We solved dependent optics!",
+    "abstract": "<p>There are two major generalisations of lenses. First there are optics, which require almost nothing of their base category and give you something in return. And then there are dependent lenses (aka container morphisms, aka natural transformations of polynomials), which require a lot of their base category but give you even more in return. One day several years ago I innocently twote the question of how to unify these two constructions, which is motivated for mathematical, computational and sociological reasons. The problem ended up occupying us (joint work with Dylan Braithwaite, Matteo Capucci, Bruno Gavranović, Eigil Rischel and André Videla) for several years, and its difficulty became a meme.</p> <p>I will explain the answer that finally satisfied us. This involves first constructing a category of <q>dependent adaptors</q> and then freely adjoining a particular family of monoidal costates using a technique we call <q>weighted coparametrisation</q> that we reinvented. The definition began life as a prototype in Idris using QTT features, and was then translated back into category theory using what might or might not be a novel semantics of polymorphic dependent type theory.</p>",
+    "location": "LT209 and Online",
     "material":  []
   },
   {
