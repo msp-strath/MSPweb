@@ -150,18 +150,6 @@
     ]
   },
   {
-    "tag": "CancelledTalk",
-    "date": "2025-01-17T13:00:00Z",
-    "speaker": "April Gonçalves",
-    "speakerurl": "",
-    "institute": "MSP",
-    "insturl": "",
-    "title": "TBD",
-    "abstract": "",
-    "location": "LT412 and Online",
-    "material":  []
-  },
-  {
     "tag": "Talk",
     "date": "2025-01-27T15:00:00Z",
     "speaker": "André Videla",
@@ -209,8 +197,8 @@
   },
   {
     "tag": "SpecialEvent",
-    "date": "2025-01-17T14:00:00Z",
-    "endDate": "2025-01-17T15:00:00Z",
+    "date": "2025-01-17T13:30:00Z",
+    "endDate": "2025-01-17T14:30:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1414a and Online",
@@ -498,9 +486,7 @@
     "institute": "MSP",
     "insturl": "",
     "title": "Propagating Rose Trees with Dependent Types to Grow Shaped ASTs Generically",
-    "abstract": "Dependently typed languages support the construction of intrinsically-typed (well-scoped) terms, ensuring that our core language representations are correct-by-construction. The datatypes we use to represent Abstract Syntax Trees (AST) are not well-typed nor well-scoped, nor should they be. Nonetheless, ASTs are often represented as a collection of bespoke datatypes that capture what it means for an AST to be ‘well-structured’. Such artisan crafting of our ASTs comes at the price of generality. We must define the same traversals and operations time and time again over each AST.
-<br/>
-Taking inspiration from intrinsically-typed datatypes and compact encoding of primitives, we show how rose trees can have their shape dictated by a description contained within a dependent type. We can thus, describe (type) the structure of our ASTs similar to how we describe the concrete syntax using eBNF and embed the description inside a pre-existing datatype. Through this novel combination, we now have a single generic datatype for ASTs and single operations that act on them.",
+    "abstract": "Dependently typed languages support the construction of intrinsically-typed (well-scoped) terms, ensuring that our core language representations are correct-by-construction. The datatypes we use to represent Abstract Syntax Trees (AST) are not well-typed nor well-scoped, nor should they be. Nonetheless, ASTs are often represented as a collection of bespoke datatypes that capture what it means for an AST to be ‘well-structured’. Such artisan crafting of our ASTs comes at the price of generality. We must define the same traversals and operations time and time again over each AST.<br/>Taking inspiration from intrinsically-typed datatypes and compact encoding of primitives, we show how rose trees can have their shape dictated by a description contained within a dependent type. We can thus, describe (type) the structure of our ASTs similar to how we describe the concrete syntax using eBNF and embed the description inside a pre-existing datatype. Through this novel combination, we now have a single generic datatype for ASTs and single operations that act on them.",
     "location": "LT209 and Online",
     "material": []
   },
@@ -587,8 +573,7 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
     "institute": "MSP",
     "insturl": "",
     "title": "Foundational Structures for Communicating Processes",
-    "abstract": "In 2009 Cockett and Pastro introduced a model for a typed process calculus in terms of a ‘linear actegory’. They note that the sequent rules of their calculus can be naturally viewed as living in a ‘poly-actegory’, a polycategory whose terms are additionally indexed by a list of objects of a multicategory, of ‘message types’. Although poly-actegories are mainly used as a tool to study the soundness of their language, they could arguably be taken as the foundational concept. <br/> Indeed recently Shulman has proposed a nearly identical structure under the name ‘LNL-polycategories’. Shulman shows that by asking that different collections of universal properties be present, LNL-polycategories may be used as a model for the LNL calculus, CBPV, and other models of effectful calculi. Inspired by this I will survey the universal properties required for implementing the basic communication primitives in a process calculus. With this framework, we can compare process models with the structures present in linear logic models, or effectful models, offering an additional perspective into the existing connections between the pi-calculus and linear logic or algebraic effects.
-",
+    "abstract": "In 2009 Cockett and Pastro introduced a model for a typed process calculus in terms of a ‘linear actegory’. They note that the sequent rules of their calculus can be naturally viewed as living in a ‘poly-actegory’, a polycategory whose terms are additionally indexed by a list of objects of a multicategory, of ‘message types’. Although poly-actegories are mainly used as a tool to study the soundness of their language, they could arguably be taken as the foundational concept. <br/> Indeed recently Shulman has proposed a nearly identical structure under the name ‘LNL-polycategories’. Shulman shows that by asking that different collections of universal properties be present, LNL-polycategories may be used as a model for the LNL calculus, CBPV, and other models of effectful calculi. Inspired by this I will survey the universal properties required for implementing the basic communication primitives in a process calculus. With this framework, we can compare process models with the structures present in linear logic models, or effectful models, offering an additional perspective into the existing connections between the pi-calculus and linear logic or algebraic effects.",
     "location": "LT209 and Online",
     "material": [
        {
@@ -612,7 +597,8 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
          "tag": "Link",
          "address": "https://www.youtube.com/watch?v=coOArj1VyTw",
          "linkDescription": "Video"
-       } ]
+       }
+    ]
   },
   {
     "tag": "Talk",
@@ -624,7 +610,7 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
     "title": "Softmax is Argmax, and the Logic of the Reals",
     "abstract": "I will report some work in progress on the semiotics of softmax. This is an operator used in machine learning (but familiar to physicists way before that) to normalize a log-distribution, turning a vector of (thus, a function valued in) logits (i.e. additive reals) into a probability distribution. Its name is due to the fact it acts as a 'probabilistic argmax', since the modes of a softmax distribution reflects the minima (by an accident of duality) of the function. I will show an attempt to make this statement precise, by exhibiting the semantics of a 'very linear logic' on the *-autonomous quantale of extended multiplicative reals. In this logic, additive connectives are also linear, but are still in the same algebraic relation with the multiplicative ones. I will show how to define quantifiers, and thus softmax. If time permits, I'll show a construction of an enriched equipment of relations in which softmax should be characterizable as a Kan lift, in the same way argmax is characterized as a Kan lift in relations.",
     "location": "LT209 and Online",
-      "material": [
+    "material": [
        {
          "tag": "Link",
          "address": "https://msp.cis.strath.ac.uk/101/slides/2024-03-22_capucci.pdf",
@@ -635,7 +621,7 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
          "address": "https://www.youtube.com/watch?v=y1rpNTHOsf4",
          "linkDescription": "Video"
        }
-]
+    ]
   },
   {
     "tag": "Talk",
@@ -957,9 +943,7 @@ Taking inspiration from intrinsically-typed datatypes and compact encoding of pr
     "institute": "MSP",
     "insturl": "",
     "title": "Staging by Evaluation",
-    "abstract": "I will present an Agda implementation of a simply typed version of András Kovács' Staged compilation with two-level type theory.
-
-Starting from an intrinsically typed language mixing static and dynamic parts using quotes and splices, we perform a model construction à la normalisation by evaluation and obtain a staging by evaluation algorithm.",
+    "abstract": "I will present an Agda implementation of a simply typed version of András Kovács' Staged compilation with two-level type theory. Starting from an intrinsically typed language mixing static and dynamic parts using quotes and splices, we perform a model construction à la normalisation by evaluation and obtain a staging by evaluation algorithm.",
     "location": "LT210 and Online",
         "material": [
       {
@@ -977,9 +961,7 @@ Starting from an intrinsically typed language mixing static and dynamic parts us
     "institute": "University of Groningen",
     "insturl": "",
     "title": "A dual adjunction between Ω-automata and Wilke algebras",
-    "abstract": "The notion of ω-regular language captures the idea of a regular language that consists of infinite words. The most standard type of automata for ω-regular languages are called Büchi automata. Ω-automata are another type of automata for ω-regular languages that, instead of infinite words, read pairs of finite words, called lassos, that represent ultimately periodic words.
-We study the categorical relationship between Ω-automata and Wilke algebras – the latter are algebraic structures recognising ω-regular languages. We present a chain of adjunctions starting from the category of Ω-automata without initial states and ending with the dual of the category of quotients of the free Wilke algebra.
-This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens Kupke (University of Strathclyde).",
+    "abstract": "The notion of ω-regular language captures the idea of a regular language that consists of infinite words. The most standard type of automata for ω-regular languages are called Büchi automata. Ω-automata are another type of automata for ω-regular languages that, instead of infinite words, read pairs of finite words, called lassos, that represent ultimately periodic words. We study the categorical relationship between Ω-automata and Wilke algebras – the latter are algebraic structures recognising ω-regular languages. We present a chain of adjunctions starting from the category of Ω-automata without initial states and ending with the dual of the category of quotients of the free Wilke algebra. This is joint work with Helle Hvid Hansen (University of Groningen) and Clemens Kupke (University of Strathclyde).",
     "location": "GH 513 and Online",
     "material": [
       {
