@@ -126,8 +126,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Coequations via proof systems",
+    "abstract": "<b>What even is a coequation?</b> While Universal Algebra enjoys a set-in-stone consensus on both the correct syntax of equations, as well as what an equation even is, Universal Coalgebra is in no such position. There are many attempts at definitions and syntaxes of coequations, but it is hard to say which one is 'the correct one'. <p>Rather than sorting out this mess, why not add yet another proposal? If we squint, we can see proof systems for modal logic as coequations. This then leads to some fun, natural questions. Which coequations can be captured by what kind of proof systems? If we restrict our attention to a class of 'simple' systems, can we specify <q>every</q> coequation?</p> <p>As this is work in progress, I have a fewer answers than questions. The aim of this talk is to introduce coequations in all their colours, and to get the audience to a point where the questions may be appreciated.</p>",
     "location": "LT412 and Online",
     "material":  []
   },
@@ -141,7 +141,13 @@
     "title": "We solved dependent optics!",
     "abstract": "<p>There are two major generalisations of lenses. First there are optics, which require almost nothing of their base category and give you something in return. And then there are dependent lenses (aka container morphisms, aka natural transformations of polynomials), which require a lot of their base category but give you even more in return. One day several years ago I innocently twote the question of how to unify these two constructions, which is motivated for mathematical, computational and sociological reasons. The problem ended up occupying us (joint work with Dylan Braithwaite, Matteo Capucci, Bruno Gavranović, Eigil Rischel and André Videla) for several years, and its difficulty became a meme.</p> <p>I will explain the answer that finally satisfied us. This involves first constructing a category of <q>dependent adaptors</q> and then freely adjoining a particular family of monoidal costates using a technique we call <q>weighted coparametrisation</q> that we reinvented. The definition began life as a prototype in Idris using QTT features, and was then translated back into category theory using what might or might not be a novel semantics of polymorphic dependent type theory.</p>",
     "location": "LT209 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/yhxwUnWKK2I",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "CancelledTalk",
@@ -204,7 +210,6 @@
   {
     "tag": "SpecialEvent",
     "date": "2025-01-17T13:30:00Z",
-    "endDate": "2025-01-17T14:30:00Z",
     "title": "MSP101 Planning meeting",
     "url": "",
     "location": "LT1414a and Online",
