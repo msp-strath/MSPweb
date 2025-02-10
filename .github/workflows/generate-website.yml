@@ -5,7 +5,7 @@ on:
     branches: [master]
   pull_request:
   schedule:
-    - cron: 10 13 * * * # 10 minutes after 101 slot starts (UTC timezone)
+    - cron: 10 14 * * * # 10 minutes after 101 slot starts (UTC timezone)
 
 env:
   GHC_VERSION: 9.6
@@ -30,15 +30,9 @@ jobs:
               - '*.hs'
               - '.github/workflows/generate-website.yml'
 
-      - name: Install cabal and GHC
-        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
-        uses: haskell-actions/setup@v2
-        with:
-          ghc-version: ${{ env.GHC_VERSION }}
-          cabal-version: 'latest'
-
       - name: Cache cabal and executables
         uses: actions/cache@v4
+        id: caching
         with:
           path: |
             ~/.cabal/store
@@ -47,9 +41,16 @@ jobs:
           key: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}-${{ github.sha }}
           restore-keys: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}
 
+      - name: Install cabal and GHC
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || ${{ steps.caching.outputs.cache-hit != 'true' }}
+        uses: haskell-actions/setup@v2
+        with:
+          ghc-version: ${{ env.GHC_VERSION }}
+          cabal-version: 'latest'
+
       ##### Installation #######################################
       - name: Install Generate[101]
-        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true'
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || ${{ steps.caching.outputs.cache-hit != 'true' }}
         run: cabal install --overwrite-policy=always --builddir _dist
 
       - name: Add .cabal/bin to PATH
