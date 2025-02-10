@@ -129,7 +129,13 @@
     "title": "Coequations via proof systems",
     "abstract": "<p><b>What even is a coequation?</b> While Universal Algebra enjoys a set-in-stone consensus on both the correct syntax of equations, as well as what an equation even is, Universal Coalgebra is in no such position. There are many attempts at definitions and syntaxes of coequations, but it is hard to say which one is 'the correct one'.</p> <p>Rather than sorting out this mess, why not add yet another proposal? If we squint, we can see proof systems for modal logic as coequations. This then leads to some fun, natural questions. Which coequations can be captured by what kind of proof systems? If we restrict our attention to a class of 'simple' systems, can we specify <q>every</q> coequation?</p> <p>As this is work in progress, I have a fewer answers than questions. The aim of this talk is to introduce coequations in all their colours, and to get the audience to a point where the questions may be appreciated.</p>",
     "location": "LT209 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/VCfCkAwK2pg",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
