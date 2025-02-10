@@ -42,7 +42,7 @@ jobs:
           restore-keys: cabal-${{ runner.os }}-${{ env.GHC_VERSION }}
 
       - name: Install cabal and GHC
-        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || ${{ steps.caching.outputs.cache-hit != 'true' }}
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || steps.caching.outputs.cache-hit != 'true'
         uses: haskell-actions/setup@v2
         with:
           ghc-version: ${{ env.GHC_VERSION }}
@@ -50,7 +50,7 @@ jobs:
 
       ##### Installation #######################################
       - name: Install Generate[101]
-        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || ${{ steps.caching.outputs.cache-hit != 'true' }}
+        if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || steps.caching.outputs.cache-hit != 'true'
         run: cabal install --overwrite-policy=always --builddir _dist
 
       - name: Add .cabal/bin to PATH
