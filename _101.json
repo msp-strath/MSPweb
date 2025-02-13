@@ -114,9 +114,9 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
-    "location": "LT511 and Online",
+    "title": "Weakest Precondition of Open Coalgebras",
+    "abstract": "Coalgebras are a categorical framework that have proved useful to describe and reason about different types of systems. We define open coalgebras, a compositional framework where coalgebras can be composed as string diagrams. We give them a semantics in terms of weakest precondition predicate transformers computed as a fixed point and link it to previous work on weakest precondition predicate transformers by Aguirre, Katsumara, and Kura. We give several examples of verification problems this semantics can compute, showing its practical usefulness. We give conditions under which this semantics is compositional for the string diagram structure of open coalgebras. Finally, we give a syntactic precomputation of open coalgebras that removes their internal states while preserving their semantics.",
+    "location": "LT1414a and Online",
     "material":  []
   },
   {
