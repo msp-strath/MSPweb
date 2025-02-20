@@ -102,8 +102,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Semantic proofs of Cut-elimination for Deep Infererence",
+    "abstract": "Deep Inference systems are a kind of proof calculus that allow inference rules to be applied anywhere in a formula. Cut-elimination for these systems is similar to that for Sequent calculi: rules that introduce intermediate formulas can be removed from proofs. Prior proofs of cut-elimination relied on intricate syntactic method. I'll talk about a semantic approach that builds a model of the whole calculus from cut-free proofs, such that every proof constructed in this model can be read back as a cut-free proof. This is a similar technique to the one used in Normalisation by Evaluation (NbE). The technique is very flexible and extends to many extensions of Multiplicative Linear Logic, including BV's self-dual non-commutative <q>before</q> connective, additives, and exponentials. <p>This is joint work with Wen Kokke and was published at MFPS last year: https://bentnib.org/sem-cut-elim-mfps.html</p>",
     "location": "LT412 and Online",
     "material":  []
   },
