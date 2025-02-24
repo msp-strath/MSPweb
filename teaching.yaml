@@ -1,0 +1,20 @@
+- code: "CS103"
+  type: "Strathclyde"
+  name: "Machines, Languages, and Computation"
+  level: 1
+
+- code: "CS106"
+  type: "Strathclyde"
+  name: "Computer Systems and Organisation"
+  level: 1
+  description:
+    An introduction to computer hardware via binary logic and state machines.
+  editions:
+  - year: 2022
+    people:
+    - "Conor McBride"
+    - "Alasdair Lambert"
+
+- code: "
+
+- code: "CS316"
