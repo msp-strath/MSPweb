@@ -90,8 +90,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Representing type theory in type theory",
+    "abstract": "It is often claimed that type theory can act as a foundation of mathematics. If that is so, then type theory should in particular be able to reason about type theory itself. Of course, Dr Gödel points out that this cannot work, in general, but we would expect that type theory could still reason about a slightly weaker version of itself. This turns out to be true, but messy, because type theory is quite complicated as a theory. After heroic attempts by Danielsson (2006) and Chapman (2009) to represent type theory internally in type theory, Altenkirch and Kaposi (2016) made a breakthrough in using so-called quotient inductive-inductive types to represent the well typed terms of type theory, where quotient constructors are used to encode beta and eta laws as equalities in the type. Being able to treat such laws as actual equalities is a major improvement, but quickly leads into so-called <q>transport hell</q>, where explicit transports along equalities show up in terms and needs to be reasoned about. I will report on some recent work together with Liang-Ting Chen and Tzu-Chun Tsai on how one can use experimental (and hopefully future) features of Agda to improve on the quotient inductive-inductive representation and remove most uses of transport.",
     "location": "LT412 and Online",
     "material":  []
   },
