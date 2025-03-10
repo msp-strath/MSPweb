@@ -81,7 +81,13 @@
     "title": "A canonical bidirectional typing discipline through polarised System L",
     "abstract": "What is the relationship between polarity and bidirectional typing? It has long been observed that there is a connection between the two, but the precise relationship has remained unclear. Moreover, it has been argued that the link itself is a red herring, and that bidirectional typing is better explained not by polarity but by chirality - the duality between producers and consumers. <p>In this talk we will look at Polarised System L, a type theory that combines both dualities - the positive fragment is driven by a cut between a primitive producer and a pattern, and the negative fragment is driven by a cut between a primitive consumer and a co-pattern.</p> <p>Remarkably, linear System L admits a canonical bidirectional typing discipline based on a combination of ideas from both standard and co-contextual typing, giving us a <q>bi-contextual</q> typing algorithm.</p> <p>We will see how this lets us equip a type system based on full classical linear logic - containing all four connectives and derivable implication and co-implication - with a bidirectional discipline where all typing annotations are exclusively limited to shifts between sythesisable and checkable expressions.</p>",
     "location": "LT412 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/0Qg_RnSHyhU",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
