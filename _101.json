@@ -7,7 +7,7 @@
     "institute": "Google DeepMind",
     "insturl": "https://deepmind.google/",
     "title": "Generalisation in LLMs",
-    "abstract": "",
+    "abstract": "A general talk about our recent works on generalisation in llms",
     "location": "LT210 and Online",
     "material":  []
   },
@@ -81,7 +81,13 @@
     "title": "Additives without Weakening",
     "abstract": "As we know, in linear logic, conjunction and disjunction decompose into separate multiplicative and additive forms. Only additives are idempotent in general (A + A --o A). The additives also have some properties such as weakening (A & B --o A). By dropping weakening, the additives further decompose into infinitely many <q>sub-additive</q> operators. <p>I explain how I spotted these sub-additive operators when studying nominal quantifiers that can similarly be decomposed into new nominal quantifiers. I found these new additives curious since the resulting operators have properties that are sound with respect to probability distributions, effectively internalising probability distributions in logic. I end by giving a taste of the proof theory of the sub-additives. A novelty is that, due to how sub-additives control certain distributivity properties that play an essential role in established cut elimination techniques, a new proof technique must be invented.</p>",
     "location": "LT412 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/04K0vkcqXvU",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
