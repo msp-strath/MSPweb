@@ -1,5 +1,17 @@
 [
   {
+    "tag": "Talk",
+    "date": "2025-03-19T16:00:00Z",
+    "speaker": "Petar Veličković",
+    "speakerurl": "https://petar-v.com/",
+    "institute": "Google DeepMind",
+    "insturl": "https://deepmind.google/",
+    "title": "Generalisation in LLMs",
+    "abstract": "",
+    "location": "LT210 and Online",
+    "material":  []
+  },
+  {
     "tag": "CancelledTalk",
     "date": "2025-03-19T11:00:00Z",
     "speaker": "Matthew Cartmell",
