@@ -45,10 +45,13 @@
       <h2>Accepted contributed talks</h2>
       <ul>
         <li>Ignacio Bellas Acosta: <em>Quantale Enriched Semantics for Graph Mathematical Morphology</em></li>
+        <li>Jungho Ahn: <em>A coarse Erdős-P&oacute;sa theorem</em></li>
         <li>Malin Altenm&uuml;ller: <em>A data type of intrinsically plane graphs</em></li>
         <li>Pete Austin: <em>Temporal Explorability Games</em></li>
         <li>Jakub Bachurski: <em>Breaking records: structural subtyping as a language design principle</em></li>
         <li>Justus Becker: <em>Proof translations for structurally different sequent calculi of intuitionistic modal logic</em></li>
+        <li>G&eacute;raldine Brieven: <em>From Visualization to Coding: Practicing Graphical Loop Invariants in CAFÉ 2.0</em></li>
+        <li>Paola Bruscoli: <em>Linking Proof Theory to Game Design</em></li>
         <li>Harry Bryant: <em>Proof Checking for SMT-solving and its application in the Railway Domain</em></li>
         <li>Dhurim Cakiqi: <em>Algorithmic syntactic causal identification</em></li>
         <li>Alec Critten: <em>Developing user propagators for graph-based SMT reasoning</em></li>
@@ -62,9 +65,11 @@
         <li>Nathan Flaherty: <em>Fast and Safe Scheduling of Robots</em></li>
         <li>Marek Jezinski: <em>Creating Synthetic Test Data for Rail Design Tools</em></li>
         <li>Thomas Karam: <em>Adapting some basic matrix rank properties to the ranks of tensors</em></li>
+        <li>Thomas Karam: <em>Communication of theoretical computer science notions, and mathematics</em></li>
         <li>Laura Larios-Jones: <em>Structural Parameters for Dense Temporal Graphs</em></li>
         <li>Louis Lemonnier: <em>A recipe for the semantics of reversible programming</em></li>
         <li>Jessica Newman: <em>Alternating-Time Temporal Logic with Dependent Strategies</em></li>
+        <li>Olga Petrovska: <em>The Art of Teaching Theory Across Diverse Backgrounds</em></li>
         <li>Benjamin Plummer: <em>Coalgebraic Traces by Following Strategies in Two-player Games</em></li>
         <li>Riu Rodr&iacute;guez Sakamoto: <em>Decorated Para for linear quadratic regulators</em></li>
         <li>Yury Savateev: <em>Visualising the Hyperbolic Plane</em></li>
@@ -72,6 +77,8 @@
         <li>Tansholpan Zhanabekova: <em>Semantic Flowers for Good-for-Games and Deterministic Automata</em></li>
       </ul>
       </section>
+
+
 
     <section id="abstracts">
       <h2>Contributed abstracts</h2>
@@ -83,6 +90,10 @@
       <h3>A data type of intrinsically plane graphs</h3>
       <h4>Malin Altenm&uuml;ller (University of Edinburgh)</h4>
       <p>Plane graphs are those that can be drawn on the sphere without any edges crossing. They are subject of interest not only in graph theory but also as a combinatorial representation of string diagrams for certain monoidal theories that are sensitive to their topology (for example non-symmetric monoidal categories). I will present an inductive data type of plane graphs which uses a graph's spanning tree as a skeleton and stores the remaining edges alongside it. The order in which we store these additional edges is crucial as it enforces the planarity property of the entire graph. We encode the planarity information as part of a graph's type, thus all graphs of the type are intrinsically plane. Additionally, operations on plane graphs such as substitution preserve the planarity property by definition.</p>
+
+      <h3>A coarse Erdős-P&oacute;sa theorem</h3>
+      <h4>Jungho Ahn (Durham University)</h4>
+      <p>An induced packing of cycles in a graph <em>G</em> is a set of vertex-disjoint cycles such that <em>G</em> has no edge between distinct cycles of the set. The classic Erdős-P&oacute;sa theorem asserts that for every positive integer <em>k</em>, every graph contains <em>k</em> vertex-disjoint cycles or a set of O(<em>k</em>*log <em>k</em>) vertices which intersects every cycle of <em>G</em>. We generalise this classic Erdős-P&oacute;sa theorem to induced packings of cycles. We show that there exists a function f(<em>k</em>)=O(<em>k</em>*log <em>k</em>) such that for every positive integer <em>k</em>, every graph <em>G</em> contains an induced packing of <em>k</em> cycles or a set <em>X</em> of at most f(<em>k</em>) vertices such that the closed neighbourhood of <em>X</em> intersects every cycle in <em>G</em>. Our proofs are constructive and yield a polynomial algorithm.</p><p>This is based on a joint work with Pascal Gollin, Tony Huynh, and O-joung Kwon.</p>
 
       <h3>Temporal Explorability Games</h3>
       <h4>Pete Austin (University of Liverpool)</h4>
@@ -111,6 +122,17 @@
         The sequents of these calculi are structurally inequivalent, which will lead to a translation that is not preserving the structure of sequents. It requires one, for instance, to add some admissible rules explicitly or to edit derivation trees before translating them. This is also due to labIK being fully invertible, unlike the simple nested sequent calculus.</p>
       <p>This result sheds some light on how structurally different calculi behave, especially comparing a fully invertible calculus and a system with non-invertible rules. We can see, for example, how retrieving lost information in backtracking translates to having all information available in the full calculus. This result can also be applied to many other intuitionistic modal logics.</p>
       <ul><li><strong>MSc thesis:</strong> <a href="https://eprints.illc.uva.nl/id/eprint/2325/1/MoL-2024-08.text.pdf">ILLC Publications</a></li></ul>
+
+      <h3>From Visualization to Coding: Practicing Graphical Loop Invariants in CAF&Eacute; 2.0</h3>
+      <h4>G&eacute;raldine Brieven (University of Li&egrave;ge)</h4>
+      <p>This talk focuses on a programming approach relying on an informal and graphical version of the Loop Invariant to write the code. This approach is taught in the context of a CS1 course where students are exposed to various C programming language concepts and algorithmic aspects.  The key point  is to imagine a problem-solving strategy (the Graphical Loop Invariant) prior to coding, which then becomes reasonably straightforward when based on this graphical representation.</p>
+
+      <p>This talk presents the rules for building a sound and accurate Graphical Loop Invariant as well as the programming methodology.  As such, our programming approach might be seen as a first step towards considering formal methods in programming courses without making any assumption on students mathematical background, as it avoids mathematical notation entirely. We also discuss CAF&Eacute; 2.0, a learning tool we developed to support teaching and practicing the Graphical Loop Invariant concept. Finally, we provide insights into how students adopt this approach and utilize it in CAF&Eacute; 2.0 to solve problems.</p>
+
+      <h3>Linking Proof Theory to Game Design</h3>
+      <h4>Paola Bruscoli (University of Bath)</h4>
+      <p>In the past few years I have started proposing individual projects to UG/PGT students in Computer Science in areas of structural proof theory, substructural logics and at the intersection with game development. Most students have a good acquaintance with game engines for their personal interests, however, they may be less exposed to formal logics than desirable during their studies. By appealing to what they know well, my aim is to provide them with pathway leading to acquire new knowledge on some proof systems, with the idea that there could be some benefit for the (simple) game design.  For example: 1) knowing the dynamics of some specific game, can we understand it in terms of proofs and derivations in some logic? 2) is there any benefit for the programmer, in implementing the rules of the game in specific logical languages, as opposed to the (low level) language that game engines provide? </p>
+
       <h3>Proof Checking for SMT-solving and its application in the Railway Domain</h3>
       <h4>Harry Bryant (Swansea University)</h4>
       <p>Railways are safety critical therefore the programs that control them must be safe and secure. Alongside the testing process there are tools that apply formal verification techniques that prove these systems meet the requirements and standards. Many of these railway verification tools utilise both SAT solvers and Satisfiable Modulo Theory (SMT) solvers to determine whether a given Safety Property holds. These solvers are very complex, and there is the danger that they prove the correctness of a verification condition when it does not hold. To increase trust and robustness, the objective of this PhD project is to produce a bespoke independent verified checker for our Industrial Partner for those verification results. This will determine whether the certificates produced by Z3 are correct and therefore implies that the theorem in question is valid &mdash; producing a validated log rather than a yes/no answer. Since the standards in the railway industry are high, we want as well to have a verified checker of proofs. Therefore, we want to show that if the checking procedure confirms that the proof is valid, then the theorem in question holds. Our Proof Checker is being developed by using the Proof Assistant Coq to prove the correctness of the procedures. Currently a proof-of-concept SAT checker for Ladder Logic Verification has been developed. The basis of both the SAT and SMT proof scripts in Z3 rely on Resolution and therefore work initially focused on writing a checking procedure for Unit Resolution in Coq. This has been proven in Coq to be correct and a mini checker extracted to OCaml. Unit Resolution was chosen because it is the foundation of the old Z3 proof script format. The new format utilises Reverse Unit Propagation (RUP) instead &mdash; built on the principle of Resolution. This allows us to use the proof of Unit Resolution as part of the proof that the RUP rule is correct. The proof-of-concept has been written and successfully tested on Industrial examples, with the proof of correctness ongoing. By using formal methods in the railway domain, it gives us assurances that the interlockings are correct before they go through the testing process – saving both time and resources. However, the engineers want a guarantee that the theorem prover Z3 is correct. Therefore, by developing a checking tool it gives further trust and robustness in the development process. The proof-of-concept will be extended to obtain a fully verified proof checker for Z3 proofs to fully meet the needs of the railway verification tools.</p>
@@ -240,6 +262,10 @@ frequency is ‘realistic’, all ‘normal’ situations are generated, or if
       <h3>Adapting some basic matrix rank properties to the ranks of tensors</h3>
       <h4>Thomas Karam (University of Oxford)</h4>
       <p>Tensors are higher-dimensional generalisations of matrices, and likewise the main notion of complexity on matrices &mdash; their rank &mdash; may be extended to tensors. Unlike in the matrix case however, there is no single canonical notion of rank for tensors, and the most suitable notion often depends on the application that one has in mind. The most frequently used notion so far has been the tensor rank (hence its name), but several other notions and their applications have blossomed in recent years, such as the slice rank, partition rank, analytic rank, subrank, and geometric rank. Unlike their counterparts for the rank of matrices, many of the basic properties of the ranks of tensors are still not well understood. After reviewing the definitions of several of these rank notions, I will present a number of results of a type that arises in many cases when one attempts to generalise a basic property of the rank of matrices to these ranks of tensors: the naive extension of the original property fails, but it admits a rectification which is simultaneously not too complicated to state and in a spirit that is very close to that of the original property from the matrix case.</p>
+      <h3>Communication of theoretical computer science notions, and mathematics</h3>
+      <h4>Thomas Karam (University of Oxford)</h4>
+      <p>This teaching talk will focus on how to transmit notions in theoretical computer science in ways that prepare the recipient well for the input of mathematicians and furthermore do not create a tradeoff with the primary goals of theoretical computer science exposition. For concrete illustration we will discuss the case of Shannon entropy, a notion shared by the TCS and mathematics communities, which has an interesting history inbetween them: it was originally devised for communications engineering purposes, but then led to insights illuminating some distant topics in pure mathematics (and some other topics in physics), while at the same time continuing to have the kinds of applications that it had originally been conceived for.</p>
+
       <h3>Structural Parameters for Dense Temporal Graphs</h3>
       <h4>Laura Larios-Jones (University of Glasgow)</h4>
       <p>A temporal graph consists of a static graph and a function that dictates when its edges are active. This allows us to model networks where the time at which connections occur is important. Unfortunately, many temporal problems are more computationally complex than their static counterparts. We look for temporal parameters such that, when these are small for the input of a temporal problem, we can efficiently solve the problem at hand. Many temporal parameters currently in use rely on some notion of sparsity in either the graph or function. We introduce three parameters that are small for dense and highly structured temporal graphs. These parameters are temporal cliquewidth, temporal modular-width, and temporal neighbourhood diversity. We also give examples of temporal problems which are tractable with respect to these parameters.</p>
@@ -259,6 +285,11 @@ frequency is ‘realistic’, all ‘normal’ situations are generated, or if
       <h3>Alternating-Time Temporal Logic with Dependent Strategies</h3>
       <h4>Jessica Newman (University of Southampton)</h4>
       <p>Alternating-Time Temporal Logic (ATL) is a logical system for multiagent strategic reasoning, in which formulae express temporal properties that coalitions of agents can enforce by concurrently fixing a strategy played across an infinite sequence of normal-form games. We extend this with the ability to specify an order in which agents sequentially fix their strategies, where agents that move later are able to select a strategy dependent on those of the previous agents; this gives a richer way of expressing coalitional power, since agents can enforce different outcomes depending on which of their opponents they are able to respond to. We characterise the sets of outcomes that are possible for a coalition to enforce over different move orderings in a normal-form game, and use this to give a sound and complete axiomatisation of this extended ATL with Dependent Strategies (ATLDS) as well as time complexity bounds for its key decision problems.</p>
+      <h3>The Art of Teaching Theory Across Diverse Backgrounds</h3>
+      <h4>Olga Petrovska (Swansea University)</h4>
+      <p>As higher education becomes more accessible, with the emergence of pathways like degree apprenticeships, we are seeing classrooms filled with an increasingly diverse student population. While this diversity is welcomed development, it also presents certain challenges, for instance when introducing highly theoretical concepts to learners with varied backgrounds.</p>
+
+      <p>In this talk, I will explore strategies to make abstract ideas accessible for all students. Using the example of a module on Algorithms and Automata, I will discuss storytelling as a pedagogical technique that can bring these abstract concepts to life. Additionally, I will present the ways in which students and educators can benefit from generative AI, while also addressing the potential pitfalls of misuse. Finally, I will present some ideas on assessment designs that encourage authentic student work, ensuring that the integration of AI enhances rather than undermines the educational process.</p>
       <h3>Coalgebraic Traces by Following Strategies in Two-player Games</h3>
       <h4>Benjamin Plummer (University of Southampton)</h4>
       <p>In this talk, we introduce the process-theoretic notion of trace into two-player controller-versus-environment games. We demonstrate that the trace semantics at a given game state correspond to the set of subsets of plays that the controller can force, capturing the controller's strategic influence. Building on the coalgebraic framework for traces developed by Hasuo et al., we identify a suitable monad to represent the two layers of branching in these games. This monad, constructed using a weak distributive law to combine two powerset monads, effectively computes what the controller can enforce in a single step. We also present a novel categorical description of strategies, and discuss how our approach easily extends to games with probabilistic environments. This work provides fresh insights into the interaction between strategies and traces, and lays a coalgebraic foundation for game-based program synthesis.</p>
