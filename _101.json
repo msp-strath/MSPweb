@@ -31,6 +31,18 @@
   },
   {
     "tag": "Talk",
+    "date": "2025-04-28T15:00:00Z",
+    "speaker": "Justus Matthiesen",
+    "speakerurl": "",
+    "institute": "University of Edinburgh",
+    "insturl": "",
+    "title": "TBD",
+    "abstract": "",
+    "location": "LT412 and Online",
+    "material":  []
+  },
+  {
+    "tag": "Talk",
     "date": "2025-04-22T15:00:00Z",
     "speaker": "April Gonçalves",
     "speakerurl": "",
@@ -59,18 +71,6 @@
     "speaker": "Philippa Cowderoy",
     "speakerurl": "",
     "institute": "",
-    "insturl": "",
-    "title": "TBD",
-    "abstract": "",
-    "location": "LT412 and Online",
-    "material":  []
-  },
-  {
-    "tag": "Talk",
-    "date": "2025-03-24T15:00:00Z",
-    "speaker": "Justus Matthiesen",
-    "speakerurl": "",
-    "institute": "University of Edinburgh",
     "insturl": "",
     "title": "TBD",
     "abstract": "",
