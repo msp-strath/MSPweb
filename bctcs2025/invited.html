@@ -80,8 +80,12 @@
 <p>The talk will focus on several related results about variations of graph colouring that share a common theme of using a topological method based on tools from topological combinatorics and on ideas of Lovász [J. Comb. Theory, Ser. A, 25(3):319-324, 1978]. These ideas formalise the notion of a solution space, and hence provide a rigorous framework for the study of the above fundamental question.</p>
 
       <h3>Elizabeth Polgreen (University of Edinburgh)</h3>
-      <h4>TBA</h4>
-      <p></p>
+      <h4>Making the most of large language models for program synthesis (when you want correct answers)</h4>
+      <p>Since the release of ChatGPT, large language models (LLMs) have been dominating the discourse around code generation. In contrast, the best-performing solvers in the world of formal program synthesis are still based around enumerative algorithms. So, are we behind the times? Are LLMs the answer to all our synthesis problems? In this talk, I will present two approaches to making the most of LLMs in formal domains. First, I will present a technique based on combining enumerative program synthesis with guidance from an LLM [1]. Focusing on the Syntax-Guided Synthesis (SyGuS) competition benchmarks, we found that, whilst LLMs can produce syntactically correct SyGuS expressions, they fail to produce semantically correct solutions for more than half of the benchmarks. We propose a novel enumerative synthesis algorithm, which integrates calls to an LLM into a weighted probabilistic search, allowing 2-way exchange of information between the two components, and increasing the number of benchmarks solved to 80% (and outperforming the state-of-the-art solver). Second, I will discuss our work using LLMs to generate models of systems for verification [2]. Here, we enable LLMs to generate syntactically correct code, even in programming languages that barely feature in the training data, by combining an HCI technique called natural program elicitation and a Max-SMT solver. We apply our approach to generating models of systems in the UCLID5 verification language, improving syntactic correctness from &lt; 10% to &gt; 80% on a set of textbook problems. Whilst I don’t believe LLMs are the answer to all our synthesis problems, I think our results demonstrate that perhaps techniques used in formal synthesis and programming languages could be the answer to many of the problems facing LLMs..!</p>
+
+<p>[1] Guiding Enumerative Program Synthesis with Large Language Models. Yixuan Li, Julian Parsert, and Elizabeth Polgreen.</p>
+
+<p>[2] Synthetic Programming Elicitation and Repair for Text-to-Code in Very Low-Resource Programming Languages. Federico Mora, Justin Wong, Haley Lepe, Sahil Bhatia, Karim Elmaaroufi, George Varghese, Joseph E. Gonzalez, Elizabeth Polgreen, and Sanjit A. Seshia.</p>
 
 
     </section>
