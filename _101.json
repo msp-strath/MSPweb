@@ -60,8 +60,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "Modelling cybersecurity games with compositional game theory",
+    "abstract": "Compositional game theory and its corresponding Haskell DSL <q>open-games-engine</q>, have been used for modelling microeconomic games, auctions, and smart contracts. Some advantages of this compositional approach are leveraging modularity and code-reuse to construct larger games. Incidentally, game theory has been used to model complex attack-defense scenarios in cybersecurity, with the simplest case modelling the strategic interaction between a single attacker and defender. Scaling these models to accurately reflect real-world attacks and extrapolate data to improve the performance of systems remains an active area of research. In this talk I'll present a honeypot allocation game and design choices that allow a modeller to easily extend the construction to represent defensive strategies such as deception.",
     "location": "LT412 and Online",
     "material":  []
   },
