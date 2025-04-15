@@ -48,8 +48,8 @@
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "TBD",
-    "abstract": "",
+    "title": "A quick & dirty look at at abstract syntax with binders and metavariables",
+    "abstract": "In this talk, I will show the (categorical) semantics of Fiore and collaborators’ “Second-Order Abstract Syntax with Binders” and of McBride and collaborators’ “Universe of Syntaxes with Bindings”. I will also compare them under multiple criteria (literature, usage, meta theory and implementation/formalisation), with special focus on how both approaches handle metavariables by using System F as our main example. (Please beware it’s a work in progress, and many details haven’t been worked out yet",
     "location": "LT412 and Online",
     "material":  []
   },
