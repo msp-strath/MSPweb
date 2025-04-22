@@ -51,7 +51,13 @@
     "title": "A quick & dirty look at at abstract syntax with binders and metavariables",
     "abstract": "In this talk, I will show the (categorical) semantics of Fiore and collaborators’ “Second-Order Abstract Syntax with Binders” and of McBride and collaborators’ “Universe of Syntaxes with Bindings”. I will also compare them under multiple criteria (literature, usage, meta theory and implementation/formalisation), with special focus on how both approaches handle metavariables by using System F as our main example. (Please beware it’s a work in progress, and many details haven’t been worked out yet",
     "location": "LT210 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/kwSeO50FBFE",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "Talk",
@@ -63,7 +69,13 @@
     "title": "Modelling cybersecurity games with compositional game theory",
     "abstract": "Compositional game theory and its corresponding Haskell DSL <q>open-games-engine</q>, have been used for modelling microeconomic games, auctions, and smart contracts. Some advantages of this compositional approach are leveraging modularity and code-reuse to construct larger games. Incidentally, game theory has been used to model complex attack-defense scenarios in cybersecurity, with the simplest case modelling the strategic interaction between a single attacker and defender. Scaling these models to accurately reflect real-world attacks and extrapolate data to improve the performance of systems remains an active area of research. In this talk I'll present a honeypot allocation game and design choices that allow a modeller to easily extend the construction to represent defensive strategies such as deception.",
     "location": "LT412 and Online",
-    "material":  []
+    "material":  [
+      {
+       "tag": "Link",
+       "address": "https://youtu.be/JBOcJW_kxy8",
+       "linkDescription": "Video"
+      }
+    ]
   },
   {
     "tag": "CancelledTalk",
