@@ -1,5 +1,15 @@
 [
   {
+    "tag": "SpecialEvent",
+    "date": "2025-05-28T11:00:00Z",
+    "endDate": "2025-05-28T12:00:00Z",
+    "title": "ADR/Promotion Information Meeting",
+    "url": "",
+    "location": "LT1414a",
+    "locationurl": "",
+    "description": ""
+  },
+  {
     "tag": "Talk",
     "date": "2025-03-19T16:00:00Z",
     "speaker": "Petar Veličković",
