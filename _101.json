@@ -1,4 +1,16 @@
 [
+    {
+    "tag": "Talk",
+    "date": "2025-05-30T14:00:00Z",
+    "speaker": "Liang-Ting Chen",
+    "speakerurl": "https://l-tchen.github.io/",
+    "institute": "Institute of Information Science, Academia Sinica, Taiwan",
+    "insturl": "https://www.iis.sinica.edu.tw/en/index.html",
+    "title": "A formal treatment of bidirectional typing",
+    "abstract": "In this talks, we consider a general and formal theory of bidirectional typing for simply typed languages: for every signature that specifies a mode-correct bidirectionally typed language, there exists a proof-relevant type synthesiser which, given an input abstract syntax tree, constructs a typing derivation if any, gives its refutation if not, or reports that the input does not have enough type annotations.<br>Sufficient conditions for deriving a type synthesiser such as soundness, completeness, and mode-correctness are established for all signatures. We propose a preprocessing step, which helps the user to deal with missing type annotations. The entire theory is implemented in Agda, serving as a verified generator of proof-relevant type synthesisers as a by-product.",
+    "location": "LT210 and Online",
+    "material":  []
+  },
   {
     "tag": "SpecialEvent",
     "date": "2025-05-28T11:00:00Z",
