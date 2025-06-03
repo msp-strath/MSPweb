@@ -149,10 +149,10 @@ BEGIN:VEVENT
 DTSTAMP:20250531T181718Z
 CREATED:20250531T181718Z
 UID:9da40b36-8741-4eb2-be27-f25dc8595078___n8henrie.com
-LAST-MODIFIED:20250531T181718Z
-DESCRIPTION:Sergei Stepanenko\, Amin Timany
-SUMMARY:Solving Guarded Domain Equations in Presheaves Over Ordinals and 
- Mechanizing It
+LAST-MODIFIED:20250603140200Z
+DESCRIPTION:Arthur Adjedj\, Thibaut Benjamin\, Meven Lennon-Bertrand\, 
+ Kenji Maillard
+SUMMARY:AdapTT: A Type Theory with Functorial Types
 LOCATION:TL325
 DTSTART:20250609T175500
 DTEND:20250609T181500
@@ -1410,10 +1410,10 @@ BEGIN:VEVENT
 DTSTAMP:20250531T181718Z
 CREATED:20250531T181718Z
 UID:819da296-ca9e-450a-9124-d5739de62ec9___n8henrie.com
-LAST-MODIFIED:20250531T181718Z
-DESCRIPTION:Arthur Adjedj\, Thibaut Benjamin\, Meven Lennon-Bertrand\, 
- Kenji Maillard
-SUMMARY:AdapTT: A Type Theory with Functorial Types
+LAST-MODIFIED:20250603T140200Z
+DESCRIPTION:Sergei Stepanenko\, Amin Timany
+SUMMARY:Solving Guarded Domain Equations in Presheaves Over Ordinals and 
+ Mechanizing It
 LOCATION:TL325
 DTSTART:20250613T162500
 DTEND:20250613T164500
