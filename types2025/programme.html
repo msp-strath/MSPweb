@@ -17,11 +17,20 @@
      background-color: #f2f2f2;
     }
 
+    td.chair {
+     background-color: #D8BFD8;
+    }
+
     th.firstcol {
      position: sticky;
      left: 0;
-     background-color: #ffffff;
+     background-color: #D8BFD8;
     }
+
+    th.firstrow {
+     background-color: #D8BFD8;
+    }
+
   </style>
  </head>
  <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
@@ -46,7 +55,7 @@
    </div>
   </nav>
   <div class="container">
-    <h1>Preliminary Programme</h1>
+    <h1>Programme</h1>
 
     <section id="schedule">
 
@@ -59,11 +68,11 @@
     <thead>
       <tr>
         <th class="firstcol">Time (BST)</th>
-        <th>Monday 9 June</th>
-        <th>Tuesday 10 June</th>
-        <th>Wednesday 11 June</th>
-        <th>Thursday 12 June</th>
-        <th>Friday 13 June</th>
+        <th class="firstrow">Monday 9 June</th>
+        <th class="firstrow">Tuesday 10 June</th>
+        <th class="firstrow">Wednesday 11 June</th>
+        <th class="firstrow">Thursday 12 June</th>
+        <th class="firstrow">Friday 13 June</th>
       </tr>
     </thead>
     <tbody>
@@ -76,7 +85,14 @@
         <td class="table-success">Coffee</td>
       </tr>
       <tr>
-        <th class="firstcol" rowspan="5">09:00&ndash;10:35</th>
+        <th class="firstcol" rowspan="6">09:00&ndash;10:35</th>
+        <td class="small chair">Chair: Fredrik Nordvall Forsberg</td>
+        <td class="small chair">Chair: Robert Atkey</td>
+        <td class="small chair">Chair: TBC</td>
+        <td class="small chair">Chair: Herman Geuvers</td>
+        <td class="small chair">Chair: Andrew Swan</td>
+      </tr>
+      <tr>
         <td class="table-warning" rowspan="2">Towards topological type theory for decrypting transfinite methods in classical mathematics<br/><small>Ingo Blechschmidt</small></td>
         <td>Algebraic Universes and Variances For All<br/><small>Matthieu Sozeau, Marc Bezem</small></td>
         <td class="table-warning" rowspan="2">Intuitionistic modalities through proof theory <br/><small>Sonia Marin</small></td>
@@ -116,7 +132,14 @@
         <td class="table-success">Coffee break</td>
       </tr>
       <tr>
-        <th class="firstcol" rowspan="5">11:00&ndash;12:30</th>
+        <th class="firstcol" rowspan="6">11:00&ndash;12:30</th>
+        <td class="small chair">Chair: Guillaume Allais</td>
+        <td class="small chair">Chair: Tom de Jong</td>
+        <td class="small chair">Chair: András Kovács</td>
+        <td class="small chair">Chair: Liang-Ting Chen</td>
+        <td class="small chair">Chair: Kenji Maillard</td>
+      </tr>
+      <tr>
         <td class="short">A Coq Formalization of Lagois Connections for Secure Information Flow<br/><small>Casper Ståhl, Léon Gondelman, René Rydhof Hansen, Danny Bøgsted Poulsen</small></td>
         <td class="short">About the construction of simplicial and cubical sets in indexed form: the case of degeneracies<br/><small>Hugo Herbelin, Ramkumar Ramachandra</small></td>
         <td class="short">How (not) to prove typed type conversion transitive<br/><small>Yann Leray</small></td>
@@ -160,7 +183,14 @@
         <td class="table-success">Lunch break</td>
       </tr>
       <tr>
-        <th class="firstcol" rowspan="2">13:30&ndash;14:10</th>
+        <th class="firstcol" rowspan="3">13:30&ndash;14:10</th>
+        <td class="small chair">Chair: Théo Winterhalter</td>
+        <td class="small chair">Chair: Benno van den Berg</td>
+        <td class="small chair">Chair: Malin Altenmüller</td>
+        <td class="small chair">Chair: Ambrus Kaposi</td>
+        <td class="small chair">Chair: Håkon Gylterud</td>
+      </tr>
+      <tr>
         <td class="short">Expansion in a Calculus with Explicit Substitutions<br/><small>Ana Jorge Almeida, Sandra Alves, Mário Florido</small></td>
         <td>Type Theory and Philosophical Logic<br/><small>Greg Restall</small></td>
         <td class="short">Towards a computational quantum logic<br/><small>Alejandro Díaz-Caro</small></td>
@@ -178,7 +208,7 @@
         <th class="firstcol" rowspan="4">14:10&ndash;15:00</th>
         <td  class="short" rowspan="2">Thinning Thinnings: Safe and Efficient Binders<br/><small>April Gonçalves, Wen Kokke</small></td>
         <td class="table-info"><a href="https://europroofnet.github.io/women-epn-2025/">WEPN</a> Opening and Welcome<br/><small></small></td>
-        <td  class="table-primary" rowspan="18">Excursion to Loch Lomond<br/><small></small></td>
+        <td  class="table-primary" rowspan="19">Excursion to Loch Lomond<br/><small></small></td>
         <td  class="short" rowspan="2">Formalising Monitors for Distributed Deadlock Detection<br/><small>Radosław Jan Rowicki, Adrian Francalanza, Alceste Scalas</small></td>
         <td  class="short" rowspan="2">Weihrauch Problems as Containers<br/><small>Ian Price, Cécilia Pradic</small></td>
       </tr>
@@ -204,9 +234,15 @@
         <td class="table-success">Coffee break</td>
       </tr>
       <tr>
-        <th class="firstcol" rowspan="5">15:30&ndash;17:00</th>
+        <th class="firstcol" rowspan="6">15:30&ndash;17:00</th>
+        <td class="small chair">Chair: Thorsten Altenkirch</td>
+                <td rowspan="3">Why Types: Natural Structures of Mind or Artificial Formal Tools?<br/><small>Irina Starikova (15:45&ndash;16:15)</small></td>
+        <td class="small chair">Chair: TBC</td>
+        <td class="small chair">Chair: Niels van der Weide</td>
+      </tr>
+      <tr>
         <td>Dependent two-sided fibrations for directed type theory<br/><small>Fernando Chu, Paige Randall North</small></td>
-        <td rowspan="2">Why Types: Natural Structures of Mind or Artificial Formal Tools?<br/><small>Irina Starikova (15:45&ndash;16:15)</small></td>
+
         <td>Canonical Bidirectional Typing via Polarised System L<br/><small>Zanzi Mihejevs</small></td>
         <td>HoTTLean: Formalizing the Meta-Theory of HoTT in Lean<br/><small>Joseph Hua, Steve Awodey, Mario Carneiro, Sina Hazratpour, Wojciech Nawrocki, Spencer Woolfson, Yiming Xu</small></td>
       </tr>
@@ -223,7 +259,7 @@
       </tr>
       <tr>
         <td>A Type Theory for Comprehension Categories with Applications to Subtyping<br/><small>Niyousha Najmaei, Niels van der Weide, Benedikt Ahrens, Paige Randall North</small></td>
-        <td rowspan="3">Type Theory of Acyclic and Cyclic Algorithms without Chain Memory<br/><small>Roussanka Loukanova (16:45&ndash;17:15)</small></td>
+        <td rowspan="4">Type Theory of Acyclic and Cyclic Algorithms without Chain Memory<br/><small>Roussanka Loukanova (16:45&ndash;17:15)</small></td>
         <td class="short">A Curry-Howard correspondence for intuitionistic inquisitive logic<br/><small>Ivo Pezlar, Vít Punčochář</small></td>
         <td>Solving Guarded Domain Equations in Presheaves Over Ordinals and Mechanizing It<br/><small>Sergei Stepanenko, Amin Timany</small></td>
       </tr>
@@ -233,10 +269,16 @@
         <td class="table-success">15 minute break</td>
       </tr>
       <tr>
-        <th class="firstcol" rowspan="5">17:00&ndash;18:15</th>
+        <th class="firstcol" rowspan="6">17:00&ndash;18:15</th>
+        <td class="small chair">Chair: Nicolai Kraus</td>
+
+        <td class="table-info" rowspan="6">TYPES Business Meeting<br/><small></small></td>
+        <td class="small chair">Chair: Rasmus Møgelberg</td>
+      </tr>
+      <tr>
         <td>Irregular models of type theory<br/><small>Andrew Wakelin Swan</small></td>
 
-        <td class="table-info" rowspan="5">TYPES Business Meeting<br/><small></small></td>
+
         <td>Cohomology in Synthetic Stone Duality<br/><small>Hugo Moeneclaey, Thierry Coquand, Felix Cherubini, Freek Geerligs</small></td>
       </tr>
     <tr>
