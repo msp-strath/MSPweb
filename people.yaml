@@ -290,6 +290,11 @@
   description:
     who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
+- name: "Fiona Blackett"
+  ident: "fiona"
+  status: "phd-student"
+  description:
+    who is a PhD student under Jules Hedges' direction.
 
 ##############################################################################
 ## Finished PhDs
