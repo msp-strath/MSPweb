@@ -68,10 +68,6 @@ at the University of Strathclyde and comprises
 :   who is interested in concurrency and logic, and their applications to analysing threats to security and privacy.
     See [Ross' homepage](https://personal.cis.strath.ac.uk/ross.horne/) for more information or email [ross.horne [at] strath.ac.uk](mailto:ross.horne [at] strath.ac.uk).
 
-[Dr Clovis Eberhart](https://pureportal.strath.ac.uk/en/persons/clovis-eberhart)
-
-:   who is an RA working with Clemens Kupke.
-
 Stuart Gale
 
 :   who is a PhD student under Conor McBride's direction.
@@ -141,7 +137,17 @@ Samuel Fish
 
 :   who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
+Fiona Blackett
+
+:   who is a PhD student under Jules Hedges' direction.
+
+
 ### Alumni ###
+
+[Dr Clovis Eberhart](https://group-mmm.org/~eberhart/)
+
+:   who was an RA working with Clemens Kupke.
+
 
 Prof. Glynn Winskel
 
@@ -153,7 +159,7 @@ Prof. Radu Mardare
 :   who worked on mathematical tools for modelling and reasoning about systems,
     especially in the use of metric spaces for quantitative and probabilistic reasoning.
 
-[Wen Kokke](https://wen.works)
+[Dr Wen Kokke](https://wen.works)
 
 :   who worked as an RA on Bob Atkey's AISEC project, and is interested in dependent types, linear types and other substructural friends, lightweight verification, and verification of machine learning.
 
