@@ -151,15 +151,6 @@
 ##############################################################################
 ## Research staff
 
-- name: "Clovis Eberhart"
-  ident: "clovis"
-  status: "research"
-  links:
-    - href: "https://pureportal.strath.ac.uk/en/persons/clovis-eberhart"
-    - rel: "pure"
-  description:
-    who is an RA working with Clemens Kupke.
-
 ##############################################################################
 ## PhD students
 ##
@@ -282,7 +273,9 @@
   status: "phd-student"
   description:
     who is a PhD student under Bob Atkey's direction.
-    [April's homepage](https://cyberglot.space/).
+  links:
+    - href: "https://cyberglot.space/"
+      rel: "homepage"
 
 - name: "Samuel Fish"
   ident: "sam"
@@ -295,6 +288,10 @@
   status: "phd-student"
   description:
     who is a PhD student under Jules Hedges' direction.
+  links:
+    - href: "https://fiona1729.com/"
+      rel: "homepage"
+
 
 ##############################################################################
 ## Finished PhDs
@@ -419,6 +416,15 @@
 
 ##############################################################################
 ## Alumni
+
+- name: "Clovis Eberhart"
+  ident: "clovis"
+  status: "alum"
+  links:
+    - href: "https://pureportal.strath.ac.uk/en/persons/clovis-eberhart"
+    - rel: "pure"
+  description:
+    who is an RA working with Clemens Kupke.
 
 - name: "Glynn Winskel"
   ident: "glynn"
