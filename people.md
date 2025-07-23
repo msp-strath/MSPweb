@@ -109,11 +109,6 @@ Ezra Schoen
 
 :   who is a PhD student under Clemens Kupke's direction.
 
-Riu Rodríguez Sakamoto
-
-:   who is a PhD student under Jules Hedges' direction.
-    [Riu's homepage](https://riurodsak.github.io/).
-
 Dylan Braithwaite
 
 :   who is a PhD student under Jules Hedges' direction.
@@ -144,6 +139,10 @@ Fiona Blackett
 
 
 ### Alumni ###
+
+[Riu Rodríguez Sakamoto](https://riurodsak.github.io/)
+
+:   who was a PhD student under Jules Hedges' direction. Riu successfully defended his thesis "Categorical Models in Control Theory and Reinforcement Learning" in July 2025, with Fabio Zanasi as external examiner and Bob Atkey as internal.
 
 [Dr Clovis Eberhart](https://group-mmm.org/~eberhart/)
 

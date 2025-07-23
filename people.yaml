@@ -233,15 +233,6 @@
   description:
     who is a PhD student under Clemens Kupke's direction.
 
-- name: "Riu Rodríguez Sakamoto"
-  ident: "riu"
-  status: "phd-student"
-  description:
-    who is a PhD student under Jules Hedges' direction.
-  links:
-    - href: "https://riurodsak.github.io/"
-      rel: "homepage"
-
 - name: "Dylan Braithwaite"
   ident: "dylan"
   status: "phd-student"
@@ -295,6 +286,15 @@
 
 ##############################################################################
 ## Finished PhDs
+
+- name: "Riu Rodríguez Sakamoto"
+  ident: "riu"
+  status: "phd-finished"
+  description:
+    who was a PhD student under Jules Hedges' direction. Riu successfully defended his thesis "Categorical Models in Control Theory and Reinforcement Learning" in July 2025, with Fabio Zanasi as external examiner and Bob Atkey as internal.
+  links:
+    - href: "https://riurodsak.github.io/"
+      rel: "homepage"
 
 - name: "Joseph Collins"
   ident: "joe"
