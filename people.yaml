@@ -290,6 +290,7 @@
 - name: "Riu Rodríguez Sakamoto"
   ident: "riu"
   status: "phd-finished"
+  title: "Dr"
   description:
     who was a PhD student under Jules Hedges' direction. Riu successfully defended his thesis "Categorical Models in Control Theory and Reinforcement Learning" in July 2025, with Fabio Zanasi as external examiner and Bob Atkey as internal.
   links:
@@ -299,6 +300,7 @@
 - name: "Joseph Collins"
   ident: "joe"
   status: "phd-finished"
+  title: "Dr"
   description:
     who was a PhD student under Ross Duncan's direction. Joe successfully
     defended his thesis \"Hopf-Frobenius Algebras\" in January 2024, with Chris
@@ -307,6 +309,7 @@
 - name: "James Wood"
   ident: "james"
   status: "phd-finished"
+  title: "Dr"
   description:
     who was a PhD student under Bob Atkey's direction. James passed his viva
     in January 2024 with external examiner Kathrin Stark, and internal examiner
@@ -420,20 +423,17 @@
 - name: "Clovis Eberhart"
   ident: "clovis"
   status: "alum"
+  title: "Dr"
   links:
-    - href: "https://pureportal.strath.ac.uk/en/persons/clovis-eberhart"
-    - rel: "pure"
+    - href: "https://group-mmm.org/~eberhart/"
+    - rel: "homepage"
   description:
-    who is an RA working with Clemens Kupke.
+    who was an RA working with Clemens Kupke.
 
 - name: "Glynn Winskel"
   ident: "glynn"
   title: "Prof"
   status: "alum"
-  email: "glynn.winskel@strath.ac.uk"
-  links:
-    - href: "https://pureportal.strath.ac.uk/en/persons/glynn-winskel"
-      rel: "pure"
   description:
     who works on mathematical models of interaction such as distributed games
     and event structures.
@@ -443,15 +443,9 @@
   ident: "william"
   title: "Dr"
   status: "alum"
-  email: "william.waites@strath.ac.uk"
-  links:
-    - href: "https://personal.cis.strath.ac.uk/william.waites/"
-      rel: "homepage"
   description:
     who works on modelling infectious diseases using tools such as
     stochastic graph rewriting and evolutionary game theory.
-  phd-topics:
-    - "Infectious Disease Modelling"
 
 - name: "Wen Kokke"
   ident: "wen"
@@ -471,16 +465,13 @@
   ident: "radu"
   title: "Prof."
   status: "alum"
-  email: "radu.mardare@strath.ac.uk"
   links:
-    - href: "https://personal.cis.strath.ac.uk/r.mardare/"
+    - href: "https://www.macs.hw.ac.uk/~rm4023/"
       rel: "homepage"
   description:
     who is interested in mathematical tools for modelling and reasoning
     about systems, especially in the use of metric spaces for quantitative
     and probabilistic reasoning.
-  phd-topics:
-    - "Quantitative Reasoning"
 
 - name: "Jérémy Ledent"
   ident: "jeremy"
