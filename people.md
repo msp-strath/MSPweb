@@ -140,7 +140,7 @@ Fiona Blackett
 
 ### Alumni ###
 
-[Riu Rodríguez Sakamoto](https://riurodsak.github.io/)
+[Dr Riu Rodríguez Sakamoto](https://riurodsak.github.io/)
 
 :   who was a PhD student under Jules Hedges' direction. Riu successfully defended his thesis "Categorical Models in Control Theory and Reinforcement Learning" in July 2025, with Fabio Zanasi as external examiner and Bob Atkey as internal.
 
