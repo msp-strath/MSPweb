@@ -3,6 +3,9 @@ _build/*
 _dist/*
 dist/*
 
+# Misc Backup files
+*~
+
 # Logs downloaded using make get-logs
 _logs/*
 
