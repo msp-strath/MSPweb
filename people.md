@@ -20,9 +20,9 @@ at the University of Strathclyde and comprises
 
 [Dr Conor McBride](http://www.strath.ac.uk/staff/mcbrideconordr/)
 
-:   who is currently working on dependently typed programming. He is
+:   (they/them) who is currently working on dependently typed programming. They are
     also interested in extending the functionality of Haskell so that it
-    can mimic the dependently-typed style of programming. See
+    can mimic the dependently typed style of programming. See
     [Conor's current homepaqe](http://personal.cis.strath.ac.uk/~conor/)
     for more details or email
     [conor.mcbride [at] strath.ac.uk](mailto:conor.mcbride [at] strath.ac.uk).
