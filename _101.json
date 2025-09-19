@@ -133,12 +133,12 @@
   },
   {
     "tag": "Talk",
-    "date": "2025-09-30T15:00:00Z",
+    "date": "2025-10-03T16:00:00Z",
     "speaker": "Jeremy Singer",
     "speakerurl": "https://www.dcs.gla.ac.uk/~jsinger/",
     "institute": "University of Glasgow",
     "insturl": "https://www.gla.ac.uk/schools/computing/",
-    "title": "Let's Take Esoteric Programming Languages Seriously (TBC)",
+    "title": "Let's Take Esoteric Programming Languages Seriously",
     "abstract": "",
     "location": "TBD",
     "material":  []
