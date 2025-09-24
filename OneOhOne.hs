@@ -39,7 +39,7 @@ import Text.Feed.Query
 
 -- constants
 usualTime :: TimeOfDay
-usualTime = TimeOfDay 15 0 0
+usualTime = TimeOfDay 13 0 0
 
 usualDay :: String
 usualDay = "Monday"
