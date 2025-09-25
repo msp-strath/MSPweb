@@ -8,16 +8,18 @@
 
         MSPweb = (pkgs.haskellPackages.callPackage ./MSPweb.nix { });
       in
-        {
+        rec {
           packages.default = MSPweb;
-          devShells.default = pkgs.haskellPackages.shellFor {
-            packages = hpkgs: [ MSPweb ];
-            nativeBuildInputs = [
-              pkgs.cabal-install
-              pkgs.haskell-language-server
-              pkgs.cabal2nix
-              pkgs.gnumake
-            ];
-          };
+          devShells.default = MSPweb.env;
+          devShells.full =
+            pkgs.haskellPackages.shellFor {
+              packages = hpkgs: [ MSPweb ];
+              nativeBuildInputs = [
+                pkgs.cabal-install
+                pkgs.haskell-language-server
+                pkgs.cabal2nix
+                pkgs.gnumake
+              ];
+            };
         });
 }
