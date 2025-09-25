@@ -10,6 +10,14 @@
       in
         {
           packages.default = MSPweb;
-          devShells.default = MSPweb.env;
+          devShells.default = pkgs.haskellPackages.shellFor {
+            packages = hpkgs: [ MSPweb ];
+            nativeBuildInputs = [
+              pkgs.cabal-install
+              pkgs.haskell-language-server
+              pkgs.cabal2nix
+              pkgs.gnumake
+            ];
+          };
         });
 }
