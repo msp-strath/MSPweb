@@ -153,7 +153,13 @@
     "title": "Leftovers, Rightunders: Typechecking Thinnings Compositionally",
     "abstract": "In the interests of sharing MSP lore, I came up with a way to talk about both the \"Input Subject Output\" approach to typechecking and the Category of Thinnings in the same talk, making the latter an interesting example of the former.\n\nThe Input Subject Output approach, like most bidirectional approaches to problem decomposition, tracks whether signals go from parent to child or vice versa, but it also acknowledges a signal has a guarantor as well as a sender, responsible for the meaningfulness of the signal. Meanwhile, thinnings are order-preserving embeddings between ordered sequences, or dually, selections of elements from sequences (their resemblance to binomial coffecients is no accident), and are thus a fine example of a monoidal category.\n\nI won't assume that any of you know know any of this: many of us do; more of us should. And I'll try to tell the story with pictures, drawn on a whiteboard, rather than jargon.\n\nI often use thinnings to talk about embeddings between scopes, the latter seen as sequences which grow on the right (because of prejudices about time). A compositional way to typecheck a thinning is to start with the available stuff \"over\" the thinning, together with a thinning that will start choosing from the newest stuff on the right. If all is well, we shall learn which \"leftovers\" have not yet been considered, and which \"rightunders\" have been not only considered but also selected. There is a healthy story about both the monoidal/parallel/spatial/tensor structure of thinnings and their categorical/sequential/temporal/composition structure, yielding an algorithm which never has to guess where to chop sequences in two.",
     "location": "LT1310 and Online",
-    "material":  []
+    "material":  [
+      {
+        "tag": "Link",
+        "address": "https://www.youtube.com/watch?v=BABpO4epxOo",
+        "linkDescription" : "Video"
+      }
+    ]
   },
   {
     "tag": "SpecialEvent",
