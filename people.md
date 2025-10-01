@@ -70,7 +70,6 @@ Stuart Gale
 Simone Barlocco
 
 :   who is a PhD student under Clemens Kupke's direction.
-    [Simone's homepage](http://personal.strath.ac.uk/simone.barlocco/).
 
 Alasdair Lambert
 
