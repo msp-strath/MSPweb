@@ -267,6 +267,12 @@
     - href: "https://fiona1729.com/"
       rel: "homepage"
 
+- name: "Emma Tye"
+  ident: emma
+  status: "phd-student"
+  description:
+    who is a PhD student under Guillaume Allais' direction.
+
 
 ##############################################################################
 ## Finished PhDs

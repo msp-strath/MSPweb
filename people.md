@@ -131,6 +131,9 @@ Fiona Blackett
 :   who is a PhD student under Jules Hedges' direction.
     [Fiona's homepage](https://fiona1729.com/).
 
+Emma Tye
+
+:   who is a PhD student under Guillaume Allais' direction.
 
 ### Alumni ###
 
