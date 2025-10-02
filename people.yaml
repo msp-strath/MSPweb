@@ -90,22 +90,6 @@
   phd-topics:
     - "Ordinals"
 
-- name: "Jules Hedges"
-  ident: "jules"
-  title: "Dr"
-  status: "academic"
-  email: "jules.hedges@strath.ac.uk"
-  links:
-    - href: "https://julesh.com/"
-      rel: "homepage"
-    - href: "hedgesjuliandr"
-      rel: "staff"
-  description:
-    who is interested in game theory, economics and machine learning
-    using tools of category theory and functional programming.
-  phd-topics:
-    - "Categorical Cybernetics"
-
 - name: "Guillaume Allais"
   ident: "gallais"
   title: "Dr"
@@ -283,6 +267,12 @@
     - href: "https://fiona1729.com/"
       rel: "homepage"
 
+- name: "Emma Tye"
+  ident: emma
+  status: "phd-student"
+  description:
+    who is a PhD student under Guillaume Allais' direction.
+
 
 ##############################################################################
 ## Finished PhDs
@@ -419,6 +409,19 @@
 
 ##############################################################################
 ## Alumni
+
+- name: "Jules Hedges"
+  ident: "jules"
+  title: "Dr"
+  status: "alum"
+  email: "jules@cybercat.institute"
+  links:
+    - href: "https://julesh.com/"
+      rel: "homepage"
+  description:
+    who was a Chancellor's Fellow working on game theory, economics
+    and machine learning using the tools of category theory and
+    functional programming.
 
 - name: "Clovis Eberhart"
   ident: "clovis"
