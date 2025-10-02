@@ -85,12 +85,12 @@
   },
   {
     "tag": "Talk",
-    "date": "2025-10-06T13:00:00Z",
-    "speaker": "Fredrik Nordvall Forsberg",
+    "date": "2025-10-27T13:00:00Z",
+    "speaker": "Sean Watters",
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "Intuitionistic Logic",
+    "title": "What I did in my PhD",
     "abstract": "",
     "location": "TBD",
     "material":  []
@@ -121,12 +121,12 @@
   },
   {
     "tag": "Talk",
-    "date": "2025-10-27T13:00:00Z",
-    "speaker": "Sean Watters",
+    "date": "2025-10-06T13:00:00Z",
+    "speaker": "Fredrik Nordvall Forsberg",
     "speakerurl": "",
     "institute": "MSP",
     "insturl": "",
-    "title": "What I did in my PhD",
+    "title": "Intuitionistic Logic",
     "abstract": "",
     "location": "TBD",
     "material":  []
@@ -140,7 +140,7 @@
     "insturl": "https://www.gla.ac.uk/schools/computing/",
     "title": "Let's Take Esoteric Programming Languages Seriously",
     "abstract": "Esoteric programming languages are challenging to learn, but their unusual features and constraints may serve to improve programming ability. From languages designed to be intentionally obtuse (e.g. INTERCAL) to others targeting artistic expression (e.g. Piet) or exploring the nature of computation (e.g. Fractan), there is rich variety in the realm of esoteric programming languages. This essay examines the counterintuitive appeal of esoteric languages and seeks to analyse reasons for this popularity. We will explore why people are attracted to esoteric languages in terms of (a) program comprehension and construction, as well as (b) language design and implementation. Our assertion is that esoteric languages can improve general PL awareness, at the same time as enabling the esoteric programmer to impress their peers with obscure knowledge. We will also consider pedagogic principles and the use of AI, in relation to esoteric languages. Emerging from the specific discussion, we identify a general set of \"good\" reasons for designing new programming languages. It may not be possible to be exhaustive on this topic, and it is certain we have not achieved that goal here. However we believe our most important contribution is to draw attention to the varied and often implicit motivations involved in programming language design.",
-    "location": "TBD",
+    "location": "LT1414a and Online",
     "material":  []
   },
   {

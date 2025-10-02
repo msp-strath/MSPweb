@@ -48,12 +48,6 @@ at the University of Strathclyde and comprises
     for more details or email
     [fredrik.nordvall-forsberg [at] strath.ac.uk](mailto:fredrik.nordvall-forsberg [at] strath.ac.uk).
 
-[Dr Jules Hedges](https://www.strath.ac.uk/staff/hedgesjuliandr/)
-
-:   who is interested in game theory, economics and machine learning
-    using tools of category theory and functional programming. See
-    [Jules' homepage](https://julesh.com/) or email [jules.hedges [at] strath.ac.uk](mailto:jules.hedges [at] strath.ac.uk).
-
 [Dr Guillaume Allais](https://pureportal.strath.ac.uk/en/persons/guillaume-allais-2)
 
 :   who is interested in efficient runtime representations, generic programming, proof automation, and user experience. See [Guillaume's homepage](http://gallais.github.io/) or email [guillaume.allais [at] strath.ac.uk](mailto:guillaume.allais [at] strath.ac.uk).
@@ -76,7 +70,6 @@ Stuart Gale
 Simone Barlocco
 
 :   who is a PhD student under Clemens Kupke's direction.
-    [Simone's homepage](http://personal.strath.ac.uk/simone.barlocco/).
 
 Alasdair Lambert
 
@@ -137,8 +130,18 @@ Fiona Blackett
 :   who is a PhD student under Jules Hedges' direction.
     [Fiona's homepage](https://fiona1729.com/).
 
+Emma Tye
+
+:   who is a PhD student under Guillaume Allais' direction.
 
 ### Alumni ###
+
+[Dr Jules Hedges](https://julesh.com/)
+
+:   who was a Chancellor's Fellow working on game theory, economics
+    and machine learning using the tools of category theory and
+    functional programming.
+
 
 [Dr Riu Rodríguez Sakamoto](https://riurodsak.github.io/)
 
