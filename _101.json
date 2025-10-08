@@ -128,7 +128,7 @@
     "insturl": "",
     "title": "An introduction to constructive logic",
     "abstract": "Constructive logic (also known as intuitionistic logic) is logic without the Law of the Excluded Middle, which states that P or ¬ P holds for every proposition P. Hilbert famously said that denying mathematicians the use of the Law of the Excluded Middle is \"the same as denying the boxer the use of his fists\". I will try to convince you that there sometimes is merit in not trying to punch people in the head. For example, constructive logic is the internal logic of toposes, and so a constructive proof can often be reinterpreted to show a much stronger result than a classical one, e.g., a constructed proof of the existence of a function might in fact automatically yield the existence of a <em>continuous</em> or <em>computable</em> function. Constructive logic often leads to interesting mathematics, as it allows for finer distinctions than classical logic. I will also discuss how and when, despite appearances, constructive logic can be seen as an extension of classical logic, rather than as a restriction.",
-    "location": "LT310 and online",
+    "location": "LT210 and online",
     "material":  []
   },
   {
