@@ -1,20 +1,103 @@
-- code: "CS103"
-  type: "Strathclyde"
-  name: "Machines, Languages, and Computation"
-  level: 1
+preamble: |
+  We do teaching, we like it, we doing it as a team.
+  This needs replacing...
 
-- code: "CS106"
-  type: "Strathclyde"
-  name: "Computer Systems and Organisation"
-  level: 1
-  description:
-    An introduction to computer hardware via binary logic and state machines.
-  editions:
-  - year: 2022
-    people:
-    - "Conor McBride"
-    - "Alasdair Lambert"
+courses:
+  - code: "CS103"
+    kind: "UG"
+    name: "Machines, Languages, and Computation"
+    level: 1
+    editions:
+      - year: 2025
+        people:
+          - "Conor Mc Bride"
+          - "Clemens Kupke"
 
-- code: "
+  - code: "CS106"
+    kind: "UG"
+    name: "Computer Systems and Organisation"
+    level: 1
+    description: |
+      An introduction to computer hardware via binary logic and state machines.
+    editions:
+      - year: 2022
+        people:
+          - "Conor McBride"
+          - "Alasdair Lambert"
 
-- code: "CS316"
+  - code: "CS208"
+    kind: "UG"
+    name: "Logic and Algorithms"
+    level: 2
+    description: |
+      blah
+
+    editions:
+      - year: 2025
+        people:
+          - "Bob Atkey"
+        link: "https://personal.cis.strath.ac.uk/robert.atkey/cs208"
+
+  - code: "CS260"
+    kind: "UG"
+    name: "Functional Thinking"
+    level: 3
+    description: |
+      Introduction to Functional Programming
+    editions:
+      - year: 2025
+        people:
+          - "Alasdair Lambert"
+
+  - code: "CS316"
+    kind: "UG"
+    name: "Functional Programming"
+    description: |
+      Functional Programming in Haskell
+    level: 3
+    editions:
+      - year: 2025
+        people:
+          - "Alasdair Lambert"
+          - "Guillaume Allais"
+      - year: 2024
+        people:
+          - "Bob Atkey"
+
+      - year: 2023
+        people:
+          - "Bob Atkey"
+
+      - year: 2022
+        people:
+          - "Bob Atkey"
+
+      - year: 2021
+        people: []
+
+      - year: 2020
+        people: []
+
+      - year: 2019
+        people: []
+
+      - year: 2018
+        people: []
+
+      - year: 2017
+        people:
+          - "Bob Atkey"
+          - "Fredrik Nordvall Forsberg"
+        link: "https://github.com/bobatkey/CS316-17"
+      - year: 2016
+        people:
+          - "Conor Mc Bride"
+          - "James Chapman"
+          - "Bob Atkey"
+          - "Fredrik Nordvall Forsberg"
+        link: "https://github.com/bobatkey/CS316-16"
+
+  # CS410
+  # CS825
+  # CS882
+  # CS886

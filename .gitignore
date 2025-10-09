@@ -2,6 +2,9 @@
 _build/*
 _dist/*
 dist/*
+dist-newstyle/
+
+*~
 
 # Logs downloaded using make get-logs
 _logs/*
@@ -10,6 +13,7 @@ _logs/*
 msp101.html
 msp101.ics
 msp101.rss
+teaching.html
 
 # SMB authentication file (make sure not readable by others!)
 _authsmb.txt
