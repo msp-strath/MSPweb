@@ -4,13 +4,14 @@ module Main where
 import Prelude hiding (div)
 import GHC.Generics
 import Data.Yaml
+import Data.List
 import qualified Data.ByteString as BS
 
 import Html
 
 type Markdown = String
 
-data Status = Academic | PhDStudent | Research | PhDFinished | Alum
+data Status = Academic | PhDStudent | PhDStaff | Research | PhDFinished | Alum
   deriving (Show, Eq, Generic)
 
 instance FromJSON Status where
@@ -18,6 +19,7 @@ instance FromJSON Status where
   parseJSON (String "phd-student") = pure PhDStudent
   parseJSON (String "research") = pure Research
   parseJSON (String "phd-finished") = pure PhDFinished
+  parseJSON (String "phd-staff") = pure PhDStaff
   parseJSON (String "alum") = pure Alum
   parseJSON _ = fail "invalid status"
 
@@ -61,6 +63,17 @@ data Person = Person
 
 instance FromJSON Person
 
+data MSP
+  = MSP
+  { preamble :: Markdown
+  , academic :: [Person]
+  , research :: Maybe [Person]
+  , student  :: [Person]
+  , graduate :: [Person]
+  , alumni   :: [Person]
+  } deriving (Show,Eq,Generic)
+
+instance FromJSON MSP
 ------------------------------------------------------------------------------
 
 linkToHTML :: Link -> HTML
@@ -74,6 +87,7 @@ statusToHTML :: Status -> HTML
 statusToHTML Academic = "Academic staff"
 statusToHTML Research = "Research staff"
 statusToHTML PhDStudent = "PhD student"
+statusToHTML PhDStaff = "PhD Student & Teaching Staff"
 statusToHTML PhDFinished = "Alumnus (PhD)"
 statusToHTML Alum = "Alumus"
 
@@ -82,13 +96,19 @@ personToHTML person =
   div "card"
     (concat [ maybe "" (\fname -> img ("people-pics/" ++ fname)) (picture person)
             , h5 (maybe "" (++" ") (title person) ++ name person)
-            , p (statusToHTML (status person))
+--            , p (statusToHTML (status person))
             , p (description person)
             -- pronouns
             , maybe "" emailToHTML (email person)
             , maybe "" (ulist . map linkToHTML) (links person)
             -- PhD topics
             ])
+
+mspToHTML :: [Person] -> HTML -> HTML
+mspToHTML ps title
+  = unlines
+  $ (h3 title)
+  : map personToHTML ps
 
 ------------------------------------------------------------------------------
 main :: IO ()
@@ -97,5 +117,11 @@ main = do
   case decodeEither' f of
     Left err ->
       error (show err)
-    Right people ->
-      putStrLn (unlines (map personToHTML people))
+    Right msp -> do
+      putStrLn (preamble msp)
+      putStrLn (mspToHTML (academic msp) "Academic Staff")
+      putStrLn (maybe "" (\ps -> mspToHTML ps "Research Staff") (research msp))
+      putStrLn (mspToHTML (student msp) "PhD Students")
+      putStrLn (mspToHTML (graduate msp) "Graduates")
+      putStrLn (mspToHTML (alumni msp) "Alumni")
+--      putStrLn (unlines (map personToHTML (people members)))
