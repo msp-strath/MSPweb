@@ -63,17 +63,27 @@ data Person = Person
 
 instance FromJSON Person
 
+hasStatus :: Status -> Person -> Bool
+hasStatus s p = (==) s (status p)
+
 data MSP
   = MSP
   { preamble :: Markdown
-  , academic :: [Person]
-  , research :: Maybe [Person]
-  , student  :: [Person]
-  , graduate :: [Person]
-  , alumni   :: [Person]
+  , people   :: [Person]
   } deriving (Show,Eq,Generic)
 
 instance FromJSON MSP
+
+data MSPGrouped
+  = MSPGrouped
+  {
+    academic :: [Person]
+  , research :: [Person]
+  , student  :: [Person]
+  , graduate :: [Person]
+  , alumni   :: [Person]
+
+  }
 ------------------------------------------------------------------------------
 
 linkToHTML :: Link -> HTML
@@ -104,11 +114,28 @@ personToHTML person =
             -- PhD topics
             ])
 
-mspToHTML :: [Person] -> HTML -> HTML
-mspToHTML ps title
+peopleToHTML :: HTML -> [Person] -> HTML
+peopleToHTML _ [] = ""
+peopleToHTML title (p:ps)
   = unlines
   $ (h3 title)
-  : map personToHTML ps
+  : map personToHTML (p:ps)
+
+
+groupMSP :: [Person] -> MSPGrouped
+groupMSP
+  = foldl bucket (MSPGrouped [] [] [] [] [])
+
+  where
+    bucket :: MSPGrouped -> Person -> MSPGrouped
+    bucket g p =
+      case status p of
+        Academic     -> g { academic = academic g ++ [p] }
+        PhDStudent   -> g { student  = student  g ++ [p] }
+        PhDStaff     -> g { student  = student  g ++ [p] }
+        Research     -> g { research = research g ++ [p] }
+        PhDFinished  -> g { graduate = graduate g ++ [p] }
+        Alum         -> g { alumni   = alumni   g ++ [p] }
 
 ------------------------------------------------------------------------------
 main :: IO ()
@@ -117,11 +144,11 @@ main = do
   case decodeEither' f of
     Left err ->
       error (show err)
-    Right msp -> do
-      putStrLn (preamble msp)
-      putStrLn (mspToHTML (academic msp) "Academic Staff")
-      putStrLn (maybe "" (\ps -> mspToHTML ps "Research Staff") (research msp))
-      putStrLn (mspToHTML (student msp) "PhD Students")
-      putStrLn (mspToHTML (graduate msp) "Graduates")
-      putStrLn (mspToHTML (alumni msp) "Alumni")
---      putStrLn (unlines (map personToHTML (people members)))
+    Right input -> do
+      putStrLn (preamble input)
+      let msp = groupMSP (people input)
+      putStrLn (peopleToHTML "Academic Staff" (academic msp))
+      putStrLn (peopleToHTML "Research Staff" (research msp))
+      putStrLn (peopleToHTML "PhD Students"   (student msp))
+      putStrLn (peopleToHTML "Graduates"      (graduate msp))
+      putStrLn (peopleToHTML "Alumni"         (alumni msp))

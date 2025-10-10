@@ -7,7 +7,8 @@ preamble: |
 
 ##############################################################################
 ## Academic staff
-academic:
+
+people:
   - name: "Neil Ghani"
     ident: "neil"
     title: "Prof."
@@ -148,7 +149,7 @@ academic:
   ## FIXME:
   ## - explicitly link to supervisors?
   ## - start dates?
-student:
+
   - name: "Stevan Andjelkovic"
     ident: "stevan"
     status: "phd-student"
@@ -283,7 +284,6 @@ student:
 
   #############################################################################
   # Finished PhDs
-graduate:
   - name: "Riu Rodríguez Sakamoto"
     ident: "riu"
     status: "phd-finished"
@@ -416,7 +416,6 @@ graduate:
 
   #############################################################################
   # Alumni
-alumni:
   - name: "Jules Hedges"
     ident: "jules"
     title: "Dr"
