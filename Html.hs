@@ -27,9 +27,17 @@ p = tag "p"
 ulist :: [HTML] -> HTML
 ulist items = "<ul>" ++ concatMap (\item -> "<li>" ++ item ++ "</li>") items ++ "</ul>"
 
+item :: HTML -> HTML
+item = tag "li"
+
+dlist :: [(HTML,HTML)] -> HTML
+dlist items
+  = tag "dl"
+  $ concatMap ddt items
 
 ddt :: (HTML, HTML) -> HTML
-ddt (term, desc) = "<dt>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
+ddt (term, desc)
+  = concat [tag "dt" term, tag "dd" desc]
 
 anchor :: String -> HTML -> HTML
 anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
@@ -40,3 +48,11 @@ img url = "<img src=\"" ++ url ++ "\">"
 emailToHTML :: String -> HTML
 emailToHTML emailAddr =
   anchor ("mailto:" ++ emailAddr) ("Email: " ++ emailAddr)
+
+details :: HTML -> HTML -> HTML
+details title content
+  = tag "details"
+      $ concat
+      [ tag "summary" title
+      , content
+      ]

@@ -60,3 +60,11 @@ executable GenerateNews
                     feed,
                     text
   default-language: Haskell2010
+
+executable GenerateTeaching
+  main-is:          GenerateTeaching.hs
+  other-modules:    Html
+  build-depends:    base,
+                    yaml,
+                    bytestring
+  default-language: Haskell2010
