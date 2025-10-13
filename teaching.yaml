@@ -20,10 +20,15 @@ courses:
     description: |
       An introduction to computer hardware via binary logic and state machines.
     editions:
-      - year: 2022
-        people:
-          - "Conor McBride"
-          - "Alasdair Lambert"
+    - year: 2025
+      people:
+      - "Conor McBride"
+      - "Alasdair Lambert"
+
+     - year: 2022
+       people:
+       - "Conor McBride"
+       - "Alasdair Lambert"
 
   - code: "CS208"
     kind: "UG"
