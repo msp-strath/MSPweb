@@ -1,23 +1,24 @@
+## FIXME:
+## - PhD students explicitly link to supervisors?
+## - PhD students start dates?
+## - leaving dates?
+
 preamble: |
   The group was set up on 1<sup>st</sup> July 2008 within the
   [Department of Computer and Information Sciences](http://www.cis.strath.ac.uk)
-  at the University of Strathclyde and comprises
-
-
-
-##############################################################################
-## Academic staff
+  at the University of Strathclyde.
 
 people:
-  - name: "Neil Ghani"
+  - firstname: "Neil"
+    lastname: "Ghani"
     ident: "neil"
+    pronouns: "he/him"
     title: "Prof."
     status: "academic"
     links:
-      - href: "staff:ghanineilprof"
+      - href: "ghanineilprof"
         rel: "staff"
-      - href: "http://personal.cis.strath.ac.uk/~ng/"
-        rel: "homepage"
+    webpage: "http://personal.cis.strath.ac.uk/~ng/"
     email: "neil.ghani@strath.ac.uk"
     picture: "neil.jpg"
     description: |
@@ -27,53 +28,52 @@ people:
     phd-topics:
       - "Categorical Machine Learning"
 
-  - name: "Conor McBride"
-    pronouns: "he/him"
+  - firstname: "Conor"
+    lastname: "McBride"
+    pronouns: "they/them"
     ident: "conor"
     title: "Dr"
     status: "academic"
     email: "conor.mcbride@strath.ac.uk"
+    webpage: "https://strictlypositive.org/"
     links:
       - href: "mcbrideconordr"
         rel: "staff"
-      - href: "https://personal.cis.strath.ac.uk/~conor/"
-        rel: "homepage"
-      - href: "https://strictlypositive.org/"
-        rel: "homepage"
     description: |
-      who is currently working on dependently typed programming. He is
-      also interested in extending the functionality of Haskell so that it
-      can mimic the dependently-typed style of programming.
+      who is currently working on dependently typed programming. They
+      are also interested in extending the functionality of Haskell so
+      that it can mimic the dependently typed style of programming.
     phd-topics:
       - "Dependently Typed Programming"
       - "Automatic Metatheory"
 
-  - name: "Clemens Kupke"
+  - firstname: "Clemens"
+    lastname: "Kupke"
     ident: "clemens"
+    pronouns: "he/him"
     title: "Dr"
     status: "academic"
     email: "clemens.kupke@strath.ac.uk"
+    webpage: "https://personal.cis.strath.ac.uk/clemens.kupke/"
     links:
-      - href: "https://personal.cis.strath.ac.uk/clemens.kupke/"
-        rel: "homepage"
       - href: "kupkeclemensdr"
         rel: "staff"
     description: |
-      "who is currently working on both coalgebras and logics for knowledge
-      representation, learning and verification."
+      who is currently working on both coalgebras and logics for knowledge
+      representation, learning and verification.
     phd-topics:
       - "Coalgebraic Logic"
       - "Quantitative Reasoning"
 
-  - name: "Bob Atkey"
+  - firstname: "Bob"
+    lastname: "Atkey"
     pronouns: "he/him"
     ident: "bob"
     title: "Dr"
     status: "academic"
     email: "robert.atkey@strath.ac.uk"
+    webpage: "https://bentnib.org"
     links:
-      - href: "https://bentnib.org"
-        rel: "homepage"
       - href: "atkeyrobertdr"
         rel: "staff"
     description: |
@@ -82,14 +82,15 @@ people:
     phd-topics:
       - "Linear Type Theory"
 
-  - name: "Fredrik Nordvall Forsberg"
+  - firstname: "Fredrik"
+    lastname: "Nordvall Forsberg"
     ident: "fred"
     title: "Dr"
+    pronouns: "he/him"
     status: "academic"
     email: "fredrik.nordvall-forsberg@strath.ac.uk"
+    webpage: "https://fredriknf.com"
     links:
-      - href: "https://fredriknf.com"
-        rel: "homepage"
       - href: "nordvallforsbergfredrikdr"
         rel: "staff"
     description: |
@@ -98,237 +99,384 @@ people:
     phd-topics:
       - "Ordinals"
 
-  - name: "Guillaume Allais"
+  - firstname: "Guillaume"
+    lastname: "Allais"
     ident: "gallais"
+    pronouns: "he/him"
     title: "Dr"
     status: "academic"
     email: "guillaume.allais@strath.ac.uk"
+    webpage: "http://gallais.github.io/"
     links:
       - href: "https://pureportal.strath.ac.uk/en/persons/guillaume-allais-2"
         rel: "pure"
-      - href: "http://gallais.github.io/"
-        rel: "homepage"
     description: |
       who is interested in efficient runtime representations, generic
       programming, proof automation, and user experience.
 
-  - name: "Ross Horne"
+  - firstname: "Ross"
+    lastname: "Horne"
     ident: "horne"
+    pronouns: "he/him"
     title: "Dr"
     status: "academic"
     email: "ross.horne@strath.ac.uk"
+    webpage: "https://personal.cis.strath.ac.uk/ross.horne/"
     links:
       - href: "https://pureportal.strath.ac.uk/en/persons/ross-horne"
         rel: "pure"
-      - href: "https://personal.cis.strath.ac.uk/ross.horne/"
-        rel: "homepage"
     description: |
       who is interested in concurrency and logic,
       and their applications to verifying the security and privacy or protocols.
 
-  - name: "Jan de Muijnck-Hughes"
+  - firstname: "Jan"
+    lastname: "de Muijnck-Hughes"
     ident: "jan"
+    pronouns: "he/him"
     title: "Dr"
     status: "academic"
-    email: "Jan.de-Muijnck-Hughes@strath.ac.uk."
+    email: "jan.de-muijnck-hughes@strath.ac.uk"
+    webpage: "https://tyde.systems/"
     links:
       - href: "https://pureportal.strath.ac.uk/en/persons/jan-de-muijnck-hughes/"
         rel: "pure"
-      - href: "https://tyde.systems/"
-        rel: "homepage"
     description: |
       who is interested in dependent types, type theory and programming
       language design and their application in making systems more trustworthy.
 
-  ##############################################################################
-  ## Research staff
-
-  ##############################################################################
-  ## PhD students
-  ##
-  ## FIXME:
-  ## - explicitly link to supervisors?
-  ## - start dates?
-
-  - name: "Stevan Andjelkovic"
-    ident: "stevan"
-    status: "phd-student"
-    description: |
-      who is a PhD student under Conor McBride's direction.
-
-  # - name: "Ben Price"
-
-  - name: "Stuart Gale"
+  - firstname: "Stuart"
+    lastname: "Gale"
     ident: "stuart"
-    status: "phd-student"
+    pronouns: "he/him"
+    status: "phd-staff"
     description: |
       who is a PhD student under Conor McBride's direction.
-    links:
-      - href: "http://www.bishboria.com/"
-        rel: "homepage"
+    webpage: "http://www.bishboria.com/"
 
-  - name: "Simone Barlocco"
+  - firstname: "Simone"
+    lastname: "Barlocco"
     ident: "simone"
+    pronouns: "he/him"
     status: "phd-student"
     description: |
       who is a PhD student under Clemens Kupke's direction.
 
-  # FIXME: Alasdair is also teaching staff
-  - name: "Alasdair Lambert"
+  - firstname: "Alasdair"
+    lastname: "Lambert"
     ident: "alasdair"
+    pronouns: "he/him"
     status: "phd-staff"
     description: |
       who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
 
-  - name: "Malin Altenmüller"
+  - firstname: "Malin"
+    lastname: "Altenmüller"
     ident: "malin"
+    pronouns: "she/her"
     status: "phd-student"
+    webpage: "https://maltenmuller.github.io/"
     description: |
       who is a PhD student under Conor McBride's direction.
 
-  - name: "Georgi Nakov"
+  - firstname: "Georgi"
+    lastname: "Nakov"
     ident: "georgi"
+    pronouns: "he/him"
     status: "phd-student"
     description: |
       who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
-  - name: "Matteo Capucci"
+  - firstname: "Matteo"
+    lastname: "Capucci"
     ident: "matteo"
+    pronouns: "he/him"
     status: "phd-student"
+    webpage: "https://matteocapucci.wordpress.com/"
     description: |
       who is a PhD student under Neil Ghani and Scott Cunningham's direction.
-    links:
-      - href: "https://matteocapucci.wordpress.com/"
-        rel: "homepage"
 
-  - name: "Eigil Rischel"
+
+  - firstname: "Eigil"
+    lastname: "Rischel"
     ident: "eigil"
+    pronouns: "he/him"
     status: "phd-student"
+    webpage: "https://erischel.com"
     description: |
       who is a PhD student under Radu Mardare and Neil Ghani's direction.
-    links:
-      - href: "https://erischel.com"
-        rel: "homepage"
 
-  - name: "Andre Videla"
+  - firstname: "Andre"
+    lastname: "Videla"
     ident: "andre"
+    pronouns: "he/him"
     status: "phd-student"
+    webpage: "https://andrevidela.com/"
     description: |
       who is a PhD student under Bob Atkey and Conor McBride's direction.
-    links:
-      - href: "https://andrevidela.com/"
-        rel: "homepage"
 
-  - name: "Ezra Schoen"
+  - firstname: "Ezra"
+    lastname: "Schoen"
     ident: "ezra"
+    pronouns: "she/they"
     status: "phd-student"
     description: |
       who is a PhD student under Clemens Kupke's direction.
 
-  - name: "Dylan Braithwaite"
+  - firstname: "Dylan"
+    lastname: "Braithwaite"
     ident: "dylan"
+    pronouns: "he/him"
     status: "phd-student"
+    webpage: "https://dylanbraithwaite.github.io/"
     description: |
       who is a PhD student under Jules Hedges' direction.
-    links:
-      - href: "https://dylanbraithwaite.github.io/"
-        rel: "homepage"
 
-  - name: "Sean Watters"
+  - firstname: "Sean"
+    lastname: "Watters"
     ident: "sean"
+    pronouns: "he/him"
     status: "phd-student"
+    webpage: "https://www.seanwatters.uk/"
     description: |
       who is a PhD student under Clemens Kupke and Fredrik Nordvall Forsberg's
       direction.
-    links:
-      - href: "https://www.seanwatters.uk/"
-        rel: "homepage"
 
-  - name: "Dilsat Yuksel"
+  - firstname: "Dilsat"
+    lastname: "Yuksel"
     ident: "dilsat"
+    pronouns: "he/him"
     status: "phd-student"
     description: |
-      "who is a PhD student under Conor McBride and
-      [Viv Kendon](https://kendon.info/viv/)'s direction."
+      who is a PhD student under Conor McBride and
+      [Viv Kendon](https://kendon.info/viv/)'s direction.
 
-  - name: "April Gonçalves"
+  - firstname: "April"
+    lastname: "Gonçalves"
     ident: "april"
+    pronouns: "they/them"
     status: "phd-student"
+    webpage: "https://cyberglot.space/"
     description: |
       who is a PhD student under Bob Atkey's direction.
-    links:
-      - href: "https://cyberglot.space/"
-        rel: "homepage"
 
-  - name: "Samuel Fish"
+  - firstname: "Samuel"
+    lastname: "Fish"
     ident: "sam"
+    pronouns: "he/him"
     status: "phd-student"
     description: |
       who is a PhD student under Fredrik Nordvall Forsberg's direction.
 
-  - name: "Fiona Blackett"
+  - firstname: "Fiona"
+    lastname: "Blackett"
     ident: "fiona"
+    pronouns: "she/her"
     status: "phd-student"
+    webpage: "https://fiona1729.com/"
     description: |
       who is a PhD student under Jules Hedges' direction.
-    links:
-      - href: "https://fiona1729.com/"
-        rel: "homepage"
 
-  - name: "Emma Tye"
+  - firstname: "Emma"
+    lastname: "Tye"
     ident: "emma"
+    pronouns: "she/her"
     status: "phd-student"
     description: |
       who is a PhD student under Guillaume Allais' direction.
 
+  - firstname: "Jules"
+    lastname: "Hedges"
+    ident: "jules"
+    title: "Dr"
+    pronouns: "they/them"
+    status: "alum"
+    email: "jules@cybercat.institute"
+    webpage: "https://julesh.com/"
+    description: |
+      who was a Chancellor's Fellow working on game theory, economics
+      and machine learning using the tools of category theory and
+      functional programming.
 
-  #############################################################################
-  # Finished PhDs
-  - name: "Riu Rodríguez Sakamoto"
+  - firstname: "Riu"
+    lastname: "Rodríguez Sakamoto"
     ident: "riu"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
+    webpage: "https://riurodsak.github.io/"
     description: |
       who was a PhD student under Jules Hedges' direction. Riu successfully defended his thesis "Categorical Models in Control Theory and Reinforcement Learning" in July 2025, with Fabio Zanasi as external examiner and Bob Atkey as internal.
-    links:
-      - href: "https://riurodsak.github.io/"
-        rel: "homepage"
 
-  - name: "Joseph Collins"
+  - firstname: "Clovis"
+    lastname: "Eberhart"
+    ident: "clovis"
+    pronouns: "he/him"
+    status: "alum"
+    title: "Dr"
+    webpage: "https://group-mmm.org/~eberhart/"
+    description: |
+      who was an RA working with Clemens Kupke.
+
+  - firstname: "Glynn"
+    lastname: "Winskel"
+    ident: "glynn"
+    pronouns: "he/him"
+    title: "Prof."
+    status: "alum"
+    description: |
+      who worked on mathematical models of interaction such as distributed games
+      and event structures.
+
+  - firstname: "Radu"
+    lastname: "Mardare"
+    ident: "radu"
+    pronouns: "he/him"
+    title: "Prof."
+    status: "alum"
+    webpage: "https://www.macs.hw.ac.uk/~rm4023/"
+    description: |
+      who is interested in mathematical tools for modelling and reasoning
+      about systems, especially in the use of metric spaces for quantitative
+      and probabilistic reasoning.
+
+  - firstname: "Wen"
+    lastname: "Kokke"
+    ident: "wen"
+    pronouns: "she/her"
+    status: "alum"
+    email: "wen.kokke@strath.ac.uk"
+    webpage: "https://wen.works"
+    description: |
+      who is interested in dependent types, linear types and other
+      substructural friends, lightweight verification, and verification
+      of machine learning.
+
+  - firstname: "William"
+    lastname: "Waites"
+    ident: "william"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    description: |
+      who worked on modelling infectious diseases using tools such as
+      stochastic graph rewriting and evolutionary game theory.
+
+  - firstname: "Jade"
+    lastname: "Master"
+    ident: "jade"
+    pronouns: "she/her"
+    title: "Dr"
+    status: "alum"
+    webpage: "https://sites.google.com/view/jadeedenstarmaster/home/"
+    description: |
+      who is interested in the compositionality of formal verification and
+      programming within a coalgebraic framework.
+
+  - firstname: "Joseph"
+    lastname: "Collins"
     ident: "joe"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
     description: |
       who was a PhD student under Ross Duncan's direction. Joe successfully
-      defended his thesis \"Hopf-Frobenius Algebras\" in January 2024, with Chris
+      defended his thesis "Hopf-Frobenius Algebras" in January 2024, with Chris
       Heunen as external examiner, and Jules Hedges as internal.
 
-  - name: "James Wood"
+  - firstname: "James"
+    lastname: "Wood"
     ident: "james"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
+    webpage: "https://lamudri.github.io/"
     description: |
       who was a PhD student under Bob Atkey's direction. James passed his viva
       in January 2024 with external examiner Kathrin Stark, and internal examiner
-      Conor McBride. His thesis is entitled \"A Framework for
-      Semiring-Annotated Type Systems\".
-    links:
-      - href: "https://personal.cis.strath.ac.uk/james.wood.100/"
-        rel: "homepage"
+      Conor McBride. His thesis is entitled "A Framework for
+      Semiring-Annotated Type Systems".
 
+  - firstname: "Ethel"
+    lastname: "Morgan"
+    ident: "ethel"
+    pronouns: "she/her"
+    status: "alum"
+    description: |
+      who worked as a Research Software Engineer in the group.
 
-  - name: "Bruno Gavranović"
+  - firstname: "Bruno"
+    lastname: "Gavranović"
+    ident: "bruno"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
+    webpage: "https://www.brunogavranovic.com/"
     description: |
-      "who was a PhD student under Neil Ghani's direction. Bruno's thesis,
-      successfully defended 2023, is entitled \"Fundamental components
-      of deep learning: a category-theoretic approach\"."
-    links:
-      - href: "https://www.brunogavranovic.com/"
-        rel: "homepage"
+      who was a PhD student under Neil Ghani's direction. Bruno's thesis,
+      successfully defended 2023, is entitled "Fundamental components
+      of deep learning: a category-theoretic approach".
 
-  - name: "Kevin Dunne"
+  - firstname: "Jérémy"
+    lastname: "Ledent"
+    ident: "jeremy"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    webpage: https://www.irif.fr/~ledent/
+    description: |
+      who is interested in concurrency, topology, epistemic logic and
+      category theory.
+
+  - firstname: "Craig"
+    lastname: "Roy"
+    ident: "craig"
+    status: "alum"
+    description: |
+      who was a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under
+      Conor McBride and Ross Duncan's direction.
+
+  - firstname: "Ross"
+    lastname: "Duncan"
+    ident: "ross"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    description: |
+      who is interested in quantum computation, the foundations of quantum
+      mechanics, category theory and its application in computer science,
+      logic and physics, and graphical techniques for reasoning.
+
+  - firstname: "Phil"
+    lastname: "Scott"
+    ident: "philscott"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    description: |
+      who was a KTP Associate at
+      [Symphonic Software](http://www.symphonicsoft.com/) under Bob
+      Atkey's direction.
+
+  - firstname: "Stevan"
+    lastname: "Andjelkovic"
+    ident: "stevan"
+    pronouns: "he/him"
+    status: "phd-finished"
+    description: |
+      who was a PhD student under Conor McBride's direction.
+
+  - firstname: "Ben"
+    lastname: "Price"
+    ident: "ben"
+    pronouns: "he/him"
+    status: "alum"
+    description: |
+      who was a PhD student under Conor McBride's direction.
+
+  - firstname: "Kevin"
+    lastname: "Dunne"
+    ident: "kevin"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
     description: |
@@ -339,7 +487,33 @@ people:
         rel: "thesis"
         title: "A categorical approach to the foundations of Quantum theory"
 
-  - name: "Federico Orsanigo"
+  - firstname: "James"
+    lastname: "Chapman"
+    ident: "james"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    webpage: "http://jmchapman.github.io/"
+    description: |
+      who worked as an RA on Neil Ghani and Conor McBride's grant Homotopy
+      Type Theory: Programming and Verification.
+
+
+  - firstname: "Johannes"
+    lastname: "Marti"
+    ident: "johannes"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    webpage: "http://johannesmarti.com/"
+    description: |
+      who worked as an RA on Clement Kupke's grant Coalgebraic Foundations
+      of Semi-Structured Data.
+
+  - firstname: "Federico"
+    lastname: "Orsanigo"
+    ident: "federico"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
     description: |
@@ -350,32 +524,33 @@ people:
         rel: "thesis"
         title: "Bifibrational parametricity, from zero to two dimensions"
 
-  - name: "Adam Gundry"
-    status: "phd-finished"
-    title: "Dr"
+  - firstname: "Alwin"
+    lastname: "Blok"
+    ident: "alwin"
+    pronouns: "he/him"
+    status: "alum"
+    webpage: "https://github.com/alwinb"
     description: |
-      FIXME
-    links:
-      - href: "https://doi.org/10.48730/jt3g-ws74"
-        rel: "thesis"
-        title: "Type inference, Haskell and dependent types"
-      - href: "https://adam.gundry.co.uk/"
-        rel: "homepage"
+      who was a PhD student under Clemens Kupke's direction.
 
-  - name: "Tim Revell"
+  - firstname: "Tim"
+    lastname: "Revell"
+    ident: "tim"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
+    webpage: "https://www.newscientist.com/author/timothy-revell/"
     description: |
       who was a PhD student under Neil Ghani's direction on the topic of
       symmetry and parametricity.
     links:
       - href: "https://doi.org/10.48730/407e-nn33"
         rel: "thesis"
-        title: "Types, categories, actions"
-      - href: "https://www.newscientist.com/author/timothy-revell/"
-        rel: "homepage"
 
-  - name: "Lorenzo Malatesta"
+  - firstname: "Lorenzo"
+    lastname: "Malatesta"
+    ident: "lorenzo"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
     description: |
@@ -386,7 +561,21 @@ people:
         rel: "thesis"
         title: "Investigations into inductive-recursive definitions"
 
-  - name: "Clèment Fumex"
+  - firstname: "Peter G."
+    lastname: "Hancock"
+    ident: "hank"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    webpage: "http://docs.hancock.fastmail.fm/"
+    description: |
+      who is interested in logic, type theory and computer systems. He
+      worked with Prof. Neil Ghani on induction recursion.
+
+  - firstname: "Clèment"
+    lastname: "Fumex"
+    ident: "clement"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
     description: |
@@ -401,194 +590,53 @@ people:
         rel: "thesis"
         title: "Induction and coinduction schemes in category theory"
 
-  - name: "Pierre-Evariste Dagand"
+  - firstname: "Patricia"
+    lastname: "Johann"
+    ident: "patricia"
+    pronouns: "she/her"
+    title: "Prof."
+    status: "alum"
+    webpage: "https://cs.appstate.edu/johannp/"
+    description: |
+      who worked on advanced data types and categorical and operational
+      models of parametricity. Patricia left in 2013 to take up a
+      Chair at Appalachian State University.
+
+  - firstname: "Sam"
+    lastname: "Lindley"
+    ident: "lindley"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "alum"
+    webpage: "https://homepages.inf.ed.ac.uk/slindley"
+    description: |
+      who worked as an RA on Dr McBride's grant Haskell Types with Added
+      Value.
+
+  - firstname: "Pierre-Evariste"
+    lastname: "Dagand"
+    ident: "pdagand"
+    pronouns: "he/him"
     status: "phd-finished"
     title: "Dr"
+    webpage: "https://www.irif.fr/~dagand/"
     description: |
       who was a PhD student under Conor McBride's direction on the topic of
       reusability and dependent types.
     links:
       - href: "https://doi.org/10.48730/zt52-kb39"
         rel: "thesis"
-        title: "A cosmology of datatypes, reusability and dependent types"
-      - href: "https://www.irif.fr/~dagand/"
-        rel: "homepage"
 
-  #############################################################################
-  # Alumni
-  - name: "Jules Hedges"
-    ident: "jules"
+  - firstname: "Adam"
+    lastname: "Gundry"
+    ident: "adam"
+    pronouns: "he/him"
+    status: "phd-finished"
     title: "Dr"
-    status: "alum"
-    email: "jules@cybercat.institute"
+    webpage: "https://adam.gundry.co.uk/"
+    description: |
+      who was a PhD student under Conor McBride's direction on the
+      topic of adding Nat-indexed families to Haskell.
     links:
-      - href: "https://julesh.com/"
-        rel: "homepage"
-    description: |
-      who was a Chancellor's Fellow working on game theory, economics
-      and machine learning using the tools of category theory and
-      functional programming.
-
-  - name: "Clovis Eberhart"
-    ident: "clovis"
-    status: "alum"
-    title: "Dr"
-    links:
-      - href: "https://group-mmm.org/~eberhart/"
-        rel: "homepage"
-    description: |
-      who was an RA working with Clemens Kupke.
-
-  - name: "Glynn Winskel"
-    ident: "glynn"
-    title: "Prof"
-    status: "alum"
-    description: |
-      who works on mathematical models of interaction such as distributed games
-      and event structures.
-
-
-  - name: "William Waites"
-    ident: "william"
-    title: "Dr"
-    status: "alum"
-    description: |
-      who works on modelling infectious diseases using tools such as
-      stochastic graph rewriting and evolutionary game theory.
-
-  - name: "Wen Kokke"
-    ident: "wen"
-    status: "alum"
-    email: "wen.kokke@strath.ac.uk"
-    links:
-      - href: "https://wen.works"
-        rel: "homepage"
-      - href: "https://pureportal.strath.ac.uk/en/persons/kerewin-kokke"
-        rel: "pure"
-    description: |
-      who is interested in dependent types, linear types and other
-      substructural friends, lightweight verification, and verification
-      of machine learning.
-
-  - name: "Radu Mardare"
-    ident: "radu"
-    title: "Prof."
-    status: "alum"
-    links:
-      - href: "https://www.macs.hw.ac.uk/~rm4023/"
-        rel: "homepage"
-    description: |
-      who is interested in mathematical tools for modelling and reasoning
-      about systems, especially in the use of metric spaces for quantitative
-      and probabilistic reasoning.
-
-  - name: "Jérémy Ledent"
-    ident: "jeremy"
-    title: "Dr"
-    status: "alum"
-    description: |
-      who is interested in concurrency, topology, epistemic logic and
-      category theory.
-
-  - name: "Jade Master"
-    ident: "jade"
-    title: "Dr"
-    status: "alum"
-    links:
-      - href: "https://sites.google.com/view/jadeedenstarmaster/home/"
-        rel: "homepage"
-    description: |
-      who is interested in the compositionality of formal verification and
-      programming within a coalgebraic framework.
-
-  - name: "Ethel Morgan"
-    status: "alum"
-    description: |
-      who worked as a Research Software Engineer in the group.
-
-  - name: "Ben Price"
-    status: "alum"
-    description: |
-      who was a PhD student under Conor McBride's direction.
-
-  - name: "Alwin Blok"
-    status: "alum"
-    description: |
-      who was a PhD student under Clemens Kupke's direction.
-    links:
-      - href: "http://alwinblok.nl/"
-        rel: "homepage"
-
-  - name: "Ross Duncan"
-    title: "Dr"
-    status: "alum"
-    description: |
-      who is interested in quantum computation, the foundations of quantum
-      mechanics, category theory and its application in computer science,
-      logic and physics, and graphical techniques for reasoning.
-
-  - name: "Phil Scott"
-    title: "Dr"
-    status: "alum"
-    description: |
-      who was a KTP Associate at
-      [Symphonic Software](http://www.symphonicsoft.com/) under Bob
-      Atkey's direction.
-
-  - name: "Craig Roy"
-    ident: "craig"
-    status: "alum"
-    description: |
-      who was a KTP Associate at [Cambridge Quantum Computing](https://cambridgequantum.com) under
-      Conor McBride and Ross Duncan's direction.
-
-  - name: "James Chapman"
-    title: "Dr"
-    status: "alum"
-    links:
-      - href: "http://jmchapman.github.io/"
-        rel: "homepage"
-    description: |
-      "who worked as an RA on Neil Ghani and Conor McBride's grant Homotopy
-      Type Theory: Programming and Verification."
-
-  - name: "Johannes Marti"
-    title: "Dr"
-    status: "alum"
-    links:
-      - href: "http://johannesmarti.com/"
-        rel: "homepage"
-    description: |
-      who worked as an RA on Clement Kupke's grant Coalgebraic Foundations
-      of Semi-Structured Data.
-
-  - name: "Peter G. Hancock"
-    title: "Dr"
-    status: "alum"
-    link:
-      - href: "http://docs.hancock.fastmail.fm/"
-        rel: "homepage"
-    description: |
-      who is interested in logic, type theory and computer systems. He
-      worked with Prof. Neil Ghani on induction recursion.
-
-  - name: "Patricia Johann"
-    title: "Prof"
-    status: "alum"
-    description: |
-      who worked on advanced data types and categorical and operational
-      models of parametricity. Patricia left in 2013 to take up a
-      Chair at Appalachian State University.
-    links:
-      - href: "https://cs.appstate.edu/johannp/"
-        rel: "homepage"
-
-  - name: "Sam Lindley"
-    title: "Dr"
-    status: "alum"
-    description: |
-      who worked as an RA on Dr McBride's grant Haskell Types with Added
-      Value.
-    links:
-      - href: "https://homepages.inf.ed.ac.uk/slindley"
-        rel: "homepage"
+      - href: "https://doi.org/10.48730/jt3g-ws74"
+        rel: "thesis"

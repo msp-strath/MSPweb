@@ -5,6 +5,7 @@
     --red: #DD3030;
     --blue: #2E35E0;
     --purple: #391c63;
+    --gray: #808080;
 }
 
 * {
@@ -236,6 +237,30 @@ a.hoverlink {
 
 a.hoverlink:hover::after {
     content: "\01F517";
+}
+
+div.person {
+    display: flex;
+    align-items: center;
+}
+
+div.person-image {
+    flex: 33:33%;
+    padding: 5px;
+}
+
+.people-image {
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+div.person-description {
+    flex: 66:67%;
+    padding: 5px;
+}
+
+.grayish {
+    color: var(--gray);
 }
 
 /* Media Queries */

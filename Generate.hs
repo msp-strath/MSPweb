@@ -10,7 +10,8 @@ import System.Directory ( getDirectoryContents, doesDirectoryExist
                         , doesFileExist, getCurrentDirectory
                         , createDirectoryIfMissing, copyFile )
 
-import Text.Pandoc hiding (FileTree)
+import Markdown
+
 import Data.Text (pack, unpack)
 
 {----------------------------------------------------------------------------}
@@ -33,11 +34,6 @@ data EntryClass
     | IsDirectory
     | Unknown
     deriving Show
-
-translateMarkdown :: String -> IO String
-translateMarkdown s =
-  fmap unpack $ handleError =<< runIO (writeHtml5String def  =<< (readMarkdown (def { readerExtensions = phpMarkdownExtraExtensions }) $ pack s))
-
 
 -- | Determine whether a path refers to a file, a directory, or
 -- unknown.

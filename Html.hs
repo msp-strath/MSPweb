@@ -9,6 +9,11 @@ div :: String -> HTML -> HTML
 div klass content =
   "<div class=\"" ++ klass ++ "\">" ++ content ++ "</div>"
 
+span :: String -> HTML -> HTML
+span klass content =
+  "<span class=\"" ++ klass ++ "\">" ++ content ++ "</span>"
+
+
 hn :: Int -> HTML -> HTML
 hn n = tag ("h" ++ show n)
 
@@ -27,6 +32,8 @@ p = tag "p"
 ulist :: [HTML] -> HTML
 ulist items = "<ul>" ++ concatMap (\item -> "<li>" ++ item ++ "</li>") items ++ "</ul>"
 
+strong :: HTML -> HTML
+strong = tag "strong"
 
 ddt :: (HTML, HTML) -> HTML
 ddt (term, desc) = "<dt>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
@@ -34,9 +41,12 @@ ddt (term, desc) = "<dt>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
 anchor :: String -> HTML -> HTML
 anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
 
-img :: String -> HTML
-img url = "<img src=\"" ++ url ++ "\">"
+img :: Maybe String -> String -> String -> HTML
+img  style url alt = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"" ++ alt ++ "\">"
+ where
+  h :: String -> String
+  h x = " style=\"" ++ x ++ "\" "
 
 emailToHTML :: String -> HTML
 emailToHTML emailAddr =
-  anchor ("mailto:" ++ emailAddr) ("Email: " ++ emailAddr)
+  anchor ("mailto:" ++ emailAddr) emailAddr
