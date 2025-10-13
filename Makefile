@@ -23,7 +23,7 @@ AUTHFILE       = _authsmb.txt
 ifneq ($(wildcard $(AUTHFILE)),)
 	AUTHSTRING = -A $(AUTHFILE)
 else
-        AUTHSTRING =
+	AUTHSTRING =
 endif
 ###########################
 
@@ -32,6 +32,7 @@ default: local
 
 local:
 	runghc Generate101.hs
+	runghc GenerateTeaching.hs
 	runghc GenerateNews.hs
 	runghc Generate.hs
 
@@ -40,6 +41,7 @@ compile:
 
 local-compiled:
 	`cabal list-bin --builddir _dist Generate101`
+	`cabal list-bin --builddir _dist GenerateTeaching`
 	`cabal list-bin --builddir _dist GenerateNews`
 	`cabal list-bin --builddir _dist Generate`
 
