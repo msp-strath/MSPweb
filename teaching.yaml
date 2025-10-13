@@ -35,9 +35,7 @@ courses:
     kind: "UG"
     name: "Logic and Algorithms"
     level: 2
-    description: |
-      blah
-
+    description: Introduction to Logic 
     editions:
       - year: 2025
         people:
@@ -54,6 +52,7 @@ courses:
       - year: 2025
         people:
           - "Alasdair Lambert"
+          - "Georgi Nakov"
 
   - code: "CS316"
     kind: "UG"
@@ -104,6 +103,30 @@ courses:
         link: "https://github.com/bobatkey/CS316-16"
 
   # CS410
+  - code: "CS410"
+    kind: "UG"
+    name: "Advanced Functional Programming"
+    description:  Dependently-typed Programming in Agda
+    level: 4
+    editions:
+      - year: 2025 
+        people: "Guillaume Allais"
+  # CS411
+  - code: "CS411"
+    kind: "UG"
+    name: "Theory of Computation"
+    description:  Computability and complexity 
+    level: 4
+    editions:
+      - year: 2025 
+        people: "Clemens Kupke"
+      - year: 2024 
+        people: "Clemens Kupke"
+      - year: 2023
+        people: "Radu Mardare"
+      - year: 2022
+        people: "Radu Mardare"
+
   # CS825
   # CS882
   # CS886
