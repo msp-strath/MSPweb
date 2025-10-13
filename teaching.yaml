@@ -2,6 +2,11 @@
   type: "Strathclyde"
   name: "Machines, Languages, and Computation"
   level: 1
+  description:
+  - year: 2025
+    people:
+    - "Conor McBride"
+    - "Clemens Kupke" 
 
 - code: "CS106"
   type: "Strathclyde"
@@ -10,7 +15,7 @@
   description:
     An introduction to computer hardware via binary logic and state machines.
   editions:
-  - year: 2022
+  - year: 2025
     people:
     - "Conor McBride"
     - "Alasdair Lambert"
