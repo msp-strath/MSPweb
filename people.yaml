@@ -20,7 +20,6 @@ people:
         rel: "staff"
     webpage: "http://personal.cis.strath.ac.uk/~ng/"
     email: "neil.ghani@strath.ac.uk"
-    picture: "neil.jpg"
     description: |
       who is currently working on theories of advanced data types,
       containers, induction recursion, parametricity and all areas of
@@ -93,6 +92,8 @@ people:
     links:
       - href: "nordvallforsbergfredrikdr"
         rel: "staff"
+      - href: "fredrik-nordvall-forsberg"
+        rel: "pure"
     description: |
       who is interested in Martin-Löf Type Theory, constructive
       mathematics, and category theory.
@@ -108,7 +109,9 @@ people:
     email: "guillaume.allais@strath.ac.uk"
     webpage: "http://gallais.github.io/"
     links:
-      - href: "https://pureportal.strath.ac.uk/en/persons/guillaume-allais-2"
+      - href: "allaisguillaumemr"
+        rel: "staff"
+      - href: "guillaume-allais-2"
         rel: "pure"
     description: |
       who is interested in efficient runtime representations, generic
@@ -123,8 +126,10 @@ people:
     email: "ross.horne@strath.ac.uk"
     webpage: "https://personal.cis.strath.ac.uk/ross.horne/"
     links:
-      - href: "https://pureportal.strath.ac.uk/en/persons/ross-horne"
+      - href: "ross-horne"
         rel: "pure"
+      - href: "hornerossdr"
+        rel: "staff"
     description: |
       who is interested in concurrency and logic,
       and their applications to verifying the security and privacy or protocols.
@@ -138,8 +143,10 @@ people:
     email: "jan.de-muijnck-hughes@strath.ac.uk"
     webpage: "https://tyde.systems/"
     links:
-      - href: "https://pureportal.strath.ac.uk/en/persons/jan-de-muijnck-hughes/"
+      - href: "jan-de-muijnck-hughes/"
         rel: "pure"
+      - href: "de_muijnck-hughesjandr"
+        rel: "staff"
     description: |
       who is interested in dependent types, type theory and programming
       language design and their application in making systems more trustworthy.
@@ -152,6 +159,10 @@ people:
     description: |
       who is a PhD student under Conor McBride's direction.
     webpage: "http://www.bishboria.com/"
+    links:
+      - href: "galestuartmr"
+        rel: "staff"
+
 
   - firstname: "Simone"
     lastname: "Barlocco"
@@ -166,6 +177,9 @@ people:
     ident: "alasdair"
     pronouns: "he/him"
     status: "phd-staff"
+    links:
+      - href: "lambertalasdairmr"
+        rel: "staff"
     description: |
       who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
 
@@ -422,7 +436,7 @@ people:
     pronouns: "he/him"
     title: "Dr"
     status: "alum"
-    webpage: https://www.irif.fr/~ledent/
+    webpage: "https://www.irif.fr/~ledent/"
     description: |
       who is interested in concurrency, topology, epistemic logic and
       category theory.

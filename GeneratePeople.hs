@@ -111,7 +111,7 @@ linkToHTML :: Link -> HTML
 linkToHTML link = case rel link of
   HomePage -> anchor (href link) "homepage"
   Staff    -> anchor ("http://www.strath.ac.uk/staff/" ++ href link) "Staff page"
-  Pure     -> anchor (href link) "Staff page (pure)"
+  Pure     -> anchor ("https://pureportal.strath.ac.uk/en/persons/" ++ href link) "Staff page (pure)"
   Thesis   -> anchor (href link) "PhD Thesis"
 
 statusToHTML :: Status -> HTML
