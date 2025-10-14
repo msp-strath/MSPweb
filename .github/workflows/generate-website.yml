@@ -49,7 +49,7 @@ jobs:
           cabal-version: 'latest'
 
       ##### Installation #######################################
-      - name: Install Generate[101]
+      - name: Install generators
         if: github.event_name != 'schedule' && steps.changes.outputs.haskell-changed == 'true' || hashFiles('~/cabal/bin/Generate') != ''
         run: cabal install --overwrite-policy=always --builddir _dist
 
@@ -60,6 +60,9 @@ jobs:
 
       - name: Generate 101
         run: Generate101
+
+      - name: Generate People
+        run: GeneratePeople
 
       - name: Generate News
         run: GenerateNews
