@@ -1,6 +1,8 @@
 {-# LANGUAGE DeriveGeneric, OverloadedStrings, LambdaCase, TupleSections #-}
 module OneOhOne where
 
+import Prelude hiding (div)
+
 import Data.Time
 import System.Directory
 import System.IO
@@ -37,6 +39,9 @@ import Text.RSS.Export
 import Text.Feed.Import
 import Text.Feed.Query
 
+import Html
+import People hiding (title, Link)
+
 -- constants
 usualTime :: TimeOfDay
 usualTime = TimeOfDay 13 0 0
@@ -54,7 +59,7 @@ usualBuilding = "Livingstone Tower"
 
 nl2br :: String -> String
 nl2br [] = []
-nl2br ('\n':xs) = "<br/>\n" ++ nl2br xs
+nl2br ('\n':xs) = "<br>\n" ++ nl2br xs
 nl2br (x:xs) = x:(nl2br xs)
 
 createLink :: String -> String -> String
@@ -458,16 +463,7 @@ generateHTML ts out = do
                   person = if null inst then (createLink speakerurl speaker)
                                         else (createLink speakerurl speaker) ++ ", " ++ (createLink insturl inst)
                   dt = time ++ place ++ ": " ++ title ++ (bracket person)
-                  pMat (Link url desc) = createLink url desc
-                  pMat (PDF file Nothing) = createLink ("101/slides/" ++ file) "Slides"
-                  pMat (PDF file (Just com)) = (createLink ("101/slides/" ++ file) "Slides") ++ " " ++ (bracket com)
-                  pMat (File file desc) = createLink ("101/files/" ++ file) desc
-                  pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
-                  mat = if null material then ""
-                          else
-                           "<ul>" ++
-                           (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
-                                      material) ++ "</ul>"
+                  mat = materialToUList material
               in entryBlock b i dt (nl2br abstract) (length material) (nl2br mat)
           processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
             = let fmt = \ str -> formatTime defaultTimeLocale str date
@@ -484,3 +480,51 @@ generateHTML ts out = do
               in entryBlock b i dt (nl2br description) 0 ""
           processEntry b (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material))
             = processEntry b (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
+
+materialToUList :: [Material] -> HTML
+materialToUList [] = ""
+materialToUList ms = "<ul>" ++ (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>") ms) ++ "</ul>"
+  where
+    pMat (Link url desc) = createLink url desc
+    pMat (PDF file Nothing) = createLink ("101/slides/" ++ file) "Slides"
+    pMat (PDF file (Just com)) = (createLink ("101/slides/" ++ file) "Slides") ++ " " ++ (bracket com)
+    pMat (File file desc) = createLink ("101/files/" ++ file) desc
+    pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
+
+generateSnippet :: [(Int, Talk)] -> FilePath -> IO ()
+generateSnippet talks file = do
+  now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
+  content <- case (sortBy (comparing $ date . snd) $ filter (\(i,x) -> date x > now && isTalk x) talks) of
+    [] -> pure ""
+    ((i, t):_) -> do
+      let header = createLinkAnchor ("msp101.html#" ++ show i) $ "<strong>" ++ title t ++ "</strong>"
+      let inst = if null (institute t) then "" else " " ++ bracket (createLink (insturl t) (institute t))
+      let subheader = "<em>" ++ createLink (speakerurl t) (speaker t) ++ inst ++ "</em>"
+      let time = formatTime defaultTimeLocale "%A %e %B %Y, %R" (date t)
+      let loc = if location t `elem` ["TBD", "TBC"] then "location TBC" else location t
+      image <- findImage (speaker t)
+      let mat = if null (material t) then "" else concat $
+                 ["<details" ++ (if length (material t) <= 5 then " open" else "") ++ ">"
+                 , "<summary><b>Material</b></summary>"
+                 , materialToUList (material t)
+                 , "</details>"]
+      let abst = if null (abstract t) then ""
+                 else "<details open><summary><b>Abstract</b></summary>" ++ nl2br (abstract t) ++ mat ++ "</details>"
+      let body = "<p>" ++ header ++ "<br>" ++ subheader ++ "<br>" ++ time ++ ", " ++ loc ++ "</p>"
+      let content = div "person" $ concat $ catMaybes
+            [ (div "person-image" . img (Just "border-radius: 20%; height: 100px;") (speaker t)) <$> image
+            , pure (div "person-description" body)
+            ]
+      let fullLink = p ("See the " ++ (anchor "msp101.html" "MSP101 seminar page") ++ " for a full list of future and past talks.")
+      pure $ "<div class='recent-pubs'><h2>Next MSP101 seminar</h2>" ++ content ++ abst ++ fullLink ++ "</div>"
+  writeFile file content
+  where
+    isTalk SpecialEvent{} = False
+    isTalk _ = True
+
+    findImage nom = do
+      msp <- people <$> readPeopleFile "people.yaml"
+      case [ ident x | x <- msp, name x == nom] of
+        (idnt:_) -> imageFromIdent idnt
+        _ -> pure Nothing
+

@@ -34,5 +34,6 @@ main = do
   generateRSS  ts' "msp101.rss"
   generateICS  ts' "msp101.ics"
   generateHTML ts' "msp101.html"
+  generateSnippet ts' "_snippets/next101.html"
  where cancelled CancelledTalk{} = True
        cancelled _               = False
