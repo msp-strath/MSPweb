@@ -156,6 +156,14 @@ div.sidebar h3 {
     font-size: 150%
 }
 
+div.person {
+    display: flex;
+}
+
+div.person-image {
+    margin-right: 0.6em;
+}
+
 /* Make links a sensible colour */
 a {
     color: inherit
