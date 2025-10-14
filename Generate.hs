@@ -108,22 +108,34 @@ scanEntry base inputRoot path = do
 -- argument with the string associated with "varname" in the second
 -- argument. If there is no string associated with "varname", then
 -- "{{varname}}" is replaced by the empty string.
+--
+-- Similarly replace strings [[varname]] with the contents of file
+-- `snippets/varname`.
 substitute :: String
            -> [(String,String)]
-           -> String
+           -> IO String
 substitute template env = loop template []
     where
-      loop []           acc = reverse acc
-      loop ('{':'{':cs) acc = getVar cs [] acc
+      loop []           acc = pure $ reverse acc
+      loop ('{':'{':cs) acc = getVar '{' cs [] acc
+      loop ('[':'[':cs) acc = getVar '[' cs [] acc
       loop (c:cs)       acc = loop cs (c:acc)
 
-      getVar []           varAcc acc = reverse (varAcc ++ "{{" ++ acc)
-      getVar ('}':'}':cs) varAcc acc =
+      getVar d   []           varAcc acc = pure $ reverse (varAcc ++ d:d:acc)
+      getVar '{' ('}':'}':cs) varAcc acc =
           let varNm = reverse varAcc in
           case lookup varNm env of
             Nothing  -> loop cs acc
-            Just val -> loop cs (reverse (substitute val env) ++ acc)
-      getVar (c:cs) varAcc acc = getVar cs (c:varAcc) acc
+            Just val -> do
+              val' <- substitute val env
+              loop cs (reverse val' ++ acc)
+      getVar '[' (']':']':cs) varAcc acc = do
+        let varNm = reverse varAcc
+        let file = "_snippets" </> varNm
+        fileExists <- doesFileExist file
+        snippet <- if fileExists then readFile file else pure ""
+        loop cs (reverse snippet ++ acc)
+      getVar d (c:cs) varAcc acc = getVar d cs (c:varAcc) acc
 
 -- | Check the input string to determine if it starts with a header of
 -- the form "### <template-name> (var1=value1,var2=value2)\n". If it
@@ -180,10 +192,9 @@ generateFiles inputRoot outputRoot tree = do
                 Left (template, baseEnv, body) -> do
                   let templatePath = inputRoot </> "_templates" </> template
                   templateBody <- readFile templatePath
-                  contactWidget <- readFile (inputRoot </> "_templates/contact.html")
-                  tbody <- translate body
-                  let env = ("rootPath",rootPath):("content", tbody):("contact", contactWidget):baseEnv
-                  return (substitute templateBody env)
+                  let env = ("rootPath",rootPath):baseEnv
+                  tbody <- translate =<< substitute body env
+                  substitute templateBody (("content", tbody):env)
                 Right body ->
                   translate body
           writeFile outputPath $ body
