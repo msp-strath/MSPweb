@@ -31,9 +31,10 @@ endif
 default: local
 
 local:
-	runghc Generate101.hs
-	runghc GenerateNews.hs
-	runghc Generate.hs
+	cabal run --builddir _dist Generate101
+	cabal run --builddir _dist GenerateNews
+	cabal run --builddir _dist GeneratePeople
+	cabal run --builddir _dist Generate
 
 compile:
 	cabal build --builddir _dist
@@ -41,6 +42,7 @@ compile:
 local-compiled:
 	`cabal list-bin --builddir _dist Generate101`
 	`cabal list-bin --builddir _dist GenerateNews`
+	`cabal list-bin --builddir _dist GeneratePeople`
 	`cabal list-bin --builddir _dist Generate`
 
 

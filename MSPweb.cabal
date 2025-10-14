@@ -9,6 +9,7 @@ cabal-version:  >= 1.10
 
 executable Generate
   main-is:          Generate.hs
+  other-modules:    Markdown
   build-depends:    base,
                     filepath,
                     directory,
@@ -37,10 +38,15 @@ executable Generate101
 
 executable GeneratePeople
   main-is:          GeneratePeople.hs
-  other-modules:    Html
+  other-modules:    Html,
+                    Markdown
   build-depends:    base,
                     yaml,
-                    bytestring
+                    bytestring,
+                    text,
+                    directory,
+                    filepath,
+                    pandoc >= 2.0
   default-language: Haskell2010
 
 executable GenerateNews
