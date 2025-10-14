@@ -42,7 +42,7 @@ anchor :: String -> HTML -> HTML
 anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
 
 img :: Maybe String -> String -> String -> HTML
-img  style url alt = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"" ++ alt ++ "\">"
+img  style alt url = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"" ++ alt ++ "\">"
  where
   h :: String -> String
   h x = " style=\"" ++ x ++ "\" "

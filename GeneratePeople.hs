@@ -128,12 +128,11 @@ personToHTML person = do
   let prnouns = maybe "" (\ x -> " " ++ span "grayish" ("(" ++ x ++ ")")) (pronouns person)
   let links = intersperse " or email " $ catMaybes [homepage person, maillink person]
   desc <- translateMarkdown (description person ++ concatStop links)
-  image <- imageFromIdent (ident person)
+  image <- imageFromIdent (ident person) (currentMember person)
   let body = concat [strong nom, prnouns, desc]
   pure $ div "person" $ concat $ catMaybes
-    [ guard (currentMember person)
-        $> (div "person-image" $ img (Just "border-radius: 20%; height: 100px;") image (name person))
-    , guard True $> (div "person-description" body)
+    [ (div "person-image" . img (Just "border-radius: 20%; height: 100px;") (name person)) <$> image
+    , pure (div "person-description" body)
     ]
     where
       maillink :: Person -> Maybe HTML
@@ -144,13 +143,16 @@ personToHTML person = do
       homepage :: Person -> Maybe HTML
       homepage person = fmap (\ w -> "See " ++ anchor w (firstname person ++ "'s webpage")) (webpage person)
 
-      imageFromIdent :: String -> IO String
-      imageFromIdent ident = do
+      imageFromIdent :: String -> Bool -> IO (Maybe String)
+      imageFromIdent _ False = pure Nothing
+      imageFromIdent ident _ = do
         images <- listDirectory "images/people/"
         let candidates = [ image | image <- images, dropExtensions image == ident]
         case candidates of
-          (path:_) -> pure ("images/people/" </> path)
-          _ -> pure "images/people/placeholder.jpg"
+          (path:_) -> pure (Just $ "images/people/" </> path)
+          _ -> do
+            putStrLn $ "Warning: did not find an image for '" ++ ident ++ "'"
+            pure (Just "images/people/placeholder.jpg")
 
       concatStop :: [String] -> String
       concatStop [] = ""
