@@ -1,5 +1,5 @@
 name:           MSPweb
-version:        0.2.0.0
+version:        0.3.0.0
 synopsis:       Generator for the MSP website
 homepage:       https://github.com/msp-strath/MSPweb
 author:         Bob Atkey, Fredrik Nordvall Forsberg
@@ -29,7 +29,6 @@ executable Generate101
                     time,
                     regex-pcre-builtin,
                     array,
-                    aeson,
                     bytestring,
                     text,
                     xml-types,

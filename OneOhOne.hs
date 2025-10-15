@@ -1,4 +1,4 @@
-{-# LANGUAGE DeriveGeneric, OverloadedStrings, LambdaCase, TupleSections #-}
+{-# LANGUAGE DeriveGeneric, OverloadedStrings, LambdaCase, TupleSections, RecordWildCards #-}
 module OneOhOne where
 
 import Prelude hiding (div)
@@ -18,7 +18,7 @@ import Data.Array((!))
 import Text.Regex.PCRE
 
 import GHC.Generics
-import Data.Aeson
+import Data.Yaml
 
 import qualified Data.Text.Lazy as LT
 import qualified Data.Text as T
@@ -42,18 +42,15 @@ import Text.Feed.Query
 import Html
 import People hiding (title, Link)
 
--- constants
-usualTime :: TimeOfDay
-usualTime = TimeOfDay 13 0 0
+data Usual
+  = Usual
+  { usualTime :: TimeOfDay
+  , usualDay :: String
+  , usualRoom :: String
+  , usualBuilding :: String
+  } deriving (Eq, Show, Generic)
 
-usualDay :: String
-usualDay = "Monday"
-
-usualRoom :: String
-usualRoom = "LT1414a"
-
-usualBuilding :: String
-usualBuilding = "Livingstone Tower"
+instance FromJSON Usual
 
 -- HTML utils
 
@@ -194,7 +191,6 @@ data Material = Link { address :: String,
   deriving (Show, Read, Eq, Generic)
 
 instance FromJSON Material
-instance ToJSON Material
 
 data Talk = Talk {
                    date :: UTCTime,
@@ -255,9 +251,14 @@ data Talk = Talk {
   deriving (Show, Read, Eq, Generic)
 
 instance FromJSON Talk
-instance ToJSON Talk
 
+data OneOhOneData
+  = OneOhOneData
+  { usual :: Usual
+  , talks :: [Talk]
+  } deriving (Show, Eq, Generic)
 
+instance FromJSON OneOhOneData
 
 generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
@@ -405,10 +406,11 @@ generateICS ts out = do
                            "UID:" ++ show i,
                            "END:VEVENT"]
 
-generateHTML :: [(Int,Talk)]
+generateHTML :: Usual
+            -> [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
-generateHTML ts out = do
+generateHTML Usual{..} ts out = do
   now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
   let (previousTalks, upcomingTalks) = sortBy (flip $ comparing $ date . snd) *** sortBy (comparing $ date . snd) $ partition (\(i,x) -> date x < now) ts
   -- Some talk statistics for stdout
