@@ -240,9 +240,23 @@ a.hoverlink:hover::after {
     content: "\01F517";
 }
 
+div.people {
+    display: flex;
+    flex-wrap: wrap;
+}
+
 div.person {
     display: flex;
     align-items: center;
+    flex: 50%;
+}
+
+@media (max-width: 800px) {
+    div.person {
+        display: flex;
+        align-items: center;
+        flex: 100%;
+    }
 }
 
 div.person-image {
@@ -344,4 +358,3 @@ div.recent-pubs {
     }
 
 }
-

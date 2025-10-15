@@ -165,7 +165,11 @@ peopleToHTML :: HTML -> [Person] -> IO HTML
 peopleToHTML _ [] = pure ""
 peopleToHTML title (p:ps) = do
   content <- traverse personToHTML (p:ps)
-  pure $ unlines (h3 title : content)
+  pure
+    $ unlines
+      [ h3 title
+      , div "people" $ unlines content
+      ]
 
 
 groupMSP :: [Person] -> MSPGrouped
