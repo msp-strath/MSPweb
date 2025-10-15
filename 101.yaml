@@ -92,7 +92,10 @@ talks:
   institute: MSP
   insturl: ''
   title: Capucci Logic
-  abstract: ''
+  abstract: |
+    For some applications, it is useful for the truth of a logical statement to be approximate instead of merely true or false. Fuzzy Logics are a famous example of such logics, where statements are valued in the interval [0,1], where 1 represents "definitely true" and 0 represents "definitely false".
+
+    In this talk, I'll talk about a logic which is valued in [0,∞] where implication is interpreted as a ratio between premises and conclusion. The main feature of this logic is that we can formulate a logic where the "sharp" lattice connectives are replaced by smooth ones. Our hope is that this will allow such logics to be used in situations where satisfiability can be learned, or where non-satisfaction is treated as a cost during training.
   location: TBD
   material: []
 - tag: Talk
