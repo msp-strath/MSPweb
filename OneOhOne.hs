@@ -517,7 +517,7 @@ generateSnippet talks file = do
             [ (div "person-image" . img (Just "border-radius: 20%; height: 100px;") (speaker t)) <$> image
             , pure (div "person-description" body)
             ]
-      let fullLink = p ("See the " ++ (anchor "msp101.html" "MSP101 seminar page") ++ " for a full list of future and past talks.")
+      let fullLink = p ("<small>See the " ++ (anchor "msp101.html" "MSP101 seminar page") ++ " for a full list of future and past talks.</small>")
       pure $ "<div class='recent-pubs'><h2>Next MSP101 seminar</h2>" ++ content ++ abst ++ fullLink ++ "</div>"
   writeFile file content
   where
