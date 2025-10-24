@@ -1,7 +1,7 @@
 module Main where
 
 import Html
-import Markdown
+import Translate
 import People
 
 generatePeople :: FilePath -> IO HTML

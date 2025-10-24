@@ -10,7 +10,7 @@ import System.Directory ( getDirectoryContents, doesDirectoryExist
                         , doesFileExist, getCurrentDirectory
                         , createDirectoryIfMissing, copyFile )
 
-import Markdown
+import Translate
 
 import Data.Text (pack, unpack)
 
@@ -180,14 +180,12 @@ generateFiles inputRoot outputRoot tree = do
     where
       processTree rootPath path (File name) =
         let inputPath  = inputRoot </> path </> name
-            outputExt = case takeExtension name of
-                          ".md" -> ".html"
-                          _     -> takeExtension name
+            outputExt = outputExtension (takeExtension name)
             outputPath = outputRoot </> path </> (dropExtension name) ++ outputExt
-            knownSuffixes = [".html", ".md"] in
+        in
         if any (\ x -> x `isSuffixOf` name) knownSuffixes then do
           result <- parseHeader <$> readFile inputPath
-          let translate = if  ".md" `isSuffixOf` name then translateMarkdown else return
+          let translate = translateFormat (takeExtension name)
           body <- case result of
                 Left (template, baseEnv, body) -> do
                   let templatePath = inputRoot </> "_templates" </> template

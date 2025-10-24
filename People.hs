@@ -15,7 +15,7 @@ import System.Directory
 import System.FilePath
 
 import Html
-import Markdown
+import Translate
 
 type Markdown = String
 
