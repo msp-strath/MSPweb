@@ -57,13 +57,13 @@ talks:
   material: []
 - tag: Talk
   date: '2025-11-10T13:00:00Z'
-  speaker: Philippa Cowderoy
-  speakerurl: http://flippac.org
-  institute: ''
-  insturl: ''
-  title: TBC
-  abstract: ''
-  location: TBD
+  speaker: Ohad Kammar
+  speakerurl: https://denotational.co.uk/
+  institute: University of Glasgow
+  insturl: 
+  title: Modular abstract syntax trees (MAST) – substitution tensors with second-class sorts
+  abstract: We adapt Fiore, Plotkin, and Turi's treatment of abstract syntax with binding, substitution, and holes to account for languages with second-class sorts. These situations include programming calculi such as the Call-by-Value λ-calculus (CBV) and Levy's Call-by-Push-Value (CBPV). Prohibiting second-class sorts from appearing in variable contexts means the presheaf of variables is no longer a left-unit for Fiore et al's substitution tensor product. We generalised their development to associative and right-unital skew monoidal categories. We reuse much of the development through skew bicategorical arguments. In ongoing work, we replace the skew monoidal structure with ordinary monoidal structure by recourse to substitution modules instead of substitution monoids. \n\nWe apply the resulting theory in two scenarios. We employ the mathematical theory to circumvent the expression problem when proving substitution lemmata for varieties of CBV denotational semantics modularly. We employ a computational implementation of the theory to circumvent the expression problem when implementing intrinsically-typed foreign-function interfaces for the 29 theories of SMTLIB.\n\nJoint work with Marcelo Fiore, Kajetan Granops, Mihail-Codrin Iftode, Georg Moser, and Sam Staton.
+  location: LT1414a and Online
   material: []
 - tag: Talk
   date: '2025-11-03T13:00:00Z'
