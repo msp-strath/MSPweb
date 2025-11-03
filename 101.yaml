@@ -62,18 +62,24 @@ talks:
   institute: University of Glasgow
   insturl: ''
   title: Modular abstract syntax trees (MAST) – substitution tensors with second-class sorts
-  abstract: We adapt Fiore, Plotkin, and Turi's treatment of abstract syntax with binding, substitution, and holes to account for languages with second-class sorts. These situations include programming calculi such as the Call-by-Value λ-calculus (CBV) and Levy's Call-by-Push-Value (CBPV). Prohibiting second-class sorts from appearing in variable contexts means the presheaf of variables is no longer a left-unit for Fiore et al's substitution tensor product. We generalised their development to associative and right-unital skew monoidal categories. We reuse much of the development through skew bicategorical arguments. In ongoing work, we replace the skew monoidal structure with ordinary monoidal structure by recourse to substitution modules instead of substitution monoids. \n\nWe apply the resulting theory in two scenarios. We employ the mathematical theory to circumvent the expression problem when proving substitution lemmata for varieties of CBV denotational semantics modularly. We employ a computational implementation of the theory to circumvent the expression problem when implementing intrinsically-typed foreign-function interfaces for the 29 theories of SMTLIB.\n\nJoint work with Marcelo Fiore, Kajetan Granops, Mihail-Codrin Iftode, Georg Moser, and Sam Staton.
+  abstract: |
+    We adapt Fiore, Plotkin, and Turi's treatment of abstract syntax with binding, substitution, and holes to account for languages with second-class sorts. These situations include programming calculi such as the Call-by-Value λ-calculus (CBV) and Levy's Call-by-Push-Value (CBPV). Prohibiting second-class sorts from appearing in variable contexts means the presheaf of variables is no longer a left-unit for Fiore et al's substitution tensor product. We generalised their development to associative and right-unital skew monoidal categories. We reuse much of the development through skew bicategorical arguments. In ongoing work, we replace the skew monoidal structure with ordinary monoidal structure by recourse to substitution modules instead of substitution monoids.
+
+    We apply the resulting theory in two scenarios. We employ the mathematical theory to circumvent the expression problem when proving substitution lemmata for varieties of CBV denotational semantics modularly. We employ a computational implementation of the theory to circumvent the expression problem when implementing intrinsically-typed foreign-function interfaces for the 29 theories of SMTLIB.
+
+    Joint work with Marcelo Fiore, Kajetan Granops, Mihail-Codrin Iftode, Georg Moser, and Sam Staton.
   location: LT1414a and Online
   material: []
 - tag: Talk
-  date: '2025-11-03T13:00:00Z'
+  date: '2025-11-04T16:00:00Z'
   speaker: Georgi Nakov
   speakerurl: ''
   institute: MSP
   insturl: ''
   title: Matrix Type Theory
-  abstract: ''
-  location: TBD
+  abstract: |
+    What is an appropriate type for a matrix, and what are the accompanying typing rules? Depending on your mileage, the answer might seem obvious or dull &mdash; can't we start with a humble <tt>Matrix A m n</tt>? I would argue that better candidates exist, and that suitable typing rules are far from obvious, at least if we aim at actually implementing the said rules. In this talk, I will embark on the long journey of turning something that looks good on paper into something that works in code. We try to abolish any implicit assumptions, hidden computation and blind guessing from the initial typing rules, and refine them until they can guide a precise implementation. With guest occurrences of the usual suspects &mdash; bidirectional typing, thinnings, and typecheckers-that-get-to-know-monoid-laws.
+  location: LT1414a and Online
   material: []
 - tag: Talk
   date: '2025-10-27T13:00:00Z'
@@ -82,9 +88,9 @@ talks:
   institute: MSP
   insturl: ''
   title: What I did in my PhD
-  abstract: 
+  abstract:
     The modal μ-calculus is a modal logic that type theorists don't usually spare much thought for; it's usually treated classically, and its main application is as a specification language for model checking, where it subsumes weaker but more commonly used logics like LTL, CTL, and PDL. Meanwhile, modal logicians study the μ-calculus using very "1930s" concepts like explicitly named variables. Most of my efforts during my PhD have been spent trying to pull the theory of the modal μ-calculus into this century (AKA into Agda) using the tools of type theory, but my real interest is in what we type theorists might glean from the exchange. For example, the modal μ-calculus is a fixpoint logic, with a very mature account of fixpoint alternation - something that every proof assistant (to my knowledge) is lacking.
-    
+
     In this talk, I'll be using the μ-calculus and some of my recent work on it as a motivating example to give a slightly non-standard introduction to some important MSP ideas - syntaxes with binding, and data types as fixpoints. I'll cover the least fixpoint (which computer scientists love), the greatest fixpoint (which we sometimes tolerate), and the rational fixpoint (which many forget exists, but plays a key role in my work). If time permits, I'd also like to open the door to the terrifying world of arbitrary fixpoint alternation, and some (very very early) ideas for taming it.
   location: LT310 and Online
   material: []
@@ -6109,7 +6115,7 @@ talks:
   material:
   - tag: PDF
     slideName: 2015-10-06_palmigiano.pdf
-    comment: 
+    comment:
 - tag: Talk
   date: '2015-09-25T16:00:00Z'
   speaker: Pierre Lescanne
@@ -6177,7 +6183,7 @@ talks:
   material:
   - tag: PDF
     slideName: 2015-10-21_gallais.pdf
-    comment: 
+    comment:
   - tag: Link
     address: https://github.com/gallais/type-scope-semantics
     linkDescription: Github repository with paper and sources
@@ -6257,7 +6263,7 @@ talks:
   material:
   - tag: PDF
     slideName: 2015-08-13_siek.pdf
-    comment: 
+    comment:
 - tag: Talk
   date: '2015-08-26T11:00:00Z'
   speaker: Kevin Dunne
