@@ -298,6 +298,16 @@ people:
     description: |
       who is a PhD student under Guillaume Allais' direction.
 
+  - firstname: "Rin"
+    lastname: "Liu"
+    ident: "rin"
+    pronouns: "they/them"
+    status: "phd-student"
+    webpage: "https://desyncthethird.github.io/"
+    description: |
+      who is a PhD student under Fredrik Nordvall Forsberg's
+      direction.
+
   - firstname: "Jules"
     lastname: "Hedges"
     ident: "jules"
