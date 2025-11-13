@@ -51,9 +51,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: Infinite games
-  abstract: ''
-  location: TBD
+  title: Graph Games with Infinite Plays
+  abstract: In this 101 I am planning to discuss 2-player graph games with infinite plays. At first we will focus on games with "trivial" acceptance conditions where a player either loses or wins all infinite plays. As motivating example I will present the games that characterize least and greatest fixpoints of monotone operators. After that we will explore why those games are too simple for reasoning about alternating fixpoints and move to parity games, a type of graph game that captures the full expressive power of the modal mu calculus. Time permitting I will explain how to prove that parity games are (memoryless) determined and how one can compute winning regions of a given parity game.
+  location: LT1414a and Online
   material: []
 - tag: Talk
   date: '2025-11-10T13:00:00Z'
