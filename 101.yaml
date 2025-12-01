@@ -25,7 +25,7 @@ talks:
   abstract: ''
   location: TBD
   material: []
-- tag: Talk
+- tag: CancelledTalk
   date: '2025-12-02T15:00:00Z'
   speaker: Jan de Muijnck-Hughes
   speakerurl: ''
@@ -41,9 +41,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: Combinatory Logic
-  abstract: ''
-  location: TBD
+  title: Semantic analysis of Polarization
+  abstract:  Polarization is a proof-theoretic technique used to study various kinds of logics with classical dualities. I will give a model-theoretic explanation of polarization in the context of classical logic and classical linear logic (Girard and Laurent). Finally, I will show a higher-dimensional generalisation of these ideas to generalised species.
+  location: LT310 and online
   material: []
 - tag: Talk
   date: '2025-11-17T13:00:00Z'
@@ -59,7 +59,7 @@ talks:
   date: '2025-11-10T13:00:00Z'
   speaker: Ohad Kammar
   speakerurl: https://denotational.co.uk/
-  institute: University of Glasgow
+  institute: University of Edinburgh
   insturl: ''
   title: Modular abstract syntax trees (MAST) – substitution tensors with second-class sorts
   abstract: |
