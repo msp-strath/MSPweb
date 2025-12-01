@@ -73,6 +73,14 @@ This page compiles various resources that might be useful to MSP members.
 
 : [Coalgebra](https://coalg.org/) mailinglist.
 
+[ILLC Amsterdam News and Events](https://www.illc.uva.nl/NewsandEvents/ILLC-News-Events/)
+
+: News and Events Website of the ILLC Amsterdam, containing info on seminars, conferences and open positions
+
+[LOGIC](mailto:logic.list@outlook.com)
+
+More information about the list is [here](https://dlmps.org/pages/logic-list.php).
+
 ### Internal CIS resources
 
 [CIS FAQ](https://local.cis.strath.ac.uk/wp/systems-support/itfaq/)
