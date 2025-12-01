@@ -71,7 +71,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [coalgebra](mailto:coalgebra@framalistes.org)
 
-: [Coalgebra](https://coalg.org/) mailinglist
+: [Coalgebra](https://coalg.org/) mailinglist.
 
 ### Internal CIS resources
 
