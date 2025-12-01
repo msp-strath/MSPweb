@@ -77,9 +77,9 @@ This page compiles various resources that might be useful to MSP members.
 
 : News and Events Website of the ILLC Amsterdam, containing info on seminars, conferences and open positions
 
-[LOGIC](mailto:logic.list@outlook.com)
+[LOGIC](https://dlmps.org/pages/logic-list.php)
 
-: More information about the list is [here](https://dlmps.org/pages/logic-list.php).
+: Logic mailing list.
 
 ### Internal CIS resources
 
