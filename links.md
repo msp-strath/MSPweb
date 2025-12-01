@@ -79,7 +79,7 @@ This page compiles various resources that might be useful to MSP members.
 
 [LOGIC](mailto:logic.list@outlook.com)
 
-More information about the list is [here](https://dlmps.org/pages/logic-list.php).
+: More information about the list is [here](https://dlmps.org/pages/logic-list.php).
 
 ### Internal CIS resources
 
