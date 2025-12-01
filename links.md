@@ -69,7 +69,7 @@ This page compiles various resources that might be useful to MSP members.
 
 : Category theory mailing list.
 
-[coalgebra](coalgebra@framalistes.org)
+[coalgebra](mailto:coalgebra@framalistes.org)
 
 : [Coalgebra](https://coalg.org/) mailinglist
 
