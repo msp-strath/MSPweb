@@ -226,10 +226,10 @@ people:
     lastname: "Rischel"
     ident: "eigil"
     pronouns: "he/him"
-    status: "phd-student"
+    status: "phd-finished"
     webpage: "https://erischel.com"
     description: |
-      who is a PhD student under Radu Mardare and Neil Ghani's direction.
+      who was a PhD student under Radu Mardare and Neil Ghani's direction. Eigil successfully defended his thesis "Markov Fibrations" in November 2025, with Ohad Kammar as external examiner and Fredrik Nordvall Forsberg as internal.
 
   - firstname: "Andre"
     lastname: "Videla"
