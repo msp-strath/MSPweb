@@ -14,7 +14,7 @@ people:
     ident: "neil"
     pronouns: "he/him"
     title: "Prof."
-    status: "academic"
+    status: "alum"
     links:
       - href: "ghanineilprof"
         rel: "staff"
