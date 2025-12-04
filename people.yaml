@@ -151,6 +151,18 @@ people:
       who is interested in dependent types, type theory and programming
       language design and their application in making systems more trustworthy.
 
+  - firstname: "Vikraman"
+    lastname: "Choudhury"
+    ident: "vikraman"
+    pronouns: "he/them"
+    title: "Dr"
+    status: "academic"
+    email: "vikraman.choudhury@strath.ac.uk"
+    webpage: "http://vikraman.org/"
+    description: |
+      who is interested in category theory, type theory, and semantics.
+
+
   - firstname: "Stuart"
     lastname: "Gale"
     ident: "stuart"
