@@ -41,7 +41,7 @@ talks:
     examples of a combinatorial nature.
   location: LT310 and online
   material: []
-- tag: Talk
+- tag: CancelledTalk
   date: '2025-12-08T13:00:00Z'
   speaker: Guillaume Allais
   speakerurl: ''
@@ -51,15 +51,31 @@ talks:
   abstract: ''
   location: TBD
   material: []
-- tag: CancelledTalk
-  date: '2025-12-02T15:00:00Z'
+- tag: Talk
+  date: '2025-12-09T14:00:00Z'
   speaker: Jan de Muijnck-Hughes
   speakerurl: ''
-  institute: MSP
+  institute: MSP/StrathCyber
   insturl: ''
-  title: Dafny
-  abstract: ''
-  location: TBD
+  title: An Introduction to Design-by-Contract with Dafny
+  abstract: |
+    Dafny is a multi-paradigm language with deep integration of
+    *design-by-contract* style verification: Hoare Triples.  What
+    makes Dafny interesting from a language design perspective is
+    that, although, there is a clear separation between a
+    specification and the code it reasons about, specifications are
+    nonetheless made from code.  For this 101, I am going to introduce
+    everyone to Dafny and show how one can write and reason about
+    simple imperative and object-oriented programs and their
+    behaviour.
+
+    What excites me about Dafny is its potential to act as a /bridging
+    language/ that guides students, who are ostensibly rooted in
+    imperative programming, through to the world of verification
+    without having to introduce them to the world of dependently-typed
+    functional programming.  I hope you will be excited about Dafny
+    too.
+  location: LT1414a
   material: []
 - tag: Talk
   date: '2025-11-24T13:00:00Z'
