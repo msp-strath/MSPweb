@@ -199,6 +199,7 @@ people:
     lastname: "Altenmüller"
     ident: "malin"
     pronouns: "she/her"
+    title: "Dr"
     status: "phd-finished"
     webpage: "https://maltenmuller.github.io/"
     description: |
@@ -226,6 +227,7 @@ people:
     lastname: "Rischel"
     ident: "eigil"
     pronouns: "he/him"
+    title: "Dr"
     status: "phd-finished"
     webpage: "https://erischel.com"
     description: |
