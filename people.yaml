@@ -199,10 +199,10 @@ people:
     lastname: "Altenmüller"
     ident: "malin"
     pronouns: "she/her"
-    status: "phd-student"
+    status: "phd-finished"
     webpage: "https://maltenmuller.github.io/"
     description: |
-      who is a PhD student under Conor McBride's direction.
+      who was a PhD student under Conor McBride and Ross Duncan's direction. Malin successfully defended here thesis "Combinatorial Presentations of String Diagrams for Non-Symmetric Monoidal Categories" in December 2025, with Noam Zeilberger as external examiner and Vikraman Choudhury as internal.
 
   - firstname: "Georgi"
     lastname: "Nakov"
