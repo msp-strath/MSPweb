@@ -12,8 +12,8 @@
     We are looking for <a href="/phd2026-JARSS.html">UK PhD candidates</a> for 2026.
 
 - date: 3 December 2025
-  description:
-    We are organising the <a href="https://scottish-pl-institute.github.io/spls/meetings/2025/december/">Scottish Programming Languages Seminar</a>.
+  event: Scottish Programming Languages Seminar
+  url: https://scottish-pl-institute.github.io/spls/meetings/2025/december/
 
 - date: 1 December 2025
   description:
@@ -38,13 +38,13 @@
 
 - start: 16 June 2025
   end: 20 June 2025
-  description:
-    We are organising the <a href="https://www.coalg.org/calco-mfps-2025/">11th Conference on Algebra and Coalgebra in Computer Science and the 41st Conference on the Mathematical Foundations of Programming Semantics</a> at Strathclyde.
+  event: 11th Conference on Algebra and Coalgebra in Computer Science and the 41st Conference on the Mathematical Foundations of Programming Semantics
+  url: https://www.coalg.org/calco-mfps-2025/
 
 - start: 9 June 2025
   end: 13 June 2025
-  description:
-    We are organising the <a href="https://msp.cis.strath.ac.uk/types2025/">31st International Conference on Types for Proofs and Programs</a> at Strathclyde.
+  event: 31st International Conference on Types for Proofs and Programs
+  url: https://msp.cis.strath.ac.uk/types2025/
 
 - start: 27 May 2025
   end: 6 June 2025
@@ -63,8 +63,8 @@
 
 - start: 14 April 2025
   end: 16 April 2025
-  description:
-    We are organising the <a href="https://msp.cis.strath.ac.uk/bctcs2025/">41st British Colloquium for Theoretical Computer Science</a> at Strathclyde.
+  event: 41st British Colloquium for Theoretical Computer Science
+  url: https://msp.cis.strath.ac.uk/bctcs2025/
 
 - date: 28 January 2025
   description:
@@ -92,8 +92,8 @@
 
 - start: 29 July 2024
   end: 2 August 2024
-  description:
-    We are hosting the <a href="https://spli.scot/splv/2024-strathclyde/">Scottish Programming Languages and Verification Summer School 2024</a> at Strathclyde.
+  event: Scottish Programming Languages and Verification Summer School 2024
+  url: https://spli.scot/splv/2024-strathclyde/
 
 - date: 17 April 2024
   description:
@@ -124,7 +124,7 @@
 
 - date: 04 December 2023
   description:
-    We are organising the second Categories Network Project (CATNIP) meeting.
+    We are organising the second <a href="https://sites.google.com/view/catniporg/">Categories Network Project (CATNIP)</a> meeting.
 
 - start: 22 November 2023
   end: 23 November 2023
@@ -133,7 +133,8 @@
 
 - date: 22 November 2023
   description:
-    We are organising the <a href="https://scottish-pl-institute.github.io/spls/meetings/2023/november/">Scottish Programming Languages Seminar</a>.
+  event: Scottish Programming Languages Seminar
+  url: https://scottish-pl-institute.github.io/spls/meetings/2023/november/
 
 - date: 22 September 2023
   description:
@@ -151,8 +152,7 @@
 
 - date: 4 May 2023
   description:
-    Welcome to <ahref="https://personal.cis.strath.ac.uk/ethel.morgan/">Ethel
-    Morgan</a>, who joined the MSP group as a Research Software
+    Welcome to Ethel Morgan, who joined the MSP group as a Research Software
     Engineer.
 
 - date: 14 April 2023
@@ -185,15 +185,12 @@
 
 - start: 18 July 2022
   end: 22 July 2022
-  description:
-    We are organising the 5th international conference on
-    <a href="https://msp.cis.strath.ac.uk/act2022/">Applied Category
-    Theory</a>.
+  event: 5th international conference on Applied Category Theory
+  url: https://msp.cis.strath.ac.uk/act2022/
 
 - date: 10 January 2022
   description:
-    Welcome to <a href="https://personal.cis.strath.ac.uk/william.waites/">William
-    Waites</a>, who joined the MSP group as a Chancellor's Fellow.
+    Welcome to William Waites, who joined the MSP group as a Chancellor's Fellow.
 
 - date: 1 October 2021
   description:
@@ -257,14 +254,12 @@
 
 - date: 1 September 2019
   description:
-    <a href="https://personal.cis.strath.ac.uk/r.mardare/">Radu
-    Mardare</a> is joining the MSP group. Welcome Radu!
+    Radu Mardare is joining the MSP group. Welcome Radu!
 
 - start: 5 August 2019
   end: 9 August 2019
-  description:
-    We are organising the first ever <a href="http://www.macs.hw.ac.uk/splv/splv19/">
-    Scottish Programming Languages and Verification Summer School</a>.
+  event: Scottish Programming Languages and Verification Summer School
+  url: http://www.macs.hw.ac.uk/splv/splv19/
 
 - date: 3 June 2019
   description:
@@ -294,8 +289,8 @@
 
 - start: 17 December 2018
   end: 18 December 2018
-  description:
-    We are organising <a href="http://events.cs.bham.ac.uk/syco/2/">SYCO 2</a>, the Second Symposium on Compositional Structures.
+  event: Second Symposium on Compositional Structures (SYCO 2)
+  url: https://www.cl.cam.ac.uk/events/syco/2/
 
 - date: 14 December 2018
   description:
@@ -309,7 +304,8 @@
 
 - date: 17 October 2018
   description:
-    We are organising a meeting of the <a href='https://msp-strath.github.io/spls-18/'>Scottish Programming Languages Seminar</a>.
+  event: Scottish Programming Languages Seminar
+  url: https://msp-strath.github.io/spls-18/
 
 
 - date: 1 October 2018
@@ -394,7 +390,8 @@
 - start: 10 July 2017
   end: 11 July 2017
   description:
-    We are organising a <a href="/opengames-2017/">Workshop on Open Games</a>.
+  event: 1st Open Games Workshop
+  url: https://msp.cis.strath.ac.uk/opengames-2017/
 
 
 - date: 5 July 2017
@@ -415,8 +412,8 @@
 
 - start: 10 April 2017
   end: 12 April 2017
-  description:
-    We are organising the eighth edition of the workshop <a href='https://personal.cis.strath.ac.uk/clemens.kupke/ALCOP2017/'>Algebra and Coalgebra meet Proof Theory</a>.
+  event: Algebra and Coalgebra meet Proof Theory workshop (ALCOP VIII)
+  url: https://personal.cis.strath.ac.uk/clemens.kupke/ALCOP2017/
 
 
 - date: 6 February 2017
@@ -426,7 +423,8 @@
 
 - date: 30 November 2016
   description:
-    We are organising the second meeting  <a href='http://homepages.inf.ed.ac.uk/cheunen/clapscotland/'>Categories, Logic, and Physics, Scotland</a>.
+  event: 2nd 'Categories, Logic, and Physics, Scotland' meeting
+  url: http://homepages.inf.ed.ac.uk/cheunen/clapscotland/
 
 
 - start: 21 November 2016
@@ -439,8 +437,8 @@
 
 - date: 9 November 2016
   description:
-    We are organising a meeting of the <a href='https://msp-strath.github.io/spls-16/'>Scottish Programming Languages Seminar</a>.
-
+  event: Scottish Programming Languages Seminar
+  url: https://msp-strath.github.io/spls-16/
 
 - date: 3 October 2016
   description:
@@ -473,8 +471,8 @@
 - start: 20 April 2016
   end: 26 April 2016
   description:
-    We are organising the 33rd <a href="http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.AIMXXIII">Agda Implementors’ Meeting</a> at Strathclyde.
-
+  event: 33rd Agda Implementors’ Meeting
+  url: http://wiki.portal.chalmers.se/agda/pmwiki.php?n=Main.AIMXXIII
 
 - start: 29 February 2016
   end: 2 March 2016
@@ -584,9 +582,8 @@
 
 - start: 23 June 2014
   end: 24 June 2014
-  description:
-    "<a id='fibs2014'></a>Upcoming event: <a href='fibs-2014/'>Workshop on Fibrations in Computer Science</a> organised at Strathclyde."
-
+  event: Workshop on Fibrations in Computer Science
+  url: https://msp.cis.strath.ac.uk/fibs-2014/
 
 - start: 4 June 2014
   end: 6 June 2014
@@ -594,9 +591,6 @@
     The SICSA theme event
     <a href="http://staff.computing.dundee.ac.uk/katya/practical-types/">Practical Types</a>
     is organised by Neil and others, and attended by many of the MSP group.
-
-
-
 
 - start: 28 May 2014
   end: 29 May 2014
@@ -756,9 +750,8 @@
 
 
 - date: 15 June 2012
-  description:
-    "<a id='lambda2012'></a>Upcoming event: <a href='lambda2012/'>International Workshop on 75 Years of the λ-Calculus</a>"
-
+  event: International Workshop on 75 Years of the λ-Calculus
+  url: lambda2012/
 
 - date: 1 June 2012
   description:
@@ -793,14 +786,10 @@
 
 - date: 19 December 2011
   description:
-    <a id="hank60"></a><a href="hank60/index.html">Peter Hancock at 60</a>
-
-    <p>
+  event: Peter Hancock at 60 Celebration
+  url: hank60/index.html
+  description:
       We had a day of talks to celebrate Peter Hancock's 60th Birthday.
-
-    <p>
-      <a href="hank60/index.html">More information</a>.
-
 
 - date: 25 November 2011
   description:
@@ -830,7 +819,7 @@
 
 - date: 13 May 2011
   description:
-    <a href="http://www.maths.gla.ac.uk/~tl/sct110513.html">4th Scottish Category Theory Seminar</a>
+    <a href="https://web.archive.org/web/20110526030134/http://www.maths.gla.ac.uk/~tl/sct110513.html">4th Scottish Category Theory Seminar</a>
 
 
 - start: 21 April 2011
@@ -858,12 +847,12 @@
 
 - date: 3 December 2010
   description:
-    "<a href='http://personal.cis.strath.ac.uk/~ng/SCT/sct021210.html'>Algebraic Set Theory Course: Benno van den Berg</a>"
+    "<a href='https://web.archive.org/web/20200401000000*/https://personal.cis.strath.ac.uk/neil.ghani/SCT/sct021210.html'>Algebraic Set Theory Course: Benno van den Berg</a>"
 
 
 - date: 2 December 2010
   description:
-    <a href="http://personal.cis.strath.ac.uk/~ng/SCT/sct021210.html">3rd Scottish Category Theory Seminar</a>
+    <a href="https://web.archive.org/web/20200401000000*/https://personal.cis.strath.ac.uk/neil.ghani/SCT/sct021210.html">3rd Scottish Category Theory Seminar</a>
 
 
 - start: 22 November 2010
