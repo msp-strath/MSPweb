@@ -6,6 +6,17 @@ usual:
 
 talks:
 - tag: Talk
+  date: '2026-01-19T13:00:00Z'
+  speaker: Conor McBride
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Wiggle It (Just a Little Bit)
+  abstract: |
+    Testing can reveal the absence of bugs in situations where we can show that the test data expose all the possible variations. This is straightforward when the domain is finite, but one can also achieve test coverage for large domains by restricting the ways in which the program may process its input. For example, the fact that the sum of the numbers less than n is n choose 2 can be proven by testing for n in {0, 1, 2} because both calculations are inherently quadratic. I have, on and off, been thinking about how to deliver similar results for other inductive data structures. For example, one can generate particularly well behaved folds on unlabelled binary trees by giving (i) the tree which is the image of the leaf, and (ii) a tree with two variables showing how the ouptut for a node is computed from the outputs for its two subtrees. I claim that if two such folds agree at the four smallest trees, then they agree for all trees. Clearly, we recover (i) by testing at a leaf. We recover (ii) by testing at a node with leaves for subtrees, then perturbing each of those subtrees in turn, to see where the output changes. That is to say, we use perturbation to recover abstraction. I am currently working on a proof of this claim in Agda and will share my progress (and my prospectus) in this talk.
+  location: LT210
+  material: []
+- tag: Talk
   date: '2025-12-15T13:00:00Z'
   speaker: Ezra Schoen
   speakerurl: ''
