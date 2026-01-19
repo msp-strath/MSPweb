@@ -6,6 +6,106 @@ usual:
 
 talks:
 - tag: Talk
+  date: '2026-03-30T13:00:00Z'
+  speaker: Sam Fish
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Categorical Quantum Nonlocality
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-03-23T13:00:00Z'
+  speaker: Emma Tye
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-03-16T13:00:00Z'
+  speaker: Clemens Kupke
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-03-09T13:00:00Z'
+  speaker: Fiona Blackett
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-03-02T13:00:00Z'
+  speaker: Vikraman Choudhury
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-02-23T13:00:00Z'
+  speaker: Fred Forsberg
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-02-16T13:00:00Z'
+  speaker: Bob Atkey
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-02-09T13:00:00Z'
+  speaker: Rin Liu
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-02-02T13:00:00Z'
+  speaker: Guillaume Allais
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
+  date: '2026-01-26T13:00:00Z'
+  speaker: Ezra Schoen
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT209
+  material: []
+- tag: Talk
   date: '2026-01-19T13:00:00Z'
   speaker: Conor McBride
   speakerurl: ''
