@@ -101,8 +101,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Species of Trees
+  abstract: |
+    Mathematicians and computer scientists both enjoy trees very much. I know I certainly do, and I wish to share my enthusiasm. This talk will be a theory-light tour of various interesting phenomena relating to species of trees. We will discuss what makes a species, what makes a tree, and look at a range of particularly interesting examples of species of trees. In the interest of managing expectations: you're not likely to learn all that much about combinatorial species from this talk. It's more of an excuse to have a fun and relaxed time exploring ways trees can occur 'in the wild'.
   location: LT209
   material: []
 - tag: Talk
