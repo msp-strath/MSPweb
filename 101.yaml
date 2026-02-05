@@ -6,6 +6,21 @@ usual:
 
 talks:
 - tag: Talk
+  date: '2026-02-12T16:00:00Z'
+  speaker: Shriram Krishnamurthi
+  speakerurl: https://cs.brown.edu/~sk/
+  institute: Brown University
+  insturl: https://cs.brown.edu
+  title: "Resugaring: Lifting Semantic Features through Syntactic Sugar"
+  abstract: |
+    Syntactic sugar is pervasive in language technology. It is used to shrink the size of a core language; to define domain-specific languages; and even to let programmers extend their language. Unfortunately, syntactic sugar is eliminated by transformation, so when the system provides feedback, it is in terms of a program that is unfamiliar to the authors. Thus, tool authors are forced to choose between their convenience and that of the programmer.
+
+    We address this conflict by showing how to lift core language features to present them in terms of the surface syntax. We have performed this research over three different features: execution traces, binding, and type rules. In each case we identify properties expected of the lifting and prove that our techniques satisfy these.
+
+    More broadly, though syntactic sugar is a central area of programming languages, it remains under-represented in the research literature. We briefly examine some other elements of a research agenda for this area.
+  location: LT1414a
+  material: []
+- tag: Talk
   date: '2026-03-30T13:00:00Z'
   speaker: Sam Fish
   speakerurl: ''
