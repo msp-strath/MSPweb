@@ -96,8 +96,15 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Structural Set Theory
+  abstract: |
+    Suppose you were asked, "is 3 ∈ ℕ?" Being a natural number, 3 is indeed a member of ℕ, so the answer is “yes”. On the other hand, the question, “is π ∈ ℚ?”, would quickly receive an answer of “no”. Now, suppose you were then asked, “is π ∈ log?”
+
+    You’d might pause for a moment, before again answering in the negative, but for a different reason than before. After all, π is a number, and log is a function, so π being a member of log -- whatever that means -- would be ridiculous! A better answer might be to declare the question as meaningless.
+
+    As computer scientists and/or type theorists, the problem here is obvious. But in the foundations used in most mathematics outside of (higher) category theory, the issue is less clear-cut. In most common presentations of set-theoretic foundations -- for our purposes, ZFC; Zermelo–Fraenkel set theory with Choice -- everything is a set, so the question “is π ∈ log?” should have a yes-or-no answer.
+
+    Many of these kinds of quirks arise from the "global" nature of the set membership relation: it is always valid to compare any two arbitrary sets for membership and equality. However, in most practical contexts, sets are often stratified, in the sense that we usually don’t have very long chains of membership containment, and sets from different strata are very rarely compared or combined. This talk aims to present the structuralist's approach to this problem: a categorical way of constructing "structural" sets connected together via only local set membership relations between them that avoids these kinds of problems. This talk is intended to be accessible and expository, and requires only basic exposure to category theory.
   location: LT209
   material: []
 - tag: Talk
