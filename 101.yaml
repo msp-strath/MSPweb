@@ -82,13 +82,13 @@ talks:
   material: []
 - tag: Talk
   date: '2026-02-16T13:00:00Z'
-  speaker: Bob Atkey
+  speaker: Conor McBride
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
+  title: Finitary testing
   abstract: ''
-  location: LT209
+  location: LT307
   material: []
 - tag: Talk
   date: '2026-02-09T13:00:00Z'
