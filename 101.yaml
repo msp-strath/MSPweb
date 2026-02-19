@@ -76,8 +76,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Introduction to setoids
+  abstract: |
+    A setoid is a type X together with an equivalence relation ≅_X : X → X → Prop, i.e. ≅_X is reflexive, symmetric, and transitive. Setoids are widely used in (pre-HoTT) type theory based approaches to constructive mathematics, where quotients might not be available, or better avoided for computational reasons. Even though setoids have a bad reputation ("setoid hell") due to a quickly leading to a lot of boilerplate, I'll argue that they are quite nice to work with as a model construction, as setoids validate many convenient axioms such as function extensionality and countable choice.
   location: LT209
   material: []
 - tag: Talk
