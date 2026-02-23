@@ -66,8 +66,11 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Inceptions
+  abstract: |
+    We can program with continuations using the continuation monad, which gives us control operators, control effects, and classical logic. But, it is not an algebraic effect, and corresponds to a large algebraic theory. Is there a monad for non-local control effects, which is still algebraic?
+
+    This is work-in-progress, and based on joint work with Gregor Feierabend and Marcelo Fiore.
   location: LT711
   material: []
 - tag: Talk
