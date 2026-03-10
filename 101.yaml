@@ -46,11 +46,14 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Thin behaviours, (co)algebraically (Part I)
+  abstract: |
+    In this talk I'll provide an update on our project on thin structures. Thin trees as introduced by Bojanczyk, Idziaszek and Skrzypczak are infinite trees with at most countably many infinite paths. While the theory of (top-down) automata operating on infinite trees is considerably less well-behaved than the one of automata on infinite words, thin trees provide a convenient setting where one can study tree-shaped data that behaves in some ways like words. In this talk I will recall the notion of a thin tree. I will then explain how thin trees generalise to the level of coalgebras for an analytic functor and how those thin "behaviours" can be seen as the quotient of an initial algebra of representants (terms of finite depth, but involving an infinitary operation). We axiomatize that quotient with a single equation. Underlying our result is a normal form theorem for thin behaviours. I will then sketch how thin behaviours might be useful in verification and/or model learning. The details of the latter will, however, most likely be the content for another 101.
+
+    This is joint work with Anton Chernev, Corina Cirstea and Helle Hvid Hansen.
   location: LT711
   material: []
-- tag: Talk
+- tag: CancelledTalk
   date: '2026-03-09T13:00:00Z'
   speaker: Fiona Blackett
   speakerurl: ''
