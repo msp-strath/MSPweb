@@ -24,6 +24,7 @@ import qualified Data.Text.Lazy as LT
 import qualified Data.Text as T
 
 import qualified Data.ByteString.Lazy as LBS
+import qualified Data.ByteString as BS
 
 import Data.Map (Map)
 import qualified Data.Map as Map
@@ -260,6 +261,22 @@ data OneOhOneData
 
 instance FromJSON OneOhOneData
 
+nextTalk :: [(Int, Talk)] -> IO (Maybe (Int, Talk))
+nextTalk talks = do
+  now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
+  pure $ listToMaybe (sortBy (comparing $ date . snd) $ filter (\(i,x) -> date x > now && isTalk x) talks)
+  where
+    isTalk SpecialEvent{} = False
+    isTalk CancelledTalk{} = False
+    isTalk _ = True
+
+talksFromFile :: IO (Usual,[(Int, Talk)])
+talksFromFile = do
+  f <- BS.readFile "101.yaml"
+  case decodeEither' f of
+    Left err -> error (show err)
+    Right (OneOhOneData usual ts) -> return (usual, reverse $ zip [(0::Int)..] $ reverse ts)
+
 generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path
             -> IO ()
@@ -493,12 +510,11 @@ materialToUList ms = "<ul>" ++ (concatMap (\ x -> "<li>" ++ (pMat x) ++ "</li>")
     pMat (File file desc) = createLink ("101/files/" ++ file) desc
     pMat (Whiteboard dir) = createLink ("101/wb/" ++ dir) "Whiteboard photos"
 
-generateSnippet :: [(Int, Talk)] -> FilePath -> IO ()
-generateSnippet talks file = do
-  now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
-  content <- case (sortBy (comparing $ date . snd) $ filter (\(i,x) -> date x > now && isTalk x) talks) of
-    [] -> pure ""
-    ((i, t):_) -> do
+generateSnippet :: Maybe (Int, Talk) -> FilePath -> IO ()
+generateSnippet talk file = do
+  content <- case talk of
+    Nothing -> pure ""
+    Just (i, t) -> do
       let header = createLinkAnchor ("msp101.html#" ++ show i) $ "<strong>" ++ title t ++ "</strong>"
       let inst = if null (institute t) then "" else " " ++ bracket (createLink (insturl t) (institute t))
       let subheader = "<em>" ++ createLink (speakerurl t) (speaker t) ++ inst ++ "</em>"
@@ -521,9 +537,6 @@ generateSnippet talks file = do
       pure $ "<div class='recent-pubs'><h2>Next MSP101 seminar</h2>" ++ content ++ abst ++ fullLink ++ "</div>"
   writeFile file content
   where
-    isTalk SpecialEvent{} = False
-    isTalk _ = True
-
     findImage nom = do
       msp <- people <$> readPeopleFile "people.yaml"
       case [ ident x | x <- msp, name x == nom] of

@@ -1,5 +1,5 @@
 name:           MSPweb
-version:        0.3.1.0
+version:        0.4.0.0
 synopsis:       Generator for the MSP website
 homepage:       https://github.com/msp-strath/MSPweb
 author:         Bob Atkey, Fredrik Nordvall Forsberg
@@ -73,3 +73,33 @@ executable GenerateNews
                     feed,
                     text
   default-language: Haskell2010
+
+executable Announce101
+  main-is:          Announce101.hs
+  other-modules:    OneOhOne,
+                    Html,
+                    Translate,
+                    People
+  build-depends:    base,
+                    containers,
+                    text,
+                    pandoc >= 3.1.3,
+                    yaml,
+                    bytestring,
+                    directory,
+                    filepath,
+                    time,
+                    feed,
+                    xml-types,
+                    http-client,
+                    http-client-tls,
+                    http-types,
+                    regex-pcre-builtin,
+                    array,
+                    smtp-mail,
+                    mime-mail,
+                    req,
+                    temporary,
+                    process
+  default-language: Haskell2010
+
