@@ -16,3 +16,6 @@ msp101.rss
 
 # SMB authentication file (make sure not readable by others!)
 _authsmb.txt
+
+# Settings for Annouce101
+_announcesettings.yaml
