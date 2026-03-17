@@ -36,8 +36,11 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: (A very belated) Advert for POPL'26
+  abstract: |
+    So POPL'26 was 2 months ago. I went as a student volunteer, with my attendance funded by SIGPLAN and my travel funded by MSP. But what do I actually remember from it? What stood out? Did I see anything I think my fellow PhDs and professors would like?
+
+    I plan to give an overview of my first experience at a major conference as a student, as well as a whirlwind tour of some papers that caught my interest, or I think might catch yours!
   location: LT711
   material: []
 - tag: Talk
