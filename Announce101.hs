@@ -23,6 +23,7 @@ import Network.HTTP.Client.MultipartFormData
 import System.Directory
 import System.FilePath
 import System.Exit
+import System.IO
 import System.IO.Temp
 import System.Process
 
@@ -210,6 +211,7 @@ confirm msg = do
 
 main :: IO ()
 main = do
+  hSetBuffering stdout NoBuffering
   AnnounceSettings{..} <- readSettings
   let from = Address (Just (pack announcer)) (pack emailAnnouncer)
   (usual,ts) <- talksFromFile
