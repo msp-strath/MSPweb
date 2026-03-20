@@ -15,8 +15,8 @@ import Data.Yaml
 
 import GHC.Generics
 
-import Network.Mail.SMTP
-import Network.Mail.Mime (plainPart)
+import Network.Mail.SMTP hiding (htmlPart)
+import Network.Mail.Mime (plainPart, htmlPart)
 import Network.HTTP.Req
 import Network.HTTP.Client.MultipartFormData
 
@@ -27,6 +27,7 @@ import System.IO
 import System.IO.Temp
 import System.Process
 
+import Html
 import OneOhOne
 
 expandLocation :: String -> String
@@ -72,32 +73,43 @@ emailTemplate :: String -- speaker
               -> UTCTime -- when
               -> String -- online URL
               -> String -- announcer
-              -> String -- blurb
-              -> (Text, LT.Text)
-emailTemplate speaker affiliation title abstract location time online announcer blurb =
-  (pack subject, LT.pack body)
+              -> (String, String, String) -- subject, body, htmlBody
+emailTemplate speaker affiliation title abstract location time online announcer  =
+  (subject, body, htmlBody)
    where
     shortTime = formatTime defaultTimeLocale "%-l%P %a %-e/%-m" time
     longTime = formatTime defaultTimeLocale "%A %-e %B, %H:%M" time
     subject = "[MSP101] " ++ speaker ++ ": " ++ title ++ " (" ++ shortTime ++ ", " ++ location ++ ")"
+    blurb = "Dear all,\n\nWe have another MSP101 seminar coming up. Hope to see you there!\n"
+    htmlBlurb = "<p>Hi newsletter editor,</p><p>Please find details below for the upcoming MSP group seminar. All welcome!</p>"
     body = unlines $
       [ blurb
       , "Best wishes,\n" ++ announcer
       , ""
       , "Date, time and place:\n  " ++ longTime ++ ", " ++ expandLocation location
       , ""
+      , if null online then "" else ("Online attendance:\n  " ++ online ++ "\n")
       , "Speaker:\n  " ++ speaker ++ (if null affiliation then "" else " (" ++ affiliation ++ ")")
       , ""
       , "Title:\n  " ++ title
       , ""
       , "Abstract:\n  " ++ abstract
-      , if null online then "" else ("Online attendance:\n  " ++ online ++ "\n")
       , "MSP101 Feeds:"
       , "  Web: http://msp.cis.strath.ac.uk/msp101.html"
       , "  RSS: http://msp.cis.strath.ac.uk/msp101.rss"
-      , "  iCal: http://msp.cis.strath.ac.uk/msp101.ics"
+      , " iCal: http://msp.cis.strath.ac.uk/msp101.ics"
       , ""
       ]
+    htmlBody = unlines $
+      [ htmlBlurb
+      , "<p>Best wishes,<br>" ++ announcer ++ "</p>"
+      , tag "p" $ (tag "b" "Date, time and place:") <++> longTime ++ ", " ++ expandLocation location
+      , if null online then "" else (tag "p" $ (tag "b" "Online attendance:") <++> link online)
+      , tag "p" $ (tag "b" "Speaker:") <++> speaker ++ (if null affiliation then "" else " (" ++ affiliation ++ ")")
+      , tag "p" $ (tag "b" "Title:") <++> title
+      , tag "p" $ (tag "b" "Abstract:") <++> abstract
+      ]
+
 
 zulipTemplate :: String -- speaker
               -> String -- affiliation
@@ -165,8 +177,7 @@ data AnnounceSettings = AnnounceSettings
   { emailAnnouncer :: String
   , announcer :: String
   , announcerShort :: String
-  , smtpServer :: String
-  , password :: String
+  , smtpPassword :: String
   --
   , onlineURL :: String
   --
@@ -196,23 +207,24 @@ readSettings = do
         Left err -> error (show err)
         Right s -> pure s
   where
-    empty = AnnounceSettings "" "" "" "" "" "" "" "" "" ""
+    empty = AnnounceSettings "" "" "" "" "" "" "" "" ""
 
-confirm :: Maybe String -> IO Bool
+confirm :: String -> IO Bool
 confirm msg = do
-  putStr $ (fromMaybe "Press y to continue" msg) ++ " "
-  input <- getLine
-  case map toUpper input of
-    "Y" -> pure True
-    "YES" -> pure True
-    "N" -> pure False
-    "NO" -> pure False
+  putStr $ msg ++ " "
+  input <- getChar
+  putStrLn ""
+  case toUpper input of
+    'Y' -> pure True
+    'N' -> pure False
     _ -> confirm msg
 
 main :: IO ()
 main = do
   hSetBuffering stdout NoBuffering
   AnnounceSettings{..} <- readSettings
+  let smtpServer = "mail-eu.smtp2go.com"
+  let username = "msp101announcer"
   let from = Address (Just (pack announcer)) (pack emailAnnouncer)
   (usual,ts) <- talksFromFile
   nextTalk ts >>= \case
@@ -221,43 +233,40 @@ main = do
 
       putStrLn $ "NEXT TALK:\n\n" ++ formatTime defaultTimeLocale "%-e %B %Y" (date t) ++ " " ++ speaker t ++ ": " ++ (title t)
       putStrLn ""
-      confirm Nothing
+      doit <- confirm "Continue (y/n)?"
+      when (not doit) $ exitSuccess
 
-      -- Announce on mailing list
-      let blurb = "Dear all,\n\nWe have another MSP101 seminar coming up. Hope to see you there!\n"
-      let (subject, body) = emailTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL announcerShort blurb
+      -- Announce on mailing list and departmental newsletter
+      let (subject, body, htmlBody) = emailTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL announcerShort
+
       putStrLn "==== Mailing list ======================================"
-      putStrLn ("Subject: " ++ unpack subject)
-      putStrLn (LT.unpack body)
+      putStrLn ("Subject: " ++ subject)
+      putStrLn body
       putStrLn "========================================================"
-      doit <- confirm (Just "Announce to mailing list (y/n)?")
-      when doit $ sendMailWithLoginTLS smtpServer emailAnnouncer password (simpleMail from [Address Nothing "msp-interest@lists.strath.ac.uk"]  [] [] subject [plainPart body])
+      doit <- confirm "Announce to mailing list (y/n)?"
+      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "msp-interest@lists.strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
 
-      -- Announce on departmental newsletter
-      let blurb = "Hi newsletter editor,\n\nPlease find details below for the upcoming MSP group seminar. All welcome!\n"
-      let (subject, body) = emailTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL announcerShort blurb
       putStrLn "==== Departmental newsletter ==========================="
-      putStrLn ("Subject: " ++ unpack subject)
-      putStrLn (LT.unpack body)
+      putStrLn ("Subject: " ++ subject)
+      putStrLn htmlBody
       putStrLn "========================================================"
-      doit <- confirm (Just "Announce to departmental newsletter? (y/n)?")
-      when doit $ sendMailWithLoginTLS smtpServer emailAnnouncer password (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] subject [plainPart body])
+      doit <- confirm "Announce to departmental newsletter? (y/n)?"
+      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
 
       -- Announce on Zulip
       let zulipBody = zulipTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL
       putStrLn "==== Zulip ============================================="
       putStrLn (LT.unpack zulipBody)
       putStrLn "========================================================"
-      doit <- confirm (Just "Announce to Zulip (y/n)?")
-      when doit $ sendMailWithLoginTLS smtpServer emailAnnouncer password (simpleMail from [Address Nothing (pack zulipChannelEmail)]  [] [] "MSP 101" [plainPart zulipBody])
-
+      doit <- confirm "Announce to Zulip (y/n)?"
+      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing (pack zulipChannelEmail)]  [] [] "MSP 101" [plainPart zulipBody])
 
       -- Announce on Mastodon
       let fediBody = mastodonTemplate (speaker t) (institute t) (title t) (location t) (date t)
       putStrLn "==== Mastodon =========================================="
       putStrLn (unpack fediBody)
       putStrLn "========================================================"
-      doit <- confirm (Just "Announce to Mastodon (y/n)?")
+      doit <- confirm "Announce to Mastodon (y/n)?"
       when doit $ do
         let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
         withTempDirectory "_msp-conference-advert" "msp-ad" $ \ dir -> do
@@ -286,5 +295,5 @@ main = do
                   let params = "status" =: fediBody
                                <> "media_ids[]" =: (i :: Text)
                   postReq <- req POST (https "mastodon.acm.org" /: "api" /: "v1" /: "statuses" ) (ReqBodyUrlEnc params) bsResponse headers
-                  --liftIO $ BS.putStr (responseBody postReq)-}
+                  --liftIO $ BS.putStr (responseBody postReq)
                   pure ()

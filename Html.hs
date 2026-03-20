@@ -2,6 +2,9 @@ module Html where
 
 type HTML = String
 
+(<++>) :: HTML -> HTML -> HTML
+x <++> y = x ++ " " ++ y
+
 tag :: String -> HTML -> HTML
 tag t content = "<" ++ t ++ ">" ++ content ++ "</" ++ t ++ ">"
 
@@ -40,6 +43,9 @@ ddt (term, desc) = "<dt>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
 
 anchor :: String -> HTML -> HTML
 anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
+
+link :: String -> HTML
+link url = anchor url url
 
 img :: Maybe String -> String -> String -> HTML
 img  style alt url = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"" ++ alt ++ "\">"
