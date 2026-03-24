@@ -27,7 +27,10 @@ talks:
   institute: MSP
   insturl: ''
   title: Categorical Quantum Nonlocality
-  abstract: ''
+  abstract: |
+    After decades of being embroiled in political skirmishes, quantum physicists find themselves presented with a mathematical framework which predicts behaviour contrary to our reasonable intuitive leaning towards locality. Despite powerful attempts to quell the movement ensuing upon this realisation and to force it into irrelevance - even in the face of an incredibly successful experimental verification which no campaign can possibly diminish or sugar-coat - researchers now see no option but to accept the findings and to seek to understand their far reaches, along with anything they might reveal about quantum theory's relationship with relativity via Einstein's requirement of local causality. 
+    
+    On Monday I intend to present this timeline of escalation as faithfully as I can, along with some investigative findings, and some underlying categorical actors.
   location: LT711
   material: []
 - tag: Talk
