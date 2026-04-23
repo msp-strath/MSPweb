@@ -5,6 +5,20 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: SpecialEvent
+  date: '2026-04-27T13:00:00Z'
+  endDate: '2026-04-27T14:00:00Z'
+  title: MSP101 Planning meeting
+  url: ''
+  location: LT711 and Online
+  locationurl: ''
+  description: |
+    Topics of discussion:
+    <ul><li>When should MSP101 be (same slot or different)
+        <li>Who's doing which MSP101 (schedule)
+        <li>Room bookings
+        <li>Streaming setup (discontinuing zoom)</ul>
+
 - tag: Talk
   date: '2026-02-12T16:00:00Z'
   speaker: Shriram Krishnamurthi
