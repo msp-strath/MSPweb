@@ -1,10 +1,76 @@
 usual:
-  usualTime: "13:00"
-  usualDay: "Monday"
-  usualRoom: "LT1414a"
+  usualTime: "15:00"
+  usualDay: "Thursday"
+  usualRoom: "LT711"
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: Talk
+  date: '2026-06-25T15:00:00Z'
+  speaker: Guillaume Allais
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
+- tag: Talk
+  date: '2026-06-04T15:00:00Z'
+  speaker: Clemens Kupke
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
+- tag: Talk
+  date: '2026-05-28T13:00:00Z'
+  speaker: Rin Liu
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
+- tag: Talk
+  date: '2026-05-21T13:00:00Z'
+  speaker: Emma Tye
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
+- tag: Talk
+  date: '2026-05-14T15:00:00Z'
+  speaker: Fredrik Nordvall Forsberg
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
+- tag: Talk
+  date: '2026-05-07T15:00:00Z'
+  speaker: Bob Atkey
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: TBC
+  abstract: ''
+  location: LT711
+  material: []
+
 - tag: SpecialEvent
   date: '2026-04-27T13:00:00Z'
   endDate: '2026-04-27T14:00:00Z'
