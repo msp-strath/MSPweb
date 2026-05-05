@@ -66,8 +66,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Embedding containers in coherence spaces
+  abstract: |
+    Containers are a representation of polynomial functors that have been used variously for describing data types and for back-and-forth communication, amongst other things. Coherence spaces are a model of classical linear logic, as well as a special kind of Scott domain. I will describe a functor from the category of containers into coherence spaces and linear maps. This functor is faithful, and is full if we allow partial maps of containers.
   location: LT711
   material: []
 
