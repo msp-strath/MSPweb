@@ -55,8 +55,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Constructive transfinite constructions
+  abstract: |
+    Based on a talk by Benno van den Berg at TYPES the week before this talk, I will try to understand how transfinite constructions, such constructing the initial algebra of a functor as the colimit of its initial chain, can be carried out in a constructive metatheory. I will discuss what notion of ordinal Benno says is suitable for this.
   location: LT711
   material: []
 
