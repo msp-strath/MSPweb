@@ -23,3 +23,6 @@ _announcesettings.yaml
 # Local direnv files
 .envrc
 .direnv/
+
+# Generated inspection files from Announce101 --dry-run
+_ad.*

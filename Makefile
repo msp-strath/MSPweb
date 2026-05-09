@@ -39,6 +39,9 @@ local:
 announce:
 	cabal run --builddir _dist Announce101
 
+announce-test:
+	cabal run --builddir _dist Announce101 -- --dry-run
+
 compile:
 	cabal build --builddir _dist
 
