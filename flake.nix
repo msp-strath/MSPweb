@@ -19,6 +19,9 @@
                 pkgs.haskell-language-server
                 pkgs.cabal2nix
                 pkgs.gnumake
+                # Necessary for mastodon posts
+                pkgs.texliveFull
+                pkgs.poppler-utils
               ];
             };
         });

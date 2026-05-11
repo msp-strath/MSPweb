@@ -7,6 +7,7 @@ import Control.Monad.IO.Class
 import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8 as B
 import Data.Char
+import Data.List
 import Data.Maybe
 import Data.Time
 import Data.Text (Text, pack, unpack)
@@ -20,7 +21,9 @@ import Network.Mail.Mime (plainPart, htmlPart)
 import Network.HTTP.Req
 import Network.HTTP.Client.MultipartFormData
 
+import System.Console.GetOpt
 import System.Directory
+import System.Environment
 import System.FilePath
 import System.Exit
 import System.IO
@@ -29,6 +32,18 @@ import System.Process
 
 import Html
 import OneOhOne
+
+dryRun :: OptDescr Bool
+dryRun = Option [] ["dry-run"] (NoArg True) "perform a dry-run of Announce101 without sending emails, social media posts, etc."
+
+parseDryRun :: [String] -> IO Bool
+parseDryRun argv =
+  case getOpt Permute options argv of
+    ([dryRunVal], _, []) -> return dryRunVal
+    (_, _, errs) -> ioError (userError (concat errs ++ usageInfo header options))
+  where
+    options = singleton dryRun
+    header = "Usage: announce [OPTION...]"
 
 expandLocation :: String -> String
 expandLocation room =
@@ -222,7 +237,9 @@ confirm msg = do
 main :: IO ()
 main = do
   hSetBuffering stdout NoBuffering
+  isDryRun <- getArgs >>= parseDryRun
   AnnounceSettings{..} <- readSettings
+  when isDryRun $ putStrLn "== PERFORMING DRY-RUN OF ANNOUNCE101 =="
   let smtpServer = "mail-eu.smtp2go.com"
   let username = "msp101announcer"
   let from = Address (Just (pack announcer)) (pack emailAnnouncer)
@@ -244,14 +261,14 @@ main = do
       putStrLn body
       putStrLn "========================================================"
       doit <- confirm "Announce to mailing list (y/n)?"
-      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "msp-interest@lists.strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
+      when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "msp-interest@lists.strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
 
       putStrLn "==== Departmental newsletter ==========================="
       putStrLn ("Subject: " ++ subject)
       putStrLn htmlBody
       putStrLn "========================================================"
       doit <- confirm "Announce to departmental newsletter? (y/n)?"
-      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
+      when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
 
       -- Announce on Zulip
       let zulipBody = zulipTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL
@@ -259,7 +276,7 @@ main = do
       putStrLn (LT.unpack zulipBody)
       putStrLn "========================================================"
       doit <- confirm "Announce to Zulip (y/n)?"
-      when doit $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing (pack zulipChannelEmail)]  [] [] "MSP 101" [plainPart zulipBody])
+      when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing (pack zulipChannelEmail)]  [] [] "MSP 101" [plainPart zulipBody])
 
       -- Announce on Mastodon
       let fediBody = mastodonTemplate (speaker t) (institute t) (title t) (location t) (date t)
@@ -279,11 +296,19 @@ main = do
             (\ x -> makeAbsolute (dir </> ".." </> x) >>= flip copyFile (dir </> x))
 
           writeFile (dir </> "ad.tex") imageTex
+          putStrLn "Generating png from latex..."
           withCurrentDirectory dir $ do
             callProcess "pdflatex" ["ad.tex"]
             callProcess "pdflatex" ["ad.tex"]
             callProcess "pdftoppm" ["-png", "ad.pdf", "ad"]
-            runReq defaultHttpConfig $ do
+            when isDryRun $ do
+              -- Allow announcer to test ads are generated correctly
+              putStrLn "Copying generated ad images to _msp-conference-advert/_ad.pdf and _msp-conference-advert/_ad.png..."
+              copyFile "ad.pdf" "../_ad.pdf"
+              copyFile "ad-1.png" "../_ad.png"
+              exitSuccess
+            unless isDryRun $ runReq defaultHttpConfig $ do
+              liftIO $ putStrLn "Uploading to mastodon..."
               let headers = header "Authorization" (B.pack $ "Bearer " ++ mastodonAccesstoken)
               file <- reqBodyMultipart [partFile "file" "ad-1.png", partBS "description" altText]
               uploadReq <- req POST (https "mastodon.acm.org" /: "api" /: "v2" /: "media" ) file jsonResponse headers

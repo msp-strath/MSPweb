@@ -19,3 +19,10 @@ _authsmb.txt
 
 # Settings for Annouce101
 _announcesettings.yaml
+
+# Local direnv files
+.envrc
+.direnv/
+
+# Generated inspection files from Announce101 --dry-run
+_ad.*
