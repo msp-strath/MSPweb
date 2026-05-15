@@ -40,6 +40,7 @@ parseDryRun :: [String] -> IO Bool
 parseDryRun argv =
   case getOpt Permute options argv of
     ([dryRunVal], _, []) -> return dryRunVal
+    ([], _, []) -> return False
     (_, _, errs) -> ioError (userError (concat errs ++ usageInfo header options))
   where
     options = singleton dryRun
