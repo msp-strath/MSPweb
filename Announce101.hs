@@ -89,13 +89,17 @@ emailTemplate :: String -- speaker
               -> UTCTime -- when
               -> String -- online URL
               -> String -- announcer
-              -> (String, String, String) -- subject, body, htmlBody
+              -> (String, -- subject mailing list
+                  String, -- subject newsletter
+                  String, -- body
+                  String) -- html body
 emailTemplate speaker affiliation title abstract location time online announcer  =
-  (subject, body, htmlBody)
+  (subject, subjectNL, body, htmlBody)
    where
     shortTime = formatTime defaultTimeLocale "%-l%P %a %-e/%-m" time
     longTime = formatTime defaultTimeLocale "%A %-e %B, %H:%M" time
     subject = "[MSP101] " ++ speaker ++ ": " ++ title ++ " (" ++ shortTime ++ ", " ++ location ++ ")"
+    subjectNL = "MSP101 Seminar: " ++ title ++ " (" ++ speaker ++ ", " ++ shortTime ++ ")"
     blurb = "Dear all,\n\nWe have another MSP101 seminar coming up. Hope to see you there!\n"
     htmlBlurb = "<p>Hi newsletter editor,</p><p>Please find details below for the upcoming MSP group seminar. All welcome!</p>"
     body = unlines $
@@ -238,6 +242,7 @@ confirm msg = do
 main :: IO ()
 main = do
   hSetBuffering stdout NoBuffering
+  hSetBuffering stdin NoBuffering
   isDryRun <- getArgs >>= parseDryRun
   AnnounceSettings{..} <- readSettings
   when isDryRun $ putStrLn "== PERFORMING DRY-RUN OF ANNOUNCE101 =="
@@ -255,7 +260,7 @@ main = do
       when (not doit) $ exitSuccess
 
       -- Announce on mailing list and departmental newsletter
-      let (subject, body, htmlBody) = emailTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL announcerShort
+      let (subject, subjectNL, body, htmlBody) = emailTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL announcerShort
 
       putStrLn "==== Mailing list ======================================"
       putStrLn ("Subject: " ++ subject)
@@ -265,11 +270,11 @@ main = do
       when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "msp-interest@lists.strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
 
       putStrLn "==== Departmental newsletter ==========================="
-      putStrLn ("Subject: " ++ subject)
+      putStrLn ("Subject: " ++ subjectNL)
       putStrLn htmlBody
       putStrLn "========================================================"
       doit <- confirm "Announce to departmental newsletter? (y/n)?"
-      when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] (pack subject) [plainPart (LT.pack body)])
+      when (doit && not isDryRun) $ sendMailWithLoginTLS smtpServer username smtpPassword (simpleMail from [Address Nothing "cis-newsletter@strath.ac.uk"]  [] [] (pack subjectNL) [plainPart (LT.pack body)])
 
       -- Announce on Zulip
       let zulipBody = zulipTemplate (speaker t) (institute t) (title t) (abstract t) (location t) (date t) onlineURL
