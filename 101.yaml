@@ -44,8 +44,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: A Rig of Transformations
+  abstract: |
+    Describing (binary) data representatations and transformations for types can be tricky to do correctly, efficiently and erganomically. I will show what I have been working on - modelling algebraic data types as a "rig" (ring without "n"egation), where the equalities are treated as bi-directional transformations (isomorphisms) between data. Using this approach, we can also model inclusions of one data type into another as a "partial" isomorphism, allowing for padding of data. Furthermore, we can ask how (partial) isomorphisms interact with functions on data types - with some surprising answers!
   location: LT711
   material: []
 
