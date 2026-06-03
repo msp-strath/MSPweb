@@ -18,7 +18,6 @@ import Data.Array((!))
 import Text.Regex.PCRE
 
 import GHC.Generics
-import Data.Yaml
 
 import qualified Data.Text.Lazy as LT
 import qualified Data.Text as T
@@ -42,34 +41,7 @@ import Text.Feed.Query
 
 import Html
 import People hiding (title, Link)
-
-data Usual
-  = Usual
-  { usualTime :: TimeOfDay
-  , usualDay :: String
-  , usualRoom :: String
-  , usualBuilding :: String
-  } deriving (Eq, Show, Generic)
-
-instance FromJSON Usual
-
--- HTML utils
-
-nl2br :: String -> String
-nl2br [] = []
-nl2br ('\n':xs) = "<br>\n" ++ nl2br xs
-nl2br (x:xs) = x:(nl2br xs)
-
-createLink :: String -> String -> String
-createLink "" name = name
-createLink ref name = "<a href='" ++ ref ++ "'>" ++ name ++ "</a>"
-
-createLinkAnchor :: String -> String -> String
-createLinkAnchor "" name = name
-createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
-
-bracket :: String -> String
-bracket str = if null str then "" else " (" ++ str ++ ")"
+import OneOhOneTalks
 
 -- Text utils
 
@@ -176,106 +148,6 @@ html2text s = foldl' (\ t (p , r) -> subRegex (makeRegex p) t r) s $
                                    "theta", "iota", "kappa", "lambda",
                                    "mu", "nu", "xi", "pi", "rho", "sigma",
                                    "tau", "phi", "psi", "omega" ] ]
-
-
--- Generate web pages, calendars and a RSS feed for MSP 101 from data in
--- a text file
-
--- Extra material, such as slides, source code, ...
-data Material = Link { address :: String,
-                       linkDescription :: String }
-              | PDF  { slideName :: FilePath,
-                       comment :: Maybe String}
-              | Whiteboard { dirName :: FilePath }
-              | File { path :: FilePath,
-                       fileDescription :: String }
-  deriving (Show, Read, Eq, Generic)
-
-instance FromJSON Material
-
-data Talk = Talk {
-                   date :: UTCTime,
-                   speaker :: String,
-                   institute :: String,
-                   speakerurl :: String,
-                   insturl :: String,
-                   title :: String,
-                   abstract :: String,
-                   location :: String,
-                   material :: [Material]
-                 }
-
-          | SpecialEvent {
-                           date :: UTCTime,
-                           endDate :: UTCTime,
-                           title :: String,
-                           url :: String,
-                           location :: String,
-                           locationurl :: String,
-                           description :: String
-                         }
-          | DepartmentalSeminar {
-                                  date :: UTCTime,
-                                  speaker :: String,
-                                  institute :: String,
-                                  speakerurl :: String,
-                                  insturl :: String,
-                                  title :: String,
-                                  abstract :: String,
-                                  location :: String
-                                }
-          | BasicTalk {
-                   date :: UTCTime,
-                   speaker :: String,
-                   institute :: String,
-                   speakerurl :: String,
-                   insturl :: String,
-                   title :: String,
-                   abstract :: String,
-                   location :: String,
-                   material :: [Material]
-                 }
-          -- we want to keep cancelled talks in the input file in
-          -- order to not shift indices; easiest way is to just change
-          -- the tag
-          | CancelledTalk {
-                   date :: UTCTime,
-                   speaker :: String,
-                   institute :: String,
-                   speakerurl :: String,
-                   insturl :: String,
-                   title :: String,
-                   abstract :: String,
-                   location :: String,
-                   material :: [Material]
-                 }
-  deriving (Show, Read, Eq, Generic)
-
-instance FromJSON Talk
-
-data OneOhOneData
-  = OneOhOneData
-  { usual :: Usual
-  , talks :: [Talk]
-  } deriving (Show, Eq, Generic)
-
-instance FromJSON OneOhOneData
-
-nextTalk :: [(Int, Talk)] -> IO (Maybe (Int, Talk))
-nextTalk talks = do
-  now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
-  pure $ listToMaybe (sortBy (comparing $ date . snd) $ filter (\(i,x) -> date x > now && isTalk x) talks)
-  where
-    isTalk SpecialEvent{} = False
-    isTalk CancelledTalk{} = False
-    isTalk _ = True
-
-talksFromFile :: IO (Usual,[(Int, Talk)])
-talksFromFile = do
-  f <- BS.readFile "101.yaml"
-  case decodeEither' f of
-    Left err -> error (show err)
-    Right (OneOhOneData usual ts) -> return (usual, reverse $ zip [(0::Int)..] $ reverse ts)
 
 generateRSS :: [(Int,Talk)]
             -> FilePath -- ^ Output path

@@ -31,7 +31,7 @@ import System.IO.Temp
 import System.Process
 
 import Html
-import OneOhOne
+import OneOhOneTalks
 
 dryRun :: OptDescr Bool
 dryRun = Option [] ["dry-run"] (NoArg True) "perform a dry-run of Announce101 without sending emails, social media posts, etc."

@@ -56,3 +56,21 @@ img  style alt url = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"
 emailToHTML :: String -> HTML
 emailToHTML emailAddr =
   anchor ("mailto:" ++ emailAddr) emailAddr
+
+-- HTML utils
+
+nl2br :: String -> String
+nl2br [] = []
+nl2br ('\n':xs) = "<br>\n" ++ nl2br xs
+nl2br (x:xs) = x:(nl2br xs)
+
+createLink :: String -> String -> String
+createLink "" name = name
+createLink ref name = anchor ref name
+
+createLinkAnchor :: String -> String -> String
+createLinkAnchor "" name = name
+createLinkAnchor ref name = "<a href='" ++ ref ++ "' class='hoverlink'>" ++ name ++ "</a>"
+
+bracket :: String -> String
+bracket str = if null str then "" else " (" ++ str ++ ")"

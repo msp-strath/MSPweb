@@ -19,7 +19,8 @@ executable Generate
 
 executable Generate101
   main-is:          Generate101.hs
-  other-modules:    OneOhOne,
+  other-modules:    OneOhOneTalks,
+                    OneOhOne,
                     People,
                     Html,
                     Translate
@@ -76,26 +77,16 @@ executable GenerateNews
 
 executable Announce101
   main-is:          Announce101.hs
-  other-modules:    OneOhOne,
-                    Html,
-                    Translate,
-                    People
+  other-modules:    OneOhOneTalks,
+                    Html
   build-depends:    base,
-                    containers,
                     text,
-                    pandoc >= 3.1.3,
                     yaml,
                     bytestring,
                     directory,
                     filepath,
                     time,
-                    feed,
-                    xml-types,
                     http-client,
-                    http-client-tls,
-                    http-types,
-                    regex-pcre-builtin,
-                    array,
                     smtp-mail,
                     mime-mail,
                     req,

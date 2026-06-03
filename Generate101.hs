@@ -1,5 +1,6 @@
 module Main where
 
+import OneOhOneTalks
 import OneOhOne
 
 -- IMPORTANT: Always add new talks at the top of the list!
