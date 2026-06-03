@@ -5,6 +5,21 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 talks:
+
+- tag: Talk
+  date: '2026-06-04T15:00:00Z'
+  speaker: Rin Liu
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: ilsts (Symmetric List Objects) Part 2
+  abstract: |
+    Cons-lists are fundamental to functional programming, and are often constructed as inductive types or initial algebras. More generally, lists can be axiomatised internally in any monoidal category as list objects, without requiring sums or existence of initial algebras. When strengthened to parametrised list objects, they give a construction of free monoids.
+
+    In monoidal categories with symmetry, we can consider symmetric variants of these definitions -- symmetric list objects or ilsts -- that allow transposing the two front elements of the list. We will show string-diagramatically that these give a construction of the free commutative monoid, and then show some properties of related objects.
+  location: LT711
+  material: []
+
 - tag: Talk
   date: '2026-06-25T15:00:00Z'
   speaker: Guillaume Allais
