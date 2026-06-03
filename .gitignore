@@ -2,6 +2,7 @@
 _build/*
 _dist/*
 dist/*
+dist-newstyle/*
 
 # Misc Backup files
 *~
