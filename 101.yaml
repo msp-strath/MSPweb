@@ -37,8 +37,9 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: TBC
-  abstract: ''
+  title: Basic Stone Duality (classically)
+  abstract: |
+    In this talk I will give an introduction to basic Stone Duality. I will first discuss the basic duality between Boolean Algebras and Stone Spaces. I will then move to variations of this result (examples could be Stone Duality for Distributive Lattices, Heyting Algebras and for so-called modal algebras).
   location: LT711
   material: []
 
