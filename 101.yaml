@@ -21,13 +21,14 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-06-25T15:00:00Z'
-  speaker: Guillaume Allais
+  date: '2026-06-24T15:00:00Z'
+  speaker: Adrián Puerto Aubel
   speakerurl: ''
-  institute: MSP
-  insturl: ''
-  title: TBC
-  abstract: ''
+  institute: Coherence Research
+  insturl: https://coherenceresearch.xyz/
+  title: A glance at Petri net theory
+  abstract: |
+    Petri nets are formal models of computing well-known for depicting true concurrency: Unlike automata, they overcome the state-space explosion problem by avoiding interleaving semantics. In this talk I will give an overview of the most prominent theoretical developments of more than 50 years of Petri net theory. This will range from the different expressions of formal semantics of these models as marking graphs, unfoldings, or event structures, to an overview of relevant problems defined on them and their complexities, with a particular focus on structural analysis techniques.
   location: LT711
   material: []
 
