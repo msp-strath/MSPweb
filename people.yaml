@@ -180,9 +180,9 @@ people:
     lastname: "Barlocco"
     ident: "simone"
     pronouns: "he/him"
-    status: "phd-student"
+    status: "phd-finished"
     description: |
-      who is a PhD student under Clemens Kupke's direction.
+      who was a PhD student under Clemens Kupke's direction. Simone successfully defended his thesis "Angluin Learning: a Modal Logic Approach" in June 2026, with Matteo Sammartino (Royal Holloway) as external examiner and Fredrik Nordvall Forsberg as internal.
 
   - firstname: "Alasdair"
     lastname: "Lambert"
@@ -193,7 +193,7 @@ people:
       - href: "lambertalasdairmr"
         rel: "staff"
     description: |
-      who is a PhD student under Clemens Kupke's and Neil Ghani's direction.
+      who is a PhD student under Clemens Kupke's and previously Neil Ghani's direction.
 
   - firstname: "Malin"
     lastname: "Altenmüller"
@@ -220,7 +220,7 @@ people:
     status: "phd-student"
     webpage: "https://matteocapucci.wordpress.com/"
     description: |
-      who is a PhD student under Neil Ghani and Scott Cunningham's direction.
+      who is a PhD student previously under Neil Ghani and Scott Cunningham's direction.
 
 
   - firstname: "Eigil"
