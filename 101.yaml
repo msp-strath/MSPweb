@@ -19,7 +19,7 @@ talks:
     In this talk, I propose an alternative to explicit inductive reasoning for such situations. This comprises two novel techniques: a higher-order crimp operator, and a logic of indexicals. The crimp operator is a generalization of an associative and commutative fold, whose instantiations express diverse order-insensitive properties of a variety of inductive and cyclic data structures. The logic of indexicals encodes key laws for local reasoning about data in terms of the crimp operator, and supports an abstract separation logic relative to heaps, which we have implemented in Viper, an SMT-based first-order deductive verifier.
 
     I will focus this talk on speculative connections to container types, quotient constructions and symmetries. The imperative programming paradigm treats the shape of data liberally, which raises questions about expressing invariants of heap-dependent inductive types.
-  location: LT711
+  location: LT209
   material: []
 
 - tag: Talk
