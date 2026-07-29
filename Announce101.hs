@@ -174,10 +174,23 @@ imageTemplate :: String -- speaker
               -> UTCTime -- when
               -> (String, B.ByteString) -- (tex, alt text)
 imageTemplate speaker affiliation title location time = (tex, alt) where
+
+  ensuremath txt = concat ["\\ensuremath{", txt, "}"]
   escapeTex = foldMap $ \case
     '&' -> "\\&"
-    '∩' -> "\\ensuremath{\\cap}"
-    'Ω' -> "\\ensuremath{\\Omega}"
+    '∩' -> ensuremath "\\cap"
+    'ω' -> ensuremath "\\omega"
+    'Ω' -> ensuremath "\\Omega"
+    '∞' -> ensuremath "\\infty"
+    '¬' -> ensuremath "\\neg"
+    '⊗' -> ensuremath "\\otimes"
+    '•' -> ensuremath "\\bullet"
+    '∈' -> ensuremath "\\in"
+    '≅' -> ensuremath "\\cong"
+    '→' -> ensuremath "\\rightarrow"
+    'π' -> ensuremath "\\pi"
+    'μ' -> ensuremath "\\mu"
+    'λ' -> ensuremath "\\lambda"
     c -> [c]
 
   tex = unlines $
