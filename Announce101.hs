@@ -329,7 +329,7 @@ main = do
         unless isDryRun $ runReq defaultHttpConfig $ do
           liftIO $ putStrLn "Uploading to mastodon..."
           let headers = header "Authorization" (B.pack $ "Bearer " ++ mastodonAccesstoken)
-          file <- reqBodyMultipart [partFile "file" "ad.png", partBS "description" altText]
+          file <- reqBodyMultipart [partFile "file" png, partBS "description" altText]
           uploadReq <- req POST (https "mastodon.acm.org" /: "api" /: "v2" /: "media" ) file jsonResponse headers
           -- liftIO $ print (responseBody uploadReq :: Value)
           -- liftIO $ putStrLn "====="
