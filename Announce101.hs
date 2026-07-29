@@ -174,13 +174,19 @@ imageTemplate :: String -- speaker
               -> UTCTime -- when
               -> (String, B.ByteString) -- (tex, alt text)
 imageTemplate speaker affiliation title location time = (tex, alt) where
+  escapeTex = foldMap $ \case
+    '&' -> "\\&"
+    '∩' -> "\\ensuremath{\\cap}"
+    'Ω' -> "\\ensuremath{\\Omega}"
+    c -> [c]
+
   tex = unlines $
     [ "\\documentclass[colour=random]{mspadvert}"
     , "\\renewcommand{\\conferenceHook}{MSP101 Seminar}"
-    , "\\title{" ++ title ++ "}"
+    , "\\title{" ++ escapeTex title ++ "}"
     , "\\date{" ++ formatTime defaultTimeLocale "%A %-e %B %Y" time ++ "}"
-    , "\\author{" ++ speaker ++ "}"
-    , "\\institute{" ++ affiliation ++ "}"
+    , "\\author{" ++ escapeTex speaker ++ "}"
+    , "\\institute{" ++ escapeTex affiliation ++ "}"
     , "\\begin{document}"
     , "\\maketitle"
     , "\\end{document}"
@@ -193,6 +199,7 @@ imageTemplate speaker affiliation title location time = (tex, alt) where
     , "Speaker: " ++ speaker
     , "Affiliation: " ++ affiliation
     ]
+
 
 data AnnounceSettings = AnnounceSettings
   { emailAnnouncer :: String
@@ -318,12 +325,7 @@ main = do
       when doit $ do
         let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
         png <- pngFromTex (date t) imageTex
-        when isDryRun $ do
-          -- Allow announcer to test ads are generated correctly
-          putStrLn "Copying generated ad images to _msp-conference-advert/_ad.pdf and _msp-conference-advert/_ad.png..."
-          copyFile (png -<.> "pdf") "_ad.pdf"
-          copyFile png "_ad.png"
-          exitSuccess
+        when isDryRun $ exitSuccess
         unless isDryRun $ runReq defaultHttpConfig $ do
           liftIO $ putStrLn "Uploading to mastodon..."
           let headers = header "Authorization" (B.pack $ "Bearer " ++ mastodonAccesstoken)
