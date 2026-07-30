@@ -8,10 +8,11 @@ import qualified Data.ByteString as BS
 import qualified Data.ByteString.Char8 as B
 import Data.Char
 import Data.List
+import Data.Foldable (for_)
 import Data.Maybe
-import Data.Time
 import Data.Text (Text, pack, unpack)
 import qualified Data.Text.Lazy as LT
+import Data.Time
 import Data.Yaml
 
 import GHC.Generics
@@ -173,13 +174,32 @@ imageTemplate :: String -- speaker
               -> UTCTime -- when
               -> (String, B.ByteString) -- (tex, alt text)
 imageTemplate speaker affiliation title location time = (tex, alt) where
+
+  ensuremath txt = concat ["\\ensuremath{", txt, "}"]
+  escapeTex = foldMap $ \case
+    '&' -> "\\&"
+    '∩' -> ensuremath "\\cap"
+    'ω' -> ensuremath "\\omega"
+    'Ω' -> ensuremath "\\Omega"
+    '∞' -> ensuremath "\\infty"
+    '¬' -> ensuremath "\\neg"
+    '⊗' -> ensuremath "\\otimes"
+    '•' -> ensuremath "\\bullet"
+    '∈' -> ensuremath "\\in"
+    '≅' -> ensuremath "\\cong"
+    '→' -> ensuremath "\\rightarrow"
+    'π' -> ensuremath "\\pi"
+    'μ' -> ensuremath "\\mu"
+    'λ' -> ensuremath "\\lambda"
+    c -> [c]
+
   tex = unlines $
     [ "\\documentclass[colour=random]{mspadvert}"
     , "\\renewcommand{\\conferenceHook}{MSP101 Seminar}"
-    , "\\title{" ++ title ++ "}"
+    , "\\title{" ++ escapeTex title ++ "}"
     , "\\date{" ++ formatTime defaultTimeLocale "%A %-e %B %Y" time ++ "}"
-    , "\\author{" ++ speaker ++ "}"
-    , "\\institute{" ++ affiliation ++ "}"
+    , "\\author{" ++ escapeTex speaker ++ "}"
+    , "\\institute{" ++ escapeTex affiliation ++ "}"
     , "\\begin{document}"
     , "\\maketitle"
     , "\\end{document}"
@@ -192,6 +212,7 @@ imageTemplate speaker affiliation title location time = (tex, alt) where
     , "Speaker: " ++ speaker
     , "Affiliation: " ++ affiliation
     ]
+
 
 data AnnounceSettings = AnnounceSettings
   { emailAnnouncer :: String
@@ -238,6 +259,30 @@ confirm msg = do
     'Y' -> pure True
     'N' -> pure False
     _ -> confirm msg
+
+pngFromTex :: UTCTime -> String -> IO FilePath
+pngFromTex utc imageTex =
+  withTempDirectory "_msp-conference-advert" "msp-ad" $ \ dir -> do
+    forM_ [ "mspadvert.cls"
+          , "strathclyde-colours.sty"
+          , "strathclyde-tikz.sty"
+          , "msp-background.png"
+          , "msp.png"
+          , "strath_science.jpg"]
+      (\ x -> makeAbsolute (dir </> ".." </> x) >>= flip copyFile (dir </> x))
+
+    let fn = ("ad_" ++ formatTime defaultTimeLocale "%0Y-%m-%d-%H-%M" utc)
+    putStrLn $ concat [ "Generating png from latex (", fn, ")..." ]
+    withCurrentDirectory dir $ do
+      writeFile (fn <.> "tex") imageTex
+      callProcess "latexmk" ["-pdf", fn <.> "tex"]
+      callProcess "pdftoppm"
+        [ "-scale-to-x", "1280"
+        , "-scale-to-y", "720"
+        , "-png", fn <.> "pdf", fn]
+    let fp = "_msp-conference-advert" </> fn <.> "png"
+    copyFile (dir </> (fn ++ "-1") -<.> "png") fp
+    pure fp
 
 main :: IO ()
 main = do
@@ -292,39 +337,27 @@ main = do
       doit <- confirm "Announce to Mastodon (y/n)?"
       when doit $ do
         let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
-        withTempDirectory "_msp-conference-advert" "msp-ad" $ \ dir -> do
-          forM_ ["mspadvert.cls"
-                , "strathclyde-colours.sty"
-                , "strathclyde-tikz.sty"
-                , "msp-background.png"
-                , "msp.png"
-                , "strath_science.jpg"]
-            (\ x -> makeAbsolute (dir </> ".." </> x) >>= flip copyFile (dir </> x))
+        png <- pngFromTex (date t) imageTex
+        when isDryRun $ exitSuccess
+        unless isDryRun $ runReq defaultHttpConfig $ do
+          liftIO $ putStrLn "Uploading to mastodon..."
+          let headers = header "Authorization" (B.pack $ "Bearer " ++ mastodonAccesstoken)
+          file <- reqBodyMultipart [partFile "file" png, partBS "description" altText]
+          uploadReq <- req POST (https "mastodon.acm.org" /: "api" /: "v2" /: "media" ) file jsonResponse headers
+          -- liftIO $ print (responseBody uploadReq :: Value)
+          -- liftIO $ putStrLn "====="
+          case parseEither (withObject "response" $ \ o -> o .: "id") (responseBody uploadReq :: Value) of
+            Left err -> error (show err)
+            Right i -> do
+              let params = "status" =: fediBody
+                           <> "media_ids[]" =: (i :: Text)
+              postReq <- req POST (https "mastodon.acm.org" /: "api" /: "v1" /: "statuses" ) (ReqBodyUrlEnc params) bsResponse headers
+              --liftIO $ BS.putStr (responseBody postReq)
+              pure ()
 
-          writeFile (dir </> "ad.tex") imageTex
-          putStrLn "Generating png from latex..."
-          withCurrentDirectory dir $ do
-            callProcess "pdflatex" ["ad.tex"]
-            callProcess "pdflatex" ["ad.tex"]
-            callProcess "pdftoppm" ["-png", "ad.pdf", "ad"]
-            when isDryRun $ do
-              -- Allow announcer to test ads are generated correctly
-              putStrLn "Copying generated ad images to _msp-conference-advert/_ad.pdf and _msp-conference-advert/_ad.png..."
-              copyFile "ad.pdf" "../_ad.pdf"
-              copyFile "ad-1.png" "../_ad.png"
-              exitSuccess
-            unless isDryRun $ runReq defaultHttpConfig $ do
-              liftIO $ putStrLn "Uploading to mastodon..."
-              let headers = header "Authorization" (B.pack $ "Bearer " ++ mastodonAccesstoken)
-              file <- reqBodyMultipart [partFile "file" "ad-1.png", partBS "description" altText]
-              uploadReq <- req POST (https "mastodon.acm.org" /: "api" /: "v2" /: "media" ) file jsonResponse headers
-              -- liftIO $ print (responseBody uploadReq :: Value)
-              -- liftIO $ putStrLn "====="
-              case parseEither (withObject "response" $ \ o -> o .: "id") (responseBody uploadReq :: Value) of
-                Left err -> error (show err)
-                Right i -> do
-                  let params = "status" =: fediBody
-                               <> "media_ids[]" =: (i :: Text)
-                  postReq <- req POST (https "mastodon.acm.org" /: "api" /: "v1" /: "statuses" ) (ReqBodyUrlEnc params) bsResponse headers
-                  --liftIO $ BS.putStr (responseBody postReq)
-                  pure ()
+allImages :: IO ()
+allImages = do
+  ts <- filter isTalk . map snd . snd <$> talksFromFile
+  for_ ts $ \ t -> do
+    let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
+    void $ pngFromTex (date t) imageTex

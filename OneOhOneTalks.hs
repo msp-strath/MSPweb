@@ -102,14 +102,15 @@ data OneOhOneData
 
 instance FromJSON OneOhOneData
 
+isTalk :: Talk -> Bool
+isTalk SpecialEvent{} = False
+isTalk CancelledTalk{} = False
+isTalk _ = True
+
 nextTalk :: [(Int, Talk)] -> IO (Maybe (Int, Talk))
 nextTalk talks = do
   now <- fmap zonedTimeToUTC getZonedTime --getCurrentTime
   pure $ listToMaybe (sortBy (comparing $ date . snd) $ filter (\(i,x) -> date x > now && isTalk x) talks)
-  where
-    isTalk SpecialEvent{} = False
-    isTalk CancelledTalk{} = False
-    isTalk _ = True
 
 talksFromFile :: IO (Usual,[(Int, Talk)])
 talksFromFile = do
