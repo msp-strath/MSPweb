@@ -803,10 +803,10 @@
 
 - date: 10 February 2012
   description:
-    <a id="stp-feb-2012"></a><a href="stp-feb-2012/">Scottish Theorem Provers Meeting</a>
+  event: Scottish Theorem Provers Meeting
+  url: stp-feb-2012/index.html
 
 - date: 19 December 2011
-  description:
   event: Peter Hancock at 60 Celebration
   url: hank60/index.html
   description:
