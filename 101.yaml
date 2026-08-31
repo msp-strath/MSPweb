@@ -1,10 +1,22 @@
 usual:
-  usualTime: "15:00"
+  usualTime: "11:00"
   usualDay: "Thursday"
-  usualRoom: "LT711"
+  usualRoom: "LT211"
   usualBuilding: "Livingstone Tower"
 
 talks:
+
+- tag: Talk
+  date: '2026-09-15T13:00:00Z'
+  speaker: Kostia Chardonnet
+  speakerurl: 'https://kostiachardonnet.github.io/'
+  institute: INRIA Nancy
+  insturl: 'https://mocqua.loria.fr/en/welcome/'
+  title: 'Approximation Theory for Distant Bang Calculus'
+  abstract: |
+    Approximation semantics capture the observable behaviour of λ-terms. Böhm Trees and Taylor Expansion are their two central paradigms, related by the Commutation Theorem. While these notions are well understood in Call-by-Name (CbN), they have only recently been developed for Call-by-Value (CbV). However, these notions require a separate development for each evaluation strategy of the λ-calculus, which motivates the search for a unified approximation framework. The Bang-calculus provides such a framework: it subsumes both CbN and CbV through linear-logic translations and enjoys robust rewriting properties. We develop the approximation semantics of dBang (the Bang-calculus with explicit substitutions and distant reductions) by introducing approximation trees in the Böhm tradition together with Taylor expansion. We establish their fundamental properties, including a commutation theorem. Via translations, our results recover the CbN and CbV setting within a single unifying framework capturing infinitary and resource-sensitive semantics.
+  location: LT210
+  material: []
 
 - tag: Talk
   date: '2026-07-16T15:00:00Z'
