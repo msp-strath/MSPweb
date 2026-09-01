@@ -309,6 +309,7 @@ people:
     ident: "emma"
     pronouns: "she/her"
     status: "phd-student"
+    webpage: "https://emmatye.github.io/"
     description: |
       who is a PhD student under Guillaume Allais' direction.
 
