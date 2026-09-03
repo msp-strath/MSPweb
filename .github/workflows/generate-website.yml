@@ -17,10 +17,10 @@ jobs:
     steps:
       ##### Setup ##############################################
       - name: Checkout repository
-        uses: actions/checkout@v4
+        uses: actions/checkout@v7
 
       - name: Detect if we should rebuild the binaries
-        uses: dorny/paths-filter@v3
+        uses: dorny/paths-filter@v4
         id: changes
         if: github.event_name != 'schedule'
         with:
@@ -31,7 +31,7 @@ jobs:
               - '.github/workflows/generate-website.yml'
 
       - name: Cache cabal and executables
-        uses: actions/cache@v4
+        uses: actions/cache@v6
         id: caching
         with:
           path: |
