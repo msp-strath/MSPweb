@@ -1,3 +1,12 @@
+- date: 7 October 2026
+  event: Seminar on Scottish Theorem Proving and Verification (STPV) 2026
+  url: https://msp.cis.strath.ac.uk/stpv2026/
+
+- start: 10 September 2026
+  end: 11 September 2026
+  description:
+    <a href="https://nicolaikraus.github.io/">Nicolai Kraus</a> visiting.
+
 - date: 28 July 2026
   description:
     <a href="https://dpk.land/">Daphne Preston-Kendal</a> visiting.
