@@ -13,7 +13,7 @@ executable Generate
   build-depends:    base,
                     filepath,
                     directory,
-                    pandoc >= 3.1.3,
+                    pandoc >= 3.11,
                     text
   default-language: Haskell2010
 
@@ -36,7 +36,7 @@ executable Generate101
                     http-client,
                     http-client-tls,
                     http-types,
-                    pandoc >= 3.1.3,
+                    pandoc >= 3.11,
                     yaml,
                     filepath,
                     directory,
@@ -54,7 +54,7 @@ executable GeneratePeople
                     text,
                     directory,
                     filepath,
-                    pandoc >= 3.1.3
+                    pandoc >= 3.11
   default-language: Haskell2010
 
 executable GenerateNews

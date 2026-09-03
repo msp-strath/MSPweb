@@ -23,4 +23,4 @@ translateMarkdown s =
 
 translateTypst :: String -> IO String
 translateTypst s =
-  fmap unpack $ handleError =<< runIO (writeHtml5String (def { writerHTMLMathMethod = MathML }) =<< (readTypst def $ pack s))
+  fmap unpack $ handleError =<< runIO (writeHtml5String (def { writerMathMethod = MathML }) =<< (readTypst def $ pack s))
