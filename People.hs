@@ -19,7 +19,7 @@ import Translate
 
 type Markdown = String
 
-data Status = Academic | PhDStudent | PhDStaff | Research | PhDFinished | Alum
+data Status = Academic | PhDStudent | PhDStaff | Research | PhDFinished | Alum | Honorary
   deriving (Show, Eq, Generic)
 
 instance FromJSON Status where
@@ -29,6 +29,7 @@ instance FromJSON Status where
   parseJSON (String "phd-finished") = pure PhDFinished
   parseJSON (String "phd-staff") = pure PhDStaff
   parseJSON (String "alum") = pure Alum
+  parseJSON (String "honorary") = pure Honorary
   parseJSON _ = fail "invalid status"
 
 
@@ -87,6 +88,7 @@ currentMember p = case status p of
   PhDStudent -> True
   PhDFinished -> False
   Alum -> False
+  Honorary -> True
 
 data MSP
   = MSP
@@ -121,6 +123,7 @@ statusToHTML PhDStudent = "PhD student"
 statusToHTML PhDStaff = "PhD Student & Teaching Staff"
 statusToHTML PhDFinished = "Alumnus (PhD)"
 statusToHTML Alum = "Alumus"
+statusToHTML Honorary = "Honorary Research Fellow"
 
 personToHTML :: Person -> IO HTML
 personToHTML person = do
@@ -186,6 +189,7 @@ groupMSP
         Research     -> g { research = research g ++ [p] }
         PhDFinished  -> g { alumni   = alumni   g ++ [p] }
         Alum         -> g { alumni   = alumni   g ++ [p] }
+        Honorary     -> g { academic = academic g ++ [p] }
 
 readPeopleFile :: FilePath -> IO MSP
 readPeopleFile file = do

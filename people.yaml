@@ -328,13 +328,13 @@ people:
     ident: "jules"
     title: "Dr"
     pronouns: "they/them"
-    status: "alum"
+    status: "honorary"
     email: "jules@cybercat.institute"
     webpage: "https://julesh.com/"
     description: |
-      who was a Chancellor's Fellow working on game theory, economics
+      who is an Honorary Research Fellow, working on game theory, economics
       and machine learning using the tools of category theory and
-      functional programming.
+      functional programming. They used to be a Chancellor's Fellow.
 
   - firstname: "Riu"
     lastname: "Rodríguez Sakamoto"
