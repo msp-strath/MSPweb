@@ -12,7 +12,10 @@
 \RequirePackage{xkeyval}
 \RequirePackage{ifthen}
 
+\RequirePackage[skins]{tcolorbox}
+
 \colorlet{bgcolour}{strath-green} %default
+\newcommand{\drawPic}{} %default
 \DeclareOptionX{colour}[strath-green]{%
   \ifthenelse{\equal{#1}{random}}%
   {\pgfmathsetseed{\number\pdfrandomseed}%
@@ -22,6 +25,16 @@
     \definecolor{random}{RGB}{\rr,\gg,\bb}%
   }{}%
   \colorlet{bgcolour}{#1}}
+\DeclareOptionX{picture}{%
+  \renewcommand{\drawPic}{%
+    \begin{scope}
+    \def\ig{\includegraphics[height=3cm]{#1}}%
+    \node [inner sep=0pt](mypicture) at ($ (opac.south east) + (-2cm, 0cm)$) {\phantom{\ig}};%
+    \clip[rounded corners=5mm] ($(mypicture.south west)+(1mm,1mm)$) rectangle ($(mypicture.north east)-(1mm,1mm)$);%
+    \node[inner sep=0pt](mypicture) at ($ (opac.south east) + (-2cm, 0cm)$) {\ig};%
+    \draw[black, rounded corners=5mm, line width=3pt] ($(mypicture.south west)+(1mm,1mm)$) rectangle ($(mypicture.north east)-(1mm,1mm)$);%
+  \end{scope}}%
+}
 \ProcessOptionsX
 
 \DeclareGraphicsExtensions{.pdf,.png,.eps,.gif,.jpg}
@@ -35,8 +48,9 @@
 \setbeamertemplate{headline}{}
 \setbeamertemplate{footline}{}
 
-\newcommand{\conferenceHook}{}
+\usetikzlibrary{calc}
 
+\newcommand{\conferenceHook}{}
 
 \setbeamertemplate{title page}
 {%
@@ -49,7 +63,7 @@
        \node (uni)
              [anchor = south west]
              at (current page.south west)
-             {\includegraphics[keepaspectratio, width=0.3\paperwidth]{strath_science}};
+             {\includegraphics[keepaspectratio, width=0.3\paperwidth]{strath_main}};
 
        \node (msp)
              [anchor = south east]
@@ -114,6 +128,7 @@
      \begin{pgfonlayer}{background layer}
         \node (opac) [fit= (title) (date), fill=white, draw=none, semitransparent]{};
      \end{pgfonlayer}
+     \drawPic
     \end{tikzpicture}
 }
 

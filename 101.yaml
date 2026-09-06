@@ -10,6 +10,7 @@ talks:
   date: '2026-09-15T13:00:00Z'
   speaker: Kostia Chardonnet
   speakerurl: 'https://kostiachardonnet.github.io/'
+  speakerimage: 'https://kostiachardonnet.github.io/assets/img/%E7%A7%81.png'
   institute: INRIA Nancy
   insturl: 'https://mocqua.loria.fr/en/welcome/'
   title: 'Approximation Theory for Distant Bang Calculus'
@@ -22,6 +23,7 @@ talks:
   date: '2026-07-16T15:00:00Z'
   speaker: Jamie Kai
   speakerurl: 'https://jwkai.github.io/'
+  speakerimage: 'https://jwkai.github.io/assets/img/portrait.jpg?363b2625c105043a2530fa332e8cdd50'
   institute: University of British Columbia
   insturl: 'https://spl.cs.ubc.ca/index.html'
   title: 'Indexical Reasoning About Imperative Data: Why Fold if you can Crimp?'
@@ -153,7 +155,7 @@ talks:
   material: []
 - tag: Talk
   date: '2026-03-30T13:00:00Z'
-  speaker: Sam Fish
+  speaker: Samuel Fish
   speakerurl: ''
   institute: MSP
   insturl: ''

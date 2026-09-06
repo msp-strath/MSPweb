@@ -187,7 +187,7 @@ generateRSS ts out = do
     Nothing -> putStrLn "Error: Could not generate RSS feed!"
   where
     gatherData :: Talk -> (String, String)
-    gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
+    gatherData (Talk date speaker inst speakerurl insturl title abstract location material speakerimage)
       = let rsstitle = showGregorian (utctDay date) ++ ": " ++ speaker ++ bracket inst
             abstr = if null abstract then "" else "<p><b>Abstract</b><br/><br/>" ++  nl2br abstract ++ "</p>"
             desc = concat ["<h2>" ++ createLink speakerurl speaker ++ bracket (createLink insturl inst) ++ "</h2>",
@@ -195,7 +195,7 @@ generateRSS ts out = do
                             abstr,
                             "<p><b>" ++ show date ++ "<br/>" ++ location ++ "</b><br/></p>"]
         in (rsstitle, desc)
-    gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
+    gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location speakerimage)
       = let rsstitle = showGregorian (utctDay date) ++ " Departmental seminar: " ++ speaker ++ bracket inst
             abstr = if null abstract then "" else "<p><b>Abstract</b><br/><br/>" ++  nl2br abstract ++ "</p>"
             desc = concat ["<h2>" ++ createLink speakerurl speaker ++ bracket (createLink insturl inst) ++ "</h2>",
@@ -211,8 +211,8 @@ generateRSS ts out = do
                             abstr,
                             "<p><b>" ++ show date ++ "<br/>" ++ createLink locationurl location ++ "</b><br/></p>"]
         in (rsstitle, desc)
-    gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
-      = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
+    gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material speakerimage)
+      = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material speakerimage) -- for now
 
     processEntry :: T.Text -> Map T.Text Item -> (Int, Talk) -> RSSItem
     processEntry now is (i,x) =
@@ -262,16 +262,16 @@ generateICS ts out = do
     where writefileCRLF fp txt = withFile fp WriteMode (\ h -> do hSetNewlineMode h (NewlineMode CRLF CRLF); hPutStr h txt)
 
           gatherData :: Talk -> (String, UTCTime, Maybe UTCTime, String, String, String)
-          gatherData (Talk date speaker inst speakerurl insturl title abstract location material)
+          gatherData (Talk date speaker inst speakerurl insturl title abstract location material speakerimage)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ bracket inst, "Title: " ++ title ++ "\n", abstract]
               in (desc, date, Nothing, location, title, "")
-          gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location)
+          gatherData (DepartmentalSeminar date speaker inst speakerurl insturl title abstract location speakerimage)
             = let desc = unlines ["Speaker: " ++ speaker ++ " " ++ bracket inst, "Title: " ++ title ++ "\n", abstract]
               in (desc, date, Nothing, location, title, "Departmental seminar: ")
           gatherData (SpecialEvent date endDate title url location locationurl description)
             = (description, date, Just endDate, location, title, "Event: ")
-          gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material)
-            = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material) -- for now
+          gatherData (BasicTalk date speaker inst speakerurl insturl title abstract location material speakerimage)
+            = gatherData (Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material speakerimage) -- for now
 
           escape :: String -> String
           escape [] = []
@@ -345,7 +345,7 @@ generateHTML Usual{..} ts out = do
                    ++
                    [ "  </dd>"]
 
-          processEntry b (i,(Talk date speaker inst speakerurl insturl title abstract location material))
+          processEntry b (i,(Talk date speaker inst speakerurl insturl title abstract location material speakerimage))
             = let time = if utctDayTime date == timeOfDayToTime usualTime
                            then createLinkAnchor ('#':show i) (showGregorian $ utctDay date)
                            else let fmt = \ str -> formatTime defaultTimeLocale str date in
@@ -356,7 +356,7 @@ generateHTML Usual{..} ts out = do
                   dt = time ++ place ++ ": " ++ title ++ (bracket person)
                   mat = materialToUList material
               in entryBlock b i dt (nl2br abstract) (length material) (nl2br mat)
-          processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location))
+          processEntry b (i,(DepartmentalSeminar date speaker inst speakerurl insturl title abstract location speakerimage))
             = let fmt = \ str -> formatTime defaultTimeLocale str date
                   time = createLinkAnchor ('#':show i) (fmt "%Y-%m-%d") ++ fmt ", %H:%M"
                   place = bracket location
@@ -369,8 +369,8 @@ generateHTML Usual{..} ts out = do
                   dt = time ++ ": " ++ (createLink url title)
                                     ++ (bracket (createLink locationurl location))
               in entryBlock b i dt (nl2br description) 0 ""
-          processEntry b (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material))
-            = processEntry b (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material)) -- for now
+          processEntry b (i,(BasicTalk date speaker inst speakerurl insturl title abstract location material speakerimage))
+            = processEntry b (i,(Talk date speaker inst speakerurl insturl ("MSP 101: " ++ title) abstract location material speakerimage)) -- for now
 
 materialToUList :: [Material] -> HTML
 materialToUList [] = ""
@@ -392,7 +392,7 @@ generateSnippet talk file = do
       let subheader = "<em>" ++ createLink (speakerurl t) (speaker t) ++ inst ++ "</em>"
       let time = formatTime defaultTimeLocale "%A %e %B %Y, %R" (date t)
       let loc = if location t `elem` ["TBD", "TBC"] then "location TBC" else location t
-      image <- findImage (speaker t)
+      image <- resolveSpeakerImage (speaker t) (speakerimage t) Nothing
       let mat = if null (material t) then "" else concat $
                  ["<details" ++ (if length (material t) <= 5 then " open" else "") ++ ">"
                  , "<summary><b>Material</b></summary>"
@@ -408,10 +408,3 @@ generateSnippet talk file = do
       let fullLink = p ("<small>See the " ++ (anchor "msp101.html" "MSP101 seminar page") ++ " for a full list of future and past talks.</small>")
       pure $ "<div class='recent-pubs'><h2>Next MSP101 seminar</h2>" ++ content ++ abst ++ fullLink ++ "</div>"
   writeFile file content
-  where
-    findImage nom = do
-      msp <- people <$> readPeopleFile "people.yaml"
-      case [ ident x | x <- msp, name x == nom] of
-        (idnt:_) -> imageFromIdent idnt
-        _ -> pure Nothing
-

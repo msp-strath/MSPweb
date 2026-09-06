@@ -32,6 +32,7 @@ import System.IO.Temp
 import System.Process
 
 import Html
+import People
 import OneOhOneTalks
 
 dryRun :: OptDescr Bool
@@ -167,14 +168,40 @@ mastodonTemplate speaker affiliation title location time = pack $ unlines $
   , "More details can be found on the @spli@mastodon.scot Zulip and at https://msp.cis.strath.ac.uk/msp101.html ."
   ]
 
-imageTemplate :: String -- speaker
-              -> String -- affiliation
-              -> String -- title
-              -> String -- location
-              -> UTCTime -- when
-              -> (String, B.ByteString) -- (tex, alt text)
-imageTemplate speaker affiliation title location time = (tex, alt) where
+pngTemplate :: String -- speaker
+            -> Maybe String -- speaker image
+            -> String -- affiliation
+            -> String -- title
+            -> String -- location
+            -> UTCTime -- when
+            -> IO (FilePath, B.ByteString) -- (output file, alt text)
+pngTemplate speaker speakerImage affiliation title location time = do
+  withTempDirectory "_msp-conference-advert" "msp-ad" $ \ dir -> do
+    speakerPic <- resolveSpeakerImage speaker speakerImage (Just $ dir </> "speakerimage")
+    forM_ ([ "mspadvert.cls"
+           , "strathclyde-colours.sty"
+           , "strathclyde-tikz.sty"
+           , "msp-background.png"
+           , "msp.png"
+           , "strath_main.jpg"] ++ map (".." </>) (maybeToList speakerPic))
+      (\ x -> do
+          src <- makeAbsolute (dir </> ".." </> x)
+          let tgt = dir </> (takeFileName x)
+          copyFile src tgt)
 
+    let fn = ("ad_" ++ formatTime defaultTimeLocale "%0Y-%m-%d-%H-%M" time)
+    putStrLn $ concat [ "Generating png from latex (", fn, ")..." ]
+    withCurrentDirectory dir $ do
+      writeFile (fn <.> "tex") (tex speakerPic)
+      callProcess "latexmk" ["-pdf", fn <.> "tex"]
+      callProcess "pdftoppm"
+        [ "-scale-to-x", "1280"
+        , "-scale-to-y", "720"
+        , "-png", fn <.> "pdf", fn]
+    let fp = "_msp-conference-advert" </> fn <.> "png"
+    copyFile (dir </> (fn ++ "-1") -<.> "png") fp
+    pure (fp , alt)
+ where
   ensuremath txt = concat ["\\ensuremath{", txt, "}"]
   escapeTex = foldMap $ \case
     '&' -> "\\&"
@@ -193,8 +220,8 @@ imageTemplate speaker affiliation title location time = (tex, alt) where
     'λ' -> ensuremath "\\lambda"
     c -> [c]
 
-  tex = unlines $
-    [ "\\documentclass[colour=random]{mspadvert}"
+  tex image = unlines $
+    [ "\\documentclass[colour=random" ++ maybe "" (",picture=" ++) (takeFileName <$> image) ++ "]{mspadvert}"
     , "\\renewcommand{\\conferenceHook}{MSP101 Seminar}"
     , "\\title{" ++ escapeTex title ++ "}"
     , "\\date{" ++ formatTime defaultTimeLocale "%A %-e %B %Y" time ++ "}"
@@ -212,7 +239,6 @@ imageTemplate speaker affiliation title location time = (tex, alt) where
     , "Speaker: " ++ speaker
     , "Affiliation: " ++ affiliation
     ]
-
 
 data AnnounceSettings = AnnounceSettings
   { emailAnnouncer :: String
@@ -259,30 +285,6 @@ confirm msg = do
     'Y' -> pure True
     'N' -> pure False
     _ -> confirm msg
-
-pngFromTex :: UTCTime -> String -> IO FilePath
-pngFromTex utc imageTex =
-  withTempDirectory "_msp-conference-advert" "msp-ad" $ \ dir -> do
-    forM_ [ "mspadvert.cls"
-          , "strathclyde-colours.sty"
-          , "strathclyde-tikz.sty"
-          , "msp-background.png"
-          , "msp.png"
-          , "strath_science.jpg"]
-      (\ x -> makeAbsolute (dir </> ".." </> x) >>= flip copyFile (dir </> x))
-
-    let fn = ("ad_" ++ formatTime defaultTimeLocale "%0Y-%m-%d-%H-%M" utc)
-    putStrLn $ concat [ "Generating png from latex (", fn, ")..." ]
-    withCurrentDirectory dir $ do
-      writeFile (fn <.> "tex") imageTex
-      callProcess "latexmk" ["-pdf", fn <.> "tex"]
-      callProcess "pdftoppm"
-        [ "-scale-to-x", "1280"
-        , "-scale-to-y", "720"
-        , "-png", fn <.> "pdf", fn]
-    let fp = "_msp-conference-advert" </> fn <.> "png"
-    copyFile (dir </> (fn ++ "-1") -<.> "png") fp
-    pure fp
 
 main :: IO ()
 main = do
@@ -336,8 +338,7 @@ main = do
       putStrLn "========================================================"
       doit <- confirm "Announce to Mastodon (y/n)?"
       when doit $ do
-        let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
-        png <- pngFromTex (date t) imageTex
+        (png, altText) <- pngTemplate (speaker t) (speakerimage t) (institute t) (title t) (location t) (date t)
         when isDryRun $ exitSuccess
         unless isDryRun $ runReq defaultHttpConfig $ do
           liftIO $ putStrLn "Uploading to mastodon..."
@@ -359,5 +360,4 @@ allImages :: IO ()
 allImages = do
   ts <- filter isTalk . map snd . snd <$> talksFromFile
   for_ ts $ \ t -> do
-    let (imageTex, altText) = imageTemplate (speaker t) (institute t) (title t) (location t) (date t)
-    void $ pngFromTex (date t) imageTex
+    void $ pngTemplate (speaker t) (speakerimage t) (institute t) (title t) (location t) (date t)
