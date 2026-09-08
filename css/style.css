@@ -219,9 +219,19 @@ tr.odd {
     background-color: #ddd;
 }
 
+tr.odd-break {
+    background-color: #ded;
+}
+
 tr.even {
     background-color: #eee;
 }
+
+tr.even-break {
+    background-color: #efe;
+}
+
+
 
 div.centered {
     text-align: center;
