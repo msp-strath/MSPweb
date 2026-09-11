@@ -27,9 +27,9 @@ people:
     phd-topics:
       - "Categorical Machine Learning"
 
-  - firstname: "Conor"
+  - firstname: "Conor Titania"
     lastname: "McBride"
-    pronouns: "they/them"
+    pronouns: "she/her"
     ident: "conor"
     title: "Dr"
     status: "academic"
@@ -39,8 +39,8 @@ people:
       - href: "mcbrideconordr"
         rel: "staff"
     description: |
-      who is currently working on dependently typed programming. They
-      are also interested in extending the functionality of Haskell so
+      who is currently working on dependently typed programming. She
+      is also interested in extending the functionality of Haskell so
       that it can mimic the dependently typed style of programming.
     phd-topics:
       - "Dependently Typed Programming"
