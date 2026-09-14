@@ -679,3 +679,14 @@ people:
     links:
       - href: "https://doi.org/10.48730/jt3g-ws74"
         rel: "thesis"
+
+  - firstname: "Axel"
+    lastname: "Ljungström"
+    ident: "ljungstrom"
+    pronouns: "he/him"
+    title: "Dr"
+    status: "academic"
+    email: "axel.ljungstrom@strath.ac.uk"
+    webpage: "https://aljungstrom.github.io/"
+    description: |
+      who is interested in type theory, formalisation, and synthetic homotopy theory.
