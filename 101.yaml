@@ -1,10 +1,109 @@
 usual:
-  usualTime: "11:00"
-  usualDay: "Thursday"
-  usualRoom: "LT211"
+  usualTime: "15:00"
+  usualDay: "Tuesday"
+  usualRoom: "LT619"
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: Talk
+  date: '2026-12-08T15:00:00Z'
+  speaker: Bob Atkey
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Linear Logic (again)
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-12-01T15:00:00Z'
+  speaker: Vikraman Choudhury
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Concurrency
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-11-24T15:00:00Z'
+  speaker: Samuel Fish
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: SnocTrees
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-11-17T15:00:00Z'
+  speaker: Guillaume Allais
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Normalisation-by-Evaluation
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-11-10T15:00:00Z'
+  speaker: Axel Ljungström
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Homotopy Type Theory
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-11-03T15:00:00Z'
+  speaker: Conor McBride
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Bi-directional Typing
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-10-27T15:00:00Z'
+  speaker: Clemens Kupke
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Co-algebra
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-10-20T15:00:00Z'
+  speaker: Emma Tye
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Martin-Löf Type Theory
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-09-29T15:00:00Z'
+  speaker: Fred Nordvall Forsberg
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Linear Logic
+  location: LT619
+  material: []
+
+- tag: Talk
+  date: '2026-09-22T15:00:00Z'
+  speaker: Ezra Schoen
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Introduction to Category Theory
+  location: LT619
+  material: []
 
 - tag: Talk
   date: '2026-09-15T13:00:00Z'
