@@ -100,7 +100,8 @@ talks:
   institute: MSP
   insturl: ''
   title: Linear Logic
-  abstract: ''
+  abstract: |
+    Linear logic, invented by Girard, is often said to be the 'resource conscious' logic: a proof in linear logic must use all of its hypothesis exactly once. This is achieved by dropping the structural rules of contraction (merging two copies of the same hypothesis) and weakening (introducing an unused hypothesis). Duality in the resulting sequent calculus suggests several new logical connectives, and so called exponentials, which bring back contraction and weakening in a control form. I will give a basic introduction to linear logic, not assuming the audience has seen sequent calculus before. There is a rich landscape of further topics that I probably will not have time to go into, such as call-by-name and call-by-value translations of intuitinistic logic into linear logic, categorical semantics in the form of monoidal categories, and linear type systems in programming.
   location: LT619
   material: []
 
