@@ -5,6 +5,24 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: SpecialEvent
+  date: 2026-10-07T12:00:00Z
+  endDate: 2026-10-07T17:00:00Z
+  title: STPV 2026
+  url: https://msp.cis.strath.ac.uk/stpv2026/
+  location: CW408
+  locationurl: ''
+  description: ''
+
+- tag: SpecialEvent
+  date: 2026-10-13T09:30:00Z
+  endDate: 2026-10-16T17:00:00Z
+  title: Tangent categories mini-course
+  url: https://msp.cis.strath.ac.uk/tangentcats-2026/
+  location: ''
+  locationurl: ''
+  description: ''
+
 - tag: Talk
   date: '2026-12-08T15:00:00Z'
   speaker: Bob Atkey
@@ -93,8 +111,8 @@ talks:
   location: LT619
   material: []
 
-- tag: CancelledTalk
-  date: '2026-09-29T15:00:00Z'
+- tag: Talk
+  date: '2026-10-06T15:00:00Z'
   speaker: Fredrik Nordvall Forsberg
   speakerurl: ''
   institute: MSP
