@@ -690,3 +690,15 @@ people:
     webpage: "https://aljungstrom.github.io/"
     description: |
       who is interested in type theory, formalisation, and synthetic homotopy theory.
+
+  - firstname: "Jack"
+    lastname: "Heaney"
+    ident: "jack"
+    pronouns: "they/them or xe/xem"
+    title: "Mx"
+    status: "phd-student"
+    email: "jack.heaney@strath.ac.uk"
+    webpage: "https://rjheaney.github.io/"
+    description: |
+       who is a PhD student under Vikraman Choudhury's direction.
+
