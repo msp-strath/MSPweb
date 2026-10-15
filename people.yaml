@@ -702,3 +702,11 @@ people:
     description: |
        who is a PhD student under Vikraman Choudhury's direction.
 
+  - firstname: "Ben"
+    lastname: "Craig"
+    ident: "ben-craig"
+    pronouns: "he/him"
+    status: "phd-student"
+    description: |
+       who is a PhD student under Clemens Kupke's direction.
+
