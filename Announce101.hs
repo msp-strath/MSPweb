@@ -11,6 +11,7 @@ import Data.List
 import Data.Foldable (for_)
 import Data.Maybe
 import Data.Text (Text, pack, unpack)
+import Data.Text.Encoding
 import qualified Data.Text.Lazy as LT
 import Data.Time
 import Data.Yaml
@@ -231,7 +232,7 @@ pngTemplate speaker speakerImage affiliation title location time = do
     , "\\maketitle"
     , "\\end{document}"
     ]
-  alt = B.pack $ unlines $
+  alt = encodeUtf8 . pack $ unlines $
     [ "MSP 101 seminar announcement."
     , ""
     , "Title: " ++ title
