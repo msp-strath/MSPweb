@@ -107,7 +107,9 @@ talks:
   institute: MSP
   insturl: ''
   title: Martin-Löf Type Theory
-  abstract: ''
+  abstract: |
+    The simply-typed lambda calculus (STLC) gives us a nice Curry-Howard correspondence with propositional logic by treating the function arrow of STLC as implication. From this we can compute proofs as programs. But a natural question is then: what about predicate logics instead of propositional? Martin-Löf Type Theory (or Intuitionistic Type Theory) is a type theory based on predicate logic, with type constructions representing existentially quantified variables (Sigma) and universally quantified variables (Pi). We can also construct inductively defined families - W-types - as well-founded trees. Note that Martin-Löf's original paper was inconsistent due to having the type-in-type paradox, and that he later introduced a predicative version with universe hierarchies.
+    In this introduction, we assume knowledge of the STLC and natural-deduction-style sequents for introduction and elimination rules. We will go over the introduction and elimination of the Sigma-type, Pi-type and W-type, universe hierarchies, and equality reasoning.
   location: LT619
   material: []
 
