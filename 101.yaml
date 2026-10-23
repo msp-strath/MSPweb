@@ -5,6 +5,19 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: Talk
+  date: '2026-10-27T15:00:00Z'
+  speaker: Emma Tye
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Martin-Löf Type Theory (continued)
+  abstract: |
+    Emma will continue last week's introductory talk on Martin-Löf Type Theory.
+  location: LT619
+  material: []
+
+
 - tag: SpecialEvent
   date: 2026-10-07T12:00:00Z
   endDate: 2026-10-07T17:00:00Z
@@ -90,7 +103,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-10-27T15:00:00Z'
+  date: '2026-11-03T15:00:00Z'
   speaker: Clemens Kupke
   speakerurl: ''
   institute: MSP
