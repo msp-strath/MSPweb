@@ -5,6 +5,18 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 talks:
+- tag: Talk
+  date: '2026-11-03T15:00:00Z'
+  speaker: Emma Tye
+  speakerurl: ''
+  institute: MSP
+  insturl: ''
+  title: Martin-Löf Type Theory (continued)
+  abstract: |
+    Emma will continue her introductory talk on Martin-Löf Type Theory.
+  location: LT619
+  material: []
+
 - tag: CancelledTalk
   date: '2026-10-27T15:00:00Z'
   speaker: Emma Tye
@@ -16,7 +28,6 @@ talks:
     Emma will continue last week's introductory talk on Martin-Löf Type Theory.
   location: LT619
   material: []
-
 
 - tag: SpecialEvent
   date: 2026-10-07T12:00:00Z
@@ -37,7 +48,7 @@ talks:
   description: ''
 
 - tag: Talk
-  date: '2026-12-08T15:00:00Z'
+  date: '2026-12-15T15:00:00Z'
   speaker: Bob Atkey
   speakerurl: ''
   institute: MSP
@@ -48,7 +59,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-12-01T15:00:00Z'
+  date: '2026-12-08T15:00:00Z'
   speaker: Vikraman Choudhury
   speakerurl: ''
   institute: MSP
@@ -59,7 +70,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-11-24T15:00:00Z'
+  date: '2026-12-01T15:00:00Z'
   speaker: Samuel Fish
   speakerurl: ''
   institute: MSP
@@ -70,7 +81,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-11-17T15:00:00Z'
+  date: '2026-11-24T15:00:00Z'
   speaker: Guillaume Allais
   speakerurl: ''
   institute: MSP
@@ -81,7 +92,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-11-10T15:00:00Z'
+  date: '2026-11-17T15:00:00Z'
   speaker: Axel Ljungström
   speakerurl: ''
   institute: MSP
@@ -103,7 +114,7 @@ talks:
   material: []
 
 - tag: Talk
-  date: '2026-11-03T15:00:00Z'
+  date: '2026-11-10T15:30:00Z'
   speaker: Clemens Kupke
   speakerurl: ''
   institute: MSP
