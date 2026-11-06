@@ -119,8 +119,10 @@ talks:
   speakerurl: ''
   institute: MSP
   insturl: ''
-  title: Co-algebra
-  abstract: ''
+  title: Coalgebra
+  abstract: |
+    Coalgebras provide a framework for formalising the notion of behaviour of different types of state-based systems.
+    In this talk I am planning to introduce concepts from the theory of coalgebras such as final coalgebras, coinduction and bisimulations. To exemplify what those concepts mean we will focus on the example of finite automata. If time permits I will also use that example to discuss the fruitful interplay between coalgebras and algebras, in which the latter are used to formalise specification languages (or logics) for coalgebras.
   location: LT619
   material: []
 
