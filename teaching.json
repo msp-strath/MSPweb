@@ -1,0 +1,70 @@
+[
+    { "code": "CS103",
+      "name": "Machines, Languages and Computation"
+    },
+
+    { "code": "CS106",
+      "type": "UG",
+      "name": "Computer Systems and Organisation",
+      "level": 1,
+      "description": "BLAH",
+      "link": "https://FIXME"
+      "people": [ "Conor McBride" ], // People / year?
+    },
+
+    { "code": "CS208",
+      "type": "UG",
+      "name": "Logic and Algorithms",
+      "level": 2,
+      "description": "VLAH",
+      "link": "https://personal.cis.strath.ac.uk/robert.atkey/",
+      "people": [ "Bob Atkey" ]
+    },
+
+    { "code": "CS209"
+    },
+
+    { "code": "CS260",
+      "title": "Functional Thinking",
+      "description": "Introduction to functional programming",
+      "level": 3
+    }
+
+    { "code": "CS316",
+      "title": "Functional Programming",
+      "description": "Functional programming in Haskell",
+      "level": 3,
+      "editions": [
+	  { "year": 2016,
+	    "people": [ "Conor McBride", "James Chapman", "Fredrik Nordvall Forsberg", "Robert Atkey" ],
+	    "link": "https://github.com/pigworker/CS316-16"
+	  },
+	  { "year": 2017,
+	    "people": [ "Fredrik Nordvall Forsberg", "Robert Atkey" ],
+	    "link": "https://github.com/bobatkey/CS316-17"
+	  },
+	  { "year": 2018,
+	    "people": [ "Robert Atkey" ]
+	  },
+	  { "year": 2019,
+	    "people": [ "Robert Atkey" ]
+	  },
+	  { "year": 2020,
+	    "people": [ "Robert Atkey" ]
+	  },
+	  { "year": 2021,
+	    "people": [ "Robert Atkey" ]
+	  },
+	  { "year": 2022,
+	    "people": [ "Robert Atkey" ]
+	  }
+      ]
+    },
+
+    { "code": "CS410"
+    },
+
+    { "code": "CS825"
+    }
+
+]
