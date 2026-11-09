@@ -66,6 +66,3 @@ litsFromFile = do
     Left err -> error (show err)
     Right (TwoOhOneData usual lits) -> return (usual, reverse $ zip [(0::Int)..] $ reverse lits)
 
-currentlyReading :: [(Int,Literature)] -> [(Int,Literature)]
-currentlyReading = filter (\(i,x) -> tag x == Reading)
-
