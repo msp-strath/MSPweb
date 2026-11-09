@@ -63,11 +63,11 @@ litHTML (i, Literature{..}) =
   ddtWithID i
     (bold title ++ fromMaybe "" formattedAuthors)
     (unlines . catMaybes $
-      [ ("Suggested by: " ++) <$> suggestedBy,
+      [ Html.div "" . ("Suggested by: " ++) <$> suggestedBy,
         firstJust [
-          formatUTCDate <$> date,
+          Html.div "" . formatUTCDate <$> date,
           formatDates <$> dates,
-          semester
+          Html.div "" <$> semester
         ],
         formatMaterials <$> material
       ])
