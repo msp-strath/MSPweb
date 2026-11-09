@@ -1,0 +1,107 @@
+usual:
+  usualTime: "15:00"
+  usualDay: "Monday"
+  usualRoom: "LT1311a"
+  usualBuilding: "Livingstone Tower"
+
+literature:
+- tag: ToRead
+  suggestedBy: Clemens Kupke
+  title: Towards a Mathematical Operational Semantics
+  authors:
+  - Daniele Turi
+  - Gordon Plotkin
+  material:
+  - tag: Link
+    url: "https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf"
+
+- tag: Reading
+  title: Proofs and Refutations
+  author: Imre Lakatos
+  material:
+  - tag: Link
+    url: "https://www.jstor.org/stable/685347"
+  dates:
+  - '2026-11-02T15:00:00Z'
+  - '2026-11-09T15:00:00Z'
+  - '2026-11-13T16:00:00Z'
+
+- tag: Read
+  suggestedBy: Bob Atkey
+  title: LCF considered as a programming language
+  author: Gordon Plotkin
+  material:
+  - tag: Link
+    url: "https://homepages.inf.ed.ac.uk/gdp/publications/LCF.pdf"
+  date: '2026-10-19T15:00:00Z'
+
+- tag: Read
+  title: An informal introduction to topos theory
+  author: Tom Leinster
+  material:
+  - tag: Link 
+    url: "https://arxiv.org/abs/1012.5647"
+  date: '2026-09-30T15:00:00Z'
+
+- tag: Read
+  title: 2-Dimensional Categories
+  authors:
+  - N. Johnson
+  - D. Yau
+  semester: "Spring 2026"
+  material:
+  - tag: Link
+    url: "https://arxiv.org/abs/2002.06055"
+
+- tag: Read
+  title: Sheaves in Geometry and Logic
+  authors:
+  - S. MacLane
+  - I. Moerdijk
+  semester: "Spring 2024"
+
+- tag: Read
+  title: Introduction to Homotopy Type Theory
+  author: E. Rijke
+  semester: "Spring 2023"
+  material:
+  - tag: Link
+    url: "https://arxiv.org/abs/2212.11082"
+
+- tag: Read
+  title: Initial Algebras, Terminal Coalgebras, and the Theory of Fixed Points of Functors
+  authors:
+  - J. Adámek
+  - S. Milius
+  - L. Moss
+  semester: "Fall 2021"
+
+- tag: Read
+  title: Categorical Systems
+  author: D. J. Meyers
+  semester: "Spring 2021"
+  material:
+  - tag: Link
+    url: "http://davidjaz.com/Papers/DynamicalBook.pdf"
+
+- tag: Read
+  title: "Algebraic Theories: A Categorical Introduction to General Algebra"
+  authors:
+  - J. Adámek
+  - J. Rosický
+  - E. M. Vitale
+  semester: "Fall 2020"
+  material:
+  - tag: Link
+    url: "https://perso.uclouvain.be/enrico.vitale/gab_CUP2.pdf"
+
+- tag: Read
+  title: A Course in Universal Algebra
+  authors:
+  - S. Burris
+  - H. P. Sankappanavar
+  semester: "Spring 2020"
+  material:
+  - tag: Link
+    url: "http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf"
+
