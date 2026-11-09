@@ -35,6 +35,7 @@ local:
 	cabal run --builddir _dist GenerateNews
 	cabal run --builddir _dist GeneratePeople
 	cabal run --builddir _dist Generate
+	cabal run --builddir _dist Generate201
 
 announce:
 	cabal run --builddir _dist Announce101
