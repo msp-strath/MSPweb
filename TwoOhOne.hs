@@ -17,9 +17,7 @@ uosZulipHTML = anchor "https://spls.zulipchat.com/#narrow/stream/227686-UoS/topi
                       "#UoSstream"
 
 firstJust :: [Maybe a] -> Maybe a
-firstJust [] = Nothing
-firstJust (Nothing : xs) = firstJust xs
-firstJust (Just a : _) = Just a
+firstJust = listToMaybe . catMaybes
 
 formatUTCDate :: UTCTime -> String
 formatUTCDate = formatTime defaultTimeLocale "%Y-%m-%d"
