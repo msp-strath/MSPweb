@@ -6,6 +6,16 @@ usual:
 
 literature:
 - tag: ToRead
+  suggestedBy: Jack Heaney
+  title: The Double Category of Lenses
+  author:
+  - Bryce Clarke
+  material:
+  - tag: Link
+    url: https://doi.org/10.25949/22045073.v1
+
+
+- tag: ToRead
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
