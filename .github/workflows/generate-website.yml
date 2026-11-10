@@ -61,6 +61,9 @@ jobs:
       - name: Generate 101
         run: Generate101
 
+      - name: Generate 201
+        run: Generate201
+
       - name: Generate People
         run: GeneratePeople
 

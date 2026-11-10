@@ -16,7 +16,6 @@ span :: String -> HTML -> HTML
 span klass content =
   "<span class=\"" ++ klass ++ "\">" ++ content ++ "</span>"
 
-
 hn :: Int -> HTML -> HTML
 hn n = tag ("h" ++ show n)
 
@@ -32,6 +31,12 @@ h2 = hn 2
 p :: HTML -> HTML
 p = tag "p"
 
+italic :: HTML -> HTML
+italic = tag "i"
+
+bold :: HTML -> HTML
+bold = tag "strong"
+
 ulist :: [HTML] -> HTML
 ulist items = "<ul>" ++ concatMap (\item -> "<li>" ++ item ++ "</li>") items ++ "</ul>"
 
@@ -40,6 +45,12 @@ strong = tag "strong"
 
 ddt :: (HTML, HTML) -> HTML
 ddt (term, desc) = "<dt>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
+
+ddtWithID :: Int -> HTML -> HTML -> HTML
+ddtWithID i term desc = "<dt id='" ++ show i ++ "'>" ++ term ++ "</dt><dd>" ++ desc ++ "</dd>"
+
+dl :: HTML -> HTML
+dl = tag "dl"
 
 anchor :: String -> HTML -> HTML
 anchor url content = "<a href=\"" ++ url ++ "\">" ++ content ++ "</a>"
@@ -56,6 +67,14 @@ img  style alt url = "<img src=\"" ++ url ++ "\"" ++ maybe "" h style ++ "alt=\"
 emailToHTML :: String -> HTML
 emailToHTML emailAddr =
   anchor ("mailto:" ++ emailAddr) emailAddr
+
+details :: Bool -> HTML -> HTML -> HTML
+details isOpen summary body = unlines [
+   "<details" ++ (if isOpen then " open" else "") ++ ">",
+   "<summary>" ++ summary ++ "</summary>",
+   body,
+   "</details>"
+  ]
 
 -- HTML utils
 

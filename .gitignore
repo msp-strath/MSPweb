@@ -15,6 +15,9 @@ msp101.html
 msp101.ics
 msp101.rss
 
+# Generated files for MSP 201
+msp201.html
+
 # SMB authentication file (make sure not readable by others!)
 _authsmb.txt
 
