@@ -34,8 +34,9 @@ local:
 	cabal run --builddir _dist Generate101
 	cabal run --builddir _dist GenerateNews
 	cabal run --builddir _dist GeneratePeople
-	cabal run --builddir _dist Generate
 	cabal run --builddir _dist Generate201
+	cabal run --builddir _dist Generate
+
 
 announce:
 	cabal run --builddir _dist Announce101
@@ -50,6 +51,7 @@ local-compiled:
 	`cabal list-bin --builddir _dist Generate101`
 	`cabal list-bin --builddir _dist GenerateNews`
 	`cabal list-bin --builddir _dist GeneratePeople`
+	`cabal list-bin --builddir _dist Generate201`
 	`cabal list-bin --builddir _dist Generate`
 
 

@@ -142,9 +142,9 @@ litHTML (i, Literature{..}) =
 
 
       formatMaterial :: Material -> HTML
-      formatMaterial (File{..}) = anchor path (fromMaybe "File" description)
-      formatMaterial (Link{..}) = anchor url (fromMaybe "Link" description)
-      formatMaterial (DOI{..}) = anchor ("https://doi.org/" ++ doi) doi
+      formatMaterial (File{..}) = anchor ("201/" ++ path) (fromMaybe "Paper" description)
+      formatMaterial (Link{..}) = anchor url (fromMaybe "Paper" description)
+      formatMaterial (DOI{..}) = anchor ("https://doi.org/" ++ doi) ("DOI: " ++ doi)
 
       formatMaterials ms =
           details False "Material"
