@@ -1,7 +1,6 @@
 module Main where
 
 import TwoOhOne
-import TwoOhOneLiterature
 
 main :: IO ()
 main = do

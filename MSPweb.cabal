@@ -103,8 +103,7 @@ executable Announce101
 
 executable Generate201
   main-is:          Generate201.hs
-  other-modules:    TwoOhOneLiterature,
-                    TwoOhOne,
+  other-modules:    TwoOhOne,
                     Html
   build-depends:    base,
                     containers,
