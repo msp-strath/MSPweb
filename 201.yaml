@@ -5,15 +5,16 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 literature:
-- status: ToRead
+- status: to-read
   suggestedBy: Emma Tye
   title: Theorems for free!
   author: Philip Wadler
   material:
   - url: https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf
+    description: Paper
   - doi: 10.1145/99370.99404
 
-- status: ToRead
+- status: to-read
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
@@ -21,35 +22,39 @@ literature:
   - Gordon Plotkin
   material:
   - url: https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf
+    description: Paper
   - doi: 10.1109/LICS.1997.614955
 
-- status: Reading
+- status: reading
   title: Proofs and Refutations
   author: Imre Lakatos
   material:
   - url: https://www.jstor.org/stable/685347
+    description: Paper
   dates:
   - '2026-11-02T15:00:00Z'
   - '2026-11-09T15:00:00Z'
   - '2026-11-13T16:00:00Z'
 
-- status: Read
+- status: have-read
   suggestedBy: Bob Atkey
   title: LCF considered as a programming language
   author: Gordon Plotkin
   material:
   - url: https://homepages.inf.ed.ac.uk/gdp/publications/LCF.pdf
+    description: Paper
   - doi: 10.1016/0304-3975(77)90044-5
   date: '2026-10-19T15:00:00Z'
 
-- status: Read
+- status: have-read
   title: An informal introduction to topos theory
   author: Tom Leinster
   material:
-  - url: "https://arxiv.org/abs/1012.5647"
+  - url: https://arxiv.org/abs/1012.5647
+    description: Paper
   date: '2026-09-30T15:00:00Z'
 
-- status: Read
+- status: have-read
   title: 2-Dimensional Categories
   authors:
   - Niles Johnson
@@ -57,9 +62,10 @@ literature:
   semester: "Spring 2026"
   material:
   - url: https://arxiv.org/abs/2002.06055
+    description: Book
   - doi: 10.1093/oso/9780198871378.001.0001
 
-- status: Read
+- status: have-read
   title: Sheaves in Geometry and Logic
   authors:
   - Saunders MacLane
@@ -68,15 +74,16 @@ literature:
   material:
   - doi: 10.1007/978-1-4612-0927-0
 
-- status: Read
+- status: have-read
   title: Introduction to Homotopy Type Theory
   author: Egbert Rijke
   semester: "Spring 2023"
   material:
   - url: https://arxiv.org/abs/2212.11082
+    description: Book
   - doi: 10.1017/9781108933568
 
-- status: Read
+- status: have-read
   title: Initial Algebras, Terminal Coalgebras, and the Theory of Fixed Points of Functors
   authors:
   - Jiří Adámek
@@ -86,14 +93,15 @@ literature:
   material:
   - doi: 10.1017/9781108884112
 
-- status: Read
+- status: have-read
   title: Categorical Systems
   author: David Jaz Myers
   semester: "Spring 2021"
   material:
   - url: http://davidjaz.com/Papers/DynamicalBook.pdf
+    description: Book
 
-- status: Read
+- status: have-read
   title: "Algebraic Theories: A Categorical Introduction to General Algebra"
   authors:
   - J. Adámek
@@ -103,7 +111,7 @@ literature:
   material:
   - doi: 10.1017/CBO9780511760754
 
-- status: Read
+- status: have-read
   title: A Course in Universal Algebra
   authors:
   - Stanley Burris
@@ -111,4 +119,5 @@ literature:
   semester: "Spring 2020"
   material:
   - url: http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf
+    description: Book
 

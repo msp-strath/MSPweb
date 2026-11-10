@@ -29,7 +29,13 @@ instance FromJSON Usual
 
 data Tag = Read | ToRead | Reading
   deriving (Show, Read, Eq, Generic)
-instance FromJSON Tag
+
+instance FromJSON Tag where
+  parseJSON (String "have-read") = pure Read
+  parseJSON (String "reading") = pure Reading
+  parseJSON (String "to-read") = pure ToRead
+  parseJSON _ = fail "invalid status"
+
 
 data Material = File { path :: FilePath,
                        description :: Maybe String }
@@ -142,12 +148,12 @@ litHTML (i, Literature{..}) =
 
 
       formatMaterial :: Material -> HTML
-      formatMaterial (File{..}) = anchor ("201/" ++ path) (fromMaybe "Paper" description)
-      formatMaterial (Link{..}) = anchor url (fromMaybe "Paper" description)
+      formatMaterial (File{..}) = anchor ("201/" ++ path) (fromMaybe "Link" description)
+      formatMaterial (Link{..}) = anchor url (fromMaybe "Link" description)
       formatMaterial (DOI{..}) = anchor ("https://doi.org/" ++ doi) ("DOI: " ++ doi)
 
       formatMaterials ms =
-          details False "Material"
+          details (tag /= Read) "Material"
           (ulist $ formatMaterial <$> ms)
 
       formattedAuthors = if null authors then "" else " by " ++ (intercalate ", " authors)
