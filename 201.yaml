@@ -6,6 +6,16 @@ usual:
 
 literature:
 - tag: ToRead
+  suggestedBy: Emma Tye
+  title: Theorems for free!
+  author: Philip Wadler
+  material:
+  - tag: Link
+    url: "https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf"
+  - tag: DOI
+    doi: "10.1145/99370.99404"
+
+- tag: ToRead
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
