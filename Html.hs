@@ -10,11 +10,18 @@ tag t content = "<" ++ t ++ ">" ++ content ++ "</" ++ t ++ ">"
 
 div :: String -> HTML -> HTML
 div klass content =
-  "<div class=\"" ++ klass ++ "\">" ++ content ++ "</div>"
+  "<div" ++ kl klass ++ ">" ++ content ++ "</div>"
+  where
+    kl "" = ""
+    kl x = " class=\"" ++ klass ++ "\""
 
 span :: String -> HTML -> HTML
 span klass content =
-  "<span class=\"" ++ klass ++ "\">" ++ content ++ "</span>"
+  "<span" ++ kl klass ++ ">" ++ content ++ "</span>"
+  where
+    kl "" = ""
+    kl x = " class=\"" ++ klass ++ "\""
+
 
 hn :: Int -> HTML -> HTML
 hn n = tag ("h" ++ show n)

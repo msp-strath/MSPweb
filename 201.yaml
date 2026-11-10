@@ -5,98 +5,95 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 literature:
-- tag: ToRead
+- status: ToRead
   suggestedBy: Emma Tye
   title: Theorems for free!
   author: Philip Wadler
   material:
-  - tag: Link
-    url: "https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf"
-  - tag: DOI
-    doi: "10.1145/99370.99404"
+  - url: https://people.mpi-sws.org/~dreyer/tor/papers/wadler.pdf
+  - doi: 10.1145/99370.99404
 
-- tag: ToRead
+- status: ToRead
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
   - Daniele Turi
   - Gordon Plotkin
   material:
-  - tag: Link
-    url: "https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf"
+  - url: https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf
+  - doi: 10.1109/LICS.1997.614955
 
-- tag: Reading
+- status: Reading
   title: Proofs and Refutations
   author: Imre Lakatos
   material:
-  - tag: Link
-    url: "https://www.jstor.org/stable/685347"
+  - url: https://www.jstor.org/stable/685347
   dates:
   - '2026-11-02T15:00:00Z'
   - '2026-11-09T15:00:00Z'
   - '2026-11-13T16:00:00Z'
 
-- tag: Read
+- status: Read
   suggestedBy: Bob Atkey
   title: LCF considered as a programming language
   author: Gordon Plotkin
   material:
-  - tag: Link
-    url: "https://homepages.inf.ed.ac.uk/gdp/publications/LCF.pdf"
-  - tag: DOI
-    doi: "10.1016/0304-3975(77)90044-5"
+  - url: https://homepages.inf.ed.ac.uk/gdp/publications/LCF.pdf
+  - doi: 10.1016/0304-3975(77)90044-5
   date: '2026-10-19T15:00:00Z'
 
-- tag: Read
+- status: Read
   title: An informal introduction to topos theory
   author: Tom Leinster
   material:
-  - tag: Link 
-    url: "https://arxiv.org/abs/1012.5647"
+  - url: "https://arxiv.org/abs/1012.5647"
   date: '2026-09-30T15:00:00Z'
 
-- tag: Read
+- status: Read
   title: 2-Dimensional Categories
   authors:
-  - N. Johnson
-  - D. Yau
+  - Niles Johnson
+  - Donald Yau
   semester: "Spring 2026"
   material:
-  - tag: Link
-    url: "https://arxiv.org/abs/2002.06055"
+  - url: https://arxiv.org/abs/2002.06055
+  - doi: 10.1093/oso/9780198871378.001.0001
 
-- tag: Read
+- status: Read
   title: Sheaves in Geometry and Logic
   authors:
-  - S. MacLane
-  - I. Moerdijk
+  - Saunders MacLane
+  - Ieke Moerdijk
   semester: "Spring 2024"
+  material:
+  - doi: 10.1007/978-1-4612-0927-0
 
-- tag: Read
+- status: Read
   title: Introduction to Homotopy Type Theory
-  author: E. Rijke
+  author: Egbert Rijke
   semester: "Spring 2023"
   material:
-  - tag: Link
-    url: "https://arxiv.org/abs/2212.11082"
+  - url: https://arxiv.org/abs/2212.11082
+  - doi: 10.1017/9781108933568
 
-- tag: Read
+- status: Read
   title: Initial Algebras, Terminal Coalgebras, and the Theory of Fixed Points of Functors
   authors:
-  - J. Adámek
-  - S. Milius
-  - L. Moss
+  - Jiří Adámek
+  - Stefan Milius
+  - Lawrence S. Moss
   semester: "Fall 2021"
+  material:
+  - doi: 10.1017/9781108884112
 
-- tag: Read
+- status: Read
   title: Categorical Systems
-  author: D. J. Meyers
+  author: David Jaz Myers
   semester: "Spring 2021"
   material:
-  - tag: Link
-    url: "http://davidjaz.com/Papers/DynamicalBook.pdf"
+  - url: http://davidjaz.com/Papers/DynamicalBook.pdf
 
-- tag: Read
+- status: Read
   title: "Algebraic Theories: A Categorical Introduction to General Algebra"
   authors:
   - J. Adámek
@@ -104,16 +101,14 @@ literature:
   - E. M. Vitale
   semester: "Fall 2020"
   material:
-  - tag: Link
-    url: "https://perso.uclouvain.be/enrico.vitale/gab_CUP2.pdf"
+  - doi: 10.1017/CBO9780511760754
 
-- tag: Read
+- status: Read
   title: A Course in Universal Algebra
   authors:
-  - S. Burris
+  - Stanley Burris
   - H. P. Sankappanavar
   semester: "Spring 2020"
   material:
-  - tag: Link
-    url: "http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf"
+  - url: http://www.math.uwaterloo.ca/~snburris/htdocs/UALG/univ-algebra2012.pdf
 

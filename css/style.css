@@ -318,6 +318,10 @@ div.recent-pubs {
    min-width: 190px;
 }
 
+div.suggestedBy {
+   font-size: 80%;
+}
+
 /* Media Queries */
 @media screen and (max-width: 960px) {
     div.main {

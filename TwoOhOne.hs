@@ -4,6 +4,8 @@ module TwoOhOne where
 import System.Directory
 import System.IO
 
+import Control.Applicative
+
 import Data.List
 import Data.Maybe
 import Data.Time
@@ -36,25 +38,55 @@ data Material = File { path :: FilePath,
               | DOI { doi :: String }
   deriving (Show, Read, Eq, Generic)
 -- TODO: check if links are still live in JSON parsing of urls
-instance FromJSON Material
+
+instance FromJSON Material where
+  parseJSON = withObject "Material" $ \o ->
+    fileparser o <|> linkparser o <|> doiparser o
+    where
+      fileparser o = do
+        path <- o .: "file"
+        desc <- o .:? "description"
+        pure (File path desc)
+      linkparser o = do
+        url <- o .: "url"
+        desc <- o .:? "description"
+        pure (Link url desc)
+      doiparser o = DOI <$> o .: "doi"
+
+data ReadingDates = Dates [UTCTime] | Semester String
+  deriving (Show, Read, Eq, Generic)
 
 data Literature = Literature
-  { 
+  {
     tag :: Tag,
     title :: String,
-    -- TODO: implement more sophisticated JSON parser for authors to merge author and authors fields together
-    author :: Maybe String,
-    -- TODO: the Maybe [a] parsers are so the auto generated FromJSON instance doesn't warn on missing authors/material/dates fields, since the standard [a] FromJSON instance errors on missing fields
-    authors :: Maybe [String],
+    authors :: [String],
     material :: Maybe [Material],
-    -- TODO: implement more sophisticated JSON parser for dates to merge date and dates fields together
-    date :: Maybe UTCTime,
-    dates :: Maybe [UTCTime],
-    semester :: Maybe String,
+    dates :: ReadingDates,
     suggestedBy :: Maybe String
   }
   deriving (Show, Read, Eq, Generic)
-instance FromJSON Literature
+
+instance FromJSON Literature where
+  parseJSON = withObject "Literature" $ \o -> Literature <$>
+    o .: "status" <*>
+    o .: "title" <*>
+    authorparser o  <*>
+    o .: "material" <*>
+    dateparser o <*>
+    o .:? "suggestedBy"
+   where
+     authorparser o =
+       (o .: "author" >>= \ a -> pure [a]) <|>
+       (o .: "authors") <|>
+       (pure [])
+     dateparser o =
+       (o .: "date" >>= \ d -> pure (Dates [d])) <|>
+       (Dates <$> o .: "dates") <|>
+       (Semester <$> o .: "semester") <|>
+       pure (Dates [])
+
+
 
 data TwoOhOneData
   = TwoOhOneData
@@ -78,11 +110,8 @@ splsZulipHTML = anchor "https://spls.zulipchat.com"
 uosZulipHTML = anchor "https://spls.zulipchat.com/#narrow/stream/227686-UoS/topic/MSP.20201.20study.20group"
                       "#UoSstream"
 
-firstJust :: [Maybe a] -> Maybe a
-firstJust = listToMaybe . catMaybes
-
 formatUTCDate :: UTCTime -> String
-formatUTCDate = formatTime defaultTimeLocale "%Y-%m-%d"
+formatUTCDate = formatTime defaultTimeLocale "%A %e %B %Y"
 
 header :: Usual
        -> String
@@ -103,9 +132,14 @@ header Usual{..} =
 litHTML :: (Int,Literature)
         -> String
 litHTML (i, Literature{..}) =
-  let formatDates dts =
-        details (length dts <= 3) "Dates" 
+  let formatDates :: ReadingDates -> Maybe HTML
+      formatDates (Dates []) = Nothing
+      formatDates (Dates [date]) = Just $ Html.div "" (formatUTCDate date)
+      formatDates (Dates dts) = Just $
+        details (length dts <= 3) "Dates"
                 (ulist $ formatUTCDate <$> dts)
+      formatDates (Semester semester) = Just $ Html.div "" semester
+
 
       formatMaterial :: Material -> HTML
       formatMaterial (File{..}) = anchor path (fromMaybe "File" description)
@@ -116,20 +150,13 @@ litHTML (i, Literature{..}) =
           details False "Material"
           (ulist $ formatMaterial <$> ms)
 
-      formattedAuthors = (" by " ++) <$> firstJust [
-          author,
-          intercalate ", " <$> authors
-        ]
+      formattedAuthors = if null authors then "" else " by " ++ (intercalate ", " authors)
   in
   ddtWithID i
-    (bold title ++ fromMaybe "" formattedAuthors)
+    (bold title ++ formattedAuthors)
     (unlines . catMaybes $
-      [ Html.div "" . ("Suggested by: " ++) <$> suggestedBy,
-        firstJust [
-          Html.div "" . formatUTCDate <$> date,
-          formatDates <$> dates,
-          Html.div "" <$> semester
-        ],
+      [ Html.div "suggestedBy" . ("Suggested by: " ++) <$> suggestedBy,
+        formatDates dates,
         formatMaterials <$> material
       ])
 
@@ -145,8 +172,7 @@ generateHTML :: Usual
              -> IO ()
 generateHTML usual lits out = do
   let currentlyReading = section "Currently Reading" Reading lits 
-  let toRead = section "Planned to Read" ToRead lits
+  let toRead = section "Planning to Read" ToRead lits
   -- TODO: hide Read papers in the future
   let read = section "Previously Read" Read lits
   writeFile out $ unlines [header usual, currentlyReading, toRead, read]
-
