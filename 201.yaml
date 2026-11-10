@@ -25,6 +25,13 @@ literature:
     description: Paper
   - doi: 10.1109/LICS.1997.614955
 
+- status: to-read
+  suggestedBy: Jack Heaney
+  title: The Double Category of Lenses
+  author: Bryce Clarke
+  material:
+  - doi: 10.25949/22045073
+
 - status: reading
   title: Proofs and Refutations
   author: Imre Lakatos
