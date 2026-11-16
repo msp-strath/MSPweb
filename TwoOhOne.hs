@@ -27,13 +27,14 @@ data Usual
   } deriving (Eq, Show, Generic)
 instance FromJSON Usual
 
-data Tag = Read | ToRead | Reading
+data Tag = Read | ToRead | Reading | Postponed
   deriving (Show, Read, Eq, Generic)
 
 instance FromJSON Tag where
   parseJSON (String "have-read") = pure Read
   parseJSON (String "reading") = pure Reading
   parseJSON (String "to-read") = pure ToRead
+  parseJSON (String "postponed") = pure Postponed
   parseJSON _ = fail "invalid status"
 
 

@@ -14,7 +14,7 @@ literature:
     description: Paper
   - doi: 10.1145/99370.99404
 
-- status: to-read
+- status: reading
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
@@ -24,8 +24,9 @@ literature:
   - url: https://homepages.inf.ed.ac.uk/gdp/publications/Math_Op_Sem.pdf
     description: Paper
   - doi: 10.1109/LICS.1997.614955
+  date: '2026-11-16T15:00:00Z'
 
-- status: to-read
+- status: postponed
   suggestedBy: Jack Heaney
   title: The Double Category of Lenses
   author: Bryce Clarke
@@ -41,7 +42,7 @@ literature:
   dates:
   - '2026-11-02T15:00:00Z'
   - '2026-11-09T15:00:00Z'
-  - '2026-11-13T16:00:00Z'
+  - '2026-11-20T16:00:00Z'
 
 - status: have-read
   suggestedBy: Bob Atkey
