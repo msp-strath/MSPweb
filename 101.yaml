@@ -98,7 +98,8 @@ talks:
   institute: MSP
   insturl: ''
   title: Homotopy Type Theory
-  abstract: ''
+  abstract: |
+    A couple of weeks ago, Emma introduced us to Martin-Löf type theory. In this talk, we’ll discuss some shortcomings of this system, which we’ll address by beefing up our type theory with two additional constructions/axioms: higher inductive types and univalence. The resulting system is called *homotopy type theory* and serves as an excellent foundational language for both mathematics and programming.
   location: LT619
   material: []
 
