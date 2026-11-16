@@ -6,6 +6,28 @@ usual:
 
 literature:
 - status: to-read
+  suggestedBy: Bob Atkey
+  title: Monads and Effects 
+  authors:
+  - Nick Benton
+  - John Hughes
+  - Eugenio Moggi
+  material:
+  - doi: '10.1007/3-540-45699-6_2'
+
+- status: reading
+  suggestedBy: Vikraman Choudhury
+  title: Functional Operational Semantics and its Denotational Dual
+  author: Daniele Turi
+  material:
+  - file: Thesis_DanieleTuri.pdf
+    description: Paper
+  - url: 'https://www.dcs.ed.ac.uk/home/dt/thesis.html'
+    description: Webpage
+  dates:
+  - '2026-11-16T15:00:00Z'
+
+- status: to-read
   suggestedBy: Emma Tye
   title: Theorems for free!
   author: Philip Wadler
@@ -14,7 +36,7 @@ literature:
     description: Paper
   - doi: 10.1145/99370.99404
 
-- status: reading
+- status: have-read
   suggestedBy: Clemens Kupke
   title: Towards a Mathematical Operational Semantics
   authors:
