@@ -87,9 +87,16 @@ talks:
   institute: MSP
   insturl: ''
   title: Normalisation-by-Evaluation
-  abstract: ''
+  abstract: |
+    Emma and Axel have given us the syntax and operational semantics of various type theories, I will show you how we can use semantic techniques to efficiently evaluate syntax according to a given equational theory. These ideas go back to Berger and Schwichtenberg [1] but my presentation will be based on Dybjer and Coquand's gluing approach [2].
   location: LT619
-  material: []
+  material:
+  - tag: Link
+    address: 'https://ieeexplore.ieee.org/document/151645'
+    linkDescription: "[1] https://ieeexplore.ieee.org/document/151645"
+  - tag: Link
+    address: 'https://doi.org/10.1017/S0960129596002150'
+    linkDescription: "[2] https://doi.org/10.1017/S0960129596002150"
 
 - tag: Talk
   date: '2026-11-17T15:00:00Z'
