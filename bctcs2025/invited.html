@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <title>BCTCS 2025: Invited Speakers</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+  <style>
+    section {
+     padding-top: 56px;
+     margin-top: -56px;
+    }
+    .navbar-custom {
+        background-color: lightgreen;
+    }
+
+    .navbar-custom .navbar-brand,
+    .navbar-custom .navbar-text {
+        color: green;
+    }
+  </style>
+ </head>
+ <body data-bs-spy="scroll" data-bs-target=".navbar" data-bs-offset="50">
+
+  <nav class="navbar navbar-expand-sm navbar-custom sticky-top">
+   <div class="container-fluid">
+    <a class="navbar-brand" href="index.html">BCTCS 2025</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">
+      <ul class="nav navbar-nav">
+        <li class="nav-item"><a class="nav-link" href="practical.html">Practical information</a>
+        <li class="nav-item"><a class="nav-link" href="abstracts.html">Contributed abstracts</a>
+        <li class="nav-item"><a class="nav-link active" href="#">Invited speakers</a>
+        <li class="nav-item"><a class="nav-link" href="programme.html">Programme</a>
+     </ul>
+    </div>
+   </div>
+  </nav>
+   <div class="container">
+    <h1>BCTCS 2025: Invited Speakers</h1>
+
+    <p>We have the following invited speakers.</p>
+
+    <section id="abstracts">
+      <h3>Jess Enright (University of Glasgow)</h3>
+      <h4>How temporal locality can help us solve problems on temporal graphs</h4>
+      <p>A temporal graph is a graph whose edges are active at only some (specified, known) times. This ability to capture changes over time provides a useful model of real dynamic networks, but renders many problems studied on temporal graphs more computationally complex than their static counterparts.</p>
+
+      <p>To contend with this, there has been recent work devising parameters with respect to which temporal problems become tractable. One such parameter is vertex-interval-membership width. Broadly, this gives a bound on the number of vertices we need to keep track of at any time.   We will outline how one uses this sort of parameter algorithmically, define a generalisation of this parameter, and give a meta-algorithm for both parameters. This simplifies proving that a temporal problem is tractable for either parameter.</p>
+
+      <p>This is joint work with Laura Larios-Jones, Sam Hand, and Kitty Meeks.</p>
+
+      <h3>Rob van Glabeek (University of Edinburgh)</h3>
+      <h4>Ensuring Liveness Properties of Distributed Systems with Justness</h4>
+      <p>Often fairness assumptions need to be made in order to establish liveness properties of distributed systems, but in many situations they lead to false conclusions.</p>
+
+      <p>Here I present ongoing work aiming at laying the foundations of a theory of concurrency that is equipped to ensure liveness properties of distributed systems without making fairness assumptions. Instead I advocate assuming justness, a strong progress property that is essentially weaker and more realistic than fairness.</p>
+
+      <p>When assuming justness, contemporary process algebras and temporal logics fail to make distinctions between systems of which one has a crucial liveness property and the other does not. This necessitates an overhaul of these frameworks.</p>
+
+      <h3>Nicolai Kraus (University of Nottingham)</h3>
+      <h4>Dependent type theory: from propositions and sets to spaces</h4>
+      <p>Type theories (in the sense of Martin-Löf and Coquand) are programming languages with type systems that are expressive enough to formulate mathematical statements. Several proof assistants, such as Agda, Lean, and Coq/Rocq, make use of this version of the Curry-Howard correspondence.</p>
+
+      <p>There are various interpretations of type theories, assigning different meanings to types. Traditionally, types were interpreted as propositions or sets, but since the advent of homotopy type theory, they are also seen as spaces. As a consequence, the correspondence between mathematical statements and types is not unique. For example, a group is usually represented as a carrier set with a unit element and an operation satisfying associativity, identity, and inverse laws. However, in homotopy type theory, it can alternatively be defined as a so-called "pointed connected 1-type".</p>
+
+      <p>In this talk, I will explain the ideas and insights that eventually led to homotopy type theory, along with an approach to computer formalizations that it enabled.</p>
+
+      <h3>Conor Mc Bride (University of Strathclyde)</h3>
+      <h4>Talking Out Of School</h4>
+      <p>Since 2008, I have been teaching first year undergraduates in semester one: fresh out of school! I have always taught more mathematical topics, which is to say that whatever topics I have been tasked with teaching I have made more mathematical. Arriving from school, many expect to be taught to the test and few have much left of their sense of adventure. In the interests of prompting discussion, I'll share some tales from the trenches of trouble, tactics, and technology. Pilot light ignition is a hard problem. I have not solved it, but I have had moments. Misery loves company, and perhaps together we can manage more optimism than we can muster in isolation.</p>
+
+      <h3>Jakub Opršal (University of Birmingham)</h3>
+      <h4>Homotopy and complexity of graph colouring</h4>
+      <p>I will talk about an emerging new application of homotopy theory in computational complexity of discrete problems. This approach is build on the question: <em>How does the topology of the solution space of a computational problem influence its complexity?</em> The idea emerged from investigations of the complexity of variants of graph colouring, including approximate graph colouring.</p>
+
+<p>A colouring of a graph with <em>k</em> colours is an assignment of colours to vertices under which no edge is monochromatic. Graph 3-colouring is a prototypical example of an NP-complete problem listed by Karp in his seminal paper. There are many variations on this problem whose complexity remains widely open. For example, although it is generally believed that colouring a 3-colourable graphs with a fixed number of colours is NP-hard, only hardness of colouring of such a graph with 5-colours is known (and shown only in 2019).</p>
+
+<p>The talk will focus on several related results about variations of graph colouring that share a common theme of using a topological method based on tools from topological combinatorics and on ideas of Lovász [J. Comb. Theory, Ser. A, 25(3):319-324, 1978]. These ideas formalise the notion of a solution space, and hence provide a rigorous framework for the study of the above fundamental question.</p>
+
+      <h3>Elizabeth Polgreen (University of Edinburgh)</h3>
+      <h4>Making the most of large language models for program synthesis (when you want correct answers)</h4>
+      <p>Since the release of ChatGPT, large language models (LLMs) have been dominating the discourse around code generation. In contrast, the best-performing solvers in the world of formal program synthesis are still based around enumerative algorithms. So, are we behind the times? Are LLMs the answer to all our synthesis problems? In this talk, I will present two approaches to making the most of LLMs in formal domains. First, I will present a technique based on combining enumerative program synthesis with guidance from an LLM [1]. Focusing on the Syntax-Guided Synthesis (SyGuS) competition benchmarks, we found that, whilst LLMs can produce syntactically correct SyGuS expressions, they fail to produce semantically correct solutions for more than half of the benchmarks. We propose a novel enumerative synthesis algorithm, which integrates calls to an LLM into a weighted probabilistic search, allowing 2-way exchange of information between the two components, and increasing the number of benchmarks solved to 80% (and outperforming the state-of-the-art solver). Second, I will discuss our work using LLMs to generate models of systems for verification [2]. Here, we enable LLMs to generate syntactically correct code, even in programming languages that barely feature in the training data, by combining an HCI technique called natural program elicitation and a Max-SMT solver. We apply our approach to generating models of systems in the UCLID5 verification language, improving syntactic correctness from &lt; 10% to &gt; 80% on a set of textbook problems. Whilst I don’t believe LLMs are the answer to all our synthesis problems, I think our results demonstrate that perhaps techniques used in formal synthesis and programming languages could be the answer to many of the problems facing LLMs..!</p>
+
+<p>[1] Guiding Enumerative Program Synthesis with Large Language Models. Yixuan Li, Julian Parsert, and Elizabeth Polgreen.</p>
+
+<p>[2] Synthetic Programming Elicitation and Repair for Text-to-Code in Very Low-Resource Programming Languages. Federico Mora, Justin Wong, Haley Lepe, Sahil Bhatia, Karim Elmaaroufi, George Varghese, Joseph E. Gonzalez, Elizabeth Polgreen, and Sanjit A. Seshia.</p>
+
+
+    </section>
+   </div>
+  </body>
+ </html
+>
