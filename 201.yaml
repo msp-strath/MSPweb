@@ -5,6 +5,18 @@ usual:
   usualBuilding: "Livingstone Tower"
 
 literature:
+- status: reading
+  suggestedBy: Emma Tye/Jack Heaney
+  title: "Call-By-Push-Value in Coq: Operational, Equational, and Denotational Theory"
+  authors:
+  - Yannick Forster
+  - Steven Schäfer
+  - Simon Spies
+  - Kathrin Stark
+  material:
+  - doi: "10.1145/3293880.3294097"
+  date: '2026-11-30T15:00:00Z'
+
 - status: to-read
   suggestedBy: Bob Atkey
   title: Monads and Effects 
